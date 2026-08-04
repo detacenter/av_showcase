@@ -1,0 +1,5281 @@
+[
+  {
+    "release_id": 9755401,
+    "master_id": 11772,
+    "folder_id": 1,
+    "title": "Untrue",
+    "artists": [
+      "Burial"
+    ],
+    "year": 2007,
+    "released": "2007-11-05",
+    "country": "UK",
+    "labels": [
+      "Hyperdub"
+    ],
+    "catnos": [
+      "HDBLP002"
+    ],
+    "genres": [
+      "Electronic"
+    ],
+    "styles": [
+      "Abstract",
+      "UK Garage",
+      "Dubstep",
+      "Ambient",
+      "Bass Music"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "12\"",
+      "Album",
+      "Repress"
+    ],
+    "thumb": "artwork/burial_untrue.jpg",
+    "cover_image": "artwork/burial_untrue.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Archangel",
+        "duration": "3:57"
+      },
+      {
+        "position": "A2",
+        "title": "Near Dark",
+        "duration": "3:52"
+      },
+      {
+        "position": "B1",
+        "title": "Homeless",
+        "duration": "5:20"
+      },
+      {
+        "position": "B2",
+        "title": "Shell Of Light",
+        "duration": "4:39"
+      },
+      {
+        "position": "C1",
+        "title": "Raver",
+        "duration": "4:57"
+      },
+      {
+        "position": "C2",
+        "title": "Etched Headplate",
+        "duration": "5:58"
+      },
+      {
+        "position": "D1",
+        "title": "Untrue",
+        "duration": "6:15"
+      },
+      {
+        "position": "D2",
+        "title": "UK",
+        "duration": "1:41"
+      },
+      {
+        "position": "D3",
+        "title": "Endorphin",
+        "duration": "2:58"
+      }
+    ],
+    "community_have": 962,
+    "community_want": 1308,
+    "community_rating_avg": 4.74,
+    "community_rating_count": 81,
+    "barcode": "5 024545 486513",
+    "matrix": "HDBLP002 AX TRANSITION EW",
+    "original_year": null,
+    "instance_id": 100000,
+    "date_added": "2025-11-13T00:00:00Z",
+    "user_rating": 4,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 33861543,
+    "master_id": 3716847,
+    "folder_id": 1,
+    "title": "Deb\u00ed Tirar M\u00e1s Fotos",
+    "artists": [
+      "Bad Bunny"
+    ],
+    "year": 2025,
+    "released": "2025-05-02",
+    "country": "North America (inc Mexico)",
+    "labels": [
+      "Rimas Entertainment"
+    ],
+    "catnos": [
+      "BB0007VN"
+    ],
+    "genres": [
+      "Hip Hop",
+      "Latin",
+      "Pop"
+    ],
+    "styles": [
+      "Reggaeton",
+      "Salsa",
+      "Merengue",
+      "Trap",
+      "Jibaro",
+      "Bolero",
+      "Synth-pop",
+      "Plena",
+      "Bomba",
+      "Aguinaldo",
+      "Latin Pop"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album",
+      "Stereo",
+      "Blue"
+    ],
+    "thumb": "https://i.scdn.co/image/ab67616d0000b273bbd45c8d36e0e045ef640411",
+    "cover_image": "https://i.scdn.co/image/ab67616d0000b273bbd45c8d36e0e045ef640411",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Nuevayol",
+        "duration": "3:04"
+      },
+      {
+        "position": "A2",
+        "title": "Voy A Llevarte Pa Pr",
+        "duration": "2:36"
+      },
+      {
+        "position": "A3",
+        "title": "Baile Inolvidable",
+        "duration": "6:08"
+      },
+      {
+        "position": "A4",
+        "title": "Perfumito Nuevo",
+        "duration": "3:21"
+      },
+      {
+        "position": "B1",
+        "title": "Weltita",
+        "duration": "3:08"
+      },
+      {
+        "position": "B2",
+        "title": "Veld\u00e1",
+        "duration": "3:55"
+      },
+      {
+        "position": "B3",
+        "title": "El Cl\u00fab",
+        "duration": "3:43"
+      },
+      {
+        "position": "B4",
+        "title": "Ketu Tecr\u00e9",
+        "duration": "4:11"
+      },
+      {
+        "position": "B5",
+        "title": "Bokete",
+        "duration": "3:36"
+      },
+      {
+        "position": "C1",
+        "title": "Kloufrens",
+        "duration": "3:19"
+      },
+      {
+        "position": "C2",
+        "title": "Turista",
+        "duration": "3:10"
+      },
+      {
+        "position": "C3",
+        "title": "Caf\u00e9 Con Ron",
+        "duration": "3:49"
+      },
+      {
+        "position": "C4",
+        "title": "Pitorro De Coco",
+        "duration": "3:27"
+      },
+      {
+        "position": "D1",
+        "title": "Lo Que Le Pas\u00f3 A Hawaii",
+        "duration": "3:49"
+      },
+      {
+        "position": "D2",
+        "title": "Eoo",
+        "duration": "3:25"
+      },
+      {
+        "position": "D3",
+        "title": "Dtmf",
+        "duration": "3:57"
+      },
+      {
+        "position": "D4",
+        "title": "La Mudanza",
+        "duration": "3:33"
+      }
+    ],
+    "community_have": 6565,
+    "community_want": 3406,
+    "community_rating_avg": 4.89,
+    "community_rating_count": 927,
+    "barcode": "1 99066 50432 1",
+    "matrix": "297889E1/C 02220396 MRP6679 / BB0007VN-A",
+    "original_year": null,
+    "instance_id": 100001,
+    "date_added": "2025-11-14T00:00:00Z",
+    "user_rating": 4,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 2787969,
+    "master_id": 289373,
+    "folder_id": 1,
+    "title": "Innundir Skinni",
+    "artists": [
+      "\u00d3l\u00f6f Arnalds"
+    ],
+    "year": 2010,
+    "released": "2010-09-13",
+    "country": "UK",
+    "labels": [
+      "One Little Indian"
+    ],
+    "catnos": [
+      "TPLP1065"
+    ],
+    "genres": [
+      "Rock",
+      "Pop",
+      "Folk, World, & Country"
+    ],
+    "styles": [
+      "Folk",
+      "Indie Pop"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "45 RPM",
+      "Album"
+    ],
+    "thumb": "artwork/\u00f3l\u00f6f_arnalds_innundir_skinni.jpg",
+    "cover_image": "artwork/\u00f3l\u00f6f_arnalds_innundir_skinni.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Vinur Minn",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Innundir Skinni",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Crazy Car",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Vinkonur",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Sv\u00edf Birki",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Jonathan",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Madrid",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Surrender",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Allt \u00cd G\u00fadd\u00ed",
+        "duration": ""
+      }
+    ],
+    "community_have": 241,
+    "community_want": 71,
+    "community_rating_avg": 4.44,
+    "community_rating_count": 25,
+    "barcode": "5 016958 130961",
+    "matrix": "TPLP 1065 A Re-2",
+    "original_year": null,
+    "instance_id": 100002,
+    "date_added": "2026-03-05T00:00:00Z",
+    "user_rating": 0,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 1709731,
+    "master_id": 172029,
+    "folder_id": 1,
+    "title": "Cryptomnesia",
+    "artists": [
+      "El Grupo Nuevo De Omar Rodriguez Lopez"
+    ],
+    "year": 2009,
+    "released": "2009",
+    "country": "US",
+    "labels": [
+      "Rodriguez Lopez Productions"
+    ],
+    "catnos": [
+      "SHRLP001"
+    ],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Prog Rock"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album",
+      "Limited Edition"
+    ],
+    "thumb": "artwork/el_grupo_nuevo_de_omar_rodr\u00edguez_l\u00f3pez_cryptomnesia.jpg",
+    "cover_image": "artwork/el_grupo_nuevo_de_omar_rodr\u00edguez_l\u00f3pez_cryptomnesia.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Tuberculoids",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Half Kleptos",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Cryptomnesia",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "They're Coming To Get You, Barbara",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Puny Humans",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Shake Is For 8th Graders",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Noir",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Paper Cunts",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Elderly Pair Beaten With Hammer",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "Warren Oates",
+        "duration": ""
+      },
+      {
+        "position": "B7",
+        "title": "Fuck Your Mouth",
+        "duration": ""
+      }
+    ],
+    "community_have": 1124,
+    "community_want": 306,
+    "community_rating_avg": 4.45,
+    "community_rating_count": 102,
+    "barcode": "6 13481 01954 8",
+    "matrix": "S-68509 SHRLP001 - A",
+    "original_year": null,
+    "instance_id": 100003,
+    "date_added": "2025-12-15T00:00:00Z",
+    "user_rating": 0,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 4321323,
+    "master_id": 524134,
+    "folder_id": 1,
+    "title": "Amok",
+    "artists": [
+      "Atoms For Peace (2)"
+    ],
+    "year": 2013,
+    "released": "2013-02-25",
+    "country": "US",
+    "labels": [
+      "XL Recordings"
+    ],
+    "catnos": [
+      "XLLP583"
+    ],
+    "genres": [
+      "Electronic",
+      "Rock"
+    ],
+    "styles": [
+      "IDM",
+      "Indie Rock",
+      "Glitch",
+      "Experimental"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "12\"",
+      "45 RPM",
+      "Album"
+    ],
+    "thumb": "artwork/atoms_for_peace_amok.jpg",
+    "cover_image": "artwork/atoms_for_peace_amok.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Before Your Very Eyes...",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Default",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Ingenue",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Dropped",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "Unless",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Stuck Together Pieces",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "title": "Judge Jury And Executioner",
+        "duration": ""
+      },
+      {
+        "position": "D2",
+        "title": "Reverse Running",
+        "duration": ""
+      },
+      {
+        "position": "D3",
+        "title": "Amok",
+        "duration": ""
+      }
+    ],
+    "community_have": 5824,
+    "community_want": 763,
+    "community_rating_avg": 4.28,
+    "community_rating_count": 403,
+    "barcode": "634904158316",
+    "matrix": "XLLP583 140546M1/A",
+    "original_year": null,
+    "instance_id": 100004,
+    "date_added": "2025-12-05T00:00:00Z",
+    "user_rating": 0,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 15346241,
+    "master_id": 72463,
+    "folder_id": 1,
+    "title": "Fleet Foxes",
+    "artists": [
+      "Fleet Foxes"
+    ],
+    "year": 2008,
+    "released": "2008",
+    "country": "Europe",
+    "labels": [
+      "Bella Union"
+    ],
+    "catnos": [
+      "BELLAV167"
+    ],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Folk Rock",
+      "Indie Rock"
+    ],
+    "formats": [
+      "Vinyl",
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album",
+      "12\"",
+      "EP"
+    ],
+    "thumb": "artwork/fleet_foxes_fleet_foxes.jpg",
+    "cover_image": "artwork/fleet_foxes_fleet_foxes.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Sun It Rises",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "White Winter Hymnal",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Ragged Wood",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Tiger Mountain Peasant Song",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Quiet Houses",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "title": "He Doesn't Know Why",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Heard Them Stirring",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Your Protector",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Meadowlarks",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Blue Ridge Mountains",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Oliver James",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "Sun Giant",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Drops In The River",
+        "duration": ""
+      },
+      {
+        "position": "C3",
+        "title": "English House",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "title": "Mykonos",
+        "duration": ""
+      },
+      {
+        "position": "D2",
+        "title": "Innocent Son",
+        "duration": ""
+      }
+    ],
+    "community_have": 700,
+    "community_want": 699,
+    "community_rating_avg": 4.38,
+    "community_rating_count": 37,
+    "barcode": "5033197507613",
+    "matrix": "82949 1A BELLAV 167 88140E1/A 9750761-A www.gzvinyl.com",
+    "original_year": null,
+    "instance_id": 100005,
+    "date_added": "2025-12-11T00:00:00Z",
+    "user_rating": 4,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 2331725,
+    "master_id": 907347,
+    "folder_id": 1,
+    "title": "Ciencia De Los In\u00fatiles",
+    "artists": [
+      "El Tr\u00edo De Omar Rodriguez Lopez"
+    ],
+    "year": 2010,
+    "released": "2010-06-01",
+    "country": "US",
+    "labels": [
+      "Rodriguez Lopez Productions"
+    ],
+    "catnos": [
+      "RLP006"
+    ],
+    "genres": [
+      "Rock",
+      "Latin",
+      "Folk, World, & Country"
+    ],
+    "styles": [
+      "Alternative Rock",
+      "Acoustic",
+      "Folk",
+      "Experimental"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album",
+      "Limited Edition"
+    ],
+    "thumb": "artwork/el_tr\u00edo_de_omar_rodr\u00edguez_l\u00f3pez_ciencia_de_los_in\u00fatiles.jpg",
+    "cover_image": "artwork/el_tr\u00edo_de_omar_rodr\u00edguez_l\u00f3pez_ciencia_de_los_in\u00fatiles.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Lunes",
+        "duration": "4:31"
+      },
+      {
+        "position": "A2",
+        "title": "Viernes",
+        "duration": "4:12"
+      },
+      {
+        "position": "A3",
+        "title": "Mi\u00e9rcoles",
+        "duration": "5:27"
+      },
+      {
+        "position": "A4",
+        "title": "Noche D\u00eda",
+        "duration": "4:47"
+      },
+      {
+        "position": "B1",
+        "title": "Martes",
+        "duration": "3:56"
+      },
+      {
+        "position": "B2",
+        "title": "Jueves",
+        "duration": "6:24"
+      },
+      {
+        "position": "B3",
+        "title": "S\u00e1bado",
+        "duration": "3:52"
+      },
+      {
+        "position": "B4",
+        "title": "Domingo",
+        "duration": "3:17"
+      }
+    ],
+    "community_have": 579,
+    "community_want": 299,
+    "community_rating_avg": 4.49,
+    "community_rating_count": 57,
+    "barcode": "634457533615",
+    "matrix": "RLP006-A",
+    "original_year": null,
+    "instance_id": 100006,
+    "date_added": "2026-04-07T00:00:00Z",
+    "user_rating": 3,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 2379457,
+    "master_id": 301266,
+    "folder_id": 1,
+    "title": "Perch Patchwork",
+    "artists": [
+      "Maps And Atlases"
+    ],
+    "year": 2010,
+    "released": "2010-06-29",
+    "country": "US",
+    "labels": [
+      "Barsuk Records"
+    ],
+    "catnos": [
+      "BARK102LP"
+    ],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Indie Rock",
+      "Math Rock"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/maps_atlases_perch_patchwork.jpg",
+    "cover_image": "artwork/maps_atlases_perch_patchwork.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Will",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "The Charm",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Living Decorations",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Solid Ground",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Is",
+        "duration": ""
+      },
+      {
+        "position": "A6",
+        "title": "Israeli Caves",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Banished Be Cavalier",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Carrying The Wet Wood",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Pigeon",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "If This Is",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Was",
+        "duration": ""
+      },
+      {
+        "position": "B6",
+        "title": "Perch Patchwork",
+        "duration": ""
+      }
+    ],
+    "community_have": 836,
+    "community_want": 252,
+    "community_rating_avg": 4.44,
+    "community_rating_count": 73,
+    "barcode": "655173110218",
+    "matrix": "BARK102LP-A Recordpressing.com RS-72739",
+    "original_year": null,
+    "instance_id": 100007,
+    "date_added": "2026-05-30T00:00:00Z",
+    "user_rating": 4,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 5006908,
+    "master_id": 1893,
+    "folder_id": 1,
+    "title": "Music Has The Right To Children",
+    "artists": [
+      "Boards Of Canada"
+    ],
+    "year": 2013,
+    "released": "2013-10-21",
+    "country": "UK",
+    "labels": [
+      "Warp Records",
+      "Skam"
+    ],
+    "catnos": [
+      "warplp55r",
+      "skalp 1"
+    ],
+    "genres": [
+      "Electronic"
+    ],
+    "styles": [
+      "IDM",
+      "Ambient"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album",
+      "Reissue",
+      "Repress"
+    ],
+    "thumb": "artwork/boards_of_canada_music_has_the_right_to_children.jpg",
+    "cover_image": "artwork/boards_of_canada_music_has_the_right_to_children.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Wildlife Analysis",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "An Eagle In Your Mind",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "The Color Of The Fire",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Telephasic Workshop",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Triangles & Rhombuses",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Sixtyten",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Turquoise Hexagon Sun",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Kaini Industries",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Bocuma",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Roygbiv",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "Rue The Whirl",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Aquarius",
+        "duration": ""
+      },
+      {
+        "position": "C3",
+        "title": "Olson",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "title": "Pete Standing Alone",
+        "duration": ""
+      },
+      {
+        "position": "D2",
+        "title": "Smokes Quantity",
+        "duration": ""
+      },
+      {
+        "position": "D3",
+        "title": "Open The Light",
+        "duration": ""
+      },
+      {
+        "position": "D4",
+        "title": "One Very Important Thought",
+        "duration": ""
+      }
+    ],
+    "community_have": 17690,
+    "community_want": 5068,
+    "community_rating_avg": 4.73,
+    "community_rating_count": 1914,
+    "barcode": "801061805517",
+    "matrix": "WARP LP 55A 2 DA MONT",
+    "original_year": null,
+    "instance_id": 100008,
+    "date_added": "2026-03-14T00:00:00Z",
+    "user_rating": 0,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 4548231,
+    "master_id": 563275,
+    "folder_id": 1,
+    "title": "Tomorrow's Harvest",
+    "artists": [
+      "Boards Of Canada"
+    ],
+    "year": 2013,
+    "released": "2013-06-10",
+    "country": "UK",
+    "labels": [
+      "Warp Records",
+      "Music70"
+    ],
+    "catnos": [
+      "WARPLP257",
+      "WARPLP257"
+    ],
+    "genres": [
+      "Electronic"
+    ],
+    "styles": [
+      "Downtempo",
+      "Ambient",
+      "IDM"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/boards_of_canada_tomorrows_harvest.jpg",
+    "cover_image": "artwork/boards_of_canada_tomorrows_harvest.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Gemini",
+        "duration": "2:56"
+      },
+      {
+        "position": "A2",
+        "title": "Reach For The Dead",
+        "duration": "4:47"
+      },
+      {
+        "position": "A3",
+        "title": "White Cyclosa",
+        "duration": "3:13"
+      },
+      {
+        "position": "A4",
+        "title": "Jacquard Causeway",
+        "duration": "6:35"
+      },
+      {
+        "position": "B1",
+        "title": "Telepath",
+        "duration": "1:32"
+      },
+      {
+        "position": "B2",
+        "title": "Cold Earth",
+        "duration": "3:42"
+      },
+      {
+        "position": "B3",
+        "title": "Transmisiones Ferox",
+        "duration": "2:18"
+      },
+      {
+        "position": "B4",
+        "title": "Sick Times",
+        "duration": "4:16"
+      },
+      {
+        "position": "B5",
+        "title": "Collapse",
+        "duration": "2:49"
+      },
+      {
+        "position": "C1",
+        "title": "Palace Posy",
+        "duration": "4:05"
+      },
+      {
+        "position": "C2",
+        "title": "Split Your Infinities",
+        "duration": "4:28"
+      },
+      {
+        "position": "C3",
+        "title": "Uritual",
+        "duration": "1:59"
+      },
+      {
+        "position": "C4",
+        "title": "Nothing Is Real",
+        "duration": "3:52"
+      },
+      {
+        "position": "C5",
+        "title": "Sundown",
+        "duration": "2:16"
+      },
+      {
+        "position": "D1",
+        "title": "New Seeds",
+        "duration": "5:39"
+      },
+      {
+        "position": "D2",
+        "title": "Come To Dust",
+        "duration": "4:07"
+      },
+      {
+        "position": "D3",
+        "title": "Semena Mertvykh",
+        "duration": "3:30"
+      }
+    ],
+    "community_have": 21344,
+    "community_want": 5458,
+    "community_rating_avg": 4.45,
+    "community_rating_count": 2424,
+    "barcode": "801061025717",
+    "matrix": "WARP 257 A BD02482-01 A1 NS",
+    "original_year": null,
+    "instance_id": 100009,
+    "date_added": "2026-07-29T00:00:00Z",
+    "user_rating": 0,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 4286669,
+    "master_id": 380264,
+    "folder_id": 1,
+    "title": "The Lack Long After",
+    "artists": [
+      "Pianos Become The Teeth"
+    ],
+    "year": 2011,
+    "released": "2011-11-01",
+    "country": "US",
+    "labels": [
+      "Topshelf Records (2)"
+    ],
+    "catnos": [
+      "TSR051"
+    ],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Hardcore",
+      "Post Rock"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Repress",
+      "Beige "
+    ],
+    "thumb": "artwork/pianos_become_the_teeth_the_lack_long_after.jpg",
+    "cover_image": "artwork/pianos_become_the_teeth_the_lack_long_after.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "I'll Be Damned",
+        "duration": "4:49"
+      },
+      {
+        "position": "A2",
+        "title": "Good Times",
+        "duration": "5:20"
+      },
+      {
+        "position": "A3",
+        "title": "Shared Bodies",
+        "duration": "3:57"
+      },
+      {
+        "position": "A4",
+        "title": "Such Confidence",
+        "duration": "5:27"
+      },
+      {
+        "position": "B1",
+        "title": "Liquid Courage",
+        "duration": "4:04"
+      },
+      {
+        "position": "B2",
+        "title": "Spine",
+        "duration": "4:15"
+      },
+      {
+        "position": "B3",
+        "title": "Sunsetting",
+        "duration": "3:46"
+      },
+      {
+        "position": "B4",
+        "title": "I'll Get By",
+        "duration": "5:37"
+      }
+    ],
+    "community_have": 337,
+    "community_want": 118,
+    "community_rating_avg": 4.11,
+    "community_rating_count": 9,
+    "barcode": "616892180364",
+    "matrix": null,
+    "original_year": null,
+    "instance_id": 100010,
+    "date_added": "2026-05-01T00:00:00Z",
+    "user_rating": 0,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 3255473,
+    "master_id": 48681,
+    "folder_id": 1,
+    "title": "Siamese Dream",
+    "artists": [
+      "The Smashing Pumpkins"
+    ],
+    "year": 2011,
+    "released": "2011-11-29",
+    "country": "US",
+    "labels": [
+      "Virgin"
+    ],
+    "catnos": [
+      "50999 67928 9 10"
+    ],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Alternative Rock"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album",
+      "Reissue",
+      "Remastered",
+      "180 Gram, Gatefold"
+    ],
+    "thumb": "artwork/the_smashing_pumpkins_siamese_dream_deluxe_edition.jpg",
+    "cover_image": "artwork/the_smashing_pumpkins_siamese_dream_deluxe_edition.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Cherub Rock",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Quiet",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Today",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Hummer",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Rocket",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Disarm",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Soma",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "Geek U.S.A.",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Mayonaise",
+        "duration": ""
+      },
+      {
+        "position": "C3",
+        "title": "Spaceboy",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "title": "Silverfuck",
+        "duration": ""
+      },
+      {
+        "position": "D2",
+        "title": "Sweet Sweet",
+        "duration": ""
+      },
+      {
+        "position": "D3",
+        "title": "Luna",
+        "duration": ""
+      }
+    ],
+    "community_have": 30793,
+    "community_want": 11185,
+    "community_rating_avg": 4.74,
+    "community_rating_count": 2530,
+    "barcode": "5 099967 928910",
+    "matrix": "5099967929016 Siamese Dream Disc 1 Side 1   A+R Dallas SPGII S-27899 RE-2 6-21-3-11 25-15-21",
+    "original_year": null,
+    "instance_id": 100011,
+    "date_added": "2026-07-27T00:00:00Z",
+    "user_rating": 3,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 7256636,
+    "master_id": 4202,
+    "folder_id": 1,
+    "title": "The Earth Is Not A Cold Dead Place",
+    "artists": [
+      "Explosions In The Sky"
+    ],
+    "year": 2011,
+    "released": "2011",
+    "country": "US",
+    "labels": [
+      "Temporary Residence Limited"
+    ],
+    "catnos": [
+      "TRR 61"
+    ],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Post Rock"
+    ],
+    "formats": [
+      "Vinyl",
+      "Vinyl",
+      "All Media"
+    ],
+    "format_descriptions": [
+      "LP",
+      "LP",
+      "Single Sided",
+      "Etched",
+      "Album",
+      "Reissue"
+    ],
+    "thumb": "artwork/explosions_in_the_sky_the_earth_is_not_a_cold_dead_place_anniversary_e.jpg",
+    "cover_image": "artwork/explosions_in_the_sky_the_earth_is_not_a_cold_dead_place_anniversary_e.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "First Breath After Coma",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "The Only Moment We Were Alone",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Six Days At The Bottom Of The Ocean",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Memorial",
+        "duration": ""
+      },
+      {
+        "position": "C",
+        "title": "Your Hand In Mine",
+        "duration": ""
+      }
+    ],
+    "community_have": 2823,
+    "community_want": 597,
+    "community_rating_avg": 4.56,
+    "community_rating_count": 141,
+    "barcode": "656605306117",
+    "matrix": "15326.1 (2) GOLDEN TRR-61-A ",
+    "original_year": null,
+    "instance_id": 100012,
+    "date_added": "2026-01-05T00:00:00Z",
+    "user_rating": 0,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 32949843,
+    "master_id": 158151,
+    "folder_id": 1,
+    "title": "Porcelain",
+    "artists": [
+      "Sparta"
+    ],
+    "year": 2025,
+    "released": "2025-01-00",
+    "country": "USA & Canada",
+    "labels": [
+      "UMe",
+      "Dine Alone Records",
+      "Geffen Records"
+    ],
+    "catnos": [
+      "DAV377",
+      "DAV377",
+      "DAV377"
+    ],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Indie Rock"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Limited Edition",
+      "Reissue",
+      "Stereo",
+      "Iridescent"
+    ],
+    "thumb": "artwork/sparta_porcelain.jpg",
+    "cover_image": "artwork/sparta_porcelain.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Guns Of Memorial Park",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Hiss The Villain",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "While Oceana Sleeps",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "La Cerca",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Breaking The Broken",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "Lines In Sand",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "End Moraine",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "Death In The Family",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Syncope",
+        "duration": ""
+      },
+      {
+        "position": "C3",
+        "title": "Tensioning",
+        "duration": ""
+      },
+      {
+        "position": "C4",
+        "title": "Travel By Bloodline",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "title": "P.O.M.E",
+        "duration": ""
+      },
+      {
+        "position": "D2",
+        "title": "From Now To Never",
+        "duration": ""
+      },
+      {
+        "position": "D3",
+        "title": "Splinters",
+        "duration": ""
+      }
+    ],
+    "community_have": 96,
+    "community_want": 104,
+    "community_rating_avg": 5.0,
+    "community_rating_count": 4,
+    "barcode": "8 21826 03871 4",
+    "matrix": "291153E1/A 10-108471/DAV377-A",
+    "original_year": null,
+    "instance_id": 100013,
+    "date_added": "2026-03-13T00:00:00Z",
+    "user_rating": 5,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 2856645,
+    "master_id": 332326,
+    "folder_id": 1,
+    "title": "Helplessness Blues",
+    "artists": [
+      "Fleet Foxes"
+    ],
+    "year": 2011,
+    "released": "2011-05-03",
+    "country": "US",
+    "labels": [
+      "Sub Pop"
+    ],
+    "catnos": [
+      "SP 888"
+    ],
+    "genres": [
+      "Rock",
+      "Folk, World, & Country"
+    ],
+    "styles": [
+      "Indie Rock",
+      "Folk"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album",
+      "Gatefold"
+    ],
+    "thumb": "artwork/fleet_foxes_helplessness_blues.jpg",
+    "cover_image": "artwork/fleet_foxes_helplessness_blues.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Montezuma",
+        "duration": "3:36"
+      },
+      {
+        "position": "A2",
+        "title": "Bedouin Dress",
+        "duration": "4:29"
+      },
+      {
+        "position": "A3",
+        "title": "Sim Sala Bim",
+        "duration": "3:14"
+      },
+      {
+        "position": "B1",
+        "title": "Battery Kinzie",
+        "duration": "2:49"
+      },
+      {
+        "position": "B2",
+        "title": "The Plains / Bitter Dancer",
+        "duration": "5:53"
+      },
+      {
+        "position": "B3",
+        "title": "Helplessness Blues",
+        "duration": "5:03"
+      },
+      {
+        "position": "C1",
+        "title": "The Cascades",
+        "duration": "2:07"
+      },
+      {
+        "position": "C2",
+        "title": "Lorelai",
+        "duration": "4:24"
+      },
+      {
+        "position": "C3",
+        "title": "Someone You'd Admire",
+        "duration": "2:29"
+      },
+      {
+        "position": "D1",
+        "title": "The Shrine / An Argument",
+        "duration": "8:07"
+      },
+      {
+        "position": "D2",
+        "title": "Blue Spotted Tail",
+        "duration": "3:05"
+      },
+      {
+        "position": "D3",
+        "title": "Grown Ocean",
+        "duration": "4:35"
+      }
+    ],
+    "community_have": 20118,
+    "community_want": 3472,
+    "community_rating_avg": 4.5,
+    "community_rating_count": 1388,
+    "barcode": "0 98787 08881 6",
+    "matrix": "SP 888-A 19721.1(3)... RJ STERLING",
+    "original_year": null,
+    "instance_id": 100014,
+    "date_added": "2026-01-29T00:00:00Z",
+    "user_rating": 4,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 4985843,
+    "master_id": 2129,
+    "folder_id": 1,
+    "title": "Geogaddi",
+    "artists": [
+      "Boards Of Canada"
+    ],
+    "year": 2013,
+    "released": "2013-10-21",
+    "country": "UK",
+    "labels": [
+      "Warp Records",
+      "Music70"
+    ],
+    "catnos": [
+      "warplp101r",
+      "warplp101r"
+    ],
+    "genres": [
+      "Electronic"
+    ],
+    "styles": [
+      "IDM",
+      "Ambient"
+    ],
+    "formats": [
+      "Vinyl",
+      "Vinyl",
+      "All Media"
+    ],
+    "format_descriptions": [
+      "LP",
+      "LP",
+      "Single Sided",
+      "Etched",
+      "Album",
+      "Reissue",
+      "Remastered"
+    ],
+    "thumb": "artwork/boards_of_canada_geogaddi.jpg",
+    "cover_image": "artwork/boards_of_canada_geogaddi.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Ready Lets Go",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "Music Is Math",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Beware The Friendly Stranger",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Gyroscope",
+        "duration": ""
+      },
+      {
+        "position": "A5",
+        "title": "Dandelion",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Sunshine Recorder",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "In The Annexe",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Julie And Candy",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "The Smallest Weird Number",
+        "duration": ""
+      },
+      {
+        "position": "C1",
+        "title": "1969",
+        "duration": ""
+      },
+      {
+        "position": "C2",
+        "title": "Energy Warning",
+        "duration": ""
+      },
+      {
+        "position": "C3",
+        "title": "The Beach At Redpoint",
+        "duration": ""
+      },
+      {
+        "position": "C4",
+        "title": "Opening The Mouth",
+        "duration": ""
+      },
+      {
+        "position": "D1",
+        "title": "Alpha And Omega",
+        "duration": ""
+      },
+      {
+        "position": "D2",
+        "title": "I Saw Drones",
+        "duration": ""
+      },
+      {
+        "position": "D3",
+        "title": "The Devil Is In The Details",
+        "duration": ""
+      },
+      {
+        "position": "D4",
+        "title": "A Is To B As B Is To C",
+        "duration": ""
+      },
+      {
+        "position": "D5",
+        "title": "Over The Horizon Radar",
+        "duration": ""
+      },
+      {
+        "position": "E1",
+        "title": "Dawn Chorus",
+        "duration": ""
+      },
+      {
+        "position": "E2",
+        "title": "Diving Station",
+        "duration": ""
+      },
+      {
+        "position": "E3",
+        "title": "You Could Feel The Sky",
+        "duration": ""
+      },
+      {
+        "position": "E4",
+        "title": "Corsair",
+        "duration": ""
+      },
+      {
+        "position": "F",
+        "title": "Magic Window",
+        "duration": ""
+      }
+    ],
+    "community_have": 13387,
+    "community_want": 3585,
+    "community_rating_avg": 4.72,
+    "community_rating_count": 1489,
+    "barcode": "8 01061 81011 5",
+    "matrix": "BD06602-01 A1 NS",
+    "original_year": null,
+    "instance_id": 100015,
+    "date_added": "2026-05-31T00:00:00Z",
+    "user_rating": 0,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 18492652,
+    "master_id": 175869,
+    "folder_id": 1,
+    "title": "XX",
+    "artists": [
+      "The XX"
+    ],
+    "year": 2010,
+    "released": "2010",
+    "country": "USA & Europe",
+    "labels": [
+      "XL Recordings",
+      "Young Turks"
+    ],
+    "catnos": [
+      "XL LP 450",
+      "YT031LP"
+    ],
+    "genres": [
+      "Electronic",
+      "Rock"
+    ],
+    "styles": [
+      "Indie Rock"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album",
+      "Repress"
+    ],
+    "thumb": "artwork/the_xx_xx.jpg",
+    "cover_image": "artwork/the_xx_xx.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Intro",
+        "duration": "2:08"
+      },
+      {
+        "position": "A2",
+        "title": "VCR",
+        "duration": "2:57"
+      },
+      {
+        "position": "A3",
+        "title": "Crystalised",
+        "duration": "3:22"
+      },
+      {
+        "position": "A4",
+        "title": "Islands",
+        "duration": "2:41"
+      },
+      {
+        "position": "A5",
+        "title": "Heart Skipped A Beat",
+        "duration": "4:02"
+      },
+      {
+        "position": "A6",
+        "title": "Hot Like Fire",
+        "duration": "3:34"
+      },
+      {
+        "position": "B1",
+        "title": "Fantasy",
+        "duration": "2:38"
+      },
+      {
+        "position": "B2",
+        "title": "Shelter",
+        "duration": "4:30"
+      },
+      {
+        "position": "B3",
+        "title": "Basic Space",
+        "duration": "3:08"
+      },
+      {
+        "position": "B4",
+        "title": "Infinity",
+        "duration": "5:13"
+      },
+      {
+        "position": "B5",
+        "title": "Night Time",
+        "duration": "3:37"
+      },
+      {
+        "position": "B6",
+        "title": "Stars",
+        "duration": "4:23"
+      }
+    ],
+    "community_have": 1641,
+    "community_want": 374,
+    "community_rating_avg": 4.53,
+    "community_rating_count": 76,
+    "barcode": "6 34904 04501 2",
+    "matrix": "XLLP 450 A",
+    "original_year": null,
+    "instance_id": 100016,
+    "date_added": "2026-03-24T00:00:00Z",
+    "user_rating": 3,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 1627979,
+    "master_id": 9654,
+    "folder_id": 1,
+    "title": "Out Of Step",
+    "artists": [
+      "Minor Threat"
+    ],
+    "year": 2008,
+    "released": "2008",
+    "country": "US",
+    "labels": [
+      "Dischord Records",
+      "Dischord Records"
+    ],
+    "catnos": [
+      "DISCHORD 10",
+      "DIS10V"
+    ],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [
+      "Hardcore",
+      "Punk"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "12\"",
+      "45 RPM",
+      "EP",
+      "Reissue",
+      "Remastered",
+      "Recut"
+    ],
+    "thumb": "artwork/minor_threat_out_of_step.jpg",
+    "cover_image": "artwork/minor_threat_out_of_step.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Betray",
+        "duration": ""
+      },
+      {
+        "position": "A2",
+        "title": "It Follows",
+        "duration": ""
+      },
+      {
+        "position": "A3",
+        "title": "Think Again",
+        "duration": ""
+      },
+      {
+        "position": "A4",
+        "title": "Look Back & Laugh",
+        "duration": ""
+      },
+      {
+        "position": "B1",
+        "title": "Sob Story",
+        "duration": ""
+      },
+      {
+        "position": "B2",
+        "title": "No Reason",
+        "duration": ""
+      },
+      {
+        "position": "B3",
+        "title": "Little Friend",
+        "duration": ""
+      },
+      {
+        "position": "B4",
+        "title": "Out Of Step",
+        "duration": ""
+      },
+      {
+        "position": "B5",
+        "title": "Cashing In",
+        "duration": ""
+      }
+    ],
+    "community_have": 8580,
+    "community_want": 906,
+    "community_rating_avg": 4.57,
+    "community_rating_count": 500,
+    "barcode": "6 43859 01001 3",
+    "matrix": "DISCHORD-10-A \u24ca [CMS Logo] BW-080911 WHY DID THE PUNK CROSS THE ROAD?",
+    "original_year": null,
+    "instance_id": 100017,
+    "date_added": "2026-05-07T00:00:00Z",
+    "user_rating": 4,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 33960828,
+    "master_id": 13814,
+    "folder_id": 1,
+    "title": "Nevermind",
+    "artists": [
+      "Nirvana"
+    ],
+    "year": 1997,
+    "released": "1997",
+    "country": "UK",
+    "labels": [
+      "Simply Vinyl",
+      "Geffen Records"
+    ],
+    "catnos": [
+      "SVLP 0038",
+      "SVLP 0038"
+    ],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album",
+      "Reissue",
+      "180g"
+    ],
+    "thumb": "artwork/nirvana_nevermind_remastered.jpg",
+    "cover_image": "artwork/nirvana_nevermind_remastered.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Smells Like Teen Spirit",
+        "duration": "5:00"
+      },
+      {
+        "position": "A2",
+        "title": "In Bloom",
+        "duration": "4:13"
+      },
+      {
+        "position": "A3",
+        "title": "Come As You Are",
+        "duration": "3:38"
+      },
+      {
+        "position": "A4",
+        "title": "Breed",
+        "duration": "3:03"
+      },
+      {
+        "position": "A5",
+        "title": "Lithium",
+        "duration": "4:16"
+      },
+      {
+        "position": "A6",
+        "title": "Polly",
+        "duration": "2:56"
+      },
+      {
+        "position": "B1",
+        "title": "Territorial Pissings",
+        "duration": "2:22"
+      },
+      {
+        "position": "B2",
+        "title": "Drain You",
+        "duration": "3:43"
+      },
+      {
+        "position": "B3",
+        "title": "Lounge Act",
+        "duration": "2:35"
+      },
+      {
+        "position": "B4",
+        "title": "Stay Away",
+        "duration": "3:30"
+      },
+      {
+        "position": "B5",
+        "title": "On A Plain",
+        "duration": "3:12"
+      },
+      {
+        "position": "B6",
+        "title": "Something In The Way",
+        "duration": "3:43"
+      }
+    ],
+    "community_have": 24,
+    "community_want": 189,
+    "community_rating_avg": 5.0,
+    "community_rating_count": 3,
+    "barcode": "6 43346 00381 8",
+    "matrix": "SVLP 0038 A-2-1-",
+    "original_year": null,
+    "instance_id": 100018,
+    "date_added": "2026-03-29T00:00:00Z",
+    "user_rating": 0,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 541614,
+    "master_id": 2141,
+    "folder_id": 1,
+    "title": "The Campfire Headphase",
+    "artists": [
+      "Boards Of Canada"
+    ],
+    "year": 2005,
+    "released": "2005-10-17",
+    "country": "UK",
+    "labels": [
+      "Warp Records",
+      "Music70"
+    ],
+    "catnos": [
+      "warplp123",
+      "warplp123"
+    ],
+    "genres": [
+      "Electronic"
+    ],
+    "styles": [
+      "Downtempo",
+      "Ambient"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/boards_of_canada_the_campfire_headphase.jpg",
+    "cover_image": "artwork/boards_of_canada_the_campfire_headphase.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Into The Rainbow Vein",
+        "duration": "0:44"
+      },
+      {
+        "position": "A2",
+        "title": "Chromakey Dreamcoat",
+        "duration": "5:47"
+      },
+      {
+        "position": "A3",
+        "title": "Satellite Anthem Icarus",
+        "duration": "6:08"
+      },
+      {
+        "position": "A4",
+        "title": "Peacock Tail",
+        "duration": "5:24"
+      },
+      {
+        "position": "B1",
+        "title": "Dayvan Cowboy",
+        "duration": "5:00"
+      },
+      {
+        "position": "B2",
+        "title": "A Moment Of Clarity",
+        "duration": "0:51"
+      },
+      {
+        "position": "B3",
+        "title": "'84 Pontiac Dream",
+        "duration": "3:49"
+      },
+      {
+        "position": "B4",
+        "title": "Sherbet Head",
+        "duration": "2:41"
+      },
+      {
+        "position": "C1",
+        "title": "Oscar See Through Red Eye",
+        "duration": "5:08"
+      },
+      {
+        "position": "C2",
+        "title": "Ataronchronon",
+        "duration": "1:14"
+      },
+      {
+        "position": "C3",
+        "title": "Hey Saturday Sun",
+        "duration": "4:56"
+      },
+      {
+        "position": "C4",
+        "title": "Constants Are Changing",
+        "duration": "1:42"
+      },
+      {
+        "position": "D1",
+        "title": "Slow This Bird Down",
+        "duration": "6:09"
+      },
+      {
+        "position": "D2",
+        "title": "Tears From The Compound Eye",
+        "duration": "4:03"
+      },
+      {
+        "position": "D3",
+        "title": "Farewell Fire",
+        "duration": "8:28"
+      }
+    ],
+    "community_have": 3162,
+    "community_want": 3000,
+    "community_rating_avg": 4.53,
+    "community_rating_count": 556,
+    "barcode": "8 01061 01231 1",
+    "matrix": "59577 1A WARPLP 123 NS",
+    "original_year": null,
+    "instance_id": 100019,
+    "date_added": "2026-01-16T00:00:00Z",
+    "user_rating": 0,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 6476151,
+    "master_id": 2193,
+    "folder_id": 1,
+    "title": "In A Beautiful Place Out In The Country",
+    "artists": [
+      "Boards Of Canada"
+    ],
+    "year": 2000,
+    "released": "2000-11-27",
+    "country": "UK",
+    "labels": [
+      "Warp Records",
+      "music70"
+    ],
+    "catnos": [
+      "wap144",
+      "wap144"
+    ],
+    "genres": [
+      "Electronic"
+    ],
+    "styles": [
+      "Downtempo",
+      "Ambient",
+      "IDM"
+    ],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "12\"",
+      "45 RPM",
+      "EP",
+      "Sky Blue, Orlake Pressing"
+    ],
+    "thumb": "artwork/boards_of_canada_in_a_beautiful_place_out_in_the_country.jpg",
+    "cover_image": "artwork/boards_of_canada_in_a_beautiful_place_out_in_the_country.jpg",
+    "tracklist": [
+      {
+        "position": "A1",
+        "title": "Kid For Today",
+        "duration": "6:23"
+      },
+      {
+        "position": "A2",
+        "title": "Amo Bishop Roden",
+        "duration": "6:16"
+      },
+      {
+        "position": "B3",
+        "title": "In A Beautiful Place Out In The Country",
+        "duration": "6:07"
+      },
+      {
+        "position": "B4",
+        "title": "Zoetrope",
+        "duration": "5:18"
+      }
+    ],
+    "community_have": 760,
+    "community_want": 866,
+    "community_rating_avg": 4.79,
+    "community_rating_count": 82,
+    "barcode": "5 021603 144019",
+    "matrix": "WAP \u207a 144 \u207a A3",
+    "original_year": null,
+    "instance_id": 100020,
+    "date_added": "2026-04-07T00:00:00Z",
+    "user_rating": 3,
+    "art_path": null,
+    "notes": ""
+  },
+  {
+    "release_id": 9000000,
+    "master_id": null,
+    "title": "Full Collapse",
+    "artists": [
+      "Thursday"
+    ],
+    "year": 2001,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Post-Hardcore"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/thursday_full_collapse.jpg",
+    "cover_image": "artwork/thursday_full_collapse.jpg",
+    "tracklist": [
+      {
+        "position": "6",
+        "title": "Cross Out The Eyes",
+        "duration": "4:08"
+      }
+    ],
+    "community_have": 236,
+    "community_want": 9,
+    "community_rating_avg": 3.33,
+    "community_rating_count": 103,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100021,
+    "date_added": "2026-06-20T00:00:00Z",
+    "user_rating": 3,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000001,
+    "master_id": null,
+    "title": "Three Cheers for Sweet Revenge",
+    "artists": [
+      "My Chemical Romance"
+    ],
+    "year": 2004,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/my_chemical_romance_three_cheers_for_sweet_revenge.jpg",
+    "cover_image": "artwork/my_chemical_romance_three_cheers_for_sweet_revenge.jpg",
+    "tracklist": [
+      {
+        "position": "6",
+        "title": "The Ghost of You",
+        "duration": "3:14"
+      }
+    ],
+    "community_have": 195,
+    "community_want": 124,
+    "community_rating_avg": 3.64,
+    "community_rating_count": 64,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100022,
+    "date_added": "2026-01-23T00:00:00Z",
+    "user_rating": 4,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000002,
+    "master_id": null,
+    "title": "August And Everything After",
+    "artists": [
+      "Counting Crows"
+    ],
+    "year": 1993,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/counting_crows_august_and_everything_after.jpg",
+    "cover_image": "artwork/counting_crows_august_and_everything_after.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Round Here",
+        "duration": "5:31"
+      },
+      {
+        "position": "2",
+        "title": "Omaha",
+        "duration": "3:39"
+      },
+      {
+        "position": "3",
+        "title": "Mr. Jones",
+        "duration": "4:32"
+      },
+      {
+        "position": "4",
+        "title": "Perfect Blue Buildings",
+        "duration": "5:00"
+      },
+      {
+        "position": "5",
+        "title": "Anna Begins",
+        "duration": "4:31"
+      },
+      {
+        "position": "6",
+        "title": "Time And Time Again",
+        "duration": "5:12"
+      },
+      {
+        "position": "7",
+        "title": "Rain King",
+        "duration": "4:15"
+      },
+      {
+        "position": "8",
+        "title": "Sullivan Street",
+        "duration": "4:28"
+      },
+      {
+        "position": "9",
+        "title": "Ghost Train",
+        "duration": "4:01"
+      },
+      {
+        "position": "10",
+        "title": "Raining In Baltimore",
+        "duration": "4:40"
+      },
+      {
+        "position": "11",
+        "title": "A Murder Of One",
+        "duration": "5:43"
+      }
+    ],
+    "community_have": 383,
+    "community_want": 48,
+    "community_rating_avg": 4.15,
+    "community_rating_count": 21,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100023,
+    "date_added": "2025-11-27T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000003,
+    "master_id": null,
+    "title": "No Answer",
+    "artists": [
+      "Electric Light Orchestra"
+    ],
+    "year": 1971,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Classic Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/electric_light_orchestra_no_answer.jpg",
+    "cover_image": "artwork/electric_light_orchestra_no_answer.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "10538 Overture",
+        "duration": "5:31"
+      }
+    ],
+    "community_have": 188,
+    "community_want": 119,
+    "community_rating_avg": 4.53,
+    "community_rating_count": 141,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100024,
+    "date_added": "2025-12-03T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000004,
+    "master_id": null,
+    "title": "If I Knew What I Knew Then",
+    "artists": [
+      "Hot Rod Circuit"
+    ],
+    "year": 1999,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Emo"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/hot_rod_circuit_if_i_knew_what_i_knew_then.jpg",
+    "cover_image": "artwork/hot_rod_circuit_if_i_knew_what_i_knew_then.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Weak Warm",
+        "duration": "3:45"
+      },
+      {
+        "position": "2",
+        "title": "Irish Car Bomb",
+        "duration": "3:33"
+      },
+      {
+        "position": "3",
+        "title": "Slacker",
+        "duration": "4:19"
+      },
+      {
+        "position": "4",
+        "title": "Remover",
+        "duration": "2:55"
+      },
+      {
+        "position": "5",
+        "title": "Chemistry",
+        "duration": "1:55"
+      },
+      {
+        "position": "6",
+        "title": "Medicated Lungs",
+        "duration": "4:39"
+      },
+      {
+        "position": "7",
+        "title": "Achy Breaky Hockey Hair",
+        "duration": "3:17"
+      },
+      {
+        "position": "8",
+        "title": "Good Intentions",
+        "duration": "2:47"
+      },
+      {
+        "position": "9",
+        "title": "Chinese Cuts",
+        "duration": "3:20"
+      },
+      {
+        "position": "10",
+        "title": "Low",
+        "duration": "3:10"
+      }
+    ],
+    "community_have": 74,
+    "community_want": 94,
+    "community_rating_avg": 3.46,
+    "community_rating_count": 125,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100025,
+    "date_added": "2026-06-10T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "Solid front-to-back, no skips. Rare these days.",
+    "original_year": null
+  },
+  {
+    "release_id": 9000005,
+    "master_id": null,
+    "title": "Sing The Sorrow",
+    "artists": [
+      "AFI"
+    ],
+    "year": 2003,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Punk Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/afi_sing_the_sorrow.jpg",
+    "cover_image": "artwork/afi_sing_the_sorrow.jpg",
+    "tracklist": [
+      {
+        "position": "10",
+        "title": "This Celluloid Dream",
+        "duration": "4:10"
+      }
+    ],
+    "community_have": 279,
+    "community_want": 172,
+    "community_rating_avg": 4.52,
+    "community_rating_count": 34,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100026,
+    "date_added": "2026-03-22T00:00:00Z",
+    "user_rating": 4,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "Been meaning to give this a proper relisten \u2014 revisiting after a couple years.",
+    "original_year": null
+  },
+  {
+    "release_id": 9000006,
+    "master_id": null,
+    "title": "Que Calor, Que Calor",
+    "artists": [
+      "MESTIZA"
+    ],
+    "year": 2026,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Reggaeton"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/mestiza_que_calor_que_calor.jpg",
+    "cover_image": "artwork/mestiza_que_calor_que_calor.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Que Calor, Que Calor",
+        "duration": "3:19"
+      }
+    ],
+    "community_have": 104,
+    "community_want": 167,
+    "community_rating_avg": 4.25,
+    "community_rating_count": 94,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100027,
+    "date_added": "2025-11-14T00:00:00Z",
+    "user_rating": 5,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000007,
+    "master_id": null,
+    "title": "How Strange, Innocence (Anniversary Edition)",
+    "artists": [
+      "Explosions In The Sky"
+    ],
+    "year": 2000,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Post-Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/explosions_in_the_sky_how_strange_innocence_anniversary_edition.jpg",
+    "cover_image": "artwork/explosions_in_the_sky_how_strange_innocence_anniversary_edition.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "A Song for Our Fathers - Remastered",
+        "duration": "5:44"
+      },
+      {
+        "position": "2",
+        "title": "Snow And Lights - Remastered",
+        "duration": "8:17"
+      },
+      {
+        "position": "3",
+        "title": "Magic Hours - Remastered",
+        "duration": "8:33"
+      },
+      {
+        "position": "4",
+        "title": "Look Into The Air - Remastered",
+        "duration": "5:25"
+      },
+      {
+        "position": "5",
+        "title": "Glittering Blackness - Remastered",
+        "duration": "5:28"
+      },
+      {
+        "position": "6",
+        "title": "Time Stops - Remastered",
+        "duration": "9:55"
+      },
+      {
+        "position": "7",
+        "title": "Remember Me As A Time Of Day - Remastered",
+        "duration": "5:18"
+      }
+    ],
+    "community_have": 234,
+    "community_want": 44,
+    "community_rating_avg": 4.15,
+    "community_rating_count": 86,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100028,
+    "date_added": "2026-02-20T00:00:00Z",
+    "user_rating": 4,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000008,
+    "master_id": null,
+    "title": "True Blue",
+    "artists": [
+      "Madonna"
+    ],
+    "year": 1986,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Pop"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/madonna_true_blue.jpg",
+    "cover_image": "artwork/madonna_true_blue.jpg",
+    "tracklist": [
+      {
+        "position": "2",
+        "title": "Open Your Heart",
+        "duration": "4:13"
+      }
+    ],
+    "community_have": 387,
+    "community_want": 175,
+    "community_rating_avg": 4.79,
+    "community_rating_count": 69,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100029,
+    "date_added": "2026-01-23T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000009,
+    "master_id": null,
+    "title": "Midnight Marauders",
+    "artists": [
+      "A Tribe Called Quest"
+    ],
+    "year": 1993,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Hip-Hop"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/a_tribe_called_quest_midnight_marauders.jpg",
+    "cover_image": "artwork/a_tribe_called_quest_midnight_marauders.jpg",
+    "tracklist": [
+      {
+        "position": "2",
+        "title": "Steve Biko (Stir It Up)",
+        "duration": "3:11"
+      }
+    ],
+    "community_have": 150,
+    "community_want": 182,
+    "community_rating_avg": 3.26,
+    "community_rating_count": 32,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100030,
+    "date_added": "2025-11-30T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000010,
+    "master_id": null,
+    "title": "Retratos",
+    "artists": [
+      "L\u00f4 Borges"
+    ],
+    "year": 2004,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Mpb"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/l\u00f4_borges_retratos.jpg",
+    "cover_image": "artwork/l\u00f4_borges_retratos.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Um Girassol Da Cor Do Seu Cabelo - Ao Vivo",
+        "duration": "4:29"
+      },
+      {
+        "position": "2",
+        "title": "Clube Da Esquina N\u00ba 2",
+        "duration": "3:59"
+      },
+      {
+        "position": "3",
+        "title": "Equatorial",
+        "duration": "2:38"
+      },
+      {
+        "position": "4",
+        "title": "Vento De Maio / M\u00fasica Incidental: Um Girassol Da Cor Do Seu Cabelo",
+        "duration": "4:25"
+      },
+      {
+        "position": "5",
+        "title": "Nuvem Cigana",
+        "duration": "3:35"
+      },
+      {
+        "position": "6",
+        "title": "Viver, Viver",
+        "duration": "3:55"
+      },
+      {
+        "position": "7",
+        "title": "O Trem Azul",
+        "duration": "4:03"
+      },
+      {
+        "position": "8",
+        "title": "Paisagem Da Janela - Ao Vivo",
+        "duration": "2:56"
+      },
+      {
+        "position": "9",
+        "title": "A Via-L\u00e1ctea",
+        "duration": "3:02"
+      },
+      {
+        "position": "10",
+        "title": "Tudo Que Voc\u00ea Podia Ser",
+        "duration": "3:48"
+      },
+      {
+        "position": "11",
+        "title": "Can\u00e7\u00e3o Postal - Ao Vivo",
+        "duration": "3:56"
+      },
+      {
+        "position": "12",
+        "title": "Chuva Da Montanha",
+        "duration": "2:45"
+      }
+    ],
+    "community_have": 370,
+    "community_want": 80,
+    "community_rating_avg": 4.46,
+    "community_rating_count": 147,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100031,
+    "date_added": "2026-07-02T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000011,
+    "master_id": null,
+    "title": "Frame & Canvas",
+    "artists": [
+      "Braid"
+    ],
+    "year": 1998,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Emo"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/braid_frame_canvas.jpg",
+    "cover_image": "artwork/braid_frame_canvas.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "The New Nathan Detroits",
+        "duration": "4:17"
+      },
+      {
+        "position": "2",
+        "title": "Killing A Camera",
+        "duration": "2:33"
+      },
+      {
+        "position": "3",
+        "title": "Never Will Come For Us",
+        "duration": "3:31"
+      },
+      {
+        "position": "4",
+        "title": "First Day Back",
+        "duration": "3:22"
+      },
+      {
+        "position": "5",
+        "title": "Collect From Clark Kent",
+        "duration": "3:25"
+      },
+      {
+        "position": "6",
+        "title": "Milwaukee Sky Rocket",
+        "duration": "3:12"
+      },
+      {
+        "position": "7",
+        "title": "A Dozen Roses",
+        "duration": "4:15"
+      },
+      {
+        "position": "8",
+        "title": "Urbana's Too Dark",
+        "duration": "3:25"
+      },
+      {
+        "position": "9",
+        "title": "Consolation Prizefighter",
+        "duration": "3:13"
+      },
+      {
+        "position": "10",
+        "title": "Ariel",
+        "duration": "2:37"
+      },
+      {
+        "position": "11",
+        "title": "Breathe In",
+        "duration": "2:15"
+      },
+      {
+        "position": "12",
+        "title": "I Keep A Diary",
+        "duration": "5:46"
+      }
+    ],
+    "community_have": 75,
+    "community_want": 51,
+    "community_rating_avg": 4.74,
+    "community_rating_count": 5,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100032,
+    "date_added": "2026-05-01T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "Didn't expect to like this as much as I did. Kept it on repeat for a week.",
+    "original_year": null
+  },
+  {
+    "release_id": 9000012,
+    "master_id": null,
+    "title": "Face the Music",
+    "artists": [
+      "Electric Light Orchestra"
+    ],
+    "year": 1975,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Classic Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/electric_light_orchestra_face_the_music.jpg",
+    "cover_image": "artwork/electric_light_orchestra_face_the_music.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Fire On High",
+        "duration": "5:31"
+      }
+    ],
+    "community_have": 14,
+    "community_want": 179,
+    "community_rating_avg": 4.39,
+    "community_rating_count": 133,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100033,
+    "date_added": "2025-11-28T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000013,
+    "master_id": null,
+    "title": "Wildlife",
+    "artists": [
+      "La Dispute"
+    ],
+    "year": 2011,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Post-Hardcore"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/la_dispute_wildlife.jpg",
+    "cover_image": "artwork/la_dispute_wildlife.jpg",
+    "tracklist": [
+      {
+        "position": "13",
+        "title": "all our bruised bodies and the whole heart shrinks",
+        "duration": "5:04"
+      }
+    ],
+    "community_have": 254,
+    "community_want": 127,
+    "community_rating_avg": 4.11,
+    "community_rating_count": 44,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100034,
+    "date_added": "2026-06-01T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000014,
+    "master_id": null,
+    "title": "This Is What I Mean",
+    "artists": [
+      "Stormzy",
+      "Debbie",
+      "Jacob Collier"
+    ],
+    "year": 2022,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "https://i.scdn.co/image/ab67616d0000b273df075bcefe46d7ca94692651",
+    "cover_image": "https://i.scdn.co/image/ab67616d0000b273df075bcefe46d7ca94692651",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Fire + Water",
+        "duration": "8:17"
+      },
+      {
+        "position": "2",
+        "title": "This Is What I Mean",
+        "duration": "5:25"
+      },
+      {
+        "position": "3",
+        "title": "Firebabe",
+        "duration": "3:40"
+      },
+      {
+        "position": "4",
+        "title": "Please",
+        "duration": "2:54"
+      },
+      {
+        "position": "5",
+        "title": "Need You",
+        "duration": "3:17"
+      },
+      {
+        "position": "6",
+        "title": "Hide & Seek",
+        "duration": "3:27"
+      },
+      {
+        "position": "7",
+        "title": "My Presidents Are Black",
+        "duration": "4:21"
+      },
+      {
+        "position": "8",
+        "title": "Sampha's Plea",
+        "duration": "2:46"
+      },
+      {
+        "position": "9",
+        "title": "Holy Spirit",
+        "duration": "4:41"
+      },
+      {
+        "position": "10",
+        "title": "Bad Blood",
+        "duration": "4:03"
+      },
+      {
+        "position": "11",
+        "title": "I Got My Smile Back",
+        "duration": "4:11"
+      },
+      {
+        "position": "12",
+        "title": "Give It To The Water",
+        "duration": "4:12"
+      }
+    ],
+    "community_have": 392,
+    "community_want": 63,
+    "community_rating_avg": 4.45,
+    "community_rating_count": 64,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100035,
+    "date_added": "2025-11-11T00:00:00Z",
+    "user_rating": 5,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000015,
+    "master_id": null,
+    "title": "Remain in Light",
+    "artists": [
+      "Talking Heads"
+    ],
+    "year": 1980,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "New Wave"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/talking_heads_remain_in_light.jpg",
+    "cover_image": "artwork/talking_heads_remain_in_light.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Born Under Punches (The Heat Goes On)",
+        "duration": "5:48"
+      },
+      {
+        "position": "2",
+        "title": "Crosseyed and Painless",
+        "duration": "4:45"
+      },
+      {
+        "position": "3",
+        "title": "The Great Curve",
+        "duration": "6:27"
+      },
+      {
+        "position": "4",
+        "title": "Once in a Lifetime",
+        "duration": "4:19"
+      },
+      {
+        "position": "5",
+        "title": "Houses in Motion",
+        "duration": "4:33"
+      },
+      {
+        "position": "6",
+        "title": "Seen and Not Seen",
+        "duration": "3:24"
+      },
+      {
+        "position": "7",
+        "title": "Listening Wind",
+        "duration": "4:43"
+      },
+      {
+        "position": "8",
+        "title": "The Overload",
+        "duration": "6:00"
+      }
+    ],
+    "community_have": 318,
+    "community_want": 50,
+    "community_rating_avg": 3.04,
+    "community_rating_count": 102,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100036,
+    "date_added": "2026-02-04T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000016,
+    "master_id": null,
+    "title": "( )",
+    "artists": [
+      "Sigur R\u00f3s"
+    ],
+    "year": 2002,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Post-Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/sigur_r\u00f3s__.jpg",
+    "cover_image": "artwork/sigur_r\u00f3s__.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Untitled #1 - Vaka",
+        "duration": "6:38"
+      }
+    ],
+    "community_have": 376,
+    "community_want": 140,
+    "community_rating_avg": 4.44,
+    "community_rating_count": 13,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100037,
+    "date_added": "2026-02-16T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "Solid front-to-back, no skips. Rare these days.",
+    "original_year": null
+  },
+  {
+    "release_id": 9000017,
+    "master_id": null,
+    "title": "Let It Bleed",
+    "artists": [
+      "The Rolling Stones"
+    ],
+    "year": 1969,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Classic Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/the_rolling_stones_let_it_bleed.jpg",
+    "cover_image": "artwork/the_rolling_stones_let_it_bleed.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Gimme Shelter",
+        "duration": "4:30"
+      },
+      {
+        "position": "2",
+        "title": "Love In Vain",
+        "duration": "4:19"
+      },
+      {
+        "position": "3",
+        "title": "Country Honk",
+        "duration": "3:07"
+      },
+      {
+        "position": "4",
+        "title": "Live With Me",
+        "duration": "3:33"
+      },
+      {
+        "position": "5",
+        "title": "Let It Bleed",
+        "duration": "5:27"
+      },
+      {
+        "position": "6",
+        "title": "Midnight Rambler",
+        "duration": "6:52"
+      },
+      {
+        "position": "7",
+        "title": "You Got The Silver",
+        "duration": "2:50"
+      },
+      {
+        "position": "8",
+        "title": "Monkey Man",
+        "duration": "4:11"
+      },
+      {
+        "position": "9",
+        "title": "You Can't Always Get What You Want",
+        "duration": "7:28"
+      }
+    ],
+    "community_have": 10,
+    "community_want": 24,
+    "community_rating_avg": 3.35,
+    "community_rating_count": 119,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100038,
+    "date_added": "2025-12-02T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000018,
+    "master_id": null,
+    "title": "Doolittle",
+    "artists": [
+      "Pixies"
+    ],
+    "year": 1989,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Alternative Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/pixies_doolittle.jpg",
+    "cover_image": "artwork/pixies_doolittle.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Debaser",
+        "duration": "2:51"
+      },
+      {
+        "position": "2",
+        "title": "Tame",
+        "duration": "1:56"
+      },
+      {
+        "position": "3",
+        "title": "Wave Of Mutilation",
+        "duration": "2:03"
+      },
+      {
+        "position": "4",
+        "title": "I Bleed",
+        "duration": "2:34"
+      },
+      {
+        "position": "5",
+        "title": "Here Comes Your Man",
+        "duration": "3:21"
+      },
+      {
+        "position": "6",
+        "title": "Dead",
+        "duration": "2:21"
+      },
+      {
+        "position": "7",
+        "title": "Monkey Gone to Heaven",
+        "duration": "2:55"
+      },
+      {
+        "position": "8",
+        "title": "Mr. Grieves",
+        "duration": "2:05"
+      },
+      {
+        "position": "9",
+        "title": "Crackity Jones",
+        "duration": "1:24"
+      },
+      {
+        "position": "10",
+        "title": "La La Love You",
+        "duration": "2:43"
+      },
+      {
+        "position": "11",
+        "title": "No 13 Baby",
+        "duration": "3:51"
+      },
+      {
+        "position": "12",
+        "title": "There Goes My Gun",
+        "duration": "1:49"
+      },
+      {
+        "position": "13",
+        "title": "Hey",
+        "duration": "3:30"
+      },
+      {
+        "position": "14",
+        "title": "Silver",
+        "duration": "2:25"
+      },
+      {
+        "position": "15",
+        "title": "Gouge Away",
+        "duration": "2:42"
+      }
+    ],
+    "community_have": 299,
+    "community_want": 95,
+    "community_rating_avg": 3.63,
+    "community_rating_count": 8,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100039,
+    "date_added": "2026-03-07T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000019,
+    "master_id": null,
+    "title": "Yankee Hotel Foxtrot",
+    "artists": [
+      "Wilco"
+    ],
+    "year": 2003,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Alt-Country"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/wilco_yankee_hotel_foxtrot.jpg",
+    "cover_image": "artwork/wilco_yankee_hotel_foxtrot.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "I Am Trying to Break Your Heart",
+        "duration": "6:58"
+      },
+      {
+        "position": "2",
+        "title": "Kamera",
+        "duration": "3:30"
+      },
+      {
+        "position": "3",
+        "title": "Radio Cure",
+        "duration": "5:08"
+      },
+      {
+        "position": "4",
+        "title": "War on War",
+        "duration": "3:47"
+      },
+      {
+        "position": "5",
+        "title": "Jesus, Etc.",
+        "duration": "3:51"
+      },
+      {
+        "position": "8",
+        "title": "I'm the Man Who Loves You",
+        "duration": "3:55"
+      },
+      {
+        "position": "9",
+        "title": "Pot Kettle Black",
+        "duration": "4:00"
+      },
+      {
+        "position": "10",
+        "title": "Poor Places",
+        "duration": "5:15"
+      },
+      {
+        "position": "11",
+        "title": "Reservations",
+        "duration": "7:23"
+      }
+    ],
+    "community_have": 226,
+    "community_want": 195,
+    "community_rating_avg": 3.98,
+    "community_rating_count": 89,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100040,
+    "date_added": "2026-01-17T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000020,
+    "master_id": null,
+    "title": "Dois Momentos",
+    "artists": [
+      "Novos Baianos"
+    ],
+    "year": 1973,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Mpb"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/novos_baianos_dois_momentos.jpg",
+    "cover_image": "artwork/novos_baianos_dois_momentos.jpg",
+    "tracklist": [
+      {
+        "position": "10",
+        "title": "Sorrir e cantar como Bahia",
+        "duration": "3:38"
+      },
+      {
+        "position": "13",
+        "title": "O samba da minha terra",
+        "duration": "3:27"
+      }
+    ],
+    "community_have": 353,
+    "community_want": 58,
+    "community_rating_avg": 4.34,
+    "community_rating_count": 100,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100041,
+    "date_added": "2026-06-29T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000021,
+    "master_id": null,
+    "title": "Cryptograms",
+    "artists": [
+      "Deerhunter"
+    ],
+    "year": 2007,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Shoegaze"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/deerhunter_cryptograms.jpg",
+    "cover_image": "artwork/deerhunter_cryptograms.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Intro",
+        "duration": "2:50"
+      },
+      {
+        "position": "2",
+        "title": "Cryptograms",
+        "duration": "4:17"
+      },
+      {
+        "position": "3",
+        "title": "White Ink",
+        "duration": "4:59"
+      },
+      {
+        "position": "4",
+        "title": "Lake Somerset",
+        "duration": "3:49"
+      },
+      {
+        "position": "5",
+        "title": "Providence",
+        "duration": "4:08"
+      },
+      {
+        "position": "6",
+        "title": "Octet",
+        "duration": "7:50"
+      },
+      {
+        "position": "7",
+        "title": "Red Ink",
+        "duration": "3:40"
+      },
+      {
+        "position": "8",
+        "title": "Spring Hall Convert",
+        "duration": "4:29"
+      },
+      {
+        "position": "9",
+        "title": "Strange Lights",
+        "duration": "3:38"
+      },
+      {
+        "position": "10",
+        "title": "Hazel St",
+        "duration": "3:48"
+      },
+      {
+        "position": "11",
+        "title": "Tape Hiss Orchid",
+        "duration": "1:12"
+      },
+      {
+        "position": "12",
+        "title": "Heatherwood",
+        "duration": "3:37"
+      }
+    ],
+    "community_have": 157,
+    "community_want": 198,
+    "community_rating_avg": 4.06,
+    "community_rating_count": 36,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100042,
+    "date_added": "2026-04-19T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000022,
+    "master_id": null,
+    "title": "Rita Lee",
+    "artists": [
+      "Rita Lee",
+      "Roberto De Carvalho"
+    ],
+    "year": 1979,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "https://i.scdn.co/image/ab67616d0000b273471646faaecf4b53e95b5c1c",
+    "cover_image": "https://i.scdn.co/image/ab67616d0000b273471646faaecf4b53e95b5c1c",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Chega Mais",
+        "duration": "3:54"
+      }
+    ],
+    "community_have": 367,
+    "community_want": 101,
+    "community_rating_avg": 4.58,
+    "community_rating_count": 27,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100043,
+    "date_added": "2026-02-15T00:00:00Z",
+    "user_rating": 4,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000023,
+    "master_id": null,
+    "title": "Control",
+    "artists": [
+      "Janet Jackson"
+    ],
+    "year": 1986,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Pop"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/janet_jackson_control.jpg",
+    "cover_image": "artwork/janet_jackson_control.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Control",
+        "duration": "5:53"
+      },
+      {
+        "position": "2",
+        "title": "Nasty",
+        "duration": "4:03"
+      },
+      {
+        "position": "3",
+        "title": "What Have You Done For Me Lately",
+        "duration": "4:59"
+      },
+      {
+        "position": "4",
+        "title": "You Can Be Mine",
+        "duration": "5:15"
+      },
+      {
+        "position": "5",
+        "title": "The Pleasure Principle",
+        "duration": "4:57"
+      },
+      {
+        "position": "6",
+        "title": "When I Think Of You",
+        "duration": "3:55"
+      },
+      {
+        "position": "7",
+        "title": "He Doesn't Know I'm Alive",
+        "duration": "3:29"
+      },
+      {
+        "position": "8",
+        "title": "Let's Wait Awhile",
+        "duration": "4:37"
+      },
+      {
+        "position": "9",
+        "title": "Funny How Time Flies (When You're Having Fun)",
+        "duration": "4:28"
+      }
+    ],
+    "community_have": 99,
+    "community_want": 27,
+    "community_rating_avg": 4.37,
+    "community_rating_count": 126,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100044,
+    "date_added": "2026-04-07T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "Didn't expect to like this as much as I did. Kept it on repeat for a week.",
+    "original_year": null
+  },
+  {
+    "release_id": 9000024,
+    "master_id": null,
+    "title": "Homogenic",
+    "artists": [
+      "Bj\u00f6rk"
+    ],
+    "year": 1997,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Electronic"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/bj\u00f6rk_homogenic.jpg",
+    "cover_image": "artwork/bj\u00f6rk_homogenic.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Hunter",
+        "duration": "4:13"
+      },
+      {
+        "position": "2",
+        "title": "Joga",
+        "duration": "5:05"
+      },
+      {
+        "position": "3",
+        "title": "Unravel",
+        "duration": "3:17"
+      },
+      {
+        "position": "4",
+        "title": "Bachelorette - Family Tree Version",
+        "duration": "5:16"
+      },
+      {
+        "position": "5",
+        "title": "All Neon Like",
+        "duration": "5:52"
+      },
+      {
+        "position": "6",
+        "title": "5 Years",
+        "duration": "4:29"
+      },
+      {
+        "position": "7",
+        "title": "Immature",
+        "duration": "3:06"
+      },
+      {
+        "position": "8",
+        "title": "Alarm Call",
+        "duration": "4:19"
+      },
+      {
+        "position": "9",
+        "title": "Pluto",
+        "duration": "3:19"
+      },
+      {
+        "position": "10",
+        "title": "All Is Full of Love",
+        "duration": "4:32"
+      }
+    ],
+    "community_have": 84,
+    "community_want": 82,
+    "community_rating_avg": 4.53,
+    "community_rating_count": 37,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100045,
+    "date_added": "2026-06-16T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "Grower, not a shower. Took three listens before it clicked.",
+    "original_year": null
+  },
+  {
+    "release_id": 9000025,
+    "master_id": null,
+    "title": "Movie Music Vol. 2",
+    "artists": [
+      "Braid"
+    ],
+    "year": 2000,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Emo"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/braid_movie_music_vol_2.jpg",
+    "cover_image": "artwork/braid_movie_music_vol_2.jpg",
+    "tracklist": [
+      {
+        "position": "17",
+        "title": "There Is A Light That Never Goes Out",
+        "duration": "2:41"
+      }
+    ],
+    "community_have": 339,
+    "community_want": 97,
+    "community_rating_avg": 4.29,
+    "community_rating_count": 41,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100046,
+    "date_added": "2025-12-03T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000026,
+    "master_id": null,
+    "title": "Thriller",
+    "artists": [
+      "Michael Jackson"
+    ],
+    "year": 1982,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "https://i.scdn.co/image/ab67616d0000b27332a7d87248d1b75463483df5",
+    "cover_image": "https://i.scdn.co/image/ab67616d0000b27332a7d87248d1b75463483df5",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Wanna Be Startin' Somethin'",
+        "duration": "6:03"
+      },
+      {
+        "position": "2",
+        "title": "Baby Be Mine",
+        "duration": "4:20"
+      },
+      {
+        "position": "3",
+        "title": "The Girl Is Mine (with Paul McCartney)",
+        "duration": "3:42"
+      },
+      {
+        "position": "4",
+        "title": "Thriller",
+        "duration": "5:58"
+      },
+      {
+        "position": "5",
+        "title": "Beat It",
+        "duration": "4:18"
+      },
+      {
+        "position": "6",
+        "title": "Billie Jean",
+        "duration": "4:53"
+      },
+      {
+        "position": "7",
+        "title": "Human Nature",
+        "duration": "4:05"
+      },
+      {
+        "position": "8",
+        "title": "P.Y.T. (Pretty Young Thing)",
+        "duration": "3:58"
+      },
+      {
+        "position": "9",
+        "title": "The Lady in My Life",
+        "duration": "4:58"
+      }
+    ],
+    "community_have": 375,
+    "community_want": 73,
+    "community_rating_avg": 3.33,
+    "community_rating_count": 15,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100047,
+    "date_added": "2026-07-04T00:00:00Z",
+    "user_rating": 5,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000027,
+    "master_id": null,
+    "title": "Spanish Chica",
+    "artists": [
+      "MESTIZA"
+    ],
+    "year": 2026,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Reggaeton"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/mestiza_spanish_chica.jpg",
+    "cover_image": "artwork/mestiza_spanish_chica.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Te Doy La Libertad",
+        "duration": "4:04"
+      },
+      {
+        "position": "2",
+        "title": "Salam",
+        "duration": "2:53"
+      },
+      {
+        "position": "7",
+        "title": "Que Calor, Que Calor",
+        "duration": "3:19"
+      },
+      {
+        "position": "9",
+        "title": "Enamor\u00e1",
+        "duration": "2:52"
+      },
+      {
+        "position": "10",
+        "title": "Campanera",
+        "duration": "2:39"
+      },
+      {
+        "position": "12",
+        "title": "Rintintin",
+        "duration": "2:43"
+      }
+    ],
+    "community_have": 396,
+    "community_want": 116,
+    "community_rating_avg": 4.18,
+    "community_rating_count": 42,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100048,
+    "date_added": "2025-12-12T00:00:00Z",
+    "user_rating": 4,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000028,
+    "master_id": null,
+    "title": "Cantiga De Longe",
+    "artists": [
+      "Edu Lobo",
+      "Airto Moreira",
+      "Hermeto Pascoal",
+      "Claudio Slow",
+      "Jose Mariono"
+    ],
+    "year": 1970,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "https://i.scdn.co/image/ab67616d0000b27356fd333b991827ebb9aea812",
+    "cover_image": "https://i.scdn.co/image/ab67616d0000b27356fd333b991827ebb9aea812",
+    "tracklist": [
+      {
+        "position": "8",
+        "title": "Zanzibar",
+        "duration": "3:17"
+      }
+    ],
+    "community_have": 184,
+    "community_want": 48,
+    "community_rating_avg": 3.51,
+    "community_rating_count": 25,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100049,
+    "date_added": "2026-05-03T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "Solid front-to-back, no skips. Rare these days.",
+    "original_year": null
+  },
+  {
+    "release_id": 9000029,
+    "master_id": null,
+    "title": "Gal Costa",
+    "artists": [
+      "Gal Costa"
+    ],
+    "year": 1969,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Bossa Nova"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/gal_costa_gal_costa.jpg",
+    "cover_image": "artwork/gal_costa_gal_costa.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Nao Identificado",
+        "duration": "3:18"
+      },
+      {
+        "position": "2",
+        "title": "Sebastiana",
+        "duration": "2:24"
+      },
+      {
+        "position": "3",
+        "title": "Lost In The Paradise",
+        "duration": "2:51"
+      },
+      {
+        "position": "4",
+        "title": "Namorinho De Port\u00e3o",
+        "duration": "2:33"
+      },
+      {
+        "position": "5",
+        "title": "Saudosismo",
+        "duration": "3:10"
+      },
+      {
+        "position": "6",
+        "title": "Se Voc\u00ea Pensa",
+        "duration": "3:14"
+      },
+      {
+        "position": "7",
+        "title": "Vou Recome\u00e7ar",
+        "duration": "3:24"
+      },
+      {
+        "position": "8",
+        "title": "Divino Maravilhoso",
+        "duration": "4:20"
+      },
+      {
+        "position": "9",
+        "title": "Que Pena (Ele J\u00e1 N\u00e3o Gosta Mais De Mim)",
+        "duration": "3:34"
+      },
+      {
+        "position": "10",
+        "title": "Baby",
+        "duration": "3:32"
+      },
+      {
+        "position": "11",
+        "title": "A Coisa Mais Linda Que Existe",
+        "duration": "4:00"
+      },
+      {
+        "position": "12",
+        "title": "Deus \u00c9 O Amor",
+        "duration": "3:04"
+      }
+    ],
+    "community_have": 150,
+    "community_want": 180,
+    "community_rating_avg": 3.05,
+    "community_rating_count": 1,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100050,
+    "date_added": "2026-07-22T00:00:00Z",
+    "user_rating": 5,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000030,
+    "master_id": null,
+    "title": "Salam",
+    "artists": [
+      "MESTIZA"
+    ],
+    "year": 2026,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Reggaeton"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/mestiza_salam.jpg",
+    "cover_image": "artwork/mestiza_salam.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Salam",
+        "duration": "2:53"
+      }
+    ],
+    "community_have": 287,
+    "community_want": 8,
+    "community_rating_avg": 3.69,
+    "community_rating_count": 102,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100051,
+    "date_added": "2025-11-15T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000031,
+    "master_id": null,
+    "title": "Spiderland",
+    "artists": [
+      "Slint"
+    ],
+    "year": 1991,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Post-Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/slint_spiderland.jpg",
+    "cover_image": "artwork/slint_spiderland.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Breadcrumb Trail",
+        "duration": "5:55"
+      },
+      {
+        "position": "2",
+        "title": "Nosferatu Man",
+        "duration": "5:34"
+      },
+      {
+        "position": "3",
+        "title": "Don, Aman",
+        "duration": "6:28"
+      },
+      {
+        "position": "4",
+        "title": "Washer",
+        "duration": "8:50"
+      },
+      {
+        "position": "5",
+        "title": "For Dinner\u2026",
+        "duration": "5:05"
+      },
+      {
+        "position": "6",
+        "title": "Good Morning, Captain",
+        "duration": "7:39"
+      }
+    ],
+    "community_have": 258,
+    "community_want": 187,
+    "community_rating_avg": 4.51,
+    "community_rating_count": 50,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100052,
+    "date_added": "2026-07-05T00:00:00Z",
+    "user_rating": 3,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "Weird pacing but the highs are genuinely high.",
+    "original_year": null
+  },
+  {
+    "release_id": 9000032,
+    "master_id": null,
+    "title": "Body Talk",
+    "artists": [
+      "Robyn"
+    ],
+    "year": 2010,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Pop"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/robyn_body_talk.jpg",
+    "cover_image": "artwork/robyn_body_talk.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Dancing On My Own - Radio Edit",
+        "duration": "4:38"
+      },
+      {
+        "position": "2",
+        "title": "Fembot",
+        "duration": "3:34"
+      },
+      {
+        "position": "3",
+        "title": "Don't Fucking Tell Me What To Do",
+        "duration": "4:09"
+      },
+      {
+        "position": "4",
+        "title": "Indestructible",
+        "duration": "3:40"
+      },
+      {
+        "position": "5",
+        "title": "Time Machine",
+        "duration": "3:34"
+      },
+      {
+        "position": "6",
+        "title": "Love Kills",
+        "duration": "4:28"
+      },
+      {
+        "position": "7",
+        "title": "Hang With Me",
+        "duration": "4:19"
+      },
+      {
+        "position": "8",
+        "title": "Call Your Girlfriend",
+        "duration": "3:47"
+      },
+      {
+        "position": "9",
+        "title": "None Of Dem",
+        "duration": "5:11"
+      },
+      {
+        "position": "10",
+        "title": "We Dance To The Beat",
+        "duration": "4:26"
+      },
+      {
+        "position": "11",
+        "title": "U Should Know Better",
+        "duration": "4:01"
+      },
+      {
+        "position": "12",
+        "title": "Dancehall Queen",
+        "duration": "3:37"
+      },
+      {
+        "position": "13",
+        "title": "Get Myself Together",
+        "duration": "3:40"
+      },
+      {
+        "position": "14",
+        "title": "In My Eyes",
+        "duration": "3:55"
+      },
+      {
+        "position": "15",
+        "title": "Stars 4-Ever",
+        "duration": "3:59"
+      }
+    ],
+    "community_have": 257,
+    "community_want": 101,
+    "community_rating_avg": 3.42,
+    "community_rating_count": 57,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100053,
+    "date_added": "2026-03-22T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000033,
+    "master_id": null,
+    "title": "Melodrama",
+    "artists": [
+      "Lorde"
+    ],
+    "year": 2017,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Pop"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/lorde_melodrama.jpg",
+    "cover_image": "artwork/lorde_melodrama.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Green Light",
+        "duration": "3:54"
+      },
+      {
+        "position": "2",
+        "title": "Sober",
+        "duration": "3:17"
+      },
+      {
+        "position": "3",
+        "title": "Homemade Dynamite",
+        "duration": "3:09"
+      },
+      {
+        "position": "4",
+        "title": "The Louvre",
+        "duration": "4:31"
+      },
+      {
+        "position": "5",
+        "title": "Liability",
+        "duration": "2:51"
+      },
+      {
+        "position": "6",
+        "title": "Hard Feelings/Loveless",
+        "duration": "6:07"
+      },
+      {
+        "position": "7",
+        "title": "Sober II (Melodrama)",
+        "duration": "2:58"
+      },
+      {
+        "position": "8",
+        "title": "Writer In The Dark",
+        "duration": "3:36"
+      },
+      {
+        "position": "9",
+        "title": "Supercut",
+        "duration": "4:37"
+      },
+      {
+        "position": "10",
+        "title": "Liability (Reprise)",
+        "duration": "2:16"
+      },
+      {
+        "position": "11",
+        "title": "Perfect Places",
+        "duration": "3:41"
+      }
+    ],
+    "community_have": 92,
+    "community_want": 164,
+    "community_rating_avg": 3.64,
+    "community_rating_count": 120,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100054,
+    "date_added": "2025-12-23T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000034,
+    "master_id": null,
+    "title": "Is This Thing Loaded?",
+    "artists": [
+      "Northstar"
+    ],
+    "year": 2002,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Emo"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/northstar_is_this_thing_loaded.jpg",
+    "cover_image": "artwork/northstar_is_this_thing_loaded.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Rigged & Ready",
+        "duration": "4:57"
+      },
+      {
+        "position": "2",
+        "title": "Is This Thing Loaded?",
+        "duration": "3:40"
+      },
+      {
+        "position": "3",
+        "title": "Broken Parachute",
+        "duration": "4:32"
+      },
+      {
+        "position": "4",
+        "title": "My Ricochet",
+        "duration": "4:21"
+      },
+      {
+        "position": "5",
+        "title": "My Wishing Well Disease",
+        "duration": "2:51"
+      },
+      {
+        "position": "6",
+        "title": "Taker Not a Giver",
+        "duration": "5:23"
+      },
+      {
+        "position": "7",
+        "title": "Daybreak",
+        "duration": "3:22"
+      },
+      {
+        "position": "8",
+        "title": "Train Hopping in Dixieland",
+        "duration": "3:17"
+      },
+      {
+        "position": "9",
+        "title": "Cinderella",
+        "duration": "3:06"
+      },
+      {
+        "position": "10",
+        "title": "Black Heart Valentine",
+        "duration": "4:26"
+      }
+    ],
+    "community_have": 5,
+    "community_want": 70,
+    "community_rating_avg": 3.17,
+    "community_rating_count": 120,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100055,
+    "date_added": "2026-06-24T00:00:00Z",
+    "user_rating": 3,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000035,
+    "master_id": null,
+    "title": "This Desert Life",
+    "artists": [
+      "Counting Crows"
+    ],
+    "year": 1999,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/counting_crows_this_desert_life.jpg",
+    "cover_image": "artwork/counting_crows_this_desert_life.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Hanginaround",
+        "duration": "4:07"
+      },
+      {
+        "position": "2",
+        "title": "Mrs. Potters Lullaby",
+        "duration": "7:45"
+      },
+      {
+        "position": "3",
+        "title": "Amy Hit The Atmosphere",
+        "duration": "4:36"
+      },
+      {
+        "position": "7",
+        "title": "Colorblind",
+        "duration": "3:23"
+      }
+    ],
+    "community_have": 157,
+    "community_want": 92,
+    "community_rating_avg": 4.73,
+    "community_rating_count": 28,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100056,
+    "date_added": "2026-05-06T00:00:00Z",
+    "user_rating": 4,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "Didn't expect to like this as much as I did. Kept it on repeat for a week.",
+    "original_year": null
+  },
+  {
+    "release_id": 9000036,
+    "master_id": null,
+    "title": "James Brown Live At The Apollo, 1962",
+    "artists": [
+      "James Brown",
+      "Cy Langston"
+    ],
+    "year": 1963,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Rock"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "https://i.scdn.co/image/ab67616d0000b273fdb85e117008b8f7d5add502",
+    "cover_image": "https://i.scdn.co/image/ab67616d0000b273fdb85e117008b8f7d5add502",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Introduction By Fats Gonder/ Opening Fanfare - Live At The Apollo Theater, 1962",
+        "duration": "1:48"
+      },
+      {
+        "position": "2",
+        "title": "I'll Go Crazy - Live At The Apollo Theater, 1962",
+        "duration": "2:05"
+      },
+      {
+        "position": "3",
+        "title": "Try Me - Live At The Apollo Theater/1962",
+        "duration": "2:14"
+      },
+      {
+        "position": "4",
+        "title": "Instrumental Bridge #1 - Live At The Apollo Theater/1962",
+        "duration": "0:12"
+      },
+      {
+        "position": "5",
+        "title": "Think - Live At The Apollo Theater/1962",
+        "duration": "1:45"
+      },
+      {
+        "position": "6",
+        "title": "Instrumental Bridge #2 - Live At The Apollo Theater/1962",
+        "duration": "0:12"
+      },
+      {
+        "position": "7",
+        "title": "I Don't Mind - Live At The Apollo Theater/1962",
+        "duration": "2:27"
+      },
+      {
+        "position": "8",
+        "title": "Instrumental Bridge #3 - Live At The Apollo Theater/1962",
+        "duration": "0:11"
+      },
+      {
+        "position": "9",
+        "title": "Lost Someone - Live At The Apollo Theater, 1962",
+        "duration": "10:43"
+      },
+      {
+        "position": "10",
+        "title": "Medley: Please Please Please/You've Got The Power/I Found Someone - Live At The Apollo Theater, 1962",
+        "duration": "6:27"
+      },
+      {
+        "position": "11",
+        "title": "Night Train - Live At The Apollo Theater, 1962",
+        "duration": "3:26"
+      }
+    ],
+    "community_have": 69,
+    "community_want": 133,
+    "community_rating_avg": 4.8,
+    "community_rating_count": 67,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100057,
+    "date_added": "2026-07-30T00:00:00Z",
+    "user_rating": 3,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000037,
+    "master_id": null,
+    "title": "Desire, I Want To Turn Into You",
+    "artists": [
+      "Caroline Polachek"
+    ],
+    "year": 2023,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Art Pop"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/caroline_polachek_desire_i_want_to_turn_into_you.jpg",
+    "cover_image": "artwork/caroline_polachek_desire_i_want_to_turn_into_you.jpg",
+    "tracklist": [
+      {
+        "position": "1",
+        "title": "Welcome To My Island",
+        "duration": "3:52"
+      },
+      {
+        "position": "2",
+        "title": "Pretty In Possible",
+        "duration": "3:36"
+      },
+      {
+        "position": "3",
+        "title": "Bunny Is A Rider",
+        "duration": "3:13"
+      },
+      {
+        "position": "4",
+        "title": "Sunset",
+        "duration": "2:42"
+      },
+      {
+        "position": "5",
+        "title": "Crude Drawing Of An Angel",
+        "duration": "3:29"
+      },
+      {
+        "position": "6",
+        "title": "I Believe",
+        "duration": "4:07"
+      },
+      {
+        "position": "7",
+        "title": "Fly To You (feat. Grimes and Dido)",
+        "duration": "4:05"
+      },
+      {
+        "position": "8",
+        "title": "Blood And Butter",
+        "duration": "4:27"
+      },
+      {
+        "position": "9",
+        "title": "Hopedrunk Everasking",
+        "duration": "3:19"
+      },
+      {
+        "position": "10",
+        "title": "Butterfly Net",
+        "duration": "4:36"
+      },
+      {
+        "position": "11",
+        "title": "Smoke",
+        "duration": "2:57"
+      },
+      {
+        "position": "12",
+        "title": "Billions",
+        "duration": "4:57"
+      }
+    ],
+    "community_have": 173,
+    "community_want": 72,
+    "community_rating_avg": 3.21,
+    "community_rating_count": 22,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100058,
+    "date_added": "2026-05-17T00:00:00Z",
+    "user_rating": 0,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  },
+  {
+    "release_id": 9000038,
+    "master_id": null,
+    "title": "30 Degrees Everywhere",
+    "artists": [
+      "The Promise Ring"
+    ],
+    "year": 1996,
+    "released": null,
+    "country": null,
+    "labels": [
+      "Independent"
+    ],
+    "catnos": [],
+    "genres": [
+      "Emo"
+    ],
+    "styles": [],
+    "formats": [
+      "Vinyl"
+    ],
+    "format_descriptions": [
+      "LP",
+      "Album"
+    ],
+    "thumb": "artwork/the_promise_ring_30_degrees_everywhere.jpg",
+    "cover_image": "artwork/the_promise_ring_30_degrees_everywhere.jpg",
+    "tracklist": [
+      {
+        "position": "8",
+        "title": "A Picture Postcard",
+        "duration": "3:10"
+      }
+    ],
+    "community_have": 98,
+    "community_want": 87,
+    "community_rating_avg": 4.52,
+    "community_rating_count": 69,
+    "barcode": null,
+    "matrix": null,
+    "instance_id": 100059,
+    "date_added": "2026-02-09T00:00:00Z",
+    "user_rating": 5,
+    "folder_id": 1,
+    "art_path": null,
+    "notes": "",
+    "original_year": null
+  }
+]
