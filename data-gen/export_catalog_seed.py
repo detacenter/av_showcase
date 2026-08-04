@@ -272,6 +272,59 @@ def main() -> None:
             "albums": artist_albums_out,
         })
 
+    # Full real vinyl collection (session 5, user's explicit ask) — every real
+    # discogs_collection.json record, independent of whether it's linked to a
+    # Spotify album (vinyl_links.confirmed is only the subset ALSO matched to
+    # a Spotify play — using that as the source undercounted badly, 53 vs the
+    # real 142, caught immediately by the user via a real browser screenshot
+    # next to the real desktop app's own vinyl view) or whether its artist
+    # made the 200-artist sample (streaming and vinyl-collecting habits don't
+    # fully overlap in real life — a vinyl-only artist with no plays is
+    # expected, not a bug). Real Discogs catalog metadata (public release
+    # info) is the same "fine to reuse" tier as the rest of the catalog data
+    # — personal fields excluded exactly as above; date_added/user_rating/
+    # notes are still synthesized fresh in stage 2. Discogs' own real
+    # "artists" credit is used as-is (unlike the curated-artist-page join
+    # above) since these entries don't live under any specific reviewed
+    # artist's own page — no unreviewed-collaborator-leak risk.
+    #
+    # Art comes from the real app's own per-release local cache
+    # (artwork/vinyl/<release_id>.jpg), NOT the Spotify-slug bundle_artwork()
+    # lookup used elsewhere — that almost never matches here, since Discogs'
+    # own title/artist formatting (disambiguation suffixes like "Atoms For
+    # Peace (2)", different capitalization) rarely lines up with the
+    # Spotify-cached filename convention. Also caught via screenshot: every
+    # card showed the empty placeholder instead of real art.
+    release_id_to_album_id = {
+        p["release_id"]: p["album_id"] for p in vinyl_links.get("confirmed", [])
+    }
+    REAL_VINYL_ART_DIR = REAL_ARTWORK_DIR / "vinyl"
+    OUT_VINYL_ART_DIR = OUT_ARTWORK_DIR / "vinyl"
+
+    def bundle_vinyl_art(release_id) -> str | None:
+        src = REAL_VINYL_ART_DIR / f"{release_id}.jpg"
+        if not src.exists():
+            return None
+        OUT_VINYL_ART_DIR.mkdir(parents=True, exist_ok=True)
+        dst = OUT_VINYL_ART_DIR / f"{release_id}.jpg"
+        if not dst.exists():
+            shutil.copyfile(src, dst)
+        return f"data/artwork/vinyl/{release_id}.jpg"
+
+    vinyl_collection = []
+    for real_record in discogs_collection:
+        release_id = real_record.get("release_id")
+        if not release_id:
+            continue
+        discogs_catalog = {
+            k: v for k, v in real_record.items() if k not in _DISCOGS_PERSONAL_FIELDS
+        }
+        vinyl_collection.append({
+            "album_id": release_id_to_album_id.get(release_id),
+            "discogs_catalog": discogs_catalog,
+            "local_artwork": bundle_vinyl_art(release_id),
+        })
+
     out = {
         "_meta": {
             "generated_by": "export_catalog_seed.py",
@@ -279,15 +332,17 @@ def main() -> None:
             "artist_sample_target": ARTIST_SAMPLE_TARGET,
             "artist_count": len(seed_artists),
             "album_count": seed_album_count,
+            "vinyl_collection_count": len(vinyl_collection),
         },
         "artists": seed_artists,
+        "vinyl_collection": vinyl_collection,
     }
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     with OUT_PATH.open("w") as f:
         json.dump(out, f, indent=2)
 
-    print(f"Selected {len(seed_artists)} artists, {seed_album_count} albums.")
+    print(f"Selected {len(seed_artists)} artists, {seed_album_count} albums, {len(vinyl_collection)} vinyl records.")
     print(f"Wrote {OUT_PATH}")
 
 

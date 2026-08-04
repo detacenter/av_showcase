@@ -21,7 +21,6 @@ from config import (
     AVG_PLAYS_PER_DAY,
     ARTIST_ZIPF_EXPONENT,
     GENRE_DRIFT_ERAS,
-    VINYL_COVERAGE_FRACTION,
     HANDWRITTEN_NOTES_COUNT,
 )
 
@@ -405,73 +404,29 @@ def main() -> None:
         })
 
     # ── discogs_collection.json + vinyl_links.json ─────────────────────────
-    target_vinyl_count = round(len(played_album_ids) * VINYL_COVERAGE_FRACTION)
-    with_real_discogs = [
-        aid for aid in played_album_ids
-        if any(al["album_id"] == aid and "discogs_catalog" in al for a in artists for al in a["albums"])
-    ]
-    without_real_discogs = [aid for aid in played_album_ids if aid not in with_real_discogs]
-    rng.shuffle(without_real_discogs)
-    vinyl_album_ids = (with_real_discogs + without_real_discogs)[:target_vinyl_count]
-
-    def find_album(album_id: str):
-        for a in artists:
-            for al in a["albums"]:
-                if al["album_id"] == album_id:
-                    return a, al
-        return None, None
+    # Full real vinyl collection (session 5) — every entry stage 1 exported in
+    # catalog_seed.json's vinyl_collection, independent of played_album_ids.
+    # Only date_added/user_rating/notes are synthesized; everything else is
+    # real Discogs catalog data, already personal-field-excluded in stage 1.
+    vinyl_collection = seed_data.get("vinyl_collection", [])
 
     discogs_out = []
     confirmed_links = []
     next_synthetic_release_id = 9_000_000
 
-    for i, album_id in enumerate(vinyl_album_ids):
-        artist, album = find_album(album_id)
-        real_catalog = album.get("discogs_catalog")
-
-        if real_catalog:
-            release_id = real_catalog["release_id"]
-            base = dict(real_catalog)
-            # Reuse the same album's real Spotify art rather than the real
-            # Discogs-hosted image, per the art-sourcing decision.
-            local_or_remote_art = album.get("local_artwork") or album.get("album_art_url")
-            base["thumb"] = local_or_remote_art
-            base["cover_image"] = local_or_remote_art
-        else:
-            release_id = next_synthetic_release_id
-            next_synthetic_release_id += 1
-            primary_genre = (artist["genres"][0].title() if artist["genres"] else "Rock")
-            base = {
-                "release_id": release_id,
-                "master_id": None,
-                "title": album["album_name"],
-                "artists": album.get("artist_names") or [artist["artist_name"]],
-                "year": album.get("release_year"),
-                "released": None,
-                "country": None,
-                "labels": ["Independent"],
-                "catnos": [],
-                "genres": [primary_genre],
-                "styles": [],
-                "formats": ["Vinyl"],
-                "format_descriptions": ["LP", "Album"],
-                "thumb": album.get("local_artwork") or album.get("album_art_url"),
-                "cover_image": album.get("local_artwork") or album.get("album_art_url"),
-                "tracklist": [
-                    {
-                        "position": str(t.get("track_number") or idx + 1),
-                        "title": t["track_name"],
-                        "duration": fmt_duration(t.get("duration_ms")),
-                    }
-                    for idx, t in enumerate(album["tracks"])
-                ],
-                "community_have": rng.randint(5, 400),
-                "community_want": rng.randint(1, 200),
-                "community_rating_avg": round(rng.uniform(3.0, 4.8), 2),
-                "community_rating_count": rng.randint(1, 150),
-                "barcode": None,
-                "matrix": None,
-            }
+    for i, entry in enumerate(vinyl_collection):
+        real_catalog = entry["discogs_catalog"]
+        release_id = real_catalog["release_id"]
+        base = dict(real_catalog)
+        # /api/vinyl's actual displayed art comes from art_path (see
+        # routers/vinyl.py::_art_filename), not thumb/cover_image (those only
+        # back the separate wantlist view) — art_path was previously
+        # hardcoded to None here, silently nulling out every real bundled
+        # image. Caught via a real browser screenshot showing zero art
+        # across the whole collection next to the real app showing all of it.
+        base["art_path"] = entry.get("local_artwork")
+        base["thumb"] = entry.get("local_artwork")
+        base["cover_image"] = entry.get("local_artwork")
 
         days_into_span = rng.randint(0, total_days)
         date_added = (start_date + timedelta(days=days_into_span)).isoformat().replace("+00:00", "Z")
@@ -487,19 +442,23 @@ def main() -> None:
             "date_added": date_added,
             "user_rating": user_rating,
             "folder_id": 1,
-            "art_path": None,
             "notes": notes,
-            "original_year": None,
         }
         discogs_out.append(record)
-        confirmed_links.append({"release_id": release_id, "album_id": album_id})
+        # Only a real subset of the collection has a genuine Spotify-album
+        # link (see stage 1's comment) — don't invent a confirmed pairing
+        # for the rest.
+        if entry.get("album_id"):
+            confirmed_links.append({"release_id": release_id, "album_id": entry["album_id"]})
 
     dismissed_links = []
-    other_albums = [aid for aid in played_album_ids if aid not in vinyl_album_ids]
-    for i in range(min(2, len(other_albums))):
+    vinyl_album_id_set = {e["album_id"] for e in vinyl_collection if e.get("album_id")}
+    near_miss_candidates = [aid for aid in played_album_ids if aid not in vinyl_album_id_set]
+    rng.shuffle(near_miss_candidates)
+    for i in range(min(2, len(near_miss_candidates))):
         dismissed_links.append({
             "release_id": next_synthetic_release_id + i,
-            "album_id": other_albums[i],
+            "album_id": near_miss_candidates[i],
         })
 
     vinyl_links_out = {"confirmed": confirmed_links, "dismissed": dismissed_links}

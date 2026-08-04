@@ -63,6 +63,8 @@ ENDPOINTS = {
     "/api/playlists": "playlists.json",
     "/api/playlists/sessions": "playlist-sessions.json",
     "/api/revisit": "revisit.json",
+    "/api/vinyl": "vinyl.json",
+    "/api/vinyl/wantlist": "vinyl-wantlist.json",
 }
 
 _ABS_PATH_RE = re.compile(r"^/[^\s]*/([^/\s]+)$")
@@ -127,12 +129,23 @@ def snapshot_data_state() -> dict:
     """Record everything under data/ well enough to force-restore it later:
     exact bytes for every top-level JSON file, and just the filename set for
     artwork/ (large binary files — restoring means deleting anything new,
-    not re-copying originals that were never touched)."""
+    not re-copying originals that were never touched).
+
+    Recursive (rglob) — artwork/vinyl/ is a real subdirectory (release-id-
+    keyed vinyl art, distinct from the artist_album.jpg Spotify slugs at the
+    top level), and a non-recursive glob here previously made every vinyl
+    art reference look "not in the valid set" to scrub_stale_artwork(),
+    silently nulling out all of it. Caught via a real browser screenshot
+    showing zero art across the whole vinyl collection. Flat basename set is
+    safe across both directories — vinyl filenames are purely numeric
+    (release IDs), Spotify slugs always contain underscores, no collision."""
     json_files = {
         p.name: p.read_bytes()
         for p in DATA_DIR.glob("*.json")
     }
-    artwork_names = set(p.name for p in ARTWORK_DIR.glob("*")) if ARTWORK_DIR.exists() else set()
+    artwork_names = (
+        set(p.name for p in ARTWORK_DIR.rglob("*") if p.is_file()) if ARTWORK_DIR.exists() else set()
+    )
     return {"json_files": json_files, "artwork_names": artwork_names}
 
 
@@ -152,9 +165,9 @@ def restore_data_state(before: dict) -> None:
     # to keep silently; re-bundle deliberately via export_catalog_seed.py
     # if broader artwork coverage is wanted).
     if ARTWORK_DIR.exists():
-        for p in ARTWORK_DIR.glob("*"):
-            if p.name not in before["artwork_names"]:
-                print(f"  restore: removing unexpected new file data/artwork/{p.name}")
+        for p in ARTWORK_DIR.rglob("*"):
+            if p.is_file() and p.name not in before["artwork_names"]:
+                print(f"  restore: removing unexpected new file data/artwork/{p.relative_to(ARTWORK_DIR)}")
                 p.unlink()
 
 

@@ -24,6 +24,8 @@ const overlay = {
   playlistOverrides: {}, // playlist_id -> {name, rule_groups, pinned_track_ids, excluded_track_ids}
   deletedPlaylists: new Set(), // playlist ids
   createdPlaylists: [],  // playlist objects created client-side this session
+  vinylSync: { running: false, startedAt: 0 },
+  wantlistSync: { running: false, startedAt: 0 },
 };
 
 let _playlistCounter = 0;
@@ -196,6 +198,61 @@ function handleDeletePlaylist(id) {
   return jsonResponse({ ok: true });
 }
 
+async function handleVinylCollection() {
+  return jsonResponse(await loadSnapshot("vinyl.json"));
+}
+
+async function handleVinylWantlist() {
+  return jsonResponse(await loadSnapshot("vinyl-wantlist.json"));
+}
+
+// Sync buttons hit the real Discogs API in the real app — never live in this
+// demo (no live account dependency, same principle as art sourcing). Instead
+// simulate a brief "syncing" state that resolves to "already up to date"
+// without touching any data, so the button doesn't look broken.
+const SYNC_DURATION_MS = 2200;
+
+function startFakeSync(state) {
+  state.running = true;
+  state.startedAt = Date.now();
+}
+
+function fakeSyncStatus(state, doneMessage) {
+  if (!state.running) return { running: false, message: "", progress: 0, total: 0 };
+  if (Date.now() - state.startedAt > SYNC_DURATION_MS) {
+    state.running = false;
+    return { running: false, message: doneMessage, progress: 0, total: 0 };
+  }
+  return { running: true, message: "Connecting to Discogs…", progress: 0, total: 0 };
+}
+
+function handleVinylSyncStart() {
+  startFakeSync(overlay.vinylSync);
+  return jsonResponse({ status: "started" });
+}
+
+async function handleVinylSyncStatus() {
+  const snap = await loadSnapshot("vinyl.json");
+  return jsonResponse(fakeSyncStatus(overlay.vinylSync, `Done — ${snap.records.length} records`));
+}
+
+function handleWantlistSyncStart() {
+  startFakeSync(overlay.wantlistSync);
+  return jsonResponse({ status: "started" });
+}
+
+async function handleWantlistSyncStatus() {
+  const snap = await loadSnapshot("vinyl-wantlist.json");
+  return jsonResponse(fakeSyncStatus(overlay.wantlistSync, `Done — ${snap.wants.length} wants`));
+}
+
+function handleVinylSessionCurrent() {
+  // No physical turntable in this demo — always report no active session.
+  // Polled continuously (every 4s) from a globally-mounted component, so
+  // this needs a real handler even though the Vinyl view is what surfaced it.
+  return jsonResponse({ active: false });
+}
+
 async function handleRevisit() {
   const data = await loadSnapshot("revisit.json");
   // Un-revisiting from this view works fully (filters the track out below).
@@ -307,6 +364,28 @@ async function handleApiRequest(request) {
 
   if (path === "/api/revisit" && method === "GET") {
     return handleRevisit();
+  }
+
+  if (path === "/api/vinyl" && method === "GET") {
+    return handleVinylCollection();
+  }
+  if (path === "/api/vinyl/wantlist" && method === "GET") {
+    return handleVinylWantlist();
+  }
+  if (path === "/api/vinyl/sync" && method === "POST") {
+    return handleVinylSyncStart();
+  }
+  if (path === "/api/vinyl/sync/status" && method === "GET") {
+    return handleVinylSyncStatus();
+  }
+  if (path === "/api/vinyl/wantlist/sync" && method === "POST") {
+    return handleWantlistSyncStart();
+  }
+  if (path === "/api/vinyl/wantlist/sync/status" && method === "GET") {
+    return handleWantlistSyncStatus();
+  }
+  if (path === "/api/vinyl/session/current" && method === "GET") {
+    return handleVinylSessionCurrent();
   }
 
   let m;

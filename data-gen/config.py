@@ -40,8 +40,5 @@ ARTIST_ZIPF_EXPONENT = 1.1
 GENRE_DRIFT_ERAS = 3
 
 
-# Fraction of selected albums that get a synthetic vinyl/Discogs record.
-VINYL_COVERAGE_FRACTION = 0.25
-
 # Number of hand-written freeform notes to distribute across albums/vinyl records.
 HANDWRITTEN_NOTES_COUNT = 12
