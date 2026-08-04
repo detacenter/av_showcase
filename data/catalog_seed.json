@@ -44,7 +44,7 @@
               "isrc": "DEE862401701"
             }
           ],
-          "local_artwork": "artwork/nina_chuba_farbenblind_ep.jpg"
+          "local_artwork": "data/artwork/nina_chuba_farbenblind_ep.jpg"
         }
       ]
     },
@@ -190,14 +190,14 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/boards_of_canada_tomorrows_harvest.jpg",
+          "local_artwork": "data/artwork/boards_of_canada_tomorrows_harvest.jpg",
           "discogs_catalog": {
             "release_id": 4548231,
             "master_id": 563275,
             "folder_id": 1,
             "title": "Tomorrow's Harvest",
             "artists": [
-              "Boards Of Canada"
+              "Boards of Canada"
             ],
             "year": 2013,
             "released": "2013-06-10",
@@ -363,14 +363,14 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/boards_of_canada_in_a_beautiful_place_out_in_the_country.jpg",
+          "local_artwork": "data/artwork/boards_of_canada_in_a_beautiful_place_out_in_the_country.jpg",
           "discogs_catalog": {
             "release_id": 6476151,
             "master_id": 2193,
             "folder_id": 1,
             "title": "In A Beautiful Place Out In The Country",
             "artists": [
-              "Boards Of Canada"
+              "Boards of Canada"
             ],
             "year": 2000,
             "released": "2000-11-27",
@@ -459,7 +459,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/boards_of_canada_prophecy_at_1420_mhz.jpg"
+          "local_artwork": "data/artwork/boards_of_canada_prophecy_at_1420_mhz.jpg"
         },
         {
           "album_id": "46YfeDd8YhuAcywdxZkRqf",
@@ -494,7 +494,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/boards_of_canada_twoism.jpg"
+          "local_artwork": "data/artwork/boards_of_canada_twoism.jpg"
         },
         {
           "album_id": "4T7JGfRryhw5POaXalkApE",
@@ -662,14 +662,14 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/boards_of_canada_geogaddi.jpg",
+          "local_artwork": "data/artwork/boards_of_canada_geogaddi.jpg",
           "discogs_catalog": {
             "release_id": 4985843,
             "master_id": 2129,
             "folder_id": 1,
             "title": "Geogaddi",
             "artists": [
-              "Boards Of Canada"
+              "Boards of Canada"
             ],
             "year": 2013,
             "released": "2013-10-21",
@@ -969,14 +969,14 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/boards_of_canada_music_has_the_right_to_children.jpg",
+          "local_artwork": "data/artwork/boards_of_canada_music_has_the_right_to_children.jpg",
           "discogs_catalog": {
             "release_id": 5006908,
             "master_id": 1893,
             "folder_id": 1,
             "title": "Music Has The Right To Children",
             "artists": [
-              "Boards Of Canada"
+              "Boards of Canada"
             ],
             "year": 2013,
             "released": "2013-10-21",
@@ -1220,14 +1220,14 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/boards_of_canada_the_campfire_headphase.jpg",
+          "local_artwork": "data/artwork/boards_of_canada_the_campfire_headphase.jpg",
           "discogs_catalog": {
             "release_id": 541614,
             "master_id": 2141,
             "folder_id": 1,
             "title": "The Campfire Headphase",
             "artists": [
-              "Boards Of Canada"
+              "Boards of Canada"
             ],
             "year": 2005,
             "released": "2005-10-17",
@@ -1358,10 +1358,7 @@
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2730d1d6e9325275f104f8e33f3",
           "artist_names": [
             "Beyonc\u00e9",
-            "Mr. Vegas",
-            "Clifford Smith",
-            "Cleveland Browne",
-            "Danny Browne"
+            "Mr. Vegas"
           ],
           "tracks": [
             {
@@ -1505,7 +1502,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg"
         }
       ]
     },
@@ -1546,7 +1543,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/l\u00f4_borges_l\u00f4_borges.jpg"
+          "local_artwork": "data/artwork/l\u00f4_borges_l\u00f4_borges.jpg"
         },
         {
           "album_id": "2ngEpie4g3Z2xtZhhwCAxH",
@@ -1644,7 +1641,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/l\u00f4_borges_retratos.jpg"
+          "local_artwork": "data/artwork/l\u00f4_borges_retratos.jpg"
         },
         {
           "album_id": "5risYG7klZCSLMNxB9dZhf",
@@ -1805,7 +1802,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/l\u00f4_borges_clube_da_esquina.jpg"
+          "local_artwork": "data/artwork/l\u00f4_borges_clube_da_esquina.jpg"
         }
       ]
     },
@@ -1888,7 +1885,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/led_zeppelin_houses_of_the_holy_remaster.jpg"
+          "local_artwork": "data/artwork/led_zeppelin_houses_of_the_holy_remaster.jpg"
         },
         {
           "album_id": "3ycjBixZf7S3WpC5WZhhUK",
@@ -1965,7 +1962,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/led_zeppelin_led_zeppelin.jpg"
+          "local_artwork": "data/artwork/led_zeppelin_led_zeppelin.jpg"
         },
         {
           "album_id": "4Q7cPyiP8cMIlUEHAqeYfd",
@@ -2077,7 +2074,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/led_zeppelin_physical_graffiti_remaster.jpg"
+          "local_artwork": "data/artwork/led_zeppelin_physical_graffiti_remaster.jpg"
         },
         {
           "album_id": "58MQ0PLijVHePUonQlK76Y",
@@ -2154,7 +2151,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/led_zeppelin_led_zeppelin_ii_remaster.jpg"
+          "local_artwork": "data/artwork/led_zeppelin_led_zeppelin_ii_remaster.jpg"
         },
         {
           "album_id": "5EyIDBAqhnlkAHqvPRwdbX",
@@ -2224,7 +2221,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/led_zeppelin_led_zeppelin_iv_remaster.jpg"
+          "local_artwork": "data/artwork/led_zeppelin_led_zeppelin_iv_remaster.jpg"
         },
         {
           "album_id": "6P5QHz4XtxOmS5EuiGIPut",
@@ -2308,7 +2305,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/led_zeppelin_led_zeppelin_iii_remaster.jpg"
+          "local_artwork": "data/artwork/led_zeppelin_led_zeppelin_iii_remaster.jpg"
         }
       ]
     },
@@ -2412,7 +2409,7 @@
               "isrc": "US4KH0437011"
             }
           ],
-          "local_artwork": "artwork/the_appleseed_cast_the_end_of_the_ring_wars.jpg"
+          "local_artwork": "data/artwork/the_appleseed_cast_the_end_of_the_ring_wars.jpg"
         },
         {
           "album_id": "5LvAcKnWxj7QWBaxUxItmT",
@@ -2440,7 +2437,7 @@
               "isrc": "USTS40311129"
             }
           ],
-          "local_artwork": "artwork/the_appleseed_cast_two_conversations.jpg"
+          "local_artwork": "data/artwork/the_appleseed_cast_two_conversations.jpg"
         }
       ]
     },
@@ -2474,7 +2471,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/lydia_illuminate.jpg"
+          "local_artwork": "data/artwork/lydia_illuminate.jpg"
         }
       ]
     },
@@ -2662,7 +2659,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/janet_jackson_the_velvet_rope.jpg"
+          "local_artwork": "data/artwork/janet_jackson_the_velvet_rope.jpg"
         },
         {
           "album_id": "4OD3LU6001esAtFshDX46M",
@@ -2816,7 +2813,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/janet_jackson_rhythm_nation_1814.jpg"
+          "local_artwork": "data/artwork/janet_jackson_rhythm_nation_1814.jpg"
         },
         {
           "album_id": "7GWkceE5McMVfffd1RGL6Y",
@@ -2893,7 +2890,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/janet_jackson_control.jpg"
+          "local_artwork": "data/artwork/janet_jackson_control.jpg"
         }
       ]
     },
@@ -3004,7 +3001,7 @@
               "isrc": "US3E40600391"
             }
           ],
-          "local_artwork": "artwork/piebald_we_are_the_only_friends_we_have.jpg"
+          "local_artwork": "data/artwork/piebald_we_are_the_only_friends_we_have.jpg"
         },
         {
           "album_id": "6hfWu0ZrSusyYswHTGtV41",
@@ -3025,7 +3022,7 @@
               "isrc": "US3E40600361"
             }
           ],
-          "local_artwork": "artwork/piebald_if_it_werent_for_venetian_blinds_it_would_be_cur.jpg"
+          "local_artwork": "data/artwork/piebald_if_it_werent_for_venetian_blinds_it_would_be_cur.jpg"
         }
       ]
     },
@@ -3042,7 +3039,6 @@
           "album_total_tracks": 12,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2732bad6e56e77d5bef0aa3f2dc",
           "artist_names": [
-            "Daniel Caesar",
             "Bon Iver"
           ],
           "tracks": [
@@ -3249,7 +3245,7 @@
               "isrc": "US3X50511415"
             }
           ],
-          "local_artwork": "artwork/coheed_and_cambria_the_second_stage_turbine_blade_re_issue.jpg"
+          "local_artwork": "data/artwork/coheed_and_cambria_the_second_stage_turbine_blade_re_issue.jpg"
         },
         {
           "album_id": "163gYXqzv3axBTgHkZiBJU",
@@ -3326,7 +3322,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/coheed_and_cambria_the_afterman_ascension.jpg"
+          "local_artwork": "data/artwork/coheed_and_cambria_the_afterman_ascension.jpg"
         },
         {
           "album_id": "2oWXmi9uLRKn60yRmY22MB",
@@ -3424,7 +3420,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/coheed_and_cambria_in_keeping_secrets_of_silent_earth_3.jpg"
+          "local_artwork": "data/artwork/coheed_and_cambria_in_keeping_secrets_of_silent_earth_3.jpg"
         },
         {
           "album_id": "42S0lDJT9wHKCVaMGgqKdm",
@@ -3543,7 +3539,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/coheed_and_cambria_the_unheavenly_creatures.jpg"
+          "local_artwork": "data/artwork/coheed_and_cambria_the_unheavenly_creatures.jpg"
         },
         {
           "album_id": "4nYsnQpTAQaPzrPc6rOsBN",
@@ -3662,7 +3658,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/coheed_and_cambria_good_apollo_im_burning_star_iv_volume_one_from_f.jpg"
+          "local_artwork": "data/artwork/coheed_and_cambria_good_apollo_im_burning_star_iv_volume_one_from_f.jpg"
         }
       ]
     },
@@ -3679,7 +3675,7 @@
           "album_total_tracks": 12,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2738eba18f886ca46ae6f948c54",
           "artist_names": [
-            "Run\u2013D.M.C."
+            "Aerosmith"
           ],
           "tracks": [
             {
@@ -3836,7 +3832,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/mestiza_spanish_chica.jpg"
+          "local_artwork": "data/artwork/mestiza_spanish_chica.jpg"
         },
         {
           "album_id": "1I4YDAPuikk1BrhVJRmV73",
@@ -3857,7 +3853,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/mestiza_rintintin.jpg"
+          "local_artwork": "data/artwork/mestiza_rintintin.jpg"
         },
         {
           "album_id": "2xcefdOQyuKRsVpkwO9E32",
@@ -3867,8 +3863,7 @@
           "album_total_tracks": 13,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273eceed0d98bbe0c8d0831cc4d",
           "artist_names": [
-            "MESTIZA",
-            "Aaron Sevilla"
+            "MESTIZA"
           ],
           "tracks": [
             {
@@ -3893,7 +3888,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/mestiza_qu\u00ebreles.jpg"
+          "local_artwork": "data/artwork/mestiza_qu\u00ebreles.jpg"
         },
         {
           "album_id": "30PS8JTib0xrnYojz7SDXU",
@@ -3914,7 +3909,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/mestiza_que_calor_que_calor.jpg"
+          "local_artwork": "data/artwork/mestiza_que_calor_que_calor.jpg"
         },
         {
           "album_id": "3IsSwiowHDd0YgVeAIuU4U",
@@ -3925,8 +3920,7 @@
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273d56cfb9475e89cad8f685263",
           "artist_names": [
             "MESTIZA",
-            "Faul & Wad",
-            "Diana Navarro"
+            "Faul & Wad"
           ],
           "tracks": [
             {
@@ -3937,7 +3931,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/mestiza_campanera.jpg"
+          "local_artwork": "data/artwork/mestiza_campanera.jpg"
         },
         {
           "album_id": "5MflkuFCNL0Uye0uy4OrrH",
@@ -3958,7 +3952,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/mestiza_salam.jpg"
+          "local_artwork": "data/artwork/mestiza_salam.jpg"
         },
         {
           "album_id": "5wrHAkjZUkhPuj3hrHcmVB",
@@ -3968,8 +3962,7 @@
           "album_total_tracks": 1,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273c44487ee056fbf46cb5a131e",
           "artist_names": [
-            "MESTIZA",
-            "Las Ketchup"
+            "MESTIZA"
           ],
           "tracks": [
             {
@@ -3980,7 +3973,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/mestiza_asereje_remix.jpg"
+          "local_artwork": "data/artwork/mestiza_asereje_remix.jpg"
         },
         {
           "album_id": "7LUHIlbhuFHoZKRlamEd9Y",
@@ -3991,8 +3984,7 @@
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b27332bfdbc847ef90fb5c538853",
           "artist_names": [
             "Faul & Wad",
-            "MESTIZA",
-            "Martina Camargo"
+            "MESTIZA"
           ],
           "tracks": [
             {
@@ -4003,7 +3995,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/faul_wad_tambora.jpg"
         }
       ]
     },
@@ -4128,7 +4120,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sparta_porcelain.jpg",
+          "local_artwork": "data/artwork/sparta_porcelain.jpg",
           "discogs_catalog": {
             "release_id": 32949843,
             "master_id": 158151,
@@ -4302,7 +4294,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/radiohead_in_rainbows.jpg",
+          "local_artwork": "data/artwork/radiohead_in_rainbows.jpg",
           "discogs_catalog": {
             "release_id": 1187003,
             "master_id": 21520,
@@ -4491,7 +4483,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/radiohead_kid_a.jpg",
+          "local_artwork": "data/artwork/radiohead_kid_a.jpg",
           "discogs_catalog": {
             "release_id": 15443160,
             "master_id": 21501,
@@ -4688,7 +4680,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/radiohead_ok_computer.jpg"
+          "local_artwork": "data/artwork/radiohead_ok_computer.jpg"
         }
       ]
     },
@@ -4778,7 +4770,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/joy_division_closer.jpg"
+          "local_artwork": "data/artwork/joy_division_closer.jpg"
         },
         {
           "album_id": "5Dgqy4bBg09Rdw7CQM545s",
@@ -4862,7 +4854,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/joy_division_unknown_pleasures.jpg"
+          "local_artwork": "data/artwork/joy_division_unknown_pleasures.jpg"
         }
       ]
     },
@@ -4959,7 +4951,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/chico_buarque_meus_caros_amigos.jpg"
+          "local_artwork": "data/artwork/chico_buarque_meus_caros_amigos.jpg"
         },
         {
           "album_id": "7yrRo2o4XzDfv3mNnkPRE5",
@@ -5043,7 +5035,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/chico_buarque_constru\u00e7\u00e3o.jpg"
+          "local_artwork": "data/artwork/chico_buarque_constru\u00e7\u00e3o.jpg"
         }
       ]
     },
@@ -5060,7 +5052,7 @@
           "album_total_tracks": 14,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2730f751d4123932ee82e78aae1",
           "artist_names": [
-            "Grimes"
+            "Janelle Mon\u00e1e"
           ],
           "tracks": [
             {
@@ -5259,7 +5251,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/chico_buarque_meus_caros_amigos.jpg"
         },
         {
           "album_id": "2ngEpie4g3Z2xtZhhwCAxH",
@@ -5357,7 +5349,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/l\u00f4_borges_retratos.jpg"
         },
         {
           "album_id": "5eL9goh1UrlUbYlzdnxPFo",
@@ -5385,7 +5377,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/milton_nascimento_minas.jpg"
+          "local_artwork": "data/artwork/milton_nascimento_minas.jpg"
         },
         {
           "album_id": "5risYG7klZCSLMNxB9dZhf",
@@ -5546,7 +5538,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/milton_nascimento_clube_da_esquina.jpg"
+          "local_artwork": "data/artwork/l\u00f4_borges_clube_da_esquina.jpg"
         },
         {
           "album_id": "6GPL5sMWxYibGoKnarlqUk",
@@ -5623,7 +5615,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/milton_nascimento_milton.jpg"
+          "local_artwork": "data/artwork/milton_nascimento_milton.jpg"
         },
         {
           "album_id": "6f0LeYZyJxMnhCQCreFYZ0",
@@ -5644,7 +5636,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/milton_nascimento_travessia.jpg"
+          "local_artwork": "data/artwork/milton_nascimento_travessia.jpg"
         }
       ]
     },
@@ -5812,7 +5804,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/solange_a_seat_at_the_table.jpg"
         }
       ]
     },
@@ -5853,7 +5845,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/novos_baianos_enciclop\u00e9dia_musical_brasileira.jpg"
+          "local_artwork": "data/artwork/novos_baianos_enciclop\u00e9dia_musical_brasileira.jpg"
         },
         {
           "album_id": "2Q76MOA6Hs8KPk3brm8V6I",
@@ -5881,7 +5873,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/novos_baianos_dois_momentos.jpg"
+          "local_artwork": "data/artwork/novos_baianos_dois_momentos.jpg"
         },
         {
           "album_id": "6ADrDk6hPVoDchRfd8dxU6",
@@ -5902,7 +5894,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/novos_baianos_ferro_na_boneca.jpg"
+          "local_artwork": "data/artwork/novos_baianos_ferro_na_boneca.jpg"
         },
         {
           "album_id": "6R4gL2dyrbGpmgBOH9kvci",
@@ -6007,7 +5999,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/novos_baianos_farol_da_barra.jpg"
+          "local_artwork": "data/artwork/novos_baianos_farol_da_barra.jpg"
         },
         {
           "album_id": "76iTNsPU1yhKWcQrTc2qdA",
@@ -6091,14 +6083,14 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/novos_baianos_acabou_chorare.jpg",
+          "local_artwork": "data/artwork/novos_baianos_acabou_chorare.jpg",
           "discogs_catalog": {
             "release_id": 649184,
             "master_id": 357257,
             "folder_id": 1,
             "title": "Acabou Chorare",
             "artists": [
-              "Os Novos Baianos"
+              "Novos Baianos"
             ],
             "year": 1972,
             "released": "1972",
@@ -6205,8 +6197,7 @@
           "album_total_tracks": 23,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72",
           "artist_names": [
-            "Bad Bunny",
-            "Tainy"
+            "The Mar\u00edas"
           ],
           "tracks": [
             {
@@ -6418,14 +6409,14 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/el_grupo_nuevo_de_omar_rodr\u00edguez_l\u00f3pez_cryptomnesia.jpg",
+          "local_artwork": "data/artwork/el_grupo_nuevo_de_omar_rodr\u00edguez_l\u00f3pez_cryptomnesia.jpg",
           "discogs_catalog": {
             "release_id": 1709731,
             "master_id": 172029,
             "folder_id": 1,
             "title": "Cryptomnesia",
             "artists": [
-              "El Grupo Nuevo De Omar Rodriguez Lopez"
+              "El Grupo Nuevo De Omar Rodr\u00edguez-L\u00f3pez"
             ],
             "year": 2009,
             "released": "2009",
@@ -6534,10 +6525,7 @@
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2730d1d6e9325275f104f8e33f3",
           "artist_names": [
             "Beyonc\u00e9",
-            "Mr. Vegas",
-            "Clifford Smith",
-            "Cleveland Browne",
-            "Danny Browne"
+            "Mr. Vegas"
           ],
           "tracks": [
             {
@@ -6681,7 +6669,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg"
         }
       ]
     },
@@ -6715,7 +6703,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/my_chemical_romance_three_cheers_for_sweet_revenge.jpg"
+          "local_artwork": "data/artwork/my_chemical_romance_three_cheers_for_sweet_revenge.jpg"
         }
       ]
     },
@@ -6749,7 +6737,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/saxon_shore_be_a_bright_blue.jpg"
+          "local_artwork": "data/artwork/saxon_shore_be_a_bright_blue.jpg"
         }
       ]
     },
@@ -6853,7 +6841,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/fiona_apple_the_idler_wheel_is_wiser_than_the_driver_of_the_.jpg"
+          "local_artwork": "data/artwork/fiona_apple_the_idler_wheel_is_wiser_than_the_driver_of_the_.jpg"
         }
       ]
     },
@@ -6957,7 +6945,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sun_kil_moon_april.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_april.jpg"
         },
         {
           "album_id": "0hjzsRqOq8rWLZyWlaazb1",
@@ -7034,7 +7022,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sun_kil_moon_all_the_artists.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_all_the_artists.jpg"
         },
         {
           "album_id": "1JpwFoxVVutPXtSBohj0rJ",
@@ -7160,7 +7148,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sun_kil_moon_ghosts_of_the_great_highway.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_ghosts_of_the_great_highway.jpg"
         },
         {
           "album_id": "1YnyKib5MeZf95KY5GHvxc",
@@ -7202,7 +7190,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sun_kil_moon_murals.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_murals.jpg"
         },
         {
           "album_id": "1uIM6TngoKF0S8oPaDZPvv",
@@ -7335,7 +7323,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sun_kil_moon_among_the_leaves.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_among_the_leaves.jpg"
         },
         {
           "album_id": "2y2QZ4uDpzoZHgH2il5Ktu",
@@ -7426,7 +7414,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sun_kil_moon_benji.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_benji.jpg"
         },
         {
           "album_id": "3bVDZOD7EnPkxludwZUidT",
@@ -7517,7 +7505,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sun_kil_moon_tiny_cities.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_tiny_cities.jpg"
         },
         {
           "album_id": "4inXg3tY4tNOHgXzUOexbu",
@@ -7588,7 +7576,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sun_kil_moon_sun_kil_moon_and_amoeba_vol_ii.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_sun_kil_moon_and_amoeba_vol_ii.jpg"
         },
         {
           "album_id": "77AYdae70ldovpvRPS0Xjc",
@@ -7672,7 +7660,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sun_kil_moon_admiral_fell_promises.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_admiral_fell_promises.jpg"
         }
       ]
     },
@@ -7854,7 +7842,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/de_la_soul_3_feet_high_and_rising.jpg"
         }
       ]
     },
@@ -7938,7 +7926,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/michael_jackson_thriller.jpg"
         }
       ]
     },
@@ -8042,7 +8030,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_replacements_let_it_be.jpg"
+          "local_artwork": "data/artwork/the_replacements_let_it_be.jpg"
         }
       ]
     },
@@ -8139,7 +8127,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/boogie_down_productions_criminal_minded.jpg"
+          "local_artwork": "data/artwork/boogie_down_productions_criminal_minded.jpg"
         }
       ]
     },
@@ -8156,9 +8144,7 @@
           "album_total_tracks": 12,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273f0d7c2b2353888a0a706dfcb",
           "artist_names": [
-            "Soul Glo",
-            "McKinley Dixon",
-            "lojii"
+            "McKinley Dixon"
           ],
           "tracks": [
             {
@@ -8280,7 +8266,7 @@
               "isrc": "JPKT07800502"
             }
           ],
-          "local_artwork": "artwork/masayoshi_takanaka_brasilian_skies.jpg"
+          "local_artwork": "data/artwork/masayoshi_takanaka_brasilian_skies.jpg"
         },
         {
           "album_id": "7BQPfd39YTObQGamGhDF7g",
@@ -8301,7 +8287,7 @@
               "isrc": "JPKT07600702"
             }
           ],
-          "local_artwork": "artwork/masayoshi_takanaka_seychelles.jpg"
+          "local_artwork": "data/artwork/masayoshi_takanaka_seychelles.jpg"
         }
       ]
     },
@@ -8318,7 +8304,7 @@
           "album_total_tracks": 10,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273ff6dbdb76c0cce850eb706e3",
           "artist_names": [
-            "Djavan"
+            "Stevie Wonder"
           ],
           "tracks": [
             {
@@ -8415,11 +8401,7 @@
           "album_total_tracks": 24,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273381f1782afe75c9e3a81a8dd",
           "artist_names": [
-            "1999 WRITE THE FUTURE",
-            "Ghostface Killah",
-            "Rich Brian",
-            "Smino",
-            "Surprise Chef"
+            "1999 WRITE THE FUTURE"
           ],
           "tracks": [
             {
@@ -8430,7 +8412,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/1999_write_the_future_hella_\u00ba.jpg"
+          "local_artwork": "data/artwork/1999_write_the_future_hella_\u00ba.jpg"
         }
       ]
     },
@@ -8534,7 +8516,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/empire_empire_i_was_a_lonely_estate_you_will_eventually_be_forgotten.jpg"
+          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_you_will_eventually_be_forgotten.jpg"
         },
         {
           "album_id": "1j9ajQaSPnqM6BaiE2HUWW",
@@ -8576,7 +8558,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/empire_empire_i_was_a_lonely_estate_on_time_spent_waiting_or_placing_the_weight_of_t.jpg"
+          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_on_time_spent_waiting_or_placing_the_weight_of_t.jpg"
         },
         {
           "album_id": "2m9BteUi4OhKwUXcNFSL8p",
@@ -8632,7 +8614,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/empire_empire_i_was_a_lonely_estate_when_the_sea_became_a_giant.jpg"
+          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_when_the_sea_became_a_giant.jpg"
         },
         {
           "album_id": "3wLCCtHNSLsDpIItmWZzS9",
@@ -8751,7 +8733,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/empire_empire_i_was_a_lonely_estate_what_it_takes_to_move_forward.jpg"
+          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_what_it_takes_to_move_forward.jpg"
         },
         {
           "album_id": "5xBD0bSZqXpfH0vwkrDcAx",
@@ -8828,7 +8810,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/empire_empire_i_was_a_lonely_estate_early_discography.jpg"
+          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_early_discography.jpg"
         },
         {
           "album_id": "6np6yPkSF9JsWcaEGUfNim",
@@ -8870,7 +8852,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/empire_empire_i_was_a_lonely_estate_home_after_three_months_away.jpg"
+          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_home_after_three_months_away.jpg"
         }
       ]
     },
@@ -8981,7 +8963,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/jo\u00e3o_donato_quem_\u00e9_quem.jpg"
+          "local_artwork": "data/artwork/jo\u00e3o_donato_quem_\u00e9_quem.jpg"
         }
       ]
     },
@@ -9141,7 +9123,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/tom_waits_rain_dogs_2023_remaster.jpg"
+          "local_artwork": "data/artwork/tom_waits_rain_dogs_2023_remaster.jpg"
         }
       ]
     },
@@ -9252,7 +9234,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/jets_to_brazil_perfecting_loneliness.jpg"
+          "local_artwork": "data/artwork/jets_to_brazil_perfecting_loneliness.jpg"
         },
         {
           "album_id": "2PRXw6VTFXoTBmeXerbf3z",
@@ -9357,7 +9339,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/jets_to_brazil_four_cornered_night.jpg"
+          "local_artwork": "data/artwork/jets_to_brazil_four_cornered_night.jpg"
         },
         {
           "album_id": "5zaVtrjodNQru22Rj4FIcD",
@@ -9448,7 +9430,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/jets_to_brazil_orange_rhyming_dictionary.jpg"
+          "local_artwork": "data/artwork/jets_to_brazil_orange_rhyming_dictionary.jpg"
         }
       ]
     },
@@ -9538,7 +9520,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/\u00f3l\u00f6f_arnalds_innundir_skinni.jpg",
+          "local_artwork": "data/artwork/\u00f3l\u00f6f_arnalds_innundir_skinni.jpg",
           "discogs_catalog": {
             "release_id": 2787969,
             "master_id": 289373,
@@ -9653,10 +9635,7 @@
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2730d1d6e9325275f104f8e33f3",
           "artist_names": [
             "Beyonc\u00e9",
-            "Mr. Vegas",
-            "Clifford Smith",
-            "Cleveland Browne",
-            "Danny Browne"
+            "Mr. Vegas"
           ],
           "tracks": [
             {
@@ -9800,7 +9779,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg"
+          "local_artwork": "data/artwork/beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg"
         },
         {
           "album_id": "6FJxoadUE4JNVwWHghBwnb",
@@ -9926,7 +9905,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/beyonc\u00e9_renaissance.jpg"
+          "local_artwork": "data/artwork/beyonc\u00e9_renaissance.jpg"
         }
       ]
     },
@@ -10037,7 +10016,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/bear_vs_shark_right_now_youre_in_the_best_of_hands.jpg"
+          "local_artwork": "data/artwork/bear_vs_shark_right_now_youre_in_the_best_of_hands.jpg"
         },
         {
           "album_id": "42jyuXhdG8YyvygfZ1ORLw",
@@ -10058,7 +10037,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/bear_vs_shark_terrorhawk.jpg"
+          "local_artwork": "data/artwork/bear_vs_shark_terrorhawk.jpg"
         }
       ]
     },
@@ -10240,7 +10219,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/janet_jackson_the_velvet_rope.jpg"
         },
         {
           "album_id": "34LxHI9x14qXUOS8AWRrYD",
@@ -10415,7 +10394,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/de_la_soul_3_feet_high_and_rising.jpg"
         },
         {
           "album_id": "3Yko2SxDk4hc6fncIBQlcM",
@@ -10576,7 +10555,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/solange_a_seat_at_the_table.jpg"
         }
       ]
     },
@@ -10593,10 +10572,7 @@
           "album_total_tracks": 14,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273f38c6b37a21334e22005b1f7",
           "artist_names": [
-            "A Tribe Called Quest",
-            "Busta Rhymes",
-            "Dinco D",
-            "Charlie Brown"
+            "A Tribe Called Quest"
           ],
           "tracks": [
             {
@@ -10698,7 +10674,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/a_tribe_called_quest_the_low_end_theory.jpg"
         }
       ]
     },
@@ -10715,8 +10691,7 @@
           "album_total_tracks": 14,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273453eaf1e8feb981d6a807e0d",
           "artist_names": [
-            "Aesop Rock",
-            "John Darnielle"
+            "Cage"
           ],
           "tracks": [
             {
@@ -10859,7 +10834,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/blink_182_california_deluxe_edition.jpg"
+          "local_artwork": "data/artwork/blink_182_california_deluxe_edition.jpg"
         },
         {
           "album_id": "1OteY9OFTmoZ0vmZT89wPd",
@@ -10880,7 +10855,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/blink_182_one_more_time.jpg"
+          "local_artwork": "data/artwork/blink_182_one_more_time.jpg"
         },
         {
           "album_id": "1rkcABZWlix3sYH6XLUSAz",
@@ -10908,7 +10883,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/blink_182_the_mark_tom_and_travis_show_the_enema_strikes_b.jpg"
+          "local_artwork": "data/artwork/blink_182_the_mark_tom_and_travis_show_the_enema_strikes_b.jpg"
         },
         {
           "album_id": "2CoVyQi2zIifUNBcVR0gEH",
@@ -10929,7 +10904,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/blink_182_dude_ranch.jpg"
+          "local_artwork": "data/artwork/blink_182_dude_ranch.jpg"
         },
         {
           "album_id": "2xSmzzqWM6cqaC92Hf7Dyv",
@@ -10957,7 +10932,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/blink_182_neighborhoods_deluxe.jpg"
+          "local_artwork": "data/artwork/blink_182_neighborhoods_deluxe.jpg"
         },
         {
           "album_id": "3nHpBmW5wJXGeC3ojBkpey",
@@ -11013,7 +10988,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/blink_182_take_off_your_pants_and_jacket.jpg"
+          "local_artwork": "data/artwork/blink_182_take_off_your_pants_and_jacket.jpg"
         },
         {
           "album_id": "4hBTxv4QRPePXCFcEI7Vjp",
@@ -11146,7 +11121,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/blink_182_blink_182.jpg"
+          "local_artwork": "data/artwork/blink_182_blink_182.jpg"
         },
         {
           "album_id": "652N05EcNH1a4bIlUixQE2",
@@ -11188,7 +11163,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/blink_182_enema_of_the_state.jpg"
+          "local_artwork": "data/artwork/blink_182_enema_of_the_state.jpg"
         }
       ]
     },
@@ -11278,7 +11253,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_rolling_stones_let_it_bleed.jpg"
+          "local_artwork": "data/artwork/the_rolling_stones_let_it_bleed.jpg"
         },
         {
           "album_id": "5U4dnRZsfW8NmwBBkELFPh",
@@ -11418,7 +11393,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_rolling_stones_exile_on_main_street_2010_re_mastered.jpg"
+          "local_artwork": "data/artwork/the_rolling_stones_exile_on_main_street_2010_re_mastered.jpg"
         }
       ]
     },
@@ -11592,7 +11567,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/solange_a_seat_at_the_table.jpg"
+          "local_artwork": "data/artwork/solange_a_seat_at_the_table.jpg"
         }
       ]
     },
@@ -11717,7 +11692,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/minor_threat_first_two_seven_inches.jpg"
+          "local_artwork": "data/artwork/minor_threat_first_two_seven_inches.jpg"
         },
         {
           "album_id": "6wPX4FdHqmn0aHZ84WUCW5",
@@ -11794,7 +11769,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/minor_threat_out_of_step.jpg",
+          "local_artwork": "data/artwork/minor_threat_out_of_step.jpg",
           "discogs_catalog": {
             "release_id": 1627979,
             "master_id": 9654,
@@ -12006,14 +11981,14 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/at_the_drive_in_relationship_of_command.jpg",
+          "local_artwork": "data/artwork/at_the_drive_in_relationship_of_command.jpg",
           "discogs_catalog": {
             "release_id": 4491942,
             "master_id": 45482,
             "folder_id": 1,
             "title": "Relationship Of Command",
             "artists": [
-              "At The Drive-In"
+              "At the Drive-In"
             ],
             "year": 2013,
             "released": "2013-04-20",
@@ -12178,7 +12153,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/at_the_drive_in_vaya.jpg"
+          "local_artwork": "data/artwork/at_the_drive_in_vaya.jpg"
         },
         {
           "album_id": "35qZXJifEQcpWnKP6E4oNv",
@@ -12269,7 +12244,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/at_the_drive_in_in_casino_out.jpg"
+          "local_artwork": "data/artwork/at_the_drive_in_in_casino_out.jpg"
         }
       ]
     },
@@ -12401,7 +12376,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/lewis_capaldi_divinely_uninspired_to_a_hellish_extent_extended.jpg"
+          "local_artwork": "data/artwork/lewis_capaldi_divinely_uninspired_to_a_hellish_extent_extended.jpg"
         }
       ]
     },
@@ -12526,7 +12501,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/brian_eno_another_green_world_2004_remaster.jpg"
+          "local_artwork": "data/artwork/brian_eno_another_green_world_2004_remaster.jpg"
         }
       ]
     },
@@ -12623,7 +12598,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/wednesday_rat_saw_god.jpg"
+          "local_artwork": "data/artwork/wednesday_rat_saw_god.jpg"
         }
       ]
     },
@@ -12706,7 +12681,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/talking_heads_remain_in_light.jpg"
+          "local_artwork": "data/artwork/talking_heads_remain_in_light.jpg"
         },
         {
           "album_id": "78MM8HrabEGPLVWaJkM2t1",
@@ -12783,7 +12758,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/talking_heads_speaking_in_tongues.jpg"
+          "local_artwork": "data/artwork/talking_heads_speaking_in_tongues.jpg"
         }
       ]
     },
@@ -12817,7 +12792,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_fall_of_troy_manipulator.jpg"
+          "local_artwork": "data/artwork/the_fall_of_troy_manipulator.jpg"
         }
       ]
     },
@@ -12834,7 +12809,7 @@
           "album_total_tracks": 10,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737aa8783ad8def37cc548a9cf",
           "artist_names": [
-            "Daniel Caesar"
+            "Kali Uchis"
           ],
           "tracks": [
             {
@@ -13082,7 +13057,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/say_anything_is_a_real_boy.jpg"
+          "local_artwork": "data/artwork/say_anything_is_a_real_boy.jpg"
         }
       ]
     },
@@ -13193,7 +13168,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/kanye_west_my_beautiful_dark_twisted_fantasy.jpg"
+          "local_artwork": "data/artwork/kanye_west_my_beautiful_dark_twisted_fantasy.jpg"
         },
         {
           "album_id": "2UJwKSBUz6rtW4QLK74kQu",
@@ -13204,10 +13179,7 @@
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2730d1d6e9325275f104f8e33f3",
           "artist_names": [
             "Beyonc\u00e9",
-            "Mr. Vegas",
-            "Clifford Smith",
-            "Cleveland Browne",
-            "Danny Browne"
+            "Mr. Vegas"
           ],
           "tracks": [
             {
@@ -13351,7 +13323,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg"
         },
         {
           "album_id": "3WFTGIO6E3Xh4paEOBY9OU",
@@ -13449,7 +13421,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/kanye_west_808s_heartbreak.jpg"
+          "local_artwork": "data/artwork/kanye_west_808s_heartbreak.jpg"
         },
         {
           "album_id": "7D2NdGvBHIavgLhmcwhluK",
@@ -13533,7 +13505,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/kanye_west_yeezus.jpg"
+          "local_artwork": "data/artwork/kanye_west_yeezus.jpg"
         },
         {
           "album_id": "7gsWAHLeT0w7es6FofOXk1",
@@ -13687,7 +13659,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/kanye_west_the_life_of_pablo.jpg"
+          "local_artwork": "data/artwork/kanye_west_the_life_of_pablo.jpg"
         }
       ]
     },
@@ -13704,7 +13676,7 @@
           "album_total_tracks": 15,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e84f43fcd694182cfd25a3e3",
           "artist_names": [
-            "Daniel Caesar"
+            "serpentwithfeet"
           ],
           "tracks": [
             {
@@ -13854,7 +13826,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/miles_davis_in_a_silent_way.jpg"
+          "local_artwork": "data/artwork/miles_davis_in_a_silent_way.jpg"
         },
         {
           "album_id": "3Q0zkOZEOC855ErOOJ1AdO",
@@ -13864,14 +13836,7 @@
           "album_total_tracks": 7,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2733f29c5269be5a4e9c4611d7a",
           "artist_names": [
-            "Miles Davis",
-            "Wayne Shorter",
-            "Bennie Maupin",
-            "John McLaughlin",
-            "Chick Corea",
-            "Joe Zawinul",
-            "Dave Holland",
-            "Harvey Brooks"
+            "Miles Davis"
           ],
           "tracks": [
             {
@@ -13910,7 +13875,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/miles_davis_bitches_brew.jpg"
+          "local_artwork": "data/artwork/miles_davis_bitches_brew.jpg"
         }
       ]
     },
@@ -13927,9 +13892,7 @@
           "album_total_tracks": 12,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273df075bcefe46d7ca94692651",
           "artist_names": [
-            "Stormzy",
-            "Debbie",
-            "Jacob Collier"
+            "Black Sherif"
           ],
           "tracks": [
             {
@@ -14051,7 +14014,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/braid_movie_music_vol_2.jpg"
+          "local_artwork": "data/artwork/braid_movie_music_vol_2.jpg"
         },
         {
           "album_id": "4WBDw3hnJTvWXXDaCNKVqJ",
@@ -14149,7 +14112,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/braid_frame_canvas.jpg"
+          "local_artwork": "data/artwork/braid_frame_canvas.jpg"
         },
         {
           "album_id": "4ZwLAMHF46zpm0fvYbQSau",
@@ -14177,7 +14140,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/braid_the_age_of_octeen.jpg"
+          "local_artwork": "data/artwork/braid_the_age_of_octeen.jpg"
         },
         {
           "album_id": "7zRRWE4b3Y8pizGDGdiDGd",
@@ -14212,7 +14175,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/braid_movie_music_vol_1.jpg"
+          "local_artwork": "data/artwork/braid_movie_music_vol_1.jpg"
         }
       ]
     },
@@ -14274,7 +14237,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/eric_dolphy_out_to_lunch_the_rudy_van_gelder_edition.jpg"
+          "local_artwork": "data/artwork/eric_dolphy_out_to_lunch_the_rudy_van_gelder_edition.jpg"
         }
       ]
     },
@@ -14357,7 +14320,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/pianos_become_the_teeth_the_lack_long_after.jpg",
+          "local_artwork": "data/artwork/pianos_become_the_teeth_the_lack_long_after.jpg",
           "discogs_catalog": {
             "release_id": 4286669,
             "master_id": 380264,
@@ -14462,7 +14425,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/pianos_become_the_teeth_old_pride.jpg"
+          "local_artwork": "data/artwork/pianos_become_the_teeth_old_pride.jpg"
         },
         {
           "album_id": "2Q8EMOuKuqE2cmHeYP3sTg",
@@ -14483,7 +14446,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/pianos_become_the_teeth_hiding.jpg"
+          "local_artwork": "data/artwork/pianos_become_the_teeth_hiding.jpg"
         }
       ]
     },
@@ -14500,8 +14463,7 @@
           "album_total_tracks": 23,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72",
           "artist_names": [
-            "Bad Bunny",
-            "Tainy"
+            "Tony Dize"
           ],
           "tracks": [
             {
@@ -14749,14 +14711,14 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/el_tr\u00edo_de_omar_rodr\u00edguez_l\u00f3pez_ciencia_de_los_in\u00fatiles.jpg",
+          "local_artwork": "data/artwork/el_tr\u00edo_de_omar_rodr\u00edguez_l\u00f3pez_ciencia_de_los_in\u00fatiles.jpg",
           "discogs_catalog": {
             "release_id": 2331725,
             "master_id": 907347,
             "folder_id": 1,
             "title": "Ciencia De Los In\u00fatiles",
             "artists": [
-              "El Tr\u00edo De Omar Rodriguez Lopez"
+              "El Tr\u00edo De Omar Rodr\u00edguez-L\u00f3pez"
             ],
             "year": 2010,
             "released": "2010-06-01",
@@ -14941,7 +14903,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/jorge_ben_jor_africa_brasil.jpg"
+          "local_artwork": "data/artwork/jorge_ben_jor_africa_brasil.jpg"
         },
         {
           "album_id": "1Dbn6bkxBBY8KsQYv85aRB",
@@ -14962,7 +14924,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/jorge_ben_jor_bem_vinda_amizade.jpg"
+          "local_artwork": "data/artwork/jorge_ben_jor_bem_vinda_amizade.jpg"
         },
         {
           "album_id": "26YyS4YkKRniunBIYTaNnp",
@@ -14983,7 +14945,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/jorge_ben_jor_solta_o_pav\u00e3o_1975.jpg"
+          "local_artwork": "data/artwork/jorge_ben_jor_solta_o_pav\u00e3o_1975.jpg"
         },
         {
           "album_id": "2C94EAIFBPnTcq7z8Xj7oe",
@@ -15074,7 +15036,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/jorge_ben_jor_a_banda_do_z\u00e9_pretinho.jpg"
+          "local_artwork": "data/artwork/jorge_ben_jor_a_banda_do_z\u00e9_pretinho.jpg"
         },
         {
           "album_id": "3BnyTufnkSjPhllw6xIw3U",
@@ -15144,7 +15106,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/jorge_ben_jor_salve_simpatia.jpg"
+          "local_artwork": "data/artwork/jorge_ben_jor_salve_simpatia.jpg"
         },
         {
           "album_id": "3xWp6y0HGsHZlXljNs7VRy",
@@ -15242,7 +15204,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/jorge_ben_jor_samba_esquema_novo.jpg"
+          "local_artwork": "data/artwork/jorge_ben_jor_samba_esquema_novo.jpg"
         },
         {
           "album_id": "5rcMJNWebtl2r2S18Je1A0",
@@ -15340,7 +15302,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/jorge_ben_jor_a_tabua_de_esmeralda.jpg"
+          "local_artwork": "data/artwork/jorge_ben_jor_a_tabua_de_esmeralda.jpg"
         }
       ]
     },
@@ -15374,7 +15336,7 @@
               "isrc": "USVR90238901"
             }
           ],
-          "local_artwork": "artwork/hey_mercedes_loses_control.jpg"
+          "local_artwork": "data/artwork/hey_mercedes_loses_control.jpg"
         },
         {
           "album_id": "7zdtIu9JQlafUSbgyUPqLj",
@@ -15402,7 +15364,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/hey_mercedes_everynight_fire_works.jpg"
+          "local_artwork": "data/artwork/hey_mercedes_everynight_fire_works.jpg"
         }
       ]
     },
@@ -15436,7 +15398,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/animal_collective_fall_be_kind.jpg"
+          "local_artwork": "data/artwork/animal_collective_fall_be_kind.jpg"
         },
         {
           "album_id": "6BRq5g6CWiFgN3NrjLGAYq",
@@ -15527,7 +15489,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/animal_collective_merriweather_post_pavilion.jpg"
+          "local_artwork": "data/artwork/animal_collective_merriweather_post_pavilion.jpg"
         }
       ]
     },
@@ -15652,7 +15614,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/pj_harvey_rid_of_me.jpg"
+          "local_artwork": "data/artwork/pj_harvey_rid_of_me.jpg"
         }
       ]
     },
@@ -15686,7 +15648,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/interpol_turn_on_the_bright_lights.jpg"
+          "local_artwork": "data/artwork/interpol_turn_on_the_bright_lights.jpg"
         }
       ]
     },
@@ -15720,7 +15682,7 @@
               "isrc": "CAG270410173"
             }
           ],
-          "local_artwork": "artwork/the_weakerthans_left_and_leaving.jpg"
+          "local_artwork": "data/artwork/the_weakerthans_left_and_leaving.jpg"
         }
       ]
     },
@@ -15838,7 +15800,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_smashing_pumpkins_siamese_dream_deluxe_edition.jpg",
+          "local_artwork": "data/artwork/the_smashing_pumpkins_siamese_dream_deluxe_edition.jpg",
           "discogs_catalog": {
             "release_id": 3255473,
             "master_id": 48681,
@@ -15969,7 +15931,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_smashing_pumpkins_gish_deluxe_edition.jpg"
+          "local_artwork": "data/artwork/the_smashing_pumpkins_gish_deluxe_edition.jpg"
         },
         {
           "album_id": "4bPT6Q8ppaSNppk1kbEbLl",
@@ -16179,7 +16141,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_smashing_pumpkins_mellon_collie_and_the_infinite_sadness_remastere.jpg"
+          "local_artwork": "data/artwork/the_smashing_pumpkins_mellon_collie_and_the_infinite_sadness_remastere.jpg"
         },
         {
           "album_id": "7wJTn94PWzZ3zE0lg3qhld",
@@ -16263,7 +16225,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_smashing_pumpkins_gish_remastered.jpg"
+          "local_artwork": "data/artwork/the_smashing_pumpkins_gish_remastered.jpg"
         }
       ]
     },
@@ -16332,7 +16294,7 @@
               "isrc": "uscgh0769021"
             }
           ],
-          "local_artwork": "artwork/time_spent_driving_just_enough_bright.jpg"
+          "local_artwork": "data/artwork/time_spent_driving_just_enough_bright.jpg"
         }
       ]
     },
@@ -16366,7 +16328,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/floating_points_king_bromeliad_montparnasse.jpg"
+          "local_artwork": "data/artwork/floating_points_king_bromeliad_montparnasse.jpg"
         },
         {
           "album_id": "2C6NX2mhcHVSLDRZsZlrVy",
@@ -16387,7 +16349,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/floating_points_vacuum_boogie.jpg"
+          "local_artwork": "data/artwork/floating_points_vacuum_boogie.jpg"
         }
       ]
     },
@@ -16505,7 +16467,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/burial_untrue.jpg",
+          "local_artwork": "data/artwork/burial_untrue.jpg",
           "discogs_catalog": {
             "release_id": 9755401,
             "master_id": 11772,
@@ -16694,7 +16656,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/lorde_pure_heroine.jpg"
+          "local_artwork": "data/artwork/lorde_pure_heroine.jpg"
         },
         {
           "album_id": "2B87zXm9bOWvAJdkJBTpzF",
@@ -16785,7 +16747,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/lorde_melodrama.jpg"
+          "local_artwork": "data/artwork/lorde_melodrama.jpg"
         }
       ]
     },
@@ -16819,7 +16781,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_jazz_june_the_medicine.jpg"
+          "local_artwork": "data/artwork/the_jazz_june_the_medicine.jpg"
         }
       ]
     },
@@ -16836,9 +16798,7 @@
           "album_total_tracks": 24,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273153b3d6495031cb813a7451c",
           "artist_names": [
-            "Outkast",
-            "Big Rube",
-            "Sleepy Brown"
+            "Big Rube"
           ],
           "tracks": [
             {
@@ -17020,7 +16980,7 @@
           "album_total_tracks": 16,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e2352cc20602d45e9a0e7617",
           "artist_names": [
-            "Outkast"
+            "TMO"
           ],
           "tracks": [
             {
@@ -17153,7 +17113,6 @@
           "album_total_tracks": 18,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273c037ad6d67b49d77c9985945",
           "artist_names": [
-            "Aaliyah",
             "Timbaland"
           ],
           "tracks": [
@@ -17294,9 +17253,7 @@
           "album_total_tracks": 24,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273153b3d6495031cb813a7451c",
           "artist_names": [
-            "Outkast",
-            "Big Rube",
-            "Sleepy Brown"
+            "Big Rube"
           ],
           "tracks": [
             {
@@ -17485,7 +17442,7 @@
           "album_total_tracks": 17,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273bbd45c8d36e0e045ef640411",
           "artist_names": [
-            "Bad Bunny"
+            "Chuwi"
           ],
           "tracks": [
             {
@@ -17615,7 +17572,7 @@
             "folder_id": 1,
             "title": "Deb\u00ed Tirar M\u00e1s Fotos",
             "artists": [
-              "Bad Bunny"
+              "Chuwi"
             ],
             "year": 2025,
             "released": "2025-05-02",
@@ -17790,7 +17747,7 @@
               "isrc": "USA6M0404308"
             }
           ],
-          "local_artwork": "artwork/the_promise_ring_very_emergency.jpg"
+          "local_artwork": "data/artwork/the_promise_ring_very_emergency.jpg"
         },
         {
           "album_id": "353V4tfIwapSRygVvJoJSU",
@@ -17811,7 +17768,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_promise_ring_30_degrees_everywhere.jpg"
+          "local_artwork": "data/artwork/the_promise_ring_30_degrees_everywhere.jpg"
         },
         {
           "album_id": "3jnvo99sNDXcVdlJmrDXOO",
@@ -17881,7 +17838,7 @@
               "isrc": "USA6M0403501"
             }
           ],
-          "local_artwork": "artwork/the_promise_ring_nothing_feels_good.jpg"
+          "local_artwork": "data/artwork/the_promise_ring_nothing_feels_good.jpg"
         }
       ]
     },
@@ -17999,7 +17956,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/aurora_all_my_demons_greeting_me_as_a_friend_deluxe.jpg"
+          "local_artwork": "data/artwork/aurora_all_my_demons_greeting_me_as_a_friend_deluxe.jpg"
         }
       ]
     },
@@ -18016,9 +17973,7 @@
           "album_total_tracks": 24,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273153b3d6495031cb813a7451c",
           "artist_names": [
-            "Outkast",
-            "Big Rube",
-            "Sleepy Brown"
+            "Big Rube"
           ],
           "tracks": [
             {
@@ -18200,7 +18155,7 @@
           "album_total_tracks": 16,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e2352cc20602d45e9a0e7617",
           "artist_names": [
-            "Outkast"
+            "Big Gipp"
           ],
           "tracks": [
             {
@@ -18434,7 +18389,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/nirvana_bleach.jpg"
+          "local_artwork": "data/artwork/nirvana_bleach.jpg"
         },
         {
           "album_id": "2guirTSEqLizK7j9i1MTTZ",
@@ -18539,7 +18494,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/nirvana_nevermind_remastered.jpg",
+          "local_artwork": "data/artwork/nirvana_nevermind_remastered.jpg",
           "discogs_catalog": {
             "release_id": 33960828,
             "master_id": 13814,
@@ -18664,7 +18619,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/nirvana_nirvana.jpg"
+          "local_artwork": "data/artwork/nirvana_nirvana.jpg"
         },
         {
           "album_id": "6ICrBzsbHVluGHP8wGK4Y3",
@@ -18685,7 +18640,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/nirvana_incesticide.jpg"
+          "local_artwork": "data/artwork/nirvana_incesticide.jpg"
         },
         {
           "album_id": "7wOOA7l306K8HfBKfPoafr",
@@ -18783,7 +18738,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/nirvana_in_utero.jpg"
+          "local_artwork": "data/artwork/nirvana_in_utero.jpg"
         }
       ]
     },
@@ -18817,7 +18772,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/green_day_nimrod.jpg"
+          "local_artwork": "data/artwork/green_day_nimrod.jpg"
         },
         {
           "album_id": "4uG8q3GPuWHQlRbswMIRS6",
@@ -18838,7 +18793,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/green_day_dookie.jpg"
+          "local_artwork": "data/artwork/green_day_dookie.jpg"
         },
         {
           "album_id": "7d3nOmFvL51roNElAdpi9d",
@@ -18859,7 +18814,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/green_day_insomniac.jpg"
+          "local_artwork": "data/artwork/green_day_insomniac.jpg"
         }
       ]
     },
@@ -18876,7 +18831,7 @@
           "album_total_tracks": 15,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e84f43fcd694182cfd25a3e3",
           "artist_names": [
-            "Daniel Caesar"
+            "Mustafa"
           ],
           "tracks": [
             {
@@ -19053,7 +19008,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/mestiza_spanish_chica.jpg"
         },
         {
           "album_id": "3IsSwiowHDd0YgVeAIuU4U",
@@ -19064,8 +19019,7 @@
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273d56cfb9475e89cad8f685263",
           "artist_names": [
             "MESTIZA",
-            "Faul & Wad",
-            "Diana Navarro"
+            "Faul & Wad"
           ],
           "tracks": [
             {
@@ -19076,7 +19030,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/mestiza_campanera.jpg"
         },
         {
           "album_id": "7LUHIlbhuFHoZKRlamEd9Y",
@@ -19087,8 +19041,7 @@
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b27332bfdbc847ef90fb5c538853",
           "artist_names": [
             "Faul & Wad",
-            "MESTIZA",
-            "Martina Camargo"
+            "MESTIZA"
           ],
           "tracks": [
             {
@@ -19099,7 +19052,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/faul_wad_tambora.jpg"
+          "local_artwork": "data/artwork/faul_wad_tambora.jpg"
         }
       ]
     },
@@ -19210,7 +19163,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/carissas_wierd_songs_about_leaving.jpg"
+          "local_artwork": "data/artwork/carissas_wierd_songs_about_leaving.jpg"
         },
         {
           "album_id": "3FFFBSekGBxY0e9odb2lgz",
@@ -19294,7 +19247,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/carissas_wierd_ugly_but_honest.jpg"
+          "local_artwork": "data/artwork/carissas_wierd_ugly_but_honest.jpg"
         },
         {
           "album_id": "3Fl3sBZrRO8M35YWqbicmt",
@@ -19329,7 +19282,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/carissas_wierd_i_before_e.jpg"
+          "local_artwork": "data/artwork/carissas_wierd_i_before_e.jpg"
         },
         {
           "album_id": "3l41m2B0WqPyMlFHarz1vj",
@@ -19427,7 +19380,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/carissas_wierd_scrap_book.jpg"
+          "local_artwork": "data/artwork/carissas_wierd_scrap_book.jpg"
         },
         {
           "album_id": "6Y3ALtSpmXlui2AZe80Nor",
@@ -19511,7 +19464,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/carissas_wierd_you_should_be_at_home_here.jpg"
+          "local_artwork": "data/artwork/carissas_wierd_you_should_be_at_home_here.jpg"
         }
       ]
     },
@@ -19545,7 +19498,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/quicksand_slip.jpg"
+          "local_artwork": "data/artwork/quicksand_slip.jpg"
         }
       ]
     },
@@ -19562,7 +19515,7 @@
           "album_total_tracks": 15,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e84f43fcd694182cfd25a3e3",
           "artist_names": [
-            "Daniel Caesar"
+            "Ty Dolla $ign"
           ],
           "tracks": [
             {
@@ -19775,7 +19728,7 @@
               "isrc": "US72W0510021"
             }
           ],
-          "local_artwork": "artwork/hot_rod_circuit_if_its_cool_with_you_its_cool_with_me.jpg"
+          "local_artwork": "data/artwork/hot_rod_circuit_if_its_cool_with_you_its_cool_with_me.jpg"
         },
         {
           "album_id": "3Bak7X4z8P2UX9wmFgY8TV",
@@ -19824,7 +19777,7 @@
               "isrc": "USVR90236402"
             }
           ],
-          "local_artwork": "artwork/hot_rod_circuit_sorry_about_tomorrow.jpg"
+          "local_artwork": "data/artwork/hot_rod_circuit_sorry_about_tomorrow.jpg"
         },
         {
           "album_id": "4WIa7YKywqk8lXEvR5cx76",
@@ -19908,7 +19861,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/hot_rod_circuit_if_i_knew_what_i_knew_then.jpg"
+          "local_artwork": "data/artwork/hot_rod_circuit_if_i_knew_what_i_knew_then.jpg"
         },
         {
           "album_id": "6AZtK1RNPWAX0t5EjMurMK",
@@ -19929,7 +19882,7 @@
               "isrc": "USVR90240001"
             }
           ],
-          "local_artwork": "artwork/hot_rod_circuit_realitys_coming_through.jpg"
+          "local_artwork": "data/artwork/hot_rod_circuit_realitys_coming_through.jpg"
         }
       ]
     },
@@ -19946,11 +19899,7 @@
           "album_total_tracks": 11,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b27356fd333b991827ebb9aea812",
           "artist_names": [
-            "Edu Lobo",
-            "Airto Moreira",
-            "Hermeto Pascoal",
-            "Claudio Slow",
-            "Jose Mariono"
+            "Airto Moreira"
           ],
           "tracks": [
             {
@@ -20072,7 +20021,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/gal_costa_gal_tropical.jpg"
+          "local_artwork": "data/artwork/gal_costa_gal_tropical.jpg"
         },
         {
           "album_id": "2CEAS05rj9mofY5KwvzQwa",
@@ -20093,7 +20042,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/gal_costa_a_arte_de_gal_costa.jpg"
+          "local_artwork": "data/artwork/gal_costa_a_arte_de_gal_costa.jpg"
         },
         {
           "album_id": "4hjiHP3NIIzyYUgfs145zr",
@@ -20103,7 +20052,7 @@
           "album_total_tracks": 11,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b27382634ad97dd029a913a146fe",
           "artist_names": [
-            "Maria Beth\u00e2nia"
+            "Gal Costa"
           ],
           "tracks": [
             {
@@ -20282,7 +20231,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/gal_costa_gal_costa.jpg"
+          "local_artwork": "data/artwork/gal_costa_gal_costa.jpg"
         }
       ]
     },
@@ -20299,7 +20248,6 @@
           "album_total_tracks": 11,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273fdb85e117008b8f7d5add502",
           "artist_names": [
-            "James Brown",
             "Cy Langston"
           ],
           "tracks": [
@@ -20485,7 +20433,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/touch\u00e9_amor\u00e9_to_the_beat_of_a_dead_horse.jpg"
+          "local_artwork": "data/artwork/touch\u00e9_amor\u00e9_to_the_beat_of_a_dead_horse.jpg"
         },
         {
           "album_id": "2Qs1H2KjF6Bk2lSgFjQpOj",
@@ -20506,7 +20454,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/touch\u00e9_amor\u00e9_is_survived_by.jpg"
+          "local_artwork": "data/artwork/touch\u00e9_amor\u00e9_is_survived_by.jpg"
         },
         {
           "album_id": "3IcaDZx8NwboAOJItYq6lh",
@@ -20527,7 +20475,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/touch\u00e9_amor\u00e9_parting_the_sea_between_brightness_and_me.jpg"
+          "local_artwork": "data/artwork/touch\u00e9_amor\u00e9_parting_the_sea_between_brightness_and_me.jpg"
         },
         {
           "album_id": "6KiS2t3EapTmHSt9xGUqe7",
@@ -20625,7 +20573,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/touch\u00e9_amor\u00e9_stage_four_deluxe_edition.jpg"
+          "local_artwork": "data/artwork/touch\u00e9_amor\u00e9_stage_four_deluxe_edition.jpg"
         },
         {
           "album_id": "6fA79mAHNeBhaUnuWBADwc",
@@ -20653,7 +20601,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/touch\u00e9_amor\u00e9_lament.jpg"
+          "local_artwork": "data/artwork/touch\u00e9_amor\u00e9_lament.jpg"
         }
       ]
     },
@@ -20764,7 +20712,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/handsome_handsome.jpg"
+          "local_artwork": "data/artwork/handsome_handsome.jpg"
         }
       ]
     },
@@ -20798,7 +20746,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/alice_in_chains_dirt_2022_remaster.jpg"
+          "local_artwork": "data/artwork/alice_in_chains_dirt_2022_remaster.jpg"
         }
       ]
     },
@@ -20827,7 +20775,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/rita_lee_rita_lee.jpg"
         }
       ]
     },
@@ -20875,7 +20823,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/prof_powderhorn_suites.jpg"
+          "local_artwork": "data/artwork/prof_powderhorn_suites.jpg"
         }
       ]
     },
@@ -20909,7 +20857,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/envy_from_here_to_eternity.jpg"
+          "local_artwork": "data/artwork/envy_from_here_to_eternity.jpg"
         }
       ]
     },
@@ -21020,7 +20968,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/gang_of_four_entertainment.jpg"
+          "local_artwork": "data/artwork/gang_of_four_entertainment.jpg"
         }
       ]
     },
@@ -21054,7 +21002,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/atoms_for_peace_before_your_very_eyes_magic_beanz.jpg"
+          "local_artwork": "data/artwork/atoms_for_peace_before_your_very_eyes_magic_beanz.jpg"
         },
         {
           "album_id": "77Ie9frENeQwYUGHrrS0pk",
@@ -21131,14 +21079,14 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/atoms_for_peace_amok.jpg",
+          "local_artwork": "data/artwork/atoms_for_peace_amok.jpg",
           "discogs_catalog": {
             "release_id": 4321323,
             "master_id": 524134,
             "folder_id": 1,
             "title": "Amok",
             "artists": [
-              "Atoms For Peace (2)"
+              "Atoms For Peace"
             ],
             "year": 2013,
             "released": "2013-02-25",
@@ -21257,7 +21205,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/have_mercy_the_earth_pushed_back.jpg"
+          "local_artwork": "data/artwork/have_mercy_the_earth_pushed_back.jpg"
         }
       ]
     },
@@ -21396,7 +21344,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/jimi_hendrix_electric_ladyland.jpg"
+          "local_artwork": "data/artwork/jimi_hendrix_electric_ladyland.jpg"
         }
       ]
     },
@@ -21444,7 +21392,7 @@
               "isrc": "TCABB1148711"
             }
           ],
-          "local_artwork": "artwork/name_taken_hold_on.jpg"
+          "local_artwork": "data/artwork/name_taken_hold_on.jpg"
         }
       ]
     },
@@ -21478,7 +21426,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/heatmiser_mic_city_sons.jpg"
+          "local_artwork": "data/artwork/heatmiser_mic_city_sons.jpg"
         }
       ]
     },
@@ -21512,7 +21460,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/afi_sing_the_sorrow.jpg"
+          "local_artwork": "data/artwork/afi_sing_the_sorrow.jpg"
         }
       ]
     },
@@ -21588,7 +21536,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/kraftwerk_computer_world_2009_remaster.jpg"
+          "local_artwork": "data/artwork/kraftwerk_computer_world_2009_remaster.jpg"
         },
         {
           "album_id": "0HHRIVjvBcnTepfeRVgS2f",
@@ -21658,7 +21606,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/kraftwerk_trans_europe_express_2009_remaster.jpg"
+          "local_artwork": "data/artwork/kraftwerk_trans_europe_express_2009_remaster.jpg"
         }
       ]
     },
@@ -21681,10 +21629,7 @@
           "album_total_tracks": 14,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273f38c6b37a21334e22005b1f7",
           "artist_names": [
-            "A Tribe Called Quest",
-            "Busta Rhymes",
-            "Dinco D",
-            "Charlie Brown"
+            "A Tribe Called Quest"
           ],
           "tracks": [
             {
@@ -21786,7 +21731,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/a_tribe_called_quest_the_low_end_theory.jpg"
+          "local_artwork": "data/artwork/a_tribe_called_quest_the_low_end_theory.jpg"
         },
         {
           "album_id": "4v5x3Oo3UjQ9YmF3hRAip5",
@@ -21807,7 +21752,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/a_tribe_called_quest_midnight_marauders.jpg"
+          "local_artwork": "data/artwork/a_tribe_called_quest_midnight_marauders.jpg"
         }
       ]
     },
@@ -21918,7 +21863,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/hole_live_through_this.jpg"
+          "local_artwork": "data/artwork/hole_live_through_this.jpg"
         }
       ]
     },
@@ -22022,7 +21967,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sigur_r\u00f3s_takk.jpg"
+          "local_artwork": "data/artwork/sigur_r\u00f3s_takk.jpg"
         },
         {
           "album_id": "1DMMv1Kmoli3Y9fVEZDUVC",
@@ -22106,7 +22051,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sigur_r\u00f3s_\u00e1g\u00e6tis_byrjun.jpg",
+          "local_artwork": "data/artwork/sigur_r\u00f3s_\u00e1g\u00e6tis_byrjun.jpg",
           "discogs_catalog": {
             "release_id": 4449766,
             "master_id": 9621,
@@ -22219,7 +22164,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sigur_r\u00f3s__.jpg"
+          "local_artwork": "data/artwork/sigur_r\u00f3s__.jpg"
         },
         {
           "album_id": "5CtxgcqieOcYKyQjGKI0nY",
@@ -22310,7 +22255,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sigur_r\u00f3s_me\u00f0_su\u00f0_\u00ed_eyrum_vi\u00f0_spilum_endalaust.jpg",
+          "local_artwork": "data/artwork/sigur_r\u00f3s_me\u00f0_su\u00f0_\u00ed_eyrum_vi\u00f0_spilum_endalaust.jpg",
           "discogs_catalog": {
             "release_id": 1629810,
             "master_id": 9666,
@@ -22518,7 +22463,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/counting_crows_august_and_everything_after.jpg"
+          "local_artwork": "data/artwork/counting_crows_august_and_everything_after.jpg"
         },
         {
           "album_id": "60561o2TNguqnXD5ZurDup",
@@ -22560,7 +22505,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/counting_crows_this_desert_life.jpg"
+          "local_artwork": "data/artwork/counting_crows_this_desert_life.jpg"
         }
       ]
     },
@@ -22671,7 +22616,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/brand_new_your_favorite_weapon.jpg"
+          "local_artwork": "data/artwork/brand_new_your_favorite_weapon.jpg"
         },
         {
           "album_id": "2Oyi0iQ92nw0MlO6ehpNwJ",
@@ -22692,7 +22637,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/brand_new_science_fiction.jpg"
+          "local_artwork": "data/artwork/brand_new_science_fiction.jpg"
         },
         {
           "album_id": "6vDiMhyfSnTn18OY99BSQX",
@@ -22783,7 +22728,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/brand_new_deja_entendu.jpg"
+          "local_artwork": "data/artwork/brand_new_deja_entendu.jpg"
         }
       ]
     },
@@ -22806,8 +22751,7 @@
           "album_total_tracks": 18,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2731d6b4b0418200b6324734062",
           "artist_names": [
-            "Arcade Fire",
-            "David Byrne"
+            "Arcade Fire"
           ],
           "tracks": [
             {
@@ -22937,7 +22881,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/arcade_fire_the_suburbs_deluxe.jpg"
+          "local_artwork": "data/artwork/arcade_fire_the_suburbs_deluxe.jpg"
         },
         {
           "album_id": "4GT6uZod4p5RiDMOVHOMme",
@@ -23028,7 +22972,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/arcade_fire_neon_bible.jpg"
+          "local_artwork": "data/artwork/arcade_fire_neon_bible.jpg"
         },
         {
           "album_id": "6ZB8qaR9JNuS0Q0bG1nbcH",
@@ -23112,7 +23056,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/arcade_fire_funeral.jpg"
+          "local_artwork": "data/artwork/arcade_fire_funeral.jpg"
         }
       ]
     },
@@ -23129,7 +23073,6 @@
           "album_total_tracks": 18,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273c037ad6d67b49d77c9985945",
           "artist_names": [
-            "Aaliyah",
             "Timbaland"
           ],
           "tracks": [
@@ -23287,7 +23230,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/explosions_in_the_sky_the_wilderness.jpg"
+          "local_artwork": "data/artwork/explosions_in_the_sky_the_wilderness.jpg"
         },
         {
           "album_id": "2BkhGv48TtChjKBwkC67eo",
@@ -23343,7 +23286,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/explosions_in_the_sky_all_of_a_sudden_i_miss_everyone.jpg"
+          "local_artwork": "data/artwork/explosions_in_the_sky_all_of_a_sudden_i_miss_everyone.jpg"
         },
         {
           "album_id": "2TmYd2YYLJ5dpKiL4pEqkD",
@@ -23399,7 +23342,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/explosions_in_the_sky_those_who_tell_the_truth_shall_die_those_who_tel.jpg"
+          "local_artwork": "data/artwork/explosions_in_the_sky_those_who_tell_the_truth_shall_die_those_who_tel.jpg"
         },
         {
           "album_id": "49buCcKCJwxvdl0R2dMoIU",
@@ -23448,7 +23391,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/explosions_in_the_sky_the_earth_is_not_a_cold_dead_place_anniversary_e.jpg",
+          "local_artwork": "data/artwork/explosions_in_the_sky_the_earth_is_not_a_cold_dead_place_anniversary_e.jpg",
           "discogs_catalog": {
             "release_id": 7256636,
             "master_id": 4202,
@@ -23584,7 +23527,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/explosions_in_the_sky_how_strange_innocence_anniversary_edition.jpg"
+          "local_artwork": "data/artwork/explosions_in_the_sky_how_strange_innocence_anniversary_edition.jpg"
         },
         {
           "album_id": "5g2CNuItRDkZWD3QdCk6O7",
@@ -23605,7 +23548,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/explosions_in_the_sky_take_care_take_care_take_care.jpg",
+          "local_artwork": "data/artwork/explosions_in_the_sky_take_care_take_care_take_care.jpg",
           "discogs_catalog": {
             "release_id": 2890941,
             "master_id": 330128,
@@ -23720,7 +23663,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/deerhunter_halcyon_digest.jpg"
+          "local_artwork": "data/artwork/deerhunter_halcyon_digest.jpg"
         },
         {
           "album_id": "4wJ585ippGitIpRcGs1GD7",
@@ -23818,7 +23761,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/deerhunter_microcastle.jpg"
+          "local_artwork": "data/artwork/deerhunter_microcastle.jpg"
         },
         {
           "album_id": "6UvnlfAkFdfAtEJO6xaQjI",
@@ -23839,7 +23782,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/deerhunter_weird_era_cont.jpg"
+          "local_artwork": "data/artwork/deerhunter_weird_era_cont.jpg"
         },
         {
           "album_id": "7BbHXG8AmJNQ0w3hE6dU4q",
@@ -23937,7 +23880,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/deerhunter_cryptograms.jpg"
+          "local_artwork": "data/artwork/deerhunter_cryptograms.jpg"
         }
       ]
     },
@@ -23954,10 +23897,7 @@
           "album_total_tracks": 14,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273f38c6b37a21334e22005b1f7",
           "artist_names": [
-            "A Tribe Called Quest",
-            "Busta Rhymes",
-            "Dinco D",
-            "Charlie Brown"
+            "A Tribe Called Quest"
           ],
           "tracks": [
             {
@@ -24059,7 +23999,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/a_tribe_called_quest_the_low_end_theory.jpg"
         }
       ]
     },
@@ -24093,7 +24033,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_end_of_the_ocean_pacificatlantic.jpg"
+          "local_artwork": "data/artwork/the_end_of_the_ocean_pacificatlantic.jpg"
         },
         {
           "album_id": "6rxittd8ztbq7fBUuksFYr",
@@ -24114,7 +24054,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_end_of_the_ocean_in_excelsis.jpg"
+          "local_artwork": "data/artwork/the_end_of_the_ocean_in_excelsis.jpg"
         }
       ]
     },
@@ -24225,7 +24165,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/cursive_the_ugly_organ.jpg"
+          "local_artwork": "data/artwork/cursive_the_ugly_organ.jpg"
         }
       ]
     },
@@ -24358,7 +24298,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/beyonc\u00e9_renaissance.jpg"
         }
       ]
     },
@@ -24413,7 +24353,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/elis_regina_falso_brilhante.jpg"
+          "local_artwork": "data/artwork/elis_regina_falso_brilhante.jpg"
         },
         {
           "album_id": "2ngEpie4g3Z2xtZhhwCAxH",
@@ -24511,7 +24451,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/l\u00f4_borges_retratos.jpg"
         }
       ]
     },
@@ -24622,14 +24562,14 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/maps_atlases_perch_patchwork.jpg",
+          "local_artwork": "data/artwork/maps_atlases_perch_patchwork.jpg",
           "discogs_catalog": {
             "release_id": 2379457,
             "master_id": 301266,
             "folder_id": 1,
             "title": "Perch Patchwork",
             "artists": [
-              "Maps And Atlases"
+              "Maps & Atlases"
             ],
             "year": 2010,
             "released": "2010-06-29",
@@ -24822,7 +24762,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/bj\u00f6rk_homogenic.jpg"
+          "local_artwork": "data/artwork/bj\u00f6rk_homogenic.jpg"
         }
       ]
     },
@@ -24919,7 +24859,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/madonna_madonna.jpg"
+          "local_artwork": "data/artwork/madonna_madonna.jpg"
         },
         {
           "album_id": "6fmnT17jc2Sc69q3nza1eD",
@@ -24940,7 +24880,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/madonna_true_blue.jpg"
+          "local_artwork": "data/artwork/madonna_true_blue.jpg"
         }
       ]
     },
@@ -25051,7 +24991,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/rem_murmur.jpg"
+          "local_artwork": "data/artwork/rem_murmur.jpg"
         },
         {
           "album_id": "6yEuIwTQpciH1qtj7mP5GK",
@@ -25142,7 +25082,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/rem_out_of_time_25th_anniversary_edition.jpg"
+          "local_artwork": "data/artwork/rem_out_of_time_25th_anniversary_edition.jpg"
         }
       ]
     },
@@ -25176,7 +25116,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/electric_light_orchestra_xanadu.jpg"
+          "local_artwork": "data/artwork/electric_light_orchestra_xanadu.jpg"
         },
         {
           "album_id": "11O60gqbQl6f3EmTyZGaur",
@@ -25197,7 +25137,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/electric_light_orchestra_eldorado.jpg"
+          "local_artwork": "data/artwork/electric_light_orchestra_eldorado.jpg"
         },
         {
           "album_id": "1CvVSn2MtKDBR6aWMkNkem",
@@ -25218,7 +25158,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/electric_light_orchestra_discovery.jpg"
+          "local_artwork": "data/artwork/electric_light_orchestra_discovery.jpg"
         },
         {
           "album_id": "1HSU8sXRI9HiEAHslHRFQ3",
@@ -25239,7 +25179,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/electric_light_orchestra_face_the_music.jpg"
+          "local_artwork": "data/artwork/electric_light_orchestra_face_the_music.jpg"
         },
         {
           "album_id": "1HeFOMY5IwPmJUscvoXKvn",
@@ -25260,7 +25200,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/electric_light_orchestra_no_answer.jpg"
+          "local_artwork": "data/artwork/electric_light_orchestra_no_answer.jpg"
         },
         {
           "album_id": "1npNR6mWuE6qaqU3GGpNTB",
@@ -25295,7 +25235,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/electric_light_orchestra_all_over_the_world_the_very_best_of_elo.jpg"
+          "local_artwork": "data/artwork/electric_light_orchestra_all_over_the_world_the_very_best_of_elo.jpg"
         },
         {
           "album_id": "3usnShwygMXVZB4IV5dwnU",
@@ -25337,7 +25277,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/electric_light_orchestra_out_of_the_blue.jpg"
+          "local_artwork": "data/artwork/electric_light_orchestra_out_of_the_blue.jpg"
         },
         {
           "album_id": "4JjLldxv4cJVhZpkyJIq4C",
@@ -25358,7 +25298,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/electric_light_orchestra_jeff_lynnes_elo_from_out_of_nowhere.jpg"
+          "local_artwork": "data/artwork/electric_light_orchestra_jeff_lynnes_elo_from_out_of_nowhere.jpg"
         },
         {
           "album_id": "7a35UzxXYuKQGMGImyB0Un",
@@ -25400,7 +25340,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/electric_light_orchestra_a_new_world_record.jpg"
+          "local_artwork": "data/artwork/electric_light_orchestra_a_new_world_record.jpg"
         }
       ]
     },
@@ -25504,7 +25444,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/nina_simone_wild_is_the_wind.jpg"
+          "local_artwork": "data/artwork/nina_simone_wild_is_the_wind.jpg"
         },
         {
           "album_id": "31pd81sWDaK2pP3ok5892z",
@@ -25525,7 +25465,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/nina_simone_pastel_blues.jpg"
+          "local_artwork": "data/artwork/nina_simone_pastel_blues.jpg"
         },
         {
           "album_id": "3ofZeSWPHZOE5WC2tNZDez",
@@ -25546,7 +25486,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/nina_simone_i_put_a_spell_on_you.jpg"
+          "local_artwork": "data/artwork/nina_simone_i_put_a_spell_on_you.jpg"
         }
       ]
     },
@@ -25580,7 +25520,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/rival_schools_united_by_fate.jpg"
+          "local_artwork": "data/artwork/rival_schools_united_by_fate.jpg"
         }
       ]
     },
@@ -25614,7 +25554,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/worthwhile_old_world_harm.jpg"
+          "local_artwork": "data/artwork/worthwhile_old_world_harm.jpg"
         },
         {
           "album_id": "6C5ED5twSt8dEbiffbFNe2",
@@ -25705,7 +25645,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/worthwhile_carry_on_kid.jpg"
+          "local_artwork": "data/artwork/worthwhile_carry_on_kid.jpg"
         }
       ]
     },
@@ -25746,7 +25686,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/evinha_cart\u00e3o_postal.jpg"
+          "local_artwork": "data/artwork/evinha_cart\u00e3o_postal.jpg"
         }
       ]
     },
@@ -25780,7 +25720,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/broken_social_scene_broken_social_scene.jpg"
+          "local_artwork": "data/artwork/broken_social_scene_broken_social_scene.jpg"
         },
         {
           "album_id": "6nL0U84JsEJ0cRsGCnsDnJ",
@@ -25815,7 +25755,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/broken_social_scene_you_forgot_it_in_people.jpg"
+          "local_artwork": "data/artwork/broken_social_scene_you_forgot_it_in_people.jpg"
         }
       ]
     },
@@ -25997,7 +25937,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/de_la_soul_3_feet_high_and_rising.jpg"
         }
       ]
     },
@@ -26129,7 +26069,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/robyn_body_talk.jpg"
+          "local_artwork": "data/artwork/robyn_body_talk.jpg"
         },
         {
           "album_id": "5xDz5FY3Hsp2skcOP1IUNU",
@@ -26139,8 +26079,7 @@
           "album_total_tracks": 16,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e3ea3c61193688c768f176f9",
           "artist_names": [
-            "Robyn",
-            "Kleerup"
+            "Robyn"
           ],
           "tracks": [
             {
@@ -26151,7 +26090,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/robyn_robyn.jpg"
+          "local_artwork": "data/artwork/robyn_robyn.jpg"
         }
       ]
     },
@@ -26248,7 +26187,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/paramore_riot.jpg"
+          "local_artwork": "data/artwork/paramore_riot.jpg"
         }
       ]
     },
@@ -26381,7 +26320,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/beyonc\u00e9_renaissance.jpg"
         }
       ]
     },
@@ -26415,7 +26354,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/mind_enterprises_panorama_ep.jpg"
+          "local_artwork": "data/artwork/mind_enterprises_panorama_ep.jpg"
         }
       ]
     },
@@ -26449,7 +26388,7 @@
               "isrc": "USVR90234310"
             }
           ],
-          "local_artwork": "artwork/reggie_and_the_full_effect_promotional_copy.jpg"
+          "local_artwork": "data/artwork/reggie_and_the_full_effect_promotional_copy.jpg"
         }
       ]
     },
@@ -26532,7 +26471,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/television_marquee_moon.jpg"
+          "local_artwork": "data/artwork/television_marquee_moon.jpg"
         }
       ]
     },
@@ -26720,7 +26659,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/de_la_soul_3_feet_high_and_rising.jpg"
+          "local_artwork": "data/artwork/de_la_soul_3_feet_high_and_rising.jpg"
         }
       ]
     },
@@ -26737,7 +26676,7 @@
           "album_total_tracks": 16,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e08b1250db5f75643f1508c9",
           "artist_names": [
-            "Ms. Lauryn Hill"
+            "Mary J. Blige"
           ],
           "tracks": [
             {
@@ -26863,7 +26802,6 @@
           "album_total_tracks": 16,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737d9cf15a27f29ffc8ef01e8d",
           "artist_names": [
-            "Disclosure",
             "Mary J. Blige"
           ],
           "tracks": [
@@ -27056,14 +26994,14 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_xx_xx.jpg",
+          "local_artwork": "data/artwork/the_xx_xx.jpg",
           "discogs_catalog": {
             "release_id": 18492652,
             "master_id": 175869,
             "folder_id": 1,
             "title": "XX",
             "artists": [
-              "The XX"
+              "The xx"
             ],
             "year": 2010,
             "released": "2010",
@@ -27185,7 +27123,6 @@
           "album_total_tracks": 13,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2735ab9f4f7dd5e16773cf973c5",
           "artist_names": [
-            "shego",
             "Aiko el grupo"
           ],
           "tracks": [
@@ -27253,7 +27190,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/aiko_el_grupo_me_est\u00e1n_apuntando_con_un_arma.jpg"
+          "local_artwork": "data/artwork/aiko_el_grupo_me_est\u00e1n_apuntando_con_un_arma.jpg"
         },
         {
           "album_id": "1u0KpgKOxJZY5wVrfbveOB",
@@ -27281,7 +27218,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/aiko_el_grupo_a_tomar_por_culo.jpg"
+          "local_artwork": "data/artwork/aiko_el_grupo_a_tomar_por_culo.jpg"
         },
         {
           "album_id": "1vCc2GGEUJgg1nG8DqjNWn",
@@ -27291,7 +27228,6 @@
           "album_total_tracks": 1,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2738532ca6af55590371b3a0f41",
           "artist_names": [
-            "Tri\u00e1ngulo de Amor Bizarro",
             "Aiko el grupo"
           ],
           "tracks": [
@@ -27325,7 +27261,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/axolotes_mexicanos_4ever.jpg"
         },
         {
           "album_id": "2smW4STRQ9RGyrzuuHSwq5",
@@ -27335,7 +27271,6 @@
           "album_total_tracks": 21,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e9a7a8a90703137902ed3a0d",
           "artist_names": [
-            "Los Punsetes",
             "Aiko el grupo"
           ],
           "tracks": [
@@ -27368,7 +27303,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/aiko_el_grupo_no_te_has_enterado.jpg"
+          "local_artwork": "data/artwork/aiko_el_grupo_no_te_has_enterado.jpg"
         },
         {
           "album_id": "69mralFmMbF9NcqdfG1pAM",
@@ -27389,7 +27324,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/aiko_el_grupo_modo_sigilo.jpg"
+          "local_artwork": "data/artwork/aiko_el_grupo_modo_sigilo.jpg"
         },
         {
           "album_id": "6yolmmNdajAr99jxhprzow",
@@ -27410,7 +27345,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/aiko_el_grupo_toro.jpg"
+          "local_artwork": "data/artwork/aiko_el_grupo_toro.jpg"
         },
         {
           "album_id": "7olidubXJ7Q1dM8CsMg044",
@@ -27473,7 +27408,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/aiko_el_grupo_va_totalmente_en_serio.jpg"
+          "local_artwork": "data/artwork/aiko_el_grupo_va_totalmente_en_serio.jpg"
         }
       ]
     },
@@ -27507,7 +27442,7 @@
               "isrc": "USDTR0200005"
             }
           ],
-          "local_artwork": "artwork/the_early_november_for_all_of_this.jpg"
+          "local_artwork": "data/artwork/the_early_november_for_all_of_this.jpg"
         },
         {
           "album_id": "5Su20B0iK3QnfxJ0lUiSgn",
@@ -27528,7 +27463,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_early_november_the_rooms_too_cold.jpg"
+          "local_artwork": "data/artwork/the_early_november_the_rooms_too_cold.jpg"
         }
       ]
     },
@@ -27562,7 +27497,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/daphni_jiaolong.jpg"
+          "local_artwork": "data/artwork/daphni_jiaolong.jpg"
         },
         {
           "album_id": "7Bb7hZ43hWztFwaPCfZKvK",
@@ -27584,7 +27519,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/sofia_kourtesis_unidos.jpg"
         }
       ]
     },
@@ -27653,7 +27588,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/slint_spiderland.jpg"
+          "local_artwork": "data/artwork/slint_spiderland.jpg"
         }
       ]
     },
@@ -27694,7 +27629,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/a_lot_like_birds_divisi.jpg"
+          "local_artwork": "data/artwork/a_lot_like_birds_divisi.jpg"
         }
       ]
     },
@@ -27711,7 +27646,6 @@
           "album_total_tracks": 16,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737d9cf15a27f29ffc8ef01e8d",
           "artist_names": [
-            "Disclosure",
             "Mary J. Blige"
           ],
           "tracks": [
@@ -27831,8 +27765,7 @@
           "album_total_tracks": 21,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b27396bf7b4c49ead668e194a48a",
           "artist_names": [
-            "SBTRKT",
-            "Denai Moore"
+            "Jessie Ware"
           ],
           "tracks": [
             {
@@ -27968,7 +27901,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/texas_is_the_reason_do_you_know_who_you_are_the_complete_collection.jpg"
+          "local_artwork": "data/artwork/texas_is_the_reason_do_you_know_who_you_are_the_complete_collection.jpg"
         }
       ]
     },
@@ -28002,7 +27935,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/knapsack_silver_sweepstakes.jpg"
+          "local_artwork": "data/artwork/knapsack_silver_sweepstakes.jpg"
         },
         {
           "album_id": "0wGnULzBLkxGa1FS4LSqmK",
@@ -28086,7 +28019,7 @@
               "isrc": "USGKX9813601"
             }
           ],
-          "local_artwork": "artwork/knapsack_this_conversation_is_ending_starting_right_now.jpg"
+          "local_artwork": "data/artwork/knapsack_this_conversation_is_ending_starting_right_now.jpg"
         },
         {
           "album_id": "6xK0rYqqBtzcIiq0rY90Al",
@@ -28121,7 +28054,7 @@
               "isrc": "USGKX9809505"
             }
           ],
-          "local_artwork": "artwork/knapsack_day_three_of_my_new_life.jpg"
+          "local_artwork": "data/artwork/knapsack_day_three_of_my_new_life.jpg"
         }
       ]
     },
@@ -28211,7 +28144,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/wilco_yankee_hotel_foxtrot.jpg"
+          "local_artwork": "data/artwork/wilco_yankee_hotel_foxtrot.jpg"
         }
       ]
     },
@@ -28228,8 +28161,7 @@
           "album_total_tracks": 14,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273453eaf1e8feb981d6a807e0d",
           "artist_names": [
-            "Aesop Rock",
-            "John Darnielle"
+            "Rob Sonic"
           ],
           "tracks": [
             {
@@ -28499,7 +28431,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/solange_a_seat_at_the_table.jpg"
         }
       ]
     },
@@ -28516,7 +28448,6 @@
           "album_total_tracks": 8,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273f2d4bfa3de9b084906068d77",
           "artist_names": [
-            "Melvins",
             "Napalm Death"
           ],
           "tracks": [
@@ -28583,7 +28514,7 @@
               "isrc": "US72W0510040"
             }
           ],
-          "local_artwork": "artwork/northstar_pollyanna.jpg"
+          "local_artwork": "data/artwork/northstar_pollyanna.jpg"
         },
         {
           "album_id": "7h5rbCRV3FcOgxZyRQTTS6",
@@ -28667,7 +28598,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/northstar_is_this_thing_loaded.jpg"
+          "local_artwork": "data/artwork/northstar_is_this_thing_loaded.jpg"
         }
       ]
     },
@@ -28778,7 +28709,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sufjan_stevens_seven_swans.jpg"
+          "local_artwork": "data/artwork/sufjan_stevens_seven_swans.jpg"
         },
         {
           "album_id": "1pOl0KEC1iQnA6F0XxV4To",
@@ -28946,7 +28877,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sufjan_stevens_illinois.jpg",
+          "local_artwork": "data/artwork/sufjan_stevens_illinois.jpg",
           "discogs_catalog": {
             "release_id": 649042,
             "master_id": 14863,
@@ -29169,7 +29100,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sufjan_stevens_all_delighted_people.jpg"
+          "local_artwork": "data/artwork/sufjan_stevens_all_delighted_people.jpg"
         },
         {
           "album_id": "2XOwIbRcNFIBFvGEHDSBQk",
@@ -29197,7 +29128,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sufjan_stevens_michigan.jpg"
+          "local_artwork": "data/artwork/sufjan_stevens_michigan.jpg"
         },
         {
           "album_id": "4kRMCapj9nEyBWnM0kc9OX",
@@ -29288,7 +29219,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sufjan_stevens_the_age_of_adz.jpg",
+          "local_artwork": "data/artwork/sufjan_stevens_the_age_of_adz.jpg",
           "discogs_catalog": {
             "release_id": 2529888,
             "master_id": 281160,
@@ -29485,7 +29416,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sufjan_stevens_carrie_lowell.jpg"
+          "local_artwork": "data/artwork/sufjan_stevens_carrie_lowell.jpg"
         }
       ]
     },
@@ -29590,7 +29521,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/kanye_west_my_beautiful_dark_twisted_fantasy.jpg"
         },
         {
           "album_id": "3WFTGIO6E3Xh4paEOBY9OU",
@@ -29688,7 +29619,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/kanye_west_808s_heartbreak.jpg"
         }
       ]
     },
@@ -29813,7 +29744,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/daft_punk_discovery.jpg"
+          "local_artwork": "data/artwork/daft_punk_discovery.jpg"
         },
         {
           "album_id": "5uRdvUR7xCnHmUW8n64n9y",
@@ -29939,7 +29870,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/daft_punk_homework.jpg",
+          "local_artwork": "data/artwork/daft_punk_homework.jpg",
           "discogs_catalog": {
             "release_id": 4418695,
             "master_id": 26629,
@@ -30093,8 +30024,7 @@
           "album_total_tracks": 13,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273f6381af6ad695ef74de8ce7b",
           "artist_names": [
-            "Kendrick Lamar",
-            "JA\u0178-Z"
+            "Drake"
           ],
           "tracks": [
             {
@@ -30200,10 +30130,7 @@
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2730d1d6e9325275f104f8e33f3",
           "artist_names": [
             "Beyonc\u00e9",
-            "Mr. Vegas",
-            "Clifford Smith",
-            "Cleveland Browne",
-            "Danny Browne"
+            "Mr. Vegas"
           ],
           "tracks": [
             {
@@ -30347,7 +30274,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg"
         },
         {
           "album_id": "48i37aZTC1prDr4EcpQeEa",
@@ -30357,7 +30284,7 @@
           "album_total_tracks": 13,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737b688587a6754481c53f6bb7",
           "artist_names": [
-            "Rihanna"
+            "Drake"
           ],
           "tracks": [
             {
@@ -30585,7 +30512,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/drake_take_care_deluxe.jpg"
+          "local_artwork": "data/artwork/drake_take_care_deluxe.jpg"
         }
       ]
     },
@@ -30682,7 +30609,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_velvet_underground_the_velvet_underground_45th_anniversary.jpg"
+          "local_artwork": "data/artwork/the_velvet_underground_the_velvet_underground_45th_anniversary.jpg"
         },
         {
           "album_id": "4RMGrhJRnGiNqmKqhqpLlX",
@@ -30794,7 +30721,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_velvet_underground_loaded_2015_remaster.jpg"
+          "local_artwork": "data/artwork/the_velvet_underground_loaded_2015_remaster.jpg"
         },
         {
           "album_id": "4xwx0x7k6c5VuThz5qVqmV",
@@ -30804,8 +30731,7 @@
           "album_total_tracks": 11,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b27398260c528e6eec9dd431c1d7",
           "artist_names": [
-            "The Velvet Underground",
-            "Nico"
+            "The Velvet Underground"
           ],
           "tracks": [
             {
@@ -30886,7 +30812,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_velvet_underground_the_velvet_underground_nico_45th_anniversary.jpg"
+          "local_artwork": "data/artwork/the_velvet_underground_the_velvet_underground_nico_45th_anniversary.jpg"
         }
       ]
     },
@@ -30910,10 +30836,7 @@
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2730d1d6e9325275f104f8e33f3",
           "artist_names": [
             "Beyonc\u00e9",
-            "Mr. Vegas",
-            "Clifford Smith",
-            "Cleveland Browne",
-            "Danny Browne"
+            "Mr. Vegas"
           ],
           "tracks": [
             {
@@ -31057,7 +30980,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg"
         },
         {
           "album_id": "392p3shh2jkxUxY2VHvlH8",
@@ -31190,7 +31113,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/frank_ocean_channel_orange.jpg"
+          "local_artwork": "data/artwork/frank_ocean_channel_orange.jpg"
         },
         {
           "album_id": "3mH6qwIy9crq0I9YQbOuDf",
@@ -31323,7 +31246,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/frank_ocean_blonde.jpg"
+          "local_artwork": "data/artwork/frank_ocean_blonde.jpg"
         }
       ]
     },
@@ -31469,7 +31392,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_beatles_abbey_road_remastered.jpg"
+          "local_artwork": "data/artwork/the_beatles_abbey_road_remastered.jpg"
         },
         {
           "album_id": "0jTGHV5xqHPvEcwL8f6YU5",
@@ -31567,7 +31490,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_beatles_let_it_be_remastered.jpg"
+          "local_artwork": "data/artwork/the_beatles_let_it_be_remastered.jpg"
         },
         {
           "album_id": "1klALx0u4AavZNEvC4LrTL",
@@ -31714,7 +31637,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_beatles_the_beatles_remastered.jpg"
+          "local_artwork": "data/artwork/the_beatles_the_beatles_remastered.jpg"
         },
         {
           "album_id": "3PRoXYsngSwjEQWR5PsHWR",
@@ -31826,7 +31749,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_beatles_revolver_remastered.jpg"
+          "local_artwork": "data/artwork/the_beatles_revolver_remastered.jpg"
         },
         {
           "album_id": "6QaVfG1pHYl1z15ZxkvVDW",
@@ -31931,7 +31854,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_beatles_sgt_peppers_lonely_hearts_club_band_remastered.jpg"
+          "local_artwork": "data/artwork/the_beatles_sgt_peppers_lonely_hearts_club_band_remastered.jpg"
         }
       ]
     },
@@ -31954,7 +31877,7 @@
           "album_total_tracks": 16,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e08b1250db5f75643f1508c9",
           "artist_names": [
-            "Ms. Lauryn Hill"
+            "D'Angelo"
           ],
           "tracks": [
             {
@@ -32168,7 +32091,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/dangelo_black_messiah.jpg"
+          "local_artwork": "data/artwork/dangelo_black_messiah.jpg"
         }
       ]
     },
@@ -32185,8 +32108,7 @@
           "album_total_tracks": 21,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b27396bf7b4c49ead668e194a48a",
           "artist_names": [
-            "SBTRKT",
-            "Denai Moore"
+            "Ezra Koenig"
           ],
           "tracks": [
             {
@@ -32366,7 +32288,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/sun_kil_moon_sun_kil_moon_and_amoeba_vol_ii.jpg"
         }
       ]
     },
@@ -32526,7 +32448,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_notorious_big_ready_to_die_the_remaster.jpg"
+          "local_artwork": "data/artwork/the_notorious_big_ready_to_die_the_remaster.jpg"
         }
       ]
     },
@@ -32630,7 +32552,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/fleet_foxes_fleet_foxes.jpg",
+          "local_artwork": "data/artwork/fleet_foxes_fleet_foxes.jpg",
           "discogs_catalog": {
             "release_id": 15346241,
             "master_id": 72463,
@@ -32854,7 +32776,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/fleet_foxes_helplessness_blues.jpg",
+          "local_artwork": "data/artwork/fleet_foxes_helplessness_blues.jpg",
           "discogs_catalog": {
             "release_id": 2856645,
             "master_id": 332326,
@@ -33028,7 +32950,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/aiko_el_grupo_me_est\u00e1n_apuntando_con_un_arma.jpg"
         },
         {
           "album_id": "2haqxYKeT3Cvi1sfqvsd5K",
@@ -33050,7 +32972,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/axolotes_mexicanos_4ever.jpg"
+          "local_artwork": "data/artwork/axolotes_mexicanos_4ever.jpg"
         }
       ]
     },
@@ -33084,7 +33006,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/hella_hold_your_horse_is.jpg"
+          "local_artwork": "data/artwork/hella_hold_your_horse_is.jpg"
         }
       ]
     },
@@ -33174,7 +33096,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/yam\u00ea_elowi.jpg"
+          "local_artwork": "data/artwork/yam\u00ea_elowi.jpg"
         }
       ]
     },
@@ -33299,7 +33221,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/bob_dylan_blonde_on_blonde.jpg"
+          "local_artwork": "data/artwork/bob_dylan_blonde_on_blonde.jpg"
         },
         {
           "album_id": "4WD4pslu83FF6oMa1e19mF",
@@ -33383,7 +33305,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/bob_dylan_blood_on_the_tracks.jpg"
+          "local_artwork": "data/artwork/bob_dylan_blood_on_the_tracks.jpg"
         },
         {
           "album_id": "6YabPKtZAjxwyWbuO9p4ZD",
@@ -33460,7 +33382,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/bob_dylan_highway_61_revisited.jpg"
+          "local_artwork": "data/artwork/bob_dylan_highway_61_revisited.jpg"
         }
       ]
     },
@@ -33494,7 +33416,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/frou_frou_details.jpg"
+          "local_artwork": "data/artwork/frou_frou_details.jpg"
         }
       ]
     },
@@ -33511,9 +33433,7 @@
           "album_total_tracks": 24,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273153b3d6495031cb813a7451c",
           "artist_names": [
-            "Outkast",
-            "Big Rube",
-            "Sleepy Brown"
+            "Big Rube"
           ],
           "tracks": [
             {
@@ -33702,7 +33622,6 @@
           "album_total_tracks": 12,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2732bad6e56e77d5bef0aa3f2dc",
           "artist_names": [
-            "Daniel Caesar",
             "Bon Iver"
           ],
           "tracks": [
@@ -33952,7 +33871,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/solange_a_seat_at_the_table.jpg"
         },
         {
           "album_id": "4J9gt4YOazmavlYw4hMrfY",
@@ -33962,8 +33881,7 @@
           "album_total_tracks": 21,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b27396bf7b4c49ead668e194a48a",
           "artist_names": [
-            "SBTRKT",
-            "Denai Moore"
+            "Sampha"
           ],
           "tracks": [
             {
@@ -34075,9 +33993,7 @@
           "album_total_tracks": 12,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273df075bcefe46d7ca94692651",
           "artist_names": [
-            "Stormzy",
-            "Debbie",
-            "Jacob Collier"
+            "Sampha"
           ],
           "tracks": [
             {
@@ -34297,7 +34213,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/pixies_doolittle.jpg"
+          "local_artwork": "data/artwork/pixies_doolittle.jpg"
         },
         {
           "album_id": "50j4Wm1b9hLpSpPIA39Vp9",
@@ -34402,7 +34318,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/pixies_surfer_rosa_2007_remaster.jpg"
+          "local_artwork": "data/artwork/pixies_surfer_rosa_2007_remaster.jpg"
         },
         {
           "album_id": "79CvxovoFgGNuAMvQp9wul",
@@ -34472,7 +34388,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/pixies_come_on_pilgrim.jpg"
+          "local_artwork": "data/artwork/pixies_come_on_pilgrim.jpg"
         }
       ]
     },
@@ -34506,7 +34422,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/king_krule_6_feet_beneath_the_moon.jpg"
+          "local_artwork": "data/artwork/king_krule_6_feet_beneath_the_moon.jpg"
         }
       ]
     },
@@ -34603,7 +34519,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/azymuth_light_as_a_feather.jpg"
+          "local_artwork": "data/artwork/azymuth_light_as_a_feather.jpg"
         }
       ]
     },
@@ -34708,7 +34624,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/kanye_west_my_beautiful_dark_twisted_fantasy.jpg"
         }
       ]
     },
@@ -34725,9 +34641,7 @@
           "album_total_tracks": 24,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273153b3d6495031cb813a7451c",
           "artist_names": [
-            "Outkast",
-            "Big Rube",
-            "Sleepy Brown"
+            "Big Rube"
           ],
           "tracks": [
             {
@@ -35003,7 +34917,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/gilberto_gil_refazenda.jpg"
+          "local_artwork": "data/artwork/gilberto_gil_refazenda.jpg"
         },
         {
           "album_id": "3eXCgCBM4BS6H83xmxKdL6",
@@ -35024,7 +34938,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/gilberto_gil_um_banda_um.jpg"
+          "local_artwork": "data/artwork/gilberto_gil_um_banda_um.jpg"
         },
         {
           "album_id": "3qoUU8sm4eBT5POFHQSl5L",
@@ -35052,7 +34966,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/gilberto_gil_luar.jpg"
+          "local_artwork": "data/artwork/gilberto_gil_luar.jpg"
         },
         {
           "album_id": "5ZVLLME05cmciSZz4IGcZu",
@@ -35150,7 +35064,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/gilberto_gil_gal_costa.jpg"
+          "local_artwork": "data/artwork/gal_costa_gal_costa.jpg"
         }
       ]
     },
@@ -35240,7 +35154,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_who_whos_next_remastered_2022.jpg"
+          "local_artwork": "data/artwork/the_who_whos_next_remastered_2022.jpg"
         }
       ]
     },
@@ -35400,7 +35314,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_clash_london_calling_remastered.jpg"
+          "local_artwork": "data/artwork/the_clash_london_calling_remastered.jpg"
         }
       ]
     },
@@ -35511,7 +35425,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/the_cure_disintegration_2010_remaster.jpg"
+          "local_artwork": "data/artwork/the_cure_disintegration_2010_remaster.jpg"
         }
       ]
     },
@@ -35637,7 +35551,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/robyn_body_talk.jpg"
         },
         {
           "album_id": "7ycBtnsMtyVbbwTfJwRjSP",
@@ -35647,7 +35561,7 @@
           "album_total_tracks": 16,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273cdb645498cd3d8a2db4d05e1",
           "artist_names": [
-            "Kendrick Lamar"
+            "Snoop Dogg"
           ],
           "tracks": [
             {
@@ -35797,7 +35711,7 @@
               "isrc": "QM8ZC1400040"
             }
           ],
-          "local_artwork": "artwork/thursday_waiting.jpg"
+          "local_artwork": "data/artwork/thursday_waiting.jpg"
         },
         {
           "album_id": "5HMT2y9yUoPH7yYhnyIpQo",
@@ -35818,7 +35732,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/thursday_full_collapse.jpg"
+          "local_artwork": "data/artwork/thursday_full_collapse.jpg"
         }
       ]
     },
@@ -35835,8 +35749,6 @@
           "album_total_tracks": 8,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e47ee02ffdecb6b054e67be7",
           "artist_names": [
-            "Tycho",
-            "Satin Jackets",
             "Saint Sinner"
           ],
           "tracks": [
@@ -36001,7 +35913,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/red_hot_chili_peppers_californication_deluxe_edition.jpg"
+          "local_artwork": "data/artwork/red_hot_chili_peppers_californication_deluxe_edition.jpg"
         },
         {
           "album_id": "2rQ135imvelvp89D8eEZOi",
@@ -36078,7 +35990,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/red_hot_chili_peppers_one_hot_minute_deluxe_edition.jpg"
+          "local_artwork": "data/artwork/red_hot_chili_peppers_one_hot_minute_deluxe_edition.jpg"
         },
         {
           "album_id": "6deiaArbeoqp1xPEGdEKp1",
@@ -36218,7 +36130,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/red_hot_chili_peppers_by_the_way_deluxe_edition.jpg"
+          "local_artwork": "data/artwork/red_hot_chili_peppers_by_the_way_deluxe_edition.jpg"
         },
         {
           "album_id": "7xl50xr9NDkd3i2kBbzsNZ",
@@ -36428,7 +36340,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/red_hot_chili_peppers_stadium_arcadium.jpg"
+          "local_artwork": "data/artwork/red_hot_chili_peppers_stadium_arcadium.jpg"
         }
       ]
     },
@@ -36539,7 +36451,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/caroline_polachek_desire_i_want_to_turn_into_you.jpg"
+          "local_artwork": "data/artwork/caroline_polachek_desire_i_want_to_turn_into_you.jpg"
         },
         {
           "album_id": "4J9gt4YOazmavlYw4hMrfY",
@@ -36549,8 +36461,7 @@
           "album_total_tracks": 21,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b27396bf7b4c49ead668e194a48a",
           "artist_names": [
-            "SBTRKT",
-            "Denai Moore"
+            "Caroline Polachek"
           ],
           "tracks": [
             {
@@ -36756,7 +36667,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/battles_mirrored.jpg"
+          "local_artwork": "data/artwork/battles_mirrored.jpg"
         }
       ]
     },
@@ -36881,7 +36792,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/nickel_creek_why_should_the_fire_die.jpg"
+          "local_artwork": "data/artwork/nickel_creek_why_should_the_fire_die.jpg"
         }
       ]
     },
@@ -36922,7 +36833,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/la_dispute_rooms_of_the_house.jpg"
+          "local_artwork": "data/artwork/la_dispute_rooms_of_the_house.jpg"
         },
         {
           "album_id": "4BDDKxyTMgE1UZh7Wzdx28",
@@ -36943,7 +36854,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/la_dispute_wildlife.jpg"
+          "local_artwork": "data/artwork/la_dispute_wildlife.jpg"
         },
         {
           "album_id": "5fzDxefGUH8jM7T9HCLSNr",
@@ -37048,7 +36959,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/la_dispute_somewhere_at_the_bottom_of_the_river_between_veg.jpg"
+          "local_artwork": "data/artwork/la_dispute_somewhere_at_the_bottom_of_the_river_between_veg.jpg"
         }
       ]
     },
@@ -37159,7 +37070,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": "data/artwork/kanye_west_my_beautiful_dark_twisted_fantasy.jpg"
         },
         {
           "album_id": "2LKW0m9cC63QzEI9tJH3ql",
@@ -37169,7 +37080,6 @@
           "album_total_tracks": 12,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b2732bad6e56e77d5bef0aa3f2dc",
           "artist_names": [
-            "Daniel Caesar",
             "Bon Iver"
           ],
           "tracks": [
@@ -37335,7 +37245,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/bon_iver_for_emma_forever_ago.jpg",
+          "local_artwork": "data/artwork/bon_iver_for_emma_forever_ago.jpg",
           "discogs_catalog": {
             "release_id": 1361007,
             "master_id": 97618,
@@ -37516,7 +37426,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/michael_jackson_thriller.jpg"
+          "local_artwork": "data/artwork/michael_jackson_thriller.jpg"
         }
       ]
     },
@@ -37613,7 +37523,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sofia_kourtesis_madres.jpg"
+          "local_artwork": "data/artwork/sofia_kourtesis_madres.jpg"
         },
         {
           "album_id": "7Bb7hZ43hWztFwaPCfZKvK",
@@ -37635,7 +37545,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/sofia_kourtesis_unidos.jpg"
+          "local_artwork": "data/artwork/sofia_kourtesis_unidos.jpg"
         }
       ]
     },
@@ -37670,7 +37580,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/rita_lee_rita_lee.jpg"
+          "local_artwork": "data/artwork/rita_lee_rita_lee.jpg"
         }
       ]
     },
@@ -37732,7 +37642,7 @@
               "isrc": null
             }
           ],
-          "local_artwork": "artwork/lsd_and_the_search_for_god_lsd_and_the_search_for_god.jpg"
+          "local_artwork": "data/artwork/lsd_and_the_search_for_god_lsd_and_the_search_for_god.jpg"
         }
       ]
     },
@@ -37749,8 +37659,7 @@
           "album_total_tracks": 21,
           "album_art_url": "https://i.scdn.co/image/ab67616d0000b27396bf7b4c49ead668e194a48a",
           "artist_names": [
-            "SBTRKT",
-            "Denai Moore"
+            "Raury"
           ],
           "tracks": [
             {

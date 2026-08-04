@@ -54,9 +54,19 @@ def _sanitize(name: str) -> str:
 
 def bundle_artwork(artist_name: str, album_name: str) -> str | None:
     """Copy the real cached artwork file into the repo's data/artwork/ if it
-    exists locally. Returns the relative path to use in generated data, or None
-    if no cached file was found (real app only caches art for albums it has
-    actually fetched — some selected albums may not have a local file)."""
+    exists locally. Returns the path to use in generated data, or None if no
+    cached file was found (real app only caches art for albums it has actually
+    fetched — some selected albums may not have a local file).
+
+    Returns a "data/..."-prefixed path, not a bare "artwork/..." one — this
+    matters beyond cosmetics: the real backend's core.paths.resolve_data_path()
+    only recognizes paths starting with "data" as resolvable against the data
+    directory; anything else falls through unresolved and (relative to the
+    backend's own cwd) never exists. That mismatch made state.py's
+    _backfill_artwork() think every album's art was missing on every server
+    startup, silently rewriting listening_log.json with absolute
+    machine-specific paths and re-downloading from Spotify's CDN each time —
+    caught in session 4 (see PRJ-0005 session log) after it happened twice."""
     slug = f"{_sanitize(artist_name)}_{_sanitize(album_name)}.jpg"
     src = REAL_ARTWORK_DIR / slug
     if not src.exists():
@@ -65,7 +75,7 @@ def bundle_artwork(artist_name: str, album_name: str) -> str | None:
     dst = OUT_ARTWORK_DIR / slug
     if not dst.exists():
         shutil.copyfile(src, dst)
-    return f"artwork/{slug}"
+    return f"data/artwork/{slug}"
 
 # Personal/behavioral/machine-specific fields deliberately excluded when copying
 # real Discogs records — these get synthesized fresh in stage 2, never carried
@@ -188,17 +198,42 @@ def main() -> None:
                 album_tracks.get(album_id, {}).values(),
                 key=lambda t: (t.get("track_number") is None, t.get("track_number")),
             )
-            local_art = bundle_artwork(name, album["album_name"])
-            album_out = {**album, "tracks": tracks_sorted, "local_artwork": local_art}
+            # Real tracks can be credited to multiple artists (collabs/features).
+            # Filter down to only the curated/reviewed artist set — otherwise a
+            # collaborator who was never sampled or shown for review leaks
+            # through verbatim via the real entry's full artist_names list.
+            # (Caught in session 4 when the real backend's artwork backfill hit
+            # an unreviewed collaborator's name — see PRJ-0005 session log.)
+            filtered_names = [n for n in album["artist_names"] if n in selected_set] or [name]
+            # Bundle artwork under filtered_names[0], not the outer loop's
+            # `name` — stage 2 sets entry["artist_names"] = filtered_names, and
+            # the real backend's artwork backfill keys off artist_names[0]. If
+            # that ever differs from what we bundled under (possible when two
+            # co-credited artists are both in the sample), the slug won't
+            # match and a spurious re-download/rewrite gets triggered again.
+            local_art = bundle_artwork(filtered_names[0], album["album_name"])
+            album_out = {
+                **album,
+                "artist_names": filtered_names,
+                "tracks": tracks_sorted,
+                "local_artwork": local_art,
+            }
 
             # If this real album has a real confirmed vinyl link, carry over the
             # real Discogs catalog metadata (never the personal fields).
             release_id = album_id_to_release_id.get(album_id)
             if release_id and release_id in discogs_by_release_id:
                 real_record = discogs_by_release_id[release_id]
-                album_out["discogs_catalog"] = {
+                discogs_catalog = {
                     k: v for k, v in real_record.items() if k not in _DISCOGS_PERSONAL_FIELDS
                 }
+                # Discogs' own "artists" field is a separate real credit list
+                # from Spotify's, and can also include unreviewed collaborators
+                # (or just differently-cased/accented spellings of a selected
+                # artist). Always use the curated Spotify-canonical name instead
+                # of trying to fuzzy-match casing safely.
+                discogs_catalog["artists"] = filtered_names
+                album_out["discogs_catalog"] = discogs_catalog
             artist_albums_out.append(album_out)
             seed_album_count += 1
 

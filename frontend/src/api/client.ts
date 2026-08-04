@@ -1,7 +1,7 @@
 import { API_BASE as BASE } from "./config";
 
 async function get<T>(path: string, params?: Record<string, string | number>): Promise<T> {
-  const url = new URL(`${BASE}${path}`);
+  const url = new URL(`${BASE}${path}`, window.location.origin);
   if (params) {
     Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, String(v)));
   }
@@ -31,7 +31,7 @@ async function put<T>(path: string, body?: unknown): Promise<T> {
 }
 
 async function del<T>(path: string, params?: Record<string, string>): Promise<T> {
-  const url = new URL(`${BASE}${path}`);
+  const url = new URL(`${BASE}${path}`, window.location.origin);
   if (params) {
     Object.entries(params).forEach(([k, v]) => url.searchParams.set(k, v));
   }

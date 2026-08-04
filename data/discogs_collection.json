@@ -34,8 +34,8 @@
       "Album",
       "Repress"
     ],
-    "thumb": "artwork/burial_untrue.jpg",
-    "cover_image": "artwork/burial_untrue.jpg",
+    "thumb": "data/artwork/burial_untrue.jpg",
+    "cover_image": "data/artwork/burial_untrue.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -102,7 +102,7 @@
     "folder_id": 1,
     "title": "Deb\u00ed Tirar M\u00e1s Fotos",
     "artists": [
-      "Bad Bunny"
+      "Chuwi"
     ],
     "year": 2025,
     "released": "2025-05-02",
@@ -276,8 +276,8 @@
       "45 RPM",
       "Album"
     ],
-    "thumb": "artwork/\u00f3l\u00f6f_arnalds_innundir_skinni.jpg",
-    "cover_image": "artwork/\u00f3l\u00f6f_arnalds_innundir_skinni.jpg",
+    "thumb": "data/artwork/\u00f3l\u00f6f_arnalds_innundir_skinni.jpg",
+    "cover_image": "data/artwork/\u00f3l\u00f6f_arnalds_innundir_skinni.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -344,7 +344,7 @@
     "folder_id": 1,
     "title": "Cryptomnesia",
     "artists": [
-      "El Grupo Nuevo De Omar Rodriguez Lopez"
+      "El Grupo Nuevo De Omar Rodr\u00edguez-L\u00f3pez"
     ],
     "year": 2009,
     "released": "2009",
@@ -369,8 +369,8 @@
       "Album",
       "Limited Edition"
     ],
-    "thumb": "artwork/el_grupo_nuevo_de_omar_rodr\u00edguez_l\u00f3pez_cryptomnesia.jpg",
-    "cover_image": "artwork/el_grupo_nuevo_de_omar_rodr\u00edguez_l\u00f3pez_cryptomnesia.jpg",
+    "thumb": "data/artwork/el_grupo_nuevo_de_omar_rodr\u00edguez_l\u00f3pez_cryptomnesia.jpg",
+    "cover_image": "data/artwork/el_grupo_nuevo_de_omar_rodr\u00edguez_l\u00f3pez_cryptomnesia.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -447,7 +447,7 @@
     "folder_id": 1,
     "title": "Amok",
     "artists": [
-      "Atoms For Peace (2)"
+      "Atoms For Peace"
     ],
     "year": 2013,
     "released": "2013-02-25",
@@ -476,8 +476,8 @@
       "45 RPM",
       "Album"
     ],
-    "thumb": "artwork/atoms_for_peace_amok.jpg",
-    "cover_image": "artwork/atoms_for_peace_amok.jpg",
+    "thumb": "data/artwork/atoms_for_peace_amok.jpg",
+    "cover_image": "data/artwork/atoms_for_peace_amok.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -572,8 +572,8 @@
       "12\"",
       "EP"
     ],
-    "thumb": "artwork/fleet_foxes_fleet_foxes.jpg",
-    "cover_image": "artwork/fleet_foxes_fleet_foxes.jpg",
+    "thumb": "data/artwork/fleet_foxes_fleet_foxes.jpg",
+    "cover_image": "data/artwork/fleet_foxes_fleet_foxes.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -675,7 +675,7 @@
     "folder_id": 1,
     "title": "Ciencia De Los In\u00fatiles",
     "artists": [
-      "El Tr\u00edo De Omar Rodriguez Lopez"
+      "El Tr\u00edo De Omar Rodr\u00edguez-L\u00f3pez"
     ],
     "year": 2010,
     "released": "2010-06-01",
@@ -705,8 +705,8 @@
       "Album",
       "Limited Edition"
     ],
-    "thumb": "artwork/el_tr\u00edo_de_omar_rodr\u00edguez_l\u00f3pez_ciencia_de_los_in\u00fatiles.jpg",
-    "cover_image": "artwork/el_tr\u00edo_de_omar_rodr\u00edguez_l\u00f3pez_ciencia_de_los_in\u00fatiles.jpg",
+    "thumb": "data/artwork/el_tr\u00edo_de_omar_rodr\u00edguez_l\u00f3pez_ciencia_de_los_in\u00fatiles.jpg",
+    "cover_image": "data/artwork/el_tr\u00edo_de_omar_rodr\u00edguez_l\u00f3pez_ciencia_de_los_in\u00fatiles.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -768,7 +768,7 @@
     "folder_id": 1,
     "title": "Perch Patchwork",
     "artists": [
-      "Maps And Atlases"
+      "Maps & Atlases"
     ],
     "year": 2010,
     "released": "2010-06-29",
@@ -793,8 +793,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/maps_atlases_perch_patchwork.jpg",
-    "cover_image": "artwork/maps_atlases_perch_patchwork.jpg",
+    "thumb": "data/artwork/maps_atlases_perch_patchwork.jpg",
+    "cover_image": "data/artwork/maps_atlases_perch_patchwork.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -876,7 +876,7 @@
     "folder_id": 1,
     "title": "Music Has The Right To Children",
     "artists": [
-      "Boards Of Canada"
+      "Boards of Canada"
     ],
     "year": 2013,
     "released": "2013-10-21",
@@ -905,8 +905,8 @@
       "Reissue",
       "Repress"
     ],
-    "thumb": "artwork/boards_of_canada_music_has_the_right_to_children.jpg",
-    "cover_image": "artwork/boards_of_canada_music_has_the_right_to_children.jpg",
+    "thumb": "data/artwork/boards_of_canada_music_has_the_right_to_children.jpg",
+    "cover_image": "data/artwork/boards_of_canada_music_has_the_right_to_children.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -1013,7 +1013,7 @@
     "folder_id": 1,
     "title": "Tomorrow's Harvest",
     "artists": [
-      "Boards Of Canada"
+      "Boards of Canada"
     ],
     "year": 2013,
     "released": "2013-06-10",
@@ -1041,8 +1041,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/boards_of_canada_tomorrows_harvest.jpg",
-    "cover_image": "artwork/boards_of_canada_tomorrows_harvest.jpg",
+    "thumb": "data/artwork/boards_of_canada_tomorrows_harvest.jpg",
+    "cover_image": "data/artwork/boards_of_canada_tomorrows_harvest.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -1175,8 +1175,8 @@
       "Repress",
       "Beige "
     ],
-    "thumb": "artwork/pianos_become_the_teeth_the_lack_long_after.jpg",
-    "cover_image": "artwork/pianos_become_the_teeth_the_lack_long_after.jpg",
+    "thumb": "data/artwork/pianos_become_the_teeth_the_lack_long_after.jpg",
+    "cover_image": "data/artwork/pianos_become_the_teeth_the_lack_long_after.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -1265,8 +1265,8 @@
       "Remastered",
       "180 Gram, Gatefold"
     ],
-    "thumb": "artwork/the_smashing_pumpkins_siamese_dream_deluxe_edition.jpg",
-    "cover_image": "artwork/the_smashing_pumpkins_siamese_dream_deluxe_edition.jpg",
+    "thumb": "data/artwork/the_smashing_pumpkins_siamese_dream_deluxe_edition.jpg",
+    "cover_image": "data/artwork/the_smashing_pumpkins_siamese_dream_deluxe_edition.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -1383,8 +1383,8 @@
       "Album",
       "Reissue"
     ],
-    "thumb": "artwork/explosions_in_the_sky_the_earth_is_not_a_cold_dead_place_anniversary_e.jpg",
-    "cover_image": "artwork/explosions_in_the_sky_the_earth_is_not_a_cold_dead_place_anniversary_e.jpg",
+    "thumb": "data/artwork/explosions_in_the_sky_the_earth_is_not_a_cold_dead_place_anniversary_e.jpg",
+    "cover_image": "data/artwork/explosions_in_the_sky_the_earth_is_not_a_cold_dead_place_anniversary_e.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -1462,8 +1462,8 @@
       "Stereo",
       "Iridescent"
     ],
-    "thumb": "artwork/sparta_porcelain.jpg",
-    "cover_image": "artwork/sparta_porcelain.jpg",
+    "thumb": "data/artwork/sparta_porcelain.jpg",
+    "cover_image": "data/artwork/sparta_porcelain.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -1582,8 +1582,8 @@
       "Album",
       "Gatefold"
     ],
-    "thumb": "artwork/fleet_foxes_helplessness_blues.jpg",
-    "cover_image": "artwork/fleet_foxes_helplessness_blues.jpg",
+    "thumb": "data/artwork/fleet_foxes_helplessness_blues.jpg",
+    "cover_image": "data/artwork/fleet_foxes_helplessness_blues.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -1665,7 +1665,7 @@
     "folder_id": 1,
     "title": "Geogaddi",
     "artists": [
-      "Boards Of Canada"
+      "Boards of Canada"
     ],
     "year": 2013,
     "released": "2013-10-21",
@@ -1699,8 +1699,8 @@
       "Reissue",
       "Remastered"
     ],
-    "thumb": "artwork/boards_of_canada_geogaddi.jpg",
-    "cover_image": "artwork/boards_of_canada_geogaddi.jpg",
+    "thumb": "data/artwork/boards_of_canada_geogaddi.jpg",
+    "cover_image": "data/artwork/boards_of_canada_geogaddi.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -1837,7 +1837,7 @@
     "folder_id": 1,
     "title": "XX",
     "artists": [
-      "The XX"
+      "The xx"
     ],
     "year": 2010,
     "released": "2010",
@@ -1865,8 +1865,8 @@
       "Album",
       "Repress"
     ],
-    "thumb": "artwork/the_xx_xx.jpg",
-    "cover_image": "artwork/the_xx_xx.jpg",
+    "thumb": "data/artwork/the_xx_xx.jpg",
+    "cover_image": "data/artwork/the_xx_xx.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -1979,8 +1979,8 @@
       "Remastered",
       "Recut"
     ],
-    "thumb": "artwork/minor_threat_out_of_step.jpg",
-    "cover_image": "artwork/minor_threat_out_of_step.jpg",
+    "thumb": "data/artwork/minor_threat_out_of_step.jpg",
+    "cover_image": "data/artwork/minor_threat_out_of_step.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -2073,8 +2073,8 @@
       "Reissue",
       "180g"
     ],
-    "thumb": "artwork/nirvana_nevermind_remastered.jpg",
-    "cover_image": "artwork/nirvana_nevermind_remastered.jpg",
+    "thumb": "data/artwork/nirvana_nevermind_remastered.jpg",
+    "cover_image": "data/artwork/nirvana_nevermind_remastered.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -2156,7 +2156,7 @@
     "folder_id": 1,
     "title": "The Campfire Headphase",
     "artists": [
-      "Boards Of Canada"
+      "Boards of Canada"
     ],
     "year": 2005,
     "released": "2005-10-17",
@@ -2183,8 +2183,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/boards_of_canada_the_campfire_headphase.jpg",
-    "cover_image": "artwork/boards_of_canada_the_campfire_headphase.jpg",
+    "thumb": "data/artwork/boards_of_canada_the_campfire_headphase.jpg",
+    "cover_image": "data/artwork/boards_of_canada_the_campfire_headphase.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -2281,7 +2281,7 @@
     "folder_id": 1,
     "title": "In A Beautiful Place Out In The Country",
     "artists": [
-      "Boards Of Canada"
+      "Boards of Canada"
     ],
     "year": 2000,
     "released": "2000-11-27",
@@ -2311,8 +2311,8 @@
       "EP",
       "Sky Blue, Orlake Pressing"
     ],
-    "thumb": "artwork/boards_of_canada_in_a_beautiful_place_out_in_the_country.jpg",
-    "cover_image": "artwork/boards_of_canada_in_a_beautiful_place_out_in_the_country.jpg",
+    "thumb": "data/artwork/boards_of_canada_in_a_beautiful_place_out_in_the_country.jpg",
+    "cover_image": "data/artwork/boards_of_canada_in_a_beautiful_place_out_in_the_country.jpg",
     "tracklist": [
       {
         "position": "A1",
@@ -2373,8 +2373,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/thursday_full_collapse.jpg",
-    "cover_image": "artwork/thursday_full_collapse.jpg",
+    "thumb": "data/artwork/thursday_full_collapse.jpg",
+    "cover_image": "data/artwork/thursday_full_collapse.jpg",
     "tracklist": [
       {
         "position": "6",
@@ -2421,8 +2421,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/my_chemical_romance_three_cheers_for_sweet_revenge.jpg",
-    "cover_image": "artwork/my_chemical_romance_three_cheers_for_sweet_revenge.jpg",
+    "thumb": "data/artwork/my_chemical_romance_three_cheers_for_sweet_revenge.jpg",
+    "cover_image": "data/artwork/my_chemical_romance_three_cheers_for_sweet_revenge.jpg",
     "tracklist": [
       {
         "position": "6",
@@ -2469,8 +2469,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/counting_crows_august_and_everything_after.jpg",
-    "cover_image": "artwork/counting_crows_august_and_everything_after.jpg",
+    "thumb": "data/artwork/counting_crows_august_and_everything_after.jpg",
+    "cover_image": "data/artwork/counting_crows_august_and_everything_after.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -2567,8 +2567,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/electric_light_orchestra_no_answer.jpg",
-    "cover_image": "artwork/electric_light_orchestra_no_answer.jpg",
+    "thumb": "data/artwork/electric_light_orchestra_no_answer.jpg",
+    "cover_image": "data/artwork/electric_light_orchestra_no_answer.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -2615,8 +2615,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/hot_rod_circuit_if_i_knew_what_i_knew_then.jpg",
-    "cover_image": "artwork/hot_rod_circuit_if_i_knew_what_i_knew_then.jpg",
+    "thumb": "data/artwork/hot_rod_circuit_if_i_knew_what_i_knew_then.jpg",
+    "cover_image": "data/artwork/hot_rod_circuit_if_i_knew_what_i_knew_then.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -2708,8 +2708,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/afi_sing_the_sorrow.jpg",
-    "cover_image": "artwork/afi_sing_the_sorrow.jpg",
+    "thumb": "data/artwork/afi_sing_the_sorrow.jpg",
+    "cover_image": "data/artwork/afi_sing_the_sorrow.jpg",
     "tracklist": [
       {
         "position": "10",
@@ -2756,8 +2756,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/mestiza_que_calor_que_calor.jpg",
-    "cover_image": "artwork/mestiza_que_calor_que_calor.jpg",
+    "thumb": "data/artwork/mestiza_que_calor_que_calor.jpg",
+    "cover_image": "data/artwork/mestiza_que_calor_que_calor.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -2804,8 +2804,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/explosions_in_the_sky_how_strange_innocence_anniversary_edition.jpg",
-    "cover_image": "artwork/explosions_in_the_sky_how_strange_innocence_anniversary_edition.jpg",
+    "thumb": "data/artwork/explosions_in_the_sky_how_strange_innocence_anniversary_edition.jpg",
+    "cover_image": "data/artwork/explosions_in_the_sky_how_strange_innocence_anniversary_edition.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -2882,8 +2882,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/madonna_true_blue.jpg",
-    "cover_image": "artwork/madonna_true_blue.jpg",
+    "thumb": "data/artwork/madonna_true_blue.jpg",
+    "cover_image": "data/artwork/madonna_true_blue.jpg",
     "tracklist": [
       {
         "position": "2",
@@ -2930,8 +2930,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/a_tribe_called_quest_midnight_marauders.jpg",
-    "cover_image": "artwork/a_tribe_called_quest_midnight_marauders.jpg",
+    "thumb": "data/artwork/a_tribe_called_quest_midnight_marauders.jpg",
+    "cover_image": "data/artwork/a_tribe_called_quest_midnight_marauders.jpg",
     "tracklist": [
       {
         "position": "2",
@@ -2978,8 +2978,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/l\u00f4_borges_retratos.jpg",
-    "cover_image": "artwork/l\u00f4_borges_retratos.jpg",
+    "thumb": "data/artwork/l\u00f4_borges_retratos.jpg",
+    "cover_image": "data/artwork/l\u00f4_borges_retratos.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -3081,8 +3081,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/braid_frame_canvas.jpg",
-    "cover_image": "artwork/braid_frame_canvas.jpg",
+    "thumb": "data/artwork/braid_frame_canvas.jpg",
+    "cover_image": "data/artwork/braid_frame_canvas.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -3184,8 +3184,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/electric_light_orchestra_face_the_music.jpg",
-    "cover_image": "artwork/electric_light_orchestra_face_the_music.jpg",
+    "thumb": "data/artwork/electric_light_orchestra_face_the_music.jpg",
+    "cover_image": "data/artwork/electric_light_orchestra_face_the_music.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -3232,8 +3232,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/la_dispute_wildlife.jpg",
-    "cover_image": "artwork/la_dispute_wildlife.jpg",
+    "thumb": "data/artwork/la_dispute_wildlife.jpg",
+    "cover_image": "data/artwork/la_dispute_wildlife.jpg",
     "tracklist": [
       {
         "position": "13",
@@ -3260,9 +3260,7 @@
     "master_id": null,
     "title": "This Is What I Mean",
     "artists": [
-      "Stormzy",
-      "Debbie",
-      "Jacob Collier"
+      "Black Sherif"
     ],
     "year": 2022,
     "released": null,
@@ -3385,8 +3383,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/talking_heads_remain_in_light.jpg",
-    "cover_image": "artwork/talking_heads_remain_in_light.jpg",
+    "thumb": "data/artwork/talking_heads_remain_in_light.jpg",
+    "cover_image": "data/artwork/talking_heads_remain_in_light.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -3468,8 +3466,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/sigur_r\u00f3s__.jpg",
-    "cover_image": "artwork/sigur_r\u00f3s__.jpg",
+    "thumb": "data/artwork/sigur_r\u00f3s__.jpg",
+    "cover_image": "data/artwork/sigur_r\u00f3s__.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -3516,8 +3514,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/the_rolling_stones_let_it_bleed.jpg",
-    "cover_image": "artwork/the_rolling_stones_let_it_bleed.jpg",
+    "thumb": "data/artwork/the_rolling_stones_let_it_bleed.jpg",
+    "cover_image": "data/artwork/the_rolling_stones_let_it_bleed.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -3604,8 +3602,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/pixies_doolittle.jpg",
-    "cover_image": "artwork/pixies_doolittle.jpg",
+    "thumb": "data/artwork/pixies_doolittle.jpg",
+    "cover_image": "data/artwork/pixies_doolittle.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -3722,8 +3720,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/wilco_yankee_hotel_foxtrot.jpg",
-    "cover_image": "artwork/wilco_yankee_hotel_foxtrot.jpg",
+    "thumb": "data/artwork/wilco_yankee_hotel_foxtrot.jpg",
+    "cover_image": "data/artwork/wilco_yankee_hotel_foxtrot.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -3810,8 +3808,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/novos_baianos_dois_momentos.jpg",
-    "cover_image": "artwork/novos_baianos_dois_momentos.jpg",
+    "thumb": "data/artwork/novos_baianos_dois_momentos.jpg",
+    "cover_image": "data/artwork/novos_baianos_dois_momentos.jpg",
     "tracklist": [
       {
         "position": "10",
@@ -3863,8 +3861,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/deerhunter_cryptograms.jpg",
-    "cover_image": "artwork/deerhunter_cryptograms.jpg",
+    "thumb": "data/artwork/deerhunter_cryptograms.jpg",
+    "cover_image": "data/artwork/deerhunter_cryptograms.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -3967,8 +3965,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "https://i.scdn.co/image/ab67616d0000b273471646faaecf4b53e95b5c1c",
-    "cover_image": "https://i.scdn.co/image/ab67616d0000b273471646faaecf4b53e95b5c1c",
+    "thumb": "data/artwork/rita_lee_rita_lee.jpg",
+    "cover_image": "data/artwork/rita_lee_rita_lee.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -4015,8 +4013,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/janet_jackson_control.jpg",
-    "cover_image": "artwork/janet_jackson_control.jpg",
+    "thumb": "data/artwork/janet_jackson_control.jpg",
+    "cover_image": "data/artwork/janet_jackson_control.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -4103,8 +4101,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/bj\u00f6rk_homogenic.jpg",
-    "cover_image": "artwork/bj\u00f6rk_homogenic.jpg",
+    "thumb": "data/artwork/bj\u00f6rk_homogenic.jpg",
+    "cover_image": "data/artwork/bj\u00f6rk_homogenic.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -4196,8 +4194,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/braid_movie_music_vol_2.jpg",
-    "cover_image": "artwork/braid_movie_music_vol_2.jpg",
+    "thumb": "data/artwork/braid_movie_music_vol_2.jpg",
+    "cover_image": "data/artwork/braid_movie_music_vol_2.jpg",
     "tracklist": [
       {
         "position": "17",
@@ -4244,8 +4242,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "https://i.scdn.co/image/ab67616d0000b27332a7d87248d1b75463483df5",
-    "cover_image": "https://i.scdn.co/image/ab67616d0000b27332a7d87248d1b75463483df5",
+    "thumb": "data/artwork/michael_jackson_thriller.jpg",
+    "cover_image": "data/artwork/michael_jackson_thriller.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -4332,8 +4330,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/mestiza_spanish_chica.jpg",
-    "cover_image": "artwork/mestiza_spanish_chica.jpg",
+    "thumb": "data/artwork/mestiza_spanish_chica.jpg",
+    "cover_image": "data/artwork/mestiza_spanish_chica.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -4385,11 +4383,7 @@
     "master_id": null,
     "title": "Cantiga De Longe",
     "artists": [
-      "Edu Lobo",
-      "Airto Moreira",
-      "Hermeto Pascoal",
-      "Claudio Slow",
-      "Jose Mariono"
+      "Airto Moreira"
     ],
     "year": 1970,
     "released": null,
@@ -4457,8 +4451,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/gal_costa_gal_costa.jpg",
-    "cover_image": "artwork/gal_costa_gal_costa.jpg",
+    "thumb": "data/artwork/gal_costa_gal_costa.jpg",
+    "cover_image": "data/artwork/gal_costa_gal_costa.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -4560,8 +4554,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/mestiza_salam.jpg",
-    "cover_image": "artwork/mestiza_salam.jpg",
+    "thumb": "data/artwork/mestiza_salam.jpg",
+    "cover_image": "data/artwork/mestiza_salam.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -4608,8 +4602,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/slint_spiderland.jpg",
-    "cover_image": "artwork/slint_spiderland.jpg",
+    "thumb": "data/artwork/slint_spiderland.jpg",
+    "cover_image": "data/artwork/slint_spiderland.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -4681,8 +4675,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/robyn_body_talk.jpg",
-    "cover_image": "artwork/robyn_body_talk.jpg",
+    "thumb": "data/artwork/robyn_body_talk.jpg",
+    "cover_image": "data/artwork/robyn_body_talk.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -4799,8 +4793,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/lorde_melodrama.jpg",
-    "cover_image": "artwork/lorde_melodrama.jpg",
+    "thumb": "data/artwork/lorde_melodrama.jpg",
+    "cover_image": "data/artwork/lorde_melodrama.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -4897,8 +4891,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/northstar_is_this_thing_loaded.jpg",
-    "cover_image": "artwork/northstar_is_this_thing_loaded.jpg",
+    "thumb": "data/artwork/northstar_is_this_thing_loaded.jpg",
+    "cover_image": "data/artwork/northstar_is_this_thing_loaded.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -4990,8 +4984,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/counting_crows_this_desert_life.jpg",
-    "cover_image": "artwork/counting_crows_this_desert_life.jpg",
+    "thumb": "data/artwork/counting_crows_this_desert_life.jpg",
+    "cover_image": "data/artwork/counting_crows_this_desert_life.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -5033,7 +5027,6 @@
     "master_id": null,
     "title": "James Brown Live At The Apollo, 1962",
     "artists": [
-      "James Brown",
       "Cy Langston"
     ],
     "year": 1963,
@@ -5152,8 +5145,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/caroline_polachek_desire_i_want_to_turn_into_you.jpg",
-    "cover_image": "artwork/caroline_polachek_desire_i_want_to_turn_into_you.jpg",
+    "thumb": "data/artwork/caroline_polachek_desire_i_want_to_turn_into_you.jpg",
+    "cover_image": "data/artwork/caroline_polachek_desire_i_want_to_turn_into_you.jpg",
     "tracklist": [
       {
         "position": "1",
@@ -5255,8 +5248,8 @@
       "LP",
       "Album"
     ],
-    "thumb": "artwork/the_promise_ring_30_degrees_everywhere.jpg",
-    "cover_image": "artwork/the_promise_ring_30_degrees_everywhere.jpg",
+    "thumb": "data/artwork/the_promise_ring_30_degrees_everywhere.jpg",
+    "cover_image": "data/artwork/the_promise_ring_30_degrees_everywhere.jpg",
     "tracklist": [
       {
         "position": "8",
