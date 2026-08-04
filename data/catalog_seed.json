@@ -115,6 +115,7 @@
             }
           ],
           "local_artwork": "data/artwork/atoms_for_peace_amok.jpg",
+          "real_rating": 15,
           "discogs_catalog": {
             "release_id": 4321323,
             "master_id": 524134,
@@ -442,7 +443,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/the_cranberries_everybody_else_is_doing_it_so_why_cant_we.jpg"
+          "local_artwork": "data/artwork/the_cranberries_everybody_else_is_doing_it_so_why_cant_we.jpg",
+          "real_rating": 18
         },
         {
           "album_id": "1JXjYl5WVr3wFgV3DMIHMl",
@@ -756,7 +758,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/frank_ocean_channel_orange.jpg"
+          "local_artwork": "data/artwork/frank_ocean_channel_orange.jpg",
+          "real_rating": 19
         },
         {
           "album_id": "3mH6qwIy9crq0I9YQbOuDf",
@@ -889,7 +892,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/frank_ocean_blonde.jpg"
+          "local_artwork": "data/artwork/frank_ocean_blonde.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -1113,6 +1117,7 @@
             }
           ],
           "local_artwork": "data/artwork/nirvana_nevermind_remastered.jpg",
+          "real_rating": 19,
           "discogs_catalog": {
             "release_id": 33960828,
             "master_id": 13814,
@@ -1530,7 +1535,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/solange_a_seat_at_the_table.jpg"
+          "local_artwork": "data/artwork/solange_a_seat_at_the_table.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -1690,7 +1696,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/the_notorious_big_ready_to_die_the_remaster.jpg"
+          "local_artwork": "data/artwork/the_notorious_big_ready_to_die_the_remaster.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -1787,7 +1794,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/the_tallest_man_on_earth_theres_no_leaving_now.jpg"
+          "local_artwork": "data/artwork/the_tallest_man_on_earth_theres_no_leaving_now.jpg",
+          "real_rating": 15
         }
       ]
     },
@@ -2087,7 +2095,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/l\u00f4_borges_clube_da_esquina.jpg"
+          "local_artwork": "data/artwork/l\u00f4_borges_clube_da_esquina.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -2282,7 +2291,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/carissas_wierd_ugly_but_honest.jpg"
+          "local_artwork": "data/artwork/carissas_wierd_ugly_but_honest.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "3Fl3sBZrRO8M35YWqbicmt",
@@ -2415,7 +2425,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/carissas_wierd_scrap_book.jpg"
+          "local_artwork": "data/artwork/carissas_wierd_scrap_book.jpg",
+          "real_rating": 13
         },
         {
           "album_id": "6Y3ALtSpmXlui2AZe80Nor",
@@ -2499,7 +2510,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/carissas_wierd_you_should_be_at_home_here.jpg"
+          "local_artwork": "data/artwork/carissas_wierd_you_should_be_at_home_here.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -2776,7 +2788,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/dance_gavin_dance_downtown_battle_mountain_ii.jpg"
+          "local_artwork": "data/artwork/dance_gavin_dance_downtown_battle_mountain_ii.jpg",
+          "real_rating": 19
         }
       ]
     },
@@ -2880,7 +2893,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/rage_against_the_machine_evil_empire.jpg"
+          "local_artwork": "data/artwork/rage_against_the_machine_evil_empire.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "2eia0myWFgoHuttJytCxgX",
@@ -2978,7 +2992,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/rage_against_the_machine_the_battle_of_los_angeles.jpg"
+          "local_artwork": "data/artwork/rage_against_the_machine_the_battle_of_los_angeles.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "4Io5vWtmV1rFj4yirKb4y4",
@@ -3062,7 +3077,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/rage_against_the_machine_rage_against_the_machine_xx_20th_anniversary_spe.jpg"
+          "local_artwork": "data/artwork/rage_against_the_machine_rage_against_the_machine_xx_20th_anniversary_spe.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -3187,7 +3203,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/worthwhile_carry_on_kid.jpg"
+          "local_artwork": "data/artwork/worthwhile_carry_on_kid.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -3360,6 +3377,7 @@
             }
           ],
           "local_artwork": "data/artwork/neutral_milk_hotel_in_the_aeroplane_over_the_sea.jpg",
+          "real_rating": 20,
           "discogs_catalog": {
             "release_id": 2173833,
             "master_id": 9443,
@@ -3560,6 +3578,7 @@
             }
           ],
           "local_artwork": "data/artwork/neutral_milk_hotel_on_avery_island.jpg",
+          "real_rating": 17,
           "discogs_catalog": {
             "release_id": 12235767,
             "master_id": 9441,
@@ -3789,7 +3808,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/refused_the_shape_of_punk_to_come_deluxe_edition.jpg"
+          "local_artwork": "data/artwork/refused_the_shape_of_punk_to_come_deluxe_edition.jpg",
+          "real_rating": 19
         }
       ]
     },
@@ -3858,7 +3878,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/slint_spiderland.jpg"
+          "local_artwork": "data/artwork/slint_spiderland.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -4228,6 +4249,7 @@
             }
           ],
           "local_artwork": "data/artwork/sufjan_stevens_illinois.jpg",
+          "real_rating": 20,
           "discogs_catalog": {
             "release_id": 649042,
             "master_id": 14863,
@@ -4450,7 +4472,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/sufjan_stevens_all_delighted_people.jpg"
+          "local_artwork": "data/artwork/sufjan_stevens_all_delighted_people.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "2XOwIbRcNFIBFvGEHDSBQk",
@@ -4570,6 +4593,7 @@
             }
           ],
           "local_artwork": "data/artwork/sufjan_stevens_the_age_of_adz.jpg",
+          "real_rating": 16,
           "discogs_catalog": {
             "release_id": 2529888,
             "master_id": 281160,
@@ -4766,7 +4790,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/sufjan_stevens_carrie_lowell.jpg"
+          "local_artwork": "data/artwork/sufjan_stevens_carrie_lowell.jpg",
+          "real_rating": 14
         }
       ]
     },
@@ -4891,6 +4916,7 @@
             }
           ],
           "local_artwork": "data/artwork/bon_iver_for_emma_forever_ago.jpg",
+          "real_rating": 17,
           "discogs_catalog": {
             "release_id": 1361007,
             "master_id": 97618,
@@ -5190,7 +5216,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/counterparts_the_current_will_carry_us.jpg"
+          "local_artwork": "data/artwork/counterparts_the_current_will_carry_us.jpg",
+          "real_rating": 18
         },
         {
           "album_id": "5VCghLUsP98Ja4N4k3iSKi",
@@ -5371,6 +5398,7 @@
             }
           ],
           "local_artwork": "data/artwork/radiohead_in_rainbows.jpg",
+          "real_rating": 20,
           "discogs_catalog": {
             "release_id": 1187003,
             "master_id": 21520,
@@ -5560,6 +5588,7 @@
             }
           ],
           "local_artwork": "data/artwork/radiohead_kid_a.jpg",
+          "real_rating": 20,
           "discogs_catalog": {
             "release_id": 15443160,
             "master_id": 21501,
@@ -5756,7 +5785,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/radiohead_ok_computer.jpg"
+          "local_artwork": "data/artwork/radiohead_ok_computer.jpg",
+          "real_rating": 20
         }
       ]
     },
@@ -5894,7 +5924,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/fiona_apple_the_idler_wheel_is_wiser_than_the_driver_of_the_.jpg"
+          "local_artwork": "data/artwork/fiona_apple_the_idler_wheel_is_wiser_than_the_driver_of_the_.jpg",
+          "real_rating": 15
         }
       ]
     },
@@ -6096,7 +6127,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/l\u00f4_borges_clube_da_esquina.jpg"
+          "local_artwork": "data/artwork/l\u00f4_borges_clube_da_esquina.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "6GPL5sMWxYibGoKnarlqUk",
@@ -6173,7 +6205,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/milton_nascimento_milton.jpg"
+          "local_artwork": "data/artwork/milton_nascimento_milton.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "6f0LeYZyJxMnhCQCreFYZ0",
@@ -6318,7 +6351,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/joy_division_closer.jpg"
+          "local_artwork": "data/artwork/joy_division_closer.jpg",
+          "real_rating": 12
         },
         {
           "album_id": "5Dgqy4bBg09Rdw7CQM545s",
@@ -6402,7 +6436,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/joy_division_unknown_pleasures.jpg"
+          "local_artwork": "data/artwork/joy_division_unknown_pleasures.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -6595,7 +6630,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/jo\u00e3o_donato_quem_\u00e9_quem.jpg"
+          "local_artwork": "data/artwork/jo\u00e3o_donato_quem_\u00e9_quem.jpg",
+          "real_rating": 15
         }
       ]
     },
@@ -6727,7 +6763,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/deerhunter_microcastle.jpg"
+          "local_artwork": "data/artwork/deerhunter_microcastle.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "6UvnlfAkFdfAtEJO6xaQjI",
@@ -6846,7 +6883,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/deerhunter_cryptograms.jpg"
+          "local_artwork": "data/artwork/deerhunter_cryptograms.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -6901,7 +6939,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/green_day_dookie.jpg"
+          "local_artwork": "data/artwork/green_day_dookie.jpg",
+          "real_rating": 19
         },
         {
           "album_id": "7d3nOmFvL51roNElAdpi9d",
@@ -7026,7 +7065,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/the_decemberists_picaresque.jpg"
+          "local_artwork": "data/artwork/the_decemberists_picaresque.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "3hd8GiXOy4KUTxVDVUDT5F",
@@ -7187,7 +7227,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/the_decemberists_hazards_of_love.jpg"
+          "local_artwork": "data/artwork/the_decemberists_hazards_of_love.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "5rbzadc5AEuHdeSGmdBDgR",
@@ -7299,6 +7340,7 @@
             }
           ],
           "local_artwork": "data/artwork/american_football_american_football.jpg",
+          "real_rating": 17,
           "discogs_catalog": {
             "release_id": 29856154,
             "master_id": 191896,
@@ -7530,6 +7572,7 @@
             }
           ],
           "local_artwork": "data/artwork/thom_yorke_the_eraser.jpg",
+          "real_rating": 16,
           "discogs_catalog": {
             "release_id": 6314990,
             "master_id": 78606,
@@ -7734,7 +7777,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/gal_costa_gal_tropical.jpg"
+          "local_artwork": "data/artwork/gal_costa_gal_tropical.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "2CEAS05rj9mofY5KwvzQwa",
@@ -7853,7 +7897,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/gal_costa_gal_costa.jpg"
+          "local_artwork": "data/artwork/gal_costa_gal_costa.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -7992,7 +8037,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/bad_brains_bad_brains.jpg"
+          "local_artwork": "data/artwork/bad_brains_bad_brains.jpg",
+          "real_rating": 13
         }
       ]
     },
@@ -8096,7 +8142,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/moose_blood_ill_keep_you_in_mind_from_time_to_time.jpg"
+          "local_artwork": "data/artwork/moose_blood_ill_keep_you_in_mind_from_time_to_time.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -8193,7 +8240,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/dinosaur_jr_youre_living_all_over_me.jpg"
+          "local_artwork": "data/artwork/dinosaur_jr_youre_living_all_over_me.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -8310,7 +8358,8 @@
               "isrc": "US3X50405404"
             }
           ],
-          "local_artwork": "data/artwork/saves_the_day_through_being_cool.jpg"
+          "local_artwork": "data/artwork/saves_the_day_through_being_cool.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "7tGDDH9n27zmofP8EFwKsY",
@@ -8463,7 +8512,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/modest_mouse_the_moon_antarctica.jpg"
+          "local_artwork": "data/artwork/modest_mouse_the_moon_antarctica.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -8582,6 +8632,7 @@
             }
           ],
           "local_artwork": "data/artwork/at_the_drive_in_relationship_of_command.jpg",
+          "real_rating": 17,
           "discogs_catalog": {
             "release_id": 4491942,
             "master_id": 45482,
@@ -8753,7 +8804,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/at_the_drive_in_vaya.jpg"
+          "local_artwork": "data/artwork/at_the_drive_in_vaya.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "35qZXJifEQcpWnKP6E4oNv",
@@ -8844,7 +8896,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/at_the_drive_in_in_casino_out.jpg"
+          "local_artwork": "data/artwork/at_the_drive_in_in_casino_out.jpg",
+          "real_rating": 18
         }
       ]
     },
@@ -8941,7 +8994,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/i_kill_giants_i_kill_giants_remastered.jpg"
+          "local_artwork": "data/artwork/i_kill_giants_i_kill_giants_remastered.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "5kXmpj8YLcxEMk8BWc57UV",
@@ -8997,7 +9051,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/i_kill_giants_let_it_out.jpg"
+          "local_artwork": "data/artwork/i_kill_giants_let_it_out.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -9135,7 +9190,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/the_replacements_let_it_be.jpg"
+          "local_artwork": "data/artwork/the_replacements_let_it_be.jpg",
+          "real_rating": 14
         }
       ]
     },
@@ -9197,7 +9253,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/pink_floyd_wish_you_were_here.jpg"
+          "local_artwork": "data/artwork/pink_floyd_wish_you_were_here.jpg",
+          "real_rating": 18
         },
         {
           "album_id": "2cUpAOlQjV5uSjkWj5bEQY",
@@ -9288,7 +9345,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/pink_floyd_animals.jpg"
+          "local_artwork": "data/artwork/pink_floyd_animals.jpg",
+          "real_rating": 18
         },
         {
           "album_id": "4LH4d3cOWNNsVw41Gqt2kv",
@@ -9372,7 +9430,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/pink_floyd_the_dark_side_of_the_moon.jpg"
+          "local_artwork": "data/artwork/pink_floyd_the_dark_side_of_the_moon.jpg",
+          "real_rating": 20
         },
         {
           "album_id": "5Dbax7G8SWrP9xyzkOvy2F",
@@ -9568,7 +9627,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/pink_floyd_the_wall.jpg"
+          "local_artwork": "data/artwork/pink_floyd_the_wall.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -9693,7 +9753,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/a_tribe_called_quest_the_low_end_theory.jpg"
+          "local_artwork": "data/artwork/a_tribe_called_quest_the_low_end_theory.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "4v5x3Oo3UjQ9YmF3hRAip5",
@@ -9881,7 +9942,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg"
+          "local_artwork": "data/artwork/beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "6FJxoadUE4JNVwWHghBwnb",
@@ -10007,7 +10069,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/beyonc\u00e9_renaissance.jpg"
+          "local_artwork": "data/artwork/beyonc\u00e9_renaissance.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -10082,7 +10145,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/miles_davis_in_a_silent_way.jpg"
+          "local_artwork": "data/artwork/miles_davis_in_a_silent_way.jpg",
+          "real_rating": 20
         },
         {
           "album_id": "3Q0zkOZEOC855ErOOJ1AdO",
@@ -10290,7 +10354,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/jorge_ben_jor_africa_brasil.jpg"
+          "local_artwork": "data/artwork/jorge_ben_jor_africa_brasil.jpg",
+          "real_rating": 19
         },
         {
           "album_id": "1Dbn6bkxBBY8KsQYv85aRB",
@@ -10423,7 +10488,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/jorge_ben_jor_a_banda_do_z\u00e9_pretinho.jpg"
+          "local_artwork": "data/artwork/jorge_ben_jor_a_banda_do_z\u00e9_pretinho.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "3BnyTufnkSjPhllw6xIw3U",
@@ -10689,7 +10755,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/jorge_ben_jor_a_tabua_de_esmeralda.jpg"
+          "local_artwork": "data/artwork/jorge_ben_jor_a_tabua_de_esmeralda.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -10842,7 +10909,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/the_avalanches_since_i_left_you_20th_anniversary_deluxe_edition.jpg"
+          "local_artwork": "data/artwork/the_avalanches_since_i_left_you_20th_anniversary_deluxe_edition.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -10918,7 +10986,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/lcd_soundsystem_sound_of_silver.jpg"
+          "local_artwork": "data/artwork/lcd_soundsystem_sound_of_silver.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "4hnqM0JK4CM1phwfq1Ldyz",
@@ -10995,7 +11064,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/lcd_soundsystem_this_is_happening.jpg"
+          "local_artwork": "data/artwork/lcd_soundsystem_this_is_happening.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "6aSk2vxoY3xtz7cXKuY9EL",
@@ -11051,7 +11121,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/lcd_soundsystem_lcd_soundsystem.jpg"
+          "local_artwork": "data/artwork/lcd_soundsystem_lcd_soundsystem.jpg",
+          "real_rating": 14
         }
       ]
     },
@@ -11198,6 +11269,7 @@
             }
           ],
           "local_artwork": "data/artwork/boards_of_canada_tomorrows_harvest.jpg",
+          "real_rating": 14,
           "discogs_catalog": {
             "release_id": 4548231,
             "master_id": 563275,
@@ -11371,6 +11443,7 @@
             }
           ],
           "local_artwork": "data/artwork/boards_of_canada_in_a_beautiful_place_out_in_the_country.jpg",
+          "real_rating": 15,
           "discogs_catalog": {
             "release_id": 6476151,
             "master_id": 2193,
@@ -11466,7 +11539,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/boards_of_canada_prophecy_at_1420_mhz.jpg"
+          "local_artwork": "data/artwork/boards_of_canada_prophecy_at_1420_mhz.jpg",
+          "real_rating": 18
         },
         {
           "album_id": "46YfeDd8YhuAcywdxZkRqf",
@@ -11670,6 +11744,7 @@
             }
           ],
           "local_artwork": "data/artwork/boards_of_canada_geogaddi.jpg",
+          "real_rating": 19,
           "discogs_catalog": {
             "release_id": 4985843,
             "master_id": 2129,
@@ -11977,6 +12052,7 @@
             }
           ],
           "local_artwork": "data/artwork/boards_of_canada_music_has_the_right_to_children.jpg",
+          "real_rating": 19,
           "discogs_catalog": {
             "release_id": 5006908,
             "master_id": 1893,
@@ -12228,6 +12304,7 @@
             }
           ],
           "local_artwork": "data/artwork/boards_of_canada_the_campfire_headphase.jpg",
+          "real_rating": 19,
           "discogs_catalog": {
             "release_id": 541614,
             "master_id": 2141,
@@ -12437,7 +12514,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/explosions_in_the_sky_all_of_a_sudden_i_miss_everyone.jpg"
+          "local_artwork": "data/artwork/explosions_in_the_sky_all_of_a_sudden_i_miss_everyone.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "2TmYd2YYLJ5dpKiL4pEqkD",
@@ -12543,6 +12621,7 @@
             }
           ],
           "local_artwork": "data/artwork/explosions_in_the_sky_the_earth_is_not_a_cold_dead_place_anniversary_e.jpg",
+          "real_rating": 18,
           "discogs_catalog": {
             "release_id": 7256636,
             "master_id": 4202,
@@ -12905,7 +12984,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/brian_eno_another_green_world_2004_remaster.jpg"
+          "local_artwork": "data/artwork/brian_eno_another_green_world_2004_remaster.jpg",
+          "real_rating": 15
         }
       ]
     },
@@ -13030,7 +13110,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/nickel_creek_why_should_the_fire_die.jpg"
+          "local_artwork": "data/artwork/nickel_creek_why_should_the_fire_die.jpg",
+          "real_rating": 18
         }
       ]
     },
@@ -13127,7 +13208,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/jo\u00e3o_bosco_comiss\u00e3o_de_frente.jpg"
+          "local_artwork": "data/artwork/jo\u00e3o_bosco_comiss\u00e3o_de_frente.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "4kN4kVVwgQ9jOBlIRQ86NU",
@@ -13225,7 +13307,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/jo\u00e3o_bosco_ca\u00e7a_a_raposa.jpg"
+          "local_artwork": "data/artwork/jo\u00e3o_bosco_ca\u00e7a_a_raposa.jpg",
+          "real_rating": 15
         }
       ]
     },
@@ -13266,7 +13349,8 @@
               "isrc": "DEE862401701"
             }
           ],
-          "local_artwork": "data/artwork/nina_chuba_farbenblind_ep.jpg"
+          "local_artwork": "data/artwork/nina_chuba_farbenblind_ep.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -13523,7 +13607,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/run_the_jewels_run_the_jewels.jpg"
+          "local_artwork": "data/artwork/run_the_jewels_run_the_jewels.jpg",
+          "real_rating": 18
         },
         {
           "album_id": "5IzJw66prbCD5KRbBlcKaj",
@@ -13544,7 +13629,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/run_the_jewels_run_the_jewels_2.jpg"
+          "local_artwork": "data/artwork/run_the_jewels_run_the_jewels_2.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "6Hb0uXteh6zusGSn5wVpUp",
@@ -13689,7 +13775,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/red_house_painters_down_colorful_hill.jpg"
+          "local_artwork": "data/artwork/red_house_painters_down_colorful_hill.jpg",
+          "real_rating": 14
         },
         {
           "album_id": "3F9xD3Dg2zu2LZbVHdKeVD",
@@ -13801,7 +13888,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/red_house_painters_red_house_painters_i.jpg"
+          "local_artwork": "data/artwork/red_house_painters_red_house_painters_i.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "4rL0RzmHMQyHiZqJVdt7A8",
@@ -13885,7 +13973,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/red_house_painters_old_ramon.jpg"
+          "local_artwork": "data/artwork/red_house_painters_old_ramon.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "5tXmkwvOs934YJL26kgLnb",
@@ -13955,7 +14044,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/red_house_painters_red_house_painters_ii.jpg"
+          "local_artwork": "data/artwork/red_house_painters_red_house_painters_ii.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "7HLVI2NCQz5DzL8VsB9A56",
@@ -14046,7 +14136,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/red_house_painters_songs_for_a_blue_guitar.jpg"
+          "local_artwork": "data/artwork/red_house_painters_songs_for_a_blue_guitar.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "7j4C67U6Aj4odzbHRrpeiq",
@@ -14123,7 +14214,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/red_house_painters_ocean_beach.jpg"
+          "local_artwork": "data/artwork/red_house_painters_ocean_beach.jpg",
+          "real_rating": 15
         }
       ]
     },
@@ -14220,7 +14312,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/bruce_springsteen_nebraska.jpg"
+          "local_artwork": "data/artwork/bruce_springsteen_nebraska.jpg",
+          "real_rating": 14
         }
       ]
     },
@@ -14317,7 +14410,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/cocteau_twins_treasure.jpg"
+          "local_artwork": "data/artwork/cocteau_twins_treasure.jpg",
+          "real_rating": 14
         }
       ]
     },
@@ -14539,7 +14633,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/la_dispute_somewhere_at_the_bottom_of_the_river_between_veg.jpg"
+          "local_artwork": "data/artwork/la_dispute_somewhere_at_the_bottom_of_the_river_between_veg.jpg",
+          "real_rating": 20
         }
       ]
     },
@@ -14657,7 +14752,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/linkin_park_meteora_bonus_edition.jpg"
+          "local_artwork": "data/artwork/linkin_park_meteora_bonus_edition.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "1MhedvSCTqGphXQz3oucpj",
@@ -14804,7 +14900,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/linkin_park_hybrid_theory_bonus_edition.jpg"
+          "local_artwork": "data/artwork/linkin_park_hybrid_theory_bonus_edition.jpg",
+          "real_rating": 18
         }
       ]
     },
@@ -15254,7 +15351,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/vampire_weekend_modern_vampires_of_the_city.jpg"
+          "local_artwork": "data/artwork/vampire_weekend_modern_vampires_of_the_city.jpg",
+          "real_rating": 10
         }
       ]
     },
@@ -15393,7 +15491,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/converge_jane_doe.jpg"
+          "local_artwork": "data/artwork/converge_jane_doe.jpg",
+          "real_rating": 14
         }
       ]
     },
@@ -15600,7 +15699,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/animal_collective_merriweather_post_pavilion.jpg"
+          "local_artwork": "data/artwork/animal_collective_merriweather_post_pavilion.jpg",
+          "real_rating": 19
         }
       ]
     },
@@ -15746,7 +15846,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/drake_take_care_deluxe.jpg"
+          "local_artwork": "data/artwork/drake_take_care_deluxe.jpg",
+          "real_rating": 13
         }
       ]
     },
@@ -15843,7 +15944,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/madonna_madonna.jpg"
+          "local_artwork": "data/artwork/madonna_madonna.jpg",
+          "real_rating": 12
         },
         {
           "album_id": "6fmnT17jc2Sc69q3nza1eD",
@@ -15898,7 +16000,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/the_hotelier_home_like_noplace_is_there.jpg"
+          "local_artwork": "data/artwork/the_hotelier_home_like_noplace_is_there.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -16099,7 +16202,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_you_will_eventually_be_forgotten.jpg"
+          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_you_will_eventually_be_forgotten.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "1j9ajQaSPnqM6BaiE2HUWW",
@@ -16141,7 +16245,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_on_time_spent_waiting_or_placing_the_weight_of_t.jpg"
+          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_on_time_spent_waiting_or_placing_the_weight_of_t.jpg",
+          "real_rating": 14
         },
         {
           "album_id": "2m9BteUi4OhKwUXcNFSL8p",
@@ -16197,7 +16302,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_when_the_sea_became_a_giant.jpg"
+          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_when_the_sea_became_a_giant.jpg",
+          "real_rating": 14
         },
         {
           "album_id": "3wLCCtHNSLsDpIItmWZzS9",
@@ -16316,7 +16422,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_what_it_takes_to_move_forward.jpg"
+          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_what_it_takes_to_move_forward.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "5xBD0bSZqXpfH0vwkrDcAx",
@@ -16393,7 +16500,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_early_discography.jpg"
+          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_early_discography.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "6np6yPkSF9JsWcaEGUfNim",
@@ -16435,7 +16543,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_home_after_three_months_away.jpg"
+          "local_artwork": "data/artwork/empire_empire_i_was_a_lonely_estate_home_after_three_months_away.jpg",
+          "real_rating": 15
         }
       ]
     },
@@ -16532,7 +16641,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/fever_ray_fever_ray.jpg"
+          "local_artwork": "data/artwork/fever_ray_fever_ray.jpg",
+          "real_rating": 18
         }
       ]
     },
@@ -16629,7 +16739,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/tool_10000_days.jpg"
+          "local_artwork": "data/artwork/tool_10000_days.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "3Esn6LoXuWtLZNYq8FCzr0",
@@ -16762,7 +16873,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/tool_\u00e6nima.jpg"
+          "local_artwork": "data/artwork/tool_\u00e6nima.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -16873,7 +16985,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/kings_of_leon_youth_and_young_manhood.jpg"
+          "local_artwork": "data/artwork/kings_of_leon_youth_and_young_manhood.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "3fNRzhnl6WAtghBXEeyaub",
@@ -16978,7 +17091,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/kings_of_leon_aha_shake_heartbreak.jpg"
+          "local_artwork": "data/artwork/kings_of_leon_aha_shake_heartbreak.jpg",
+          "real_rating": 19
         },
         {
           "album_id": "5CiZOqd3iF6p2PsqBjljat",
@@ -17083,7 +17197,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/kings_of_leon_because_of_the_times.jpg"
+          "local_artwork": "data/artwork/kings_of_leon_because_of_the_times.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -17201,7 +17316,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/melvins_stoner_witch.jpg"
+          "local_artwork": "data/artwork/melvins_stoner_witch.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "1YLR6DysIOeQYAPUj0S9EW",
@@ -17626,7 +17742,8 @@
               "isrc": "USGKX9813601"
             }
           ],
-          "local_artwork": "data/artwork/knapsack_this_conversation_is_ending_starting_right_now.jpg"
+          "local_artwork": "data/artwork/knapsack_this_conversation_is_ending_starting_right_now.jpg",
+          "real_rating": 12
         },
         {
           "album_id": "6xK0rYqqBtzcIiq0rY90Al",
@@ -17744,7 +17861,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/ought_more_than_any_other_day.jpg"
+          "local_artwork": "data/artwork/ought_more_than_any_other_day.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "3Uhw8RK4BiQnTqQAiFugXh",
@@ -17835,7 +17953,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/ought_sun_coming_down.jpg"
+          "local_artwork": "data/artwork/ought_sun_coming_down.jpg",
+          "real_rating": 13
         }
       ]
     },
@@ -17946,7 +18065,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/kate_bush_hounds_of_love_2018_remaster.jpg"
+          "local_artwork": "data/artwork/kate_bush_hounds_of_love_2018_remaster.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "5EyDvOit9McsAc9ao1QROt",
@@ -18030,7 +18150,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/kate_bush_the_sensual_world_2018_remaster.jpg"
+          "local_artwork": "data/artwork/kate_bush_the_sensual_world_2018_remaster.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "7uNjeNs5AmDqZHzIbyPkZH",
@@ -18121,7 +18242,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/kate_bush_never_for_ever_2018_remaster.jpg"
+          "local_artwork": "data/artwork/kate_bush_never_for_ever_2018_remaster.jpg",
+          "real_rating": 12
         }
       ]
     },
@@ -18309,7 +18431,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/de_la_soul_3_feet_high_and_rising.jpg"
+          "local_artwork": "data/artwork/de_la_soul_3_feet_high_and_rising.jpg",
+          "real_rating": 18
         }
       ]
     },
@@ -18392,7 +18515,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/led_zeppelin_houses_of_the_holy_remaster.jpg"
+          "local_artwork": "data/artwork/led_zeppelin_houses_of_the_holy_remaster.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "3ycjBixZf7S3WpC5WZhhUK",
@@ -18469,7 +18593,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/led_zeppelin_led_zeppelin.jpg"
+          "local_artwork": "data/artwork/led_zeppelin_led_zeppelin.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "4Q7cPyiP8cMIlUEHAqeYfd",
@@ -18581,7 +18706,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/led_zeppelin_physical_graffiti_remaster.jpg"
+          "local_artwork": "data/artwork/led_zeppelin_physical_graffiti_remaster.jpg",
+          "real_rating": 14
         },
         {
           "album_id": "58MQ0PLijVHePUonQlK76Y",
@@ -18658,7 +18784,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/led_zeppelin_led_zeppelin_ii_remaster.jpg"
+          "local_artwork": "data/artwork/led_zeppelin_led_zeppelin_ii_remaster.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "5EyIDBAqhnlkAHqvPRwdbX",
@@ -18728,7 +18855,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/led_zeppelin_led_zeppelin_iv_remaster.jpg"
+          "local_artwork": "data/artwork/led_zeppelin_led_zeppelin_iv_remaster.jpg",
+          "real_rating": 18
         },
         {
           "album_id": "6P5QHz4XtxOmS5EuiGIPut",
@@ -18812,7 +18940,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/led_zeppelin_led_zeppelin_iii_remaster.jpg"
+          "local_artwork": "data/artwork/led_zeppelin_led_zeppelin_iii_remaster.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -18881,7 +19010,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/talk_talk_spirit_of_eden.jpg"
+          "local_artwork": "data/artwork/talk_talk_spirit_of_eden.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -19034,7 +19164,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/arcade_fire_the_suburbs_deluxe.jpg"
+          "local_artwork": "data/artwork/arcade_fire_the_suburbs_deluxe.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "4GT6uZod4p5RiDMOVHOMme",
@@ -19125,7 +19256,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/arcade_fire_neon_bible.jpg"
+          "local_artwork": "data/artwork/arcade_fire_neon_bible.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "6ZB8qaR9JNuS0Q0bG1nbcH",
@@ -19209,7 +19341,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/arcade_fire_funeral.jpg"
+          "local_artwork": "data/artwork/arcade_fire_funeral.jpg",
+          "real_rating": 18
         }
       ]
     },
@@ -19328,6 +19461,7 @@
             }
           ],
           "local_artwork": "data/artwork/the_smashing_pumpkins_siamese_dream_deluxe_edition.jpg",
+          "real_rating": 19,
           "discogs_catalog": {
             "release_id": 3255473,
             "master_id": 48681,
@@ -19668,7 +19802,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/the_smashing_pumpkins_mellon_collie_and_the_infinite_sadness_remastere.jpg"
+          "local_artwork": "data/artwork/the_smashing_pumpkins_mellon_collie_and_the_infinite_sadness_remastere.jpg",
+          "real_rating": 18
         },
         {
           "album_id": "7wJTn94PWzZ3zE0lg3qhld",
@@ -19752,7 +19887,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/the_smashing_pumpkins_gish_remastered.jpg"
+          "local_artwork": "data/artwork/the_smashing_pumpkins_gish_remastered.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -19870,7 +20006,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/kendrick_lamar_good_kid_maad_city.jpg"
+          "local_artwork": "data/artwork/kendrick_lamar_good_kid_maad_city.jpg",
+          "real_rating": 18
         },
         {
           "album_id": "7ycBtnsMtyVbbwTfJwRjSP",
@@ -19996,7 +20133,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/kendrick_lamar_to_pimp_a_butterfly.jpg"
+          "local_artwork": "data/artwork/kendrick_lamar_to_pimp_a_butterfly.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -20155,7 +20293,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/sonic_youth_daydream_nation_remastered_original_album.jpg"
+          "local_artwork": "data/artwork/sonic_youth_daydream_nation_remastered_original_album.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "706OL6kpsbf73LRdXD1dCB",
@@ -20455,7 +20594,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/gal_costa_gal_costa.jpg"
+          "local_artwork": "data/artwork/gal_costa_gal_costa.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -20594,6 +20734,7 @@
             }
           ],
           "local_artwork": "data/artwork/fleet_foxes_fleet_foxes.jpg",
+          "real_rating": 18,
           "discogs_catalog": {
             "release_id": 15346241,
             "master_id": 72463,
@@ -20818,6 +20959,7 @@
             }
           ],
           "local_artwork": "data/artwork/fleet_foxes_helplessness_blues.jpg",
+          "real_rating": 15,
           "discogs_catalog": {
             "release_id": 2856645,
             "master_id": 332326,
@@ -21088,7 +21230,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/northstar_is_this_thing_loaded.jpg"
+          "local_artwork": "data/artwork/northstar_is_this_thing_loaded.jpg",
+          "real_rating": 15
         }
       ]
     },
@@ -21214,6 +21357,7 @@
             }
           ],
           "local_artwork": "data/artwork/sparta_porcelain.jpg",
+          "real_rating": 16,
           "discogs_catalog": {
             "release_id": 32949843,
             "master_id": 158151,
@@ -21436,7 +21580,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/u2_the_joshua_tree.jpg"
+          "local_artwork": "data/artwork/u2_the_joshua_tree.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -21917,7 +22062,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/kanye_west_my_beautiful_dark_twisted_fantasy.jpg"
+          "local_artwork": "data/artwork/kanye_west_my_beautiful_dark_twisted_fantasy.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "3WFTGIO6E3Xh4paEOBY9OU",
@@ -22015,7 +22161,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/kanye_west_808s_heartbreak.jpg"
+          "local_artwork": "data/artwork/kanye_west_808s_heartbreak.jpg",
+          "real_rating": 20
         },
         {
           "album_id": "7D2NdGvBHIavgLhmcwhluK",
@@ -22099,7 +22246,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/kanye_west_yeezus.jpg"
+          "local_artwork": "data/artwork/kanye_west_yeezus.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "7gsWAHLeT0w7es6FofOXk1",
@@ -22253,7 +22401,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/kanye_west_the_life_of_pablo.jpg"
+          "local_artwork": "data/artwork/kanye_west_the_life_of_pablo.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -22357,7 +22506,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/touch\u00e9_amor\u00e9_to_the_beat_of_a_dead_horse.jpg"
+          "local_artwork": "data/artwork/touch\u00e9_amor\u00e9_to_the_beat_of_a_dead_horse.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "2Qs1H2KjF6Bk2lSgFjQpOj",
@@ -22497,7 +22647,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/touch\u00e9_amor\u00e9_stage_four_deluxe_edition.jpg"
+          "local_artwork": "data/artwork/touch\u00e9_amor\u00e9_stage_four_deluxe_edition.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "6fA79mAHNeBhaUnuWBADwc",
@@ -22629,7 +22780,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/four_year_strong_rise_or_die_trying.jpg"
+          "local_artwork": "data/artwork/four_year_strong_rise_or_die_trying.jpg",
+          "real_rating": 19
         },
         {
           "album_id": "7fHbSPZaGS55A80DqDLssC",
@@ -22838,7 +22990,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/janet_jackson_the_velvet_rope.jpg"
+          "local_artwork": "data/artwork/janet_jackson_the_velvet_rope.jpg",
+          "real_rating": 14
         },
         {
           "album_id": "4OD3LU6001esAtFshDX46M",
@@ -22992,7 +23145,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/janet_jackson_rhythm_nation_1814.jpg"
+          "local_artwork": "data/artwork/janet_jackson_rhythm_nation_1814.jpg",
+          "real_rating": 13
         },
         {
           "album_id": "7GWkceE5McMVfffd1RGL6Y",
@@ -23069,7 +23223,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/janet_jackson_control.jpg"
+          "local_artwork": "data/artwork/janet_jackson_control.jpg",
+          "real_rating": 15
         }
       ]
     },
@@ -23422,7 +23577,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/brand_new_deja_entendu.jpg"
+          "local_artwork": "data/artwork/brand_new_deja_entendu.jpg",
+          "real_rating": 20
         }
       ]
     },
@@ -23581,6 +23737,7 @@
             }
           ],
           "local_artwork": "data/artwork/\u00f3l\u00f6f_arnalds_innundir_skinni.jpg",
+          "real_rating": 14,
           "discogs_catalog": {
             "release_id": 2787969,
             "master_id": 289373,
@@ -23782,7 +23939,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/saosin_saosin.jpg"
+          "local_artwork": "data/artwork/saosin_saosin.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "3Lfxp4dgtCBJN74rmo7tiE",
@@ -23831,7 +23989,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/saosin_translating_the_name.jpg"
+          "local_artwork": "data/artwork/saosin_translating_the_name.jpg",
+          "real_rating": 19
         },
         {
           "album_id": "6KsGdacJiG8uv9F6o2bmfL",
@@ -23984,7 +24143,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/robyn_body_talk.jpg"
+          "local_artwork": "data/artwork/robyn_body_talk.jpg",
+          "real_rating": 18
         },
         {
           "album_id": "5xDz5FY3Hsp2skcOP1IUNU",
@@ -24130,7 +24290,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/minor_threat_first_two_seven_inches.jpg"
+          "local_artwork": "data/artwork/minor_threat_first_two_seven_inches.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "6wPX4FdHqmn0aHZ84WUCW5",
@@ -24208,6 +24369,7 @@
             }
           ],
           "local_artwork": "data/artwork/minor_threat_out_of_step.jpg",
+          "real_rating": 16,
           "discogs_catalog": {
             "release_id": 1627979,
             "master_id": 9654,
@@ -24413,7 +24575,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/daniel_caesar_son_of_spergy.jpg"
+          "local_artwork": "data/artwork/daniel_caesar_son_of_spergy.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "2z9lM6LDS58F70IGyQ1XMK",
@@ -24532,7 +24695,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/daniel_caesar_never_enough.jpg"
+          "local_artwork": "data/artwork/daniel_caesar_never_enough.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "4E1XUBMTpLO7GpBzUo65Jp",
@@ -24616,7 +24780,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/daniel_caesar_freudian.jpg"
+          "local_artwork": "data/artwork/daniel_caesar_freudian.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "5QHoG6laR98M4SZumgSLkB",
@@ -24860,7 +25025,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/ms_lauryn_hill_the_miseducation_of_lauryn_hill.jpg"
+          "local_artwork": "data/artwork/ms_lauryn_hill_the_miseducation_of_lauryn_hill.jpg",
+          "real_rating": 18
         }
       ]
     },
@@ -24985,7 +25151,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/dear_and_the_headlights_small_steps_heavy_hooves.jpg"
+          "local_artwork": "data/artwork/dear_and_the_headlights_small_steps_heavy_hooves.jpg",
+          "real_rating": 18
         },
         {
           "album_id": "38TTw10V04chCowK4hPsDu",
@@ -25083,7 +25250,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/dear_and_the_headlights_drunk_like_bible_times.jpg"
+          "local_artwork": "data/artwork/dear_and_the_headlights_drunk_like_bible_times.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -25246,7 +25414,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/jesusun_kil_moon_jesu_sun_kil_moon.jpg"
+          "local_artwork": "data/artwork/jesusun_kil_moon_jesu_sun_kil_moon.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -25371,7 +25540,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/bob_dylan_blonde_on_blonde.jpg"
+          "local_artwork": "data/artwork/bob_dylan_blonde_on_blonde.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "4WD4pslu83FF6oMa1e19mF",
@@ -25455,7 +25625,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/bob_dylan_blood_on_the_tracks.jpg"
+          "local_artwork": "data/artwork/bob_dylan_blood_on_the_tracks.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "6YabPKtZAjxwyWbuO9p4ZD",
@@ -25532,7 +25703,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/bob_dylan_highway_61_revisited.jpg"
+          "local_artwork": "data/artwork/bob_dylan_highway_61_revisited.jpg",
+          "real_rating": 14
         }
       ]
     },
@@ -25636,7 +25808,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/david_bowie_low_2017_remaster.jpg"
+          "local_artwork": "data/artwork/david_bowie_low_2017_remaster.jpg",
+          "real_rating": 13
         }
       ]
     },
@@ -25829,7 +26002,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/new_order_power_corruption_and_lies.jpg"
+          "local_artwork": "data/artwork/new_order_power_corruption_and_lies.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -26024,7 +26198,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": null
+          "local_artwork": null,
+          "real_rating": 17
         }
       ]
     },
@@ -26162,7 +26337,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/system_of_a_down_mezmerize.jpg"
+          "local_artwork": "data/artwork/system_of_a_down_mezmerize.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "3QxX3NbWyLlLG6lP1xveL3",
@@ -26295,7 +26471,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/system_of_a_down_toxicity.jpg"
+          "local_artwork": "data/artwork/system_of_a_down_toxicity.jpg",
+          "real_rating": 18
         },
         {
           "album_id": "6lA1sGw7eCv27bcpd5E0wT",
@@ -26421,7 +26598,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/system_of_a_down_steal_this_album.jpg"
+          "local_artwork": "data/artwork/system_of_a_down_steal_this_album.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "7p5mnxLTjbvs4kInkK8za9",
@@ -26526,7 +26704,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/system_of_a_down_system_of_a_down.jpg"
+          "local_artwork": "data/artwork/system_of_a_down_system_of_a_down.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -26623,7 +26802,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/wednesday_rat_saw_god.jpg"
+          "local_artwork": "data/artwork/wednesday_rat_saw_god.jpg",
+          "real_rating": 15
         }
       ]
     },
@@ -26796,7 +26976,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/aretha_franklin_i_never_loved_a_man_the_way_i_love_you.jpg"
+          "local_artwork": "data/artwork/aretha_franklin_i_never_loved_a_man_the_way_i_love_you.jpg",
+          "real_rating": 15
         }
       ]
     },
@@ -26921,7 +27102,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/michael_jackson_thriller.jpg"
+          "local_artwork": "data/artwork/michael_jackson_thriller.jpg",
+          "real_rating": 18
         }
       ]
     },
@@ -27032,7 +27214,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/asake_mr_money_with_the_vibe.jpg"
+          "local_artwork": "data/artwork/asake_mr_money_with_the_vibe.jpg",
+          "real_rating": 13
         }
       ]
     },
@@ -27116,6 +27299,7 @@
             }
           ],
           "local_artwork": "data/artwork/the_xx_xx.jpg",
+          "real_rating": 14,
           "discogs_catalog": {
             "release_id": 18492652,
             "master_id": 175869,
@@ -27310,7 +27494,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/charles_mingus_the_black_saint_and_the_sinner_lady.jpg"
+          "local_artwork": "data/artwork/charles_mingus_the_black_saint_and_the_sinner_lady.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -27421,7 +27606,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/caroline_polachek_desire_i_want_to_turn_into_you.jpg"
+          "local_artwork": "data/artwork/caroline_polachek_desire_i_want_to_turn_into_you.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -27539,6 +27725,7 @@
             }
           ],
           "local_artwork": "data/artwork/pianos_become_the_teeth_the_lack_long_after.jpg",
+          "real_rating": 17,
           "discogs_catalog": {
             "release_id": 4286669,
             "master_id": 380264,
@@ -27836,7 +28023,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/portishead_dummy.jpg"
+          "local_artwork": "data/artwork/portishead_dummy.jpg",
+          "real_rating": 18
         }
       ]
     },
@@ -27947,7 +28135,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/rem_murmur.jpg"
+          "local_artwork": "data/artwork/rem_murmur.jpg",
+          "real_rating": 14
         },
         {
           "album_id": "6yEuIwTQpciH1qtj7mP5GK",
@@ -28038,7 +28227,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/rem_out_of_time_25th_anniversary_edition.jpg"
+          "local_artwork": "data/artwork/rem_out_of_time_25th_anniversary_edition.jpg",
+          "real_rating": 15
         }
       ]
     },
@@ -28259,7 +28449,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/daft_punk_discovery.jpg"
+          "local_artwork": "data/artwork/daft_punk_discovery.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "5uRdvUR7xCnHmUW8n64n9y",
@@ -28386,6 +28577,7 @@
             }
           ],
           "local_artwork": "data/artwork/daft_punk_homework.jpg",
+          "real_rating": 18,
           "discogs_catalog": {
             "release_id": 4418695,
             "master_id": 26629,
@@ -28688,7 +28880,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/nina_simone_wild_is_the_wind.jpg"
+          "local_artwork": "data/artwork/nina_simone_wild_is_the_wind.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "31pd81sWDaK2pP3ok5892z",
@@ -28868,7 +29061,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/sun_kil_moon_april.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_april.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "0hjzsRqOq8rWLZyWlaazb1",
@@ -28945,7 +29139,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/sun_kil_moon_all_the_artists.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_all_the_artists.jpg",
+          "real_rating": 14
         },
         {
           "album_id": "1JpwFoxVVutPXtSBohj0rJ",
@@ -29071,7 +29266,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/sun_kil_moon_ghosts_of_the_great_highway.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_ghosts_of_the_great_highway.jpg",
+          "real_rating": 18
         },
         {
           "album_id": "1YnyKib5MeZf95KY5GHvxc",
@@ -29113,7 +29309,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/sun_kil_moon_murals.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_murals.jpg",
+          "real_rating": 13
         },
         {
           "album_id": "1uIM6TngoKF0S8oPaDZPvv",
@@ -29246,7 +29443,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/sun_kil_moon_among_the_leaves.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_among_the_leaves.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "2y2QZ4uDpzoZHgH2il5Ktu",
@@ -29337,7 +29535,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/sun_kil_moon_benji.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_benji.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "3bVDZOD7EnPkxludwZUidT",
@@ -29428,7 +29627,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/sun_kil_moon_tiny_cities.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_tiny_cities.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "4inXg3tY4tNOHgXzUOexbu",
@@ -29498,7 +29698,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/sun_kil_moon_sun_kil_moon_and_amoeba_vol_ii.jpg"
+          "local_artwork": "data/artwork/sun_kil_moon_sun_kil_moon_and_amoeba_vol_ii.jpg",
+          "real_rating": 14
         },
         {
           "album_id": "77AYdae70ldovpvRPS0Xjc",
@@ -29933,7 +30134,8 @@
               "isrc": "USRH11504597"
             }
           ],
-          "local_artwork": "data/artwork/son_volt_trace_remastered.jpg"
+          "local_artwork": "data/artwork/son_volt_trace_remastered.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -30119,7 +30321,8 @@
               "isrc": "US3X50511415"
             }
           ],
-          "local_artwork": "data/artwork/coheed_and_cambria_the_second_stage_turbine_blade_re_issue.jpg"
+          "local_artwork": "data/artwork/coheed_and_cambria_the_second_stage_turbine_blade_re_issue.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "163gYXqzv3axBTgHkZiBJU",
@@ -30196,7 +30399,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/coheed_and_cambria_the_afterman_ascension.jpg"
+          "local_artwork": "data/artwork/coheed_and_cambria_the_afterman_ascension.jpg",
+          "real_rating": 14
         },
         {
           "album_id": "2oWXmi9uLRKn60yRmY22MB",
@@ -30294,7 +30498,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/coheed_and_cambria_in_keeping_secrets_of_silent_earth_3.jpg"
+          "local_artwork": "data/artwork/coheed_and_cambria_in_keeping_secrets_of_silent_earth_3.jpg",
+          "real_rating": 18
         },
         {
           "album_id": "42S0lDJT9wHKCVaMGgqKdm",
@@ -30413,7 +30618,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/coheed_and_cambria_the_unheavenly_creatures.jpg"
+          "local_artwork": "data/artwork/coheed_and_cambria_the_unheavenly_creatures.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "4nYsnQpTAQaPzrPc6rOsBN",
@@ -30532,7 +30738,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/coheed_and_cambria_good_apollo_im_burning_star_iv_volume_one_from_f.jpg"
+          "local_artwork": "data/artwork/coheed_and_cambria_good_apollo_im_burning_star_iv_volume_one_from_f.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -30740,7 +30947,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/say_anything_is_a_real_boy.jpg"
+          "local_artwork": "data/artwork/say_anything_is_a_real_boy.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -30796,6 +31004,7 @@
             }
           ],
           "local_artwork": "data/artwork/can_future_days_remastered_version.jpg",
+          "real_rating": 18,
           "discogs_catalog": {
             "release_id": 993778,
             "master_id": 11765,
@@ -30925,6 +31134,7 @@
             }
           ],
           "local_artwork": "data/artwork/can_ege_bamyasi_remastered_version.jpg",
+          "real_rating": 19,
           "discogs_catalog": {
             "release_id": 43337,
             "master_id": 11693,
@@ -31049,6 +31259,7 @@
             }
           ],
           "local_artwork": "data/artwork/can_monster_movie_remastered_version.jpg",
+          "real_rating": 18,
           "discogs_catalog": {
             "release_id": 135284,
             "master_id": 7774,
@@ -31247,7 +31458,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/pixies_doolittle.jpg"
+          "local_artwork": "data/artwork/pixies_doolittle.jpg",
+          "real_rating": 18
         },
         {
           "album_id": "50j4Wm1b9hLpSpPIA39Vp9",
@@ -31352,7 +31564,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/pixies_surfer_rosa_2007_remaster.jpg"
+          "local_artwork": "data/artwork/pixies_surfer_rosa_2007_remaster.jpg",
+          "real_rating": 16
         },
         {
           "album_id": "79CvxovoFgGNuAMvQp9wul",
@@ -31422,7 +31635,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/pixies_come_on_pilgrim.jpg"
+          "local_artwork": "data/artwork/pixies_come_on_pilgrim.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -31540,7 +31754,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/gil_scott_heron_were_new_here.jpg"
+          "local_artwork": "data/artwork/gil_scott_heron_were_new_here.jpg",
+          "real_rating": 18
         }
       ]
     },
@@ -31679,7 +31894,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/nick_drake_pink_moon.jpg"
+          "local_artwork": "data/artwork/nick_drake_pink_moon.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "7IpcJbVxLLEfW0KXB7ndE2",
@@ -31783,7 +31999,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/talking_heads_remain_in_light.jpg"
+          "local_artwork": "data/artwork/talking_heads_remain_in_light.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "78MM8HrabEGPLVWaJkM2t1",
@@ -31860,7 +32077,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/talking_heads_speaking_in_tongues.jpg"
+          "local_artwork": "data/artwork/talking_heads_speaking_in_tongues.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -31957,7 +32175,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/the_velvet_underground_the_velvet_underground_45th_anniversary.jpg"
+          "local_artwork": "data/artwork/the_velvet_underground_the_velvet_underground_45th_anniversary.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "4RMGrhJRnGiNqmKqhqpLlX",
@@ -32069,7 +32288,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/the_velvet_underground_loaded_2015_remaster.jpg"
+          "local_artwork": "data/artwork/the_velvet_underground_loaded_2015_remaster.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "4xwx0x7k6c5VuThz5qVqmV",
@@ -32160,7 +32380,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/the_velvet_underground_the_velvet_underground_nico_45th_anniversary.jpg"
+          "local_artwork": "data/artwork/the_velvet_underground_the_velvet_underground_nico_45th_anniversary.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -32291,7 +32512,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/sade_stronger_than_pride.jpg"
+          "local_artwork": "data/artwork/sade_stronger_than_pride.jpg",
+          "real_rating": 15
         },
         {
           "album_id": "3JcNnjMVSKiNpqhErZarW0",
@@ -32368,7 +32590,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/sade_diamond_life.jpg"
+          "local_artwork": "data/artwork/sade_diamond_life.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -32465,7 +32688,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/mom_jeans_best_buds.jpg"
+          "local_artwork": "data/artwork/mom_jeans_best_buds.jpg",
+          "real_rating": 15
         }
       ]
     },
@@ -32576,7 +32800,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/the_cure_disintegration_2010_remaster.jpg"
+          "local_artwork": "data/artwork/the_cure_disintegration_2010_remaster.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -32680,7 +32905,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/maria_beth\u00e2nia_\u00e1libi.jpg"
+          "local_artwork": "data/artwork/maria_beth\u00e2nia_\u00e1libi.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -32756,7 +32982,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/kraftwerk_computer_world_2009_remaster.jpg"
+          "local_artwork": "data/artwork/kraftwerk_computer_world_2009_remaster.jpg",
+          "real_rating": 17
         },
         {
           "album_id": "0HHRIVjvBcnTepfeRVgS2f",
@@ -32826,7 +33053,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/kraftwerk_trans_europe_express_2009_remaster.jpg"
+          "local_artwork": "data/artwork/kraftwerk_trans_europe_express_2009_remaster.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -32916,7 +33144,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/prince_purple_rain.jpg"
+          "local_artwork": "data/artwork/prince_purple_rain.jpg",
+          "real_rating": 13
         }
       ]
     },
@@ -33041,7 +33270,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/erykah_badu_baduizm.jpg"
+          "local_artwork": "data/artwork/erykah_badu_baduizm.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -33158,7 +33388,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/television_marquee_moon.jpg"
+          "local_artwork": "data/artwork/television_marquee_moon.jpg",
+          "real_rating": 17
         }
       ]
     },
@@ -33311,7 +33542,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/arthur_russell_world_of_echo.jpg"
+          "local_artwork": "data/artwork/arthur_russell_world_of_echo.jpg",
+          "real_rating": 15
         }
       ]
     },
@@ -33456,7 +33688,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/rundmc_raising_hell.jpg"
+          "local_artwork": "data/artwork/rundmc_raising_hell.jpg",
+          "real_rating": 15
         }
       ]
     },
@@ -33706,7 +33939,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/buzzcocks_singles_going_steady.jpg"
+          "local_artwork": "data/artwork/buzzcocks_singles_going_steady.jpg",
+          "real_rating": 16
         }
       ]
     },
@@ -33747,7 +33981,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/the_mars_volta_deloused_in_the_comatorium.jpg"
+          "local_artwork": "data/artwork/the_mars_volta_deloused_in_the_comatorium.jpg",
+          "real_rating": 18
         },
         {
           "album_id": "30iqYID1JMBXLVFfErwTSd",
@@ -34023,7 +34258,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/washed_out_within_and_without.jpg"
+          "local_artwork": "data/artwork/washed_out_within_and_without.jpg",
+          "real_rating": 14
         }
       ]
     },
@@ -34127,7 +34363,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/to_the_wind_block_out_the_sun_sleep.jpg"
+          "local_artwork": "data/artwork/to_the_wind_block_out_the_sun_sleep.jpg",
+          "real_rating": 14
         },
         {
           "album_id": "5YlSucquisid7OajXkWlez",
@@ -34211,7 +34448,8 @@
               "isrc": null
             }
           ],
-          "local_artwork": "data/artwork/to_the_wind_the_brighter_view.jpg"
+          "local_artwork": "data/artwork/to_the_wind_the_brighter_view.jpg",
+          "real_rating": 14
         }
       ]
     }

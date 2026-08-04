@@ -112,6 +112,21 @@ function handleDeletePlay(playedAt) {
   return jsonResponse({ ok: true });
 }
 
+async function handleAlbums() {
+  const data = await loadSnapshot("albums.json");
+  const albums = data.albums.map((album) => ({
+    ...album,
+    is_favorited: overlay.albumFavorites[album.album_id] ?? album.is_favorited,
+    rating: overlay.albumRatings[album.album_id] ?? album.rating,
+    notes: overlay.albumNotes[album.album_id] ?? album.notes,
+    track_plays: album.track_plays.map((t) => ({
+      ...t,
+      is_favorited: overlay.trackFavorites[t.track_id] ?? t.is_favorited,
+    })),
+  }));
+  return jsonResponse({ albums, all_genres: data.all_genres, year_bounds: data.year_bounds });
+}
+
 async function handleArtists() {
   const data = await loadSnapshot("artists.json");
   const artists = data.artists.map((a) => ({
@@ -193,6 +208,10 @@ async function handleApiRequest(request) {
 
   if (path === "/api/artists" && method === "GET") {
     return handleArtists();
+  }
+
+  if (path === "/api/albums" && method === "GET") {
+    return handleAlbums();
   }
 
   let m;

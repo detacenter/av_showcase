@@ -4,7 +4,13 @@ Stage 1 of the synthetic data pipeline: one-time, local-only tool.
 Reads REAL catalog metadata (artist/album/track/genre/vinyl names, structure) from
 the real av app's data directory and writes data/catalog_seed.json — a weighted
 sample of real catalog vocabulary with ZERO behavioral data (no play timestamps,
-no personal ratings/notes/dates, no session info).
+no personal notes/dates, no session info), with ONE deliberate exception: real
+per-album star ratings. User's explicit rule change (session 5) — ratings are real
+opinions about public albums, not privacy-sensitive in the way timestamps/session
+patterns are, and the user wants their actual taste reflected rather than a
+randomized stand-in. Every other behavioral field (timestamps, notes, favorites,
+session/device patterns) stays fully synthetic, generated fresh in stage 2 — this
+exception is scoped to ratings only.
 
 This script is meant to be run once by the repo owner, locally, against their own
 real data directory. It is never run as part of the public demo and never ships
@@ -114,6 +120,8 @@ def main() -> None:
     genres = _load("lastfm_genres.json") or {}
     vinyl_links = _load("vinyl_links.json") or {"confirmed": [], "dismissed": []}
     discogs_collection = _load("discogs_collection.json") or []
+    real_library = _load("library.json") or {}
+    real_album_ratings = real_library.get("albums", {})
 
     if log is None:
         raise SystemExit(
@@ -230,6 +238,14 @@ def main() -> None:
                 "tracks": tracks_sorted,
                 "local_artwork": local_art,
             }
+
+            # Real per-album star rating (raw 0-20 scale) — the one deliberate
+            # behavioral-data exception, per the user's explicit rule change.
+            # Only carried over when the real rating is actually set; stage 2
+            # must not invent one for albums the user never rated.
+            real_rating = real_album_ratings.get(album_id, {}).get("rating", 0)
+            if real_rating:
+                album_out["real_rating"] = real_rating
 
             # If this real album has a real confirmed vinyl link, carry over the
             # real Discogs catalog metadata (never the personal fields).

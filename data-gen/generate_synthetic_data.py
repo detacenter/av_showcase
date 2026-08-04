@@ -21,7 +21,6 @@ from config import (
     AVG_PLAYS_PER_DAY,
     ARTIST_ZIPF_EXPONENT,
     GENRE_DRIFT_ERAS,
-    ALBUM_RATING_FRACTION,
     VINYL_COVERAGE_FRACTION,
     HANDWRITTEN_NOTES_COUNT,
 )
@@ -143,6 +142,15 @@ def main() -> None:
         for i, a in enumerate(ranked_artists)
     }
     artist_by_name = {a["artist_name"]: a for a in artists}
+
+    # Real per-album ratings, carried over verbatim from catalog_seed.json (the
+    # one deliberate behavioral-data exception — see export_catalog_seed.py's
+    # docstring and PRJ-0005 session log, session 5). Only albums the user
+    # actually rated in real life show up here; nothing here is synthesized.
+    album_real_rating = {
+        al["album_id"]: al["real_rating"]
+        for a in artists for al in a["albums"] if al.get("real_rating")
+    }
 
     era_of_genre = assign_genre_eras(rng, artists, GENRE_DRIFT_ERAS)
 
@@ -288,8 +296,6 @@ def main() -> None:
     # ── library.json ───────────────────────────────────────────────────────
     played_album_ids = list(play_counts_by_album.keys())
     rng.shuffle(played_album_ids)
-    rated_count = round(len(played_album_ids) * ALBUM_RATING_FRACTION)
-    rated_albums = set(played_album_ids[:rated_count])
 
     notes_pool = HANDWRITTEN_NOTES[:]
     rng.shuffle(notes_pool)
@@ -301,8 +307,8 @@ def main() -> None:
     library_albums = {}
     for album_id in played_album_ids:
         entry = {}
-        if album_id in rated_albums:
-            entry["rating"] = rng.choices([2, 3, 4, 5], weights=[0.1, 0.25, 0.35, 0.3], k=1)[0]
+        if album_id in album_real_rating:
+            entry["rating"] = album_real_rating[album_id]
         if album_id in noted_albums:
             entry["notes"] = notes_pool[noted_albums.index(album_id) % len(notes_pool)]
         if album_id in favorited_album_ids:

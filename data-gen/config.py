@@ -39,8 +39,6 @@ ARTIST_ZIPF_EXPONENT = 1.1
 # shifts artist-selection weighting toward a different genre cluster).
 GENRE_DRIFT_ERAS = 3
 
-# Fraction of selected albums that get a library.json rating (1-5, skewed positive).
-ALBUM_RATING_FRACTION = 0.35
 
 # Fraction of selected albums that get a synthetic vinyl/Discogs record.
 VINYL_COVERAGE_FRACTION = 0.25

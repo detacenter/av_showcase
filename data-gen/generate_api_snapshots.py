@@ -59,6 +59,7 @@ ENDPOINTS = {
     "/api/recent/albums": "recent-albums.json",
     "/api/settings": "settings.json",
     "/api/artists": "artists.json",
+    "/api/albums": "albums.json",
 }
 
 _ABS_PATH_RE = re.compile(r"^/[^\s]*/([^/\s]+)$")
