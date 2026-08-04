@@ -27,6 +27,9 @@ const overlay = {
   vinylSync: { running: false, startedAt: 0 },
   wantlistSync: { running: false, startedAt: 0 },
   deletedVinylSessions: new Set(), // session ids
+  claudioGenerate: { running: false, startedAt: 0, poolIndex: 0 },
+  claudioAddedBatches: [],       // batches appended by "Generate" clicks this session
+  claudioFeedback: {},           // "batchIdx:recIdx" -> "up" | "down" | null
 };
 
 let _playlistCounter = 0;
@@ -323,6 +326,59 @@ async function handleWantlistSyncStatus() {
   return jsonResponse(fakeSyncStatus(overlay.wantlistSync, `Done — ${snap.wants.length} wants`));
 }
 
+// Claudio recommendations are hand-written, not generated live (no Anthropic/
+// Spotify calls in the demo). "Generate" simulates the real app's few-second
+// wait, then reveals the next batch from a small canned pool — cycling once
+// the pool is exhausted rather than repeating "already up to date" forever,
+// so repeated clicks stay interesting for a curious visitor.
+const CLAUDIO_GENERATE_DURATION_MS = 6000;
+
+async function handleClaudioHistory() {
+  const snap = await loadSnapshot("claudio-history.json");
+  const batches = [...snap.initial, ...overlay.claudioAddedBatches];
+  const withFeedback = batches.map((batch, bi) => ({
+    ...batch,
+    recommendations: batch.recommendations.map((rec, ri) => {
+      const key = `${bi}:${ri}`;
+      return key in overlay.claudioFeedback
+        ? { ...rec, feedback: overlay.claudioFeedback[key] }
+        : rec;
+    }),
+  }));
+  return jsonResponse({ batches: withFeedback });
+}
+
+function handleClaudioStatus() {
+  const state = overlay.claudioGenerate;
+  if (!state.running) return jsonResponse({ generating: false, error: null });
+  if (Date.now() - state.startedAt < CLAUDIO_GENERATE_DURATION_MS) {
+    return jsonResponse({ generating: true, error: null });
+  }
+  state.running = false;
+  return jsonResponse({ generating: false, error: null });
+}
+
+async function handleClaudioGenerate() {
+  const state = overlay.claudioGenerate;
+  if (state.running) return jsonResponse({ started: false, reason: "already running" });
+  const snap = await loadSnapshot("claudio-history.json");
+  const nextBatch = snap.pool[state.poolIndex % snap.pool.length];
+  state.poolIndex += 1;
+  state.running = true;
+  state.startedAt = Date.now();
+  overlay.claudioAddedBatches.push({
+    ...nextBatch,
+    generated_at: new Date().toISOString(),
+  });
+  return jsonResponse({ started: true });
+}
+
+function handleClaudioFeedback(body) {
+  const key = `${body.batch_idx}:${body.rec_idx}`;
+  overlay.claudioFeedback[key] = body.feedback ?? null;
+  return jsonResponse({ ok: true });
+}
+
 function handleVinylSessionCurrent() {
   // No physical turntable in this demo — always report no active session.
   // Polled continuously (every 4s) from a globally-mounted component, so
@@ -494,6 +550,19 @@ async function handleApiRequest(request) {
   }
   if (path === "/api/stats/genres-page" && method === "GET") {
     return handleStatsGenresPage();
+  }
+
+  if (path === "/api/claudio/history" && method === "GET") {
+    return handleClaudioHistory();
+  }
+  if (path === "/api/claudio/status" && method === "GET") {
+    return handleClaudioStatus();
+  }
+  if (path === "/api/claudio/generate" && method === "POST") {
+    return handleClaudioGenerate();
+  }
+  if (path === "/api/claudio/feedback" && method === "POST") {
+    return handleClaudioFeedback(await request.json());
   }
 
   let m;

@@ -1,0 +1,186 @@
+{
+  "initial": [
+    {
+      "generated_at": "2026-07-29T14:32:00+00:00",
+      "recommendations": [
+        {
+          "album": "GLOW ON",
+          "artist": "Turnstile",
+          "year": 2021,
+          "genres": ["hardcore punk", "post-hardcore"],
+          "track_count": 15,
+          "why_you": "Your post-hardcore/emo lean points straight at this crossover breakout.",
+          "blurb": "Turnstile blew hardcore's doors open with GLOW ON, folding shoegaze haze and pure pop hooks into two-minute blasts. It's the rare hardcore record that rewards repeat listens for the melodies, not just the riffs.",
+          "sounds_like": ["Circa Survive", "Touché Amoré", "La Dispute"],
+          "feedback": null
+        },
+        {
+          "album": "Racional Vol. 1",
+          "artist": "Tim Maia",
+          "year": 1975,
+          "genres": ["mpb", "soul", "funk"],
+          "track_count": 9,
+          "why_you": "Deep MPB listening history but this one's an outlier you likely haven't hit.",
+          "blurb": "Tim Maia's strangest, most inspired record — a spiritual-funk left turn recorded after he joined a UFO-adjacent cult, then largely disowned by him for decades. It's since been reappraised as one of Brazilian music's great cult classics.",
+          "sounds_like": ["Jorge Ben Jor", "Curtis Mayfield", "Gilberto Gil"],
+          "feedback": null
+        },
+        {
+          "album": "Teen Dream",
+          "artist": "Beach House",
+          "year": 2010,
+          "genres": ["dream pop", "shoegaze"],
+          "track_count": 10,
+          "why_you": "Sits right next to your Cocteau Twins/Slowdive listening.",
+          "blurb": "The record where Beach House's hazy bedroom-pop fully bloomed into something widescreen. Warm organ, reverb-soaked guitar, and Victoria Legrand's voice doing most of the emotional heavy lifting.",
+          "sounds_like": ["Cocteau Twins", "Slowdive", "Fleet Foxes"],
+          "feedback": null
+        },
+        {
+          "album": "By the Time I Get to Phoenix",
+          "artist": "Injury Reserve",
+          "year": 2021,
+          "genres": ["experimental hip-hop", "noise"],
+          "track_count": 11,
+          "why_you": "For the Run the Jewels / Kanye side of your rotation, but pushed further left.",
+          "blurb": "Made in the aftermath of a bandmate's death, this is grief processed as noise-rap — abrasive, fractured, and genuinely unlike anything else in hip-hop that year. Hard to recommend casually, harder to forget.",
+          "sounds_like": ["Run The Jewels", "Kanye West", "TOOL"],
+          "feedback": null
+        },
+        {
+          "album": "Journey in Satchidananda",
+          "artist": "Alice Coltrane",
+          "year": 1971,
+          "genres": ["spiritual jazz", "jazz"],
+          "track_count": 6,
+          "why_you": "Your Arthur Russell / Brian Eno listening suggests you'd take to this.",
+          "blurb": "Harp, oud, and saxophone drifting over a single meditative pulse. One of spiritual jazz's defining records, and a good entry point if modal, trance-like composition is new territory.",
+          "sounds_like": ["Arthur Russell", "Brian Eno", "Miles Davis"],
+          "feedback": null
+        }
+      ]
+    }
+  ],
+  "pool": [
+    {
+      "generated_at": "2026-07-15T09:10:00+00:00",
+      "recommendations": [
+        {
+          "album": "Grace",
+          "artist": "Jeff Buckley",
+          "year": 1994,
+          "genres": ["alternative rock", "singer-songwriter"],
+          "track_count": 10,
+          "why_you": "Tim Buckley's in your library — this is his son's one studio album, and it's a landmark in its own right.",
+          "blurb": "A singular vocal performance across ten songs that swing from delicate to devastating. Grace took years to find its audience but is now regarded as one of the great '90s rock records.",
+          "sounds_like": ["Tim Buckley", "Fiona Apple", "Radiohead"],
+          "feedback": null
+        },
+        {
+          "album": "Lift Yr. Skinny Fists Like Antennas to Heaven",
+          "artist": "Godspeed You! Black Emperor",
+          "year": 2000,
+          "genres": ["post-rock", "instrumental"],
+          "track_count": 4,
+          "why_you": "Your Explosions in the Sky / Russian Circles listening points here directly.",
+          "blurb": "Four side-long movements of slow-building dread and release, built from field recordings and a wall of strings and guitar. One of post-rock's essential, most-imitated records.",
+          "sounds_like": ["Explosions In The Sky", "Russian Circles", "Slint"],
+          "feedback": null
+        },
+        {
+          "album": "Elis & Tom",
+          "artist": "Elis Regina & Antônio Carlos Jobim",
+          "year": 1974,
+          "genres": ["mpb", "bossa nova"],
+          "track_count": 11,
+          "why_you": "Same Brazilian songbook lineage as Gal Costa and Milton Nascimento in your library.",
+          "blurb": "Widely considered the finest bossa nova recording ever made — Elis Regina's voice and Jobim's writing at their absolute peak, recorded live-in-studio in Los Angeles over a handful of days.",
+          "sounds_like": ["Gal Costa", "Milton Nascimento", "João Bosco"],
+          "feedback": null
+        },
+        {
+          "album": "Splendor & Misery",
+          "artist": "clipping.",
+          "year": 2016,
+          "genres": ["hip-hop", "industrial", "experimental"],
+          "track_count": 14,
+          "why_you": "A concept album (runaway slave, alone on a spaceship) built from pure noise-rap production.",
+          "blurb": "A sci-fi concept record told through harsh, glitchy production and Daveed Diggs' rapid-fire delivery. Nominated for a Hugo Award for best dramatic presentation — not something you can say about many rap records.",
+          "sounds_like": ["Run The Jewels", "Kanye West", "Kendrick Lamar"],
+          "feedback": null
+        },
+        {
+          "album": "LEGACY! LEGACY!",
+          "artist": "Jamila Woods",
+          "year": 2019,
+          "genres": ["neo-soul", "r&b"],
+          "track_count": 13,
+          "why_you": "Sits next to Erykah Badu and Daniel Caesar in your listening.",
+          "blurb": "Each song named for a Black artist or writer who shaped Woods — Zora, Betty, Miles, Sun Ra — turning tribute into some of the sharpest neo-soul songwriting of the decade.",
+          "sounds_like": ["Erykah Badu", "Daniel Caesar", "Solange"],
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "generated_at": "2026-06-28T18:45:00+00:00",
+      "recommendations": [
+        {
+          "album": "Loveless",
+          "artist": "My Bloody Valentine",
+          "year": 1991,
+          "genres": ["shoegaze", "noise pop"],
+          "track_count": 11,
+          "why_you": "The record most of your Cocteau Twins / Slowdive listening traces back to.",
+          "blurb": "Guitar as texture, not riff — an entire genre's blueprint, made by bending pitch and layering guitars until the songs dissolve into pure sound. Took two years and reportedly bankrupted a label to finish.",
+          "sounds_like": ["Cocteau Twins", "Slowdive", "Deerhunter"],
+          "feedback": null
+        },
+        {
+          "album": "The Money Store",
+          "artist": "Death Grips",
+          "year": 2012,
+          "genres": ["experimental hip-hop", "industrial hip-hop"],
+          "track_count": 13,
+          "why_you": "For when Run the Jewels and TOOL aren't quite abrasive enough.",
+          "blurb": "Blown-out drums, screamed vocals, and production that sounds like it's actively falling apart — still one of the most influential and imitated rap records of the 2010s.",
+          "sounds_like": ["Run The Jewels", "TOOL", "Kanye West"],
+          "feedback": null
+        },
+        {
+          "album": "Terra dos Pássaros",
+          "artist": "Toninho Horta",
+          "year": 1980,
+          "genres": ["mpb", "jazz fusion"],
+          "track_count": 8,
+          "why_you": "Same Clube da Esquina circle as Milton Nascimento and João Bosco.",
+          "blurb": "Intricate, jazz-inflected guitar work from one of the quieter figures in the Clube da Esquina scene — a record beloved by guitarists and largely unknown outside Brazil.",
+          "sounds_like": ["Milton Nascimento", "João Bosco", "João Donato"],
+          "feedback": null
+        },
+        {
+          "album": "Simple Math",
+          "artist": "Manchester Orchestra",
+          "year": 2011,
+          "genres": ["indie rock", "alternative rock"],
+          "track_count": 11,
+          "why_you": "For the heavier, more orchestral end of your Brand New / The Hotelier listening.",
+          "blurb": "A breakup record scaled up to full orchestra and choir in places, without losing the raw nerve of the band's earlier, scrappier records.",
+          "sounds_like": ["Brand New", "The Hotelier", "Thursday"],
+          "feedback": null
+        },
+        {
+          "album": "Nine",
+          "artist": "Sault",
+          "year": 2021,
+          "genres": ["soul", "funk", "r&b"],
+          "track_count": 9,
+          "why_you": "Modern soul in the Sade / Erykah Badu lane you already spend time in.",
+          "blurb": "Self-released, credits deliberately withheld, and available for exactly 99 days before the group pulled it — Sault's whole run has been an exercise in letting the music speak with zero context. This one leans hardest into groove.",
+          "sounds_like": ["Sade", "Erykah Badu", "Solange"],
+          "feedback": null
+        }
+      ]
+    }
+  ]
+}
