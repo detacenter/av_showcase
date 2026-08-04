@@ -12,6 +12,8 @@ from __future__ import annotations
 
 import json
 import random
+import uuid
+from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
@@ -71,19 +73,39 @@ def load_seed() -> dict:
         return json.load(f)
 
 
-def assign_genre_eras(rng: random.Random, artists: list[dict], n_eras: int) -> dict[str, int]:
-    """Deterministically split distinct primary genres across eras for genre drift."""
-    primary_genres = sorted({(a["genres"][0] if a["genres"] else "unknown") for a in artists})
-    rng.shuffle(primary_genres)
+def assign_genre_eras(artists: list[dict], n_eras: int) -> dict[str, int]:
+    """Split distinct primary genres into contiguous eras ordered by the
+    genre's own average catalog release year — not a random shuffle — so the
+    active era's artists have a genuinely different average release year and
+    the "drift" over time is a real, guaranteed trend rather than an
+    incidental (and in practice nearly invisible) correlation. Session 5:
+    caught via a real browser screenshot showing an almost perfectly flat
+    drift line despite this mechanic supposedly driving it."""
+    genre_years: dict[str, list[int]] = defaultdict(list)
+    for a in artists:
+        primary = a["genres"][0] if a["genres"] else "unknown"
+        for al in a["albums"]:
+            if al.get("release_year"):
+                genre_years[primary].append(al["release_year"])
+    avg_year = {g: sum(ys) / len(ys) for g, ys in genre_years.items() if ys}
+    all_genres = sorted({(a["genres"][0] if a["genres"] else "unknown") for a in artists})
+    ordered = sorted(all_genres, key=lambda g: avg_year.get(g, 2000))
     era_of_genre = {}
-    for i, g in enumerate(primary_genres):
-        era_of_genre[g] = i % n_eras
+    band_size = max(1, len(ordered) / n_eras)
+    for i, g in enumerate(ordered):
+        era_of_genre[g] = min(n_eras - 1, int(i / band_size))
     return era_of_genre
 
 
 def era_weight(artist: dict, era: int, era_of_genre: dict[str, int]) -> float:
+    # Mild lean (previously an extreme 50x ratio) — real listening mixes
+    # decades broadly within any given period (checked against the real
+    # app's own listening_log.json: per-play release-year stdev of 12-17
+    # years within a single month), so eras should nudge, not lock. Session
+    # 5, second pass — the first attempt at strengthening this overcorrected
+    # into an artificial, unrealistically clean drift.
     primary = artist["genres"][0] if artist["genres"] else "unknown"
-    return 2.0 if era_of_genre.get(primary) == era else 0.5
+    return 2.2 if era_of_genre.get(primary) == era else 0.7
 
 
 def daypart_time(rng: random.Random, day: datetime, is_weekend: bool) -> datetime:
@@ -134,10 +156,24 @@ def main() -> None:
     rng = random.Random(BEHAVIOR_SEED)
 
     # ── Rank artists by a fixed shuffle, assign Zipf base weights ──────────
+    # Weight also factors in catalog depth (session 5) — without this, an
+    # artist who happens to land the #1 Zipf rank by pure shuffle luck but
+    # has a tiny catalog (in the worst real case found: 1 album, 1 track)
+    # gets hammered picked over and over, since a 1-track "session" barely
+    # drains the day's remaining play budget, so the outer loop just rolls
+    # again — one album ended up with 547 of ~4750 total plays, visible as
+    # an impossible flat line in the Drift chart. sqrt-scaled and capped so
+    # it only meaningfully discounts genuinely small catalogs (<8 tracks),
+    # not a mild penalty for every non-prolific artist.
     ranked_artists = artists[:]
     rng.shuffle(ranked_artists)
+    track_count = {
+        a["artist_name"]: sum(len(al["tracks"]) for al in a["albums"])
+        for a in artists
+    }
     base_weight = {
-        a["artist_name"]: 1.0 / ((i + 1) ** ARTIST_ZIPF_EXPONENT)
+        a["artist_name"]: (1.0 / ((i + 1) ** ARTIST_ZIPF_EXPONENT))
+        * min(1.0, (max(1, track_count[a["artist_name"]]) / 8) ** 0.5)
         for i, a in enumerate(ranked_artists)
     }
     artist_by_name = {a["artist_name"]: a for a in artists}
@@ -151,12 +187,35 @@ def main() -> None:
         for a in artists for al in a["albums"] if al.get("real_rating")
     }
 
-    era_of_genre = assign_genre_eras(rng, artists, GENRE_DRIFT_ERAS)
+    era_of_genre = assign_genre_eras(artists, GENRE_DRIFT_ERAS)
 
     # ── Timespan ─────────────────────────────────────────────────────────
     end_date = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
     total_days = round(TIMESPAN_MONTHS * 30.44)
     start_date = end_date - timedelta(days=total_days)
+
+    # ── Artist introduction schedule (session 5) ────────────────────────────
+    # Without this, nearly every artist gets sampled within the first couple
+    # weeks — a few thousand plays drawn from only 200 artists exhausts the
+    # pool fast — so "new artist" discovery events cluster entirely at the
+    # start instead of spreading across the whole window like real discovery
+    # does. Caught via a real browser screenshot of the Discovery Balance
+    # chart showing almost no "new" activity past the first couple weeks.
+    # Top-ranked artists form the immediate "core rotation" (always
+    # available); the rest unlock on a random day spread across the full
+    # timespan, so new-artist events keep happening throughout.
+    # Unlocks are spread across the first ~40% of the timespan, not the
+    # whole thing — a late-unlocking tail artist still needs real runway to
+    # actually get sampled at all given the Zipf weighting (an artist
+    # unlocking with only 2-3 weeks left rarely gets drawn), so spreading
+    # across the full span was quietly starving catalog coverage (dropped
+    # from ~192/200 to ~124/200 artists ever played — caught by re-checking
+    # after the first version of this change, not just eyeballing the chart).
+    core_count = max(1, len(ranked_artists) // 5)
+    unlock_day: dict[str, int] = {}
+    for i, a in enumerate(ranked_artists):
+        name = a["artist_name"]
+        unlock_day[name] = 0 if i < core_count else rng.randint(0, max(1, int(total_days * 0.4)))
 
     # ── Pick a small set of "sticky partial" albums from the final era ────
     # (kept below 100% catalog completion on purpose, to show the "still
@@ -181,28 +240,103 @@ def main() -> None:
     play_counts_by_artist: dict[str, int] = {}
     album_of_track: dict[str, str] = {}
     artist_of_album: dict[str, str] = {}
+    # Per-album cooldown (session 5) — real listening has variety; without
+    # this, rng.choice(artist["albums"]) can pick the same album repeatedly
+    # within a short window purely by chance, especially for heavily-
+    # weighted top artists. Caught via a real browser screenshot of the
+    # Periods|Week tab showing the same album several times in one week.
+    # Relaxed (falls back to any album) only when every one of an artist's
+    # albums is on cooldown — mainly single/two-album artists, where a
+    # strict no-repeat would make them unplayable for months at a time.
+    album_last_played_day: dict[str, int] = {}
+    ALBUM_COOLDOWN_DAYS = 90
+    # Per-calendar-month volume multiplier (session 5) — the previous model
+    # only varied day-to-day (weekday/weekend + Gaussian noise) around one
+    # constant mean for the entire 9 months, which averages out to an
+    # almost perfectly linear cumulative total. Real listening has heavier
+    # and quieter stretches. Derived from its own seed (not the shared rng)
+    # so it stays reproducible independent of how many other rng draws
+    # happen before a given month is first reached.
+    month_multiplier_cache: dict[tuple[int, int], float] = {}
+    # "Listening mood" (session 5, second pass) — a random walk over era
+    # buckets instead of a fixed linear march through them. A monotonic
+    # progression (era 0 -> 1 -> 2 -> ...) produces an artificially clean,
+    # ever-climbing average release year; real listening has no such
+    # narrative arc (checked against the real app's own data — real
+    # month-to-month averages jump around with no consistent direction).
+    # The mood persists for roughly 1-2.5 weeks before randomly switching to
+    # a (possibly different, possibly the same) era, which combined with the
+    # now-mild era_weight lean produces noisy, non-monotonic drift instead.
+    mood_era = 0
+    days_until_mood_change = 0
 
     day = start_date
     day_index = 0
     while day < end_date:
         is_weekend = day.weekday() >= 5
-        era = min(day_index // max(1, total_days // GENRE_DRIFT_ERAS), GENRE_DRIFT_ERAS - 1)
+        if days_until_mood_change <= 0:
+            mood_era = rng.randrange(GENRE_DRIFT_ERAS)
+            days_until_mood_change = rng.randint(5, 18)
+        days_until_mood_change -= 1
+        era = mood_era
+
+        month_key = (day.year, day.month)
+        if month_key not in month_multiplier_cache:
+            month_rng = random.Random(f"{BEHAVIOR_SEED}-month-{day.year}-{day.month}")
+            month_multiplier_cache[month_key] = month_rng.uniform(0.55, 1.6)
+        month_multiplier = month_multiplier_cache[month_key]
 
         day_multiplier = 1.15 if is_weekend else 1.0
-        plays_today = max(0, round(rng.gauss(AVG_PLAYS_PER_DAY * day_multiplier, AVG_PLAYS_PER_DAY * 0.3)))
+        plays_today = max(0, round(rng.gauss(
+            AVG_PLAYS_PER_DAY * day_multiplier * month_multiplier, AVG_PLAYS_PER_DAY * 0.3,
+        )))
 
         remaining = plays_today
         current_time = None
+        # Same-day fatigue (session 5, third pass — the actual root cause of
+        # the Drift chart's impossible flat line): the inner loop below
+        # re-draws from this same Zipf-weighted distribution ~15-25 times
+        # per day, once per session. Zipf weight alone means whichever
+        # artist lands the #1 rank wins a large fraction of *those draws*,
+        # every single day, for the whole 9 months — not just a realistic
+        # "favorite artist" share, but 943 of 4763 total plays (19.8%) to
+        # one album. Real listening doesn't replay one artist all day every
+        # day for months. Decaying per-day penalty breaks that without
+        # touching the long-run rotation weight at all.
+        picks_today: dict[str, int] = {}
         while remaining > 0:
+            # Discovery-spike boost (session 5, second pass): a plain unlock
+            # schedule left new-artist events to Zipf-weighted chance, which
+            # for tail artists meant "unlocked" rarely translated into an
+            # actual visible play near their unlock day — Discovery Balance
+            # stayed thin. A short, strong boost right at unlock guarantees
+            # a real discovery event shows up there, without permanently
+            # inflating that artist's long-run rotation weight.
             weights = [
                 base_weight[a["artist_name"]] * era_weight(a, era, era_of_genre)
+                * (6.0 if 0 <= day_index - unlock_day[a["artist_name"]] <= 3 else 1.0)
+                * (0.3 ** picks_today.get(a["artist_name"], 0))
+                if unlock_day[a["artist_name"]] <= day_index
+                and picks_today.get(a["artist_name"], 0) < 3  # hard per-day cap, not just decay
+                else 0
                 for a in artists
             ]
+            if not any(weights):
+                remaining -= 1
+                continue
             artist = rng.choices(artists, weights=weights, k=1)[0]
+            picks_today[artist["artist_name"]] = picks_today.get(artist["artist_name"], 0) + 1
             if not artist["albums"]:
                 remaining -= 1
                 continue
-            album = rng.choice(artist["albums"])
+            eligible_albums = [
+                al for al in artist["albums"]
+                if day_index - album_last_played_day.get(al["album_id"], -(ALBUM_COOLDOWN_DAYS + 1)) >= ALBUM_COOLDOWN_DAYS
+            ]
+            if not eligible_albums:
+                eligible_albums = artist["albums"]  # every album on cooldown — relax rather than block the artist
+            album = rng.choice(eligible_albums)
+            album_last_played_day[album["album_id"]] = day_index
             tracks = album["tracks"]
             if not tracks:
                 remaining -= 1
@@ -264,7 +398,17 @@ def main() -> None:
         day += timedelta(days=1)
         day_index += 1
 
-    log_entries.sort(key=lambda e: e["played_at"])
+    # Newest-first — matches the real app's actual invariant for
+    # listening_log.json/state.log (routers/recent.py: "log = state.log  #
+    # newest-first"; insights/stats_insights.py::_entries_for_period reads
+    # log[0] as the latest play). Sorting ascending here (as this line
+    # previously did) silently broke that assumption for the whole pipeline
+    # — recent.py's marquee/session-continuity logic degrades quietly since
+    # it explicitly re-sorts consumers elsewhere, but stats.py's period/time
+    # pagination anchors directly off log[0] and breaks outright (has_older
+    # goes false at offset 0). Caught only once Stats' pagination made it
+    # impossible to miss.
+    log_entries.sort(key=lambda e: e["played_at"], reverse=True)
 
     # ── catalog.json: partial/heard state for albums that got any plays ───
     catalog_out = {}
@@ -463,6 +607,52 @@ def main() -> None:
 
     vinyl_links_out = {"confirmed": confirmed_links, "dismissed": dismissed_links}
 
+    # ── vinyl_sessions.json (session 5, user's explicit ask) ─────────────
+    # The real app tracks actual physical turntable spins via Pi hardware —
+    # there's no real signal to reuse for this at all (unlike the vinyl
+    # collection itself, which is real catalog/possession data), so these
+    # sessions are fully synthetic, same treatment as listening_log.json.
+    # Roughly half the real collection gets "played" at least once — an
+    # unplayed remainder is realistic (everyone has records they haven't
+    # gotten to yet), matching the Vinyl tab's own played/unplayed framing.
+    def _resolved_art_filename(art_path: str | None) -> str | None:
+        prefix = "data/artwork/"
+        if not art_path:
+            return None
+        return art_path[len(prefix):] if art_path.startswith(prefix) else Path(art_path).name
+
+    played_records = rng.sample(discogs_out, k=round(len(discogs_out) * 0.5))
+    vinyl_sessions_out = []
+    for record in played_records:
+        n_sessions = rng.choices([1, 2, 3, 4], weights=[0.5, 0.3, 0.15, 0.05], k=1)[0]
+
+        total_secs = 0
+        for t in record.get("tracklist", []):
+            parts = (t.get("duration") or "").split(":")
+            if len(parts) == 2 and parts[0].isdigit() and parts[1].isdigit():
+                total_secs += int(parts[0]) * 60 + int(parts[1])
+        if total_secs <= 0:
+            total_secs = rng.randint(20 * 60, 45 * 60)  # no tracklist duration data — plausible LP length
+
+        for _ in range(n_sessions):
+            started = start_date + timedelta(
+                days=rng.randint(0, total_days), seconds=rng.randint(0, 86399),
+            )
+            duration = round(total_secs * rng.uniform(0.7, 1.05))  # occasionally stopped early
+            ended = started + timedelta(seconds=duration)
+            vinyl_sessions_out.append({
+                "id": str(uuid.uuid4()),
+                "started_at": started.timestamp(),
+                "ended_at": ended.timestamp(),
+                "duration_seconds": duration,
+                "status": "confirmed",
+                "release_id": record["release_id"],
+                "title": record["title"],
+                "artists": record["artists"],
+                "art_filename": _resolved_art_filename(record.get("art_path")),
+            })
+    vinyl_sessions_out.sort(key=lambda s: s["started_at"], reverse=True)
+
     # ── write everything ────────────────────────────────────────────────
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     with (OUT_DIR / "listening_log.json").open("w") as f:
@@ -477,12 +667,15 @@ def main() -> None:
         json.dump(vinyl_links_out, f, indent=2)
     with (OUT_DIR / "discogs_collection.json").open("w") as f:
         json.dump(discogs_out, f, indent=2)
+    with (OUT_DIR / "vinyl_sessions.json").open("w") as f:
+        json.dump(vinyl_sessions_out, f, indent=2)
 
     print(f"listening_log.json: {len(log_entries)} plays")
     print(f"catalog.json: {len(catalog_out)} partially-completed albums")
     print(f"library.json: {len(library_albums)} rated/noted/favorited albums, {len(library_artists)} artists, {len(favorited_tracks)} favorited + {len(revisit_tracks)} revisit tracks")
     print(f"playlists.json: {len(playlists_out)} playlists")
     print(f"discogs_collection.json / vinyl_links.json: {len(discogs_out)} vinyl records")
+    print(f"vinyl_sessions.json: {len(vinyl_sessions_out)} sessions across {len(played_records)} played records")
 
 
 if __name__ == "__main__":

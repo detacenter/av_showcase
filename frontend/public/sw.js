@@ -26,6 +26,7 @@ const overlay = {
   createdPlaylists: [],  // playlist objects created client-side this session
   vinylSync: { running: false, startedAt: 0 },
   wantlistSync: { running: false, startedAt: 0 },
+  deletedVinylSessions: new Set(), // session ids
 };
 
 let _playlistCounter = 0;
@@ -55,6 +56,15 @@ function jsonResponse(body, status = 200) {
 async function loadSnapshot(name) {
   const res = await fetch(`${SNAPSHOT_BASE}/${name}`);
   return res.json();
+}
+
+async function loadTextSnapshot(name) {
+  const res = await fetch(`${SNAPSHOT_BASE}/${name}`);
+  return res.text();
+}
+
+function htmlResponse(body, status = 200) {
+  return new Response(body, { status, headers: { "Content-Type": "text/html" } });
 }
 
 function applyOverlayToEntries(entries) {
@@ -196,6 +206,73 @@ async function handleUpdatePlaylist(id, body) {
 function handleDeletePlaylist(id) {
   overlay.deletedPlaylists.add(id);
   return jsonResponse({ ok: true });
+}
+
+async function handleStatsOverview() {
+  return jsonResponse(await loadSnapshot("stats-overview.json"));
+}
+
+async function handleStatsEraData() {
+  return jsonResponse(await loadSnapshot("stats-era-data.json"));
+}
+
+async function handleStatsTrends() {
+  return jsonResponse(await loadSnapshot("stats-trends.json"));
+}
+
+async function handleStatsSessions() {
+  return jsonResponse(await loadSnapshot("stats-sessions.json"));
+}
+
+async function handleVinylStats() {
+  return jsonResponse(await loadSnapshot("vinyl-stats.json"));
+}
+
+async function handleVinylSessions() {
+  const sessions = await loadSnapshot("vinyl-sessions.json");
+  const filtered = sessions.filter((s) => !overlay.deletedVinylSessions.has(s.id));
+  return jsonResponse(filtered);
+}
+
+function handleDeleteVinylSession(id) {
+  overlay.deletedVinylSessions.add(id);
+  return jsonResponse({ status: "deleted" });
+}
+
+async function handleStatsPeriod(url) {
+  const mode = url.searchParams.get("mode") || "Week";
+  const offset = url.searchParams.get("offset") || "0";
+  const data = await loadSnapshot("stats-period.json");
+  const key = `${mode}|${offset}`;
+  if (data[key]) return jsonResponse(data[key]);
+  // Beyond the snapshotted (real) date range — same "no more history" state
+  // as the real backend's oldest reachable period.
+  const fallbackKey = `${mode}|0`;
+  return jsonResponse({ ...data[fallbackKey], has_older: false, offset: Number(offset) });
+}
+
+async function handleStatsTime(url) {
+  const mode = url.searchParams.get("mode") || "Year";
+  const monthOffset = url.searchParams.get("month_offset") || "0";
+  const data = await loadSnapshot("stats-time.json");
+  const key = `${mode}|${monthOffset}`;
+  if (data[key]) return jsonResponse(data[key]);
+  const fallbackKey = `${mode}|0`;
+  return jsonResponse({ ...data[fallbackKey], has_older: false });
+}
+
+async function handleStatsTimeline(url) {
+  const metric = url.searchParams.get("metric") || "Albums";
+  const year = url.searchParams.get("year") || "";
+  const data = await loadSnapshot("stats-timeline.json");
+  const key = `${metric}|${year}`;
+  // Real backend falls back to the aggregate (no-year) view for any
+  // unrecognized year rather than erroring — sw.js mirrors that.
+  return jsonResponse(data[key] ?? data[`${metric}|`]);
+}
+
+async function handleStatsGenresPage() {
+  return htmlResponse(await loadTextSnapshot("stats-genres-page.html"));
 }
 
 async function handleVinylCollection() {
@@ -387,8 +464,42 @@ async function handleApiRequest(request) {
   if (path === "/api/vinyl/session/current" && method === "GET") {
     return handleVinylSessionCurrent();
   }
+  if (path === "/api/vinyl/stats" && method === "GET") {
+    return handleVinylStats();
+  }
+  if (path === "/api/vinyl/sessions" && method === "GET") {
+    return handleVinylSessions();
+  }
+
+  if (path === "/api/stats/overview" && method === "GET") {
+    return handleStatsOverview();
+  }
+  if (path === "/api/stats/era-data" && method === "GET") {
+    return handleStatsEraData();
+  }
+  if (path === "/api/stats/trends" && method === "GET") {
+    return handleStatsTrends();
+  }
+  if (path === "/api/stats/sessions" && method === "GET") {
+    return handleStatsSessions();
+  }
+  if (path === "/api/stats/period" && method === "GET") {
+    return handleStatsPeriod(url);
+  }
+  if (path === "/api/stats/time" && method === "GET") {
+    return handleStatsTime(url);
+  }
+  if (path === "/api/stats/timeline" && method === "GET") {
+    return handleStatsTimeline(url);
+  }
+  if (path === "/api/stats/genres-page" && method === "GET") {
+    return handleStatsGenresPage();
+  }
 
   let m;
+  if ((m = path.match(/^\/api\/vinyl\/sessions\/([^/]+)$/)) && method === "DELETE") {
+    return handleDeleteVinylSession(decodeURIComponent(m[1]));
+  }
   if ((m = path.match(/^\/api\/playlists\/([^/]+)\/evaluate$/)) && method === "GET") {
     return handlePlaylistEvaluate(decodeURIComponent(m[1]));
   }

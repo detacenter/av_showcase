@@ -1,118 +1,118 @@
 {
   "playlists": [
     {
-      "id": "pl-812638386",
+      "id": "pl-785827258",
       "name": "Heavy Rotation",
-      "created_at": "2026-08-04T14:51:47.472448Z",
-      "updated_at": "2026-08-04T14:51:47.472448Z",
+      "created_at": "2026-08-04T17:23:34.953560Z",
+      "updated_at": "2026-08-04T17:23:34.953560Z",
       "rule_groups": [],
       "pinned_track_ids": [
-        "0yCTslZ7KticDxTICEBnuz",
-        "6XYbMGvtl6tlPoGWaiH7EY",
-        "6b7mtbBPx9xcJK9Uz3cTcC",
-        "0zLClc0emc6qUeV1p5nc99",
-        "5bbvdCQ6kc3OeC3FzUl9Dx",
-        "0qTdLAVMXvWoangDwzSLEU",
-        "34VjbHxkXXjl7iv7df3rDt",
-        "09hctAvAEUpm7MKl1RBK2j",
-        "3R4IgnYTITZGpGfCZ3ptkM",
-        "6ntPs0i1rMvQ6DfuJt9sxX"
+        "4R3yRj2LLHINYLf68HdlIK",
+        "3JYayrgDyMYVrpMdcn5HxF",
+        "4HcDu9IGRCvSTJE4yW5Ugv",
+        "5lMugQF80AuN6uukFJLT58",
+        "1gUyF1kls2Q5MkuAi9djjx",
+        "12IvmFs4HZJEYzq7VhDKR8",
+        "7nQo3VLMDhAqF5iM6wAL5B",
+        "5OJeyZweSMSZ1keNth2D3K",
+        "5nPOM0nFRAJ3XI8xCxNAzO",
+        "4UJhMnv5Y00AtNatGrC629"
       ],
       "excluded_track_ids": [],
       "track_count": 10,
       "art_filenames": [
-        "melvins_stoner_witch.jpg",
-        "jesusun_kil_moon_jesu_sun_kil_moon.jpg",
-        "michael_jackson_thriller.jpg",
-        "four_year_strong_rise_or_die_trying.jpg"
+        "sufjan_stevens_all_delighted_people.jpg",
+        "kanye_west_yeezus.jpg",
+        "linkin_park_meteora_bonus_edition.jpg",
+        "kate_bush_never_for_ever_2018_remaster.jpg"
       ]
     },
     {
-      "id": "pl-329750614",
+      "id": "pl-580617211",
       "name": "Late Night",
-      "created_at": "2026-08-04T14:51:47.472448Z",
-      "updated_at": "2026-08-04T14:51:47.472448Z",
+      "created_at": "2026-08-04T17:23:34.953560Z",
+      "updated_at": "2026-08-04T17:23:34.953560Z",
       "rule_groups": [],
       "pinned_track_ids": [
-        "0GrHWVTDsaWcD4nrCGr7VE",
-        "0M2ofyoY6FPzR8zmM1cag3",
-        "5hh5gq0u54rTP0iBYgZ2xW",
-        "3No4iSYhsogKapazLguERp",
-        "3uFVyg61HeKCMbL5N6LuSA",
-        "63W4sfeRTTiNKFLAzUJHFe",
-        "5eyatDYwM6jnqZT7hcPPV7",
-        "7IgBLFklu75pp8Y1vphChS",
+        "23SZWX2IaDnxmhFsSLvkG2",
+        "0FZmAvivvifvtN3pZScbw1",
+        "40S71JVakpFN7gHHKtbVMZ",
+        "2N3t2cgM3MS267vZU9H4fy",
+        "1wFLuPTCRQGJZ1I3JqRbXJ",
         "7GDIQqD5pdHCda5rpZ98Ie",
-        "0gTRROuntlrPQ64W3J2Etv"
+        "48jUZUfYjA6f8EOZcQb35f",
+        "1RyIA87KYGavtK0xiVXwDH",
+        "5EkSUFQBE9YcoYMPTLyS8R",
+        "1IocvXmTsMh3AHTINgU2Yy"
       ],
       "excluded_track_ids": [],
       "track_count": 10,
       "art_filenames": [
-        "empire_empire_i_was_a_lonely_estate_you_will_eventually_be_forgotten.jpg",
-        "gil_scott_heron_were_new_here.jpg",
-        "system_of_a_down_mezmerize.jpg",
-        "janet_jackson_rhythm_nation_1814.jpg"
+        "beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg",
+        "maria_beth\u00e2nia_\u00e1libi.jpg",
+        "mom_jeans_best_buds.jpg",
+        "neu_neu.jpg"
       ]
     },
     {
-      "id": "pl-824893558",
+      "id": "pl-181190093",
       "name": "Discovery Pile",
-      "created_at": "2026-08-04T14:51:47.472448Z",
-      "updated_at": "2026-08-04T14:51:47.472448Z",
+      "created_at": "2026-08-04T17:23:34.953560Z",
+      "updated_at": "2026-08-04T17:23:34.953560Z",
       "rule_groups": [],
       "pinned_track_ids": [
-        "6mzSjhOF5CaH97ySiSzsot",
-        "5liRQziURPzqcHJpc5JI6w",
-        "1tzXnPndBrd2G5GXrOBc1c",
-        "0Cr3j6qhDItBeFbAzdXtN2",
-        "0WEBoDCjH1SzM1dGlU8nen",
-        "6Hmj7SrLRbreLVfVS7mV1S",
-        "7D0oudTdGBOy4R9u2T0CpM",
-        "6pa63bus7BPu8g8rvJISSj",
-        "1cf8cuou05R0DpFmDpUj61",
-        "3yRGkrzJpg7dxsLJkYpt1i"
+        "7jr8MCVN9KF5y0VGedkvD1",
+        "4Dlz76O4yMvFdYsKRfBEdK",
+        "4QbhH2V25NMJgqCcBm0PHj",
+        "14sjvL99735m1roUUrSbPY",
+        "5GbprJsjx6AMgInnmA5KWm",
+        "3knvtUJiuDs1WZsbrR1puY",
+        "2m1G38M0gJuE4aVPh0tmIP",
+        "3333YXdcyths5CB8v28dZj",
+        "5z2yV9l5arJtFVTg0v0vKf",
+        "0ICk67a9BwdHik2WxGNTFl"
       ],
       "excluded_track_ids": [],
       "track_count": 10,
       "art_filenames": [
-        "empire_empire_i_was_a_lonely_estate_early_discography.jpg",
-        "i_kill_giants_let_it_out.jpg",
-        "de_la_soul_3_feet_high_and_rising.jpg",
-        "fever_ray_fever_ray.jpg"
+        "dinosaur_jr_youre_living_all_over_me.jpg",
+        "gil_scott_heron_were_new_here.jpg",
+        null,
+        "gal_costa_gal_tropical.jpg"
       ]
     },
     {
-      "id": "pl-824380384",
+      "id": "pl-415888413",
       "name": "Sunday Morning",
-      "created_at": "2026-08-04T14:51:47.472448Z",
-      "updated_at": "2026-08-04T14:51:47.472448Z",
+      "created_at": "2026-08-04T17:23:34.953560Z",
+      "updated_at": "2026-08-04T17:23:34.953560Z",
       "rule_groups": [],
       "pinned_track_ids": [
-        "0KQbsC4lUfm0qmRW68g6BF",
-        "73uJybGAhwGRD9MZYrOmTY",
-        "7r2VUYH79UT8dTaKgELmOC",
-        "0F0imGVd7KnvQPkBmVtPo9",
-        "6U8iJR8PSjJndaj7pDMGQu",
-        "0qTdLAVMXvWoangDwzSLEU",
-        "7tlAWur1RNnqWbuoL5qWqG",
-        "1Ewb1UPrJC9mCJiLPa2sk0",
-        "7stdOFyftbIPvEmmRrHe66",
-        "4yvgL1k1WkuSEHkMPhDF5X"
+        "3L0VdQUHpPCXSGzfKVwmfN",
+        "7t1lBIr3WIEtqQEOdZFMUf",
+        "2G8qEteYTuudav3nqSKOcm",
+        "68JB7k6iJEydyoc7t8LCqJ",
+        "6AzAWzsXXIChy2aulERrD0",
+        "51DZ0wUocQ8sQfjnibXVcD",
+        "6Unk5lb6bXEeVquE2punCJ",
+        "1jNWu1c5ilLHUHT0DhLOQB",
+        "5z2yV9l5arJtFVTg0v0vKf",
+        "5o4jvwNQLPmMaNBFgjvO92"
       ],
       "excluded_track_ids": [],
       "track_count": 10,
       "art_filenames": [
-        "sun_kil_moon_admiral_fell_promises.jpg",
-        "new_order_power_corruption_and_lies.jpg",
-        "i_kill_giants_let_it_out.jpg",
-        "joy_division_unknown_pleasures.jpg"
+        "gil_scott_heron_were_new_here.jpg",
+        "drake_take_care_deluxe.jpg",
+        "janet_jackson_the_velvet_rope.jpg",
+        "u2_the_joshua_tree.jpg"
       ]
     },
     {
-      "id": "pl-372421473",
+      "id": "pl-603073444",
       "name": "1960s",
-      "created_at": "2026-08-04T14:51:47.472448Z",
-      "updated_at": "2026-08-04T14:51:47.472448Z",
+      "created_at": "2026-08-04T17:23:34.953560Z",
+      "updated_at": "2026-08-04T17:23:34.953560Z",
       "rule_groups": [
         {
           "conditions": [
@@ -127,19 +127,19 @@
       ],
       "pinned_track_ids": [],
       "excluded_track_ids": [],
-      "track_count": 23,
+      "track_count": 39,
       "art_filenames": [
+        "aretha_franklin_i_never_loved_a_man_the_way_i_love_you.jpg",
         "bob_dylan_blonde_on_blonde.jpg",
-        "nina_simone_i_put_a_spell_on_you.jpg",
-        "can_monster_movie_remastered_version.jpg",
-        "aretha_franklin_i_never_loved_a_man_the_way_i_love_you.jpg"
+        "jorge_ben_jor_samba_esquema_novo.jpg",
+        "miles_davis_in_a_silent_way.jpg"
       ]
     },
     {
-      "id": "pl-464425136",
+      "id": "pl-575288860",
       "name": "1970s",
-      "created_at": "2026-08-04T14:51:47.472448Z",
-      "updated_at": "2026-08-04T14:51:47.472448Z",
+      "created_at": "2026-08-04T17:23:34.953560Z",
+      "updated_at": "2026-08-04T17:23:34.953560Z",
       "rule_groups": [
         {
           "conditions": [
@@ -154,19 +154,19 @@
       ],
       "pinned_track_ids": [],
       "excluded_track_ids": [],
-      "track_count": 139,
+      "track_count": 179,
       "art_filenames": [
-        "hyldon_na_rua_na_chuva_na_fazenda.jpg",
+        "masayoshi_takanaka_brasilian_skies.jpg",
         "television_marquee_moon.jpg",
-        "the_velvet_underground_loaded_2015_remaster.jpg",
-        "milton_nascimento_milton.jpg"
+        "curtis_mayfield_superfly_original_soundtrack.jpg",
+        "jorge_ben_jor_a_banda_do_z\u00e9_pretinho.jpg"
       ]
     },
     {
-      "id": "pl-986158461",
+      "id": "pl-147444459",
       "name": "1980s",
-      "created_at": "2026-08-04T14:51:47.472448Z",
-      "updated_at": "2026-08-04T14:51:47.472448Z",
+      "created_at": "2026-08-04T17:23:34.953560Z",
+      "updated_at": "2026-08-04T17:23:34.953560Z",
       "rule_groups": [
         {
           "conditions": [
@@ -181,19 +181,19 @@
       ],
       "pinned_track_ids": [],
       "excluded_track_ids": [],
-      "track_count": 209,
+      "track_count": 206,
       "art_filenames": [
-        "rem_murmur.jpg",
-        "the_cure_disintegration_2010_remaster.jpg",
-        "kate_bush_the_sensual_world_2018_remaster.jpg",
-        "bruce_springsteen_nebraska.jpg"
+        "kate_bush_never_for_ever_2018_remaster.jpg",
+        "rundmc_raising_hell.jpg",
+        "cocteau_twins_treasure.jpg",
+        "minor_threat_first_two_seven_inches.jpg"
       ]
     },
     {
-      "id": "pl-471396998",
+      "id": "pl-395701766",
       "name": "1990s",
-      "created_at": "2026-08-04T14:51:47.472448Z",
-      "updated_at": "2026-08-04T14:51:47.472448Z",
+      "created_at": "2026-08-04T17:23:34.953560Z",
+      "updated_at": "2026-08-04T17:23:34.953560Z",
       "rule_groups": [
         {
           "conditions": [
@@ -208,19 +208,19 @@
       ],
       "pinned_track_ids": [],
       "excluded_track_ids": [],
-      "track_count": 205,
+      "track_count": 175,
       "art_filenames": [
-        "a_tribe_called_quest_midnight_marauders.jpg",
+        "slowdive_souvlaki.jpg",
         "rage_against_the_machine_evil_empire.jpg",
-        "refused_the_shape_of_punk_to_come_deluxe_edition.jpg",
-        "jawbox_for_your_own_special_sweetheart.jpg"
+        "daft_punk_homework.jpg",
+        "thursday_waiting.jpg"
       ]
     },
     {
-      "id": "pl-266657410",
+      "id": "pl-439194670",
       "name": "2000s",
-      "created_at": "2026-08-04T14:51:47.472448Z",
-      "updated_at": "2026-08-04T14:51:47.472448Z",
+      "created_at": "2026-08-04T17:23:34.953560Z",
+      "updated_at": "2026-08-04T17:23:34.953560Z",
       "rule_groups": [
         {
           "conditions": [
@@ -235,19 +235,19 @@
       ],
       "pinned_track_ids": [],
       "excluded_track_ids": [],
-      "track_count": 368,
+      "track_count": 376,
       "art_filenames": [
-        "l\u00f4_borges_retratos.jpg",
-        "sonic_youth_sonic_nurse.jpg",
-        "the_decemberists_picaresque.jpg",
-        "incubus_morning_view.jpg"
+        "the_cranberries_stars_the_best_of_the_cranberries_1992_2002.jpg",
+        "incubus_morning_view.jpg",
+        "animal_collective_merriweather_post_pavilion.jpg",
+        "system_of_a_down_mezmerize.jpg"
       ]
     },
     {
-      "id": "pl-807987941",
+      "id": "pl-526862003",
       "name": "2010s",
-      "created_at": "2026-08-04T14:51:47.472448Z",
-      "updated_at": "2026-08-04T14:51:47.472448Z",
+      "created_at": "2026-08-04T17:23:34.953560Z",
+      "updated_at": "2026-08-04T17:23:34.953560Z",
       "rule_groups": [
         {
           "conditions": [
@@ -262,19 +262,19 @@
       ],
       "pinned_track_ids": [],
       "excluded_track_ids": [],
-      "track_count": 315,
+      "track_count": 324,
       "art_filenames": [
-        "worthwhile_carry_on_kid.jpg",
-        "\u00f3l\u00f6f_arnalds_innundir_skinni.jpg",
-        "gal_costa_a_arte_de_gal_costa.jpg",
-        "silvana_estrada_lo_sagrado.jpg"
+        "i_kill_giants_let_it_out.jpg",
+        "atoms_for_peace_amok.jpg",
+        "touch\u00e9_amor\u00e9_parting_the_sea_between_brightness_and_me.jpg",
+        "dance_gavin_dance_instant_gratification.jpg"
       ]
     },
     {
-      "id": "pl-489879277",
+      "id": "pl-565159358",
       "name": "2020s",
-      "created_at": "2026-08-04T14:51:47.472448Z",
-      "updated_at": "2026-08-04T14:51:47.472448Z",
+      "created_at": "2026-08-04T17:23:34.953560Z",
+      "updated_at": "2026-08-04T17:23:34.953560Z",
       "rule_groups": [
         {
           "conditions": [
@@ -289,12 +289,12 @@
       ],
       "pinned_track_ids": [],
       "excluded_track_ids": [],
-      "track_count": 65,
+      "track_count": 61,
       "art_filenames": [
-        "beyonc\u00e9_renaissance.jpg",
-        "axolotes_mexicanos_4ever.jpg",
+        "caroline_polachek_desire_i_want_to_turn_into_you.jpg",
+        "aiko_el_grupo_me_est\u00e1n_apuntando_con_un_arma.jpg",
         "wednesday_rat_saw_god.jpg",
-        "ashleys_al_final_no_era_para_tanto.jpg"
+        "bala_desejo_sim_sim_sim.jpg"
       ]
     }
   ],
@@ -305,6 +305,9 @@
     "90s",
     "acoustic",
     "afoxe",
+    "african",
+    "afrobeats",
+    "afropiano",
     "alt country",
     "alt-country",
     "alternative",
@@ -313,6 +316,7 @@
     "alternative rap",
     "alternative rnb",
     "alternative rock",
+    "amapiano",
     "ambient",
     "american",
     "americana",
@@ -322,6 +326,7 @@
     "australian",
     "avant-garde",
     "balearic",
+    "bass",
     "beardcore",
     "bebop",
     "belchior",
@@ -350,8 +355,6 @@
     "dance",
     "deep house",
     "deutsch",
-    "dischord",
-    "disco",
     "downtempo",
     "dream pop",
     "east coast rap",
@@ -376,7 +379,6 @@
     "gangsta rap",
     "garage punk",
     "german",
-    "glam rock",
     "golden age",
     "grunge",
     "guitar",
@@ -392,7 +394,6 @@
     "indie",
     "indie emo",
     "indie pop",
-    "indie punk",
     "indie rock",
     "instrumental",
     "irish",
@@ -419,7 +420,7 @@
     "mpb",
     "neo-soul",
     "new wave",
-    "no wave",
+    "nigeria",
     "noise rock",
     "noisecore",
     "nu metal",
@@ -434,6 +435,7 @@
     "pop punk",
     "pop-punk",
     "post rock",
+    "post-bop",
     "post-emo indie rock",
     "post-hardcore",
     "post-metal",
@@ -467,10 +469,8 @@
     "sludge",
     "soul",
     "southern rock",
-    "space rock",
     "spain",
     "spanish",
-    "spanish or latin artists",
     "spoken word",
     "stoner rock",
     "straight edge",
@@ -480,14 +480,12 @@
     "synthpop",
     "techno",
     "thrash metal",
-    "tontipop",
     "trap",
     "trip hop",
     "trip-hop",
     "tropicalia",
     "trumpet",
     "turntablism",
-    "twee pop",
     "ukhc",
     "underground hip-hop",
     "underground rap",

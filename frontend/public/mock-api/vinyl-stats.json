@@ -1,0 +1,109 @@
+{
+  "collection_size": 142,
+  "played_count": 71,
+  "unplayed_count": 71,
+  "total_sessions": 117,
+  "total_minutes": 3840,
+  "top_records": [
+    {
+      "release_id": 6265500,
+      "title": "Pope Killdragon",
+      "artists": [
+        "Strand Of Oaks"
+      ],
+      "art_filename": "vinyl/6265500.jpg",
+      "year": 2010,
+      "sessions": 4
+    },
+    {
+      "release_id": 2940876,
+      "title": "Bon Iver, Bon Iver",
+      "artists": [
+        "Bon Iver"
+      ],
+      "art_filename": "vinyl/2940876.jpg",
+      "year": 2011,
+      "sessions": 4
+    },
+    {
+      "release_id": 1428079,
+      "title": "Water Curses",
+      "artists": [
+        "Animal Collective"
+      ],
+      "art_filename": "vinyl/1428079.jpg",
+      "year": 2008,
+      "sessions": 4
+    },
+    {
+      "release_id": 28392721,
+      "title": "Slow Riot For New Zero Kanada E.P.",
+      "artists": [
+        "Godspeed You Black Emperor!"
+      ],
+      "art_filename": "vinyl/28392721.jpg",
+      "year": 1999,
+      "sessions": 4
+    },
+    {
+      "release_id": 1566000,
+      "title": "Se Dice Bisonte, No B\u00f9falo",
+      "artists": [
+        "Omar Rodriguez-Lopez"
+      ],
+      "art_filename": "vinyl/1566000.jpg",
+      "year": 2007,
+      "sessions": 4
+    },
+    {
+      "release_id": 1668310,
+      "title": "Microcastle / Weird Era Continued",
+      "artists": [
+        "Deerhunter"
+      ],
+      "art_filename": "vinyl/1668310.jpg",
+      "year": 2009,
+      "sessions": 4
+    },
+    {
+      "release_id": 2831206,
+      "title": "An Introduction To Syd Barrett",
+      "artists": [
+        "Syd Barrett"
+      ],
+      "art_filename": "vinyl/2831206.jpg",
+      "year": 2010,
+      "sessions": 3
+    },
+    {
+      "release_id": 171890,
+      "title": "There There",
+      "artists": [
+        "Radiohead"
+      ],
+      "art_filename": "vinyl/171890.jpg",
+      "year": 2003,
+      "sessions": 3
+    },
+    {
+      "release_id": 4985843,
+      "title": "Geogaddi",
+      "artists": [
+        "Boards Of Canada"
+      ],
+      "art_filename": "vinyl/4985843.jpg",
+      "year": 2002,
+      "sessions": 3
+    },
+    {
+      "release_id": 8340363,
+      "title": "Person Pitch",
+      "artists": [
+        "Panda Bear"
+      ],
+      "art_filename": "vinyl/8340363.jpg",
+      "year": 2007,
+      "sessions": 3
+    }
+  ]
+}

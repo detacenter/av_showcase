@@ -1,204 +1,395 @@
 {
   "albums": {
-    "4kDzCMsxuZwsqqTPyL4yr6": {
+    "3C6pVtRNzuqlwOyqeraoP3": {
       "notes": "Perfect for late-night drives. The production really opens up on good speakers."
     },
-    "4TInspTe354xywdT2aJ2bi": {
-      "notes": "Discovered through a genre rabbit hole and glad I did."
+    "6Hb0uXteh6zusGSn5wVpUp": {
+      "notes": "Didn't expect to like this as much as I did. Kept it on repeat for a week."
+    },
+    "3AV3oZYwvs3kcus11LJ6HZ": {
+      "notes": "Been meaning to give this a proper relisten \u2014 revisiting after a couple years."
+    },
+    "70OkRXiiwdTCtZ9YiPBzPp": {
+      "rating": 17,
+      "notes": "Recommended by a friend, wasn't sure at first \u2014 now can't stop coming back to it.",
+      "favorited": true
+    },
+    "0byGFkTAoVXPGp498LeVVt": {
+      "rating": 15,
+      "notes": "Mood music. Not for every day, but perfect when it fits."
     },
     "2m9BteUi4OhKwUXcNFSL8p": {
       "rating": 14,
-      "notes": "Didn't expect to like this as much as I did. Kept it on repeat for a week."
-    },
-    "5wrHAkjZUkhPuj3hrHcmVB": {
-      "notes": "Grower, not a shower. Took three listens before it clicked."
-    },
-    "5k4d3XMMYecEwO8tdtxvF4": {
-      "notes": "Solid front-to-back, no skips. Rare these days."
-    },
-    "22ZgHorVJzcZ4m8YBZCw4w": {
-      "rating": 18,
-      "notes": "Mood music. Not for every day, but perfect when it fits."
-    },
-    "77AYdae70ldovpvRPS0Xjc": {
-      "notes": "Been meaning to give this a proper relisten \u2014 revisiting after a couple years."
-    },
-    "0YtYaaO0aipyeQl0xhAWTO": {
-      "rating": 17,
-      "notes": "First half is stronger than the back half, but worth it for the singles alone.",
-      "favorited": true
-    },
-    "0AP5O47kJWlaKVnnybKvQI": {
-      "rating": 18,
-      "notes": "One of those albums that sounds better with every listen."
-    },
-    "5SbcupirEParczvqqyUPXL": {
-      "rating": 16,
-      "notes": "Recommended by a friend, wasn't sure at first \u2014 now can't stop coming back to it."
-    },
-    "4v5x3Oo3UjQ9YmF3hRAip5": {
-      "notes": "Weird pacing but the highs are genuinely high."
-    },
-    "3Uq1jNGnD412ZvCb6j2DKV": {
       "notes": "The kind of record that rewards headphones. Missed so much on tiny speakers."
     },
-    "0KzElSxcfAvleUIuOg0TOQ": {
+    "1JvXxLsm0PxlGH4LXzqMGq": {
       "rating": 15,
-      "favorited": true
+      "notes": "Discovered through a genre rabbit hole and glad I did."
     },
-    "6TxgQwGrbG3XZLNPOEhg7E": {
+    "3nHpBmW5wJXGeC3ojBkpey": {
+      "notes": "Solid front-to-back, no skips. Rare these days."
+    },
+    "3sq57EactOjc9RJqk6Yl1y": {
+      "rating": 18,
+      "notes": "Grower, not a shower. Took three listens before it clicked."
+    },
+    "5lrlWKjNY0eTDXp9Bd3LpW": {
+      "rating": 12,
+      "notes": "One of those albums that sounds better with every listen."
+    },
+    "0eGxAVwdwV2mHrUgLJ8R6Y": {
+      "rating": 15,
+      "notes": "Weird pacing but the highs are genuinely high."
+    },
+    "3fNRzhnl6WAtghBXEeyaub": {
+      "rating": 19,
+      "notes": "First half is stronger than the back half, but worth it for the singles alone."
+    },
+    "7p5mnxLTjbvs4kInkK8za9": {
       "rating": 16
     },
-    "3F9xD3Dg2zu2LZbVHdKeVD": {
-      "rating": 15
+    "5GRnydamKvIeG46dycID6v": {
+      "rating": 18
     },
-    "1aKOQpS6TrGd3wTQooaIBH": {
+    "6na161CBWVTagqd2aIhQzF": {
       "favorited": true
     },
-    "4RMGrhJRnGiNqmKqhqpLlX": {
+    "7HLVI2NCQz5DzL8VsB9A56": {
       "rating": 17
     },
-    "7wJTn94PWzZ3zE0lg3qhld": {
+    "6BRq5g6CWiFgN3NrjLGAYq": {
+      "rating": 19
+    },
+    "4hnqM0JK4CM1phwfq1Ldyz": {
       "rating": 16
+    },
+    "6Y3ALtSpmXlui2AZe80Nor": {
+      "rating": 17
+    },
+    "5WndWfzGwCkHzAbQXVkg2V": {
+      "rating": 15
+    },
+    "6NTrwu1XJ56jBPx7HMksbZ": {
+      "rating": 16
+    },
+    "0wGnULzBLkxGa1FS4LSqmK": {
+      "rating": 12
+    },
+    "3JcNnjMVSKiNpqhErZarW0": {
+      "rating": 16,
+      "favorited": true
+    },
+    "6l61p7zbizBUjQWY10LWmb": {
+      "rating": 18
+    },
+    "22PkV1Le9P3X4RY4xtmK0q": {
+      "rating": 17
+    },
+    "7dBUmXkVXyQv60PoAWZAa1": {
+      "rating": 19,
+      "favorited": true
+    },
+    "4kRMCapj9nEyBWnM0kc9OX": {
+      "rating": 16
+    },
+    "3b4E89rxzZQ9zkhgKpj8N4": {
+      "rating": 18
+    },
+    "1Ft1QQbUOCgSqumZKYuWhw": {
+      "rating": 15
     },
     "3vxkGvc3QzZqLt6pQNw7qI": {
       "rating": 16,
       "favorited": true
     },
+    "6yskFQZNlLYhkchAxELHi6": {
+      "rating": 14
+    },
     "5ZVLLME05cmciSZz4IGcZu": {
       "rating": 17,
       "favorited": true
     },
-    "0bCAjiUamIFqKJsekOYuRw": {
-      "rating": 18
-    },
-    "3539EbNgIdEDGBKkUf4wno": {
-      "rating": 18
-    },
-    "40epQ5uLIK1k7mGL0ESpUn": {
-      "favorited": true
-    },
-    "2noRn2Aes5aoNVsU6iWThc": {
-      "rating": 15
-    },
-    "22PkV1Le9P3X4RY4xtmK0q": {
-      "rating": 17
-    },
-    "4hjiHP3NIIzyYUgfs145zr": {
+    "17Mq1v9fKGSmCabI7DaV4S": {
       "rating": 16
     },
-    "0y13VbGddQ4azdVWakksAL": {
+    "4RMGrhJRnGiNqmKqhqpLlX": {
+      "rating": 17
+    },
+    "3peMqhMZ1HT8N4lvSS3GPu": {
       "rating": 16
     },
     "5vBZRYu2GLA65nfxBvG1a7": {
       "rating": 17,
       "favorited": true
     },
-    "1YnyKib5MeZf95KY5GHvxc": {
-      "rating": 13
+    "20r762YmB5HeofjMCiPMLv": {
+      "rating": 16
     },
-    "6Voznuxp5917IwIlLxSAik": {
-      "rating": 15
-    },
-    "2wE1bvm3Ha0BvkHTvwk6rw": {
-      "rating": 17,
-      "favorited": true
-    },
-    "6hPkbAV3ZXpGZBGUvL6jVM": {
+    "1JpwFoxVVutPXtSBohj0rJ": {
       "rating": 18
     },
-    "67GbWmsrvtIdOOUYRo7do7": {
-      "rating": 16
+    "2btXQFitnklvkPC0dAIvAx": {
+      "rating": 18
     },
-    "3peMqhMZ1HT8N4lvSS3GPu": {
-      "rating": 16,
+    "0KzElSxcfAvleUIuOg0TOQ": {
+      "rating": 15,
       "favorited": true
-    },
-    "6GPL5sMWxYibGoKnarlqUk": {
-      "rating": 15
-    },
-    "17Mq1v9fKGSmCabI7DaV4S": {
-      "rating": 16
     },
     "0Hs3BomCdwIWRhgT57x22T": {
       "rating": 20
-    },
-    "5uRdvUR7xCnHmUW8n64n9y": {
-      "rating": 18
-    },
-    "6ZB8qaR9JNuS0Q0bG1nbcH": {
-      "rating": 18,
-      "favorited": true
-    },
-    "3Yko2SxDk4hc6fncIBQlcM": {
-      "rating": 17
-    },
-    "6na161CBWVTagqd2aIhQzF": {
-      "favorited": true
-    },
-    "58MQ0PLijVHePUonQlK76Y": {
-      "rating": 17
-    },
-    "34LxHI9x14qXUOS8AWRrYD": {
-      "rating": 18
-    },
-    "172GEyILIzsGA8PJqrsHmL": {
-      "rating": 16
-    },
-    "6yskFQZNlLYhkchAxELHi6": {
-      "rating": 14,
-      "favorited": true
-    },
-    "4GT6uZod4p5RiDMOVHOMme": {
-      "rating": 16,
-      "favorited": true
-    },
-    "0eGxAVwdwV2mHrUgLJ8R6Y": {
-      "rating": 15
-    },
-    "79CvxovoFgGNuAMvQp9wul": {
-      "rating": 16
-    },
-    "7uNjeNs5AmDqZHzIbyPkZH": {
-      "rating": 12,
-      "favorited": true
-    },
-    "5risYG7klZCSLMNxB9dZhf": {
-      "rating": 16,
-      "favorited": true
-    },
-    "3391Q4zuKuz0JpHkmaJsQv": {
-      "rating": 16
     },
     "6GjwtEZcfenmOf6l18N7T7": {
       "rating": 20,
       "favorited": true
     },
+    "3aMBDb72H0wrXO5iARzsWc": {
+      "rating": 18
+    },
+    "3HTsNBfZLfRXQTfdLeLVK1": {
+      "rating": 17
+    },
+    "6Sty6rLnMTXFjKxKUZEfmy": {
+      "rating": 17
+    },
+    "0esHQqYklDPje00NUNq6py": {
+      "rating": 19
+    },
     "1j9ajQaSPnqM6BaiE2HUWW": {
       "rating": 14
     },
-    "0wGnULzBLkxGa1FS4LSqmK": {
-      "rating": 12
-    },
-    "6vDiMhyfSnTn18OY99BSQX": {
-      "rating": 20
-    },
-    "4yngOTPwtS3iypFBwU5qqR": {
+    "3BYlBcND6PeKoW6ZODjZO3": {
       "rating": 16
     },
-    "7gsWAHLeT0w7es6FofOXk1": {
-      "rating": 17
+    "24E6rDvGDuYFjlGewp4ntF": {
+      "rating": 15
     },
-    "3DuiGV3J09SUhvp8gqNx8h": {
+    "1SR0ivY6mBiJSSMhHOjzxQ": {
+      "rating": 18
+    },
+    "0fXZAZ5XejnxhgRV38SH5I": {
       "favorited": true
     },
-    "2gtM4m6sglJDrX3toJWZO6": {
-      "rating": 14
+    "5vkqYmiPBYLaalcmjujWxK": {
+      "rating": 20,
+      "favorited": true
+    },
+    "40epQ5uLIK1k7mGL0ESpUn": {
+      "favorited": true
     },
     "1LD2jBpotKpAuC0vQtK9Nu": {
       "favorited": true
     },
-    "7GWkceE5McMVfffd1RGL6Y": {
+    "2umoqwMrmjBBPeaqgYu6J9": {
+      "rating": 13
+    },
+    "6GEO5pSp3ojwIm9vZqTtRd": {
+      "rating": 15,
+      "favorited": true
+    },
+    "1wnEAz2lDtNoUUZF0KStuo": {
+      "rating": 17
+    },
+    "17q5eeNk3HAjX1gzQnkTX7": {
+      "rating": 20,
+      "favorited": true
+    },
+    "7uNjeNs5AmDqZHzIbyPkZH": {
+      "rating": 12
+    },
+    "4MJXiUV12TyT5ZyXeWdnL3": {
+      "rating": 16,
+      "favorited": true
+    },
+    "1Vjf7xPNvBhqKnAR4rAXR2": {
+      "rating": 15,
+      "favorited": true
+    },
+    "5S7lcrRerABwsWzHisYsxP": {
+      "favorited": true
+    },
+    "172GEyILIzsGA8PJqrsHmL": {
+      "rating": 16
+    },
+    "4Q7cPyiP8cMIlUEHAqeYfd": {
+      "rating": 14
+    },
+    "019nA7vSKz0dD5yRKYRpbM": {
+      "rating": 18,
+      "favorited": true
+    },
+    "2y7DbLcG7L5BNx1IkY1PoK": {
+      "rating": 15,
+      "favorited": true
+    },
+    "0DK10k39r9LAZ7HgP1EPuB": {
+      "favorited": true
+    },
+    "1YnyKib5MeZf95KY5GHvxc": {
+      "rating": 13
+    },
+    "5rcMJNWebtl2r2S18Je1A0": {
+      "rating": 16
+    },
+    "38TTw10V04chCowK4hPsDu": {
+      "rating": 17,
+      "favorited": true
+    },
+    "0KBdfMTMxi0oD1oVqApTjr": {
+      "rating": 12
+    },
+    "5uRdvUR7xCnHmUW8n64n9y": {
+      "rating": 18
+    },
+    "4X8Y79gWo6xm7Osdapg58E": {
+      "rating": 16
+    },
+    "6uoeezh45SYEb8lcT8gDTY": {
+      "rating": 15
+    },
+    "2Us9qPHLvLoTl6HkYAPcz2": {
+      "rating": 19
+    },
+    "64xtjfsPHNHch0CZ7fPTjS": {
+      "rating": 14
+    },
+    "3wLCCtHNSLsDpIItmWZzS9": {
+      "rating": 17
+    },
+    "5SbcupirEParczvqqyUPXL": {
+      "rating": 16,
+      "favorited": true
+    },
+    "7AFsTiojVaB2I58oZ1tMRg": {
+      "rating": 15,
+      "favorited": true
+    },
+    "4OD3LU6001esAtFshDX46M": {
+      "rating": 13,
+      "favorited": true
+    },
+    "1p12OAWwudgMqfMzjMvl2a": {
+      "rating": 16
+    },
+    "6ZB8qaR9JNuS0Q0bG1nbcH": {
+      "rating": 18,
+      "favorited": true
+    },
+    "2eia0myWFgoHuttJytCxgX": {
+      "rating": 16
+    },
+    "2ngEpie4g3Z2xtZhhwCAxH": {
+      "favorited": true
+    },
+    "0E47vczx9XVds1Lr2Y8rze": {
+      "rating": 18
+    },
+    "3539EbNgIdEDGBKkUf4wno": {
+      "rating": 18
+    },
+    "2mzXddPCtNlGzttAcr97ON": {
+      "rating": 17
+    },
+    "2HTbQ0RHwukKVXAlTmCZP2": {
+      "rating": 16,
+      "favorited": true
+    },
+    "08pL4gHGoa0GXyv9emugVv": {
+      "rating": 19
+    },
+    "2ANVost0y2y52ema1E9xAZ": {
+      "rating": 18
+    },
+    "0lzPMIAYhhUSD2BPT0VQWI": {
+      "rating": 13
+    },
+    "2osTPStH5H7i4fMHS7eauR": {
+      "rating": 17,
+      "favorited": true
+    },
+    "0A13JySVHzBoRZFk2o89Wl": {
+      "rating": 17
+    },
+    "79CvxovoFgGNuAMvQp9wul": {
+      "rating": 16
+    },
+    "5mwOo1zikswhmfHvtqVSXg": {
+      "rating": 17
+    },
+    "3FFFBSekGBxY0e9odb2lgz": {
+      "rating": 15
+    },
+    "0CA2EVHhRPR5VPV78KZw89": {
+      "rating": 18
+    },
+    "7pBPB9vwqCMLKNmUCK4k62": {
+      "rating": 14
+    },
+    "2av2ZSHlvD7rvLSsMvtYCG": {
+      "rating": 14
+    },
+    "5xBD0bSZqXpfH0vwkrDcAx": {
+      "rating": 16
+    },
+    "2noRn2Aes5aoNVsU6iWThc": {
+      "rating": 15
+    },
+    "7h5rbCRV3FcOgxZyRQTTS6": {
+      "rating": 15
+    },
+    "6yWMN087PgSimbcVmHLEwG": {
+      "rating": 16
+    },
+    "7EJ0OT5ZqybXxcYRa6mccM": {
+      "rating": 17
+    },
+    "6yEuIwTQpciH1qtj7mP5GK": {
+      "rating": 15
+    },
+    "0cn6MHyx4YuZauaB7Pb66o": {
+      "rating": 15
+    },
+    "1GXMNFfoHF4sN7lG8gZq1j": {
+      "rating": 10,
+      "favorited": true
+    },
+    "4NP1rhnsPdYpnyJP0p0k0L": {
+      "rating": 16
+    },
+    "1TwAADd8Z8C1GeeCSaXTNr": {
+      "rating": 14
+    },
+    "2UJwKSBUz6rtW4QLK74kQu": {
+      "rating": 15,
+      "favorited": true
+    },
+    "4MxLa2uPSGSus8XCSivcOD": {
+      "rating": 13
+    },
+    "4yngOTPwtS3iypFBwU5qqR": {
+      "rating": 16
+    },
+    "2137zeBGNgOWP4D96q6qxd": {
+      "rating": 16
+    },
+    "7ycBtnsMtyVbbwTfJwRjSP": {
+      "rating": 17
+    },
+    "6C5ED5twSt8dEbiffbFNe2": {
+      "rating": 16
+    },
+    "4E1XUBMTpLO7GpBzUo65Jp": {
+      "rating": 16
+    },
+    "1aKOQpS6TrGd3wTQooaIBH": {
+      "favorited": true
+    },
+    "4NpepcKo9rQ8nkdCB6iWMP": {
+      "rating": 13
+    },
+    "7D0rCfJjFj9x0bdgRKtvzb": {
+      "rating": 15
+    },
+    "6Voznuxp5917IwIlLxSAik": {
       "rating": 15,
       "favorited": true
     },
@@ -206,412 +397,232 @@
       "rating": 16,
       "favorited": true
     },
-    "0cn6MHyx4YuZauaB7Pb66o": {
+    "6B5favhKTShFTjRLsKIUfa": {
       "rating": 15
     },
-    "70OkRXiiwdTCtZ9YiPBzPp": {
-      "rating": 17
-    },
-    "2mzXddPCtNlGzttAcr97ON": {
-      "rating": 17
-    },
-    "2btXQFitnklvkPC0dAIvAx": {
-      "rating": 18
-    },
-    "0byGFkTAoVXPGp498LeVVt": {
+    "6np6yPkSF9JsWcaEGUfNim": {
       "rating": 15
     },
-    "17q5eeNk3HAjX1gzQnkTX7": {
-      "rating": 20
-    },
-    "3bJtSVsqSsqmVtfvtnisbU": {
+    "22ZgHorVJzcZ4m8YBZCw4w": {
       "rating": 18
     },
-    "6KiS2t3EapTmHSt9xGUqe7": {
-      "rating": 17
-    },
-    "6GEO5pSp3ojwIm9vZqTtRd": {
-      "rating": 15,
+    "3Qa2CdymyGvXkqoqIZykmT": {
+      "rating": 19,
       "favorited": true
     },
     "2z9lM6LDS58F70IGyQ1XMK": {
       "rating": 16
     },
-    "0uOPPNiTA3k0HNvqKWcuSb": {
-      "rating": 17
-    },
-    "1R8kkopLT4IAxzMMkjic6X": {
-      "rating": 17
-    },
-    "7AFsTiojVaB2I58oZ1tMRg": {
-      "rating": 15
-    },
-    "1BZoqf8Zje5nGdwZhOjAtD": {
-      "rating": 18
-    },
-    "2umoqwMrmjBBPeaqgYu6J9": {
-      "rating": 13
-    },
-    "66E3E9DaAxpGPE4SgrOBDX": {
-      "favorited": true
-    },
-    "6np6yPkSF9JsWcaEGUfNim": {
-      "rating": 15
-    },
-    "7BbHXG8AmJNQ0w3hE6dU4q": {
-      "rating": 16
-    },
-    "6wPX4FdHqmn0aHZ84WUCW5": {
-      "rating": 16
-    },
-    "1Ft1QQbUOCgSqumZKYuWhw": {
-      "rating": 15
-    },
-    "6BRq5g6CWiFgN3NrjLGAYq": {
-      "rating": 19
-    },
-    "3HTsNBfZLfRXQTfdLeLVK1": {
-      "rating": 17,
-      "favorited": true
-    },
-    "7hodLjVNQZSsNEqvG77ZkI": {
-      "rating": 15
-    },
-    "1fvWYcbjuycyHpzNPH1Vfk": {
-      "rating": 17
-    },
-    "2U2WNneO3RdYEASjRI2OZx": {
-      "rating": 15
-    },
-    "7h5rbCRV3FcOgxZyRQTTS6": {
-      "rating": 15
-    },
-    "3K17PJl4d0yhrys2ylYzgm": {
-      "favorited": true
-    },
-    "3Lfxp4dgtCBJN74rmo7tiE": {
-      "rating": 19
-    },
-    "6yEuIwTQpciH1qtj7mP5GK": {
-      "rating": 15
-    },
-    "7pBPB9vwqCMLKNmUCK4k62": {
-      "rating": 14
-    },
-    "2osTPStH5H7i4fMHS7eauR": {
-      "rating": 17
-    },
-    "5EyDvOit9McsAc9ao1QROt": {
-      "rating": 16
-    },
-    "4Mw9Gcu1LT7JaipXdwrq1Q": {
-      "rating": 14
-    },
-    "6yWMN087PgSimbcVmHLEwG": {
-      "rating": 16
-    },
-    "019nA7vSKz0dD5yRKYRpbM": {
-      "rating": 18
-    },
-    "3yRpyOundyELlkOO6O4YSo": {
-      "rating": 17
-    },
-    "7BuwwZzrJCAJaC12QKkDOh": {
-      "rating": 18,
-      "favorited": true
-    },
-    "3JcNnjMVSKiNpqhErZarW0": {
-      "rating": 16
-    },
-    "2y7DbLcG7L5BNx1IkY1PoK": {
-      "rating": 15,
-      "favorited": true
-    },
-    "2de6LD7eOW8zrlorbS28na": {
-      "rating": 13
-    },
-    "2NnkLRaeX33d1Mn8ZLgTo8": {
-      "rating": 16
-    },
-    "1Vjf7xPNvBhqKnAR4rAXR2": {
-      "rating": 15,
-      "favorited": true
-    },
-    "2av2ZSHlvD7rvLSsMvtYCG": {
-      "rating": 14
-    },
-    "77Ie9frENeQwYUGHrrS0pk": {
-      "rating": 15
-    },
-    "5tXmkwvOs934YJL26kgLnb": {
-      "rating": 15
-    },
-    "38TTw10V04chCowK4hPsDu": {
-      "rating": 17,
-      "favorited": true
-    },
-    "4NpepcKo9rQ8nkdCB6iWMP": {
-      "rating": 13
-    },
-    "1uFp52Q9EXLNA6DTRYnpTj": {
-      "rating": 14,
-      "favorited": true
-    },
-    "4X8Y79gWo6xm7Osdapg58E": {
-      "rating": 16,
-      "favorited": true
-    },
-    "1oTR3aC0jYmwUlr9duBi05": {
-      "rating": 15
-    },
-    "0CA2EVHhRPR5VPV78KZw89": {
-      "rating": 18
-    },
-    "1p12OAWwudgMqfMzjMvl2a": {
-      "rating": 16
-    },
     "5Dgqy4bBg09Rdw7CQM545s": {
       "rating": 16
     },
-    "0bQglEvsHphrS19FGODEGo": {
-      "rating": 19
-    },
-    "0A13JySVHzBoRZFk2o89Wl": {
-      "rating": 17
-    },
-    "4kRMCapj9nEyBWnM0kc9OX": {
-      "rating": 16
-    },
-    "60LbtmnmOLTkz8ZiVhbynM": {
-      "favorited": true
-    },
-    "20r762YmB5HeofjMCiPMLv": {
-      "rating": 16
-    },
-    "1JvXxLsm0PxlGH4LXzqMGq": {
+    "4WD4pslu83FF6oMa1e19mF": {
       "rating": 15
     },
-    "392p3shh2jkxUxY2VHvlH8": {
-      "rating": 19,
+    "6X1x82kppWZmDzlXXK3y3q": {
+      "rating": 13
+    },
+    "6hPkbAV3ZXpGZBGUvL6jVM": {
+      "rating": 18
+    },
+    "1V99SZB8TKi7RxhALkkiH1": {
+      "rating": 14
+    },
+    "5kXmpj8YLcxEMk8BWc57UV": {
+      "rating": 17,
       "favorited": true
     },
-    "3mH6qwIy9crq0I9YQbOuDf": {
-      "rating": 17,
+    "0puQN87m8wxSu8lcDkwV2k": {
+      "rating": 16
+    },
+    "630o1rKTDsLeIPreOY1jqP": {
+      "rating": 17
+    },
+    "4YXo7p7aubyVIbNLoVlBp9": {
+      "rating": 16
+    },
+    "7wJTn94PWzZ3zE0lg3qhld": {
+      "rating": 16
+    },
+    "6Sts4Yh7KsDFwq2yTWrGGV": {
+      "rating": 17
+    },
+    "7GWkceE5McMVfffd1RGL6Y": {
+      "rating": 15,
       "favorited": true
     },
     "0gkUcpkyW2SXN49Yktkf6F": {
       "rating": 17,
       "favorited": true
     },
-    "3WFTGIO6E3Xh4paEOBY9OU": {
+    "1SV1Fh8rLes7MeTYTXznKd": {
+      "rating": 16
+    },
+    "77Ie9frENeQwYUGHrrS0pk": {
+      "rating": 15
+    },
+    "3K17PJl4d0yhrys2ylYzgm": {
+      "favorited": true
+    },
+    "1pOl0KEC1iQnA6F0XxV4To": {
       "rating": 20
     },
-    "630o1rKTDsLeIPreOY1jqP": {
+    "7D2NdGvBHIavgLhmcwhluK": {
+      "rating": 16
+    },
+    "3bJtSVsqSsqmVtfvtnisbU": {
+      "rating": 18
+    },
+    "6jWde94ln40epKIQCd8XUh": {
+      "rating": 18
+    },
+    "3Yko2SxDk4hc6fncIBQlcM": {
       "rating": 17
     },
-    "5vkqYmiPBYLaalcmjujWxK": {
-      "rating": 20,
-      "favorited": true
+    "5EyDvOit9McsAc9ao1QROt": {
+      "rating": 16
+    },
+    "1fvWYcbjuycyHpzNPH1Vfk": {
+      "rating": 17
+    },
+    "1ww8GdNvrF0dgJbrnVZmAr": {
+      "rating": 15
+    },
+    "50j4Wm1b9hLpSpPIA39Vp9": {
+      "rating": 16
+    },
+    "4Mw9Gcu1LT7JaipXdwrq1Q": {
+      "rating": 14
     },
     "6dVIqQ8qmQ5GBnJ9shOYGE": {
       "rating": 20,
       "favorited": true
     },
-    "4MJXiUV12TyT5ZyXeWdnL3": {
-      "rating": 16
-    },
-    "5xBD0bSZqXpfH0vwkrDcAx": {
-      "rating": 16
-    },
-    "6uO5B6km2Dco28tOBmZtSU": {
+    "3Lfxp4dgtCBJN74rmo7tiE": {
       "rating": 19
     },
-    "5GRnydamKvIeG46dycID6v": {
+    "0y13VbGddQ4azdVWakksAL": {
+      "rating": 16
+    },
+    "0HHRIVjvBcnTepfeRVgS2f": {
+      "rating": 16
+    },
+    "49buCcKCJwxvdl0R2dMoIU": {
       "rating": 18
     },
-    "0E47vczx9XVds1Lr2Y8rze": {
-      "rating": 18
+    "3DuiGV3J09SUhvp8gqNx8h": {
+      "favorited": true
     },
-    "3wLCCtHNSLsDpIItmWZzS9": {
-      "rating": 17
-    },
-    "6uoeezh45SYEb8lcT8gDTY": {
+    "6GPL5sMWxYibGoKnarlqUk": {
       "rating": 15
     },
-    "7dBUmXkVXyQv60PoAWZAa1": {
+    "3qr4pTBWEU1SVf01j6RAx3": {
+      "rating": 16
+    },
+    "1oTR3aC0jYmwUlr9duBi05": {
+      "rating": 15
+    },
+    "6wPX4FdHqmn0aHZ84WUCW5": {
+      "rating": 16
+    },
+    "0YtYaaO0aipyeQl0xhAWTO": {
+      "rating": 17,
+      "favorited": true
+    },
+    "4nYsnQpTAQaPzrPc6rOsBN": {
+      "rating": 17
+    },
+    "1BZoqf8Zje5nGdwZhOjAtD": {
+      "rating": 18
+    },
+    "07BPkQfT4B5xjDwjCxRiN2": {
+      "rating": 17
+    },
+    "6YabPKtZAjxwyWbuO9p4ZD": {
+      "rating": 14
+    },
+    "3WFTGIO6E3Xh4paEOBY9OU": {
+      "rating": 20
+    },
+    "67GbWmsrvtIdOOUYRo7do7": {
+      "rating": 16
+    },
+    "34LxHI9x14qXUOS8AWRrYD": {
+      "rating": 18
+    },
+    "78MM8HrabEGPLVWaJkM2t1": {
+      "rating": 16,
+      "favorited": true
+    },
+    "0uOPPNiTA3k0HNvqKWcuSb": {
+      "rating": 17
+    },
+    "0hjzsRqOq8rWLZyWlaazb1": {
+      "rating": 14
+    },
+    "392p3shh2jkxUxY2VHvlH8": {
       "rating": 19,
       "favorited": true
     },
-    "4rL0RzmHMQyHiZqJVdt7A8": {
-      "rating": 16
-    },
-    "6jWde94ln40epKIQCd8XUh": {
+    "7BuwwZzrJCAJaC12QKkDOh": {
       "rating": 18
     },
-    "1WN3eZOVfULIjZfxdsfoMO": {
+    "6TxgQwGrbG3XZLNPOEhg7E": {
+      "rating": 16,
       "favorited": true
     },
     "2tm3Ht61kqqRZtIYsBjxEj": {
       "rating": 17,
       "favorited": true
     },
-    "0JvkUMttIwTRYwm3OVBoch": {
+    "2wE1bvm3Ha0BvkHTvwk6rw": {
       "rating": 17
     },
-    "1wnEAz2lDtNoUUZF0KStuo": {
-      "rating": 17
-    },
-    "64xtjfsPHNHch0CZ7fPTjS": {
-      "rating": 14
-    },
-    "5CiZOqd3iF6p2PsqBjljat": {
-      "rating": 17
-    },
-    "3BYlBcND6PeKoW6ZODjZO3": {
-      "rating": 16
-    },
-    "5YlSucquisid7OajXkWlez": {
-      "rating": 14
-    },
-    "7EJ0OT5ZqybXxcYRa6mccM": {
-      "rating": 17
-    },
-    "5kXmpj8YLcxEMk8BWc57UV": {
-      "rating": 17,
-      "favorited": true
-    },
-    "1ww8GdNvrF0dgJbrnVZmAr": {
+    "4kN4kVVwgQ9jOBlIRQ86NU": {
       "rating": 15
     },
-    "3qr4pTBWEU1SVf01j6RAx3": {
+    "4hjiHP3NIIzyYUgfs145zr": {
       "rating": 16
-    },
-    "3Qa2CdymyGvXkqoqIZykmT": {
-      "rating": 19
-    },
-    "1TwAADd8Z8C1GeeCSaXTNr": {
-      "rating": 14
-    },
-    "6YabPKtZAjxwyWbuO9p4ZD": {
-      "rating": 14
-    },
-    "7chkAhG5ThiQdr7ESj2EYK": {
-      "favorited": true
-    },
-    "5S7lcrRerABwsWzHisYsxP": {
-      "favorited": true
-    },
-    "2Us9qPHLvLoTl6HkYAPcz2": {
-      "rating": 19,
-      "favorited": true
-    },
-    "6l61p7zbizBUjQWY10LWmb": {
-      "rating": 18
-    },
-    "4hnqM0JK4CM1phwfq1Ldyz": {
-      "rating": 16
-    },
-    "24E6rDvGDuYFjlGewp4ntF": {
-      "rating": 15
-    },
-    "2ANVost0y2y52ema1E9xAZ": {
-      "rating": 18
-    },
-    "6NTrwu1XJ56jBPx7HMksbZ": {
-      "rating": 16
-    },
-    "1V99SZB8TKi7RxhALkkiH1": {
-      "rating": 14,
-      "favorited": true
-    },
-    "5WndWfzGwCkHzAbQXVkg2V": {
-      "rating": 15
-    },
-    "2ngEpie4g3Z2xtZhhwCAxH": {
-      "favorited": true
-    },
-    "4OD3LU6001esAtFshDX46M": {
-      "rating": 13,
-      "favorited": true
-    },
-    "0GqpoHJREPp0iuXK3HzrHk": {
-      "rating": 17
-    },
-    "3aMBDb72H0wrXO5iARzsWc": {
-      "rating": 18
-    },
-    "0HHRIVjvBcnTepfeRVgS2f": {
-      "rating": 16
-    },
-    "08pL4gHGoa0GXyv9emugVv": {
-      "rating": 19
-    },
-    "4NP1rhnsPdYpnyJP0p0k0L": {
-      "rating": 16
-    },
-    "1GXMNFfoHF4sN7lG8gZq1j": {
-      "rating": 10,
-      "favorited": true
-    },
-    "6B5favhKTShFTjRLsKIUfa": {
-      "rating": 15
     },
     "2sOLW5TSgXiLZBacdHxO6m": {
       "rating": 14
     },
-    "4Io5vWtmV1rFj4yirKb4y4": {
+    "60LbtmnmOLTkz8ZiVhbynM": {
+      "favorited": true
+    },
+    "7gsWAHLeT0w7es6FofOXk1": {
       "rating": 17
     },
-    "2HTbQ0RHwukKVXAlTmCZP2": {
+    "3mH6qwIy9crq0I9YQbOuDf": {
+      "rating": 17,
+      "favorited": true
+    },
+    "163gYXqzv3axBTgHkZiBJU": {
+      "rating": 14
+    },
+    "6vDiMhyfSnTn18OY99BSQX": {
+      "rating": 20
+    },
+    "4GT6uZod4p5RiDMOVHOMme": {
       "rating": 16,
       "favorited": true
     },
-    "0DK10k39r9LAZ7HgP1EPuB": {
+    "4LH4d3cOWNNsVw41Gqt2kv": {
+      "rating": 20
+    },
+    "2C94EAIFBPnTcq7z8Xj7oe": {
+      "rating": 15
+    },
+    "1uFp52Q9EXLNA6DTRYnpTj": {
+      "rating": 14,
       "favorited": true
     },
-    "78MM8HrabEGPLVWaJkM2t1": {
-      "rating": 16
-    },
-    "2UJwKSBUz6rtW4QLK74kQu": {
-      "rating": 15,
+    "5risYG7klZCSLMNxB9dZhf": {
+      "rating": 16,
       "favorited": true
-    },
-    "4E1XUBMTpLO7GpBzUo65Jp": {
-      "rating": 16
-    },
-    "4YXo7p7aubyVIbNLoVlBp9": {
-      "rating": 16
-    },
-    "6C5ED5twSt8dEbiffbFNe2": {
-      "rating": 16
-    },
-    "3l41m2B0WqPyMlFHarz1vj": {
-      "rating": 13
-    },
-    "1SV1Fh8rLes7MeTYTXznKd": {
-      "rating": 16
-    },
-    "49buCcKCJwxvdl0R2dMoIU": {
-      "rating": 18
-    },
-    "7ycBtnsMtyVbbwTfJwRjSP": {
-      "rating": 17
-    },
-    "0KBdfMTMxi0oD1oVqApTjr": {
-      "rating": 12
     }
   },
   "artists": {
-    "The Notorious B.I.G.": {
-      "genres": [
-        "hip-hop",
-        "rap",
-        "gangsta rap",
-        "east coast rap",
-        "hip hop"
-      ],
-      "favorited": true
-    },
     "Beyonc\u00e9": {
       "genres": [
         "rnb",
@@ -622,63 +633,6 @@
       ],
       "favorited": true
     },
-    "Rita Lee": {
-      "genres": [
-        "mpb",
-        "rock",
-        "brazilian",
-        "female vocalists",
-        "brasil"
-      ]
-    },
-    "Os Tinco\u00e3s": {
-      "genres": [
-        "samba",
-        "brazilian",
-        "mpb",
-        "brazil",
-        "afoxe"
-      ],
-      "favorited": true
-    },
-    "A Lot Like Birds": {
-      "genres": [
-        "post-hardcore",
-        "experimental",
-        "progressive rock",
-        "progressive",
-        "hardcore"
-      ],
-      "favorited": true
-    },
-    "Hyldon": {
-      "genres": [
-        "mpb",
-        "soul",
-        "brasil",
-        "brazilian",
-        "samba rock"
-      ]
-    },
-    "L\u00f4 Borges": {
-      "genres": [
-        "mpb",
-        "clube da esquina",
-        "brasil",
-        "brazil",
-        "brazilian"
-      ],
-      "favorited": true
-    },
-    "Led Zeppelin": {
-      "genres": [
-        "classic rock",
-        "hard rock",
-        "rock",
-        "70s",
-        "progressive rock"
-      ]
-    },
     "Edu Lobo": {
       "genres": [
         "bossa nova",
@@ -686,393 +640,6 @@
         "brazilian",
         "brasil",
         "jazz"
-      ],
-      "favorited": true
-    },
-    "Sade": {
-      "genres": [
-        "soul",
-        "jazz",
-        "female vocalists",
-        "chillout",
-        "pop"
-      ]
-    },
-    "Milton Nascimento": {
-      "genres": [
-        "mpb",
-        "brazilian",
-        "brasil",
-        "brazil",
-        "world"
-      ]
-    },
-    "Janet Jackson": {
-      "genres": [
-        "pop",
-        "rnb",
-        "female vocalists",
-        "dance",
-        "soul"
-      ],
-      "favorited": true
-    },
-    "Sam Smith": {
-      "genres": [
-        "soul",
-        "pop",
-        "british",
-        "electronic",
-        "dance"
-      ]
-    },
-    "Sufjan Stevens": {
-      "genres": [
-        "folk",
-        "indie",
-        "singer-songwriter",
-        "alternative",
-        "indie rock"
-      ]
-    },
-    "My Chemical Romance": {
-      "genres": [
-        "rock",
-        "alternative",
-        "punk rock",
-        "emo",
-        "punk"
-      ],
-      "favorited": true
-    },
-    "Mom Jeans.": {
-      "genres": [
-        "emo",
-        "pop punk",
-        "midwest emo",
-        "indie",
-        "indie rock"
-      ],
-      "favorited": true
-    },
-    "Frank Ocean": {
-      "genres": [
-        "rnb",
-        "soul",
-        "hip-hop",
-        "r&b",
-        "ofwgkta"
-      ],
-      "favorited": true
-    },
-    "Judee Sill": {
-      "genres": [
-        "folk",
-        "singer-songwriter",
-        "female vocalists",
-        "70s",
-        "folk-rock"
-      ]
-    },
-    "Maria Beth\u00e2nia": {
-      "genres": [
-        "mpb",
-        "bossa nova",
-        "female vocalists",
-        "brasil",
-        "brazilian"
-      ]
-    },
-    "Fever Ray": {
-      "genres": [
-        "electronic",
-        "ambient",
-        "swedish",
-        "female vocalists",
-        "experimental"
-      ]
-    },
-    "Curtis Mayfield": {
-      "genres": [
-        "soul",
-        "funk",
-        "70s",
-        "rhythm and blues",
-        "rnb"
-      ]
-    },
-    "Kate Bush": {
-      "genres": [
-        "female vocalists",
-        "singer-songwriter",
-        "pop",
-        "alternative",
-        "80s"
-      ],
-      "favorited": true
-    },
-    "Tim Buckley": {
-      "genres": [
-        "folk",
-        "singer-songwriter",
-        "psychedelic",
-        "folk-rock",
-        "rock"
-      ]
-    },
-    "The Mars Volta": {
-      "genres": [
-        "progressive rock",
-        "experimental",
-        "rock",
-        "alternative",
-        "progressive"
-      ]
-    },
-    "envy": {
-      "genres": [
-        "screamo",
-        "post-rock",
-        "post-hardcore",
-        "hardcore",
-        "japanese"
-      ]
-    },
-    "Deerhunter": {
-      "genres": [
-        "shoegaze",
-        "experimental",
-        "psychedelic",
-        "indie",
-        "indie rock"
-      ]
-    },
-    "The Smashing Pumpkins": {
-      "genres": [
-        "alternative rock",
-        "grunge",
-        "alternative",
-        "rock",
-        "90s"
-      ]
-    },
-    "Arthur Russell": {
-      "genres": [
-        "avant-garde",
-        "experimental",
-        "disco",
-        "electronic",
-        "no wave"
-      ]
-    },
-    "Axolotes Mexicanos": {
-      "genres": [
-        "tontipop",
-        "pop",
-        "twee pop",
-        "punk",
-        "lo-fi"
-      ]
-    },
-    "Erykah Badu": {
-      "genres": [
-        "soul",
-        "neo-soul",
-        "female vocalists",
-        "rnb",
-        "jazz"
-      ]
-    },
-    "Radiohead": {
-      "genres": [
-        "rock",
-        "alternative",
-        "alternative rock",
-        "indie",
-        "electronic"
-      ],
-      "favorited": true
-    },
-    "Washed Out": {
-      "genres": [
-        "chillwave",
-        "electronic",
-        "lo-fi",
-        "chillout",
-        "balearic"
-      ]
-    },
-    "Jesu/Sun Kil Moon": {
-      "genres": [
-        "post rock",
-        "folk",
-        "singer-songwriter",
-        "electronic",
-        "spoken word"
-      ]
-    },
-    "Jo\u00e3o Bosco": {
-      "genres": [
-        "mpb",
-        "samba",
-        "bossa nova",
-        "brasil",
-        "brazilian"
-      ]
-    },
-    "Neutral Milk Hotel": {
-      "genres": [
-        "folk",
-        "indie",
-        "lo-fi",
-        "indie rock",
-        "elephant 6"
-      ],
-      "revisit": true
-    },
-    "The Avalanches": {
-      "genres": [
-        "electronic",
-        "turntablism",
-        "australian",
-        "dance",
-        "electronica"
-      ]
-    },
-    "LCD Soundsystem": {
-      "genres": [
-        "electronic",
-        "indie",
-        "dance",
-        "alternative",
-        "electronica"
-      ]
-    },
-    "Melvins": {
-      "genres": [
-        "sludge",
-        "grunge",
-        "stoner rock",
-        "rock",
-        "metal"
-      ]
-    },
-    "Kings of Leon": {
-      "genres": [
-        "rock",
-        "indie",
-        "indie rock",
-        "alternative",
-        "southern rock"
-      ]
-    },
-    "Ashleys": {
-      "genres": [
-        "spanish",
-        "alternative pop",
-        "spain"
-      ]
-    },
-    "Mr. Bungle": {
-      "genres": [
-        "experimental",
-        "avant-garde",
-        "alternative",
-        "mike patton",
-        "rock"
-      ],
-      "favorited": true
-    },
-    "The Tallest Man On Earth": {
-      "genres": [
-        "folk",
-        "singer-songwriter",
-        "acoustic",
-        "swedish",
-        "blues"
-      ]
-    },
-    "Run The Jewels": {
-      "genres": [
-        "hip-hop",
-        "rap",
-        "underground hip-hop",
-        "hip hop",
-        "underground rap"
-      ]
-    },
-    "Dear and the Headlights": {
-      "genres": [
-        "indie",
-        "indie rock",
-        "rock",
-        "alternative",
-        "american"
-      ],
-      "favorited": true
-    },
-    "Rage Against The Machine": {
-      "genres": [
-        "alternative rock",
-        "rock",
-        "alternative",
-        "political",
-        "rapcore"
-      ]
-    },
-    "Fiona Apple": {
-      "genres": [
-        "female vocalists",
-        "singer-songwriter",
-        "alternative",
-        "piano",
-        "indie"
-      ]
-    },
-    "Gil Scott-Heron": {
-      "genres": [
-        "soul",
-        "funk",
-        "jazz",
-        "poetry",
-        "political"
-      ]
-    },
-    "Jo\u00e3o Donato": {
-      "genres": [
-        "bossa nova",
-        "jazz",
-        "brazilian",
-        "mpb",
-        "brazil"
-      ],
-      "favorited": true
-    },
-    "Masayoshi Takanaka": {
-      "genres": [
-        "fusion",
-        "japanese",
-        "funk",
-        "jazz",
-        "guitar"
-      ]
-    },
-    "Mind Enterprises": {
-      "genres": [
-        "italy",
-        "lo-fi",
-        "italian",
-        "pop",
-        "funk_add_to_lidarr_batch_18"
-      ]
-    },
-    "NEU!": {
-      "genres": [
-        "krautrock",
-        "experimental",
-        "psychedelic",
-        "electronic",
-        "german"
       ],
       "favorited": true
     },
@@ -1086,31 +653,279 @@
       ],
       "favorited": true
     },
-    "Electric Light Orchestra": {
+    "Dance Gavin Dance": {
       "genres": [
-        "classic rock",
-        "progressive rock",
-        "rock",
-        "70s",
-        "british"
-      ]
+        "post-hardcore",
+        "experimental",
+        "screamo",
+        "emocore",
+        "hardcore"
+      ],
+      "favorited": true
     },
-    "Nirvana": {
+    "Janet Jackson": {
       "genres": [
-        "grunge",
-        "rock",
-        "alternative rock",
+        "pop",
+        "rnb",
+        "female vocalists",
+        "dance",
+        "soul"
+      ],
+      "favorited": true
+    },
+    "Mr. Bungle": {
+      "genres": [
+        "experimental",
+        "avant-garde",
         "alternative",
-        "90s"
+        "mike patton",
+        "rock"
       ]
     },
-    "Boards of Canada": {
+    "Judee Sill": {
       "genres": [
-        "ambient",
+        "folk",
+        "singer-songwriter",
+        "female vocalists",
+        "70s",
+        "folk-rock"
+      ]
+    },
+    "Milton Nascimento": {
+      "genres": [
+        "mpb",
+        "brazilian",
+        "brasil",
+        "brazil",
+        "world"
+      ],
+      "favorited": true
+    },
+    "L\u00f4 Borges": {
+      "genres": [
+        "mpb",
+        "clube da esquina",
+        "brasil",
+        "brazil",
+        "brazilian"
+      ],
+      "favorited": true
+    },
+    "Radiohead": {
+      "genres": [
+        "rock",
+        "alternative",
+        "alternative rock",
+        "indie",
+        "electronic"
+      ],
+      "favorited": true
+    },
+    "Gal Costa": {
+      "genres": [
+        "bossa nova",
+        "mpb",
+        "brazilian",
+        "tropicalia",
+        "female vocalists"
+      ],
+      "favorited": true
+    },
+    "Talking Heads": {
+      "genres": [
+        "new wave",
+        "post-punk",
+        "80s",
+        "rock",
+        "alternative"
+      ],
+      "favorited": true
+    },
+    "My Chemical Romance": {
+      "genres": [
+        "rock",
+        "alternative",
+        "punk rock",
+        "emo",
+        "punk"
+      ]
+    },
+    "Frank Ocean": {
+      "genres": [
+        "rnb",
+        "soul",
+        "hip-hop",
+        "r&b",
+        "ofwgkta"
+      ],
+      "favorited": true
+    },
+    "Jo\u00e3o Donato": {
+      "genres": [
+        "bossa nova",
+        "jazz",
+        "brazilian",
+        "mpb",
+        "brazil"
+      ],
+      "favorited": true
+    },
+    "Claudya": {
+      "genres": [
+        "brazil",
+        "jazz",
+        "blues",
+        "brasil",
+        "female vocalists"
+      ]
+    },
+    "Mom Jeans.": {
+      "genres": [
+        "emo",
+        "pop punk",
+        "midwest emo",
+        "indie",
+        "indie rock"
+      ],
+      "favorited": true
+    },
+    "empire! empire! (i was a lonely estate)": {
+      "genres": [
+        "emo",
+        "midwest emo",
+        "indie",
+        "indie rock",
+        "post-emo indie rock"
+      ],
+      "favorited": true
+    },
+    "Vampire Weekend": {
+      "genres": [
+        "indie",
+        "indie rock",
+        "indie pop",
+        "alternative",
+        "rock"
+      ]
+    },
+    "Knapsack": {
+      "genres": [
+        "emo",
+        "indie rock",
+        "indie",
+        "midwest emo",
+        "punk"
+      ]
+    },
+    "The Notorious B.I.G.": {
+      "genres": [
+        "hip-hop",
+        "rap",
+        "gangsta rap",
+        "east coast rap",
+        "hip hop"
+      ],
+      "favorited": true
+    },
+    "Saosin": {
+      "genres": [
+        "post-hardcore",
+        "emo",
+        "screamo",
+        "rock",
+        "emocore"
+      ]
+    },
+    "The Tallest Man On Earth": {
+      "genres": [
+        "folk",
+        "singer-songwriter",
+        "acoustic",
+        "swedish",
+        "blues"
+      ]
+    },
+    "New Order": {
+      "genres": [
+        "new wave",
+        "post-punk",
         "electronic",
-        "idm",
-        "chillout",
+        "80s",
+        "alternative"
+      ]
+    },
+    "CAN": {
+      "genres": [
+        "krautrock",
+        "experimental",
+        "progressive rock",
+        "psychedelic",
+        "german"
+      ]
+    },
+    "The Anniversary": {
+      "genres": [
+        "emo",
+        "indie rock",
+        "indie",
+        "indie pop",
+        "alternative"
+      ],
+      "favorited": true
+    },
+    "Rita Lee": {
+      "genres": [
+        "mpb",
+        "rock",
+        "brazilian",
+        "female vocalists",
+        "brasil"
+      ]
+    },
+    "Frou Frou": {
+      "genres": [
+        "electronic",
+        "female vocalists",
+        "indie",
+        "alternative",
         "electronica"
+      ]
+    },
+    "Mind Enterprises": {
+      "genres": [
+        "italy",
+        "lo-fi",
+        "italian",
+        "pop",
+        "funk_add_to_lidarr_batch_18"
+      ]
+    },
+    "The Avalanches": {
+      "genres": [
+        "electronic",
+        "turntablism",
+        "australian",
+        "dance",
+        "electronica"
+      ]
+    },
+    "Sade": {
+      "genres": [
+        "soul",
+        "jazz",
+        "female vocalists",
+        "chillout",
+        "pop"
+      ],
+      "favorited": true
+    },
+    "Brand New": {
+      "genres": [
+        "emo",
+        "alternative",
+        "rock",
+        "indie rock",
+        "indie"
       ]
     },
     "Arcade Fire": {
@@ -1123,22 +938,68 @@
       ],
       "favorited": true
     },
-    "Have Mercy": {
+    "Thom Yorke": {
       "genres": [
-        "emo",
-        "indie rock",
-        "post-hardcore",
-        "thrash metal",
-        "pop punk"
+        "electronic",
+        "experimental",
+        "alternative",
+        "indie",
+        "singer-songwriter"
       ]
     },
-    "I Kill Giants": {
+    "Run The Jewels": {
       "genres": [
-        "math rock",
-        "emo",
+        "hip-hop",
+        "rap",
+        "underground hip-hop",
+        "hip hop",
+        "underground rap"
+      ]
+    },
+    "The xx": {
+      "genres": [
         "indie",
+        "electronic",
+        "post-punk",
+        "british",
+        "dance"
+      ]
+    },
+    "A Lot Like Birds": {
+      "genres": [
+        "post-hardcore",
+        "experimental",
+        "progressive rock",
+        "progressive",
+        "hardcore"
+      ],
+      "favorited": true
+    },
+    "R.E.M.": {
+      "genres": [
+        "rock",
         "alternative rock",
-        "post-hardcore"
+        "alternative",
+        "indie",
+        "pop"
+      ]
+    },
+    "Southside": {
+      "genres": [
+        "rap",
+        "hip-hop",
+        "hip hop",
+        "trap",
+        "atlanta"
+      ]
+    },
+    "Dear and the Headlights": {
+      "genres": [
+        "indie",
+        "indie rock",
+        "rock",
+        "alternative",
+        "american"
       ],
       "favorited": true
     },
@@ -1151,95 +1012,49 @@
         "kanye west"
       ]
     },
-    "Talking Heads": {
-      "genres": [
-        "new wave",
-        "post-punk",
-        "80s",
-        "rock",
-        "alternative"
-      ]
-    },
-    "Gilberto Gil": {
-      "genres": [
-        "mpb",
-        "brazilian",
-        "tropicalia",
-        "bossa nova",
-        "brasil"
-      ]
-    },
-    "Drive Like Jehu": {
+    "La Dispute": {
       "genres": [
         "post-hardcore",
-        "math rock",
-        "noise rock",
-        "emo",
+        "screamo",
+        "experimental",
+        "hardcore",
         "indie"
       ]
     },
-    "Refused": {
+    "Have Mercy": {
       "genres": [
-        "hardcore",
+        "emo",
+        "indie rock",
         "post-hardcore",
-        "hardcore punk",
-        "punk",
-        "swedish"
+        "thrash metal",
+        "pop punk"
       ]
     },
-    "Southside": {
+    "Los Wembler's de Iquitos": {
       "genres": [
-        "rap",
-        "hip-hop",
-        "hip hop",
-        "trap",
-        "atlanta"
-      ],
-      "favorited": true
+        "latin",
+        "peru",
+        "cumbia",
+        "chill906",
+        "dance"
+      ]
     },
-    "Modest Mouse": {
+    "Sonic Youth": {
       "genres": [
-        "indie rock",
-        "indie",
+        "experimental",
+        "post-punk",
         "alternative",
-        "alternative rock",
-        "rock"
-      ]
-    },
-    "The Decemberists": {
-      "genres": [
-        "indie",
-        "folk",
-        "indie rock",
-        "alternative",
-        "indie pop"
-      ]
-    },
-    "Red House Painters": {
-      "genres": [
-        "slowcore",
-        "indie",
-        "folk",
-        "sadcore",
-        "singer-songwriter"
-      ]
-    },
-    "Wednesday": {
-      "genres": [
-        "shoegaze",
-        "indie rock",
-        "alt-country",
         "indie",
         "noise rock"
       ]
     },
-    "Say Anything": {
+    "Penfold": {
       "genres": [
-        "alternative",
+        "emo",
+        "midwest emo",
         "indie",
-        "rock",
-        "indie rock",
-        "emo"
+        "real emo",
+        "indie emo"
       ]
     },
     "blink-182": {
@@ -1251,22 +1066,155 @@
         "alternative"
       ]
     },
-    "The Cure": {
+    "The Shins": {
       "genres": [
-        "post-punk",
-        "new wave",
+        "indie",
+        "indie rock",
+        "indie pop",
         "alternative",
-        "80s",
         "rock"
       ]
     },
-    "Reggie And The Full Effect": {
+    "Buzzcocks": {
       "genres": [
+        "punk",
+        "punk rock",
+        "british",
+        "new wave",
+        "rock"
+      ]
+    },
+    "Masayoshi Takanaka": {
+      "genres": [
+        "fusion",
+        "japanese",
+        "funk",
+        "jazz",
+        "guitar"
+      ]
+    },
+    "Sufjan Stevens": {
+      "genres": [
+        "folk",
+        "indie",
+        "singer-songwriter",
+        "alternative",
+        "indie rock"
+      ]
+    },
+    "Pink Floyd": {
+      "genres": [
+        "progressive rock",
+        "psychedelic rock",
+        "classic rock",
+        "rock",
+        "psychedelic"
+      ]
+    },
+    "Belchior": {
+      "genres": [
+        "mpb",
+        "brazilian",
+        "brasil",
+        "belchior",
+        "alternative"
+      ]
+    },
+    "NEU!": {
+      "genres": [
+        "krautrock",
+        "experimental",
+        "psychedelic",
+        "electronic",
+        "german"
+      ]
+    },
+    "Daft Punk": {
+      "genres": [
+        "electronic",
+        "house",
+        "dance",
+        "techno",
+        "electronica"
+      ]
+    },
+    "Kraftwerk": {
+      "genres": [
+        "electronic",
+        "synthpop",
+        "german",
+        "electronica",
+        "krautrock"
+      ]
+    },
+    "The Mars Volta": {
+      "genres": [
+        "progressive rock",
+        "experimental",
         "rock",
         "alternative",
-        "emo",
+        "progressive"
+      ]
+    },
+    "Rage Against The Machine": {
+      "genres": [
+        "alternative rock",
+        "rock",
+        "alternative",
+        "political",
+        "rapcore"
+      ]
+    },
+    "Os Tinco\u00e3s": {
+      "genres": [
+        "samba",
+        "brazilian",
+        "mpb",
+        "brazil",
+        "afoxe"
+      ]
+    },
+    "Tim Buckley": {
+      "genres": [
+        "folk",
+        "singer-songwriter",
+        "psychedelic",
+        "folk-rock",
+        "rock"
+      ]
+    },
+    "Ashleys": {
+      "genres": [
+        "spanish",
+        "alternative pop",
+        "spain"
+      ]
+    },
+    "Fleet Foxes": {
+      "genres": [
+        "folk",
         "indie",
-        "pop punk"
+        "folk rock",
+        "indie rock",
+        "lo-fi"
+      ]
+    },
+    "Gil Scott-Heron": {
+      "genres": [
+        "soul",
+        "funk",
+        "jazz",
+        "poetry",
+        "political"
+      ]
+    },
+    "Miles Davis": {
+      "genres": [
+        "jazz",
+        "trumpet",
+        "bebop",
+        "fusion",
+        "blues"
       ]
     },
     "Carissa's Wierd": {
@@ -1278,6 +1226,109 @@
         "indie rock"
       ]
     },
+    "Gilberto Gil": {
+      "genres": [
+        "mpb",
+        "brazilian",
+        "tropicalia",
+        "bossa nova",
+        "brasil"
+      ]
+    },
+    "Drake": {
+      "genres": [
+        "hip-hop",
+        "rap",
+        "rnb",
+        "hip hop",
+        "canadian"
+      ]
+    },
+    "Modest Mouse": {
+      "genres": [
+        "indie rock",
+        "indie",
+        "alternative",
+        "alternative rock",
+        "rock"
+      ],
+      "revisit": true
+    },
+    "I Kill Giants": {
+      "genres": [
+        "math rock",
+        "emo",
+        "indie",
+        "alternative rock",
+        "post-hardcore"
+      ],
+      "favorited": true
+    },
+    "Electric Light Orchestra": {
+      "genres": [
+        "classic rock",
+        "progressive rock",
+        "rock",
+        "70s",
+        "british"
+      ]
+    },
+    "Jesu/Sun Kil Moon": {
+      "genres": [
+        "post rock",
+        "folk",
+        "singer-songwriter",
+        "electronic",
+        "spoken word"
+      ]
+    },
+    "Explosions In The Sky": {
+      "genres": [
+        "post-rock",
+        "instrumental",
+        "ambient",
+        "experimental",
+        "post rock"
+      ]
+    },
+    "Counterparts": {
+      "genres": [
+        "melodic hardcore",
+        "metalcore",
+        "hardcore",
+        "melodic metalcore",
+        "canadian"
+      ]
+    },
+    "System Of A Down": {
+      "genres": [
+        "alternative metal",
+        "metal",
+        "nu metal",
+        "rock",
+        "alternative"
+      ],
+      "revisit": true
+    },
+    "Deerhunter": {
+      "genres": [
+        "shoegaze",
+        "experimental",
+        "psychedelic",
+        "indie",
+        "indie rock"
+      ],
+      "revisit": true
+    },
+    "Asake": {
+      "genres": [
+        "afrobeats",
+        "nigeria",
+        "amapiano",
+        "afropiano",
+        "african"
+      ]
+    },
     "Ought": {
       "genres": [
         "post-punk",
@@ -1285,6 +1336,104 @@
         "art punk",
         "indie",
         "canada"
+      ]
+    },
+    "The Smashing Pumpkins": {
+      "genres": [
+        "alternative rock",
+        "grunge",
+        "alternative",
+        "rock",
+        "90s"
+      ]
+    },
+    "Nina Chuba": {
+      "genres": [
+        "german",
+        "soul",
+        "deutsch",
+        "rnb",
+        "hip hop"
+      ]
+    },
+    "The Cranberries": {
+      "genres": [
+        "rock",
+        "alternative",
+        "alternative rock",
+        "female vocalists",
+        "irish"
+      ]
+    },
+    "Saves The Day": {
+      "genres": [
+        "pop punk",
+        "emo",
+        "indie",
+        "rock",
+        "punk"
+      ]
+    },
+    "Jorge Ben Jor": {
+      "genres": [
+        "samba",
+        "mpb",
+        "brazilian",
+        "bossa nova",
+        "brasil"
+      ]
+    },
+    "Neutral Milk Hotel": {
+      "genres": [
+        "folk",
+        "indie",
+        "lo-fi",
+        "indie rock",
+        "elephant 6"
+      ]
+    },
+    "Fever Ray": {
+      "genres": [
+        "electronic",
+        "ambient",
+        "swedish",
+        "female vocalists",
+        "experimental"
+      ]
+    },
+    "TOOL": {
+      "genres": [
+        "progressive metal",
+        "progressive rock",
+        "alternative",
+        "metal",
+        "rock"
+      ]
+    },
+    "El Grupo Nuevo De Omar Rodr\u00edguez-L\u00f3pez": {
+      "genres": [
+        "experimental",
+        "progressive rock",
+        "omar rodriguez-lopez",
+        "math rock"
+      ]
+    },
+    "American Football": {
+      "genres": [
+        "emo",
+        "math rock",
+        "indie",
+        "indie rock",
+        "midwest emo"
+      ]
+    },
+    "Floating Points": {
+      "genres": [
+        "house",
+        "electronic",
+        "downtempo",
+        "jazz",
+        "deep house"
       ]
     },
     "Thursday": {
@@ -1296,13 +1445,13 @@
         "rock"
       ]
     },
-    "Nina Simone": {
+    "Charles Mingus": {
       "genres": [
         "jazz",
-        "soul",
-        "blues",
-        "female vocalists",
-        "vocal jazz"
+        "bebop",
+        "avant-garde",
+        "bass",
+        "post-bop"
       ]
     },
     "Slowdive": {
@@ -1314,6 +1463,42 @@
         "indie rock"
       ]
     },
+    "Box Car Racer": {
+      "genres": [
+        "punk rock",
+        "pop punk",
+        "punk",
+        "rock",
+        "emo"
+      ]
+    },
+    "Kendrick Lamar": {
+      "genres": [
+        "hip-hop",
+        "rap",
+        "west coast",
+        "hip hop",
+        "compton"
+      ]
+    },
+    "The Story So Far": {
+      "genres": [
+        "pop punk",
+        "melodic hardcore",
+        "punk",
+        "pop-punk",
+        "punk rock"
+      ]
+    },
+    "MESTIZA": {
+      "genres": [
+        "reggaeton",
+        "political",
+        "spanish",
+        "female fronted",
+        "catalan"
+      ]
+    },
     "\u00d3l\u00f6f Arnalds": {
       "genres": [
         "icelandic",
@@ -1323,50 +1508,104 @@
         "female vocalists"
       ]
     },
-    "Bon Iver": {
+    "A Tribe Called Quest": {
       "genres": [
-        "folk",
-        "indie",
-        "singer-songwriter",
-        "acoustic",
-        "lo-fi"
+        "hip-hop",
+        "rap",
+        "jazz hop",
+        "hip hop",
+        "funk"
       ]
     },
-    "Sun Kil Moon": {
+    "Washed Out": {
       "genres": [
-        "folk",
-        "singer-songwriter",
+        "chillwave",
+        "electronic",
+        "lo-fi",
+        "chillout",
+        "balearic"
+      ]
+    },
+    "Kings of Leon": {
+      "genres": [
+        "rock",
         "indie",
         "indie rock",
-        "americana"
+        "alternative",
+        "southern rock"
       ]
     },
-    "Dance Gavin Dance": {
+    "Run\u2013D.M.C.": {
       "genres": [
-        "post-hardcore",
-        "experimental",
-        "screamo",
-        "emocore",
-        "hardcore"
+        "rap",
+        "hip-hop",
+        "east coast rap",
+        "80s",
+        "golden age"
       ],
       "favorited": true
     },
-    "Quicksand": {
+    "Jo\u00e3o Bosco": {
       "genres": [
-        "post-hardcore",
-        "alternative rock",
-        "rock",
-        "alternative",
-        "hardcore"
+        "mpb",
+        "samba",
+        "bossa nova",
+        "brasil",
+        "brazilian"
       ]
     },
-    "Spiritualized": {
+    "The Hotelier": {
       "genres": [
-        "space rock",
+        "emo",
+        "pop punk",
+        "indie rock",
+        "midwest emo",
+        "indie"
+      ]
+    },
+    "Cocteau Twins": {
+      "genres": [
+        "dream pop",
         "shoegaze",
-        "psychedelic",
-        "indie",
+        "post-punk",
+        "ethereal",
         "alternative"
+      ]
+    },
+    "Portishead": {
+      "genres": [
+        "trip-hop",
+        "electronic",
+        "female vocalists",
+        "chillout",
+        "trip hop"
+      ]
+    },
+    "The Replacements": {
+      "genres": [
+        "punk",
+        "alternative",
+        "post-punk",
+        "rock",
+        "alternative rock"
+      ]
+    },
+    "\u00c9dith Piaf": {
+      "genres": [
+        "french",
+        "chanson",
+        "female vocalists",
+        "jazz",
+        "chanson francaise"
+      ]
+    },
+    "Erykah Badu": {
+      "genres": [
+        "soul",
+        "neo-soul",
+        "female vocalists",
+        "rnb",
+        "jazz"
       ]
     },
     "Brian Eno": {
@@ -1387,259 +1626,13 @@
         "funk"
       ]
     },
-    "CAN": {
+    "Solange": {
       "genres": [
-        "krautrock",
-        "experimental",
-        "progressive rock",
-        "psychedelic",
-        "german"
-      ]
-    },
-    "Miles Davis": {
-      "genres": [
-        "jazz",
-        "trumpet",
-        "bebop",
-        "fusion",
-        "blues"
-      ]
-    },
-    "Hella": {
-      "genres": [
-        "math rock",
-        "noise rock",
-        "experimental",
-        "instrumental",
-        "post-rock"
-      ]
-    },
-    "Brand New": {
-      "genres": [
-        "emo",
-        "alternative",
-        "rock",
-        "indie rock",
-        "indie"
-      ],
-      "revisit": true
-    },
-    "Belchior": {
-      "genres": [
-        "mpb",
-        "brazilian",
-        "brasil",
-        "belchior",
-        "alternative"
-      ]
-    },
-    "empire! empire! (i was a lonely estate)": {
-      "genres": [
-        "emo",
-        "midwest emo",
-        "indie",
-        "indie rock",
-        "post-emo indie rock"
-      ]
-    },
-    "Prince": {
-      "genres": [
-        "funk",
+        "rnb",
+        "soul",
         "pop",
-        "soul",
-        "rock",
-        "80s"
-      ]
-    },
-    "Nina Chuba": {
-      "genres": [
-        "german",
-        "soul",
-        "deutsch",
-        "rnb",
-        "hip hop"
-      ]
-    },
-    "Bob Dylan": {
-      "genres": [
-        "folk",
-        "singer-songwriter",
-        "classic rock",
-        "folk rock",
-        "rock"
-      ]
-    },
-    "Claudya": {
-      "genres": [
-        "brazil",
-        "jazz",
-        "blues",
-        "brasil",
-        "female vocalists"
-      ]
-    },
-    "shego": {
-      "genres": [
-        "spain",
-        "punk",
-        "indie pop",
-        "indie punk",
-        "spanish or latin artists"
-      ]
-    },
-    "The Hotelier": {
-      "genres": [
-        "emo",
-        "pop punk",
-        "indie rock",
-        "midwest emo",
-        "indie"
-      ]
-    },
-    "Nick Drake": {
-      "genres": [
-        "folk",
-        "singer-songwriter",
-        "acoustic",
-        "indie",
-        "mellow"
-      ]
-    },
-    "Green Day": {
-      "genres": [
-        "punk rock",
-        "rock",
-        "punk",
-        "pop punk",
-        "alternative"
-      ]
-    },
-    "TOOL": {
-      "genres": [
-        "progressive metal",
-        "progressive rock",
-        "alternative",
-        "metal",
-        "rock"
-      ]
-    },
-    "Daft Punk": {
-      "genres": [
-        "electronic",
-        "house",
-        "dance",
-        "techno",
-        "electronica"
-      ],
-      "revisit": true
-    },
-    "Ms. Lauryn Hill": {
-      "genres": [
-        "soul",
-        "rnb",
-        "neo-soul",
-        "hip hop",
-        "hip-hop"
-      ]
-    },
-    "Departures": {
-      "genres": [
-        "melodic hardcore",
-        "hardcore",
-        "hardcore punk",
-        "ukhc",
-        "modern hardcore"
-      ]
-    },
-    "Kendrick Lamar": {
-      "genres": [
-        "hip-hop",
-        "rap",
-        "west coast",
-        "hip hop",
-        "compton"
-      ]
-    },
-    "Touch\u00e9 Amor\u00e9": {
-      "genres": [
-        "screamo",
-        "hardcore",
-        "post-hardcore",
-        "melodic hardcore",
-        "hardcore punk"
-      ]
-    },
-    "Rival Schools": {
-      "genres": [
-        "post-hardcore",
-        "rock",
-        "indie",
-        "emo",
-        "alternative"
-      ]
-    },
-    "Gal Costa": {
-      "genres": [
-        "bossa nova",
-        "mpb",
-        "brazilian",
-        "tropicalia",
-        "female vocalists"
-      ],
-      "favorited": true
-    },
-    "Aretha Franklin": {
-      "genres": [
-        "soul",
-        "jazz",
         "female vocalists",
-        "blues",
-        "rhythm and blues"
-      ]
-    },
-    "Nickel Creek": {
-      "genres": [
-        "bluegrass",
-        "folk",
-        "acoustic",
-        "country",
-        "alt-country"
-      ]
-    },
-    "Defeater": {
-      "genres": [
-        "hardcore",
-        "melodic hardcore",
-        "hardcore punk",
-        "modern hardcore",
-        "punk"
-      ]
-    },
-    "Bala Desejo": {
-      "genres": [
-        "mpb",
-        "indie pop",
-        "brazilian",
-        "tropicalia",
-        "pop"
-      ]
-    },
-    "Prof": {
-      "genres": [
-        "rap",
-        "hip hop",
-        "hip-hop",
-        "underground rap",
-        "turntablism"
-      ]
-    },
-    "American Football": {
-      "genres": [
-        "emo",
-        "math rock",
-        "indie",
-        "indie rock",
-        "midwest emo"
+        "hip-hop"
       ]
     },
     "Northstar": {
@@ -1651,34 +1644,6 @@
         "indie rock"
       ]
     },
-    "Incubus": {
-      "genres": [
-        "alternative rock",
-        "rock",
-        "alternative",
-        "indie",
-        "incubus"
-      ]
-    },
-    "Vampire Weekend": {
-      "genres": [
-        "indie",
-        "indie rock",
-        "indie pop",
-        "alternative",
-        "rock"
-      ],
-      "favorited": true
-    },
-    "Saosin": {
-      "genres": [
-        "post-hardcore",
-        "emo",
-        "screamo",
-        "rock",
-        "emocore"
-      ]
-    },
     "Pianos Become The Teeth": {
       "genres": [
         "screamo",
@@ -1686,197 +1651,6 @@
         "post-hardcore",
         "post-rock screamo",
         "indie"
-      ]
-    },
-    "Russian Circles": {
-      "genres": [
-        "post-rock",
-        "post-metal",
-        "instrumental",
-        "experimental",
-        "math rock"
-      ]
-    },
-    "Counterparts": {
-      "genres": [
-        "melodic hardcore",
-        "metalcore",
-        "hardcore",
-        "melodic metalcore",
-        "canadian"
-      ]
-    },
-    "MESTIZA": {
-      "genres": [
-        "reggaeton",
-        "political",
-        "spanish",
-        "female fronted",
-        "catalan"
-      ]
-    },
-    "Silvana Estrada": {
-      "genres": [
-        "folk",
-        "mexico",
-        "singer-songwriter",
-        "chamber folk",
-        "jazz"
-      ],
-      "revisit": true
-    },
-    "Jawbox": {
-      "genres": [
-        "post-hardcore",
-        "post-punk",
-        "indie rock",
-        "dischord",
-        "indie"
-      ]
-    },
-    "Cocteau Twins": {
-      "genres": [
-        "dream pop",
-        "shoegaze",
-        "post-punk",
-        "ethereal",
-        "alternative"
-      ]
-    },
-    "David Bowie": {
-      "genres": [
-        "glam rock",
-        "rock",
-        "classic rock",
-        "80s",
-        "alternative"
-      ]
-    },
-    "The Anniversary": {
-      "genres": [
-        "emo",
-        "indie rock",
-        "indie",
-        "indie pop",
-        "alternative"
-      ],
-      "favorited": true
-    },
-    "New Order": {
-      "genres": [
-        "new wave",
-        "post-punk",
-        "electronic",
-        "80s",
-        "alternative"
-      ]
-    },
-    "The Shins": {
-      "genres": [
-        "indie",
-        "indie rock",
-        "indie pop",
-        "alternative",
-        "rock"
-      ]
-    },
-    "De La Soul": {
-      "genres": [
-        "hip-hop",
-        "rap",
-        "hip hop",
-        "alternative rap",
-        "jazz hop"
-      ]
-    },
-    "Converge": {
-      "genres": [
-        "hardcore",
-        "mathcore",
-        "metalcore",
-        "chaotic hardcore",
-        "noisecore"
-      ]
-    },
-    "Portishead": {
-      "genres": [
-        "trip-hop",
-        "electronic",
-        "female vocalists",
-        "chillout",
-        "trip hop"
-      ]
-    },
-    "Crime In Stereo": {
-      "genres": [
-        "melodic hardcore",
-        "hardcore",
-        "hardcore punk",
-        "punk rock",
-        "punk"
-      ]
-    },
-    "System Of A Down": {
-      "genres": [
-        "alternative metal",
-        "metal",
-        "nu metal",
-        "rock",
-        "alternative"
-      ]
-    },
-    "Worthwhile": {
-      "genres": [
-        "melodic hardcore",
-        "hardcore",
-        "pop punk",
-        "easycore",
-        "hardcore punk"
-      ]
-    },
-    "Sonic Youth": {
-      "genres": [
-        "experimental",
-        "post-punk",
-        "alternative",
-        "indie",
-        "noise rock"
-      ]
-    },
-    "The Mamas & The Papas": {
-      "genres": [
-        "classic rock",
-        "60s",
-        "rock",
-        "oldies",
-        "pop"
-      ]
-    },
-    "Animal Collective": {
-      "genres": [
-        "experimental",
-        "indie",
-        "freak folk",
-        "folk",
-        "indie rock"
-      ]
-    },
-    "Jorge Ben Jor": {
-      "genres": [
-        "samba",
-        "mpb",
-        "brazilian",
-        "bossa nova",
-        "brasil"
-      ]
-    },
-    "No Knife": {
-      "genres": [
-        "indie rock",
-        "math rock",
-        "indie",
-        "post-hardcore",
-        "emo"
       ]
     },
     "Pixies": {
@@ -1888,85 +1662,31 @@
         "rock"
       ]
     },
-    "R.E.M.": {
+    "Prince": {
       "genres": [
+        "funk",
+        "pop",
+        "soul",
         "rock",
-        "alternative rock",
-        "alternative",
+        "80s"
+      ]
+    },
+    "Sun Kil Moon": {
+      "genres": [
+        "folk",
+        "singer-songwriter",
         "indie",
+        "indie rock",
+        "americana"
+      ]
+    },
+    "Bala Desejo": {
+      "genres": [
+        "mpb",
+        "indie pop",
+        "brazilian",
+        "tropicalia",
         "pop"
-      ]
-    },
-    "Los Wembler's de Iquitos": {
-      "genres": [
-        "latin",
-        "peru",
-        "cumbia",
-        "chill906",
-        "dance"
-      ]
-    },
-    "Caroline Polachek": {
-      "genres": [
-        "art pop",
-        "pop",
-        "electronic",
-        "synthpop",
-        "indie pop"
-      ]
-    },
-    "Floating Points": {
-      "genres": [
-        "house",
-        "electronic",
-        "downtempo",
-        "jazz",
-        "deep house"
-      ]
-    },
-    "Robyn": {
-      "genres": [
-        "pop",
-        "electronic",
-        "swedish",
-        "female vocalists",
-        "dance"
-      ]
-    },
-    "Knapsack": {
-      "genres": [
-        "emo",
-        "indie rock",
-        "indie",
-        "midwest emo",
-        "punk"
-      ]
-    },
-    "A Tribe Called Quest": {
-      "genres": [
-        "hip-hop",
-        "rap",
-        "jazz hop",
-        "hip hop",
-        "funk"
-      ]
-    },
-    "Moose Blood": {
-      "genres": [
-        "emo",
-        "indie rock",
-        "indie",
-        "pop punk",
-        "punk"
-      ]
-    },
-    "Run\u2013D.M.C.": {
-      "genres": [
-        "rap",
-        "hip-hop",
-        "east coast rap",
-        "80s",
-        "golden age"
       ]
     },
     "Yeah Yeah Yeahs": {
@@ -1976,79 +1696,8 @@
         "female vocalists",
         "alternative",
         "rock"
-      ]
-    },
-    "Fleet Foxes": {
-      "genres": [
-        "folk",
-        "indie",
-        "folk rock",
-        "indie rock",
-        "lo-fi"
-      ]
-    },
-    "Talk Talk": {
-      "genres": [
-        "new wave",
-        "post-rock",
-        "80s",
-        "synth pop",
-        "pop"
-      ]
-    },
-    "The Fall of Troy": {
-      "genres": [
-        "post-hardcore",
-        "experimental",
-        "progressive",
-        "screamo",
-        "hardcore"
-      ]
-    },
-    "Solange": {
-      "genres": [
-        "rnb",
-        "soul",
-        "pop",
-        "female vocalists",
-        "hip-hop"
-      ]
-    },
-    "\u00c9dith Piaf": {
-      "genres": [
-        "french",
-        "chanson",
-        "female vocalists",
-        "jazz",
-        "chanson francaise"
-      ]
-    },
-    "Madonna": {
-      "genres": [
-        "pop",
-        "dance",
-        "female vocalists",
-        "80s",
-        "electronic"
-      ]
-    },
-    "Saves The Day": {
-      "genres": [
-        "pop punk",
-        "emo",
-        "indie",
-        "rock",
-        "punk"
-      ]
-    },
-    "Box Car Racer": {
-      "genres": [
-        "punk rock",
-        "pop punk",
-        "punk",
-        "rock",
-        "emo"
-      ]
+      ],
+      "revisit": true
     },
     "Daniel Caesar": {
       "genres": [
@@ -2059,13 +1708,148 @@
         "alternative rnb"
       ]
     },
-    "Pink Floyd": {
+    "Aiko el grupo": {
+      "genres": [
+        "spain",
+        "garage punk",
+        "pop",
+        "punk",
+        "indie pop"
+      ]
+    },
+    "Son Volt": {
+      "genres": [
+        "alt-country",
+        "americana",
+        "country",
+        "rock",
+        "alt country"
+      ]
+    },
+    "Prof": {
+      "genres": [
+        "rap",
+        "hip hop",
+        "hip-hop",
+        "underground rap",
+        "turntablism"
+      ]
+    },
+    "Sam Smith": {
+      "genres": [
+        "soul",
+        "pop",
+        "british",
+        "electronic",
+        "dance"
+      ]
+    },
+    "Sparta": {
+      "genres": [
+        "post-hardcore",
+        "alternative rock",
+        "rock",
+        "indie",
+        "alternative"
+      ]
+    },
+    "Animal Collective": {
+      "genres": [
+        "experimental",
+        "indie",
+        "freak folk",
+        "folk",
+        "indie rock"
+      ]
+    },
+    "Defeater": {
+      "genres": [
+        "hardcore",
+        "melodic hardcore",
+        "hardcore punk",
+        "modern hardcore",
+        "punk"
+      ]
+    },
+    "Aretha Franklin": {
+      "genres": [
+        "soul",
+        "jazz",
+        "female vocalists",
+        "blues",
+        "rhythm and blues"
+      ]
+    },
+    "The Cure": {
+      "genres": [
+        "post-punk",
+        "new wave",
+        "alternative",
+        "80s",
+        "rock"
+      ]
+    },
+    "Wednesday": {
+      "genres": [
+        "shoegaze",
+        "indie rock",
+        "alt-country",
+        "indie",
+        "noise rock"
+      ]
+    },
+    "Atoms For Peace": {
+      "genres": [
+        "electronic",
+        "experimental",
+        "alternative",
+        "indie rock",
+        "supergroup"
+      ]
+    },
+    "Coheed and Cambria": {
       "genres": [
         "progressive rock",
-        "psychedelic rock",
-        "classic rock",
         "rock",
-        "psychedelic"
+        "alternative",
+        "alternative rock",
+        "emo"
+      ]
+    },
+    "Joy Division": {
+      "genres": [
+        "post-punk",
+        "new wave",
+        "80s",
+        "alternative",
+        "indie"
+      ]
+    },
+    "Heatmiser": {
+      "genres": [
+        "indie rock",
+        "indie",
+        "alternative",
+        "rock",
+        "alternative rock"
+      ]
+    },
+    "Television": {
+      "genres": [
+        "post-punk",
+        "new wave",
+        "proto-punk",
+        "punk",
+        "rock"
+      ]
+    },
+    "Reggie And The Full Effect": {
+      "genres": [
+        "rock",
+        "alternative",
+        "emo",
+        "indie",
+        "pop punk"
       ]
     },
     "Bruce Springsteen": {
@@ -2077,48 +1861,39 @@
         "80s"
       ]
     },
-    "Penfold": {
+    "Incubus": {
       "genres": [
-        "emo",
-        "midwest emo",
-        "indie",
-        "real emo",
-        "indie emo"
-      ]
-    },
-    "La Dispute": {
-      "genres": [
-        "post-hardcore",
-        "screamo",
-        "experimental",
-        "hardcore",
-        "indie"
-      ]
-    },
-    "The Replacements": {
-      "genres": [
-        "punk",
-        "alternative",
-        "post-punk",
+        "alternative rock",
         "rock",
-        "alternative rock"
-      ]
-    },
-    "Thom Yorke": {
-      "genres": [
-        "electronic",
-        "experimental",
         "alternative",
         "indie",
+        "incubus"
+      ]
+    },
+    "Red House Painters": {
+      "genres": [
+        "slowcore",
+        "indie",
+        "folk",
+        "sadcore",
         "singer-songwriter"
       ]
     },
-    "Circa Survive": {
+    "Linkin Park": {
       "genres": [
-        "experimental",
-        "indie",
-        "alternative",
+        "nu metal",
         "rock",
+        "alternative rock",
+        "alternative",
+        "metal"
+      ]
+    },
+    "Say Anything": {
+      "genres": [
+        "alternative",
+        "indie",
+        "rock",
+        "indie rock",
         "emo"
       ]
     },
@@ -2131,130 +1906,22 @@
         "rock"
       ]
     },
-    "Four Year Strong": {
+    "LCD Soundsystem": {
       "genres": [
-        "pop punk",
-        "melodic hardcore",
-        "hardcore",
-        "beardcore",
-        "punk"
-      ]
-    },
-    "Slint": {
-      "genres": [
-        "post-rock",
-        "math rock",
-        "indie rock",
+        "electronic",
         "indie",
-        "post-hardcore"
-      ]
-    },
-    "Buzzcocks": {
-      "genres": [
-        "punk",
-        "punk rock",
-        "british",
-        "new wave",
-        "rock"
-      ]
-    },
-    "Dirty Projectors": {
-      "genres": [
-        "experimental",
-        "indie",
-        "freak folk",
-        "indie rock",
-        "folk"
-      ]
-    },
-    "To The Wind": {
-      "genres": [
-        "melodic hardcore",
-        "metalcore",
-        "hardcore",
-        "melodic metalcore",
-        "american"
-      ]
-    },
-    "El Grupo Nuevo De Omar Rodr\u00edguez-L\u00f3pez": {
-      "genres": [
-        "experimental",
-        "progressive rock",
-        "omar rodriguez-lopez",
-        "math rock"
-      ]
-    },
-    "The Story So Far": {
-      "genres": [
-        "pop punk",
-        "melodic hardcore",
-        "punk",
-        "pop-punk",
-        "punk rock"
-      ]
-    },
-    "Heatmiser": {
-      "genres": [
-        "indie rock",
-        "indie",
+        "dance",
         "alternative",
-        "rock",
-        "alternative rock"
-      ],
-      "revisit": true
-    },
-    "Television": {
-      "genres": [
-        "post-punk",
-        "new wave",
-        "proto-punk",
-        "punk",
-        "rock"
-      ]
-    },
-    "Joy Division": {
-      "genres": [
-        "post-punk",
-        "new wave",
-        "80s",
-        "alternative",
-        "indie"
-      ]
-    },
-    "Minor Threat": {
-      "genres": [
-        "hardcore punk",
-        "hardcore",
-        "straight edge",
-        "punk",
-        "punk rock"
-      ]
-    },
-    "Kraftwerk": {
-      "genres": [
-        "electronic",
-        "synthpop",
-        "german",
-        "electronica",
-        "krautrock"
-      ]
-    },
-    "The xx": {
-      "genres": [
-        "indie",
-        "electronic",
-        "post-punk",
-        "british",
-        "dance"
-      ]
-    },
-    "Caribou": {
-      "genres": [
-        "electronic",
-        "experimental",
-        "indie",
-        "canadian",
         "electronica"
+      ]
+    },
+    "Departures": {
+      "genres": [
+        "melodic hardcore",
+        "hardcore",
+        "hardcore punk",
+        "ukhc",
+        "modern hardcore"
       ]
     },
     "Dinosaur Jr.": {
@@ -2266,13 +1933,139 @@
         "alternative rock"
       ]
     },
-    "Atoms For Peace": {
+    "Nickel Creek": {
       "genres": [
+        "bluegrass",
+        "folk",
+        "acoustic",
+        "country",
+        "alt-country"
+      ]
+    },
+    "Boards of Canada": {
+      "genres": [
+        "ambient",
         "electronic",
-        "experimental",
+        "idm",
+        "chillout",
+        "electronica"
+      ]
+    },
+    "Melvins": {
+      "genres": [
+        "sludge",
+        "grunge",
+        "stoner rock",
+        "rock",
+        "metal"
+      ]
+    },
+    "envy": {
+      "genres": [
+        "screamo",
+        "post-rock",
+        "post-hardcore",
+        "hardcore",
+        "japanese"
+      ]
+    },
+    "Green Day": {
+      "genres": [
+        "punk rock",
+        "rock",
+        "punk",
+        "pop punk",
+        "alternative"
+      ]
+    },
+    "Kate Bush": {
+      "genres": [
+        "female vocalists",
+        "singer-songwriter",
+        "pop",
         "alternative",
+        "80s"
+      ]
+    },
+    "Worthwhile": {
+      "genres": [
+        "melodic hardcore",
+        "hardcore",
+        "pop punk",
+        "easycore",
+        "hardcore punk"
+      ]
+    },
+    "The Decemberists": {
+      "genres": [
+        "indie",
+        "folk",
         "indie rock",
-        "supergroup"
+        "alternative",
+        "indie pop"
+      ]
+    },
+    "Moose Blood": {
+      "genres": [
+        "emo",
+        "indie rock",
+        "indie",
+        "pop punk",
+        "punk"
+      ]
+    },
+    "Nick Drake": {
+      "genres": [
+        "folk",
+        "singer-songwriter",
+        "acoustic",
+        "indie",
+        "mellow"
+      ]
+    },
+    "Four Year Strong": {
+      "genres": [
+        "pop punk",
+        "melodic hardcore",
+        "hardcore",
+        "beardcore",
+        "punk"
+      ]
+    },
+    "Bob Dylan": {
+      "genres": [
+        "folk",
+        "singer-songwriter",
+        "classic rock",
+        "folk rock",
+        "rock"
+      ]
+    },
+    "Fiona Apple": {
+      "genres": [
+        "female vocalists",
+        "singer-songwriter",
+        "alternative",
+        "piano",
+        "indie"
+      ]
+    },
+    "Bon Iver": {
+      "genres": [
+        "folk",
+        "indie",
+        "singer-songwriter",
+        "acoustic",
+        "lo-fi"
+      ]
+    },
+    "Minor Threat": {
+      "genres": [
+        "hardcore punk",
+        "hardcore",
+        "straight edge",
+        "punk",
+        "punk rock"
       ]
     },
     "Bad Brains": {
@@ -2284,22 +2077,76 @@
         "punk rock"
       ]
     },
-    "Explosions In The Sky": {
+    "Caribou": {
       "genres": [
-        "post-rock",
-        "instrumental",
-        "ambient",
+        "electronic",
         "experimental",
-        "post rock"
+        "indie",
+        "canadian",
+        "electronica"
       ]
     },
-    "Pinback": {
+    "The Mamas & The Papas": {
       "genres": [
-        "indie rock",
-        "indie",
-        "alternative",
-        "indie pop",
-        "rock"
+        "classic rock",
+        "60s",
+        "rock",
+        "oldies",
+        "pop"
+      ]
+    },
+    "Madonna": {
+      "genres": [
+        "pop",
+        "dance",
+        "female vocalists",
+        "80s",
+        "electronic"
+      ]
+    },
+    "Talk Talk": {
+      "genres": [
+        "new wave",
+        "post-rock",
+        "80s",
+        "synth pop",
+        "pop"
+      ]
+    },
+    "Led Zeppelin": {
+      "genres": [
+        "classic rock",
+        "hard rock",
+        "rock",
+        "70s",
+        "progressive rock"
+      ]
+    },
+    "Touch\u00e9 Amor\u00e9": {
+      "genres": [
+        "screamo",
+        "hardcore",
+        "post-hardcore",
+        "melodic hardcore",
+        "hardcore punk"
+      ]
+    },
+    "Hyldon": {
+      "genres": [
+        "mpb",
+        "soul",
+        "brasil",
+        "brazilian",
+        "samba rock"
+      ]
+    },
+    "Maria Beth\u00e2nia": {
+      "genres": [
+        "mpb",
+        "bossa nova",
+        "female vocalists",
+        "brasil",
+        "brazilian"
       ]
     },
     "The Velvet Underground": {
@@ -2311,513 +2158,571 @@
         "alternative"
       ]
     },
-    "Son Volt": {
+    "Refused": {
       "genres": [
-        "alt-country",
-        "americana",
-        "country",
-        "rock",
-        "alt country"
-      ]
-    },
-    "Linkin Park": {
-      "genres": [
-        "nu metal",
-        "rock",
-        "alternative rock",
-        "alternative",
-        "metal"
-      ]
-    },
-    "The Cranberries": {
-      "genres": [
-        "rock",
-        "alternative",
-        "alternative rock",
-        "female vocalists",
-        "irish"
-      ]
-    },
-    "Aiko el grupo": {
-      "genres": [
-        "spain",
-        "garage punk",
-        "pop",
+        "hardcore",
+        "post-hardcore",
+        "hardcore punk",
         "punk",
+        "swedish"
+      ]
+    },
+    "Curtis Mayfield": {
+      "genres": [
+        "soul",
+        "funk",
+        "70s",
+        "rhythm and blues",
+        "rnb"
+      ]
+    },
+    "Caroline Polachek": {
+      "genres": [
+        "art pop",
+        "pop",
+        "electronic",
+        "synthpop",
         "indie pop"
       ]
     },
-    "Sparta": {
+    "De La Soul": {
       "genres": [
-        "post-hardcore",
-        "alternative rock",
-        "rock",
-        "indie",
-        "alternative"
+        "hip-hop",
+        "rap",
+        "hip hop",
+        "alternative rap",
+        "jazz hop"
       ]
+    },
+    "Russian Circles": {
+      "genres": [
+        "post-rock",
+        "post-metal",
+        "instrumental",
+        "experimental",
+        "math rock"
+      ]
+    },
+    "Silvana Estrada": {
+      "genres": [
+        "folk",
+        "mexico",
+        "singer-songwriter",
+        "chamber folk",
+        "jazz"
+      ]
+    },
+    "Ms. Lauryn Hill": {
+      "genres": [
+        "soul",
+        "rnb",
+        "neo-soul",
+        "hip hop",
+        "hip-hop"
+      ]
+    },
+    "The Get Up Kids": {
+      "genres": [
+        "emo",
+        "indie rock",
+        "indie",
+        "alternative",
+        "rock"
+      ]
+    },
+    "Nina Simone": {
+      "genres": [
+        "jazz",
+        "soul",
+        "blues",
+        "female vocalists",
+        "vocal jazz"
+      ]
+    },
+    "Converge": {
+      "genres": [
+        "hardcore",
+        "mathcore",
+        "metalcore",
+        "chaotic hardcore",
+        "noisecore"
+      ],
+      "revisit": true
     }
   },
   "tracks": {
-    "4dTtYVQzlwBMpVyQ4h3wy2": {
+    "7G2RDVxS0xvofNNNjA5yuN": {
       "favorited": true
     },
-    "63wKtmUg754umO8SglEL79": {
-      "favorited": true
-    },
-    "7Ay8wl9XzBJWSrpWZd20SM": {
-      "favorited": true
-    },
-    "0uxK2g1iDNZRgipetUk4B6": {
-      "favorited": true
-    },
-    "23G4qQjJkkrK3eq4kfhPyP": {
-      "favorited": true
-    },
-    "13N31D8yFuN4JeYYR7veY6": {
-      "favorited": true
-    },
-    "6HpGzfX7PR88GeCZPnOm5l": {
-      "favorited": true
-    },
-    "5gOlzxxl94eXariShwCikl": {
-      "favorited": true
-    },
-    "741AUHHkjuWe9wSNIhmApn": {
-      "favorited": true
-    },
-    "4XsH9zBWPOCdXoH9ZDdS8r": {
-      "favorited": true
-    },
-    "1LCm0lFnEsxR2oPqyHLGX9": {
-      "favorited": true
-    },
-    "40xhyfAPDoMtv494MfPevP": {
-      "favorited": true
-    },
-    "1RyIA87KYGavtK0xiVXwDH": {
-      "favorited": true
-    },
-    "4jWwrVcPvnVZBJRhpCTzdr": {
-      "favorited": true
-    },
-    "4yXKLDrHYrffSVmQOFdbDA": {
-      "favorited": true
-    },
-    "037VN2sgj8lEpLdlxC1LB5": {
-      "favorited": true
-    },
-    "1JEXG96amOfvR18sW1OXoI": {
-      "favorited": true
-    },
-    "7D0oudTdGBOy4R9u2T0CpM": {
-      "favorited": true
-    },
-    "5BcszN9nmsV91iVcEouwIY": {
-      "favorited": true
-    },
-    "2x45xqISlmmDJqxOqr8BuS": {
-      "favorited": true
-    },
-    "3UQAKY0SUEonxneROvv4jy": {
-      "favorited": true
-    },
-    "6jG2YzhxptolDzLHTGLt7S": {
-      "favorited": true
-    },
-    "1FoUsSi9BCTlNt2Vd7V8XA": {
-      "favorited": true
-    },
-    "3k4CoiIQXiNBrwrmbBMDxj": {
-      "favorited": true
-    },
-    "1xIxMz1sNQ4b6svH1GuTtF": {
-      "favorited": true
-    },
-    "3b4N7ky7jrPxogEXFrKAu8": {
-      "favorited": true
-    },
-    "1TQCMEos6Hx3thNdPQKuEz": {
-      "favorited": true
-    },
-    "0Fl4eWzVaMUOdXcOrj6F1q": {
-      "favorited": true
-    },
-    "4gE5Z3sOcWYyR0SezjvAj5": {
-      "favorited": true
-    },
-    "3bMc9oRaUWnojCrYTUXXcQ": {
-      "favorited": true
-    },
-    "5k8VqtBhkbAYakV5ZEFYNo": {
-      "favorited": true
-    },
-    "5KcJlvSdqSwGnrDKnO5pYC": {
-      "favorited": true
-    },
-    "3yRGkrzJpg7dxsLJkYpt1i": {
-      "favorited": true
-    },
-    "1w7cgGZR86yWz1pA2puVJD": {
-      "favorited": true
-    },
-    "3bOvAqhaZNSWpGVIvHEx8B": {
-      "favorited": true
-    },
-    "0mKGwFMHzTprtS2vpR3b6s": {
-      "favorited": true
-    },
-    "2bXI4Rbw1D7aVeHWLjn1Lb": {
-      "favorited": true
-    },
-    "5ByAIlEEnxYdvpnezg7HTX": {
-      "favorited": true
-    },
-    "1jNWu1c5ilLHUHT0DhLOQB": {
-      "favorited": true
-    },
-    "7uE2uoR0R3fDmbC7517Xej": {
-      "favorited": true
-    },
-    "4oXg7xT4ksBxHTx8PcmSXw": {
-      "favorited": true
-    },
-    "5YLGlPYkZBDXieMwzVve7g": {
-      "favorited": true
-    },
-    "3PvKRj31rcsVYhvYUNecOt": {
-      "favorited": true
-    },
-    "4Moi7ieLJMYEXuRIIIWajd": {
-      "favorited": true
-    },
-    "5floNyItopWZyB4IzKrJtW": {
-      "favorited": true
-    },
-    "1yKAqZoi8xWGLCf5vajroL": {
-      "favorited": true
-    },
-    "1W5XugQJGhnSATMI5n002M": {
-      "favorited": true
-    },
-    "4PUgCtazseRV9gXm8topvU": {
-      "favorited": true
-    },
-    "2Z9Yid1RueNo2sHS9x4gdh": {
-      "favorited": true
-    },
-    "5248GQLJjBofZRaSocbdix": {
-      "favorited": true
-    },
-    "7xCcUcMcGsIYGKUVgBZUw5": {
-      "favorited": true
-    },
-    "2SFq0UIiBWkBgky0fkrHP0": {
-      "favorited": true
-    },
-    "4heC6SnTBxTZZDef4AIBOk": {
-      "favorited": true
-    },
-    "1Hohk6AufHZOrrhMXZppax": {
-      "favorited": true
-    },
-    "4h37RgtBg9iynN3BIL5lFU": {
-      "favorited": true
-    },
-    "6B7wWLpJGJ9BPju5ytcUvh": {
-      "favorited": true
-    },
-    "6QleJ5pzSrQfDX0X3BjoUF": {
-      "favorited": true
-    },
-    "6ufcuVInt0ocHrUimDjGlb": {
-      "favorited": true
-    },
-    "6nN9AZNSUf8fpNihqSYGL3": {
-      "favorited": true
-    },
-    "3mJ6pNcFM2CkykCYSREdKT": {
-      "favorited": true
-    },
-    "3MRQ3CSjoiV1HFil8ykM9M": {
-      "favorited": true
-    },
-    "0TibDQQ58jAlr6jnl5AORf": {
-      "favorited": true
-    },
-    "206pWbsYCjW347Q7Ktk59Q": {
-      "favorited": true
-    },
-    "34adOTgKFHzK9qX4ZpWc2h": {
-      "favorited": true
-    },
-    "2XMAWynSTIst5KmLSv0Npf": {
-      "favorited": true
-    },
-    "7h1YqA5MZrRxmkUFpukRcp": {
-      "favorited": true
-    },
-    "0GjDYSp1bNyjggwPadwlyf": {
-      "favorited": true
-    },
-    "4wajJ1o7jWIg62YqpkHC7S": {
-      "favorited": true
-    },
-    "7oYlZ3vB5yxiKMrbHeFV9v": {
-      "favorited": true
-    },
-    "1lAzVXZ9DzOwN0aF7Aze3a": {
-      "favorited": true
-    },
-    "3sAWgPhfuCNG6x8a1I7TaF": {
-      "favorited": true
-    },
-    "6M8qGlfXHiwHYuRqm4Jxbo": {
-      "favorited": true
-    },
-    "0yneCr7BtccMuszp95XDFR": {
-      "favorited": true
-    },
-    "0gTRROuntlrPQ64W3J2Etv": {
-      "favorited": true
-    },
-    "794wvyVcaQpECvWCBQpaTB": {
-      "favorited": true
-    },
-    "0C5IKY0sXz4sg0hpx7HOz0": {
-      "favorited": true
-    },
-    "7jpSvCrFev9EBb5RSmoRTa": {
-      "favorited": true
-    },
-    "6LgJvl0Xdtc73RJ1mmpotq": {
-      "favorited": true
-    },
-    "35YyxFpE0ZTOoqFx5bADW8": {
-      "favorited": true
-    },
-    "1xzi1Jcr7mEi9K2RfzLOqS": {
-      "favorited": true
-    },
-    "5EkSUFQBE9YcoYMPTLyS8R": {
-      "favorited": true
-    },
-    "33rsCCLHklTQav9klbpnAi": {
+    "2rKNpHlulfkpb8ZecyFwGr": {
       "favorited": true
     },
     "6js2dqvUgaLgSoPSZaJvED": {
       "favorited": true
     },
-    "5DOtHgPOgU9hGAmr49WeBs": {
+    "1yaDnmzs2C38H7wYl3EKNu": {
       "favorited": true
     },
-    "0755vnFQZLSgHHWbR1qCjY": {
+    "0zVMzJ37VQNFUNvdxxat2E": {
       "favorited": true
     },
-    "0yz4DmJcHJnHadhpsJL91f": {
+    "4m6esDH7UC26ZfSQAaFG5e": {
       "favorited": true
     },
-    "5HAv1Ckfe50DUjv8ghwTrz": {
+    "4dTtYVQzlwBMpVyQ4h3wy2": {
       "favorited": true
     },
-    "1A4Hcus0L5Wt3us3atsVTk": {
+    "5EkSUFQBE9YcoYMPTLyS8R": {
       "favorited": true
     },
-    "5IiBasY5SrJOaz91nhKkye": {
-      "favorited": true
-    },
-    "13gEermNlu3a5CvSaxvTjV": {
-      "favorited": true
-    },
-    "2mqTtvbKxH7SoEQ2oGAnsA": {
-      "favorited": true
-    },
-    "4DActPOAtak2m8meZeMt3B": {
-      "favorited": true
-    },
-    "7JFMf61pdg8H8NEMgxdHYx": {
-      "favorited": true
-    },
-    "5pyoxDZ1PX0KxBxiRVxA4U": {
-      "favorited": true
-    },
-    "63OQupATfueTdZMWTxW03A": {
-      "favorited": true
-    },
-    "1krKp0OXeCH6SI5SXl8tu5": {
-      "favorited": true
-    },
-    "2rtGaCAeYtmcIvuZsvgTf6": {
-      "favorited": true
-    },
-    "7kbby5qVLqlNam5yd2gvrW": {
-      "favorited": true
-    },
-    "4IBOCVRedkQ3obCIaTqcxm": {
-      "favorited": true
-    },
-    "3pnnQ8JI4hK6By6t07ci0k": {
-      "favorited": true
-    },
-    "6wnmRxEbwUK7WLyUtiRuT7": {
-      "favorited": true
-    },
-    "4r5VaK6H1bq0cTGPMTN97Z": {
-      "favorited": true
-    },
-    "4DIabg0zSDn6xoq810Spqn": {
-      "favorited": true
-    },
-    "7mzbAXvwMnQnc9uMgRJA4M": {
-      "favorited": true
-    },
-    "0xivCtzVVrdeq32s8EnOO6": {
-      "favorited": true
-    },
-    "5hgnY0mVcVetszbb85qeDg": {
-      "favorited": true
-    },
-    "4LrfsgQ5AGouvH3PlxW2PC": {
-      "favorited": true
-    },
-    "61fT12l0R16DiB9dd4zkfy": {
-      "favorited": true
-    },
-    "7tefUew2RUuSAqHyegMoY1": {
-      "favorited": true
-    },
-    "2g8HN35AnVGIk7B8yMucww": {
+    "5248GQLJjBofZRaSocbdix": {
       "favorited": true
     },
     "0314PeD1sQNonfVWix3B2K": {
       "favorited": true
     },
-    "6MExehlWTF49eRhXAXRpB1": {
+    "6jG2YzhxptolDzLHTGLt7S": {
       "favorited": true
     },
-    "3f4kmk93GRCqYYwVvmw38y": {
+    "4Wgj6jzoI2gYlumXdYAB8U": {
       "favorited": true
     },
-    "51ZcdfSwPaytby7XhVXsSz": {
+    "5HAv1Ckfe50DUjv8ghwTrz": {
       "favorited": true
     },
-    "63FrXif0Pdu4NAPvTh87mw": {
+    "4tYpYYoOI7WDxbCnPninwE": {
       "favorited": true
     },
-    "2apsFfsxR5nkYkHaDMOs74": {
+    "2g8HN35AnVGIk7B8yMucww": {
       "favorited": true
     },
-    "6w9BH6tSPMgl6KRz1YuONG": {
+    "6wwrYruEgWlowPDZMq5116": {
       "favorited": true
     },
-    "2bW59KVppXh5Ois2LYyZKx": {
+    "34adOTgKFHzK9qX4ZpWc2h": {
       "favorited": true
     },
-    "19aUuDd6udp1ACNo9t3IuZ": {
+    "2SFq0UIiBWkBgky0fkrHP0": {
       "favorited": true
     },
-    "7hdOchAKFm6FwzyevcQ56y": {
+    "1KmGTJpUF6zTN3JILdXBFe": {
       "favorited": true
     },
-    "3cuuNOsQovbVYAl1BJ23kG": {
+    "1TAj8x0d58aU7BYnmYaVbS": {
       "favorited": true
     },
-    "0cM1XvQRn89wXkEHAwGjKH": {
+    "4LrfsgQ5AGouvH3PlxW2PC": {
       "favorited": true
     },
-    "0o15nDyr5XH7vy3MV1JK8B": {
+    "4r5VaK6H1bq0cTGPMTN97Z": {
       "favorited": true
     },
-    "2KFg8kjYy0rYjWsXGhEQHN": {
+    "0fYwfZcgijhIOyXn0RVPwq": {
       "favorited": true
     },
-    "5wPKrgX6V7fKBBAnLym8vV": {
+    "5pyoxDZ1PX0KxBxiRVxA4U": {
       "favorited": true
     },
-    "1EhvYd5e7vkoN3udEN1Vyl": {
+    "6M8qGlfXHiwHYuRqm4Jxbo": {
       "favorited": true
     },
-    "4pWIwnnqx8k01fuF95UMIg": {
+    "4DIabg0zSDn6xoq810Spqn": {
       "favorited": true
     },
-    "6YLmaHGMKaKHCeEa03XRbI": {
-      "favorited": true
-    },
-    "5onGESUxi3P9xLt311oS59": {
-      "favorited": true
-    },
-    "6MN3vF1tGzG7nkAOLjK0YG": {
+    "4wajJ1o7jWIg62YqpkHC7S": {
       "favorited": true
     },
     "1C6Tmo58WMtnAPdxYz9qCz": {
       "favorited": true
     },
+    "7Ay8wl9XzBJWSrpWZd20SM": {
+      "favorited": true
+    },
+    "4gE5Z3sOcWYyR0SezjvAj5": {
+      "favorited": true
+    },
+    "1Hohk6AufHZOrrhMXZppax": {
+      "favorited": true
+    },
+    "7uE2uoR0R3fDmbC7517Xej": {
+      "favorited": true
+    },
+    "0TibDQQ58jAlr6jnl5AORf": {
+      "favorited": true
+    },
+    "0755vnFQZLSgHHWbR1qCjY": {
+      "favorited": true
+    },
+    "4yXKLDrHYrffSVmQOFdbDA": {
+      "favorited": true
+    },
+    "1yKAqZoi8xWGLCf5vajroL": {
+      "favorited": true
+    },
+    "63wKtmUg754umO8SglEL79": {
+      "favorited": true
+    },
+    "13N31D8yFuN4JeYYR7veY6": {
+      "favorited": true
+    },
+    "1MpCaOeUWhox2Fgigbe1cL": {
+      "favorited": true
+    },
+    "7JFMf61pdg8H8NEMgxdHYx": {
+      "favorited": true
+    },
+    "0yz4DmJcHJnHadhpsJL91f": {
+      "favorited": true
+    },
+    "3333YXdcyths5CB8v28dZj": {
+      "favorited": true
+    },
+    "4jWwrVcPvnVZBJRhpCTzdr": {
+      "favorited": true
+    },
+    "2apsFfsxR5nkYkHaDMOs74": {
+      "favorited": true
+    },
+    "3Ru4nUidPRMnC8eBWM8DoQ": {
+      "favorited": true
+    },
+    "5hWB5G4VREGDSUYMRXUjlg": {
+      "favorited": true
+    },
+    "7jpSvCrFev9EBb5RSmoRTa": {
+      "favorited": true
+    },
+    "3yRGkrzJpg7dxsLJkYpt1i": {
+      "favorited": true
+    },
+    "13gEermNlu3a5CvSaxvTjV": {
+      "favorited": true
+    },
+    "0mKGwFMHzTprtS2vpR3b6s": {
+      "favorited": true
+    },
+    "2bW59KVppXh5Ois2LYyZKx": {
+      "favorited": true
+    },
+    "74wRImrG5kiZ6ltyaGJd6w": {
+      "favorited": true
+    },
+    "0Fl4eWzVaMUOdXcOrj6F1q": {
+      "favorited": true
+    },
+    "741AUHHkjuWe9wSNIhmApn": {
+      "favorited": true
+    },
+    "6QleJ5pzSrQfDX0X3BjoUF": {
+      "favorited": true
+    },
+    "4pWIwnnqx8k01fuF95UMIg": {
+      "favorited": true
+    },
+    "35YyxFpE0ZTOoqFx5bADW8": {
+      "favorited": true
+    },
+    "4DActPOAtak2m8meZeMt3B": {
+      "favorited": true
+    },
+    "6w9BH6tSPMgl6KRz1YuONG": {
+      "favorited": true
+    },
+    "2pMPWE7PJH1PizfgGRMnR9": {
+      "favorited": true
+    },
+    "5KcJlvSdqSwGnrDKnO5pYC": {
+      "favorited": true
+    },
+    "1xIxMz1sNQ4b6svH1GuTtF": {
+      "favorited": true
+    },
+    "3UQAKY0SUEonxneROvv4jy": {
+      "favorited": true
+    },
+    "1FoUsSi9BCTlNt2Vd7V8XA": {
+      "favorited": true
+    },
+    "206pWbsYCjW347Q7Ktk59Q": {
+      "favorited": true
+    },
+    "7lUA4P03AhwAw40JHkdyGr": {
+      "favorited": true
+    },
+    "3bOvAqhaZNSWpGVIvHEx8B": {
+      "favorited": true
+    },
+    "5IiBasY5SrJOaz91nhKkye": {
+      "favorited": true
+    },
     "2ZS8jyDUXuAaNWxiwsOCER": {
       "favorited": true
     },
-    "3CmHvyZQQAGkKkTjTBFWN6": {
-      "revisit": true
+    "0C5IKY0sXz4sg0hpx7HOz0": {
+      "favorited": true
     },
-    "7DjRxbsw5iL7u2JMRzvQln": {
-      "revisit": true
+    "2rtGaCAeYtmcIvuZsvgTf6": {
+      "favorited": true
     },
-    "01HmPLtKDSloi6t10gW1El": {
-      "revisit": true
+    "3b4N7ky7jrPxogEXFrKAu8": {
+      "favorited": true
     },
-    "1MpCaOeUWhox2Fgigbe1cL": {
-      "revisit": true
+    "6B7wWLpJGJ9BPju5ytcUvh": {
+      "favorited": true
     },
-    "48325rJQBoR9psbFG9FY0S": {
-      "revisit": true
+    "5DOtHgPOgU9hGAmr49WeBs": {
+      "favorited": true
     },
-    "6JuciNGTpoeckJY8XAcoyd": {
-      "revisit": true
+    "3pnnQ8JI4hK6By6t07ci0k": {
+      "favorited": true
     },
-    "6yh3Hdk6LZXQAsuq028hwU": {
-      "revisit": true
+    "23G4qQjJkkrK3eq4kfhPyP": {
+      "favorited": true
     },
-    "6XYbMGvtl6tlPoGWaiH7EY": {
-      "revisit": true
+    "19aUuDd6udp1ACNo9t3IuZ": {
+      "favorited": true
     },
-    "0WRdOVjKkKWyEPW2kZtVpS": {
-      "revisit": true
+    "1W5XugQJGhnSATMI5n002M": {
+      "favorited": true
+    },
+    "0yneCr7BtccMuszp95XDFR": {
+      "favorited": true
+    },
+    "0xivCtzVVrdeq32s8EnOO6": {
+      "favorited": true
+    },
+    "3mJ6pNcFM2CkykCYSREdKT": {
+      "favorited": true
+    },
+    "7tF4MIpnzik72Bx6qH3ToM": {
+      "favorited": true
+    },
+    "5floNyItopWZyB4IzKrJtW": {
+      "favorited": true
+    },
+    "794wvyVcaQpECvWCBQpaTB": {
+      "favorited": true
+    },
+    "5k8VqtBhkbAYakV5ZEFYNo": {
+      "favorited": true
+    },
+    "1jNWu1c5ilLHUHT0DhLOQB": {
+      "favorited": true
+    },
+    "7oYlZ3vB5yxiKMrbHeFV9v": {
+      "favorited": true
+    },
+    "40xhyfAPDoMtv494MfPevP": {
+      "favorited": true
+    },
+    "3MRQ3CSjoiV1HFil8ykM9M": {
+      "favorited": true
+    },
+    "34rV39sdNLBQ2g1xYdqeMl": {
+      "favorited": true
+    },
+    "2hb8KK0qXLVNKIvVnfJkFj": {
+      "favorited": true
+    },
+    "2LjkT4gu5wO4JdeEYl0fMY": {
+      "favorited": true
+    },
+    "5hgnY0mVcVetszbb85qeDg": {
+      "favorited": true
+    },
+    "6YLmaHGMKaKHCeEa03XRbI": {
+      "favorited": true
+    },
+    "7i8VODqaKoo8VimndSROGt": {
+      "favorited": true
+    },
+    "4PUgCtazseRV9gXm8topvU": {
+      "favorited": true
+    },
+    "2bXI4Rbw1D7aVeHWLjn1Lb": {
+      "favorited": true
+    },
+    "7cioKB5CHVzk09SOtTyn0T": {
+      "favorited": true
+    },
+    "1RyIA87KYGavtK0xiVXwDH": {
+      "favorited": true
+    },
+    "0cM1XvQRn89wXkEHAwGjKH": {
+      "favorited": true
     },
     "0FZmAvivvifvtN3pZScbw1": {
+      "favorited": true
+    },
+    "6ufcuVInt0ocHrUimDjGlb": {
+      "favorited": true
+    },
+    "0msrDPXxZpts4FRnoX0bFr": {
+      "favorited": true
+    },
+    "33rsCCLHklTQav9klbpnAi": {
+      "favorited": true
+    },
+    "2mqTtvbKxH7SoEQ2oGAnsA": {
+      "favorited": true
+    },
+    "2Z9Yid1RueNo2sHS9x4gdh": {
+      "favorited": true
+    },
+    "1JEXG96amOfvR18sW1OXoI": {
+      "favorited": true
+    },
+    "0o15nDyr5XH7vy3MV1JK8B": {
+      "favorited": true
+    },
+    "7hdOchAKFm6FwzyevcQ56y": {
+      "favorited": true
+    },
+    "4oXg7xT4ksBxHTx8PcmSXw": {
+      "favorited": true
+    },
+    "1krKp0OXeCH6SI5SXl8tu5": {
+      "favorited": true
+    },
+    "0lq9TEXMVVSDcaj1azH6Po": {
+      "favorited": true
+    },
+    "7xCcUcMcGsIYGKUVgBZUw5": {
+      "favorited": true
+    },
+    "7mzbAXvwMnQnc9uMgRJA4M": {
+      "favorited": true
+    },
+    "5ByAIlEEnxYdvpnezg7HTX": {
+      "favorited": true
+    },
+    "5onGESUxi3P9xLt311oS59": {
+      "favorited": true
+    },
+    "0GjDYSp1bNyjggwPadwlyf": {
+      "favorited": true
+    },
+    "3PvKRj31rcsVYhvYUNecOt": {
+      "favorited": true
+    },
+    "2x45xqISlmmDJqxOqr8BuS": {
+      "favorited": true
+    },
+    "4heC6SnTBxTZZDef4AIBOk": {
+      "favorited": true
+    },
+    "7tefUew2RUuSAqHyegMoY1": {
+      "favorited": true
+    },
+    "7jr8MCVN9KF5y0VGedkvD1": {
+      "favorited": true
+    },
+    "4Moi7ieLJMYEXuRIIIWajd": {
+      "favorited": true
+    },
+    "07OzC5JlcaDwEkzWmvqp6y": {
+      "favorited": true
+    },
+    "6MExehlWTF49eRhXAXRpB1": {
+      "favorited": true
+    },
+    "2KFg8kjYy0rYjWsXGhEQHN": {
+      "favorited": true
+    },
+    "0z1o5L7HJx562xZSATcIpY": {
+      "favorited": true
+    },
+    "49sXkAcR5LvOrtq5Qcn5cf": {
+      "favorited": true
+    },
+    "12IvmFs4HZJEYzq7VhDKR8": {
+      "favorited": true
+    },
+    "7hfIiNdcy5c0MWxnoMvCYN": {
+      "favorited": true
+    },
+    "63FrXif0Pdu4NAPvTh87mw": {
+      "favorited": true
+    },
+    "1xzi1Jcr7mEi9K2RfzLOqS": {
+      "favorited": true
+    },
+    "480RYI6U5tuotNf7iGavJp": {
+      "favorited": true
+    },
+    "61fT12l0R16DiB9dd4zkfy": {
+      "favorited": true
+    },
+    "7kbby5qVLqlNam5yd2gvrW": {
+      "favorited": true
+    },
+    "63W4sfeRTTiNKFLAzUJHFe": {
+      "favorited": true
+    },
+    "74DrpM6tAWvcMu6Uxko9xb": {
       "revisit": true
     },
-    "13Q0XPq59cQ6E948WMPYR0": {
+    "2SM84jW3t0PBo1NRDWkffV": {
       "revisit": true
     },
-    "4osQRyD4y6IU0aCNbayD2D": {
+    "5vs3jJj3AhJMgIycoiF5Tx": {
       "revisit": true
     },
-    "6MEDfjHxnVNcYmHe3mM6L2": {
+    "5P5se1CMPuBSmpSStFfi4H": {
       "revisit": true
     },
-    "0h9fyX5gfrSfOCdwdhOfY2": {
+    "6AhI8p5cNtdEYgII20yNxa": {
       "revisit": true
     },
-    "2KpjKWyj0TI0FmGgENEKr6": {
+    "0Qmu2DYKupUetYUbxqvtw2": {
       "revisit": true
     },
-    "1zDbF5Dj7qNSLUvQj0vnD5": {
+    "6CwxNDxNALO0Kln1vcJEKO": {
       "revisit": true
     },
-    "3qltix067pkeQY6xP6q0uL": {
+    "642vJ8flrlIUEfPOTk98fV": {
       "revisit": true
     },
-    "3dtLsYjnkFSaFiw4rF8Kay": {
+    "4EndPA8b6FDWYp1RgsnLEB": {
+      "revisit": true
+    },
+    "1yupbrI7ROhigIHpQBevPh": {
+      "revisit": true
+    },
+    "6oMBDrzwGG1BzCoZyPyGuG": {
+      "revisit": true
+    },
+    "1SH5MqcOHv9LOavHb84jSQ": {
+      "revisit": true
+    },
+    "2OtKvk9zsA9hbRJKMiyy3b": {
+      "revisit": true
+    },
+    "5z2yV9l5arJtFVTg0v0vKf": {
+      "revisit": true
+    },
+    "5ODIUPpNdmVZRjTMHa0Vjp": {
+      "revisit": true
+    },
+    "2OIca10vMnqiJyDELHiPJb": {
+      "revisit": true
+    },
+    "3UbJXF3g7NcZMtGmeIARmM": {
+      "revisit": true
+    },
+    "1AcBPyGmkPkvC9jeuYoXSn": {
       "revisit": true
     }
   },
   "album_tops": {
     "decades": {
-      "2000s": 86,
-      "2020s": 22,
-      "1970s": 33,
-      "2010s": 66,
-      "1990s": 48,
-      "1960s": 11,
-      "1980s": 33
+      "2010s": 72,
+      "1970s": 43,
+      "1990s": 41,
+      "2000s": 82,
+      "1980s": 36,
+      "2020s": 21,
+      "1960s": 11
     }
   }
 }
