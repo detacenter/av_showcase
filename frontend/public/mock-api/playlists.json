@@ -3,62 +3,8 @@
     {
       "id": "pl-812638386",
       "name": "Heavy Rotation",
-      "created_at": "2026-08-04T14:10:21.301364Z",
-      "updated_at": "2026-08-04T14:10:21.301364Z",
-      "rule_groups": [],
-      "pinned_track_ids": [
-        "4R3yRj2LLHINYLf68HdlIK",
-        "1yr5rQnDL8QhJWCI6rPId8",
-        "4aeCuOowYXJXrMZsVHZbfF",
-        "3k4CoiIQXiNBrwrmbBMDxj",
-        "3pacfC2tJMJsrKk2baf5Bn",
-        "1JfNuvdAIqI3ggkzXuBvPp",
-        "4MdEYuoGhG2RTG3erOiu2H",
-        "3GAUibwOunKHF0Uo8JhvZi",
-        "5GO0qzKdvndy7g9r0iKEDz",
-        "4VWdOayiIDPEZNf7qBRylL"
-      ],
-      "excluded_track_ids": [],
-      "track_count": 10,
-      "art_filenames": [
-        "radiohead_kid_a.jpg",
-        "blink_182_blink_182.jpg",
-        "a_tribe_called_quest_the_low_end_theory.jpg",
-        "cocteau_twins_treasure.jpg"
-      ]
-    },
-    {
-      "id": "pl-329750614",
-      "name": "Late Night",
-      "created_at": "2026-08-04T14:10:21.301364Z",
-      "updated_at": "2026-08-04T14:10:21.301364Z",
-      "rule_groups": [],
-      "pinned_track_ids": [
-        "3eV5sJVmS9Bt02k18YhulL",
-        "2ZS8jyDUXuAaNWxiwsOCER",
-        "5egqKwgK5r5rvGD1LrtR7J",
-        "2LlQb7Uoj1kKyGhlkBf9aC",
-        "1ZoK9LKJppVYpc5b1QtpD8",
-        "2Dc5eGTFOvu34x6ONYAdGt",
-        "4iO8rh9VV9Qi7QVFpfWvOP",
-        "6zrsmzrMoxNkXEQLubCWtA",
-        "1xq9GyfTbElPmxFMcKHNiI",
-        "3MgUsfZlYW1FakZT6oIW78"
-      ],
-      "excluded_track_ids": [],
-      "track_count": 10,
-      "art_filenames": [
-        "linkin_park_hybrid_theory_bonus_edition.jpg",
-        "refused_the_shape_of_punk_to_come_deluxe_edition.jpg",
-        "empire_empire_i_was_a_lonely_estate_when_the_sea_became_a_giant.jpg",
-        null
-      ]
-    },
-    {
-      "id": "pl-824893558",
-      "name": "Discovery Pile",
-      "created_at": "2026-08-04T14:10:21.301364Z",
-      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "created_at": "2026-08-04T14:29:29.269591Z",
+      "updated_at": "2026-08-04T14:29:29.269591Z",
       "rule_groups": [],
       "pinned_track_ids": [
         "0yCTslZ7KticDxTICEBnuz",
@@ -75,17 +21,17 @@
       "excluded_track_ids": [],
       "track_count": 10,
       "art_filenames": [
-        "kanye_west_the_life_of_pablo.jpg",
         "jesusun_kil_moon_jesu_sun_kil_moon.jpg",
         "vampire_weekend_modern_vampires_of_the_city.jpg",
-        "sun_kil_moon_admiral_fell_promises.jpg"
+        "saosin_starting_over_again.jpg",
+        null
       ]
     },
     {
-      "id": "pl-824380384",
-      "name": "Sunday Morning",
-      "created_at": "2026-08-04T14:10:21.301364Z",
-      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "id": "pl-329750614",
+      "name": "Late Night",
+      "created_at": "2026-08-04T14:29:29.269591Z",
+      "updated_at": "2026-08-04T14:29:29.269591Z",
       "rule_groups": [],
       "pinned_track_ids": [
         "0GrHWVTDsaWcD4nrCGr7VE",
@@ -102,17 +48,71 @@
       "excluded_track_ids": [],
       "track_count": 10,
       "art_filenames": [
-        "aiko_el_grupo_me_est\u00e1n_apuntando_con_un_arma.jpg",
-        "empire_empire_i_was_a_lonely_estate_you_will_eventually_be_forgotten.jpg",
-        "led_zeppelin_houses_of_the_holy_remaster.jpg",
+        "gil_scott_heron_were_new_here.jpg",
+        "radiohead_ok_computer.jpg",
+        "bruce_springsteen_nebraska.jpg",
         "system_of_a_down_mezmerize.jpg"
       ]
     },
     {
-      "id": "pl-275378331",
+      "id": "pl-824893558",
+      "name": "Discovery Pile",
+      "created_at": "2026-08-04T14:29:29.269591Z",
+      "updated_at": "2026-08-04T14:29:29.269591Z",
+      "rule_groups": [],
+      "pinned_track_ids": [
+        "6mzSjhOF5CaH97ySiSzsot",
+        "5liRQziURPzqcHJpc5JI6w",
+        "1tzXnPndBrd2G5GXrOBc1c",
+        "0Cr3j6qhDItBeFbAzdXtN2",
+        "0WEBoDCjH1SzM1dGlU8nen",
+        "6Hmj7SrLRbreLVfVS7mV1S",
+        "7D0oudTdGBOy4R9u2T0CpM",
+        "6pa63bus7BPu8g8rvJISSj",
+        "1cf8cuou05R0DpFmDpUj61",
+        "3yRGkrzJpg7dxsLJkYpt1i"
+      ],
+      "excluded_track_ids": [],
+      "track_count": 10,
+      "art_filenames": [
+        "os_tinco\u00e3s_os_tinco\u00e3s.jpg",
+        "refused_the_shape_of_punk_to_come_deluxe_edition.jpg",
+        "empire_empire_i_was_a_lonely_estate_early_discography.jpg",
+        "fever_ray_fever_ray.jpg"
+      ]
+    },
+    {
+      "id": "pl-824380384",
+      "name": "Sunday Morning",
+      "created_at": "2026-08-04T14:29:29.269591Z",
+      "updated_at": "2026-08-04T14:29:29.269591Z",
+      "rule_groups": [],
+      "pinned_track_ids": [
+        "0KQbsC4lUfm0qmRW68g6BF",
+        "73uJybGAhwGRD9MZYrOmTY",
+        "7r2VUYH79UT8dTaKgELmOC",
+        "0F0imGVd7KnvQPkBmVtPo9",
+        "6U8iJR8PSjJndaj7pDMGQu",
+        "0qTdLAVMXvWoangDwzSLEU",
+        "7tlAWur1RNnqWbuoL5qWqG",
+        "1Ewb1UPrJC9mCJiLPa2sk0",
+        "7stdOFyftbIPvEmmRrHe66",
+        "4yvgL1k1WkuSEHkMPhDF5X"
+      ],
+      "excluded_track_ids": [],
+      "track_count": 10,
+      "art_filenames": [
+        "new_order_power_corruption_and_lies.jpg",
+        "the_smashing_pumpkins_siamese_dream_deluxe_edition.jpg",
+        "atoms_for_peace_amok.jpg",
+        "solange_a_seat_at_the_table.jpg"
+      ]
+    },
+    {
+      "id": "pl-372421473",
       "name": "1960s",
-      "created_at": "2026-08-04T14:10:21.301364Z",
-      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "created_at": "2026-08-04T14:29:29.269591Z",
+      "updated_at": "2026-08-04T14:29:29.269591Z",
       "rule_groups": [
         {
           "conditions": [
@@ -129,17 +129,17 @@
       "excluded_track_ids": [],
       "track_count": 23,
       "art_filenames": [
+        "aretha_franklin_i_never_loved_a_man_the_way_i_love_you.jpg",
+        "miles_davis_in_a_silent_way.jpg",
         "milton_nascimento_travessia.jpg",
-        "gal_costa_gal_costa.jpg",
-        "bob_dylan_blonde_on_blonde.jpg",
-        "nina_simone_i_put_a_spell_on_you.jpg"
+        "led_zeppelin_led_zeppelin_ii_remaster.jpg"
       ]
     },
     {
-      "id": "pl-264682066",
+      "id": "pl-464425136",
       "name": "1970s",
-      "created_at": "2026-08-04T14:10:21.301364Z",
-      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "created_at": "2026-08-04T14:29:29.269591Z",
+      "updated_at": "2026-08-04T14:29:29.269591Z",
       "rule_groups": [
         {
           "conditions": [
@@ -156,17 +156,17 @@
       "excluded_track_ids": [],
       "track_count": 139,
       "art_filenames": [
-        "pink_floyd_wish_you_were_here.jpg",
-        "rita_lee_rita_lee.jpg",
-        "led_zeppelin_houses_of_the_holy_remaster.jpg",
-        "neu_neu.jpg"
+        "l\u00f4_borges_clube_da_esquina.jpg",
+        "jorge_ben_jor_solta_o_pav\u00e3o_1975.jpg",
+        "television_marquee_moon.jpg",
+        "l\u00f4_borges_l\u00f4_borges.jpg"
       ]
     },
     {
-      "id": "pl-467811629",
+      "id": "pl-986158461",
       "name": "1980s",
-      "created_at": "2026-08-04T14:10:21.301364Z",
-      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "created_at": "2026-08-04T14:29:29.269591Z",
+      "updated_at": "2026-08-04T14:29:29.269591Z",
       "rule_groups": [
         {
           "conditions": [
@@ -183,17 +183,17 @@
       "excluded_track_ids": [],
       "track_count": 209,
       "art_filenames": [
-        "jo\u00e3o_bosco_comiss\u00e3o_de_frente.jpg",
-        "gilberto_gil_luar.jpg",
-        "michael_jackson_thriller.jpg",
-        "talking_heads_remain_in_light.jpg"
+        "kate_bush_never_for_ever_2018_remaster.jpg",
+        "u2_the_joshua_tree.jpg",
+        "electric_light_orchestra_xanadu.jpg",
+        "madonna_true_blue.jpg"
       ]
     },
     {
-      "id": "pl-709697974",
+      "id": "pl-471396998",
       "name": "1990s",
-      "created_at": "2026-08-04T14:10:21.301364Z",
-      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "created_at": "2026-08-04T14:29:29.269591Z",
+      "updated_at": "2026-08-04T14:29:29.269591Z",
       "rule_groups": [
         {
           "conditions": [
@@ -210,17 +210,17 @@
       "excluded_track_ids": [],
       "track_count": 205,
       "art_filenames": [
-        "a_tribe_called_quest_midnight_marauders.jpg",
-        "red_house_painters_red_house_painters_ii.jpg",
-        "envy_from_here_to_eternity.jpg",
-        "no_knife_fire_in_the_city_of_automatons.jpg"
+        "penfold_amateurs_professionals.jpg",
+        "refused_the_shape_of_punk_to_come_deluxe_edition.jpg",
+        "a_tribe_called_quest_the_low_end_theory.jpg",
+        "daft_punk_homework.jpg"
       ]
     },
     {
-      "id": "pl-669789198",
+      "id": "pl-266657410",
       "name": "2000s",
-      "created_at": "2026-08-04T14:10:21.301364Z",
-      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "created_at": "2026-08-04T14:29:29.269591Z",
+      "updated_at": "2026-08-04T14:29:29.269591Z",
       "rule_groups": [
         {
           "conditions": [
@@ -237,17 +237,17 @@
       "excluded_track_ids": [],
       "track_count": 368,
       "art_filenames": [
-        "\u00e9dith_piaf_edith_piaf_the_best_of.jpg",
-        "melvins_a_senile_animal.jpg",
-        null,
-        "circa_survive_on_letting_go.jpg"
+        "dirty_projectors_bitte_orca.jpg",
+        "radiohead_kid_a.jpg",
+        "bon_iver_for_emma_forever_ago.jpg",
+        "system_of_a_down_mezmerize.jpg"
       ]
     },
     {
-      "id": "pl-780585091",
+      "id": "pl-807987941",
       "name": "2010s",
-      "created_at": "2026-08-04T14:10:21.301364Z",
-      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "created_at": "2026-08-04T14:29:29.269591Z",
+      "updated_at": "2026-08-04T14:29:29.269591Z",
       "rule_groups": [
         {
           "conditions": [
@@ -264,17 +264,17 @@
       "excluded_track_ids": [],
       "track_count": 315,
       "art_filenames": [
-        "sun_kil_moon_admiral_fell_promises.jpg",
-        "fiona_apple_the_idler_wheel_is_wiser_than_the_driver_of_the_.jpg",
-        "counterparts_nothing_left_to_love.jpg",
-        "i_kill_giants_i_kill_giants_remastered.jpg"
+        "the_decemberists_the_king_is_dead.jpg",
+        "la_dispute_rooms_of_the_house.jpg",
+        "lcd_soundsystem_this_is_happening.jpg",
+        "ought_room_inside_the_world.jpg"
       ]
     },
     {
-      "id": "pl-904433398",
+      "id": "pl-489879277",
       "name": "2020s",
-      "created_at": "2026-08-04T14:10:21.301364Z",
-      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "created_at": "2026-08-04T14:29:29.269591Z",
+      "updated_at": "2026-08-04T14:29:29.269591Z",
       "rule_groups": [
         {
           "conditions": [
@@ -291,10 +291,10 @@
       "excluded_track_ids": [],
       "track_count": 65,
       "art_filenames": [
+        "aiko_el_grupo_me_est\u00e1n_apuntando_con_un_arma.jpg",
         "prof_powderhorn_suites.jpg",
-        "caroline_polachek_desire_i_want_to_turn_into_you.jpg",
-        "axolotes_mexicanos_4ever.jpg",
-        "aiko_el_grupo_no_te_has_enterado.jpg"
+        "blink_182_one_more_time.jpg",
+        "axolotes_mexicanos_4ever.jpg"
       ]
     }
   ],

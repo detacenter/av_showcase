@@ -196,6 +196,18 @@ function handleDeletePlaylist(id) {
   return jsonResponse({ ok: true });
 }
 
+async function handleRevisit() {
+  const data = await loadSnapshot("revisit.json");
+  // Un-revisiting from this view works fully (filters the track out below).
+  // A track newly flagged for revisit from RecentView won't retroactively
+  // appear here — building a full revisit-card entry (name/artist/art/etc.)
+  // for an arbitrary track_id would need a full track-metadata index this
+  // demo doesn't otherwise need; same "no live logic behind mutations"
+  // simplification as playlist rule edits.
+  const tracks = data.tracks.filter((t) => (overlay.trackRevisits[t.track_id] ?? true) !== false);
+  return jsonResponse({ tracks });
+}
+
 async function handleArtists() {
   const data = await loadSnapshot("artists.json");
   const artists = data.artists.map((a) => ({
@@ -291,6 +303,10 @@ async function handleApiRequest(request) {
   }
   if (path === "/api/playlists/sessions" && method === "GET") {
     return handlePlaylistSessions();
+  }
+
+  if (path === "/api/revisit" && method === "GET") {
+    return handleRevisit();
   }
 
   let m;

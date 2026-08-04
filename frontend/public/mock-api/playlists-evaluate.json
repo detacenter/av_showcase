@@ -1,616 +1,32 @@
 {
   "pl-812638386": [
     {
-      "played_at": "2026-04-27T19:30:39.012000Z",
-      "track_name": "Atoms For Peace",
+      "played_at": "2026-05-22T08:47:23.302000Z",
+      "track_name": "No More Parties In LA",
       "artist_names": [
-        "Thom Yorke"
+        "Kanye West"
       ],
       "artist_ids": [
-        "4CvTDPKA6W06DRfBnZKrau"
+        "5K4W6rqBFWDnAN6FQUkS6x"
       ],
-      "album_name": "The Eraser",
-      "track_id": "1yr5rQnDL8QhJWCI6rPId8",
-      "album_id": "4X8Y79gWo6xm7Osdapg58E",
-      "duration_ms": 313613,
+      "album_name": "The Life Of Pablo",
+      "track_id": "0zLClc0emc6qUeV1p5nc99",
+      "album_id": "7gsWAHLeT0w7es6FofOXk1",
+      "duration_ms": 374413,
       "explicit": false,
       "isrc": null,
       "album_type": "album",
-      "album_total_tracks": 9,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273691b5e122dee32f6dcb7894b",
-      "album_art_local_path": "data/artwork/thom_yorke_the_eraser.jpg",
-      "release_year": 2006,
-      "track_number": 6,
+      "album_total_tracks": 20,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2732a7db835b912dc5014bd37f4",
+      "album_art_local_path": "data/artwork/kanye_west_the_life_of_pablo.jpg",
+      "release_year": 2016,
+      "track_number": 17,
       "context_type": "album",
-      "context_uri": "spotify:album:4X8Y79gWo6xm7Osdapg58E",
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
-      "shuffle_state": false,
-      "_play_count": 4,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-03-16T07:16:46.910938Z",
-      "track_name": "Always",
-      "artist_names": [
-        "blink-182"
-      ],
-      "artist_ids": [
-        "6FBDaR13swtiWwGhX1WQsP"
-      ],
-      "album_name": "blink-182",
-      "track_id": "1JfNuvdAIqI3ggkzXuBvPp",
-      "album_id": "4hBTxv4QRPePXCFcEI7Vjp",
-      "duration_ms": 251893,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 15,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2730a4ae12eb3a9fb7e3815001c",
-      "album_art_local_path": "data/artwork/blink_182_blink_182.jpg",
-      "release_year": 2003,
-      "track_number": 11,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-812638386",
-      "device_name": "iPhone",
-      "device_type": "Smartphone",
-      "shuffle_state": false,
-      "_play_count": 1,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-02-14T11:42:44.106000Z",
-      "track_name": "Vibes and Stuff",
-      "artist_names": [
-        "A Tribe Called Quest"
-      ],
-      "artist_ids": [
-        "09hVIj6vWgoCDtT03h8ZCa"
-      ],
-      "album_name": "The Low End Theory",
-      "track_id": "4MdEYuoGhG2RTG3erOiu2H",
-      "album_id": "1p12OAWwudgMqfMzjMvl2a",
-      "duration_ms": 257825,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 14,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273f38c6b37a21334e22005b1f7",
-      "album_art_local_path": "data/artwork/a_tribe_called_quest_the_low_end_theory.jpg",
-      "release_year": 1991,
-      "track_number": 7,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-824893558",
-      "device_name": "Living Room Speaker",
-      "device_type": "Speaker",
-      "shuffle_state": true,
-      "_play_count": 1,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-05-29T08:38:56.282000Z",
-      "track_name": "Untitled",
-      "artist_names": [
-        "Radiohead"
-      ],
-      "artist_ids": [
-        "4Z8W4fKeB5YxbusRsdQVPb"
-      ],
-      "album_name": "Kid A",
-      "track_id": "4aeCuOowYXJXrMZsVHZbfF",
-      "album_id": "6GjwtEZcfenmOf6l18N7T7",
-      "duration_ms": 52694,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 11,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2736c7112082b63beefffe40151",
-      "album_art_local_path": "data/artwork/radiohead_kid_a.jpg",
-      "release_year": 2000,
-      "track_number": 11,
-      "context_type": "artist",
-      "context_uri": "spotify:artist:4Z8W4fKeB5YxbusRsdQVPb",
-      "device_name": "Desktop App",
-      "device_type": "Computer",
-      "shuffle_state": true,
-      "_play_count": 4,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-01-18T11:05:00Z",
-      "track_name": "Otterley",
-      "artist_names": [
-        "Cocteau Twins"
-      ],
-      "artist_ids": [
-        "5Wabl1lPdNOeIn0SQ5A1mp"
-      ],
-      "album_name": "Treasure",
-      "track_id": "5GO0qzKdvndy7g9r0iKEDz",
-      "album_id": "7pBPB9vwqCMLKNmUCK4k62",
-      "duration_ms": 244066,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 10,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27308036980eb9381f0ec3d28e9",
-      "album_art_local_path": "data/artwork/cocteau_twins_treasure.jpg",
-      "release_year": 1984,
-      "track_number": 9,
-      "context_type": "album",
-      "context_uri": "spotify:album:7pBPB9vwqCMLKNmUCK4k62",
+      "context_uri": "spotify:album:7gsWAHLeT0w7es6FofOXk1",
       "device_name": "Web Player (Chrome)",
       "device_type": "Computer",
       "shuffle_state": false,
       "_play_count": 1,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-06-22T21:55:00Z",
-      "track_name": "La Cerca",
-      "artist_names": [
-        "Sparta"
-      ],
-      "artist_ids": [
-        "3DWWL4kwLZMBLsmVsbZYHR"
-      ],
-      "album_name": "Porcelain",
-      "track_id": "3GAUibwOunKHF0Uo8JhvZi",
-      "album_id": "17Mq1v9fKGSmCabI7DaV4S",
-      "duration_ms": 223840,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 14,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273067cdf55471bcb1fd936a39c",
-      "album_art_local_path": "data/artwork/sparta_porcelain.jpg",
-      "release_year": 2004,
-      "track_number": 4,
-      "context_type": null,
-      "context_uri": null,
-      "device_name": "iPhone",
-      "device_type": "Smartphone",
-      "shuffle_state": false,
-      "_play_count": 1,
-      "_pinned": true
-    },
-    {
-      "played_at": "2025-11-06T08:12:59.800000Z",
-      "track_name": "Cravo E Canela",
-      "artist_names": [
-        "L\u00f4 Borges"
-      ],
-      "artist_ids": [
-        "1mZbRiSVb2ExneAlDbBiiT"
-      ],
-      "album_name": "Clube Da Esquina",
-      "track_id": "4VWdOayiIDPEZNf7qBRylL",
-      "album_id": "5risYG7klZCSLMNxB9dZhf",
-      "duration_ms": 151840,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 21,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27336ebd83756dae33f2504dc40",
-      "album_art_local_path": "data/artwork/l\u00f4_borges_clube_da_esquina.jpg",
-      "release_year": 1972,
-      "track_number": 6,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-812638386",
-      "device_name": "iPhone",
-      "device_type": "Smartphone",
-      "shuffle_state": false,
-      "_play_count": 5,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-01-24T22:02:44.919000Z",
-      "track_name": "NY Is Killing Me",
-      "artist_names": [
-        "Gil Scott-Heron"
-      ],
-      "artist_ids": [
-        "0kEfub5RzlZOB2zGomqVSU"
-      ],
-      "album_name": "We're New Here",
-      "track_id": "3pacfC2tJMJsrKk2baf5Bn",
-      "album_id": "7BuwwZzrJCAJaC12QKkDOh",
-      "duration_ms": 343866,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 13,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273b1447de3112b11140c22d200",
-      "album_art_local_path": "data/artwork/gil_scott_heron_were_new_here.jpg",
-      "release_year": 2011,
-      "track_number": 11,
-      "context_type": "album",
-      "context_uri": "spotify:album:7BuwwZzrJCAJaC12QKkDOh",
-      "device_name": "Desktop App",
-      "device_type": "Computer",
-      "shuffle_state": false,
-      "_play_count": 5,
-      "_pinned": true
-    },
-    {
-      "played_at": "2025-11-14T08:51:03.520837Z",
-      "track_name": "Violin - 2018 Remaster",
-      "artist_names": [
-        "Kate Bush"
-      ],
-      "artist_ids": [
-        "1aSxMhuvixZ8h9dK9jIDwL"
-      ],
-      "album_name": "Never for Ever (2018 Remaster)",
-      "track_id": "4R3yRj2LLHINYLf68HdlIK",
-      "album_id": "7uNjeNs5AmDqZHzIbyPkZH",
-      "duration_ms": 195186,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 11,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27322cd84bf3376a422b214cf60",
-      "album_art_local_path": "data/artwork/kate_bush_never_for_ever_2018_remaster.jpg",
-      "release_year": 1980,
-      "track_number": 7,
-      "context_type": "album",
-      "context_uri": "spotify:album:7uNjeNs5AmDqZHzIbyPkZH",
-      "device_name": "iPhone",
-      "device_type": "Smartphone",
-      "shuffle_state": false,
-      "_play_count": 3,
-      "_pinned": true
-    },
-    {
-      "played_at": "2025-12-24T19:13:25.562000Z",
-      "track_name": "ALL UP IN YOUR MIND",
-      "artist_names": [
-        "Beyonc\u00e9"
-      ],
-      "artist_ids": [
-        "6vWDO969PvNqNYHIOW5v0m"
-      ],
-      "album_name": "RENAISSANCE",
-      "track_id": "3k4CoiIQXiNBrwrmbBMDxj",
-      "album_id": "6FJxoadUE4JNVwWHghBwnb",
-      "duration_ms": 169819,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 16,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27369a3c061676c2020adfe8315",
-      "album_art_local_path": "data/artwork/beyonc\u00e9_renaissance.jpg",
-      "release_year": 2022,
-      "track_number": 13,
-      "context_type": "album",
-      "context_uri": "spotify:album:6FJxoadUE4JNVwWHghBwnb",
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
-      "shuffle_state": false,
-      "_play_count": 14,
-      "_pinned": true
-    }
-  ],
-  "pl-329750614": [
-    {
-      "played_at": "2025-11-29T19:23:00Z",
-      "track_name": "Worms Of The Senses / Faculties Of The Skull",
-      "artist_names": [
-        "Refused"
-      ],
-      "artist_ids": [
-        "5sdxGvwxI1TkTA6Pu2jnTb"
-      ],
-      "album_name": "The Shape Of Punk To Come (Deluxe Edition)",
-      "track_id": "2Dc5eGTFOvu34x6ONYAdGt",
-      "album_id": "2Us9qPHLvLoTl6HkYAPcz2",
-      "duration_ms": 427520,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 24,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2735cc694ed1ca80fd696a0817e",
-      "album_art_local_path": "data/artwork/refused_the_shape_of_punk_to_come_deluxe_edition.jpg",
-      "release_year": 1998,
-      "track_number": 1,
-      "context_type": "album",
-      "context_uri": "spotify:album:2Us9qPHLvLoTl6HkYAPcz2",
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
-      "shuffle_state": false,
-      "_play_count": 2,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-02-21T22:23:28.372000Z",
-      "track_name": "Make Me Young, Make Me Young, Make Me Young, Make Me Young",
-      "artist_names": [
-        "empire! empire! (i was a lonely estate)"
-      ],
-      "artist_ids": [
-        "3IaqcRr2teHDEqhRE5emu9"
-      ],
-      "album_name": "When the Sea Became a Giant",
-      "track_id": "4iO8rh9VV9Qi7QVFpfWvOP",
-      "album_id": "2m9BteUi4OhKwUXcNFSL8p",
-      "duration_ms": 113773,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "single",
-      "album_total_tracks": 6,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27305caae30e36ca3676f21cebf",
-      "album_art_local_path": "data/artwork/empire_empire_i_was_a_lonely_estate_when_the_sea_became_a_giant.jpg",
-      "release_year": 2007,
-      "track_number": 6,
-      "context_type": "artist",
-      "context_uri": "spotify:artist:3IaqcRr2teHDEqhRE5emu9",
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
-      "shuffle_state": false,
-      "_play_count": 2,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-05-16T14:40:13.759000Z",
-      "track_name": "Now's the Only Time I Know",
-      "artist_names": [
-        "Fever Ray"
-      ],
-      "artist_ids": [
-        "5hE6NCoobhyEu6TRSbjOJY"
-      ],
-      "album_name": "Fever Ray",
-      "track_id": "3MgUsfZlYW1FakZT6oIW78",
-      "album_id": "019nA7vSKz0dD5yRKYRpbM",
-      "duration_ms": 239186,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 10,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273707831d5303efb3caa6c723e",
-      "album_art_local_path": "data/artwork/fever_ray_fever_ray.jpg",
-      "release_year": 2009,
-      "track_number": 7,
-      "context_type": "album",
-      "context_uri": "spotify:album:019nA7vSKz0dD5yRKYRpbM",
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
-      "shuffle_state": false,
-      "_play_count": 2,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-02-14T11:34:51.773000Z",
-      "track_name": "Verses from the Abstract (feat. Vinia Mojica & Ron Carter)",
-      "artist_names": [
-        "A Tribe Called Quest"
-      ],
-      "artist_ids": [
-        "09hVIj6vWgoCDtT03h8ZCa"
-      ],
-      "album_name": "The Low End Theory",
-      "track_id": "6zrsmzrMoxNkXEQLubCWtA",
-      "album_id": "1p12OAWwudgMqfMzjMvl2a",
-      "duration_ms": 238893,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 14,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273f38c6b37a21334e22005b1f7",
-      "album_art_local_path": "data/artwork/a_tribe_called_quest_the_low_end_theory.jpg",
-      "release_year": 1991,
-      "track_number": 5,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-824893558",
-      "device_name": "Living Room Speaker",
-      "device_type": "Speaker",
-      "shuffle_state": true,
-      "_play_count": 1,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-03-07T13:53:36.509233Z",
-      "track_name": "Drinkin' Again (Interlude)",
-      "artist_names": [
-        "Southside"
-      ],
-      "artist_ids": [
-        "4V5UcotXcQpO6dTTzsi8Mg"
-      ],
-      "album_name": "Stankonia",
-      "track_id": "1ZoK9LKJppVYpc5b1QtpD8",
-      "album_id": "2tm3Ht61kqqRZtIYsBjxEj",
-      "duration_ms": 24506,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 24,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273153b3d6495031cb813a7451c",
-      "album_art_local_path": null,
-      "release_year": 2000,
-      "track_number": 16,
-      "context_type": "album",
-      "context_uri": "spotify:album:2tm3Ht61kqqRZtIYsBjxEj",
-      "device_name": "Living Room Speaker",
-      "device_type": "Speaker",
-      "shuffle_state": false,
-      "_play_count": 1,
-      "_pinned": true
-    },
-    {
-      "played_at": "2025-11-17T08:25:00Z",
-      "track_name": "Jonathan",
-      "artist_names": [
-        "Fiona Apple"
-      ],
-      "artist_ids": [
-        "3g2kUQ6tHLLbmkV7T4GPtL"
-      ],
-      "album_name": "The Idler Wheel Is Wiser Than the Driver of the Screw and Whipping Cords Will Serve You More Than Ropes Will Ever Do (Expanded Edition)",
-      "track_id": "1xq9GyfTbElPmxFMcKHNiI",
-      "album_id": "6B5favhKTShFTjRLsKIUfa",
-      "duration_ms": 303733,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 11,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2731443bd487a471868735f050b",
-      "album_art_local_path": "data/artwork/fiona_apple_the_idler_wheel_is_wiser_than_the_driver_of_the_.jpg",
-      "release_year": 2012,
-      "track_number": 4,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-812638386",
-      "device_name": "iPhone",
-      "device_type": "Smartphone",
-      "shuffle_state": false,
-      "_play_count": 1,
-      "_pinned": true
-    },
-    {
-      "played_at": "2025-12-13T11:22:36.530266Z",
-      "track_name": "Something New",
-      "artist_names": [
-        "Dance Gavin Dance"
-      ],
-      "artist_ids": [
-        "6guC9FqvlVboSKTI77NG2k"
-      ],
-      "album_name": "Instant Gratification",
-      "track_id": "2ZS8jyDUXuAaNWxiwsOCER",
-      "album_id": "60LbtmnmOLTkz8ZiVhbynM",
-      "duration_ms": 236386,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 12,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27314aa4cfe5ecdda0497d4ff82",
-      "album_art_local_path": "data/artwork/dance_gavin_dance_instant_gratification.jpg",
-      "release_year": 2015,
-      "track_number": 3,
-      "context_type": "album",
-      "context_uri": "spotify:album:60LbtmnmOLTkz8ZiVhbynM",
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
-      "shuffle_state": true,
-      "_play_count": 10,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-06-15T19:30:23.266000Z",
-      "track_name": "Points of Authority",
-      "artist_names": [
-        "Linkin Park"
-      ],
-      "artist_ids": [
-        "6XyY86QOPPrYVGvF9ch6wz"
-      ],
-      "album_name": "Hybrid Theory (Bonus Edition)",
-      "track_id": "5egqKwgK5r5rvGD1LrtR7J",
-      "album_id": "6hPkbAV3ZXpGZBGUvL6jVM",
-      "duration_ms": 200240,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 15,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e2f039481babe23658fc719a",
-      "album_art_local_path": "data/artwork/linkin_park_hybrid_theory_bonus_edition.jpg",
-      "release_year": 2000,
-      "track_number": 4,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-812638386",
-      "device_name": "iPhone",
-      "device_type": "Smartphone",
-      "shuffle_state": false,
-      "_play_count": 1,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-01-10T22:53:00Z",
-      "track_name": "On Every Page",
-      "artist_names": [
-        "The Tallest Man On Earth"
-      ],
-      "artist_ids": [
-        "2BpAc5eK7Rz5GAwSp9UYXa"
-      ],
-      "album_name": "There's No Leaving Now",
-      "track_id": "3eV5sJVmS9Bt02k18YhulL",
-      "album_id": "6Voznuxp5917IwIlLxSAik",
-      "duration_ms": 290320,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 10,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e21de78f69d3c385bdeaa76c",
-      "album_art_local_path": "data/artwork/the_tallest_man_on_earth_theres_no_leaving_now.jpg",
-      "release_year": 2012,
-      "track_number": 10,
-      "context_type": "album",
-      "context_uri": "spotify:album:6Voznuxp5917IwIlLxSAik",
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
-      "shuffle_state": false,
-      "_play_count": 2,
-      "_pinned": true
-    },
-    {
-      "played_at": "2025-12-14T20:01:05.920000Z",
-      "track_name": "Thriller",
-      "artist_names": [
-        "Michael Jackson"
-      ],
-      "artist_ids": [
-        "3fMbdgg4jU18AjLCKBhRSm"
-      ],
-      "album_name": "Thriller",
-      "track_id": "2LlQb7Uoj1kKyGhlkBf9aC",
-      "album_id": "2ANVost0y2y52ema1E9xAZ",
-      "duration_ms": 358807,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 9,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27332a7d87248d1b75463483df5",
-      "album_art_local_path": "data/artwork/michael_jackson_thriller.jpg",
-      "release_year": 1982,
-      "track_number": 4,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-812638386",
-      "device_name": "iPhone",
-      "device_type": "Smartphone",
-      "shuffle_state": false,
-      "_play_count": 1,
-      "_pinned": true
-    }
-  ],
-  "pl-824893558": [
-    {
-      "played_at": "2026-03-05T19:40:00Z",
-      "track_name": "Starting Over Again",
-      "artist_names": [
-        "Saosin"
-      ],
-      "artist_ids": [
-        "1NUOfvAhA9AvsF1ISMkgHX"
-      ],
-      "album_name": "Starting Over Again",
-      "track_id": "34VjbHxkXXjl7iv7df3rDt",
-      "album_id": "6KsGdacJiG8uv9F6o2bmfL",
-      "duration_ms": 236000,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "single",
-      "album_total_tracks": 1,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273d95c1b35970e04252e414f11",
-      "album_art_local_path": "data/artwork/saosin_starting_over_again.jpg",
-      "release_year": 2026,
-      "track_number": 1,
-      "context_type": "album",
-      "context_uri": "spotify:album:6KsGdacJiG8uv9F6o2bmfL",
-      "device_name": "iPhone",
-      "device_type": "Smartphone",
-      "shuffle_state": false,
-      "_play_count": 2,
       "_pinned": true
     },
     {
@@ -643,35 +59,6 @@
       "_pinned": true
     },
     {
-      "played_at": "2026-05-22T08:47:23.302000Z",
-      "track_name": "No More Parties In LA",
-      "artist_names": [
-        "Kanye West"
-      ],
-      "artist_ids": [
-        "5K4W6rqBFWDnAN6FQUkS6x"
-      ],
-      "album_name": "The Life Of Pablo",
-      "track_id": "0zLClc0emc6qUeV1p5nc99",
-      "album_id": "7gsWAHLeT0w7es6FofOXk1",
-      "duration_ms": 374413,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 20,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2732a7db835b912dc5014bd37f4",
-      "album_art_local_path": "data/artwork/kanye_west_the_life_of_pablo.jpg",
-      "release_year": 2016,
-      "track_number": 17,
-      "context_type": "album",
-      "context_uri": "spotify:album:7gsWAHLeT0w7es6FofOXk1",
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
-      "shuffle_state": false,
-      "_play_count": 1,
-      "_pinned": true
-    },
-    {
       "played_at": "2025-11-09T13:11:12.760000Z",
       "track_name": "Heatherwood",
       "artist_names": [
@@ -698,6 +85,35 @@
       "device_type": "Speaker",
       "shuffle_state": false,
       "_play_count": 1,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-04-27T22:13:08.175595Z",
+      "track_name": "Everlasting Arms",
+      "artist_names": [
+        "Vampire Weekend"
+      ],
+      "artist_ids": [
+        "5BvJzeQpmsdsFp4HGUYUEx"
+      ],
+      "album_name": "Modern Vampires of the City",
+      "track_id": "5bbvdCQ6kc3OeC3FzUl9Dx",
+      "album_id": "1GXMNFfoHF4sN7lG8gZq1j",
+      "duration_ms": 183320,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 12,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273bd5bca5a45474d8dc1e26588",
+      "album_art_local_path": "data/artwork/vampire_weekend_modern_vampires_of_the_city.jpg",
+      "release_year": 2013,
+      "track_number": 7,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-812638386",
+      "device_name": "Web Player (Chrome)",
+      "device_type": "Computer",
+      "shuffle_state": true,
+      "_play_count": 6,
       "_pinned": true
     },
     {
@@ -759,32 +175,32 @@
       "_pinned": true
     },
     {
-      "played_at": "2025-12-14T19:53:03.400000Z",
-      "track_name": "Baby Be Mine",
+      "played_at": "2026-03-05T19:40:00Z",
+      "track_name": "Starting Over Again",
       "artist_names": [
-        "Michael Jackson"
+        "Saosin"
       ],
       "artist_ids": [
-        "3fMbdgg4jU18AjLCKBhRSm"
+        "1NUOfvAhA9AvsF1ISMkgHX"
       ],
-      "album_name": "Thriller",
-      "track_id": "6XYbMGvtl6tlPoGWaiH7EY",
-      "album_id": "2ANVost0y2y52ema1E9xAZ",
-      "duration_ms": 260368,
+      "album_name": "Starting Over Again",
+      "track_id": "34VjbHxkXXjl7iv7df3rDt",
+      "album_id": "6KsGdacJiG8uv9F6o2bmfL",
+      "duration_ms": 236000,
       "explicit": false,
       "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 9,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27332a7d87248d1b75463483df5",
-      "album_art_local_path": "data/artwork/michael_jackson_thriller.jpg",
-      "release_year": 1982,
-      "track_number": 2,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-824893558",
+      "album_type": "single",
+      "album_total_tracks": 1,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273d95c1b35970e04252e414f11",
+      "album_art_local_path": "data/artwork/saosin_starting_over_again.jpg",
+      "release_year": 2026,
+      "track_number": 1,
+      "context_type": "album",
+      "context_uri": "spotify:album:6KsGdacJiG8uv9F6o2bmfL",
       "device_name": "iPhone",
       "device_type": "Smartphone",
       "shuffle_state": false,
-      "_play_count": 1,
+      "_play_count": 2,
       "_pinned": true
     },
     {
@@ -817,6 +233,35 @@
       "_pinned": true
     },
     {
+      "played_at": "2025-12-14T19:53:03.400000Z",
+      "track_name": "Baby Be Mine",
+      "artist_names": [
+        "Michael Jackson"
+      ],
+      "artist_ids": [
+        "3fMbdgg4jU18AjLCKBhRSm"
+      ],
+      "album_name": "Thriller",
+      "track_id": "6XYbMGvtl6tlPoGWaiH7EY",
+      "album_id": "2ANVost0y2y52ema1E9xAZ",
+      "duration_ms": 260368,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 9,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27332a7d87248d1b75463483df5",
+      "album_art_local_path": "data/artwork/michael_jackson_thriller.jpg",
+      "release_year": 1982,
+      "track_number": 2,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-824893558",
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
+      "shuffle_state": false,
+      "_play_count": 1,
+      "_pinned": true
+    },
+    {
       "played_at": "2026-03-18T07:31:49.412000Z",
       "track_name": "Revolve",
       "artist_names": [
@@ -844,67 +289,9 @@
       "shuffle_state": true,
       "_play_count": 3,
       "_pinned": true
-    },
-    {
-      "played_at": "2026-04-27T22:13:08.175595Z",
-      "track_name": "Everlasting Arms",
-      "artist_names": [
-        "Vampire Weekend"
-      ],
-      "artist_ids": [
-        "5BvJzeQpmsdsFp4HGUYUEx"
-      ],
-      "album_name": "Modern Vampires of the City",
-      "track_id": "5bbvdCQ6kc3OeC3FzUl9Dx",
-      "album_id": "1GXMNFfoHF4sN7lG8gZq1j",
-      "duration_ms": 183320,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 12,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273bd5bca5a45474d8dc1e26588",
-      "album_art_local_path": "data/artwork/vampire_weekend_modern_vampires_of_the_city.jpg",
-      "release_year": 2013,
-      "track_number": 7,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-812638386",
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
-      "shuffle_state": true,
-      "_play_count": 6,
-      "_pinned": true
     }
   ],
-  "pl-824380384": [
-    {
-      "played_at": "2026-03-25T19:34:20.959000Z",
-      "track_name": "Electioneering",
-      "artist_names": [
-        "Radiohead"
-      ],
-      "artist_ids": [
-        "4Z8W4fKeB5YxbusRsdQVPb"
-      ],
-      "album_name": "OK Computer",
-      "track_id": "0gTRROuntlrPQ64W3J2Etv",
-      "album_id": "6dVIqQ8qmQ5GBnJ9shOYGE",
-      "duration_ms": 230626,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 12,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856",
-      "album_art_local_path": "data/artwork/radiohead_ok_computer.jpg",
-      "release_year": 1997,
-      "track_number": 8,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-824893558",
-      "device_name": "Desktop App",
-      "device_type": "Computer",
-      "shuffle_state": true,
-      "_play_count": 9,
-      "_pinned": true
-    },
+  "pl-329750614": [
     {
       "played_at": "2026-04-22T07:52:00Z",
       "track_name": "Stay Divided",
@@ -935,30 +322,59 @@
       "_pinned": true
     },
     {
-      "played_at": "2026-03-17T21:03:00Z",
-      "track_name": "Nebraska",
+      "played_at": "2025-12-11T12:30:02.480007Z",
+      "track_name": "The Crunge - Remaster",
       "artist_names": [
-        "Bruce Springsteen"
+        "Led Zeppelin"
       ],
       "artist_ids": [
-        "3eqjTLE0HfPfh78zjh6TqT"
+        "36QJpDe2go2KgaRleHCDTp"
       ],
-      "album_name": "Nebraska",
-      "track_id": "7GDIQqD5pdHCda5rpZ98Ie",
-      "album_id": "6yskFQZNlLYhkchAxELHi6",
-      "duration_ms": 272103,
+      "album_name": "Houses of the Holy (Remaster)",
+      "track_id": "7IgBLFklu75pp8Y1vphChS",
+      "album_id": "0GqpoHJREPp0iuXK3HzrHk",
+      "duration_ms": 197704,
       "explicit": false,
       "isrc": null,
       "album_type": "album",
-      "album_total_tracks": 10,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2731e7af3a709aeac0c796ab542",
-      "album_art_local_path": "data/artwork/bruce_springsteen_nebraska.jpg",
-      "release_year": 1982,
-      "track_number": 1,
-      "context_type": null,
-      "context_uri": null,
-      "device_name": "iPhone",
-      "device_type": "Smartphone",
+      "album_total_tracks": 8,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2731aa47e71c4edfeaddb65cd54",
+      "album_art_local_path": "data/artwork/led_zeppelin_houses_of_the_holy_remaster.jpg",
+      "release_year": 1973,
+      "track_number": 4,
+      "context_type": "album",
+      "context_uri": "spotify:album:0GqpoHJREPp0iuXK3HzrHk",
+      "device_name": "Desktop App",
+      "device_type": "Computer",
+      "shuffle_state": true,
+      "_play_count": 1,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-01-26T21:25:14.599000Z",
+      "track_name": "Lost In Hollywood",
+      "artist_names": [
+        "System Of A Down"
+      ],
+      "artist_ids": [
+        "5eAWCfyUhZtHHtBdNk56l1"
+      ],
+      "album_name": "Mezmerize",
+      "track_id": "0GrHWVTDsaWcD4nrCGr7VE",
+      "album_id": "0cn6MHyx4YuZauaB7Pb66o",
+      "duration_ms": 320693,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 11,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273c65f8d04502eeddbdd61fa71",
+      "album_art_local_path": "data/artwork/system_of_a_down_mezmerize.jpg",
+      "release_year": 2005,
+      "track_number": 11,
+      "context_type": "collection",
+      "context_uri": "spotify:collection:tracks",
+      "device_name": "Web Player (Chrome)",
+      "device_type": "Computer",
       "shuffle_state": false,
       "_play_count": 2,
       "_pinned": true
@@ -993,29 +409,87 @@
       "_pinned": true
     },
     {
-      "played_at": "2025-12-11T12:30:02.480007Z",
-      "track_name": "The Crunge - Remaster",
+      "played_at": "2026-03-29T15:53:36.489456Z",
+      "track_name": "I'll Take Care of U",
       "artist_names": [
-        "Led Zeppelin"
+        "Gil Scott-Heron"
       ],
       "artist_ids": [
-        "36QJpDe2go2KgaRleHCDTp"
+        "0kEfub5RzlZOB2zGomqVSU"
       ],
-      "album_name": "Houses of the Holy (Remaster)",
-      "track_id": "7IgBLFklu75pp8Y1vphChS",
-      "album_id": "0GqpoHJREPp0iuXK3HzrHk",
-      "duration_ms": 197704,
+      "album_name": "We're New Here",
+      "track_id": "3uFVyg61HeKCMbL5N6LuSA",
+      "album_id": "7BuwwZzrJCAJaC12QKkDOh",
+      "duration_ms": 282906,
       "explicit": false,
       "isrc": null,
       "album_type": "album",
-      "album_total_tracks": 8,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2731aa47e71c4edfeaddb65cd54",
-      "album_art_local_path": "data/artwork/led_zeppelin_houses_of_the_holy_remaster.jpg",
-      "release_year": 1973,
-      "track_number": 4,
+      "album_total_tracks": 13,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273b1447de3112b11140c22d200",
+      "album_art_local_path": "data/artwork/gil_scott_heron_were_new_here.jpg",
+      "release_year": 2011,
+      "track_number": 13,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-812638386",
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
+      "shuffle_state": true,
+      "_play_count": 1,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-07-06T09:01:34.496000Z",
+      "track_name": "wormz",
+      "artist_names": [
+        "Aiko el grupo"
+      ],
+      "artist_ids": [
+        "0mk9dVJMJF4fanFzeZo6K1"
+      ],
+      "album_name": "Me est\u00e1n apuntando con un arma",
+      "track_id": "0M2ofyoY6FPzR8zmM1cag3",
+      "album_id": "1KG4rIbiB4kk3qEV5SIYcg",
+      "duration_ms": 129250,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 11,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2730f371fc8f81f2ba623d2aa7a",
+      "album_art_local_path": "data/artwork/aiko_el_grupo_me_est\u00e1n_apuntando_con_un_arma.jpg",
+      "release_year": 2023,
+      "track_number": 7,
       "context_type": "album",
-      "context_uri": "spotify:album:0GqpoHJREPp0iuXK3HzrHk",
+      "context_uri": "spotify:album:1KG4rIbiB4kk3qEV5SIYcg",
       "device_name": "Desktop App",
+      "device_type": "Computer",
+      "shuffle_state": false,
+      "_play_count": 1,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-04-02T07:16:05.976678Z",
+      "track_name": "Be My Wife - 2017 Remaster",
+      "artist_names": [
+        "David Bowie"
+      ],
+      "artist_ids": [
+        "0oSGxfWSnnOXhD2fKuz2Gy"
+      ],
+      "album_name": "Low (2017 Remaster)",
+      "track_id": "5hh5gq0u54rTP0iBYgZ2xW",
+      "album_id": "2de6LD7eOW8zrlorbS28na",
+      "duration_ms": 176840,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 11,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273481e219b2d0a0218681ad612",
+      "album_art_local_path": "data/artwork/david_bowie_low_2017_remaster.jpg",
+      "release_year": 1977,
+      "track_number": 6,
+      "context_type": null,
+      "context_uri": null,
+      "device_name": "Web Player (Chrome)",
       "device_type": "Computer",
       "shuffle_state": true,
       "_play_count": 1,
@@ -1051,86 +525,117 @@
       "_pinned": true
     },
     {
-      "played_at": "2026-07-06T09:01:34.496000Z",
-      "track_name": "wormz",
+      "played_at": "2026-03-17T21:03:00Z",
+      "track_name": "Nebraska",
       "artist_names": [
-        "Aiko el grupo"
+        "Bruce Springsteen"
       ],
       "artist_ids": [
-        "0mk9dVJMJF4fanFzeZo6K1"
+        "3eqjTLE0HfPfh78zjh6TqT"
       ],
-      "album_name": "Me est\u00e1n apuntando con un arma",
-      "track_id": "0M2ofyoY6FPzR8zmM1cag3",
-      "album_id": "1KG4rIbiB4kk3qEV5SIYcg",
-      "duration_ms": 129250,
+      "album_name": "Nebraska",
+      "track_id": "7GDIQqD5pdHCda5rpZ98Ie",
+      "album_id": "6yskFQZNlLYhkchAxELHi6",
+      "duration_ms": 272103,
       "explicit": false,
       "isrc": null,
       "album_type": "album",
-      "album_total_tracks": 11,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2730f371fc8f81f2ba623d2aa7a",
-      "album_art_local_path": "data/artwork/aiko_el_grupo_me_est\u00e1n_apuntando_con_un_arma.jpg",
-      "release_year": 2023,
-      "track_number": 7,
-      "context_type": "album",
-      "context_uri": "spotify:album:1KG4rIbiB4kk3qEV5SIYcg",
-      "device_name": "Desktop App",
-      "device_type": "Computer",
-      "shuffle_state": false,
-      "_play_count": 1,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-01-26T21:25:14.599000Z",
-      "track_name": "Lost In Hollywood",
-      "artist_names": [
-        "System Of A Down"
-      ],
-      "artist_ids": [
-        "5eAWCfyUhZtHHtBdNk56l1"
-      ],
-      "album_name": "Mezmerize",
-      "track_id": "0GrHWVTDsaWcD4nrCGr7VE",
-      "album_id": "0cn6MHyx4YuZauaB7Pb66o",
-      "duration_ms": 320693,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 11,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273c65f8d04502eeddbdd61fa71",
-      "album_art_local_path": "data/artwork/system_of_a_down_mezmerize.jpg",
-      "release_year": 2005,
-      "track_number": 11,
-      "context_type": "collection",
-      "context_uri": "spotify:collection:tracks",
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
+      "album_total_tracks": 10,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2731e7af3a709aeac0c796ab542",
+      "album_art_local_path": "data/artwork/bruce_springsteen_nebraska.jpg",
+      "release_year": 1982,
+      "track_number": 1,
+      "context_type": null,
+      "context_uri": null,
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
       "shuffle_state": false,
       "_play_count": 2,
       "_pinned": true
     },
     {
-      "played_at": "2026-03-29T15:53:36.489456Z",
-      "track_name": "I'll Take Care of U",
+      "played_at": "2026-03-25T19:34:20.959000Z",
+      "track_name": "Electioneering",
       "artist_names": [
-        "Gil Scott-Heron"
+        "Radiohead"
       ],
       "artist_ids": [
-        "0kEfub5RzlZOB2zGomqVSU"
+        "4Z8W4fKeB5YxbusRsdQVPb"
       ],
-      "album_name": "We're New Here",
-      "track_id": "3uFVyg61HeKCMbL5N6LuSA",
-      "album_id": "7BuwwZzrJCAJaC12QKkDOh",
-      "duration_ms": 282906,
+      "album_name": "OK Computer",
+      "track_id": "0gTRROuntlrPQ64W3J2Etv",
+      "album_id": "6dVIqQ8qmQ5GBnJ9shOYGE",
+      "duration_ms": 230626,
       "explicit": false,
       "isrc": null,
       "album_type": "album",
-      "album_total_tracks": 13,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273b1447de3112b11140c22d200",
-      "album_art_local_path": "data/artwork/gil_scott_heron_were_new_here.jpg",
-      "release_year": 2011,
-      "track_number": 13,
+      "album_total_tracks": 12,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856",
+      "album_art_local_path": "data/artwork/radiohead_ok_computer.jpg",
+      "release_year": 1997,
+      "track_number": 8,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-824893558",
+      "device_name": "Desktop App",
+      "device_type": "Computer",
+      "shuffle_state": true,
+      "_play_count": 9,
+      "_pinned": true
+    }
+  ],
+  "pl-824893558": [
+    {
+      "played_at": "2025-11-04T08:39:00Z",
+      "track_name": "Arrasta a Cadeira",
+      "artist_names": [
+        "Os Tinco\u00e3s"
+      ],
+      "artist_ids": [
+        "2rnJUBfFhgXBrywGEQ8zC7"
+      ],
+      "album_name": "Os Tinco\u00e3s",
+      "track_id": "3yRGkrzJpg7dxsLJkYpt1i",
+      "album_id": "66E3E9DaAxpGPE4SgrOBDX",
+      "duration_ms": 140560,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 12,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273099dde456cd1d70b5c47a66e",
+      "album_art_local_path": "data/artwork/os_tinco\u00e3s_os_tinco\u00e3s.jpg",
+      "release_year": 1977,
+      "track_number": 10,
       "context_type": "playlist",
       "context_uri": "spotify:playlist:pl-812638386",
+      "device_name": "Desktop App",
+      "device_type": "Computer",
+      "shuffle_state": false,
+      "_play_count": 43,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-05-14T19:47:00Z",
+      "track_name": "VCR",
+      "artist_names": [
+        "The xx"
+      ],
+      "artist_ids": [
+        "3iOvXCl6edW5Um0fXEBRXy"
+      ],
+      "album_name": "xx",
+      "track_id": "0Cr3j6qhDItBeFbAzdXtN2",
+      "album_id": "2av2ZSHlvD7rvLSsMvtYCG",
+      "duration_ms": 177093,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 11,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273a46d603701aa0342e8cca64e",
+      "album_art_local_path": "data/artwork/the_xx_xx.jpg",
+      "release_year": 2009,
+      "track_number": 2,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-824380384",
       "device_name": "iPhone",
       "device_type": "Smartphone",
       "shuffle_state": true,
@@ -1138,36 +643,531 @@
       "_pinned": true
     },
     {
-      "played_at": "2026-04-02T07:16:05.976678Z",
-      "track_name": "Be My Wife - 2017 Remaster",
+      "played_at": "2026-07-16T19:05:17.866221Z",
+      "track_name": "Wake Up",
       "artist_names": [
-        "David Bowie"
+        "Arcade Fire"
       ],
       "artist_ids": [
-        "0oSGxfWSnnOXhD2fKuz2Gy"
+        "3kjuyTCjPG1WMFCiyc5IuB"
       ],
-      "album_name": "Low (2017 Remaster)",
-      "track_id": "5hh5gq0u54rTP0iBYgZ2xW",
-      "album_id": "2de6LD7eOW8zrlorbS28na",
-      "duration_ms": 176840,
+      "album_name": "Funeral",
+      "track_id": "6Hmj7SrLRbreLVfVS7mV1S",
+      "album_id": "6ZB8qaR9JNuS0Q0bG1nbcH",
+      "duration_ms": 335333,
       "explicit": false,
       "isrc": null,
       "album_type": "album",
-      "album_total_tracks": 11,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273481e219b2d0a0218681ad612",
-      "album_art_local_path": "data/artwork/david_bowie_low_2017_remaster.jpg",
-      "release_year": 1977,
-      "track_number": 6,
-      "context_type": null,
-      "context_uri": null,
+      "album_total_tracks": 10,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737870762a58313ad6f981d664",
+      "album_art_local_path": "data/artwork/arcade_fire_funeral.jpg",
+      "release_year": 2004,
+      "track_number": 7,
+      "context_type": "collection",
+      "context_uri": "spotify:collection:tracks",
+      "device_name": "Web Player (Chrome)",
+      "device_type": "Computer",
+      "shuffle_state": false,
+      "_play_count": 1,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-01-23T22:11:19.026000Z",
+      "track_name": "De La Orgee",
+      "artist_names": [
+        "De La Soul"
+      ],
+      "artist_ids": [
+        "1Z8ODXyhEBi3WynYw0Rya6"
+      ],
+      "album_name": "3 Feet High and Rising",
+      "track_id": "1cf8cuou05R0DpFmDpUj61",
+      "album_id": "34LxHI9x14qXUOS8AWRrYD",
+      "duration_ms": 73653,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 23,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27343693c2f01ae89613c880ed5",
+      "album_art_local_path": "data/artwork/de_la_soul_3_feet_high_and_rising.jpg",
+      "release_year": 1989,
+      "track_number": 17,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-824893558",
+      "device_name": "Web Player (Chrome)",
+      "device_type": "Computer",
+      "shuffle_state": true,
+      "_play_count": 2,
+      "_pinned": true
+    },
+    {
+      "played_at": "2025-12-09T20:26:40.691955Z",
+      "track_name": "Appa",
+      "artist_names": [
+        "I Kill Giants"
+      ],
+      "artist_ids": [
+        "3lM0FzHYu9y18bx6yz2hNF"
+      ],
+      "album_name": "Let It Out",
+      "track_id": "7D0oudTdGBOy4R9u2T0CpM",
+      "album_id": "5kXmpj8YLcxEMk8BWc57UV",
+      "duration_ms": 174000,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "single",
+      "album_total_tracks": 6,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2736e2a592c565980832eccfa04",
+      "album_art_local_path": "data/artwork/i_kill_giants_let_it_out.jpg",
+      "release_year": 2011,
+      "track_number": 5,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-329750614",
+      "device_name": "Desktop App",
+      "device_type": "Computer",
+      "shuffle_state": false,
+      "_play_count": 9,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-05-18T09:05:53.198000Z",
+      "track_name": "Vitamin C - 2004 Remastered Version",
+      "artist_names": [
+        "CAN"
+      ],
+      "artist_ids": [
+        "4l8xPGtl6DHR2uvunqrl8r"
+      ],
+      "album_name": "Ege Bamyasi (Remastered Version)",
+      "track_id": "1tzXnPndBrd2G5GXrOBc1c",
+      "album_id": "3Qa2CdymyGvXkqoqIZykmT",
+      "duration_ms": 214066,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "compilation",
+      "album_total_tracks": 7,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273416cc99a089bbe8db8ac1311",
+      "album_art_local_path": "data/artwork/can_ege_bamyasi_remastered_version.jpg",
+      "release_year": 1972,
+      "track_number": 4,
+      "context_type": "album",
+      "context_uri": "spotify:album:3Qa2CdymyGvXkqoqIZykmT",
+      "device_name": "Web Player (Chrome)",
+      "device_type": "Computer",
+      "shuffle_state": true,
+      "_play_count": 2,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-03-22T12:10:28.728000Z",
+      "track_name": "I Knew This Because as I Drove, The Hole That Was Me and My Life Was Getting Smaller and Smaller and Was Being Filled With New Hampshire, Or Maybe It Was the Idea of New Hampshire, But Who Cares, As Long as It Was Filling Up the Hole",
+      "artist_names": [
+        "empire! empire! (i was a lonely estate)"
+      ],
+      "artist_ids": [
+        "3IaqcRr2teHDEqhRE5emu9"
+      ],
+      "album_name": "Early Discography",
+      "track_id": "0WEBoDCjH1SzM1dGlU8nen",
+      "album_id": "5xBD0bSZqXpfH0vwkrDcAx",
+      "duration_ms": 160413,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 9,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273163f35e807065bcb9a892e41",
+      "album_art_local_path": "data/artwork/empire_empire_i_was_a_lonely_estate_early_discography.jpg",
+      "release_year": 2010,
+      "track_number": 9,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-329750614",
       "device_name": "Web Player (Chrome)",
       "device_type": "Computer",
       "shuffle_state": true,
       "_play_count": 1,
       "_pinned": true
+    },
+    {
+      "played_at": "2025-11-22T22:07:20.464000Z",
+      "track_name": "Suburban War",
+      "artist_names": [
+        "Arcade Fire"
+      ],
+      "artist_ids": [
+        "3kjuyTCjPG1WMFCiyc5IuB"
+      ],
+      "album_name": "The Suburbs (Deluxe)",
+      "track_id": "6mzSjhOF5CaH97ySiSzsot",
+      "album_id": "0gkUcpkyW2SXN49Yktkf6F",
+      "duration_ms": 285293,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 18,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2731d6b4b0418200b6324734062",
+      "album_art_local_path": "data/artwork/arcade_fire_the_suburbs_deluxe.jpg",
+      "release_year": 2010,
+      "track_number": 9,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-329750614",
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
+      "shuffle_state": false,
+      "_play_count": 3,
+      "_pinned": true
+    },
+    {
+      "played_at": "2025-11-08T21:50:00Z",
+      "track_name": "Concrete Walls",
+      "artist_names": [
+        "Fever Ray"
+      ],
+      "artist_ids": [
+        "5hE6NCoobhyEu6TRSbjOJY"
+      ],
+      "album_name": "Fever Ray",
+      "track_id": "5liRQziURPzqcHJpc5JI6w",
+      "album_id": "019nA7vSKz0dD5yRKYRpbM",
+      "duration_ms": 340133,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 10,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273707831d5303efb3caa6c723e",
+      "album_art_local_path": "data/artwork/fever_ray_fever_ray.jpg",
+      "release_year": 2009,
+      "track_number": 6,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-329750614",
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
+      "shuffle_state": true,
+      "_play_count": 3,
+      "_pinned": true
+    },
+    {
+      "played_at": "2025-11-29T19:37:55.078577Z",
+      "track_name": "Summerholidays Vs. Punkroutine",
+      "artist_names": [
+        "Refused"
+      ],
+      "artist_ids": [
+        "5sdxGvwxI1TkTA6Pu2jnTb"
+      ],
+      "album_name": "The Shape Of Punk To Come (Deluxe Edition)",
+      "track_id": "6pa63bus7BPu8g8rvJISSj",
+      "album_id": "2Us9qPHLvLoTl6HkYAPcz2",
+      "duration_ms": 243520,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 24,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2735cc694ed1ca80fd696a0817e",
+      "album_art_local_path": "data/artwork/refused_the_shape_of_punk_to_come_deluxe_edition.jpg",
+      "release_year": 1998,
+      "track_number": 4,
+      "context_type": "album",
+      "context_uri": "spotify:album:2Us9qPHLvLoTl6HkYAPcz2",
+      "device_name": "Web Player (Chrome)",
+      "device_type": "Computer",
+      "shuffle_state": false,
+      "_play_count": 3,
+      "_pinned": true
     }
   ],
-  "pl-275378331": [
+  "pl-824380384": [
+    {
+      "played_at": "2026-03-16T07:12:11.601137Z",
+      "track_name": "Asthenia",
+      "artist_names": [
+        "blink-182"
+      ],
+      "artist_ids": [
+        "6FBDaR13swtiWwGhX1WQsP"
+      ],
+      "album_name": "blink-182",
+      "track_id": "7stdOFyftbIPvEmmRrHe66",
+      "album_id": "4hBTxv4QRPePXCFcEI7Vjp",
+      "duration_ms": 259746,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 15,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2730a4ae12eb3a9fb7e3815001c",
+      "album_art_local_path": "data/artwork/blink_182_blink_182.jpg",
+      "release_year": 2003,
+      "track_number": 10,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-824380384",
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
+      "shuffle_state": false,
+      "_play_count": 1,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-05-08T19:08:48.918000Z",
+      "track_name": "Interzone - 2019 Digital Master",
+      "artist_names": [
+        "Joy Division"
+      ],
+      "artist_ids": [
+        "432R46LaYsJZV2Gmc4jUV5"
+      ],
+      "album_name": "Unknown Pleasures",
+      "track_id": "4yvgL1k1WkuSEHkMPhDF5X",
+      "album_id": "5Dgqy4bBg09Rdw7CQM545s",
+      "duration_ms": 136106,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 10,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27327cc8b0ed297111f53009772",
+      "album_art_local_path": "data/artwork/joy_division_unknown_pleasures.jpg",
+      "release_year": 1979,
+      "track_number": 9,
+      "context_type": "album",
+      "context_uri": "spotify:album:5Dgqy4bBg09Rdw7CQM545s",
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
+      "shuffle_state": true,
+      "_play_count": 1,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-05-09T11:07:59.363152Z",
+      "track_name": "Balance",
+      "artist_names": [
+        "I Kill Giants"
+      ],
+      "artist_ids": [
+        "3lM0FzHYu9y18bx6yz2hNF"
+      ],
+      "album_name": "Let It Out",
+      "track_id": "6U8iJR8PSjJndaj7pDMGQu",
+      "album_id": "5kXmpj8YLcxEMk8BWc57UV",
+      "duration_ms": 266379,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "single",
+      "album_total_tracks": 6,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2736e2a592c565980832eccfa04",
+      "album_art_local_path": "data/artwork/i_kill_giants_let_it_out.jpg",
+      "release_year": 2011,
+      "track_number": 6,
+      "context_type": "album",
+      "context_uri": "spotify:album:5kXmpj8YLcxEMk8BWc57UV",
+      "device_name": "Web Player (Chrome)",
+      "device_type": "Computer",
+      "shuffle_state": true,
+      "_play_count": 5,
+      "_pinned": true
+    },
+    {
+      "played_at": "2025-12-11T19:25:13.412833Z",
+      "track_name": "Australian Winter",
+      "artist_names": [
+        "Sun Kil Moon"
+      ],
+      "artist_ids": [
+        "4G0XDEk7RbA4BBCTs917U9"
+      ],
+      "album_name": "Admiral Fell Promises",
+      "track_id": "0qTdLAVMXvWoangDwzSLEU",
+      "album_id": "77AYdae70ldovpvRPS0Xjc",
+      "duration_ms": 280800,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 10,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273fef973b0606511ccf6a379e9",
+      "album_art_local_path": "data/artwork/sun_kil_moon_admiral_fell_promises.jpg",
+      "release_year": 2010,
+      "track_number": 8,
+      "context_type": "album",
+      "context_uri": "spotify:album:77AYdae70ldovpvRPS0Xjc",
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
+      "shuffle_state": false,
+      "_play_count": 1,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-05-30T19:46:38.746591Z",
+      "track_name": "Dropped",
+      "artist_names": [
+        "Atoms For Peace"
+      ],
+      "artist_ids": [
+        "7tA9Eeeb68kkiG9Nrvuzmi"
+      ],
+      "album_name": "AMOK",
+      "track_id": "1Ewb1UPrJC9mCJiLPa2sk0",
+      "album_id": "77Ie9frENeQwYUGHrrS0pk",
+      "duration_ms": 297396,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 9,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27385c9a2b110adf7692693ee6b",
+      "album_art_local_path": "data/artwork/atoms_for_peace_amok.jpg",
+      "release_year": 2013,
+      "track_number": 4,
+      "context_type": "album",
+      "context_uri": "spotify:album:77Ie9frENeQwYUGHrrS0pk",
+      "device_name": "Web Player (Chrome)",
+      "device_type": "Computer",
+      "shuffle_state": true,
+      "_play_count": 1,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-01-23T21:46:33.126521Z",
+      "track_name": "Leave Me Alone - 2015 Remaster",
+      "artist_names": [
+        "New Order"
+      ],
+      "artist_ids": [
+        "0yNLKJebCb8Aueb54LYya3"
+      ],
+      "album_name": "Power Corruption and Lies",
+      "track_id": "0F0imGVd7KnvQPkBmVtPo9",
+      "album_id": "6NTrwu1XJ56jBPx7HMksbZ",
+      "duration_ms": 281773,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 8,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273a0bb93884823982d57cb2004",
+      "album_art_local_path": "data/artwork/new_order_power_corruption_and_lies.jpg",
+      "release_year": 1983,
+      "track_number": 8,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-812638386",
+      "device_name": "Web Player (Chrome)",
+      "device_type": "Computer",
+      "shuffle_state": true,
+      "_play_count": 1,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-04-03T18:38:17.538000Z",
+      "track_name": "Interlude: This Moment",
+      "artist_names": [
+        "Solange"
+      ],
+      "artist_ids": [
+        "2auiVi8sUZo17dLy1HwrTU"
+      ],
+      "album_name": "A Seat at the Table",
+      "track_id": "7tlAWur1RNnqWbuoL5qWqG",
+      "album_id": "3Yko2SxDk4hc6fncIBQlcM",
+      "duration_ms": 49457,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 21,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2735fbf6306df238e6b7356ac03",
+      "album_art_local_path": "data/artwork/solange_a_seat_at_the_table.jpg",
+      "release_year": 2016,
+      "track_number": 10,
+      "context_type": null,
+      "context_uri": null,
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
+      "shuffle_state": false,
+      "_play_count": 1,
+      "_pinned": true
+    },
+    {
+      "played_at": "2025-12-04T20:47:00Z",
+      "track_name": "Death with Dignity",
+      "artist_names": [
+        "Sufjan Stevens"
+      ],
+      "artist_ids": [
+        "4MXUO7sVCaFgFjoTI5ox5c"
+      ],
+      "album_name": "Carrie & Lowell",
+      "track_id": "73uJybGAhwGRD9MZYrOmTY",
+      "album_id": "64xtjfsPHNHch0CZ7fPTjS",
+      "duration_ms": 239508,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 11,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273820e2ac14772ae3162c6d479",
+      "album_art_local_path": "data/artwork/sufjan_stevens_carrie_lowell.jpg",
+      "release_year": 2015,
+      "track_number": 1,
+      "context_type": "album",
+      "context_uri": "spotify:album:64xtjfsPHNHch0CZ7fPTjS",
+      "device_name": "Web Player (Chrome)",
+      "device_type": "Computer",
+      "shuffle_state": false,
+      "_play_count": 1,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-01-23T20:40:04.366000Z",
+      "track_name": "Spine",
+      "artist_names": [
+        "Pianos Become The Teeth"
+      ],
+      "artist_ids": [
+        "5gbwngeG3dwS4ARmtgud9C"
+      ],
+      "album_name": "The Lack Long After",
+      "track_id": "7r2VUYH79UT8dTaKgELmOC",
+      "album_id": "0JvkUMttIwTRYwm3OVBoch",
+      "duration_ms": 255173,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 8,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e758b607532aa0fbbedd4504",
+      "album_art_local_path": "data/artwork/pianos_become_the_teeth_the_lack_long_after.jpg",
+      "release_year": 2011,
+      "track_number": 6,
+      "context_type": "album",
+      "context_uri": "spotify:album:0JvkUMttIwTRYwm3OVBoch",
+      "device_name": "Living Room Speaker",
+      "device_type": "Speaker",
+      "shuffle_state": false,
+      "_play_count": 1,
+      "_pinned": true
+    },
+    {
+      "played_at": "2025-11-09T14:50:48.773000Z",
+      "track_name": "Spaceboy - 2011 Remaster",
+      "artist_names": [
+        "The Smashing Pumpkins"
+      ],
+      "artist_ids": [
+        "40Yq4vzPs9VNUrIBG5Jr2i"
+      ],
+      "album_name": "Siamese Dream (Deluxe Edition)",
+      "track_id": "0KQbsC4lUfm0qmRW68g6BF",
+      "album_id": "0bQglEvsHphrS19FGODEGo",
+      "duration_ms": 267306,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 31,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2735274788f34fc7656d2856dfd",
+      "album_art_local_path": "data/artwork/the_smashing_pumpkins_siamese_dream_deluxe_edition.jpg",
+      "release_year": 1993,
+      "track_number": 10,
+      "context_type": "album",
+      "context_uri": "spotify:album:0bQglEvsHphrS19FGODEGo",
+      "device_name": "Living Room Speaker",
+      "device_type": "Speaker",
+      "shuffle_state": true,
+      "_play_count": 1,
+      "_pinned": true
+    }
+  ],
+  "pl-372421473": [
     {
       "played_at": "2025-11-05T08:40:00Z",
       "track_name": "Whole Lotta Love - Remaster",
@@ -1836,7 +1836,7 @@
       "_pinned": false
     }
   ],
-  "pl-264682066": [
+  "pl-464425136": [
     {
       "played_at": "2025-11-04T08:39:00Z",
       "track_name": "Arrasta a Cadeira",
@@ -5869,7 +5869,7 @@
       "_pinned": false
     }
   ],
-  "pl-467811629": [
+  "pl-986158461": [
     {
       "played_at": "2025-11-06T07:13:00Z",
       "track_name": "Your Love Is King",
@@ -11932,7 +11932,7 @@
       "_pinned": false
     }
   ],
-  "pl-709697974": [
+  "pl-471396998": [
     {
       "played_at": "2025-11-03T12:28:00Z",
       "track_name": "Juicy - 2005 Remaster",
@@ -17879,7 +17879,7 @@
       "_pinned": false
     }
   ],
-  "pl-669789198": [
+  "pl-266657410": [
     {
       "played_at": "2025-11-07T08:42:00Z",
       "track_name": "The Ghost of You",
@@ -28553,7 +28553,7 @@
       "_pinned": false
     }
   ],
-  "pl-780585091": [
+  "pl-807987941": [
     {
       "played_at": "2025-11-04T08:38:00Z",
       "track_name": "The Sound of Us",
@@ -37690,7 +37690,7 @@
       "_pinned": false
     }
   ],
-  "pl-904433398": [
+  "pl-489879277": [
     {
       "played_at": "2025-11-03T20:54:00Z",
       "track_name": "ALIEN SUPERSTAR",

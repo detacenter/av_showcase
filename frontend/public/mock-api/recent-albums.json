@@ -1303,7 +1303,7 @@
           "track_id": "1zDbF5Dj7qNSLUvQj0vnD5",
           "track_name": "Talk About",
           "is_favorited": false,
-          "is_revisit": false
+          "is_revisit": true
         },
         {
           "played_at": "2026-01-28T20:53:43.973000Z",
@@ -1637,7 +1637,7 @@
           "track_id": "1MpCaOeUWhox2Fgigbe1cL",
           "track_name": "I'M THAT GIRL",
           "is_favorited": false,
-          "is_revisit": false
+          "is_revisit": true
         },
         {
           "played_at": "2025-11-16T19:20:31.202653Z",

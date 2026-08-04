@@ -335,6 +335,15 @@ def main() -> None:
     favorited_tracks = set(top_tracks_by_plays[:max(1, len(top_tracks_by_plays) // 10)])
     library_tracks = {tid: {"favorited": True} for tid in favorited_tracks}
 
+    # Track-level revisit flags — sparse subset, disjoint from favorited (a
+    # gap fixed session 5: the generator only ever set revisit at the artist
+    # level, so /api/revisit — which reads library.json's per-track revisit
+    # flag, per routers/revisit.py — was always empty).
+    non_favorited_tracks = [t for t in play_counts_by_track if t not in favorited_tracks]
+    revisit_tracks = set(rng.sample(non_favorited_tracks, k=min(18, len(non_favorited_tracks))))
+    for tid in revisit_tracks:
+        library_tracks.setdefault(tid, {})["revisit"] = True
+
     decades: dict[str, int] = {}
     for album_id in played_album_ids:
         artist_name = artist_of_album.get(album_id)
@@ -512,7 +521,7 @@ def main() -> None:
 
     print(f"listening_log.json: {len(log_entries)} plays")
     print(f"catalog.json: {len(catalog_out)} partially-completed albums")
-    print(f"library.json: {len(library_albums)} rated/noted/favorited albums, {len(library_artists)} artists, {len(library_tracks)} favorited tracks")
+    print(f"library.json: {len(library_albums)} rated/noted/favorited albums, {len(library_artists)} artists, {len(favorited_tracks)} favorited + {len(revisit_tracks)} revisit tracks")
     print(f"playlists.json: {len(playlists_out)} playlists")
     print(f"discogs_collection.json / vinyl_links.json: {len(discogs_out)} vinyl records")
 
