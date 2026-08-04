@@ -15,6 +15,12 @@ const overlay = {
   trackFavorites: {},   // track_id -> bool (only stores overrides, not full state)
   trackRevisits: {},    // track_id -> bool
   deletedPlays: new Set(), // played_at strings
+  artistFavorites: {},  // artist name -> bool
+  artistGenres: {},     // artist name -> string[]
+  artistHeroArt: {},    // artist name -> art_filename
+  albumFavorites: {},   // album_id -> bool
+  albumRatings: {},     // album_id -> int (0-20)
+  albumNotes: {},       // album_id -> string
 };
 
 self.addEventListener("install", (event) => {
@@ -106,6 +112,72 @@ function handleDeletePlay(playedAt) {
   return jsonResponse({ ok: true });
 }
 
+async function handleArtists() {
+  const data = await loadSnapshot("artists.json");
+  const artists = data.artists.map((a) => ({
+    ...a,
+    is_favorited: overlay.artistFavorites[a.name] ?? a.is_favorited,
+    hero_art_filename: overlay.artistHeroArt[a.name] ?? a.hero_art_filename,
+  }));
+  return jsonResponse({ artists, all_genres: data.all_genres });
+}
+
+async function handleArtistDetail(name) {
+  const details = await loadSnapshot("artists-detail.json");
+  const detail = details[name];
+  if (!detail) return jsonResponse({ error: "not found" }, 404);
+
+  const albums = detail.albums.map((album) => ({
+    ...album,
+    is_favorited: overlay.albumFavorites[album.album_id] ?? album.is_favorited,
+    rating: overlay.albumRatings[album.album_id] ?? album.rating,
+    notes: overlay.albumNotes[album.album_id] ?? album.notes,
+    track_plays: album.track_plays.map((t) => ({
+      ...t,
+      is_favorited: overlay.trackFavorites[t.track_id] ?? t.is_favorited,
+    })),
+  }));
+
+  return jsonResponse({
+    ...detail,
+    is_favorited: overlay.artistFavorites[name] ?? detail.is_favorited,
+    genres: overlay.artistGenres[name] ?? detail.genres,
+    albums,
+  });
+}
+
+function handleArtistFavorite(name) {
+  const current = overlay.artistFavorites[name] ?? false;
+  overlay.artistFavorites[name] = !current;
+  return jsonResponse({ ok: true });
+}
+
+function handleArtistHeroArt(name, body) {
+  overlay.artistHeroArt[name] = body.art_filename;
+  return jsonResponse({ ok: true });
+}
+
+function handleArtistGenres(name, body) {
+  overlay.artistGenres[name] = body.genres;
+  return jsonResponse({ ok: true });
+}
+
+function handleAlbumFavorite(albumId) {
+  const current = overlay.albumFavorites[albumId] ?? false;
+  overlay.albumFavorites[albumId] = !current;
+  return jsonResponse({ ok: true });
+}
+
+function handleAlbumRating(albumId, body) {
+  overlay.albumRatings[albumId] = body.rating;
+  return jsonResponse({ ok: true });
+}
+
+function handleAlbumNotes(albumId, body) {
+  overlay.albumNotes[albumId] = body.notes;
+  return jsonResponse({ ok: true });
+}
+
 async function handleApiRequest(request) {
   const url = new URL(request.url);
   const path = url.pathname;
@@ -119,12 +191,37 @@ async function handleApiRequest(request) {
     return jsonResponse(await loadSnapshot("settings.json"));
   }
 
+  if (path === "/api/artists" && method === "GET") {
+    return handleArtists();
+  }
+
   let m;
+  if ((m = path.match(/^\/api\/artists\/(.+)$/)) && method === "GET") {
+    return handleArtistDetail(decodeURIComponent(m[1]));
+  }
   if ((m = path.match(/^\/api\/library\/track\/([^/]+)\/favorite$/)) && method === "POST") {
     return handleTrackFavorite(decodeURIComponent(m[1]));
   }
   if ((m = path.match(/^\/api\/library\/track\/([^/]+)\/revisit$/)) && method === "POST") {
     return handleTrackRevisit(decodeURIComponent(m[1]));
+  }
+  if ((m = path.match(/^\/api\/library\/artist\/([^/]+)\/favorite$/)) && method === "POST") {
+    return handleArtistFavorite(decodeURIComponent(m[1]));
+  }
+  if ((m = path.match(/^\/api\/library\/artist\/([^/]+)\/hero-art$/)) && method === "POST") {
+    return handleArtistHeroArt(decodeURIComponent(m[1]), await request.json());
+  }
+  if ((m = path.match(/^\/api\/library\/artist\/([^/]+)\/genres$/)) && method === "POST") {
+    return handleArtistGenres(decodeURIComponent(m[1]), await request.json());
+  }
+  if ((m = path.match(/^\/api\/library\/album\/([^/]+)\/favorite$/)) && method === "POST") {
+    return handleAlbumFavorite(decodeURIComponent(m[1]));
+  }
+  if ((m = path.match(/^\/api\/library\/album\/([^/]+)\/rating$/)) && method === "POST") {
+    return handleAlbumRating(decodeURIComponent(m[1]), await request.json());
+  }
+  if ((m = path.match(/^\/api\/library\/album\/([^/]+)\/notes$/)) && method === "POST") {
+    return handleAlbumNotes(decodeURIComponent(m[1]), await request.json());
   }
   if ((m = path.match(/^\/api\/recent\/([^/]+)$/)) && method === "DELETE") {
     return handleDeletePlay(m[1]);

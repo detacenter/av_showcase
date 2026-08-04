@@ -1,0 +1,5070 @@
+{
+  "artists": [
+    {
+      "name": "The Notorious B.I.G.",
+      "play_count": 832,
+      "latest_played": "2025-11-03T12:28:00Z",
+      "is_favorited": true,
+      "genres": [
+        "hip-hop",
+        "rap",
+        "gangsta rap",
+        "east coast rap",
+        "hip hop"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2HTbQ0RHwukKVXAlTmCZP2",
+          "art_filename": "the_notorious_big_ready_to_die_the_remaster.jpg",
+          "count": 832,
+          "latest_played": "2025-11-03T12:28:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Beyonc\u00e9",
+      "play_count": 399,
+      "latest_played": "2025-11-03T20:54:00Z",
+      "is_favorited": true,
+      "genres": [
+        "rnb",
+        "pop",
+        "female vocalists",
+        "soul",
+        "hip-hop"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2UJwKSBUz6rtW4QLK74kQu",
+          "art_filename": "beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg",
+          "count": 161,
+          "latest_played": "2025-11-17T07:03:00Z"
+        },
+        {
+          "album_id": "6FJxoadUE4JNVwWHghBwnb",
+          "art_filename": "beyonc\u00e9_renaissance.jpg",
+          "count": 238,
+          "latest_played": "2025-11-03T20:54:00Z"
+        }
+      ]
+    },
+    {
+      "name": "A Lot Like Birds",
+      "play_count": 72,
+      "latest_played": "2025-11-04T08:38:00Z",
+      "is_favorited": true,
+      "genres": [
+        "post-hardcore",
+        "experimental",
+        "progressive rock",
+        "progressive",
+        "hardcore"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6na161CBWVTagqd2aIhQzF",
+          "art_filename": "a_lot_like_birds_divisi.jpg",
+          "count": 72,
+          "latest_played": "2025-11-04T08:38:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Os Tinco\u00e3s",
+      "play_count": 43,
+      "latest_played": "2025-11-04T08:39:00Z",
+      "is_favorited": true,
+      "genres": [
+        "samba",
+        "brazilian",
+        "mpb",
+        "brazil",
+        "afoxe"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "66E3E9DaAxpGPE4SgrOBDX",
+          "art_filename": "os_tinco\u00e3s_os_tinco\u00e3s.jpg",
+          "count": 43,
+          "latest_played": "2025-11-04T08:39:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Rita Lee",
+      "play_count": 19,
+      "latest_played": "2025-11-04T08:41:00Z",
+      "is_favorited": false,
+      "genres": [
+        "mpb",
+        "rock",
+        "brazilian",
+        "female vocalists",
+        "brasil"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1WN3eZOVfULIjZfxdsfoMO",
+          "art_filename": "rita_lee_rita_lee.jpg",
+          "count": 19,
+          "latest_played": "2025-11-04T08:41:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Hyldon",
+      "play_count": 11,
+      "latest_played": "2025-11-04T12:30:00Z",
+      "is_favorited": false,
+      "genres": [
+        "mpb",
+        "soul",
+        "brasil",
+        "brazilian",
+        "samba rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5RyGjTmlcwDBaVbFeZrTld",
+          "art_filename": "hyldon_na_rua_na_chuva_na_fazenda.jpg",
+          "count": 11,
+          "latest_played": "2025-11-04T12:30:00Z"
+        }
+      ]
+    },
+    {
+      "name": "L\u00f4 Borges",
+      "play_count": 124,
+      "latest_played": "2025-11-04T20:04:00Z",
+      "is_favorited": true,
+      "genres": [
+        "mpb",
+        "clube da esquina",
+        "brasil",
+        "brazil",
+        "brazilian"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0fXZAZ5XejnxhgRV38SH5I",
+          "art_filename": "l\u00f4_borges_l\u00f4_borges.jpg",
+          "count": 17,
+          "latest_played": "2025-12-13T22:58:00Z"
+        },
+        {
+          "album_id": "2ngEpie4g3Z2xtZhhwCAxH",
+          "art_filename": "l\u00f4_borges_retratos.jpg",
+          "count": 55,
+          "latest_played": "2025-11-10T07:59:00Z"
+        },
+        {
+          "album_id": "5risYG7klZCSLMNxB9dZhf",
+          "art_filename": "l\u00f4_borges_clube_da_esquina.jpg",
+          "count": 52,
+          "latest_played": "2025-11-04T20:04:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Led Zeppelin",
+      "play_count": 4,
+      "latest_played": "2025-11-05T08:40:00Z",
+      "is_favorited": false,
+      "genres": [
+        "classic rock",
+        "hard rock",
+        "rock",
+        "70s",
+        "progressive rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0GqpoHJREPp0iuXK3HzrHk",
+          "art_filename": "led_zeppelin_houses_of_the_holy_remaster.jpg",
+          "count": 2,
+          "latest_played": "2025-12-11T12:25:00Z"
+        },
+        {
+          "album_id": "58MQ0PLijVHePUonQlK76Y",
+          "art_filename": "led_zeppelin_led_zeppelin_ii_remaster.jpg",
+          "count": 2,
+          "latest_played": "2025-11-05T08:40:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Edu Lobo",
+      "play_count": 506,
+      "latest_played": "2025-11-05T12:30:00Z",
+      "is_favorited": true,
+      "genres": [
+        "bossa nova",
+        "mpb",
+        "brazilian",
+        "brasil",
+        "jazz"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5S7lcrRerABwsWzHisYsxP",
+          "art_filename": "edu_lobo_cantiga_de_longe.jpg",
+          "count": 506,
+          "latest_played": "2025-11-05T12:30:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Sade",
+      "play_count": 35,
+      "latest_played": "2025-11-06T07:13:00Z",
+      "is_favorited": false,
+      "genres": [
+        "soul",
+        "jazz",
+        "female vocalists",
+        "chillout",
+        "pop"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2y7DbLcG7L5BNx1IkY1PoK",
+          "art_filename": "sade_stronger_than_pride.jpg",
+          "count": 21,
+          "latest_played": "2025-12-13T20:09:00Z"
+        },
+        {
+          "album_id": "3JcNnjMVSKiNpqhErZarW0",
+          "art_filename": "sade_diamond_life.jpg",
+          "count": 14,
+          "latest_played": "2025-11-06T07:13:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Milton Nascimento",
+      "play_count": 32,
+      "latest_played": "2025-11-07T07:55:00Z",
+      "is_favorited": false,
+      "genres": [
+        "mpb",
+        "brazilian",
+        "brasil",
+        "brazil",
+        "world"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6f0LeYZyJxMnhCQCreFYZ0",
+          "art_filename": "milton_nascimento_travessia.jpg",
+          "count": 8,
+          "latest_played": "2025-11-24T19:29:00Z"
+        },
+        {
+          "album_id": "5eL9goh1UrlUbYlzdnxPFo",
+          "art_filename": "milton_nascimento_minas.jpg",
+          "count": 9,
+          "latest_played": "2025-11-07T20:17:00Z"
+        },
+        {
+          "album_id": "6GPL5sMWxYibGoKnarlqUk",
+          "art_filename": "milton_nascimento_milton.jpg",
+          "count": 15,
+          "latest_played": "2025-11-07T07:55:00Z"
+        }
+      ]
+    },
+    {
+      "name": "My Chemical Romance",
+      "play_count": 45,
+      "latest_played": "2025-11-07T08:42:00Z",
+      "is_favorited": true,
+      "genres": [
+        "rock",
+        "alternative",
+        "punk rock",
+        "emo",
+        "punk"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3DuiGV3J09SUhvp8gqNx8h",
+          "art_filename": "my_chemical_romance_three_cheers_for_sweet_revenge.jpg",
+          "count": 45,
+          "latest_played": "2025-11-07T08:42:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Sam Smith",
+      "play_count": 14,
+      "latest_played": "2025-11-07T19:51:00Z",
+      "is_favorited": false,
+      "genres": [
+        "soul",
+        "pop",
+        "british",
+        "electronic",
+        "dance"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5XCBX16KNYsAe7V5hQV9mC",
+          "art_filename": "sam_smith_love_goes.jpg",
+          "count": 4,
+          "latest_played": "2026-01-26T07:33:00Z"
+        },
+        {
+          "album_id": "08jWgM4vSkTose4blKBWov",
+          "art_filename": "sam_smith_in_the_lonely_hour.jpg",
+          "count": 4,
+          "latest_played": "2026-01-16T18:45:00Z"
+        },
+        {
+          "album_id": "3TJz2UBNYJtlEly0sPeNrQ",
+          "art_filename": "sam_smith_the_thrill_of_it_all_special_edition.jpg",
+          "count": 2,
+          "latest_played": "2025-12-05T20:22:00Z"
+        },
+        {
+          "album_id": "2St9PxrOenGs3X2KpGhCaE",
+          "art_filename": "sam_smith_together.jpg",
+          "count": 3,
+          "latest_played": "2025-12-05T19:32:00Z"
+        },
+        {
+          "album_id": "3Uq1jNGnD412ZvCb6j2DKV",
+          "art_filename": "sam_smith_gloria.jpg",
+          "count": 1,
+          "latest_played": "2025-11-07T19:51:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Sufjan Stevens",
+      "play_count": 34,
+      "latest_played": "2025-11-07T20:45:00Z",
+      "is_favorited": false,
+      "genres": [
+        "folk",
+        "indie",
+        "singer-songwriter",
+        "alternative",
+        "indie rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1WZ9u1VDIih007LAC6VfpA",
+          "art_filename": "sufjan_stevens_seven_swans.jpg",
+          "count": 3,
+          "latest_played": "2026-01-22T07:38:00Z"
+        },
+        {
+          "album_id": "1wnEAz2lDtNoUUZF0KStuo",
+          "art_filename": "sufjan_stevens_all_delighted_people.jpg",
+          "count": 8,
+          "latest_played": "2025-12-27T20:39:00Z"
+        },
+        {
+          "album_id": "4kRMCapj9nEyBWnM0kc9OX",
+          "art_filename": "sufjan_stevens_the_age_of_adz.jpg",
+          "count": 11,
+          "latest_played": "2025-12-13T20:01:00Z"
+        },
+        {
+          "album_id": "64xtjfsPHNHch0CZ7fPTjS",
+          "art_filename": "sufjan_stevens_carrie_lowell.jpg",
+          "count": 9,
+          "latest_played": "2025-11-19T21:45:00Z"
+        },
+        {
+          "album_id": "2XOwIbRcNFIBFvGEHDSBQk",
+          "art_filename": "sufjan_stevens_michigan.jpg",
+          "count": 3,
+          "latest_played": "2025-11-07T20:45:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Janet Jackson",
+      "play_count": 316,
+      "latest_played": "2025-11-07T20:51:00Z",
+      "is_favorited": true,
+      "genres": [
+        "pop",
+        "rnb",
+        "female vocalists",
+        "dance",
+        "soul"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "7GWkceE5McMVfffd1RGL6Y",
+          "art_filename": "janet_jackson_control.jpg",
+          "count": 88,
+          "latest_played": "2025-11-20T21:15:00Z"
+        },
+        {
+          "album_id": "4OD3LU6001esAtFshDX46M",
+          "art_filename": "janet_jackson_rhythm_nation_1814.jpg",
+          "count": 114,
+          "latest_played": "2025-11-15T20:44:00Z"
+        },
+        {
+          "album_id": "1uFp52Q9EXLNA6DTRYnpTj",
+          "art_filename": "janet_jackson_the_velvet_rope.jpg",
+          "count": 114,
+          "latest_played": "2025-11-07T20:51:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Mom Jeans.",
+      "play_count": 331,
+      "latest_played": "2025-11-08T13:27:00Z",
+      "is_favorited": true,
+      "genres": [
+        "emo",
+        "pop punk",
+        "midwest emo",
+        "indie",
+        "indie rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0KzElSxcfAvleUIuOg0TOQ",
+          "art_filename": "mom_jeans_best_buds.jpg",
+          "count": 331,
+          "latest_played": "2025-11-08T13:27:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Kate Bush",
+      "play_count": 43,
+      "latest_played": "2025-11-08T14:34:00Z",
+      "is_favorited": true,
+      "genres": [
+        "female vocalists",
+        "singer-songwriter",
+        "pop",
+        "alternative",
+        "80s"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1ww8GdNvrF0dgJbrnVZmAr",
+          "art_filename": "kate_bush_hounds_of_love_2018_remaster.jpg",
+          "count": 4,
+          "latest_played": "2025-12-11T08:47:00Z"
+        },
+        {
+          "album_id": "7uNjeNs5AmDqZHzIbyPkZH",
+          "art_filename": "kate_bush_never_for_ever_2018_remaster.jpg",
+          "count": 23,
+          "latest_played": "2025-11-14T08:38:00Z"
+        },
+        {
+          "album_id": "5EyDvOit9McsAc9ao1QROt",
+          "art_filename": "kate_bush_the_sensual_world_2018_remaster.jpg",
+          "count": 16,
+          "latest_played": "2025-11-08T14:34:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Frank Ocean",
+      "play_count": 82,
+      "latest_played": "2025-11-08T15:19:00Z",
+      "is_favorited": true,
+      "genres": [
+        "rnb",
+        "soul",
+        "hip-hop",
+        "r&b",
+        "ofwgkta"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "392p3shh2jkxUxY2VHvlH8",
+          "art_filename": "frank_ocean_channel_orange.jpg",
+          "count": 34,
+          "latest_played": "2025-11-25T22:21:00Z"
+        },
+        {
+          "album_id": "3mH6qwIy9crq0I9YQbOuDf",
+          "art_filename": "frank_ocean_blonde.jpg",
+          "count": 48,
+          "latest_played": "2025-11-08T15:19:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Judee Sill",
+      "play_count": 34,
+      "latest_played": "2025-11-08T15:32:00Z",
+      "is_favorited": false,
+      "genres": [
+        "folk",
+        "singer-songwriter",
+        "female vocalists",
+        "70s",
+        "folk-rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "40epQ5uLIK1k7mGL0ESpUn",
+          "art_filename": "judee_sill_heart_food.jpg",
+          "count": 34,
+          "latest_played": "2025-11-08T15:32:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Curtis Mayfield",
+      "play_count": 13,
+      "latest_played": "2025-11-08T15:33:00Z",
+      "is_favorited": false,
+      "genres": [
+        "soul",
+        "funk",
+        "70s",
+        "rhythm and blues",
+        "rnb"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5ljIGCRRvS48V4ADzPGav2",
+          "art_filename": "curtis_mayfield_superfly_original_soundtrack.jpg",
+          "count": 13,
+          "latest_played": "2025-11-08T15:33:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Maria Beth\u00e2nia",
+      "play_count": 2,
+      "latest_played": "2025-11-08T20:06:00Z",
+      "is_favorited": false,
+      "genres": [
+        "mpb",
+        "bossa nova",
+        "female vocalists",
+        "brasil",
+        "brazilian"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "4hjiHP3NIIzyYUgfs145zr",
+          "art_filename": "maria_beth\u00e2nia_\u00e1libi.jpg",
+          "count": 2,
+          "latest_played": "2025-11-08T20:06:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Fever Ray",
+      "play_count": 9,
+      "latest_played": "2025-11-08T21:50:00Z",
+      "is_favorited": false,
+      "genres": [
+        "electronic",
+        "ambient",
+        "swedish",
+        "female vocalists",
+        "experimental"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "019nA7vSKz0dD5yRKYRpbM",
+          "art_filename": "fever_ray_fever_ray.jpg",
+          "count": 9,
+          "latest_played": "2025-11-08T21:50:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Washed Out",
+      "play_count": 17,
+      "latest_played": "2025-11-09T11:19:00Z",
+      "is_favorited": false,
+      "genres": [
+        "chillwave",
+        "electronic",
+        "lo-fi",
+        "chillout",
+        "balearic"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1TwAADd8Z8C1GeeCSaXTNr",
+          "art_filename": "washed_out_within_and_without.jpg",
+          "count": 17,
+          "latest_played": "2025-11-09T11:19:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Deerhunter",
+      "play_count": 6,
+      "latest_played": "2025-11-09T13:10:00Z",
+      "is_favorited": false,
+      "genres": [
+        "shoegaze",
+        "experimental",
+        "psychedelic",
+        "indie",
+        "indie rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "7BbHXG8AmJNQ0w3hE6dU4q",
+          "art_filename": "deerhunter_cryptograms.jpg",
+          "count": 6,
+          "latest_played": "2025-11-09T13:10:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Radiohead",
+      "play_count": 247,
+      "latest_played": "2025-11-09T13:20:00Z",
+      "is_favorited": true,
+      "genres": [
+        "rock",
+        "alternative",
+        "alternative rock",
+        "indie",
+        "electronic"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6dVIqQ8qmQ5GBnJ9shOYGE",
+          "art_filename": "radiohead_ok_computer.jpg",
+          "count": 81,
+          "latest_played": "2025-12-13T21:39:00Z"
+        },
+        {
+          "album_id": "6GjwtEZcfenmOf6l18N7T7",
+          "art_filename": "radiohead_kid_a.jpg",
+          "count": 81,
+          "latest_played": "2025-12-04T08:20:00Z"
+        },
+        {
+          "album_id": "5vkqYmiPBYLaalcmjujWxK",
+          "art_filename": "radiohead_in_rainbows.jpg",
+          "count": 85,
+          "latest_played": "2025-11-09T13:20:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Arthur Russell",
+      "play_count": 8,
+      "latest_played": "2025-11-09T13:29:00Z",
+      "is_favorited": false,
+      "genres": [
+        "avant-garde",
+        "experimental",
+        "disco",
+        "electronic",
+        "no wave"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "7hodLjVNQZSsNEqvG77ZkI",
+          "art_filename": "arthur_russell_world_of_echo.jpg",
+          "count": 8,
+          "latest_played": "2025-11-09T13:29:00Z"
+        }
+      ]
+    },
+    {
+      "name": "The Smashing Pumpkins",
+      "play_count": 10,
+      "latest_played": "2025-11-09T14:45:00Z",
+      "is_favorited": false,
+      "genres": [
+        "alternative rock",
+        "grunge",
+        "alternative",
+        "rock",
+        "90s"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "14gI3ml0wxlgVrX1ve8zyJ",
+          "art_filename": "the_smashing_pumpkins_gish_deluxe_edition.jpg",
+          "count": 1,
+          "latest_played": "2026-01-14T19:19:00Z"
+        },
+        {
+          "album_id": "7wJTn94PWzZ3zE0lg3qhld",
+          "art_filename": "the_smashing_pumpkins_gish_remastered.jpg",
+          "count": 3,
+          "latest_played": "2025-12-21T13:11:00Z"
+        },
+        {
+          "album_id": "0bQglEvsHphrS19FGODEGo",
+          "art_filename": "the_smashing_pumpkins_siamese_dream_deluxe_edition.jpg",
+          "count": 6,
+          "latest_played": "2025-11-09T14:45:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Erykah Badu",
+      "play_count": 3,
+      "latest_played": "2025-11-09T15:11:00Z",
+      "is_favorited": false,
+      "genres": [
+        "soul",
+        "neo-soul",
+        "female vocalists",
+        "rnb",
+        "jazz"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3qr4pTBWEU1SVf01j6RAx3",
+          "art_filename": "erykah_badu_baduizm.jpg",
+          "count": 3,
+          "latest_played": "2025-11-09T15:11:00Z"
+        }
+      ]
+    },
+    {
+      "name": "envy",
+      "play_count": 8,
+      "latest_played": "2025-11-09T19:01:00Z",
+      "is_favorited": false,
+      "genres": [
+        "screamo",
+        "post-rock",
+        "post-hardcore",
+        "hardcore",
+        "japanese"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3ShOlS0OwhEq4ai8K9dvko",
+          "art_filename": "envy_from_here_to_eternity.jpg",
+          "count": 8,
+          "latest_played": "2025-11-09T19:01:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Tim Buckley",
+      "play_count": 4,
+      "latest_played": "2025-11-09T21:41:00Z",
+      "is_favorited": false,
+      "genres": [
+        "folk",
+        "singer-songwriter",
+        "psychedelic",
+        "folk-rock",
+        "rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1RkTOe3SQM0A2ewdaRvOEF",
+          "art_filename": "tim_buckley_works_in_progress.jpg",
+          "count": 4,
+          "latest_played": "2025-11-09T21:41:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Axolotes Mexicanos",
+      "play_count": 8,
+      "latest_played": "2025-11-09T22:10:00Z",
+      "is_favorited": false,
+      "genres": [
+        "tontipop",
+        "pop",
+        "twee pop",
+        "punk",
+        "lo-fi"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2haqxYKeT3Cvi1sfqvsd5K",
+          "art_filename": "axolotes_mexicanos_4ever.jpg",
+          "count": 8,
+          "latest_played": "2025-11-09T22:10:00Z"
+        }
+      ]
+    },
+    {
+      "name": "The Mars Volta",
+      "play_count": 22,
+      "latest_played": "2025-11-09T22:16:00Z",
+      "is_favorited": false,
+      "genres": [
+        "progressive rock",
+        "experimental",
+        "rock",
+        "alternative",
+        "progressive"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "30iqYID1JMBXLVFfErwTSd",
+          "art_filename": "the_mars_volta_frances_the_mute.jpg",
+          "count": 4,
+          "latest_played": "2025-12-29T20:32:00Z"
+        },
+        {
+          "album_id": "0CA2EVHhRPR5VPV78KZw89",
+          "art_filename": "the_mars_volta_deloused_in_the_comatorium.jpg",
+          "count": 6,
+          "latest_played": "2025-12-04T18:19:00Z"
+        },
+        {
+          "album_id": "5OISte8J6DV61Vad0W0Cv9",
+          "art_filename": "the_mars_volta_amputechture.jpg",
+          "count": 6,
+          "latest_played": "2025-11-23T22:49:00Z"
+        },
+        {
+          "album_id": "62t7avflSxMRfEoJEhFikS",
+          "art_filename": "the_mars_volta_the_bedlam_in_goliath.jpg",
+          "count": 6,
+          "latest_played": "2025-11-09T22:16:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Jesu/Sun Kil Moon",
+      "play_count": 24,
+      "latest_played": "2025-11-10T07:12:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post rock",
+        "folk",
+        "singer-songwriter",
+        "electronic",
+        "spoken word"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2wE1bvm3Ha0BvkHTvwk6rw",
+          "art_filename": "jesusun_kil_moon_jesu_sun_kil_moon.jpg",
+          "count": 24,
+          "latest_played": "2025-11-10T07:12:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Jo\u00e3o Bosco",
+      "play_count": 5,
+      "latest_played": "2025-11-11T12:20:00Z",
+      "is_favorited": false,
+      "genres": [
+        "mpb",
+        "samba",
+        "bossa nova",
+        "brasil",
+        "brazilian"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3391Q4zuKuz0JpHkmaJsQv",
+          "art_filename": "jo\u00e3o_bosco_comiss\u00e3o_de_frente.jpg",
+          "count": 5,
+          "latest_played": "2025-11-11T12:20:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Neutral Milk Hotel",
+      "play_count": 33,
+      "latest_played": "2025-11-11T20:29:00Z",
+      "is_favorited": false,
+      "genres": [
+        "folk",
+        "indie",
+        "lo-fi",
+        "indie rock",
+        "elephant 6"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "17q5eeNk3HAjX1gzQnkTX7",
+          "art_filename": "neutral_milk_hotel_in_the_aeroplane_over_the_sea.jpg",
+          "count": 11,
+          "latest_played": "2025-11-15T22:54:00Z"
+        },
+        {
+          "album_id": "3HTsNBfZLfRXQTfdLeLVK1",
+          "art_filename": "neutral_milk_hotel_on_avery_island.jpg",
+          "count": 22,
+          "latest_played": "2025-11-11T20:29:00Z"
+        }
+      ]
+    },
+    {
+      "name": "The Avalanches",
+      "play_count": 32,
+      "latest_played": "2025-11-12T18:28:00Z",
+      "is_favorited": false,
+      "genres": [
+        "electronic",
+        "turntablism",
+        "australian",
+        "dance",
+        "electronica"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0YtYaaO0aipyeQl0xhAWTO",
+          "art_filename": "the_avalanches_since_i_left_you_20th_anniversary_deluxe_edition.jpg",
+          "count": 32,
+          "latest_played": "2025-11-12T18:28:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Melvins",
+      "play_count": 22,
+      "latest_played": "2025-11-13T22:23:00Z",
+      "is_favorited": false,
+      "genres": [
+        "sludge",
+        "grunge",
+        "stoner rock",
+        "rock",
+        "metal"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1Ft1QQbUOCgSqumZKYuWhw",
+          "art_filename": "melvins_stoner_witch.jpg",
+          "count": 13,
+          "latest_played": "2026-03-18T07:26:00Z"
+        },
+        {
+          "album_id": "27lBsmm0K8h8LGvsmodksz",
+          "art_filename": "melvins_a_senile_animal.jpg",
+          "count": 1,
+          "latest_played": "2026-02-28T19:42:00Z"
+        },
+        {
+          "album_id": "0agYsmUl1uS32ZFHKQ8L8W",
+          "art_filename": "melvins_houdini.jpg",
+          "count": 8,
+          "latest_played": "2025-11-13T22:23:00Z"
+        }
+      ]
+    },
+    {
+      "name": "LCD Soundsystem",
+      "play_count": 8,
+      "latest_played": "2025-11-13T22:46:00Z",
+      "is_favorited": false,
+      "genres": [
+        "electronic",
+        "indie",
+        "dance",
+        "alternative",
+        "electronica"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "4hnqM0JK4CM1phwfq1Ldyz",
+          "art_filename": "lcd_soundsystem_this_is_happening.jpg",
+          "count": 3,
+          "latest_played": "2026-05-27T08:11:00Z"
+        },
+        {
+          "album_id": "1R8kkopLT4IAxzMMkjic6X",
+          "art_filename": "lcd_soundsystem_sound_of_silver.jpg",
+          "count": 5,
+          "latest_played": "2025-11-13T22:46:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Ashleys",
+      "play_count": 9,
+      "latest_played": "2025-11-15T13:19:00Z",
+      "is_favorited": false,
+      "genres": [
+        "spanish",
+        "alternative pop",
+        "spain"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "07LyE5ZQn8tLkKfSq0cjpd",
+          "art_filename": "ashleys_al_final_no_era_para_tanto.jpg",
+          "count": 9,
+          "latest_played": "2025-11-15T13:19:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Mr. Bungle",
+      "play_count": 53,
+      "latest_played": "2025-11-15T19:19:00Z",
+      "is_favorited": true,
+      "genres": [
+        "experimental",
+        "avant-garde",
+        "alternative",
+        "mike patton",
+        "rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0DK10k39r9LAZ7HgP1EPuB",
+          "art_filename": "mr_bungle_disco_volante.jpg",
+          "count": 53,
+          "latest_played": "2025-11-15T19:19:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Kings of Leon",
+      "play_count": 2,
+      "latest_played": "2025-11-15T19:25:00Z",
+      "is_favorited": false,
+      "genres": [
+        "rock",
+        "indie",
+        "indie rock",
+        "alternative",
+        "southern rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5CiZOqd3iF6p2PsqBjljat",
+          "art_filename": "kings_of_leon_because_of_the_times.jpg",
+          "count": 2,
+          "latest_played": "2025-11-15T19:25:00Z"
+        }
+      ]
+    },
+    {
+      "name": "The Tallest Man On Earth",
+      "play_count": 12,
+      "latest_played": "2025-11-15T19:32:00Z",
+      "is_favorited": false,
+      "genres": [
+        "folk",
+        "singer-songwriter",
+        "acoustic",
+        "swedish",
+        "blues"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6Voznuxp5917IwIlLxSAik",
+          "art_filename": "the_tallest_man_on_earth_theres_no_leaving_now.jpg",
+          "count": 12,
+          "latest_played": "2025-11-15T19:32:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Rage Against The Machine",
+      "play_count": 15,
+      "latest_played": "2025-11-16T13:25:00Z",
+      "is_favorited": false,
+      "genres": [
+        "alternative rock",
+        "rock",
+        "alternative",
+        "political",
+        "rapcore"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "4Io5vWtmV1rFj4yirKb4y4",
+          "art_filename": "rage_against_the_machine_rage_against_the_machine_xx_20th_anniversary_spe.jpg",
+          "count": 1,
+          "latest_played": "2026-07-23T12:34:00Z"
+        },
+        {
+          "album_id": "24E6rDvGDuYFjlGewp4ntF",
+          "art_filename": "rage_against_the_machine_evil_empire.jpg",
+          "count": 14,
+          "latest_played": "2025-11-16T13:25:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Dear and the Headlights",
+      "play_count": 70,
+      "latest_played": "2025-11-16T13:40:00Z",
+      "is_favorited": true,
+      "genres": [
+        "indie",
+        "indie rock",
+        "rock",
+        "alternative",
+        "american"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2btXQFitnklvkPC0dAIvAx",
+          "art_filename": "dear_and_the_headlights_small_steps_heavy_hooves.jpg",
+          "count": 16,
+          "latest_played": "2026-06-18T08:20:00Z"
+        },
+        {
+          "album_id": "38TTw10V04chCowK4hPsDu",
+          "art_filename": "dear_and_the_headlights_drunk_like_bible_times.jpg",
+          "count": 54,
+          "latest_played": "2025-11-16T13:40:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Run The Jewels",
+      "play_count": 2,
+      "latest_played": "2025-11-16T14:15:00Z",
+      "is_favorited": false,
+      "genres": [
+        "hip-hop",
+        "rap",
+        "underground hip-hop",
+        "hip hop",
+        "underground rap"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6Hb0uXteh6zusGSn5wVpUp",
+          "art_filename": "run_the_jewels_run_the_jewels_3.jpg",
+          "count": 2,
+          "latest_played": "2025-11-16T14:15:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Gil Scott-Heron",
+      "play_count": 24,
+      "latest_played": "2025-11-17T07:37:00Z",
+      "is_favorited": false,
+      "genres": [
+        "soul",
+        "funk",
+        "jazz",
+        "poetry",
+        "political"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "7BuwwZzrJCAJaC12QKkDOh",
+          "art_filename": "gil_scott_heron_were_new_here.jpg",
+          "count": 24,
+          "latest_played": "2025-11-17T07:37:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Fiona Apple",
+      "play_count": 12,
+      "latest_played": "2025-11-17T08:25:00Z",
+      "is_favorited": false,
+      "genres": [
+        "female vocalists",
+        "singer-songwriter",
+        "alternative",
+        "piano",
+        "indie"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6B5favhKTShFTjRLsKIUfa",
+          "art_filename": "fiona_apple_the_idler_wheel_is_wiser_than_the_driver_of_the_.jpg",
+          "count": 12,
+          "latest_played": "2025-11-17T08:25:00Z"
+        }
+      ]
+    },
+    {
+      "name": "NEU!",
+      "play_count": 51,
+      "latest_played": "2025-11-18T07:57:00Z",
+      "is_favorited": true,
+      "genres": [
+        "krautrock",
+        "experimental",
+        "psychedelic",
+        "electronic",
+        "german"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1aKOQpS6TrGd3wTQooaIBH",
+          "art_filename": "neu_neu.jpg",
+          "count": 51,
+          "latest_played": "2025-11-18T07:57:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Jo\u00e3o Donato",
+      "play_count": 58,
+      "latest_played": "2025-11-18T19:00:00Z",
+      "is_favorited": true,
+      "genres": [
+        "bossa nova",
+        "jazz",
+        "brazilian",
+        "mpb",
+        "brazil"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6GEO5pSp3ojwIm9vZqTtRd",
+          "art_filename": "jo\u00e3o_donato_quem_\u00e9_quem.jpg",
+          "count": 58,
+          "latest_played": "2025-11-18T19:00:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Mind Enterprises",
+      "play_count": 26,
+      "latest_played": "2025-11-18T19:48:00Z",
+      "is_favorited": false,
+      "genres": [
+        "italy",
+        "lo-fi",
+        "italian",
+        "pop",
+        "funk_add_to_lidarr_batch_18"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "7chkAhG5ThiQdr7ESj2EYK",
+          "art_filename": "mind_enterprises_panorama_ep.jpg",
+          "count": 26,
+          "latest_played": "2025-11-18T19:48:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Masayoshi Takanaka",
+      "play_count": 26,
+      "latest_played": "2025-11-18T20:38:00Z",
+      "is_favorited": false,
+      "genres": [
+        "fusion",
+        "japanese",
+        "funk",
+        "jazz",
+        "guitar"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0zXeZw0oFC2Db99RqlfHur",
+          "art_filename": "masayoshi_takanaka_brasilian_skies.jpg",
+          "count": 14,
+          "latest_played": "2025-12-26T21:12:00Z"
+        },
+        {
+          "album_id": "7BQPfd39YTObQGamGhDF7g",
+          "art_filename": "masayoshi_takanaka_seychelles.jpg",
+          "count": 12,
+          "latest_played": "2025-11-18T20:38:00Z"
+        }
+      ]
+    },
+    {
+      "name": "U2",
+      "play_count": 206,
+      "latest_played": "2025-11-19T21:37:00Z",
+      "is_favorited": true,
+      "genres": [
+        "rock",
+        "classic rock",
+        "irish",
+        "alternative",
+        "pop"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5vBZRYu2GLA65nfxBvG1a7",
+          "art_filename": "u2_the_joshua_tree.jpg",
+          "count": 206,
+          "latest_played": "2025-11-19T21:37:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Boards of Canada",
+      "play_count": 5,
+      "latest_played": "2025-11-20T18:12:00Z",
+      "is_favorited": false,
+      "genres": [
+        "ambient",
+        "electronic",
+        "idm",
+        "chillout",
+        "electronica"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6uO5B6km2Dco28tOBmZtSU",
+          "art_filename": "boards_of_canada_the_campfire_headphase.jpg",
+          "count": 1,
+          "latest_played": "2026-01-25T21:41:00Z"
+        },
+        {
+          "album_id": "2U2WNneO3RdYEASjRI2OZx",
+          "art_filename": "boards_of_canada_in_a_beautiful_place_out_in_the_country.jpg",
+          "count": 4,
+          "latest_played": "2025-11-20T18:12:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Electric Light Orchestra",
+      "play_count": 2,
+      "latest_played": "2025-11-20T19:32:00Z",
+      "is_favorited": false,
+      "genres": [
+        "classic rock",
+        "progressive rock",
+        "rock",
+        "70s",
+        "british"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0dWzFLXRM8F1IsEYdKopAa",
+          "art_filename": "electric_light_orchestra_xanadu.jpg",
+          "count": 1,
+          "latest_played": "2026-02-17T21:31:00Z"
+        },
+        {
+          "album_id": "1HSU8sXRI9HiEAHslHRFQ3",
+          "art_filename": "electric_light_orchestra_face_the_music.jpg",
+          "count": 1,
+          "latest_played": "2025-11-20T19:32:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Nirvana",
+      "play_count": 3,
+      "latest_played": "2025-11-20T22:44:00Z",
+      "is_favorited": false,
+      "genres": [
+        "grunge",
+        "rock",
+        "alternative rock",
+        "alternative",
+        "90s"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5zBPRXCAc801vyHWoRurNZ",
+          "art_filename": "nirvana_nirvana.jpg",
+          "count": 1,
+          "latest_played": "2026-05-27T08:36:00Z"
+        },
+        {
+          "album_id": "6ICrBzsbHVluGHP8wGK4Y3",
+          "art_filename": "nirvana_incesticide.jpg",
+          "count": 2,
+          "latest_played": "2025-11-20T22:44:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Arcade Fire",
+      "play_count": 88,
+      "latest_played": "2025-11-22T21:44:00Z",
+      "is_favorited": true,
+      "genres": [
+        "indie rock",
+        "indie",
+        "alternative",
+        "canadian",
+        "rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "4GT6uZod4p5RiDMOVHOMme",
+          "art_filename": "arcade_fire_neon_bible.jpg",
+          "count": 32,
+          "latest_played": "2026-04-18T14:03:00Z"
+        },
+        {
+          "album_id": "6ZB8qaR9JNuS0Q0bG1nbcH",
+          "art_filename": "arcade_fire_funeral.jpg",
+          "count": 19,
+          "latest_played": "2026-01-26T08:51:00Z"
+        },
+        {
+          "album_id": "0gkUcpkyW2SXN49Yktkf6F",
+          "art_filename": "arcade_fire_the_suburbs_deluxe.jpg",
+          "count": 37,
+          "latest_played": "2025-11-22T21:44:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Have Mercy",
+      "play_count": 3,
+      "latest_played": "2025-11-23T21:53:00Z",
+      "is_favorited": false,
+      "genres": [
+        "emo",
+        "indie rock",
+        "post-hardcore",
+        "thrash metal",
+        "pop punk"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "7pe1YnNKT4WLAJJ5jRU3eh",
+          "art_filename": "have_mercy_the_earth_pushed_back.jpg",
+          "count": 3,
+          "latest_played": "2025-11-23T21:53:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Kanye West",
+      "play_count": 23,
+      "latest_played": "2025-11-24T18:34:00Z",
+      "is_favorited": false,
+      "genres": [
+        "hip-hop",
+        "rap",
+        "hip hop",
+        "rnb",
+        "kanye west"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "20r762YmB5HeofjMCiPMLv",
+          "art_filename": "kanye_west_my_beautiful_dark_twisted_fantasy.jpg",
+          "count": 12,
+          "latest_played": "2025-12-15T18:16:00Z"
+        },
+        {
+          "album_id": "7gsWAHLeT0w7es6FofOXk1",
+          "art_filename": "kanye_west_the_life_of_pablo.jpg",
+          "count": 6,
+          "latest_played": "2025-12-15T18:12:00Z"
+        },
+        {
+          "album_id": "3WFTGIO6E3Xh4paEOBY9OU",
+          "art_filename": "kanye_west_808s_heartbreak.jpg",
+          "count": 5,
+          "latest_played": "2025-11-24T18:34:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Talking Heads",
+      "play_count": 23,
+      "latest_played": "2025-11-24T20:13:00Z",
+      "is_favorited": false,
+      "genres": [
+        "new wave",
+        "post-punk",
+        "80s",
+        "rock",
+        "alternative"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1JvXxLsm0PxlGH4LXzqMGq",
+          "art_filename": "talking_heads_remain_in_light.jpg",
+          "count": 9,
+          "latest_played": "2026-02-12T12:40:00Z"
+        },
+        {
+          "album_id": "78MM8HrabEGPLVWaJkM2t1",
+          "art_filename": "talking_heads_speaking_in_tongues.jpg",
+          "count": 14,
+          "latest_played": "2025-11-24T20:13:00Z"
+        }
+      ]
+    },
+    {
+      "name": "I Kill Giants",
+      "play_count": 87,
+      "latest_played": "2025-11-24T21:19:00Z",
+      "is_favorited": true,
+      "genres": [
+        "math rock",
+        "emo",
+        "indie",
+        "alternative rock",
+        "post-hardcore"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5kXmpj8YLcxEMk8BWc57UV",
+          "art_filename": "i_kill_giants_let_it_out.jpg",
+          "count": 45,
+          "latest_played": "2025-12-09T20:21:00Z"
+        },
+        {
+          "album_id": "3vxkGvc3QzZqLt6pQNw7qI",
+          "art_filename": "i_kill_giants_i_kill_giants_remastered.jpg",
+          "count": 42,
+          "latest_played": "2025-11-24T21:19:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Gilberto Gil",
+      "play_count": 8,
+      "latest_played": "2025-11-26T07:11:00Z",
+      "is_favorited": false,
+      "genres": [
+        "mpb",
+        "brazilian",
+        "tropicalia",
+        "bossa nova",
+        "brasil"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3eXCgCBM4BS6H83xmxKdL6",
+          "art_filename": "gilberto_gil_um_banda_um.jpg",
+          "count": 1,
+          "latest_played": "2026-01-06T08:57:00Z"
+        },
+        {
+          "album_id": "3qoUU8sm4eBT5POFHQSl5L",
+          "art_filename": "gilberto_gil_luar.jpg",
+          "count": 3,
+          "latest_played": "2025-12-13T20:34:00Z"
+        },
+        {
+          "album_id": "1hoogSOvsrpNEEycTHaqmX",
+          "art_filename": "gilberto_gil_refazenda.jpg",
+          "count": 4,
+          "latest_played": "2025-11-26T07:11:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Drive Like Jehu",
+      "play_count": 3,
+      "latest_played": "2025-11-27T19:23:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post-hardcore",
+        "math rock",
+        "noise rock",
+        "emo",
+        "indie"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "7AHbaRIYnilUwe981nZpmi",
+          "art_filename": "drive_like_jehu_yank_crime.jpg",
+          "count": 3,
+          "latest_played": "2025-11-27T19:23:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Modest Mouse",
+      "play_count": 13,
+      "latest_played": "2025-11-29T15:48:00Z",
+      "is_favorited": false,
+      "genres": [
+        "indie rock",
+        "indie",
+        "alternative",
+        "alternative rock",
+        "rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5SbcupirEParczvqqyUPXL",
+          "art_filename": "modest_mouse_the_moon_antarctica.jpg",
+          "count": 13,
+          "latest_played": "2025-11-29T15:48:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Refused",
+      "play_count": 20,
+      "latest_played": "2025-11-29T19:23:00Z",
+      "is_favorited": false,
+      "genres": [
+        "hardcore",
+        "post-hardcore",
+        "hardcore punk",
+        "punk",
+        "swedish"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2Us9qPHLvLoTl6HkYAPcz2",
+          "art_filename": "refused_the_shape_of_punk_to_come_deluxe_edition.jpg",
+          "count": 20,
+          "latest_played": "2025-11-29T19:23:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Southside",
+      "play_count": 36,
+      "latest_played": "2025-11-29T20:37:00Z",
+      "is_favorited": true,
+      "genres": [
+        "rap",
+        "hip-hop",
+        "hip hop",
+        "trap",
+        "atlanta"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2tm3Ht61kqqRZtIYsBjxEj",
+          "art_filename": null,
+          "count": 36,
+          "latest_played": "2025-11-29T20:37:00Z"
+        }
+      ]
+    },
+    {
+      "name": "The Decemberists",
+      "play_count": 26,
+      "latest_played": "2025-11-30T21:30:00Z",
+      "is_favorited": false,
+      "genres": [
+        "indie",
+        "folk",
+        "indie rock",
+        "alternative",
+        "indie pop"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3hd8GiXOy4KUTxVDVUDT5F",
+          "art_filename": "the_decemberists_the_king_is_dead.jpg",
+          "count": 2,
+          "latest_played": "2026-06-28T12:58:00Z"
+        },
+        {
+          "album_id": "0eGxAVwdwV2mHrUgLJ8R6Y",
+          "art_filename": "the_decemberists_picaresque.jpg",
+          "count": 4,
+          "latest_played": "2026-03-01T22:38:00Z"
+        },
+        {
+          "album_id": "5rbzadc5AEuHdeSGmdBDgR",
+          "art_filename": "the_decemberists_castaways_and_cutouts.jpg",
+          "count": 4,
+          "latest_played": "2026-01-22T20:24:00Z"
+        },
+        {
+          "album_id": "4yngOTPwtS3iypFBwU5qqR",
+          "art_filename": "the_decemberists_hazards_of_love.jpg",
+          "count": 16,
+          "latest_played": "2025-11-30T21:30:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Red House Painters",
+      "play_count": 14,
+      "latest_played": "2025-12-01T18:11:00Z",
+      "is_favorited": false,
+      "genres": [
+        "slowcore",
+        "indie",
+        "folk",
+        "sadcore",
+        "singer-songwriter"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3F9xD3Dg2zu2LZbVHdKeVD",
+          "art_filename": "red_house_painters_red_house_painters_i.jpg",
+          "count": 8,
+          "latest_played": "2025-12-20T22:54:00Z"
+        },
+        {
+          "album_id": "5tXmkwvOs934YJL26kgLnb",
+          "art_filename": "red_house_painters_red_house_painters_ii.jpg",
+          "count": 4,
+          "latest_played": "2025-12-14T15:54:00Z"
+        },
+        {
+          "album_id": "4rL0RzmHMQyHiZqJVdt7A8",
+          "art_filename": "red_house_painters_old_ramon.jpg",
+          "count": 2,
+          "latest_played": "2025-12-01T18:11:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Wednesday",
+      "play_count": 6,
+      "latest_played": "2025-12-04T07:38:00Z",
+      "is_favorited": false,
+      "genres": [
+        "shoegaze",
+        "indie rock",
+        "alt-country",
+        "indie",
+        "noise rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1oTR3aC0jYmwUlr9duBi05",
+          "art_filename": "wednesday_rat_saw_god.jpg",
+          "count": 6,
+          "latest_played": "2025-12-04T07:38:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Say Anything",
+      "play_count": 9,
+      "latest_played": "2025-12-05T08:14:00Z",
+      "is_favorited": false,
+      "genres": [
+        "alternative",
+        "indie",
+        "rock",
+        "indie rock",
+        "emo"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "67GbWmsrvtIdOOUYRo7do7",
+          "art_filename": "say_anything_is_a_real_boy.jpg",
+          "count": 9,
+          "latest_played": "2025-12-05T08:14:00Z"
+        }
+      ]
+    },
+    {
+      "name": "The Cure",
+      "play_count": 16,
+      "latest_played": "2025-12-07T12:18:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post-punk",
+        "new wave",
+        "alternative",
+        "80s",
+        "rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0A13JySVHzBoRZFk2o89Wl",
+          "art_filename": "the_cure_disintegration_2010_remaster.jpg",
+          "count": 16,
+          "latest_played": "2025-12-07T12:18:00Z"
+        }
+      ]
+    },
+    {
+      "name": "blink-182",
+      "play_count": 17,
+      "latest_played": "2025-12-07T20:05:00Z",
+      "is_favorited": false,
+      "genres": [
+        "punk rock",
+        "pop punk",
+        "punk",
+        "rock",
+        "alternative"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1OteY9OFTmoZ0vmZT89wPd",
+          "art_filename": "blink_182_one_more_time.jpg",
+          "count": 1,
+          "latest_played": "2026-04-20T08:28:00Z"
+        },
+        {
+          "album_id": "1rkcABZWlix3sYH6XLUSAz",
+          "art_filename": "blink_182_the_mark_tom_and_travis_show_the_enema_strikes_b.jpg",
+          "count": 6,
+          "latest_played": "2026-03-29T11:19:00Z"
+        },
+        {
+          "album_id": "4hBTxv4QRPePXCFcEI7Vjp",
+          "art_filename": "blink_182_blink_182.jpg",
+          "count": 10,
+          "latest_played": "2025-12-07T20:05:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Reggie And The Full Effect",
+      "play_count": 17,
+      "latest_played": "2025-12-07T21:49:00Z",
+      "is_favorited": false,
+      "genres": [
+        "rock",
+        "alternative",
+        "emo",
+        "indie",
+        "pop punk"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5IuiyEEN5JRqY07m5J9Ufu",
+          "art_filename": "reggie_and_the_full_effect_promotional_copy.jpg",
+          "count": 17,
+          "latest_played": "2025-12-07T21:49:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Carissa's Wierd",
+      "play_count": 16,
+      "latest_played": "2025-12-08T18:11:00Z",
+      "is_favorited": false,
+      "genres": [
+        "slowcore",
+        "shoegaze",
+        "sadcore",
+        "indie",
+        "indie rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2K32Y810reZLhW8AP83CZy",
+          "art_filename": "carissas_wierd_songs_about_leaving.jpg",
+          "count": 3,
+          "latest_played": "2026-03-07T20:11:00Z"
+        },
+        {
+          "album_id": "3Fl3sBZrRO8M35YWqbicmt",
+          "art_filename": "carissas_wierd_i_before_e.jpg",
+          "count": 2,
+          "latest_played": "2025-12-10T18:09:00Z"
+        },
+        {
+          "album_id": "3l41m2B0WqPyMlFHarz1vj",
+          "art_filename": "carissas_wierd_scrap_book.jpg",
+          "count": 11,
+          "latest_played": "2025-12-08T18:11:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Ought",
+      "play_count": 5,
+      "latest_played": "2025-12-08T21:50:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post-punk",
+        "indie rock",
+        "art punk",
+        "indie",
+        "canada"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3Uhw8RK4BiQnTqQAiFugXh",
+          "art_filename": "ought_room_inside_the_world.jpg",
+          "count": 2,
+          "latest_played": "2026-02-22T13:08:00Z"
+        },
+        {
+          "album_id": "0uOPPNiTA3k0HNvqKWcuSb",
+          "art_filename": "ought_more_than_any_other_day.jpg",
+          "count": 3,
+          "latest_played": "2025-12-08T21:50:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Thursday",
+      "play_count": 10,
+      "latest_played": "2025-12-09T12:33:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post-hardcore",
+        "emo",
+        "screamo",
+        "hardcore",
+        "rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0tgqbw80QaxxdErDspThsa",
+          "art_filename": "thursday_waiting.jpg",
+          "count": 8,
+          "latest_played": "2026-02-04T07:59:00Z"
+        },
+        {
+          "album_id": "5HMT2y9yUoPH7yYhnyIpQo",
+          "art_filename": "thursday_full_collapse.jpg",
+          "count": 2,
+          "latest_played": "2025-12-09T12:33:00Z"
+        }
+      ]
+    },
+    {
+      "name": "\u00d3l\u00f6f Arnalds",
+      "play_count": 34,
+      "latest_played": "2025-12-10T07:01:00Z",
+      "is_favorited": false,
+      "genres": [
+        "icelandic",
+        "folk",
+        "acoustic",
+        "singer-songwriter",
+        "female vocalists"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1V99SZB8TKi7RxhALkkiH1",
+          "art_filename": "\u00f3l\u00f6f_arnalds_innundir_skinni.jpg",
+          "count": 34,
+          "latest_played": "2025-12-10T07:01:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Slowdive",
+      "play_count": 4,
+      "latest_played": "2025-12-10T07:24:00Z",
+      "is_favorited": false,
+      "genres": [
+        "shoegaze",
+        "dream pop",
+        "ambient",
+        "indie",
+        "indie rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "53eHm1f3sFiSzWMaKOl98Z",
+          "art_filename": "slowdive_souvlaki.jpg",
+          "count": 4,
+          "latest_played": "2025-12-10T07:24:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Nina Simone",
+      "play_count": 2,
+      "latest_played": "2025-12-10T22:31:00Z",
+      "is_favorited": false,
+      "genres": [
+        "jazz",
+        "soul",
+        "blues",
+        "female vocalists",
+        "vocal jazz"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3ofZeSWPHZOE5WC2tNZDez",
+          "art_filename": "nina_simone_i_put_a_spell_on_you.jpg",
+          "count": 2,
+          "latest_played": "2025-12-10T22:31:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Bon Iver",
+      "play_count": 10,
+      "latest_played": "2025-12-11T18:42:00Z",
+      "is_favorited": false,
+      "genres": [
+        "folk",
+        "indie",
+        "singer-songwriter",
+        "acoustic",
+        "lo-fi"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "7EJ0OT5ZqybXxcYRa6mccM",
+          "art_filename": "bon_iver_for_emma_forever_ago.jpg",
+          "count": 10,
+          "latest_played": "2025-12-11T18:42:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Sun Kil Moon",
+      "play_count": 7,
+      "latest_played": "2025-12-11T19:01:00Z",
+      "is_favorited": false,
+      "genres": [
+        "folk",
+        "singer-songwriter",
+        "indie",
+        "indie rock",
+        "americana"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1YnyKib5MeZf95KY5GHvxc",
+          "art_filename": "sun_kil_moon_murals.jpg",
+          "count": 1,
+          "latest_played": "2025-12-20T14:05:00Z"
+        },
+        {
+          "album_id": "77AYdae70ldovpvRPS0Xjc",
+          "art_filename": "sun_kil_moon_admiral_fell_promises.jpg",
+          "count": 6,
+          "latest_played": "2025-12-11T19:01:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Dance Gavin Dance",
+      "play_count": 109,
+      "latest_played": "2025-12-13T11:16:00Z",
+      "is_favorited": true,
+      "genres": [
+        "post-hardcore",
+        "experimental",
+        "screamo",
+        "emocore",
+        "hardcore"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "7dBUmXkVXyQv60PoAWZAa1",
+          "art_filename": "dance_gavin_dance_downtown_battle_mountain_ii.jpg",
+          "count": 48,
+          "latest_played": "2025-12-26T07:37:00Z"
+        },
+        {
+          "album_id": "3K17PJl4d0yhrys2ylYzgm",
+          "art_filename": "dance_gavin_dance_happiness.jpg",
+          "count": 27,
+          "latest_played": "2025-12-24T21:06:00Z"
+        },
+        {
+          "album_id": "60LbtmnmOLTkz8ZiVhbynM",
+          "art_filename": "dance_gavin_dance_instant_gratification.jpg",
+          "count": 34,
+          "latest_played": "2025-12-13T11:16:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Spiritualized",
+      "play_count": 5,
+      "latest_played": "2025-12-13T13:34:00Z",
+      "is_favorited": false,
+      "genres": [
+        "space rock",
+        "shoegaze",
+        "psychedelic",
+        "indie",
+        "alternative"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "56YzQ0dhmRMDryZsrjdHun",
+          "art_filename": "spiritualized_ladies_and_gentlemen_we_are_floating_in_space.jpg",
+          "count": 5,
+          "latest_played": "2025-12-13T13:34:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Quicksand",
+      "play_count": 2,
+      "latest_played": "2025-12-13T22:14:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post-hardcore",
+        "alternative rock",
+        "rock",
+        "alternative",
+        "hardcore"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3LVYsDFVGuPE7kNQyXZvgp",
+          "art_filename": "quicksand_slip.jpg",
+          "count": 2,
+          "latest_played": "2025-12-13T22:14:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Michael Jackson",
+      "play_count": 7,
+      "latest_played": "2025-12-14T19:47:00Z",
+      "is_favorited": false,
+      "genres": [
+        "pop",
+        "80s",
+        "dance",
+        "soul",
+        "funk"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2ANVost0y2y52ema1E9xAZ",
+          "art_filename": "michael_jackson_thriller.jpg",
+          "count": 7,
+          "latest_played": "2025-12-14T19:47:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Brian Eno",
+      "play_count": 9,
+      "latest_played": "2025-12-14T20:50:00Z",
+      "is_favorited": false,
+      "genres": [
+        "ambient",
+        "experimental",
+        "electronic",
+        "alternative",
+        "electronica"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6uoeezh45SYEb8lcT8gDTY",
+          "art_filename": "brian_eno_another_green_world_2004_remaster.jpg",
+          "count": 9,
+          "latest_played": "2025-12-14T20:50:00Z"
+        }
+      ]
+    },
+    {
+      "name": "CAN",
+      "play_count": 21,
+      "latest_played": "2025-12-15T18:52:00Z",
+      "is_favorited": false,
+      "genres": [
+        "krautrock",
+        "experimental",
+        "progressive rock",
+        "psychedelic",
+        "german"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3aMBDb72H0wrXO5iARzsWc",
+          "art_filename": "can_monster_movie_remastered_version.jpg",
+          "count": 1,
+          "latest_played": "2026-07-21T21:19:00Z"
+        },
+        {
+          "album_id": "3Qa2CdymyGvXkqoqIZykmT",
+          "art_filename": "can_ege_bamyasi_remastered_version.jpg",
+          "count": 10,
+          "latest_played": "2026-05-18T08:46:00Z"
+        },
+        {
+          "album_id": "22ZgHorVJzcZ4m8YBZCw4w",
+          "art_filename": "can_future_days_remastered_version.jpg",
+          "count": 10,
+          "latest_played": "2025-12-15T18:52:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Hella",
+      "play_count": 1,
+      "latest_played": "2025-12-16T18:49:00Z",
+      "is_favorited": false,
+      "genres": [
+        "math rock",
+        "noise rock",
+        "experimental",
+        "instrumental",
+        "post-rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "4kDzCMsxuZwsqqTPyL4yr6",
+          "art_filename": "hella_hold_your_horse_is.jpg",
+          "count": 1,
+          "latest_played": "2025-12-16T18:49:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Miles Davis",
+      "play_count": 13,
+      "latest_played": "2025-12-16T20:46:00Z",
+      "is_favorited": false,
+      "genres": [
+        "jazz",
+        "trumpet",
+        "bebop",
+        "fusion",
+        "blues"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0Hs3BomCdwIWRhgT57x22T",
+          "art_filename": "miles_davis_in_a_silent_way.jpg",
+          "count": 4,
+          "latest_played": "2026-04-24T07:41:00Z"
+        },
+        {
+          "album_id": "3Q0zkOZEOC855ErOOJ1AdO",
+          "art_filename": "miles_davis_bitches_brew.jpg",
+          "count": 9,
+          "latest_played": "2025-12-16T20:46:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Brand New",
+      "play_count": 14,
+      "latest_played": "2025-12-17T19:17:00Z",
+      "is_favorited": false,
+      "genres": [
+        "emo",
+        "alternative",
+        "rock",
+        "indie rock",
+        "indie"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2Oyi0iQ92nw0MlO6ehpNwJ",
+          "art_filename": "brand_new_science_fiction.jpg",
+          "count": 3,
+          "latest_played": "2026-03-06T12:25:00Z"
+        },
+        {
+          "album_id": "6vDiMhyfSnTn18OY99BSQX",
+          "art_filename": "brand_new_deja_entendu.jpg",
+          "count": 11,
+          "latest_played": "2025-12-17T19:17:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Prince",
+      "play_count": 6,
+      "latest_played": "2025-12-18T07:14:00Z",
+      "is_favorited": false,
+      "genres": [
+        "funk",
+        "pop",
+        "soul",
+        "rock",
+        "80s"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2umoqwMrmjBBPeaqgYu6J9",
+          "art_filename": "prince_purple_rain.jpg",
+          "count": 6,
+          "latest_played": "2025-12-18T07:14:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Belchior",
+      "play_count": 4,
+      "latest_played": "2025-12-18T12:37:00Z",
+      "is_favorited": false,
+      "genres": [
+        "mpb",
+        "brazilian",
+        "brasil",
+        "belchior",
+        "alternative"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3qdptaAY9xvDIfsNnNsXZe",
+          "art_filename": "belchior_divina_com\u00e9dia_humana.jpg",
+          "count": 4,
+          "latest_played": "2025-12-18T12:37:00Z"
+        }
+      ]
+    },
+    {
+      "name": "empire! empire! (i was a lonely estate)",
+      "play_count": 34,
+      "latest_played": "2025-12-18T22:44:00Z",
+      "is_favorited": false,
+      "genres": [
+        "emo",
+        "midwest emo",
+        "indie",
+        "indie rock",
+        "post-emo indie rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0byGFkTAoVXPGp498LeVVt",
+          "art_filename": "empire_empire_i_was_a_lonely_estate_you_will_eventually_be_forgotten.jpg",
+          "count": 7,
+          "latest_played": "2026-04-22T07:52:00Z"
+        },
+        {
+          "album_id": "5xBD0bSZqXpfH0vwkrDcAx",
+          "art_filename": "empire_empire_i_was_a_lonely_estate_early_discography.jpg",
+          "count": 4,
+          "latest_played": "2026-03-22T11:59:00Z"
+        },
+        {
+          "album_id": "1j9ajQaSPnqM6BaiE2HUWW",
+          "art_filename": "empire_empire_i_was_a_lonely_estate_on_time_spent_waiting_or_placing_the_weight_of_t.jpg",
+          "count": 5,
+          "latest_played": "2026-03-03T07:16:00Z"
+        },
+        {
+          "album_id": "2m9BteUi4OhKwUXcNFSL8p",
+          "art_filename": "empire_empire_i_was_a_lonely_estate_when_the_sea_became_a_giant.jpg",
+          "count": 9,
+          "latest_played": "2026-02-04T12:14:00Z"
+        },
+        {
+          "album_id": "6np6yPkSF9JsWcaEGUfNim",
+          "art_filename": "empire_empire_i_was_a_lonely_estate_home_after_three_months_away.jpg",
+          "count": 1,
+          "latest_played": "2025-12-27T19:35:00Z"
+        },
+        {
+          "album_id": "3wLCCtHNSLsDpIItmWZzS9",
+          "art_filename": "empire_empire_i_was_a_lonely_estate_what_it_takes_to_move_forward.jpg",
+          "count": 8,
+          "latest_played": "2025-12-18T22:44:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Bob Dylan",
+      "play_count": 4,
+      "latest_played": "2025-12-21T19:16:00Z",
+      "is_favorited": false,
+      "genres": [
+        "folk",
+        "singer-songwriter",
+        "classic rock",
+        "folk rock",
+        "rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "4NP1rhnsPdYpnyJP0p0k0L",
+          "art_filename": "bob_dylan_blonde_on_blonde.jpg",
+          "count": 2,
+          "latest_played": "2026-01-28T07:09:00Z"
+        },
+        {
+          "album_id": "6YabPKtZAjxwyWbuO9p4ZD",
+          "art_filename": "bob_dylan_highway_61_revisited.jpg",
+          "count": 2,
+          "latest_played": "2025-12-21T19:16:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Nina Chuba",
+      "play_count": 6,
+      "latest_played": "2025-12-21T19:54:00Z",
+      "is_favorited": false,
+      "genres": [
+        "german",
+        "soul",
+        "deutsch",
+        "rnb",
+        "hip hop"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2mzXddPCtNlGzttAcr97ON",
+          "art_filename": "nina_chuba_farbenblind_ep.jpg",
+          "count": 6,
+          "latest_played": "2025-12-21T19:54:00Z"
+        }
+      ]
+    },
+    {
+      "name": "The Hotelier",
+      "play_count": 7,
+      "latest_played": "2025-12-22T08:05:00Z",
+      "is_favorited": false,
+      "genres": [
+        "emo",
+        "pop punk",
+        "indie rock",
+        "midwest emo",
+        "indie"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "172GEyILIzsGA8PJqrsHmL",
+          "art_filename": "the_hotelier_home_like_noplace_is_there.jpg",
+          "count": 7,
+          "latest_played": "2025-12-22T08:05:00Z"
+        }
+      ]
+    },
+    {
+      "name": "shego",
+      "play_count": 2,
+      "latest_played": "2025-12-22T08:56:00Z",
+      "is_favorited": false,
+      "genres": [
+        "spain",
+        "punk",
+        "indie pop",
+        "indie punk",
+        "spanish or latin artists"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0xZyCh3S6ELLuXHJT27VzF",
+          "art_filename": "shego_no_lo_volver\u00e9_a_hacer.jpg",
+          "count": 2,
+          "latest_played": "2025-12-22T08:56:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Claudya",
+      "play_count": 2,
+      "latest_played": "2025-12-22T08:59:00Z",
+      "is_favorited": false,
+      "genres": [
+        "brazil",
+        "jazz",
+        "blues",
+        "brasil",
+        "female vocalists"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "472hbvx6EDV9RxKEvZz9Ae",
+          "art_filename": "claudya_jesus_cristo.jpg",
+          "count": 2,
+          "latest_played": "2025-12-22T08:59:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Nick Drake",
+      "play_count": 1,
+      "latest_played": "2025-12-22T12:51:00Z",
+      "is_favorited": false,
+      "genres": [
+        "folk",
+        "singer-songwriter",
+        "acoustic",
+        "indie",
+        "mellow"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "7IpcJbVxLLEfW0KXB7ndE2",
+          "art_filename": "nick_drake_five_leaves_left.jpg",
+          "count": 1,
+          "latest_played": "2025-12-22T12:51:00Z"
+        }
+      ]
+    },
+    {
+      "name": "TOOL",
+      "play_count": 18,
+      "latest_played": "2025-12-23T21:10:00Z",
+      "is_favorited": false,
+      "genres": [
+        "progressive metal",
+        "progressive rock",
+        "alternative",
+        "metal",
+        "rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6yWMN087PgSimbcVmHLEwG",
+          "art_filename": "tool_\u00e6nima.jpg",
+          "count": 12,
+          "latest_played": "2026-01-08T18:51:00Z"
+        },
+        {
+          "album_id": "3Esn6LoXuWtLZNYq8FCzr0",
+          "art_filename": "tool_undertow.jpg",
+          "count": 1,
+          "latest_played": "2025-12-27T11:57:00Z"
+        },
+        {
+          "album_id": "1fvWYcbjuycyHpzNPH1Vfk",
+          "art_filename": "tool_10000_days.jpg",
+          "count": 5,
+          "latest_played": "2025-12-23T21:10:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Green Day",
+      "play_count": 2,
+      "latest_played": "2025-12-23T22:08:00Z",
+      "is_favorited": false,
+      "genres": [
+        "punk rock",
+        "rock",
+        "punk",
+        "pop punk",
+        "alternative"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "7d3nOmFvL51roNElAdpi9d",
+          "art_filename": "green_day_insomniac.jpg",
+          "count": 1,
+          "latest_played": "2026-06-29T07:59:00Z"
+        },
+        {
+          "album_id": "3x2uer6Xh0d5rF8toWpRDA",
+          "art_filename": "green_day_nimrod.jpg",
+          "count": 1,
+          "latest_played": "2025-12-23T22:08:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Daft Punk",
+      "play_count": 9,
+      "latest_played": "2025-12-24T12:22:00Z",
+      "is_favorited": false,
+      "genres": [
+        "electronic",
+        "house",
+        "dance",
+        "techno",
+        "electronica"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5uRdvUR7xCnHmUW8n64n9y",
+          "art_filename": "daft_punk_homework.jpg",
+          "count": 2,
+          "latest_played": "2026-03-11T22:38:00Z"
+        },
+        {
+          "album_id": "2noRn2Aes5aoNVsU6iWThc",
+          "art_filename": "daft_punk_discovery.jpg",
+          "count": 7,
+          "latest_played": "2025-12-24T12:22:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Ms. Lauryn Hill",
+      "play_count": 9,
+      "latest_played": "2025-12-24T22:32:00Z",
+      "is_favorited": false,
+      "genres": [
+        "soul",
+        "rnb",
+        "neo-soul",
+        "hip hop",
+        "hip-hop"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1BZoqf8Zje5nGdwZhOjAtD",
+          "art_filename": "ms_lauryn_hill_the_miseducation_of_lauryn_hill.jpg",
+          "count": 9,
+          "latest_played": "2025-12-24T22:32:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Departures",
+      "play_count": 5,
+      "latest_played": "2025-12-27T14:25:00Z",
+      "is_favorited": false,
+      "genres": [
+        "melodic hardcore",
+        "hardcore",
+        "hardcore punk",
+        "ukhc",
+        "modern hardcore"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0kt9ulQImM52k70UePhHXN",
+          "art_filename": "departures_death_touches_us_from_the_moment_we_begin_to_lov.jpg",
+          "count": 5,
+          "latest_played": "2025-12-27T14:25:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Kendrick Lamar",
+      "play_count": 8,
+      "latest_played": "2025-12-28T12:45:00Z",
+      "is_favorited": false,
+      "genres": [
+        "hip-hop",
+        "rap",
+        "west coast",
+        "hip hop",
+        "compton"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0E47vczx9XVds1Lr2Y8rze",
+          "art_filename": "kendrick_lamar_good_kid_maad_city.jpg",
+          "count": 7,
+          "latest_played": "2026-05-05T08:56:00Z"
+        },
+        {
+          "album_id": "7ycBtnsMtyVbbwTfJwRjSP",
+          "art_filename": "kendrick_lamar_to_pimp_a_butterfly.jpg",
+          "count": 1,
+          "latest_played": "2025-12-28T12:45:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Touch\u00e9 Amor\u00e9",
+      "play_count": 5,
+      "latest_played": "2025-12-28T14:59:00Z",
+      "is_favorited": false,
+      "genres": [
+        "screamo",
+        "hardcore",
+        "post-hardcore",
+        "melodic hardcore",
+        "hardcore punk"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3IcaDZx8NwboAOJItYq6lh",
+          "art_filename": "touch\u00e9_amor\u00e9_parting_the_sea_between_brightness_and_me.jpg",
+          "count": 1,
+          "latest_played": "2026-06-25T07:37:00Z"
+        },
+        {
+          "album_id": "6fA79mAHNeBhaUnuWBADwc",
+          "art_filename": "touch\u00e9_amor\u00e9_lament.jpg",
+          "count": 2,
+          "latest_played": "2026-01-05T22:37:00Z"
+        },
+        {
+          "album_id": "6KiS2t3EapTmHSt9xGUqe7",
+          "art_filename": "touch\u00e9_amor\u00e9_stage_four_deluxe_edition.jpg",
+          "count": 2,
+          "latest_played": "2025-12-28T14:59:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Rival Schools",
+      "play_count": 1,
+      "latest_played": "2025-12-28T22:22:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post-hardcore",
+        "rock",
+        "indie",
+        "emo",
+        "alternative"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "37TcohvwaAgxmhgqtf7rxC",
+          "art_filename": "rival_schools_united_by_fate.jpg",
+          "count": 1,
+          "latest_played": "2025-12-28T22:22:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Gal Costa",
+      "play_count": 40,
+      "latest_played": "2025-12-29T12:46:00Z",
+      "is_favorited": true,
+      "genres": [
+        "bossa nova",
+        "mpb",
+        "brazilian",
+        "tropicalia",
+        "female vocalists"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1Vjf7xPNvBhqKnAR4rAXR2",
+          "art_filename": "gal_costa_gal_tropical.jpg",
+          "count": 18,
+          "latest_played": "2026-01-29T21:58:00Z"
+        },
+        {
+          "album_id": "2CEAS05rj9mofY5KwvzQwa",
+          "art_filename": "gal_costa_a_arte_de_gal_costa.jpg",
+          "count": 4,
+          "latest_played": "2026-01-17T21:46:00Z"
+        },
+        {
+          "album_id": "5ZVLLME05cmciSZz4IGcZu",
+          "art_filename": "gal_costa_gal_costa.jpg",
+          "count": 18,
+          "latest_played": "2025-12-29T12:46:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Aretha Franklin",
+      "play_count": 2,
+      "latest_played": "2025-12-29T18:18:00Z",
+      "is_favorited": false,
+      "genres": [
+        "soul",
+        "jazz",
+        "female vocalists",
+        "blues",
+        "rhythm and blues"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5WndWfzGwCkHzAbQXVkg2V",
+          "art_filename": "aretha_franklin_i_never_loved_a_man_the_way_i_love_you.jpg",
+          "count": 2,
+          "latest_played": "2025-12-29T18:18:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Nickel Creek",
+      "play_count": 14,
+      "latest_played": "2025-12-29T21:15:00Z",
+      "is_favorited": false,
+      "genres": [
+        "bluegrass",
+        "folk",
+        "acoustic",
+        "country",
+        "alt-country"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6l61p7zbizBUjQWY10LWmb",
+          "art_filename": "nickel_creek_why_should_the_fire_die.jpg",
+          "count": 14,
+          "latest_played": "2025-12-29T21:15:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Defeater",
+      "play_count": 5,
+      "latest_played": "2025-12-30T07:41:00Z",
+      "is_favorited": false,
+      "genres": [
+        "hardcore",
+        "melodic hardcore",
+        "hardcore punk",
+        "modern hardcore",
+        "punk"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "21VSN8gsYIiT4XajInScc1",
+          "art_filename": "defeater_empty_days_sleepless_nights.jpg",
+          "count": 5,
+          "latest_played": "2025-12-30T07:41:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Northstar",
+      "play_count": 1,
+      "latest_played": "2025-12-30T19:12:00Z",
+      "is_favorited": false,
+      "genres": [
+        "emo",
+        "rock",
+        "alternative",
+        "indie",
+        "indie rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "7h5rbCRV3FcOgxZyRQTTS6",
+          "art_filename": "northstar_is_this_thing_loaded.jpg",
+          "count": 1,
+          "latest_played": "2025-12-30T19:12:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Bala Desejo",
+      "play_count": 5,
+      "latest_played": "2025-12-30T20:26:00Z",
+      "is_favorited": false,
+      "genres": [
+        "mpb",
+        "indie pop",
+        "brazilian",
+        "tropicalia",
+        "pop"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3dTQyJxSCkwJ4PFcURFd3f",
+          "art_filename": "bala_desejo_sim_sim_sim.jpg",
+          "count": 5,
+          "latest_played": "2025-12-30T20:26:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Prof",
+      "play_count": 17,
+      "latest_played": "2025-12-30T20:27:00Z",
+      "is_favorited": false,
+      "genres": [
+        "rap",
+        "hip hop",
+        "hip-hop",
+        "underground rap",
+        "turntablism"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6tXIQnsK1yWm4Y1NQv9vWC",
+          "art_filename": "prof_powderhorn_suites.jpg",
+          "count": 17,
+          "latest_played": "2025-12-30T20:27:00Z"
+        }
+      ]
+    },
+    {
+      "name": "American Football",
+      "play_count": 8,
+      "latest_played": "2025-12-30T22:43:00Z",
+      "is_favorited": false,
+      "genres": [
+        "emo",
+        "math rock",
+        "indie",
+        "indie rock",
+        "midwest emo"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "70OkRXiiwdTCtZ9YiPBzPp",
+          "art_filename": "american_football_american_football.jpg",
+          "count": 8,
+          "latest_played": "2025-12-30T22:43:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Incubus",
+      "play_count": 1,
+      "latest_played": "2025-12-31T21:11:00Z",
+      "is_favorited": false,
+      "genres": [
+        "alternative rock",
+        "rock",
+        "alternative",
+        "indie",
+        "incubus"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1rQZbncicoXyB64DqoH7OY",
+          "art_filename": "incubus_morning_view.jpg",
+          "count": 1,
+          "latest_played": "2025-12-31T21:11:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Vampire Weekend",
+      "play_count": 38,
+      "latest_played": "2026-01-03T20:44:00Z",
+      "is_favorited": true,
+      "genres": [
+        "indie",
+        "indie rock",
+        "indie pop",
+        "alternative",
+        "rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1GXMNFfoHF4sN7lG8gZq1j",
+          "art_filename": "vampire_weekend_modern_vampires_of_the_city.jpg",
+          "count": 38,
+          "latest_played": "2026-01-03T20:44:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Saosin",
+      "play_count": 18,
+      "latest_played": "2026-01-03T22:42:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post-hardcore",
+        "emo",
+        "screamo",
+        "rock",
+        "emocore"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3Lfxp4dgtCBJN74rmo7tiE",
+          "art_filename": "saosin_translating_the_name.jpg",
+          "count": 5,
+          "latest_played": "2026-04-29T19:22:00Z"
+        },
+        {
+          "album_id": "6KsGdacJiG8uv9F6o2bmfL",
+          "art_filename": "saosin_starting_over_again.jpg",
+          "count": 2,
+          "latest_played": "2026-03-05T19:40:00Z"
+        },
+        {
+          "album_id": "2osTPStH5H7i4fMHS7eauR",
+          "art_filename": "saosin_saosin.jpg",
+          "count": 11,
+          "latest_played": "2026-01-03T22:42:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Pianos Become The Teeth",
+      "play_count": 5,
+      "latest_played": "2026-01-04T14:42:00Z",
+      "is_favorited": false,
+      "genres": [
+        "screamo",
+        "post-rock",
+        "post-hardcore",
+        "post-rock screamo",
+        "indie"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0JvkUMttIwTRYwm3OVBoch",
+          "art_filename": "pianos_become_the_teeth_the_lack_long_after.jpg",
+          "count": 3,
+          "latest_played": "2026-01-23T20:36:00Z"
+        },
+        {
+          "album_id": "1brn037iBip5zM6gpmoPdl",
+          "art_filename": "pianos_become_the_teeth_old_pride.jpg",
+          "count": 2,
+          "latest_played": "2026-01-04T14:42:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Russian Circles",
+      "play_count": 2,
+      "latest_played": "2026-01-07T19:53:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post-rock",
+        "post-metal",
+        "instrumental",
+        "experimental",
+        "math rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "40ZqTPP70CkGYLCUrHV4ca",
+          "art_filename": "russian_circles_memorial.jpg",
+          "count": 2,
+          "latest_played": "2026-01-07T19:53:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Counterparts",
+      "play_count": 17,
+      "latest_played": "2026-01-12T07:04:00Z",
+      "is_favorited": false,
+      "genres": [
+        "melodic hardcore",
+        "metalcore",
+        "hardcore",
+        "melodic metalcore",
+        "canadian"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5pdSJTWNlQj6RJbYPgTFGZ",
+          "art_filename": "counterparts_heaven_let_them_die.jpg",
+          "count": 4,
+          "latest_played": "2026-06-15T22:38:00Z"
+        },
+        {
+          "album_id": "6mi1r2q6IVyrryKQTRyjgm",
+          "art_filename": "counterparts_nothing_left_to_love.jpg",
+          "count": 2,
+          "latest_played": "2026-03-15T12:27:00Z"
+        },
+        {
+          "album_id": "0UNuEZfEer4uxETA8J9mxJ",
+          "art_filename": "counterparts_a_eulogy_for_those_still_here.jpg",
+          "count": 3,
+          "latest_played": "2026-02-01T19:33:00Z"
+        },
+        {
+          "album_id": "3bJtSVsqSsqmVtfvtnisbU",
+          "art_filename": "counterparts_the_current_will_carry_us.jpg",
+          "count": 8,
+          "latest_played": "2026-01-12T07:04:00Z"
+        }
+      ]
+    },
+    {
+      "name": "MESTIZA",
+      "play_count": 3,
+      "latest_played": "2026-01-13T08:26:00Z",
+      "is_favorited": false,
+      "genres": [
+        "reggaeton",
+        "political",
+        "spanish",
+        "female fronted",
+        "catalan"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5wrHAkjZUkhPuj3hrHcmVB",
+          "art_filename": "mestiza_asereje_remix.jpg",
+          "count": 1,
+          "latest_played": "2026-05-31T21:37:00Z"
+        },
+        {
+          "album_id": "5MflkuFCNL0Uye0uy4OrrH",
+          "art_filename": "mestiza_salam.jpg",
+          "count": 2,
+          "latest_played": "2026-01-13T08:26:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Silvana Estrada",
+      "play_count": 2,
+      "latest_played": "2026-01-13T20:06:00Z",
+      "is_favorited": false,
+      "genres": [
+        "folk",
+        "mexico",
+        "singer-songwriter",
+        "chamber folk",
+        "jazz"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2S6If8uEdoGMoIPgChe9T2",
+          "art_filename": "silvana_estrada_lo_sagrado.jpg",
+          "count": 2,
+          "latest_played": "2026-01-13T20:06:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Jawbox",
+      "play_count": 4,
+      "latest_played": "2026-01-17T13:19:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post-hardcore",
+        "post-punk",
+        "indie rock",
+        "dischord",
+        "indie"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0gsVBsleAP9vsCBGqlhxIt",
+          "art_filename": "jawbox_for_your_own_special_sweetheart.jpg",
+          "count": 4,
+          "latest_played": "2026-01-17T13:19:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Cocteau Twins",
+      "play_count": 3,
+      "latest_played": "2026-01-18T11:05:00Z",
+      "is_favorited": false,
+      "genres": [
+        "dream pop",
+        "shoegaze",
+        "post-punk",
+        "ethereal",
+        "alternative"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "7pBPB9vwqCMLKNmUCK4k62",
+          "art_filename": "cocteau_twins_treasure.jpg",
+          "count": 3,
+          "latest_played": "2026-01-18T11:05:00Z"
+        }
+      ]
+    },
+    {
+      "name": "David Bowie",
+      "play_count": 12,
+      "latest_played": "2026-01-19T08:18:00Z",
+      "is_favorited": false,
+      "genres": [
+        "glam rock",
+        "rock",
+        "classic rock",
+        "80s",
+        "alternative"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2de6LD7eOW8zrlorbS28na",
+          "art_filename": "david_bowie_low_2017_remaster.jpg",
+          "count": 12,
+          "latest_played": "2026-01-19T08:18:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Converge",
+      "play_count": 10,
+      "latest_played": "2026-01-23T08:46:00Z",
+      "is_favorited": false,
+      "genres": [
+        "hardcore",
+        "mathcore",
+        "metalcore",
+        "chaotic hardcore",
+        "noisecore"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2gtM4m6sglJDrX3toJWZO6",
+          "art_filename": "converge_jane_doe.jpg",
+          "count": 3,
+          "latest_played": "2026-05-08T07:05:00Z"
+        },
+        {
+          "album_id": "28DI3wfImTqTrHkPiOa0PI",
+          "art_filename": "converge_all_we_love_we_leave_behind_deluxe_edition.jpg",
+          "count": 7,
+          "latest_played": "2026-01-23T08:46:00Z"
+        }
+      ]
+    },
+    {
+      "name": "The Shins",
+      "play_count": 4,
+      "latest_played": "2026-01-23T19:34:00Z",
+      "is_favorited": false,
+      "genres": [
+        "indie",
+        "indie rock",
+        "indie pop",
+        "alternative",
+        "rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5XmhHMj5LZLWo32aA6ntKE",
+          "art_filename": "the_shins_oh_inverted_world_20th_anniversary_remaster.jpg",
+          "count": 4,
+          "latest_played": "2026-01-23T19:34:00Z"
+        }
+      ]
+    },
+    {
+      "name": "The Anniversary",
+      "play_count": 78,
+      "latest_played": "2026-01-23T19:38:00Z",
+      "is_favorited": true,
+      "genres": [
+        "emo",
+        "indie rock",
+        "indie",
+        "indie pop",
+        "alternative"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1LD2jBpotKpAuC0vQtK9Nu",
+          "art_filename": "the_anniversary_designing_a_nervous_breakdown.jpg",
+          "count": 78,
+          "latest_played": "2026-01-23T19:38:00Z"
+        }
+      ]
+    },
+    {
+      "name": "New Order",
+      "play_count": 14,
+      "latest_played": "2026-01-23T21:37:00Z",
+      "is_favorited": false,
+      "genres": [
+        "new wave",
+        "post-punk",
+        "electronic",
+        "80s",
+        "alternative"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6NTrwu1XJ56jBPx7HMksbZ",
+          "art_filename": "new_order_power_corruption_and_lies.jpg",
+          "count": 14,
+          "latest_played": "2026-01-23T21:37:00Z"
+        }
+      ]
+    },
+    {
+      "name": "De La Soul",
+      "play_count": 10,
+      "latest_played": "2026-01-23T22:05:00Z",
+      "is_favorited": false,
+      "genres": [
+        "hip-hop",
+        "rap",
+        "hip hop",
+        "alternative rap",
+        "jazz hop"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "34LxHI9x14qXUOS8AWRrYD",
+          "art_filename": "de_la_soul_3_feet_high_and_rising.jpg",
+          "count": 10,
+          "latest_played": "2026-01-23T22:05:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Portishead",
+      "play_count": 2,
+      "latest_played": "2026-01-24T19:00:00Z",
+      "is_favorited": false,
+      "genres": [
+        "trip-hop",
+        "electronic",
+        "female vocalists",
+        "chillout",
+        "trip hop"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3539EbNgIdEDGBKkUf4wno",
+          "art_filename": "portishead_dummy.jpg",
+          "count": 2,
+          "latest_played": "2026-01-24T19:00:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Crime In Stereo",
+      "play_count": 2,
+      "latest_played": "2026-01-25T22:16:00Z",
+      "is_favorited": false,
+      "genres": [
+        "melodic hardcore",
+        "hardcore",
+        "hardcore punk",
+        "punk rock",
+        "punk"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5k4d3XMMYecEwO8tdtxvF4",
+          "art_filename": "crime_in_stereo_crime_in_stereo_is_dead.jpg",
+          "count": 2,
+          "latest_played": "2026-01-25T22:16:00Z"
+        }
+      ]
+    },
+    {
+      "name": "System Of A Down",
+      "play_count": 19,
+      "latest_played": "2026-01-26T21:12:00Z",
+      "is_favorited": false,
+      "genres": [
+        "alternative metal",
+        "metal",
+        "nu metal",
+        "rock",
+        "alternative"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6jWde94ln40epKIQCd8XUh",
+          "art_filename": "system_of_a_down_toxicity.jpg",
+          "count": 3,
+          "latest_played": "2026-05-16T19:37:00Z"
+        },
+        {
+          "album_id": "0cn6MHyx4YuZauaB7Pb66o",
+          "art_filename": "system_of_a_down_mezmerize.jpg",
+          "count": 16,
+          "latest_played": "2026-01-26T21:12:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Sonic Youth",
+      "play_count": 13,
+      "latest_played": "2026-01-28T08:23:00Z",
+      "is_favorited": false,
+      "genres": [
+        "experimental",
+        "post-punk",
+        "alternative",
+        "indie",
+        "noise rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "706OL6kpsbf73LRdXD1dCB",
+          "art_filename": "sonic_youth_rather_ripped.jpg",
+          "count": 2,
+          "latest_played": "2026-04-19T13:13:00Z"
+        },
+        {
+          "album_id": "3BYlBcND6PeKoW6ZODjZO3",
+          "art_filename": "sonic_youth_daydream_nation_remastered_original_album.jpg",
+          "count": 9,
+          "latest_played": "2026-03-17T18:52:00Z"
+        },
+        {
+          "album_id": "7gA7xctF7tq62T2YooL6wS",
+          "art_filename": "sonic_youth_sonic_nurse.jpg",
+          "count": 2,
+          "latest_played": "2026-01-28T08:23:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Worthwhile",
+      "play_count": 2,
+      "latest_played": "2026-01-28T22:44:00Z",
+      "is_favorited": false,
+      "genres": [
+        "melodic hardcore",
+        "hardcore",
+        "pop punk",
+        "easycore",
+        "hardcore punk"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6C5ED5twSt8dEbiffbFNe2",
+          "art_filename": "worthwhile_carry_on_kid.jpg",
+          "count": 2,
+          "latest_played": "2026-01-28T22:44:00Z"
+        }
+      ]
+    },
+    {
+      "name": "The Mamas & The Papas",
+      "play_count": 1,
+      "latest_played": "2026-01-29T08:42:00Z",
+      "is_favorited": false,
+      "genres": [
+        "classic rock",
+        "60s",
+        "rock",
+        "oldies",
+        "pop"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "76oMr4Y2pOtcrvZLc2ZikF",
+          "art_filename": "the_mamas_the_papas_if_you_can_believe_your_eyes_ears.jpg",
+          "count": 1,
+          "latest_played": "2026-01-29T08:42:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Animal Collective",
+      "play_count": 8,
+      "latest_played": "2026-01-29T21:36:00Z",
+      "is_favorited": false,
+      "genres": [
+        "experimental",
+        "indie",
+        "freak folk",
+        "folk",
+        "indie rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6BRq5g6CWiFgN3NrjLGAYq",
+          "art_filename": "animal_collective_merriweather_post_pavilion.jpg",
+          "count": 4,
+          "latest_played": "2026-02-20T21:12:00Z"
+        },
+        {
+          "album_id": "4lIEJBo7dxCQJj4LUtME3X",
+          "art_filename": "animal_collective_fall_be_kind.jpg",
+          "count": 4,
+          "latest_played": "2026-01-29T21:36:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Jorge Ben Jor",
+      "play_count": 1,
+      "latest_played": "2026-01-30T08:26:00Z",
+      "is_favorited": false,
+      "genres": [
+        "samba",
+        "mpb",
+        "brazilian",
+        "bossa nova",
+        "brasil"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "26YyS4YkKRniunBIYTaNnp",
+          "art_filename": "jorge_ben_jor_solta_o_pav\u00e3o_1975.jpg",
+          "count": 1,
+          "latest_played": "2026-01-30T08:26:00Z"
+        }
+      ]
+    },
+    {
+      "name": "No Knife",
+      "play_count": 11,
+      "latest_played": "2026-01-30T20:13:00Z",
+      "is_favorited": false,
+      "genres": [
+        "indie rock",
+        "math rock",
+        "indie",
+        "post-hardcore",
+        "emo"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1cZWlDFQ5nyIZ3ZdQqlkzK",
+          "art_filename": "no_knife_fire_in_the_city_of_automatons.jpg",
+          "count": 8,
+          "latest_played": "2026-04-03T21:05:00Z"
+        },
+        {
+          "album_id": "7pcbAnRBjAHkXvOiYkd3rJ",
+          "art_filename": "no_knife_riot_for_romance.jpg",
+          "count": 3,
+          "latest_played": "2026-01-30T20:13:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Pixies",
+      "play_count": 2,
+      "latest_played": "2026-02-01T12:46:00Z",
+      "is_favorited": false,
+      "genres": [
+        "alternative rock",
+        "alternative",
+        "indie",
+        "indie rock",
+        "rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "79CvxovoFgGNuAMvQp9wul",
+          "art_filename": "pixies_come_on_pilgrim.jpg",
+          "count": 2,
+          "latest_played": "2026-02-01T12:46:00Z"
+        }
+      ]
+    },
+    {
+      "name": "R.E.M.",
+      "play_count": 8,
+      "latest_played": "2026-02-03T21:35:00Z",
+      "is_favorited": false,
+      "genres": [
+        "rock",
+        "alternative rock",
+        "alternative",
+        "indie",
+        "pop"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6yEuIwTQpciH1qtj7mP5GK",
+          "art_filename": "rem_out_of_time_25th_anniversary_edition.jpg",
+          "count": 2,
+          "latest_played": "2026-06-16T12:35:00Z"
+        },
+        {
+          "album_id": "4Mw9Gcu1LT7JaipXdwrq1Q",
+          "art_filename": "rem_murmur.jpg",
+          "count": 6,
+          "latest_played": "2026-02-03T21:35:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Los Wembler's de Iquitos",
+      "play_count": 6,
+      "latest_played": "2026-02-06T19:56:00Z",
+      "is_favorited": false,
+      "genres": [
+        "latin",
+        "peru",
+        "cumbia",
+        "chill906",
+        "dance"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3AV3oZYwvs3kcus11LJ6HZ",
+          "art_filename": "los_wemblers_de_iquitos_la_danza_del_petrolero.jpg",
+          "count": 6,
+          "latest_played": "2026-02-06T19:56:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Caroline Polachek",
+      "play_count": 9,
+      "latest_played": "2026-02-07T15:04:00Z",
+      "is_favorited": false,
+      "genres": [
+        "art pop",
+        "pop",
+        "electronic",
+        "synthpop",
+        "indie pop"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "22PkV1Le9P3X4RY4xtmK0q",
+          "art_filename": "caroline_polachek_desire_i_want_to_turn_into_you.jpg",
+          "count": 9,
+          "latest_played": "2026-02-07T15:04:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Floating Points",
+      "play_count": 3,
+      "latest_played": "2026-02-08T14:05:00Z",
+      "is_favorited": false,
+      "genres": [
+        "house",
+        "electronic",
+        "downtempo",
+        "jazz",
+        "deep house"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2C6NX2mhcHVSLDRZsZlrVy",
+          "art_filename": "floating_points_vacuum_boogie.jpg",
+          "count": 1,
+          "latest_played": "2026-04-02T07:03:00Z"
+        },
+        {
+          "album_id": "268qxT9wKnanAK5cePUek7",
+          "art_filename": "floating_points_king_bromeliad_montparnasse.jpg",
+          "count": 2,
+          "latest_played": "2026-02-08T14:05:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Robyn",
+      "play_count": 2,
+      "latest_played": "2026-02-09T18:00:00Z",
+      "is_favorited": false,
+      "genres": [
+        "pop",
+        "electronic",
+        "swedish",
+        "female vocalists",
+        "dance"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5xDz5FY3Hsp2skcOP1IUNU",
+          "art_filename": "robyn_robyn.jpg",
+          "count": 2,
+          "latest_played": "2026-02-09T18:00:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Knapsack",
+      "play_count": 18,
+      "latest_played": "2026-02-10T18:02:00Z",
+      "is_favorited": false,
+      "genres": [
+        "emo",
+        "indie rock",
+        "indie",
+        "midwest emo",
+        "punk"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0Djdrr5Xg7i14xWEpsqArO",
+          "art_filename": "knapsack_silver_sweepstakes.jpg",
+          "count": 4,
+          "latest_played": "2026-02-28T15:19:00Z"
+        },
+        {
+          "album_id": "6xK0rYqqBtzcIiq0rY90Al",
+          "art_filename": "knapsack_day_three_of_my_new_life.jpg",
+          "count": 2,
+          "latest_played": "2026-02-26T07:42:00Z"
+        },
+        {
+          "album_id": "0wGnULzBLkxGa1FS4LSqmK",
+          "art_filename": "knapsack_this_conversation_is_ending_starting_right_now.jpg",
+          "count": 12,
+          "latest_played": "2026-02-10T18:02:00Z"
+        }
+      ]
+    },
+    {
+      "name": "A Tribe Called Quest",
+      "play_count": 12,
+      "latest_played": "2026-02-14T11:29:00Z",
+      "is_favorited": false,
+      "genres": [
+        "hip-hop",
+        "rap",
+        "jazz hop",
+        "hip hop",
+        "funk"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "4v5x3Oo3UjQ9YmF3hRAip5",
+          "art_filename": "a_tribe_called_quest_midnight_marauders.jpg",
+          "count": 3,
+          "latest_played": "2026-03-08T19:29:00Z"
+        },
+        {
+          "album_id": "1p12OAWwudgMqfMzjMvl2a",
+          "art_filename": "a_tribe_called_quest_the_low_end_theory.jpg",
+          "count": 9,
+          "latest_played": "2026-02-14T11:29:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Moose Blood",
+      "play_count": 4,
+      "latest_played": "2026-02-16T08:47:00Z",
+      "is_favorited": false,
+      "genres": [
+        "emo",
+        "indie rock",
+        "indie",
+        "pop punk",
+        "punk"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "4MJXiUV12TyT5ZyXeWdnL3",
+          "art_filename": "moose_blood_ill_keep_you_in_mind_from_time_to_time.jpg",
+          "count": 4,
+          "latest_played": "2026-02-16T08:47:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Yeah Yeah Yeahs",
+      "play_count": 5,
+      "latest_played": "2026-02-18T08:09:00Z",
+      "is_favorited": false,
+      "genres": [
+        "indie",
+        "indie rock",
+        "female vocalists",
+        "alternative",
+        "rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "44ePwTuWK88vnalqutqJEG",
+          "art_filename": "yeah_yeah_yeahs_fever_to_tell_deluxe_remastered.jpg",
+          "count": 5,
+          "latest_played": "2026-02-18T08:09:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Run\u2013D.M.C.",
+      "play_count": 15,
+      "latest_played": "2026-02-18T21:50:00Z",
+      "is_favorited": false,
+      "genres": [
+        "rap",
+        "hip-hop",
+        "east coast rap",
+        "80s",
+        "golden age"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "7AFsTiojVaB2I58oZ1tMRg",
+          "art_filename": "rundmc_raising_hell.jpg",
+          "count": 15,
+          "latest_played": "2026-02-18T21:50:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Fleet Foxes",
+      "play_count": 6,
+      "latest_played": "2026-02-21T22:57:00Z",
+      "is_favorited": false,
+      "genres": [
+        "folk",
+        "indie",
+        "folk rock",
+        "indie rock",
+        "lo-fi"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5GRnydamKvIeG46dycID6v",
+          "art_filename": "fleet_foxes_fleet_foxes.jpg",
+          "count": 6,
+          "latest_played": "2026-02-21T22:57:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Talk Talk",
+      "play_count": 6,
+      "latest_played": "2026-02-24T21:04:00Z",
+      "is_favorited": false,
+      "genres": [
+        "new wave",
+        "post-rock",
+        "80s",
+        "synth pop",
+        "pop"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "4YXo7p7aubyVIbNLoVlBp9",
+          "art_filename": "talk_talk_spirit_of_eden.jpg",
+          "count": 6,
+          "latest_played": "2026-02-24T21:04:00Z"
+        }
+      ]
+    },
+    {
+      "name": "The Fall of Troy",
+      "play_count": 2,
+      "latest_played": "2026-03-01T22:01:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post-hardcore",
+        "experimental",
+        "progressive",
+        "screamo",
+        "hardcore"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "4TInspTe354xywdT2aJ2bi",
+          "art_filename": "the_fall_of_troy_manipulator.jpg",
+          "count": 2,
+          "latest_played": "2026-03-01T22:01:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Solange",
+      "play_count": 9,
+      "latest_played": "2026-03-01T22:55:00Z",
+      "is_favorited": false,
+      "genres": [
+        "rnb",
+        "soul",
+        "pop",
+        "female vocalists",
+        "hip-hop"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3Yko2SxDk4hc6fncIBQlcM",
+          "art_filename": "solange_a_seat_at_the_table.jpg",
+          "count": 9,
+          "latest_played": "2026-03-01T22:55:00Z"
+        }
+      ]
+    },
+    {
+      "name": "\u00c9dith Piaf",
+      "play_count": 2,
+      "latest_played": "2026-03-02T21:11:00Z",
+      "is_favorited": false,
+      "genres": [
+        "french",
+        "chanson",
+        "female vocalists",
+        "jazz",
+        "chanson francaise"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6I2DFKuP1jIsibWllFGY3Q",
+          "art_filename": "\u00e9dith_piaf_edith_piaf_the_best_of.jpg",
+          "count": 2,
+          "latest_played": "2026-03-02T21:11:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Madonna",
+      "play_count": 2,
+      "latest_played": "2026-03-04T18:34:00Z",
+      "is_favorited": false,
+      "genres": [
+        "pop",
+        "dance",
+        "female vocalists",
+        "80s",
+        "electronic"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6fmnT17jc2Sc69q3nza1eD",
+          "art_filename": "madonna_true_blue.jpg",
+          "count": 2,
+          "latest_played": "2026-03-04T18:34:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Saves The Day",
+      "play_count": 5,
+      "latest_played": "2026-03-05T08:48:00Z",
+      "is_favorited": false,
+      "genres": [
+        "pop punk",
+        "emo",
+        "indie",
+        "rock",
+        "punk"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "7tGDDH9n27zmofP8EFwKsY",
+          "art_filename": "saves_the_day_ups_downs_early_recordings_and_b_sides.jpg",
+          "count": 1,
+          "latest_played": "2026-07-28T18:45:00Z"
+        },
+        {
+          "album_id": "2fbbEdME7raxGzuPztDFxE",
+          "art_filename": "saves_the_day_stay_what_you_are.jpg",
+          "count": 1,
+          "latest_played": "2026-05-27T20:20:00Z"
+        },
+        {
+          "album_id": "3yRpyOundyELlkOO6O4YSo",
+          "art_filename": "saves_the_day_through_being_cool.jpg",
+          "count": 3,
+          "latest_played": "2026-03-05T08:48:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Box Car Racer",
+      "play_count": 5,
+      "latest_played": "2026-03-09T18:33:00Z",
+      "is_favorited": false,
+      "genres": [
+        "punk rock",
+        "pop punk",
+        "punk",
+        "rock",
+        "emo"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3gODo8aZ2dTVIaOr9SqeRE",
+          "art_filename": "box_car_racer_box_car_racer.jpg",
+          "count": 5,
+          "latest_played": "2026-03-09T18:33:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Daniel Caesar",
+      "play_count": 17,
+      "latest_played": "2026-03-11T19:58:00Z",
+      "is_favorited": false,
+      "genres": [
+        "rnb",
+        "soul",
+        "neo-soul",
+        "canadian",
+        "alternative rnb"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5QHoG6laR98M4SZumgSLkB",
+          "art_filename": "daniel_caesar_get_you_single.jpg",
+          "count": 1,
+          "latest_played": "2026-05-01T20:25:00Z"
+        },
+        {
+          "album_id": "4E1XUBMTpLO7GpBzUo65Jp",
+          "art_filename": "daniel_caesar_freudian.jpg",
+          "count": 6,
+          "latest_played": "2026-03-25T12:15:00Z"
+        },
+        {
+          "album_id": "2z9lM6LDS58F70IGyQ1XMK",
+          "art_filename": "daniel_caesar_never_enough.jpg",
+          "count": 10,
+          "latest_played": "2026-03-11T19:58:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Pink Floyd",
+      "play_count": 3,
+      "latest_played": "2026-03-12T12:25:00Z",
+      "is_favorited": false,
+      "genres": [
+        "progressive rock",
+        "psychedelic rock",
+        "classic rock",
+        "rock",
+        "psychedelic"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0bCAjiUamIFqKJsekOYuRw",
+          "art_filename": "pink_floyd_wish_you_were_here.jpg",
+          "count": 3,
+          "latest_played": "2026-03-12T12:25:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Penfold",
+      "play_count": 5,
+      "latest_played": "2026-03-17T07:49:00Z",
+      "is_favorited": false,
+      "genres": [
+        "emo",
+        "midwest emo",
+        "indie",
+        "real emo",
+        "indie emo"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "34MllYh3dtTSVGnE3m7mbg",
+          "art_filename": "penfold_amateurs_professionals.jpg",
+          "count": 5,
+          "latest_played": "2026-03-17T07:49:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Bruce Springsteen",
+      "play_count": 23,
+      "latest_played": "2026-03-17T21:03:00Z",
+      "is_favorited": false,
+      "genres": [
+        "rock",
+        "classic rock",
+        "singer-songwriter",
+        "folk",
+        "80s"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6yskFQZNlLYhkchAxELHi6",
+          "art_filename": "bruce_springsteen_nebraska.jpg",
+          "count": 23,
+          "latest_played": "2026-03-17T21:03:00Z"
+        }
+      ]
+    },
+    {
+      "name": "The Replacements",
+      "play_count": 1,
+      "latest_played": "2026-03-18T19:21:00Z",
+      "is_favorited": false,
+      "genres": [
+        "punk",
+        "alternative",
+        "post-punk",
+        "rock",
+        "alternative rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2sOLW5TSgXiLZBacdHxO6m",
+          "art_filename": "the_replacements_let_it_be.jpg",
+          "count": 1,
+          "latest_played": "2026-03-18T19:21:00Z"
+        }
+      ]
+    },
+    {
+      "name": "La Dispute",
+      "play_count": 2,
+      "latest_played": "2026-03-18T19:27:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post-hardcore",
+        "screamo",
+        "experimental",
+        "hardcore",
+        "indie"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3C6pVtRNzuqlwOyqeraoP3",
+          "art_filename": "la_dispute_rooms_of_the_house.jpg",
+          "count": 2,
+          "latest_played": "2026-03-18T19:27:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Thom Yorke",
+      "play_count": 26,
+      "latest_played": "2026-03-21T11:09:00Z",
+      "is_favorited": false,
+      "genres": [
+        "electronic",
+        "experimental",
+        "alternative",
+        "indie",
+        "singer-songwriter"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "4X8Y79gWo6xm7Osdapg58E",
+          "art_filename": "thom_yorke_the_eraser.jpg",
+          "count": 26,
+          "latest_played": "2026-03-21T11:09:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Circa Survive",
+      "play_count": 1,
+      "latest_played": "2026-03-22T21:46:00Z",
+      "is_favorited": false,
+      "genres": [
+        "experimental",
+        "indie",
+        "alternative",
+        "rock",
+        "emo"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "4Chn7XF8fzngf9GPfTMXLz",
+          "art_filename": "circa_survive_on_letting_go.jpg",
+          "count": 1,
+          "latest_played": "2026-03-22T21:46:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Hey Mercedes",
+      "play_count": 6,
+      "latest_played": "2026-03-26T21:27:00Z",
+      "is_favorited": false,
+      "genres": [
+        "emo",
+        "indie rock",
+        "indie",
+        "alternative",
+        "rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "7zdtIu9JQlafUSbgyUPqLj",
+          "art_filename": "hey_mercedes_everynight_fire_works.jpg",
+          "count": 3,
+          "latest_played": "2026-04-10T08:58:00Z"
+        },
+        {
+          "album_id": "313fiHz3bAnzB4tWyqbfLg",
+          "art_filename": "hey_mercedes_loses_control.jpg",
+          "count": 3,
+          "latest_played": "2026-03-26T21:27:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Four Year Strong",
+      "play_count": 11,
+      "latest_played": "2026-03-31T22:27:00Z",
+      "is_favorited": false,
+      "genres": [
+        "pop punk",
+        "melodic hardcore",
+        "hardcore",
+        "beardcore",
+        "punk"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "08pL4gHGoa0GXyv9emugVv",
+          "art_filename": "four_year_strong_rise_or_die_trying.jpg",
+          "count": 11,
+          "latest_played": "2026-03-31T22:27:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Slint",
+      "play_count": 11,
+      "latest_played": "2026-04-01T08:29:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post-rock",
+        "math rock",
+        "indie rock",
+        "indie",
+        "post-hardcore"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2NnkLRaeX33d1Mn8ZLgTo8",
+          "art_filename": "slint_spiderland.jpg",
+          "count": 11,
+          "latest_played": "2026-04-01T08:29:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Buzzcocks",
+      "play_count": 3,
+      "latest_played": "2026-04-07T21:48:00Z",
+      "is_favorited": false,
+      "genres": [
+        "punk",
+        "punk rock",
+        "british",
+        "new wave",
+        "rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6TxgQwGrbG3XZLNPOEhg7E",
+          "art_filename": "buzzcocks_singles_going_steady.jpg",
+          "count": 3,
+          "latest_played": "2026-04-07T21:48:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Dirty Projectors",
+      "play_count": 2,
+      "latest_played": "2026-04-09T18:07:00Z",
+      "is_favorited": false,
+      "genres": [
+        "experimental",
+        "indie",
+        "freak folk",
+        "indie rock",
+        "folk"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2Geg4mwE8z9DO5BSSUoMKz",
+          "art_filename": "dirty_projectors_bitte_orca.jpg",
+          "count": 2,
+          "latest_played": "2026-04-09T18:07:00Z"
+        }
+      ]
+    },
+    {
+      "name": "To The Wind",
+      "play_count": 4,
+      "latest_played": "2026-04-10T20:53:00Z",
+      "is_favorited": false,
+      "genres": [
+        "melodic hardcore",
+        "metalcore",
+        "hardcore",
+        "melodic metalcore",
+        "american"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "5YlSucquisid7OajXkWlez",
+          "art_filename": "to_the_wind_the_brighter_view.jpg",
+          "count": 4,
+          "latest_played": "2026-04-10T20:53:00Z"
+        }
+      ]
+    },
+    {
+      "name": "El Grupo Nuevo De Omar Rodr\u00edguez-L\u00f3pez",
+      "play_count": 13,
+      "latest_played": "2026-04-27T19:23:00Z",
+      "is_favorited": false,
+      "genres": [
+        "experimental",
+        "progressive rock",
+        "omar rodriguez-lopez",
+        "math rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0g38ZeTAsTExHItLQ77ht2",
+          "art_filename": "el_grupo_nuevo_de_omar_rodr\u00edguez_l\u00f3pez_cryptomnesia.jpg",
+          "count": 13,
+          "latest_played": "2026-04-27T19:23:00Z"
+        }
+      ]
+    },
+    {
+      "name": "The Story So Far",
+      "play_count": 2,
+      "latest_played": "2026-05-03T12:47:00Z",
+      "is_favorited": false,
+      "genres": [
+        "pop punk",
+        "melodic hardcore",
+        "punk",
+        "pop-punk",
+        "punk rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "4DxbJ2jzG4ww81trmLjIxj",
+          "art_filename": "the_story_so_far_the_story_so_far.jpg",
+          "count": 1,
+          "latest_played": "2026-07-16T08:19:00Z"
+        },
+        {
+          "album_id": "7pVwJktWZLoZmvQo3LS2Y2",
+          "art_filename": "the_story_so_far_the_story_so_far_stick_to_your_guns_split.jpg",
+          "count": 1,
+          "latest_played": "2026-05-03T12:47:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Heatmiser",
+      "play_count": 4,
+      "latest_played": "2026-05-05T12:19:00Z",
+      "is_favorited": false,
+      "genres": [
+        "indie rock",
+        "indie",
+        "alternative",
+        "rock",
+        "alternative rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0D3hElyxCMZnBVI4pDMSAL",
+          "art_filename": "heatmiser_mic_city_sons.jpg",
+          "count": 4,
+          "latest_played": "2026-05-05T12:19:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Television",
+      "play_count": 11,
+      "latest_played": "2026-05-06T08:02:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post-punk",
+        "new wave",
+        "proto-punk",
+        "punk",
+        "rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "630o1rKTDsLeIPreOY1jqP",
+          "art_filename": "television_marquee_moon.jpg",
+          "count": 11,
+          "latest_played": "2026-05-06T08:02:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Joy Division",
+      "play_count": 17,
+      "latest_played": "2026-05-08T18:49:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post-punk",
+        "new wave",
+        "80s",
+        "alternative",
+        "indie"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0KBdfMTMxi0oD1oVqApTjr",
+          "art_filename": "joy_division_closer.jpg",
+          "count": 9,
+          "latest_played": "2026-07-03T19:46:00Z"
+        },
+        {
+          "album_id": "5Dgqy4bBg09Rdw7CQM545s",
+          "art_filename": "joy_division_unknown_pleasures.jpg",
+          "count": 8,
+          "latest_played": "2026-05-08T18:49:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Minor Threat",
+      "play_count": 4,
+      "latest_played": "2026-05-11T19:08:00Z",
+      "is_favorited": false,
+      "genres": [
+        "hardcore punk",
+        "hardcore",
+        "straight edge",
+        "punk",
+        "punk rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6wPX4FdHqmn0aHZ84WUCW5",
+          "art_filename": "minor_threat_out_of_step.jpg",
+          "count": 4,
+          "latest_played": "2026-05-11T19:08:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Kraftwerk",
+      "play_count": 9,
+      "latest_played": "2026-05-12T08:18:00Z",
+      "is_favorited": false,
+      "genres": [
+        "electronic",
+        "synthpop",
+        "german",
+        "electronica",
+        "krautrock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0HHRIVjvBcnTepfeRVgS2f",
+          "art_filename": "kraftwerk_trans_europe_express_2009_remaster.jpg",
+          "count": 9,
+          "latest_played": "2026-05-12T08:18:00Z"
+        }
+      ]
+    },
+    {
+      "name": "The xx",
+      "play_count": 15,
+      "latest_played": "2026-05-14T19:47:00Z",
+      "is_favorited": false,
+      "genres": [
+        "indie",
+        "electronic",
+        "post-punk",
+        "british",
+        "dance"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2av2ZSHlvD7rvLSsMvtYCG",
+          "art_filename": "the_xx_xx.jpg",
+          "count": 15,
+          "latest_played": "2026-05-14T19:47:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Caribou",
+      "play_count": 1,
+      "latest_played": "2026-05-14T22:04:00Z",
+      "is_favorited": false,
+      "genres": [
+        "electronic",
+        "experimental",
+        "indie",
+        "canadian",
+        "electronica"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3gkW0gOyovtdcscDX6WZ6O",
+          "art_filename": "caribou_swim.jpg",
+          "count": 1,
+          "latest_played": "2026-05-14T22:04:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Dinosaur Jr.",
+      "play_count": 26,
+      "latest_played": "2026-05-15T21:34:00Z",
+      "is_favorited": false,
+      "genres": [
+        "alternative",
+        "grunge",
+        "indie rock",
+        "indie",
+        "alternative rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "3peMqhMZ1HT8N4lvSS3GPu",
+          "art_filename": "dinosaur_jr_youre_living_all_over_me.jpg",
+          "count": 26,
+          "latest_played": "2026-05-15T21:34:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Atoms For Peace",
+      "play_count": 9,
+      "latest_played": "2026-05-24T13:32:00Z",
+      "is_favorited": false,
+      "genres": [
+        "electronic",
+        "experimental",
+        "alternative",
+        "indie rock",
+        "supergroup"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "77Ie9frENeQwYUGHrrS0pk",
+          "art_filename": "atoms_for_peace_amok.jpg",
+          "count": 6,
+          "latest_played": "2026-05-30T19:31:00Z"
+        },
+        {
+          "album_id": "08INtxsSmKWULibGC7DYDP",
+          "art_filename": "atoms_for_peace_before_your_very_eyes_magic_beanz.jpg",
+          "count": 3,
+          "latest_played": "2026-05-24T13:32:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Bad Brains",
+      "play_count": 4,
+      "latest_played": "2026-05-28T08:18:00Z",
+      "is_favorited": false,
+      "genres": [
+        "hardcore punk",
+        "hardcore",
+        "reggae",
+        "punk",
+        "punk rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "4NpepcKo9rQ8nkdCB6iWMP",
+          "art_filename": "bad_brains_bad_brains.jpg",
+          "count": 4,
+          "latest_played": "2026-05-28T08:18:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Explosions In The Sky",
+      "play_count": 8,
+      "latest_played": "2026-05-31T20:58:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post-rock",
+        "instrumental",
+        "ambient",
+        "experimental",
+        "post rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "2TmYd2YYLJ5dpKiL4pEqkD",
+          "art_filename": "explosions_in_the_sky_those_who_tell_the_truth_shall_die_those_who_tel.jpg",
+          "count": 3,
+          "latest_played": "2026-06-11T18:52:00Z"
+        },
+        {
+          "album_id": "49buCcKCJwxvdl0R2dMoIU",
+          "art_filename": "explosions_in_the_sky_the_earth_is_not_a_cold_dead_place_anniversary_e.jpg",
+          "count": 5,
+          "latest_played": "2026-05-31T20:58:00Z"
+        }
+      ]
+    },
+    {
+      "name": "The Velvet Underground",
+      "play_count": 6,
+      "latest_played": "2026-06-07T13:30:00Z",
+      "is_favorited": false,
+      "genres": [
+        "psychedelic",
+        "rock",
+        "classic rock",
+        "proto-punk",
+        "alternative"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "4RMGrhJRnGiNqmKqhqpLlX",
+          "art_filename": "the_velvet_underground_loaded_2015_remaster.jpg",
+          "count": 6,
+          "latest_played": "2026-06-07T13:30:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Pinback",
+      "play_count": 5,
+      "latest_played": "2026-06-07T22:17:00Z",
+      "is_favorited": false,
+      "genres": [
+        "indie rock",
+        "indie",
+        "alternative",
+        "indie pop",
+        "rock"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "6AGfeMHoNKOFey4KEqwhmJ",
+          "art_filename": "pinback_blue_screen_life.jpg",
+          "count": 5,
+          "latest_played": "2026-06-07T22:17:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Son Volt",
+      "play_count": 1,
+      "latest_played": "2026-06-08T20:40:00Z",
+      "is_favorited": false,
+      "genres": [
+        "alt-country",
+        "americana",
+        "country",
+        "rock",
+        "alt country"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1SV1Fh8rLes7MeTYTXznKd",
+          "art_filename": "son_volt_trace_remastered.jpg",
+          "count": 1,
+          "latest_played": "2026-06-08T20:40:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Linkin Park",
+      "play_count": 11,
+      "latest_played": "2026-06-09T22:56:00Z",
+      "is_favorited": false,
+      "genres": [
+        "nu metal",
+        "rock",
+        "alternative rock",
+        "alternative",
+        "metal"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1MhedvSCTqGphXQz3oucpj",
+          "art_filename": "linkin_park_reanimation.jpg",
+          "count": 6,
+          "latest_played": "2026-07-02T08:06:00Z"
+        },
+        {
+          "album_id": "6hPkbAV3ZXpGZBGUvL6jVM",
+          "art_filename": "linkin_park_hybrid_theory_bonus_edition.jpg",
+          "count": 2,
+          "latest_played": "2026-06-15T19:27:00Z"
+        },
+        {
+          "album_id": "0y13VbGddQ4azdVWakksAL",
+          "art_filename": "linkin_park_meteora_bonus_edition.jpg",
+          "count": 3,
+          "latest_played": "2026-06-09T22:56:00Z"
+        }
+      ]
+    },
+    {
+      "name": "The Cranberries",
+      "play_count": 2,
+      "latest_played": "2026-06-11T21:51:00Z",
+      "is_favorited": false,
+      "genres": [
+        "rock",
+        "alternative",
+        "alternative rock",
+        "female vocalists",
+        "irish"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "0AP5O47kJWlaKVnnybKvQI",
+          "art_filename": "the_cranberries_everybody_else_is_doing_it_so_why_cant_we.jpg",
+          "count": 2,
+          "latest_played": "2026-06-11T21:51:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Aiko el grupo",
+      "play_count": 8,
+      "latest_played": "2026-06-20T19:52:00Z",
+      "is_favorited": false,
+      "genres": [
+        "spain",
+        "garage punk",
+        "pop",
+        "punk",
+        "indie pop"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "1KG4rIbiB4kk3qEV5SIYcg",
+          "art_filename": "aiko_el_grupo_me_est\u00e1n_apuntando_con_un_arma.jpg",
+          "count": 6,
+          "latest_played": "2026-07-03T19:16:00Z"
+        },
+        {
+          "album_id": "3kINWHNCGlbYI56ZaRX8OY",
+          "art_filename": "aiko_el_grupo_no_te_has_enterado.jpg",
+          "count": 2,
+          "latest_played": "2026-06-20T19:52:00Z"
+        }
+      ]
+    },
+    {
+      "name": "Sparta",
+      "play_count": 3,
+      "latest_played": "2026-06-22T21:55:00Z",
+      "is_favorited": false,
+      "genres": [
+        "post-hardcore",
+        "alternative rock",
+        "rock",
+        "indie",
+        "alternative"
+      ],
+      "hero_art_filename": null,
+      "albums": [
+        {
+          "album_id": "17Mq1v9fKGSmCabI7DaV4S",
+          "art_filename": "sparta_porcelain.jpg",
+          "count": 3,
+          "latest_played": "2026-06-22T21:55:00Z"
+        }
+      ]
+    }
+  ],
+  "all_genres": [
+    "60s",
+    "70s",
+    "80s",
+    "90s",
+    "acoustic",
+    "afoxe",
+    "alt country",
+    "alt-country",
+    "alternative",
+    "alternative metal",
+    "alternative pop",
+    "alternative rap",
+    "alternative rnb",
+    "alternative rock",
+    "ambient",
+    "american",
+    "americana",
+    "art pop",
+    "art punk",
+    "atlanta",
+    "australian",
+    "avant-garde",
+    "balearic",
+    "beardcore",
+    "bebop",
+    "belchior",
+    "bluegrass",
+    "blues",
+    "bossa nova",
+    "brasil",
+    "brazil",
+    "brazilian",
+    "british",
+    "canada",
+    "canadian",
+    "catalan",
+    "chamber folk",
+    "chanson",
+    "chanson francaise",
+    "chaotic hardcore",
+    "chill906",
+    "chillout",
+    "chillwave",
+    "classic rock",
+    "clube da esquina",
+    "compton",
+    "country",
+    "cumbia",
+    "dance",
+    "deep house",
+    "deutsch",
+    "dischord",
+    "disco",
+    "downtempo",
+    "dream pop",
+    "east coast rap",
+    "easycore",
+    "electronic",
+    "electronica",
+    "elephant 6",
+    "emo",
+    "emocore",
+    "ethereal",
+    "experimental",
+    "female fronted",
+    "female vocalists",
+    "folk",
+    "folk rock",
+    "folk-rock",
+    "freak folk",
+    "french",
+    "funk",
+    "funk_add_to_lidarr_batch_18",
+    "fusion",
+    "gangsta rap",
+    "garage punk",
+    "german",
+    "glam rock",
+    "golden age",
+    "grunge",
+    "guitar",
+    "hard rock",
+    "hardcore",
+    "hardcore punk",
+    "hip hop",
+    "hip-hop",
+    "house",
+    "icelandic",
+    "idm",
+    "incubus",
+    "indie",
+    "indie emo",
+    "indie pop",
+    "indie punk",
+    "indie rock",
+    "instrumental",
+    "irish",
+    "italian",
+    "italy",
+    "japanese",
+    "jazz",
+    "jazz hop",
+    "kanye west",
+    "krautrock",
+    "latin",
+    "lo-fi",
+    "math rock",
+    "mathcore",
+    "mellow",
+    "melodic hardcore",
+    "melodic metalcore",
+    "metal",
+    "metalcore",
+    "mexico",
+    "midwest emo",
+    "mike patton",
+    "modern hardcore",
+    "mpb",
+    "neo-soul",
+    "new wave",
+    "no wave",
+    "noise rock",
+    "noisecore",
+    "nu metal",
+    "ofwgkta",
+    "oldies",
+    "omar rodriguez-lopez",
+    "peru",
+    "piano",
+    "poetry",
+    "political",
+    "pop",
+    "pop punk",
+    "pop-punk",
+    "post rock",
+    "post-emo indie rock",
+    "post-hardcore",
+    "post-metal",
+    "post-punk",
+    "post-rock",
+    "post-rock screamo",
+    "progressive",
+    "progressive metal",
+    "progressive rock",
+    "proto-punk",
+    "psychedelic",
+    "psychedelic rock",
+    "punk",
+    "punk rock",
+    "r&b",
+    "rap",
+    "rapcore",
+    "real emo",
+    "reggae",
+    "reggaeton",
+    "rhythm and blues",
+    "rnb",
+    "rock",
+    "sadcore",
+    "samba",
+    "samba rock",
+    "screamo",
+    "shoegaze",
+    "singer-songwriter",
+    "slowcore",
+    "sludge",
+    "soul",
+    "southern rock",
+    "space rock",
+    "spain",
+    "spanish",
+    "spanish or latin artists",
+    "spoken word",
+    "stoner rock",
+    "straight edge",
+    "supergroup",
+    "swedish",
+    "synth pop",
+    "synthpop",
+    "techno",
+    "thrash metal",
+    "tontipop",
+    "trap",
+    "trip hop",
+    "trip-hop",
+    "tropicalia",
+    "trumpet",
+    "turntablism",
+    "twee pop",
+    "ukhc",
+    "underground hip-hop",
+    "underground rap",
+    "vocal jazz",
+    "west coast",
+    "world"
+  ]
+}

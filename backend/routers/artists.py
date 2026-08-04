@@ -63,7 +63,10 @@ def _album_track_plays(plays: list[dict], lib: dict) -> list[dict]:
                 "is_favorited": bool(tracks_lib.get(tid, {}).get("favorited", False)),
             }
         tracks[tid]["play_count"] += 1
-    return sorted(tracks.values(), key=lambda x: (x["track_number"], x["track_name"]))
+    return sorted(
+        tracks.values(),
+        key=lambda x: (x["track_number"] is None, x["track_number"], x["track_name"]),
+    )
 
 
 @router.get("")

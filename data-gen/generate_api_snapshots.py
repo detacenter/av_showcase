@@ -43,6 +43,7 @@ import socket
 import subprocess
 import time
 from pathlib import Path
+from urllib.parse import quote
 from urllib.request import urlopen
 from urllib.error import URLError
 
@@ -57,9 +58,11 @@ BASE_URL = f"http://127.0.0.1:{PORT}"
 ENDPOINTS = {
     "/api/recent/albums": "recent-albums.json",
     "/api/settings": "settings.json",
+    "/api/artists": "artists.json",
 }
 
 _ABS_PATH_RE = re.compile(r"^/[^\s]*/([^/\s]+)$")
+_IMAGE_EXT_RE = re.compile(r"\.(jpe?g|png)$", re.IGNORECASE)
 
 
 def sanitize_paths(obj):
@@ -71,6 +74,30 @@ def sanitize_paths(obj):
         m = _ABS_PATH_RE.match(obj)
         if m and ("/Users/" in obj or "/home/" in obj):
             return m.group(1)
+    return obj
+
+
+def scrub_stale_artwork(obj, valid_names: set):
+    """Null out any artwork reference that doesn't survive restore_data_state().
+
+    A response captured mid-run can legitimately name a file that only exists
+    because the backend's artwork backfill just downloaded it from Spotify's
+    CDN — restore_data_state() then deletes that file (it's new, unreviewed
+    content this tool shouldn't silently keep). Without this pass, snapshots
+    are left pointing at filenames that don't exist anywhere once the run
+    finishes, showing up as broken images in the demo (caught in session 5,
+    via a real browser screenshot, on a handful of ArtistsView cards — see
+    PRJ-0005 session log). Matches by extension rather than by field name
+    (art_filename, art_local_path, ...) since new views keep introducing new
+    field names for the same kind of reference."""
+    if isinstance(obj, dict):
+        return {k: scrub_stale_artwork(v, valid_names) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [scrub_stale_artwork(v, valid_names) for v in obj]
+    if isinstance(obj, str) and _IMAGE_EXT_RE.search(obj):
+        basename = obj.rsplit("/", 1)[-1]
+        if basename not in valid_names:
+            return None
     return obj
 
 
@@ -153,14 +180,35 @@ def main():
         wait_for_own_server(proc)
 
         OUT_DIR.mkdir(parents=True, exist_ok=True)
+        valid_artwork = before["artwork_names"]
+        artists_list = None
         for path, filename in ENDPOINTS.items():
             with urlopen(f"{BASE_URL}{path}", timeout=10) as resp:
                 data = json.load(resp)
-            clean = sanitize_paths(data)
+            clean = scrub_stale_artwork(sanitize_paths(data), valid_artwork)
             out_path = OUT_DIR / filename
             with out_path.open("w") as f:
                 json.dump(clean, f, indent=2)
             print(f"{path} -> {out_path.relative_to(ROOT)}")
+            if path == "/api/artists":
+                artists_list = clean["artists"]
+
+        # Artist detail is keyed by name (not one file per artist) — sidesteps
+        # any risk of encodeURIComponent (JS, in sw.js) and quote (Python, here)
+        # disagreeing on which characters to escape in artist names and
+        # producing mismatched filenames.
+        if artists_list is not None:
+            details = {}
+            for artist in artists_list:
+                name = artist["name"]
+                encoded = quote(name, safe="")
+                with urlopen(f"{BASE_URL}/api/artists/{encoded}", timeout=10) as resp:
+                    detail = json.load(resp)
+                details[name] = scrub_stale_artwork(sanitize_paths(detail), valid_artwork)
+            out_path = OUT_DIR / "artists-detail.json"
+            with out_path.open("w") as f:
+                json.dump(details, f, indent=2)
+            print(f"/api/artists/<name> x{len(details)} -> {out_path.relative_to(ROOT)}")
     finally:
         proc.terminate()
         try:

@@ -152,13 +152,25 @@ def main() -> None:
                     "duration_ms": e.get("duration_ms"),
                     "isrc": e.get("isrc"),
                 }
+        # Only the primary (index-0) credited artist accrues weight/albums here —
+        # matches the real app's own insights/collection_insights.py::
+        # build_artist_catalog exactly, which does the same (`primary =
+        # entry["artist_names"][0]`). Looping over every credited artist here
+        # instead (an earlier version of this script did) let feature/guest
+        # credits on someone else's track — a Dungeon Family interlude
+        # co-credited to "Big Rube" or "TMO" on an OutKast album, say — get
+        # sampled as if they were headline artists in their own right, each
+        # showing a fragment of an album that wasn't really theirs. Caught in
+        # session 5 via a real browser screenshot ("what are these made up
+        # ones?? TMO?") — see PRJ-0005 session log.
         e_artist_names = e.get("artist_names", [])
         e_artist_ids = e.get("artist_ids", [])
-        for i, name in enumerate(e_artist_names):
+        if e_artist_names:
+            name = e_artist_names[0]
             if album_id:
                 artist_albums.setdefault(name, set()).add(album_id)
-            if i < len(e_artist_ids) and e_artist_ids[i] and name not in artist_id_by_name:
-                artist_id_by_name[name] = e_artist_ids[i]
+            if e_artist_ids and e_artist_ids[0] and name not in artist_id_by_name:
+                artist_id_by_name[name] = e_artist_ids[0]
 
     # Fill in any unheard tracks from catalog.json so tracklists are as complete
     # as what's available locally (catalog-shape data only — "heard" flag dropped).
