@@ -21,7 +21,12 @@ const overlay = {
   albumFavorites: {},   // album_id -> bool
   albumRatings: {},     // album_id -> int (0-20)
   albumNotes: {},       // album_id -> string
+  playlistOverrides: {}, // playlist_id -> {name, rule_groups, pinned_track_ids, excluded_track_ids}
+  deletedPlaylists: new Set(), // playlist ids
+  createdPlaylists: [],  // playlist objects created client-side this session
 };
+
+let _playlistCounter = 0;
 
 self.addEventListener("install", (event) => {
   self.skipWaiting();
@@ -127,6 +132,70 @@ async function handleAlbums() {
   return jsonResponse({ albums, all_genres: data.all_genres, year_bounds: data.year_bounds });
 }
 
+function applyPlaylistOverride(p) {
+  const o = overlay.playlistOverrides[p.id];
+  return o ? { ...p, ...o } : p;
+}
+
+async function handlePlaylists() {
+  const data = await loadSnapshot("playlists.json");
+  const base = data.playlists
+    .filter((p) => !overlay.deletedPlaylists.has(p.id))
+    .map(applyPlaylistOverride);
+  const created = overlay.createdPlaylists
+    .filter((p) => !overlay.deletedPlaylists.has(p.id))
+    .map(applyPlaylistOverride);
+  return jsonResponse({ playlists: [...base, ...created], all_genres: data.all_genres });
+}
+
+async function handlePlaylistSessions() {
+  return jsonResponse(await loadSnapshot("playlist-sessions.json"));
+}
+
+async function handlePlaylistEvaluate(id) {
+  const evaluated = await loadSnapshot("playlists-evaluate.json");
+  // Client-created playlists and rule-group edits to existing ones have no
+  // live backend to re-run evaluation against — always serves the original
+  // canned tracklist (empty for newly created playlists). Matches this
+  // demo's "no live logic behind mutations" approach everywhere else.
+  return jsonResponse({ tracks: evaluated[id] ?? [] });
+}
+
+function handleCreatePlaylist(body) {
+  const id = `pl-demo-${Date.now()}-${_playlistCounter++}`;
+  const playlist = {
+    id,
+    name: (body && body.name) || "Untitled",
+    rule_groups: [],
+    pinned_track_ids: [],
+    excluded_track_ids: [],
+    track_count: 0,
+    art_filenames: [],
+  };
+  overlay.createdPlaylists.push(playlist);
+  return jsonResponse(playlist);
+}
+
+async function handleUpdatePlaylist(id, body) {
+  const fields = ["name", "rule_groups", "pinned_track_ids", "excluded_track_ids"];
+  const patch = {};
+  for (const f of fields) if (body && body[f] !== undefined) patch[f] = body[f];
+  overlay.playlistOverrides[id] = { ...overlay.playlistOverrides[id], ...patch };
+
+  const created = overlay.createdPlaylists.find((p) => p.id === id);
+  if (created) return jsonResponse(applyPlaylistOverride(created));
+
+  const data = await loadSnapshot("playlists.json");
+  const base = data.playlists.find((p) => p.id === id);
+  if (!base) return jsonResponse({ error: "not found" }, 404);
+  return jsonResponse(applyPlaylistOverride(base));
+}
+
+function handleDeletePlaylist(id) {
+  overlay.deletedPlaylists.add(id);
+  return jsonResponse({ ok: true });
+}
+
 async function handleArtists() {
   const data = await loadSnapshot("artists.json");
   const artists = data.artists.map((a) => ({
@@ -214,7 +283,27 @@ async function handleApiRequest(request) {
     return handleAlbums();
   }
 
+  if (path === "/api/playlists" && method === "GET") {
+    return handlePlaylists();
+  }
+  if (path === "/api/playlists" && method === "POST") {
+    return handleCreatePlaylist(await request.json().catch(() => ({})));
+  }
+  if (path === "/api/playlists/sessions" && method === "GET") {
+    return handlePlaylistSessions();
+  }
+
   let m;
+  if ((m = path.match(/^\/api\/playlists\/([^/]+)\/evaluate$/)) && method === "GET") {
+    return handlePlaylistEvaluate(decodeURIComponent(m[1]));
+  }
+  if ((m = path.match(/^\/api\/playlists\/([^/]+)$/)) && method === "PUT") {
+    return handleUpdatePlaylist(decodeURIComponent(m[1]), await request.json());
+  }
+  if ((m = path.match(/^\/api\/playlists\/([^/]+)$/)) && method === "DELETE") {
+    return handleDeletePlaylist(decodeURIComponent(m[1]));
+  }
+
   if ((m = path.match(/^\/api\/artists\/(.+)$/)) && method === "GET") {
     return handleArtistDetail(decodeURIComponent(m[1]));
   }

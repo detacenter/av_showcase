@@ -200,127 +200,7 @@
         "count": 54
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000039,
-        "title": "Ready to Die (The Remaster)",
-        "artists": [
-          "The Notorious B.I.G."
-        ],
-        "art_filename": null,
-        "year": 1994,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "Intro - 2005 Remaster",
-            "duration": "3:23"
-          },
-          {
-            "position": "2",
-            "title": "Things Done Changed - 2005 Remaster",
-            "duration": "3:58"
-          },
-          {
-            "position": "3",
-            "title": "Gimme the Loot - 2005 Remaster",
-            "duration": "4:45"
-          },
-          {
-            "position": "4",
-            "title": "Machine Gun Funk - 2005 Remaster",
-            "duration": "4:15"
-          },
-          {
-            "position": "5",
-            "title": "Warning - 2005 Remaster",
-            "duration": "3:40"
-          },
-          {
-            "position": "6",
-            "title": "Ready to Die - 2005 Remaster",
-            "duration": "4:24"
-          },
-          {
-            "position": "7",
-            "title": "One More Chance - 2005 Remaster",
-            "duration": "4:43"
-          },
-          {
-            "position": "8",
-            "title": "Fuck Me (Interlude) - Interlude; 2005 Remaster",
-            "duration": "1:31"
-          },
-          {
-            "position": "9",
-            "title": "The What - 2005 Remaster",
-            "duration": "3:57"
-          },
-          {
-            "position": "10",
-            "title": "Juicy - 2005 Remaster",
-            "duration": "5:02"
-          },
-          {
-            "position": "11",
-            "title": "Everyday Struggle - 2005 Remaster",
-            "duration": "5:19"
-          },
-          {
-            "position": "12",
-            "title": "Me and My Bitch - 2005 Remaster",
-            "duration": "4:00"
-          },
-          {
-            "position": "13",
-            "title": "Big Poppa - 2005 Remaster",
-            "duration": "4:12"
-          },
-          {
-            "position": "14",
-            "title": "Respect - 2005 Remaster",
-            "duration": "5:21"
-          },
-          {
-            "position": "15",
-            "title": "Friend of Mine - 2005 Remaster",
-            "duration": "3:28"
-          },
-          {
-            "position": "16",
-            "title": "Unbelievable - 2005 Remaster",
-            "duration": "3:43"
-          },
-          {
-            "position": "17",
-            "title": "Suicidal Thoughts - 2005 Remaster",
-            "duration": "2:50"
-          },
-          {
-            "position": "18",
-            "title": "Who Shot Ya? - 2005 Remaster",
-            "duration": "5:19"
-          },
-          {
-            "position": "19",
-            "title": "Just Playing (Dreams) - 2005 Remaster",
-            "duration": "2:43"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Beyonc\u00e9": {
     "name": "Beyonc\u00e9",
@@ -659,7 +539,132 @@
         "count": 17
       }
     ],
-    "vinyl": []
+    "vinyl": [
+      {
+        "release_id": 9000028,
+        "title": "BEYONC\u00c9 [Platinum Edition]",
+        "artists": [
+          "Beyonc\u00e9"
+        ],
+        "art_filename": null,
+        "year": 2014,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "7/11",
+            "duration": "3:33"
+          },
+          {
+            "position": "1",
+            "title": "Pretty Hurts",
+            "duration": "4:17"
+          },
+          {
+            "position": "2",
+            "title": "Flawless Remix (feat. Nicki Minaj)",
+            "duration": "3:54"
+          },
+          {
+            "position": "2",
+            "title": "Haunted",
+            "duration": "6:09"
+          },
+          {
+            "position": "3",
+            "title": "Drunk in Love Remix (feat. JAY-Z & Kanye West)",
+            "duration": "6:35"
+          },
+          {
+            "position": "3",
+            "title": "Drunk in Love (feat. JAY-Z)",
+            "duration": "5:23"
+          },
+          {
+            "position": "4",
+            "title": "Ring Off",
+            "duration": "3:00"
+          },
+          {
+            "position": "4",
+            "title": "Blow",
+            "duration": "5:09"
+          },
+          {
+            "position": "5",
+            "title": "Blow Remix (feat. Pharrell Williams)",
+            "duration": "5:09"
+          },
+          {
+            "position": "5",
+            "title": "No Angel",
+            "duration": "3:48"
+          },
+          {
+            "position": "6",
+            "title": "Standing on the Sun Remix (feat. Mr. Vegas)",
+            "duration": "4:33"
+          },
+          {
+            "position": "6",
+            "title": "Partition",
+            "duration": "5:19"
+          },
+          {
+            "position": "7",
+            "title": "Jealous",
+            "duration": "3:04"
+          },
+          {
+            "position": "8",
+            "title": "Rocket",
+            "duration": "6:31"
+          },
+          {
+            "position": "9",
+            "title": "Mine (feat. Drake)",
+            "duration": "6:18"
+          },
+          {
+            "position": "10",
+            "title": "XO",
+            "duration": "3:35"
+          },
+          {
+            "position": "11",
+            "title": "***Flawless (feat. Chimamanda Ngozi Adichie)",
+            "duration": "4:10"
+          },
+          {
+            "position": "12",
+            "title": "Superpower (feat. Frank Ocean)",
+            "duration": "4:36"
+          },
+          {
+            "position": "13",
+            "title": "Heaven",
+            "duration": "3:50"
+          },
+          {
+            "position": "14",
+            "title": "Blue (feat. Blue Ivy)",
+            "duration": "4:26"
+          }
+        ],
+        "vinyl_type": "LP"
+      }
+    ]
   },
   "A Lot Like Birds": {
     "name": "A Lot Like Birds",
@@ -720,7 +725,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000005,
+        "release_id": 9000014,
         "title": "DIVISI",
         "artists": [
           "A Lot Like Birds"
@@ -1533,82 +1538,7 @@
         "count": 2
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000037,
-        "title": "Stronger Than Pride",
-        "artists": [
-          "Sade"
-        ],
-        "art_filename": null,
-        "year": 1988,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "Love Is Stronger Than Pride",
-            "duration": "4:18"
-          },
-          {
-            "position": "2",
-            "title": "Paradise",
-            "duration": "4:02"
-          },
-          {
-            "position": "3",
-            "title": "Nothing Can Come Between Us",
-            "duration": "4:22"
-          },
-          {
-            "position": "4",
-            "title": "Haunt Me",
-            "duration": "5:50"
-          },
-          {
-            "position": "5",
-            "title": "Turn My Back On You",
-            "duration": "6:06"
-          },
-          {
-            "position": "6",
-            "title": "Keep Looking",
-            "duration": "5:21"
-          },
-          {
-            "position": "7",
-            "title": "Clean Heart",
-            "duration": "4:01"
-          },
-          {
-            "position": "8",
-            "title": "Give It Up",
-            "duration": "3:50"
-          },
-          {
-            "position": "9",
-            "title": "I Never Thought I'd See the Day",
-            "duration": "4:13"
-          },
-          {
-            "position": "10",
-            "title": "Siempre Hay Esperanza",
-            "duration": "5:15"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Milton Nascimento": {
     "name": "Milton Nascimento",
@@ -1796,7 +1726,77 @@
         "count": 2
       }
     ],
-    "vinyl": []
+    "vinyl": [
+      {
+        "release_id": 9000013,
+        "title": "Milton",
+        "artists": [
+          "Milton Nascimento"
+        ],
+        "art_filename": null,
+        "year": 1976,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "Raca (Hasa) (Race)",
+            "duration": "3:35"
+          },
+          {
+            "position": "2",
+            "title": "Fairy Tale Song (Cade)",
+            "duration": "4:11"
+          },
+          {
+            "position": "3",
+            "title": "Francisco",
+            "duration": "4:27"
+          },
+          {
+            "position": "4",
+            "title": "Nothing Will Be As It Was (Nada Sera Como Antes)",
+            "duration": "3:53"
+          },
+          {
+            "position": "5",
+            "title": "Cravo E Canela (Clove And Cinnamon)",
+            "duration": "3:44"
+          },
+          {
+            "position": "6",
+            "title": "The Call (Chamada)",
+            "duration": "5:49"
+          },
+          {
+            "position": "7",
+            "title": "One Coin (Tostao)",
+            "duration": "4:31"
+          },
+          {
+            "position": "8",
+            "title": "Saidas E Bandeiras (Exits And Flags)",
+            "duration": "4:45"
+          },
+          {
+            "position": "9",
+            "title": "Os Povos (The People)",
+            "duration": "8:06"
+          }
+        ],
+        "vinyl_type": "LP"
+      }
+    ]
   },
   "My Chemical Romance": {
     "name": "My Chemical Romance",
@@ -2020,7 +2020,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000028,
+        "release_id": 9000006,
         "title": "Gloria",
         "artists": [
           "Sam Smith"
@@ -2485,7 +2485,7 @@
         "vinyl_type": "LP"
       },
       {
-        "release_id": 9000044,
+        "release_id": 9000035,
         "title": "Michigan",
         "artists": [
           "Sufjan Stevens"
@@ -2986,7 +2986,77 @@
         "count": 10
       }
     ],
-    "vinyl": []
+    "vinyl": [
+      {
+        "release_id": 9000005,
+        "title": "Control",
+        "artists": [
+          "Janet Jackson"
+        ],
+        "art_filename": null,
+        "year": 1986,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "Control",
+            "duration": "5:53"
+          },
+          {
+            "position": "2",
+            "title": "Nasty",
+            "duration": "4:03"
+          },
+          {
+            "position": "3",
+            "title": "What Have You Done For Me Lately",
+            "duration": "4:59"
+          },
+          {
+            "position": "4",
+            "title": "You Can Be Mine",
+            "duration": "5:15"
+          },
+          {
+            "position": "5",
+            "title": "The Pleasure Principle",
+            "duration": "4:57"
+          },
+          {
+            "position": "6",
+            "title": "When I Think Of You",
+            "duration": "3:55"
+          },
+          {
+            "position": "7",
+            "title": "He Doesn't Know I'm Alive",
+            "duration": "3:29"
+          },
+          {
+            "position": "8",
+            "title": "Let's Wait Awhile",
+            "duration": "4:37"
+          },
+          {
+            "position": "9",
+            "title": "Funny How Time Flies (When You're Having Fun)",
+            "duration": "4:28"
+          }
+        ],
+        "vinyl_type": "LP"
+      }
+    ]
   },
   "Mom Jeans.": {
     "name": "Mom Jeans.",
@@ -3386,7 +3456,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000041,
+        "release_id": 9000026,
         "title": "The Sensual World (2018 Remaster)",
         "artists": [
           "Kate Bush"
@@ -5293,38 +5363,7 @@
         "count": 8
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000048,
-        "title": "4ever",
-        "artists": [
-          "Axolotes Mexicanos",
-          "Aiko el grupo"
-        ],
-        "art_filename": null,
-        "year": 2024,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "6",
-            "title": "ROSAS y ESPINAS",
-            "duration": "2:20"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "The Mars Volta": {
     "name": "The Mars Volta",
@@ -5472,40 +5511,6 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000027,
-        "title": "Deloused in the Comatorium",
-        "artists": [
-          "The Mars Volta"
-        ],
-        "art_filename": null,
-        "year": 2003,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "2",
-            "title": "Inertiatic Esp",
-            "duration": "4:23"
-          },
-          {
-            "position": "6",
-            "title": "Eriatarka",
-            "duration": "6:20"
-          }
-        ],
-        "vinyl_type": "LP"
-      },
-      {
         "release_id": 1364851,
         "title": "The Bedlam In Goliath",
         "artists": [
@@ -5606,6 +5611,35 @@
           }
         ],
         "vinyl_type": "7\""
+      },
+      {
+        "release_id": 9000038,
+        "title": "Frances the Mute",
+        "artists": [
+          "The Mars Volta"
+        ],
+        "art_filename": null,
+        "year": 2005,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "2",
+            "title": "The Widow",
+            "duration": "5:50"
+          }
+        ],
+        "vinyl_type": "LP"
       }
     ]
   },
@@ -6376,7 +6410,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000038,
+        "release_id": 9000042,
         "title": "Since I Left You (20th Anniversary Deluxe Edition)",
         "artists": [
           "The Avalanches"
@@ -6679,7 +6713,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000016,
+        "release_id": 9000032,
         "title": "Stoner Witch",
         "artists": [
           "Melvins"
@@ -6875,7 +6909,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000043,
+        "release_id": 9000009,
         "title": "This Is Happening",
         "artists": [
           "LCD Soundsystem"
@@ -7394,7 +7428,87 @@
         "count": 1
       }
     ],
-    "vinyl": []
+    "vinyl": [
+      {
+        "release_id": 9000040,
+        "title": "Evil Empire",
+        "artists": [
+          "Rage Against The Machine"
+        ],
+        "art_filename": null,
+        "year": 1996,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "People of the Sun",
+            "duration": "2:30"
+          },
+          {
+            "position": "2",
+            "title": "Bulls On Parade",
+            "duration": "3:49"
+          },
+          {
+            "position": "3",
+            "title": "Vietnow",
+            "duration": "4:37"
+          },
+          {
+            "position": "4",
+            "title": "Revolver",
+            "duration": "5:27"
+          },
+          {
+            "position": "5",
+            "title": "Snakecharmer",
+            "duration": "3:55"
+          },
+          {
+            "position": "6",
+            "title": "Tire Me",
+            "duration": "2:57"
+          },
+          {
+            "position": "7",
+            "title": "Down Rodeo",
+            "duration": "5:20"
+          },
+          {
+            "position": "8",
+            "title": "Without a Face",
+            "duration": "3:36"
+          },
+          {
+            "position": "9",
+            "title": "Wind Below",
+            "duration": "5:50"
+          },
+          {
+            "position": "10",
+            "title": "Roll Right",
+            "duration": "4:20"
+          },
+          {
+            "position": "11",
+            "title": "Year of tha Boomerang",
+            "duration": "3:59"
+          }
+        ],
+        "vinyl_type": "LP"
+      }
+    ]
   },
   "Dear and the Headlights": {
     "name": "Dear and the Headlights",
@@ -7607,92 +7721,7 @@
         "count": 5
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000030,
-        "title": "Drunk Like Bible Times",
-        "artists": [
-          "Dear and the Headlights"
-        ],
-        "art_filename": null,
-        "year": 2008,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "I'm Not Crying. You're Not Crying, Are You?",
-            "duration": "2:56"
-          },
-          {
-            "position": "2",
-            "title": "Bad News",
-            "duration": "3:08"
-          },
-          {
-            "position": "3",
-            "title": "Carl Solomon Blues",
-            "duration": "3:20"
-          },
-          {
-            "position": "4",
-            "title": "Willetta",
-            "duration": "5:26"
-          },
-          {
-            "position": "5",
-            "title": "Talk About",
-            "duration": "3:43"
-          },
-          {
-            "position": "6",
-            "title": "Saintly Rows (Oh Oh)",
-            "duration": "3:38"
-          },
-          {
-            "position": "7",
-            "title": "Flowers For My Brain",
-            "duration": "4:10"
-          },
-          {
-            "position": "8",
-            "title": "Now It's Over",
-            "duration": "3:11"
-          },
-          {
-            "position": "9",
-            "title": "Parallel Lines",
-            "duration": "3:15"
-          },
-          {
-            "position": "10",
-            "title": "If Not For My Glasses",
-            "duration": "2:50"
-          },
-          {
-            "position": "11",
-            "title": "Try",
-            "duration": "4:43"
-          },
-          {
-            "position": "12",
-            "title": "I Know",
-            "duration": "5:08"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Run The Jewels": {
     "name": "Run The Jewels",
@@ -7741,7 +7770,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000008,
+        "release_id": 9000039,
         "title": "Run The Jewels 3",
         "artists": [
           "Run The Jewels"
@@ -7902,97 +7931,7 @@
         "count": 1
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000035,
-        "title": "We're New Here",
-        "artists": [
-          "Gil Scott-Heron"
-        ],
-        "art_filename": null,
-        "year": 2011,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "I'm New Here",
-            "duration": "3:26"
-          },
-          {
-            "position": "2",
-            "title": "Home",
-            "duration": "3:11"
-          },
-          {
-            "position": "3",
-            "title": "I've Been Me (Interlude)",
-            "duration": "0:27"
-          },
-          {
-            "position": "4",
-            "title": "Running",
-            "duration": "3:31"
-          },
-          {
-            "position": "5",
-            "title": "My Cloud",
-            "duration": "4:27"
-          },
-          {
-            "position": "6",
-            "title": "Certain Things (Interlude)",
-            "duration": "0:09"
-          },
-          {
-            "position": "7",
-            "title": "The Crutch",
-            "duration": "3:09"
-          },
-          {
-            "position": "8",
-            "title": "Ur Soul And Mine",
-            "duration": "4:17"
-          },
-          {
-            "position": "9",
-            "title": "Parents (Interlude)",
-            "duration": "0:28"
-          },
-          {
-            "position": "10",
-            "title": "Piano Player",
-            "duration": "1:16"
-          },
-          {
-            "position": "11",
-            "title": "NY Is Killing Me",
-            "duration": "5:43"
-          },
-          {
-            "position": "12",
-            "title": "Jazz (Interlude)",
-            "duration": "0:49"
-          },
-          {
-            "position": "13",
-            "title": "I'll Take Care of U",
-            "duration": "4:42"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Fiona Apple": {
     "name": "Fiona Apple",
@@ -8988,7 +8927,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000045,
+        "release_id": 9000033,
         "title": "Face the Music",
         "artists": [
           "Electric Light Orchestra"
@@ -9450,85 +9389,6 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000036,
-        "title": "Neon Bible",
-        "artists": [
-          "Arcade Fire"
-        ],
-        "art_filename": null,
-        "year": 2007,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "Black Mirror",
-            "duration": "4:13"
-          },
-          {
-            "position": "2",
-            "title": "Keep the Car Running",
-            "duration": "3:29"
-          },
-          {
-            "position": "3",
-            "title": "Neon Bible",
-            "duration": "2:16"
-          },
-          {
-            "position": "4",
-            "title": "Intervention",
-            "duration": "4:19"
-          },
-          {
-            "position": "5",
-            "title": "Black Wave / Bad Vibrations",
-            "duration": "3:57"
-          },
-          {
-            "position": "6",
-            "title": "Ocean of Noise",
-            "duration": "4:53"
-          },
-          {
-            "position": "7",
-            "title": "The Well and the Lighthouse",
-            "duration": "3:56"
-          },
-          {
-            "position": "8",
-            "title": "(Antichrist Television Blues)",
-            "duration": "5:10"
-          },
-          {
-            "position": "9",
-            "title": "Windowsill",
-            "duration": "4:16"
-          },
-          {
-            "position": "10",
-            "title": "No Cars Go",
-            "duration": "5:43"
-          },
-          {
-            "position": "11",
-            "title": "My Body Is a Cage",
-            "duration": "4:47"
-          }
-        ],
-        "vinyl_type": "LP"
-      },
-      {
         "release_id": 9000022,
         "title": "The Suburbs (Deluxe)",
         "artists": [
@@ -9689,37 +9549,7 @@
         "count": 3
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000025,
-        "title": "The Earth Pushed Back",
-        "artists": [
-          "Have Mercy"
-        ],
-        "art_filename": null,
-        "year": 2013,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "5",
-            "title": "Weak at the Knees",
-            "duration": "3:22"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Kanye West": {
     "name": "Kanye West",
@@ -9942,7 +9772,216 @@
         "count": 1
       }
     ],
-    "vinyl": []
+    "vinyl": [
+      {
+        "release_id": 9000001,
+        "title": "The Life Of Pablo",
+        "artists": [
+          "Kanye West"
+        ],
+        "art_filename": null,
+        "year": 2016,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "Ultralight Beam",
+            "duration": "5:20"
+          },
+          {
+            "position": "2",
+            "title": "Father Stretch My Hands Pt. 1",
+            "duration": "2:15"
+          },
+          {
+            "position": "3",
+            "title": "Pt. 2",
+            "duration": "2:10"
+          },
+          {
+            "position": "4",
+            "title": "Famous",
+            "duration": "3:16"
+          },
+          {
+            "position": "5",
+            "title": "Feedback",
+            "duration": "2:27"
+          },
+          {
+            "position": "6",
+            "title": "Low Lights",
+            "duration": "2:11"
+          },
+          {
+            "position": "7",
+            "title": "Highlights",
+            "duration": "3:19"
+          },
+          {
+            "position": "8",
+            "title": "Freestyle 4",
+            "duration": "2:03"
+          },
+          {
+            "position": "9",
+            "title": "I Love Kanye",
+            "duration": "0:44"
+          },
+          {
+            "position": "10",
+            "title": "Waves",
+            "duration": "3:01"
+          },
+          {
+            "position": "11",
+            "title": "FML",
+            "duration": "3:56"
+          },
+          {
+            "position": "12",
+            "title": "Real Friends",
+            "duration": "4:11"
+          },
+          {
+            "position": "13",
+            "title": "Wolves",
+            "duration": "5:01"
+          },
+          {
+            "position": "14",
+            "title": "Frank's Track",
+            "duration": "0:38"
+          },
+          {
+            "position": "15",
+            "title": "Siiiiiiiiilver Surffffeeeeer Intermission",
+            "duration": "0:56"
+          },
+          {
+            "position": "16",
+            "title": "30 Hours",
+            "duration": "5:23"
+          },
+          {
+            "position": "17",
+            "title": "No More Parties In LA",
+            "duration": "6:14"
+          },
+          {
+            "position": "18",
+            "title": "Facts (Charlie Heat Version)",
+            "duration": "3:20"
+          },
+          {
+            "position": "19",
+            "title": "Fade",
+            "duration": "3:13"
+          },
+          {
+            "position": "20",
+            "title": "Saint Pablo",
+            "duration": "6:12"
+          }
+        ],
+        "vinyl_type": "LP"
+      },
+      {
+        "release_id": 9000030,
+        "title": "808s & Heartbreak",
+        "artists": [
+          "Kanye West"
+        ],
+        "art_filename": null,
+        "year": 2008,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "Say You Will",
+            "duration": "6:17"
+          },
+          {
+            "position": "2",
+            "title": "Welcome To Heartbreak",
+            "duration": "4:22"
+          },
+          {
+            "position": "3",
+            "title": "Heartless",
+            "duration": "3:31"
+          },
+          {
+            "position": "4",
+            "title": "Amazing",
+            "duration": "3:58"
+          },
+          {
+            "position": "5",
+            "title": "Love Lockdown",
+            "duration": "4:30"
+          },
+          {
+            "position": "6",
+            "title": "Paranoid",
+            "duration": "4:37"
+          },
+          {
+            "position": "7",
+            "title": "RoboCop",
+            "duration": "4:34"
+          },
+          {
+            "position": "8",
+            "title": "Street Lights",
+            "duration": "3:09"
+          },
+          {
+            "position": "9",
+            "title": "Bad News",
+            "duration": "3:58"
+          },
+          {
+            "position": "10",
+            "title": "See You In My Nightmares",
+            "duration": "4:18"
+          },
+          {
+            "position": "11",
+            "title": "Coldest Winter",
+            "duration": "2:44"
+          },
+          {
+            "position": "12",
+            "title": "Pinocchio Story",
+            "duration": "6:01"
+          }
+        ],
+        "vinyl_type": "LP"
+      }
+    ]
   },
   "Talking Heads": {
     "name": "Talking Heads",
@@ -10106,7 +10145,72 @@
         "count": 2
       }
     ],
-    "vinyl": []
+    "vinyl": [
+      {
+        "release_id": 9000041,
+        "title": "Remain in Light",
+        "artists": [
+          "Talking Heads"
+        ],
+        "art_filename": null,
+        "year": 1980,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "Born Under Punches (The Heat Goes On)",
+            "duration": "5:48"
+          },
+          {
+            "position": "2",
+            "title": "Crosseyed and Painless",
+            "duration": "4:45"
+          },
+          {
+            "position": "3",
+            "title": "The Great Curve",
+            "duration": "6:27"
+          },
+          {
+            "position": "4",
+            "title": "Once in a Lifetime",
+            "duration": "4:19"
+          },
+          {
+            "position": "5",
+            "title": "Houses in Motion",
+            "duration": "4:33"
+          },
+          {
+            "position": "6",
+            "title": "Seen and Not Seen",
+            "duration": "3:24"
+          },
+          {
+            "position": "7",
+            "title": "Listening Wind",
+            "duration": "4:43"
+          },
+          {
+            "position": "8",
+            "title": "The Overload",
+            "duration": "6:00"
+          }
+        ],
+        "vinyl_type": "LP"
+      }
+    ]
   },
   "I Kill Giants": {
     "name": "I Kill Giants",
@@ -10448,7 +10552,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000018,
+        "release_id": 9000007,
         "title": "Luar",
         "artists": [
           "Gilberto Gil"
@@ -10684,7 +10788,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000042,
+        "release_id": 9000046,
         "title": "The Moon & Antarctica",
         "artists": [
           "Modest Mouse"
@@ -11395,13 +11499,13 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000009,
-        "title": "Hazards Of Love",
+        "release_id": 9000031,
+        "title": "The King Is Dead",
         "artists": [
           "The Decemberists"
         ],
         "art_filename": null,
-        "year": 2009,
+        "year": 2011,
         "original_year": null,
         "formats": [
           "Vinyl"
@@ -11417,88 +11521,13 @@
         "tracklist": [
           {
             "position": "1",
-            "title": "Prelude",
-            "duration": "3:04"
+            "title": "Don't Carry It All",
+            "duration": "4:16"
           },
           {
             "position": "2",
-            "title": "The Hazards Of Love 1 (The Prettiest Whistles Won't Wrestle The Thistles Undone)",
-            "duration": "4:18"
-          },
-          {
-            "position": "3",
-            "title": "A Bower Scene",
-            "duration": "2:08"
-          },
-          {
-            "position": "4",
-            "title": "Won't Want For Love (Margaret In The Taiga)",
-            "duration": "4:06"
-          },
-          {
-            "position": "5",
-            "title": "The Hazards Of Love 2 (Wager All)",
-            "duration": "4:25"
-          },
-          {
-            "position": "6",
-            "title": "The Queen's Approach",
-            "duration": "0:29"
-          },
-          {
-            "position": "7",
-            "title": "Isn't It A Lovely Night?",
-            "duration": "3:38"
-          },
-          {
-            "position": "8",
-            "title": "The Wanting Comes In Waves / Repaid",
-            "duration": "6:26"
-          },
-          {
-            "position": "9",
-            "title": "An Interlude",
-            "duration": "1:40"
-          },
-          {
-            "position": "10",
-            "title": "The Rake's Song",
-            "duration": "3:15"
-          },
-          {
-            "position": "11",
-            "title": "The Abduction Of Margaret",
-            "duration": "2:06"
-          },
-          {
-            "position": "12",
-            "title": "The Queen's Rebuke / The Crossing",
-            "duration": "3:56"
-          },
-          {
-            "position": "13",
-            "title": "Annan Water",
-            "duration": "5:11"
-          },
-          {
-            "position": "14",
-            "title": "Margaret In Captivity",
-            "duration": "3:07"
-          },
-          {
-            "position": "15",
-            "title": "The Hazards Of Love 3 (Revenge!)",
-            "duration": "3:21"
-          },
-          {
-            "position": "16",
-            "title": "The Wanting Comes In Waves (Reprise)",
-            "duration": "1:30"
-          },
-          {
-            "position": "17",
-            "title": "The Hazards Of Love 4 (The Drowned)",
-            "duration": "5:57"
+            "title": "Calamity Song",
+            "duration": "3:48"
           }
         ],
         "vinyl_type": "LP"
@@ -12205,7 +12234,37 @@
         "count": 1
       }
     ],
-    "vinyl": []
+    "vinyl": [
+      {
+        "release_id": 9000023,
+        "title": "ONE MORE TIME...",
+        "artists": [
+          "blink-182"
+        ],
+        "art_filename": null,
+        "year": 2023,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "9",
+            "title": "EDGING",
+            "duration": "2:29"
+          }
+        ],
+        "vinyl_type": "LP"
+      }
+    ]
   },
   "Reggie And The Full Effect": {
     "name": "Reggie And The Full Effect",
@@ -12440,7 +12499,92 @@
         "count": 1
       }
     ],
-    "vinyl": []
+    "vinyl": [
+      {
+        "release_id": 9000017,
+        "title": "Songs About Leaving",
+        "artists": [
+          "Carissa's Wierd"
+        ],
+        "art_filename": null,
+        "year": 2002,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "You Should Be Hated Here",
+            "duration": "2:37"
+          },
+          {
+            "position": "2",
+            "title": "Silently Leaving the Room",
+            "duration": "3:19"
+          },
+          {
+            "position": "3",
+            "title": "So You Wanna Be A Superhero",
+            "duration": "3:39"
+          },
+          {
+            "position": "4",
+            "title": "September Come Take This Heart Away",
+            "duration": "6:28"
+          },
+          {
+            "position": "5",
+            "title": "Ignorant Piece of Shit",
+            "duration": "3:14"
+          },
+          {
+            "position": "6",
+            "title": "The Piano Song",
+            "duration": "2:03"
+          },
+          {
+            "position": "7",
+            "title": "They'll Only Miss You When You Leave",
+            "duration": "4:46"
+          },
+          {
+            "position": "8",
+            "title": "A New Holiday (November 16th)",
+            "duration": "1:52"
+          },
+          {
+            "position": "9",
+            "title": "Farewell to All These Rotten Teeth",
+            "duration": "5:23"
+          },
+          {
+            "position": "10",
+            "title": "Sofisticated Fuck Princess Please Leave Me Alone",
+            "duration": "3:07"
+          },
+          {
+            "position": "11",
+            "title": "Low Budget Slow Motion Soundtrack Song for the Leaving Scene",
+            "duration": "5:16"
+          },
+          {
+            "position": "12",
+            "title": "(March 19th 1983) It Was Probably Green",
+            "duration": "2:53"
+          }
+        ],
+        "vinyl_type": "LP"
+      }
+    ]
   },
   "Ought": {
     "name": "Ought",
@@ -12542,7 +12686,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000032,
+        "release_id": 9000004,
         "title": "More Than Any Other Day",
         "artists": [
           "Ought"
@@ -12683,7 +12827,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000021,
+        "release_id": 9000048,
         "title": "Waiting",
         "artists": [
           "Thursday"
@@ -13328,7 +13472,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000000,
+        "release_id": 9000010,
         "title": "Admiral Fell Promises",
         "artists": [
           "Sun Kil Moon"
@@ -13830,77 +13974,7 @@
         "count": 1
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000013,
-        "title": "Thriller",
-        "artists": [
-          "Michael Jackson"
-        ],
-        "art_filename": null,
-        "year": 1982,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "Wanna Be Startin' Somethin'",
-            "duration": "6:03"
-          },
-          {
-            "position": "2",
-            "title": "Baby Be Mine",
-            "duration": "4:20"
-          },
-          {
-            "position": "3",
-            "title": "The Girl Is Mine (with Paul McCartney)",
-            "duration": "3:42"
-          },
-          {
-            "position": "4",
-            "title": "Thriller",
-            "duration": "5:58"
-          },
-          {
-            "position": "5",
-            "title": "Beat It",
-            "duration": "4:18"
-          },
-          {
-            "position": "6",
-            "title": "Billie Jean",
-            "duration": "4:53"
-          },
-          {
-            "position": "7",
-            "title": "Human Nature",
-            "duration": "4:05"
-          },
-          {
-            "position": "8",
-            "title": "P.Y.T. (Pretty Young Thing)",
-            "duration": "3:58"
-          },
-          {
-            "position": "9",
-            "title": "The Lady in My Life",
-            "duration": "4:58"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Brian Eno": {
     "name": "Brian Eno",
@@ -14420,37 +14494,7 @@
         "count": 1
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000047,
-        "title": "Hold Your Horse Is",
-        "artists": [
-          "Hella"
-        ],
-        "art_filename": null,
-        "year": 2002,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "2",
-            "title": "Biblical Violence",
-            "duration": "3:03"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Miles Davis": {
     "name": "Miles Davis",
@@ -14729,7 +14773,116 @@
         "count": 1
       }
     ],
-    "vinyl": []
+    "vinyl": [
+      {
+        "release_id": 9000008,
+        "title": "Deja Entendu",
+        "artists": [
+          "Brand New"
+        ],
+        "art_filename": null,
+        "year": 2003,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "Tautou",
+            "duration": "1:42"
+          },
+          {
+            "position": "2",
+            "title": "Sic Transit Gloria ... Glory Fades",
+            "duration": "3:06"
+          },
+          {
+            "position": "3",
+            "title": "I Will Play My Game Beneath The Spin Light",
+            "duration": "3:57"
+          },
+          {
+            "position": "4",
+            "title": "Okay I Believe You, But My Tommy Gun Don't",
+            "duration": "5:35"
+          },
+          {
+            "position": "5",
+            "title": "The Quiet Things That No One Ever Knows",
+            "duration": "4:01"
+          },
+          {
+            "position": "6",
+            "title": "The Boy Who Blocked His Own Shot",
+            "duration": "4:39"
+          },
+          {
+            "position": "7",
+            "title": "Jaws Theme Swimming",
+            "duration": "4:34"
+          },
+          {
+            "position": "8",
+            "title": "Me vs. Maradona vs. Elvis",
+            "duration": "5:19"
+          },
+          {
+            "position": "9",
+            "title": "Guernica",
+            "duration": "3:23"
+          },
+          {
+            "position": "10",
+            "title": "Good to Know That If I Ever Need Attention All I Have to Do Is Die",
+            "duration": "7:00"
+          },
+          {
+            "position": "11",
+            "title": "Play Crack The Sky",
+            "duration": "5:27"
+          }
+        ],
+        "vinyl_type": "LP"
+      },
+      {
+        "release_id": 9000036,
+        "title": "Science Fiction",
+        "artists": [
+          "Brand New"
+        ],
+        "art_filename": null,
+        "year": 2017,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "Lit Me Up",
+            "duration": "6:16"
+          }
+        ],
+        "vinyl_type": "LP"
+      }
+    ]
   },
   "Prince": {
     "name": "Prince",
@@ -14838,7 +14991,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000015,
+        "release_id": 9000025,
         "title": "Purple Rain",
         "artists": [
           "Prince"
@@ -15306,7 +15459,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000004,
+        "release_id": 9000015,
         "title": "When the Sea Became a Giant",
         "artists": [
           "empire! empire! (i was a lonely estate)"
@@ -15459,102 +15612,7 @@
         "count": 1
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000014,
-        "title": "Blonde On Blonde",
-        "artists": [
-          "Bob Dylan"
-        ],
-        "art_filename": null,
-        "year": 1966,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "Rainy Day Women #12 & 35",
-            "duration": "4:37"
-          },
-          {
-            "position": "2",
-            "title": "Pledging My Time",
-            "duration": "3:50"
-          },
-          {
-            "position": "3",
-            "title": "Visions of Johanna",
-            "duration": "7:34"
-          },
-          {
-            "position": "4",
-            "title": "One of Us Must Know (Sooner or Later)",
-            "duration": "4:55"
-          },
-          {
-            "position": "5",
-            "title": "I Want You",
-            "duration": "3:08"
-          },
-          {
-            "position": "6",
-            "title": "Stuck Inside of Mobile with the Memphis Blues Again",
-            "duration": "7:06"
-          },
-          {
-            "position": "7",
-            "title": "Leopard-Skin Pill-Box Hat",
-            "duration": "3:58"
-          },
-          {
-            "position": "8",
-            "title": "Just Like a Woman",
-            "duration": "4:53"
-          },
-          {
-            "position": "9",
-            "title": "Most Likely You Go Your Way (And I'll Go Mine)",
-            "duration": "3:29"
-          },
-          {
-            "position": "10",
-            "title": "Temporary Like Achilles",
-            "duration": "5:03"
-          },
-          {
-            "position": "11",
-            "title": "Absolutely Sweet Marie",
-            "duration": "4:57"
-          },
-          {
-            "position": "12",
-            "title": "Fourth Time Around",
-            "duration": "4:35"
-          },
-          {
-            "position": "13",
-            "title": "Obviously Five Believers",
-            "duration": "3:35"
-          },
-          {
-            "position": "14",
-            "title": "Sad-Eyed Lady of the Lowlands",
-            "duration": "11:16"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Nina Chuba": {
     "name": "Nina Chuba",
@@ -15662,7 +15720,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000001,
+        "release_id": 9000000,
         "title": "Home, Like Noplace Is There",
         "artists": [
           "The Hotelier"
@@ -15737,38 +15795,7 @@
         "count": 2
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000031,
-        "title": "No lo volver\u00e9 a hacer",
-        "artists": [
-          "shego",
-          "Aiko el grupo"
-        ],
-        "art_filename": null,
-        "year": 2025,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "11",
-            "title": "Te matar\u00e9",
-            "duration": "2:35"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Claudya": {
     "name": "Claudya",
@@ -16050,7 +16077,176 @@
         "count": 1
       }
     ],
-    "vinyl": []
+    "vinyl": [
+      {
+        "release_id": 9000003,
+        "title": "\u00c6nima",
+        "artists": [
+          "TOOL"
+        ],
+        "art_filename": null,
+        "year": 1996,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "Stinkfist",
+            "duration": "5:11"
+          },
+          {
+            "position": "2",
+            "title": "Eulogy",
+            "duration": "8:27"
+          },
+          {
+            "position": "3",
+            "title": "H.",
+            "duration": "6:07"
+          },
+          {
+            "position": "4",
+            "title": "Useful Idiot",
+            "duration": "0:38"
+          },
+          {
+            "position": "5",
+            "title": "Forty Six & 2",
+            "duration": "6:04"
+          },
+          {
+            "position": "6",
+            "title": "Message To Harry Manback",
+            "duration": "1:53"
+          },
+          {
+            "position": "7",
+            "title": "Hooker With A Penis",
+            "duration": "4:33"
+          },
+          {
+            "position": "8",
+            "title": "Intermission",
+            "duration": "0:55"
+          },
+          {
+            "position": "9",
+            "title": "Jimmy",
+            "duration": "5:24"
+          },
+          {
+            "position": "10",
+            "title": "Die Eier von Satan",
+            "duration": "2:17"
+          },
+          {
+            "position": "11",
+            "title": "Pushit",
+            "duration": "9:55"
+          },
+          {
+            "position": "12",
+            "title": "Cesaro Summability",
+            "duration": "1:26"
+          },
+          {
+            "position": "13",
+            "title": "\u00c6nema",
+            "duration": "6:39"
+          },
+          {
+            "position": "14",
+            "title": "(-) Ions",
+            "duration": "4:00"
+          }
+        ],
+        "vinyl_type": "LP"
+      },
+      {
+        "release_id": 9000029,
+        "title": "10,000 Days",
+        "artists": [
+          "TOOL"
+        ],
+        "art_filename": null,
+        "year": 2006,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "Vicarious",
+            "duration": "7:05"
+          },
+          {
+            "position": "2",
+            "title": "Jambi",
+            "duration": "7:28"
+          },
+          {
+            "position": "3",
+            "title": "Wings For Marie (Pt 1)",
+            "duration": "6:11"
+          },
+          {
+            "position": "4",
+            "title": "10,000 Days (Wings Pt 2)",
+            "duration": "11:13"
+          },
+          {
+            "position": "5",
+            "title": "The Pot",
+            "duration": "6:21"
+          },
+          {
+            "position": "6",
+            "title": "Lipan Conjuring",
+            "duration": "1:11"
+          },
+          {
+            "position": "7",
+            "title": "Lost Keys (Blame Hofman)",
+            "duration": "3:46"
+          },
+          {
+            "position": "8",
+            "title": "Rosetta Stoned",
+            "duration": "11:11"
+          },
+          {
+            "position": "9",
+            "title": "Intension",
+            "duration": "7:21"
+          },
+          {
+            "position": "10",
+            "title": "Right In Two",
+            "duration": "8:55"
+          }
+        ],
+        "vinyl_type": "LP"
+      }
+    ]
   },
   "Green Day": {
     "name": "Green Day",
@@ -16508,112 +16704,7 @@
         "count": 1
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000026,
-        "title": "The Miseducation of Lauryn Hill",
-        "artists": [
-          "Ms. Lauryn Hill"
-        ],
-        "art_filename": null,
-        "year": 1998,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "Intro",
-            "duration": "0:47"
-          },
-          {
-            "position": "2",
-            "title": "Lost Ones",
-            "duration": "5:33"
-          },
-          {
-            "position": "3",
-            "title": "Ex-Factor",
-            "duration": "5:26"
-          },
-          {
-            "position": "4",
-            "title": "To Zion (feat. Carlos Santana)",
-            "duration": "6:09"
-          },
-          {
-            "position": "5",
-            "title": "Doo Wop (That Thing)",
-            "duration": "5:20"
-          },
-          {
-            "position": "6",
-            "title": "Superstar",
-            "duration": "4:57"
-          },
-          {
-            "position": "7",
-            "title": "Final Hour",
-            "duration": "4:16"
-          },
-          {
-            "position": "8",
-            "title": "When It Hurts so Bad",
-            "duration": "5:42"
-          },
-          {
-            "position": "9",
-            "title": "I Used to Love Him (feat. Mary J. Blige)",
-            "duration": "5:39"
-          },
-          {
-            "position": "10",
-            "title": "Forgive Them Father",
-            "duration": "5:15"
-          },
-          {
-            "position": "11",
-            "title": "Every Ghetto, Every City",
-            "duration": "5:14"
-          },
-          {
-            "position": "12",
-            "title": "Nothing Even Matters (feat. D'Angelo)",
-            "duration": "5:50"
-          },
-          {
-            "position": "13",
-            "title": "Everything Is Everything",
-            "duration": "4:53"
-          },
-          {
-            "position": "14",
-            "title": "The Miseducation of Lauryn Hill",
-            "duration": "3:55"
-          },
-          {
-            "position": "15",
-            "title": "Can't Take My Eyes Off of You - (I Love You Baby)",
-            "duration": "3:41"
-          },
-          {
-            "position": "16",
-            "title": "Tell Him",
-            "duration": "4:40"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Departures": {
     "name": "Departures",
@@ -16803,7 +16894,97 @@
         "count": 1
       }
     ],
-    "vinyl": []
+    "vinyl": [
+      {
+        "release_id": 9000018,
+        "title": "good kid, m.A.A.d city",
+        "artists": [
+          "Kendrick Lamar"
+        ],
+        "art_filename": null,
+        "year": 2012,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "Sherane a.k.a Master Splinter\u2019s Daughter",
+            "duration": "4:33"
+          },
+          {
+            "position": "2",
+            "title": "Bitch, Don\u2019t Kill My Vibe",
+            "duration": "5:10"
+          },
+          {
+            "position": "3",
+            "title": "Backseat Freestyle",
+            "duration": "3:32"
+          },
+          {
+            "position": "4",
+            "title": "The Art of Peer Pressure",
+            "duration": "5:24"
+          },
+          {
+            "position": "5",
+            "title": "Money Trees",
+            "duration": "6:26"
+          },
+          {
+            "position": "6",
+            "title": "Poetic Justice",
+            "duration": "5:00"
+          },
+          {
+            "position": "7",
+            "title": "good kid",
+            "duration": "3:34"
+          },
+          {
+            "position": "8",
+            "title": "m.A.A.d city",
+            "duration": "5:50"
+          },
+          {
+            "position": "9",
+            "title": "Swimming Pools (Drank) - Extended Version",
+            "duration": "5:13"
+          },
+          {
+            "position": "10",
+            "title": "Sing About Me, I'm Dying Of Thirst",
+            "duration": "12:03"
+          },
+          {
+            "position": "11",
+            "title": "Real",
+            "duration": "7:23"
+          },
+          {
+            "position": "12",
+            "title": "Compton",
+            "duration": "4:08"
+          },
+          {
+            "position": "13",
+            "title": "Bitch, Don\u2019t Kill My Vibe - Remix",
+            "duration": "4:38"
+          }
+        ],
+        "vinyl_type": "LP"
+      }
+    ]
   },
   "Touch\u00e9 Amor\u00e9": {
     "name": "Touch\u00e9 Amor\u00e9",
@@ -16932,71 +17113,7 @@
         "count": 1
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000033,
-        "title": "Lament",
-        "artists": [
-          "Touch\u00e9 Amor\u00e9"
-        ],
-        "art_filename": null,
-        "year": 2020,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "Come Heroine",
-            "duration": "2:50"
-          },
-          {
-            "position": "4",
-            "title": "Reminders",
-            "duration": "3:03"
-          }
-        ],
-        "vinyl_type": "LP"
-      },
-      {
-        "release_id": 9000034,
-        "title": "Parting the Sea Between Brightness and Me",
-        "artists": [
-          "Touch\u00e9 Amor\u00e9"
-        ],
-        "art_filename": null,
-        "year": 2011,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "~",
-            "duration": "1:29"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Rival Schools": {
     "name": "Rival Schools",
@@ -17353,102 +17470,7 @@
         "count": 1
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000011,
-        "title": "I Never Loved a Man the Way I Love You",
-        "artists": [
-          "Aretha Franklin"
-        ],
-        "art_filename": null,
-        "year": 1967,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "Respect",
-            "duration": "2:27"
-          },
-          {
-            "position": "2",
-            "title": "Drown in My Own Tears",
-            "duration": "4:07"
-          },
-          {
-            "position": "3",
-            "title": "I Never Loved a Man (The Way I Love You)",
-            "duration": "2:51"
-          },
-          {
-            "position": "4",
-            "title": "Soul Serenade",
-            "duration": "2:39"
-          },
-          {
-            "position": "5",
-            "title": "Don't Let Me Lose This Dream",
-            "duration": "2:23"
-          },
-          {
-            "position": "6",
-            "title": "Baby, Baby, Baby",
-            "duration": "2:54"
-          },
-          {
-            "position": "7",
-            "title": "Dr. Feelgood (Love Is a Serious Business)",
-            "duration": "3:23"
-          },
-          {
-            "position": "8",
-            "title": "Good Times",
-            "duration": "2:10"
-          },
-          {
-            "position": "9",
-            "title": "Do Right Woman, Do Right Man",
-            "duration": "3:16"
-          },
-          {
-            "position": "10",
-            "title": "Save Me",
-            "duration": "2:21"
-          },
-          {
-            "position": "11",
-            "title": "A Change Is Gonna Come",
-            "duration": "4:20"
-          },
-          {
-            "position": "12",
-            "title": "Respect",
-            "duration": "2:28"
-          },
-          {
-            "position": "13",
-            "title": "I Never Loved a Man (The Way I Love You) - Stereo",
-            "duration": "2:46"
-          },
-          {
-            "position": "14",
-            "title": "Do Right Woman, Do Right Man",
-            "duration": "3:14"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Nickel Creek": {
     "name": "Nickel Creek",
@@ -17675,7 +17697,82 @@
         "count": 1
       }
     ],
-    "vinyl": []
+    "vinyl": [
+      {
+        "release_id": 9000049,
+        "title": "Is This Thing Loaded?",
+        "artists": [
+          "Northstar"
+        ],
+        "art_filename": null,
+        "year": 2002,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "Rigged & Ready",
+            "duration": "4:57"
+          },
+          {
+            "position": "2",
+            "title": "Is This Thing Loaded?",
+            "duration": "3:40"
+          },
+          {
+            "position": "3",
+            "title": "Broken Parachute",
+            "duration": "4:32"
+          },
+          {
+            "position": "4",
+            "title": "My Ricochet",
+            "duration": "4:21"
+          },
+          {
+            "position": "5",
+            "title": "My Wishing Well Disease",
+            "duration": "2:51"
+          },
+          {
+            "position": "6",
+            "title": "Taker Not a Giver",
+            "duration": "5:23"
+          },
+          {
+            "position": "7",
+            "title": "Daybreak",
+            "duration": "3:22"
+          },
+          {
+            "position": "8",
+            "title": "Train Hopping in Dixieland",
+            "duration": "3:17"
+          },
+          {
+            "position": "9",
+            "title": "Cinderella",
+            "duration": "3:06"
+          },
+          {
+            "position": "10",
+            "title": "Black Heart Valentine",
+            "duration": "4:26"
+          }
+        ],
+        "vinyl_type": "LP"
+      }
+    ]
   },
   "Bala Desejo": {
     "name": "Bala Desejo",
@@ -18869,7 +18966,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000024,
+        "release_id": 9000021,
         "title": "A Eulogy for Those Still Here",
         "artists": [
           "Counterparts"
@@ -18985,7 +19082,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000006,
+        "release_id": 9000020,
         "title": "Salam",
         "artists": [
           "MESTIZA"
@@ -19318,87 +19415,7 @@
         "count": 1
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000049,
-        "title": "Low (2017 Remaster)",
-        "artists": [
-          "David Bowie"
-        ],
-        "art_filename": null,
-        "year": 1977,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "Speed of Life - 2017 Remaster",
-            "duration": "2:47"
-          },
-          {
-            "position": "2",
-            "title": "Breaking Glass - 2017 Remaster",
-            "duration": "1:52"
-          },
-          {
-            "position": "3",
-            "title": "What in the World - 2017 Remaster",
-            "duration": "2:24"
-          },
-          {
-            "position": "4",
-            "title": "Sound and Vision - 2017 Remaster",
-            "duration": "3:04"
-          },
-          {
-            "position": "5",
-            "title": "Always Crashing in the Same Car - 2017 Remaster",
-            "duration": "3:35"
-          },
-          {
-            "position": "6",
-            "title": "Be My Wife - 2017 Remaster",
-            "duration": "2:56"
-          },
-          {
-            "position": "7",
-            "title": "A New Career in a New Town - 2017 Remaster",
-            "duration": "2:55"
-          },
-          {
-            "position": "8",
-            "title": "Warszawa - 2017 Remaster",
-            "duration": "6:27"
-          },
-          {
-            "position": "9",
-            "title": "Art Decade - 2017 Remaster",
-            "duration": "3:48"
-          },
-          {
-            "position": "10",
-            "title": "Weeping Wall - 2017 Remaster",
-            "duration": "3:29"
-          },
-          {
-            "position": "11",
-            "title": "Subterraneans - 2017 Remaster",
-            "duration": "5:43"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Converge": {
     "name": "Converge",
@@ -19979,7 +19996,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000007,
+        "release_id": 9000012,
         "title": "Dummy",
         "artists": [
           "Portishead"
@@ -20106,7 +20123,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000040,
+        "release_id": 9000044,
         "title": "Crime In Stereo Is Dead",
         "artists": [
           "Crime In Stereo"
@@ -20502,7 +20519,36 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000020,
+        "release_id": 9000019,
+        "title": "Sonic Nurse",
+        "artists": [
+          "Sonic Youth"
+        ],
+        "art_filename": null,
+        "year": 2004,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "2",
+            "title": "Unmade Bed",
+            "duration": "3:53"
+          }
+        ],
+        "vinyl_type": "LP"
+      },
+      {
+        "release_id": 9000043,
         "title": "Rather Ripped",
         "artists": [
           "Sonic Youth"
@@ -20643,7 +20689,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000012,
+        "release_id": 9000034,
         "title": "If You Can Believe Your Eyes & Ears",
         "artists": [
           "The Mamas & The Papas"
@@ -21134,7 +21180,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000017,
+        "release_id": 9000011,
         "title": "Murmur",
         "artists": [
           "R.E.M."
@@ -21213,6 +21259,85 @@
             "position": "12",
             "title": "West Of The Fields",
             "duration": "3:17"
+          }
+        ],
+        "vinyl_type": "LP"
+      },
+      {
+        "release_id": 9000045,
+        "title": "Out Of Time (25th Anniversary Edition)",
+        "artists": [
+          "R.E.M."
+        ],
+        "art_filename": null,
+        "year": 1991,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "Radio Song",
+            "duration": "4:15"
+          },
+          {
+            "position": "2",
+            "title": "Losing My Religion",
+            "duration": "4:28"
+          },
+          {
+            "position": "3",
+            "title": "Low",
+            "duration": "4:56"
+          },
+          {
+            "position": "4",
+            "title": "Near Wild Heaven",
+            "duration": "3:19"
+          },
+          {
+            "position": "5",
+            "title": "Endgame",
+            "duration": "3:50"
+          },
+          {
+            "position": "6",
+            "title": "Shiny Happy People",
+            "duration": "3:45"
+          },
+          {
+            "position": "7",
+            "title": "Belong",
+            "duration": "4:06"
+          },
+          {
+            "position": "8",
+            "title": "Half A World Away",
+            "duration": "3:27"
+          },
+          {
+            "position": "9",
+            "title": "Texarkana",
+            "duration": "3:39"
+          },
+          {
+            "position": "10",
+            "title": "Country Feedback",
+            "duration": "4:09"
+          },
+          {
+            "position": "11",
+            "title": "Me In Honey",
+            "duration": "4:08"
           }
         ],
         "vinyl_type": "LP"
@@ -21957,7 +22082,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000003,
+        "release_id": 9000016,
         "title": "Fever To Tell (Deluxe Remastered)",
         "artists": [
           "Yeah Yeah Yeahs"
@@ -23080,107 +23205,7 @@
         "count": 1
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000002,
-        "title": "NEVER ENOUGH",
-        "artists": [
-          "Daniel Caesar"
-        ],
-        "art_filename": null,
-        "year": 2023,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "Ocho Rios",
-            "duration": "2:33"
-          },
-          {
-            "position": "2",
-            "title": "Valentina",
-            "duration": "2:34"
-          },
-          {
-            "position": "3",
-            "title": "Toronto 2014 (with Mustafa)",
-            "duration": "4:37"
-          },
-          {
-            "position": "4",
-            "title": "Let Me Go",
-            "duration": "3:36"
-          },
-          {
-            "position": "5",
-            "title": "Do You Like Me?",
-            "duration": "3:47"
-          },
-          {
-            "position": "6",
-            "title": "Always",
-            "duration": "3:45"
-          },
-          {
-            "position": "7",
-            "title": "Cool",
-            "duration": "4:04"
-          },
-          {
-            "position": "8",
-            "title": "Disillusioned (with serpentwithfeet)",
-            "duration": "4:01"
-          },
-          {
-            "position": "9",
-            "title": "Buyer's Remorse (feat. Omar Apollo)",
-            "duration": "2:32"
-          },
-          {
-            "position": "10",
-            "title": "Shot My Baby",
-            "duration": "4:28"
-          },
-          {
-            "position": "11",
-            "title": "Pain Is Inevitable",
-            "duration": "4:55"
-          },
-          {
-            "position": "12",
-            "title": "Homiesexual (with Ty Dolla $ign)",
-            "duration": "3:50"
-          },
-          {
-            "position": "13",
-            "title": "Vince Van Gogh",
-            "duration": "2:44"
-          },
-          {
-            "position": "14",
-            "title": "Superpowers",
-            "duration": "2:54"
-          },
-          {
-            "position": "15",
-            "title": "Unstoppable",
-            "duration": "4:07"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Pink Floyd": {
     "name": "Pink Floyd",
@@ -23556,7 +23581,42 @@
         "count": 2
       }
     ],
-    "vinyl": []
+    "vinyl": [
+      {
+        "release_id": 9000037,
+        "title": "Rooms of the House",
+        "artists": [
+          "La Dispute"
+        ],
+        "art_filename": null,
+        "year": 2015,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "Hudsonville MI 1956",
+            "duration": "3:59"
+          },
+          {
+            "position": "9",
+            "title": "Woman (reading)",
+            "duration": "3:30"
+          }
+        ],
+        "vinyl_type": "LP"
+      }
+    ]
   },
   "Thom Yorke": {
     "name": "Thom Yorke",
@@ -24100,62 +24160,7 @@
         "count": 2
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000010,
-        "title": "Spiderland",
-        "artists": [
-          "Slint"
-        ],
-        "art_filename": null,
-        "year": 1991,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "Breadcrumb Trail",
-            "duration": "5:55"
-          },
-          {
-            "position": "2",
-            "title": "Nosferatu Man",
-            "duration": "5:34"
-          },
-          {
-            "position": "3",
-            "title": "Don, Aman",
-            "duration": "6:28"
-          },
-          {
-            "position": "4",
-            "title": "Washer",
-            "duration": "8:50"
-          },
-          {
-            "position": "5",
-            "title": "For Dinner\u2026",
-            "duration": "5:05"
-          },
-          {
-            "position": "6",
-            "title": "Good Morning, Captain",
-            "duration": "7:39"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Buzzcocks": {
     "name": "Buzzcocks",
@@ -24226,152 +24231,7 @@
         "count": 1
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000046,
-        "title": "Singles Going Steady",
-        "artists": [
-          "Buzzcocks"
-        ],
-        "art_filename": null,
-        "year": 1979,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "Orgasm Addict - 2001 Remastered Version",
-            "duration": "2:02"
-          },
-          {
-            "position": "2",
-            "title": "What Do I Get? - 2001 Remastered Version",
-            "duration": "2:55"
-          },
-          {
-            "position": "3",
-            "title": "I Don't Mind - 2001 Remastered Version",
-            "duration": "2:19"
-          },
-          {
-            "position": "4",
-            "title": "Love You More - 2001 Remastered Version",
-            "duration": "1:50"
-          },
-          {
-            "position": "5",
-            "title": "Ever Fallen In Love (With Someone You Shouldn't've)",
-            "duration": "2:40"
-          },
-          {
-            "position": "6",
-            "title": "Promises - 2001 Remastered Version",
-            "duration": "2:37"
-          },
-          {
-            "position": "7",
-            "title": "Everybody's Happy Nowadays - 2001 Remastered Version",
-            "duration": "3:11"
-          },
-          {
-            "position": "8",
-            "title": "Harmony In My Head - 2001 Remastered Version",
-            "duration": "3:07"
-          },
-          {
-            "position": "9",
-            "title": "You Say You Don't Love Me - 2001 Remastered Version",
-            "duration": "2:54"
-          },
-          {
-            "position": "10",
-            "title": "Are Everything - 2001 Remastered Version",
-            "duration": "3:59"
-          },
-          {
-            "position": "11",
-            "title": "Strange Thing - 2001 Remastered Version",
-            "duration": "4:10"
-          },
-          {
-            "position": "12",
-            "title": "Running Free - 2001 Remastered Version",
-            "duration": "3:14"
-          },
-          {
-            "position": "13",
-            "title": "Whatever Happened To...? - 2001 Remastered Version",
-            "duration": "2:15"
-          },
-          {
-            "position": "14",
-            "title": "Oh Shit - 2001 Remastered Version",
-            "duration": "1:38"
-          },
-          {
-            "position": "15",
-            "title": "Autonomy - 2001 Remastered Version",
-            "duration": "3:45"
-          },
-          {
-            "position": "16",
-            "title": "Noise Annoys - 2001 Remastered Version",
-            "duration": "2:53"
-          },
-          {
-            "position": "17",
-            "title": "Just Lust - 2001 Remastered Version",
-            "duration": "3:02"
-          },
-          {
-            "position": "18",
-            "title": "Lipstick - 2001 Remastered Version",
-            "duration": "2:39"
-          },
-          {
-            "position": "19",
-            "title": "Why Can't I Touch It? - 2001 Remastered Version",
-            "duration": "6:36"
-          },
-          {
-            "position": "20",
-            "title": "Something's Gone Wrong Again - 2001 Remastered Version",
-            "duration": "4:33"
-          },
-          {
-            "position": "21",
-            "title": "Raison D'Etre - 2001 Remastered Version",
-            "duration": "3:34"
-          },
-          {
-            "position": "22",
-            "title": "Why She's A Girl From The Chainstore - 2001 Remastered Version",
-            "duration": "2:26"
-          },
-          {
-            "position": "23",
-            "title": "Airwaves Dream - 2001 Remastered Version",
-            "duration": "3:54"
-          },
-          {
-            "position": "24",
-            "title": "What Do You Know - 2001 Remastered Version",
-            "duration": "3:15"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Dirty Projectors": {
     "name": "Dirty Projectors",
@@ -24489,7 +24349,82 @@
         "count": 1
       }
     ],
-    "vinyl": []
+    "vinyl": [
+      {
+        "release_id": 9000047,
+        "title": "The Brighter View",
+        "artists": [
+          "To The Wind"
+        ],
+        "art_filename": null,
+        "year": 2016,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "Temporary Escape",
+            "duration": "2:37"
+          },
+          {
+            "position": "2",
+            "title": "Don't Wanna Know",
+            "duration": "2:47"
+          },
+          {
+            "position": "3",
+            "title": "The Brighter View",
+            "duration": "2:59"
+          },
+          {
+            "position": "4",
+            "title": "New World",
+            "duration": "2:42"
+          },
+          {
+            "position": "5",
+            "title": "Winding Down",
+            "duration": "3:17"
+          },
+          {
+            "position": "6",
+            "title": "Exposed",
+            "duration": "2:42"
+          },
+          {
+            "position": "7",
+            "title": "Can't Stay (My Love)",
+            "duration": "2:52"
+          },
+          {
+            "position": "8",
+            "title": "Only Way",
+            "duration": "3:07"
+          },
+          {
+            "position": "9",
+            "title": "Hard to Live, Harder to Love",
+            "duration": "3:14"
+          },
+          {
+            "position": "10",
+            "title": "Lay My Head",
+            "duration": "2:52"
+          }
+        ],
+        "vinyl_type": "LP"
+      }
+    ]
   },
   "El Grupo Nuevo De Omar Rodr\u00edguez-L\u00f3pez": {
     "name": "El Grupo Nuevo De Omar Rodr\u00edguez-L\u00f3pez",
@@ -24718,37 +24653,7 @@
         "count": 1
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000023,
-        "title": "The Story So Far / Stick To Your Guns Split",
-        "artists": [
-          "The Story So Far"
-        ],
-        "art_filename": null,
-        "year": 2013,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "Clairvoyant",
-            "duration": "3:01"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Heatmiser": {
     "name": "Heatmiser",
@@ -25120,77 +25025,7 @@
         "count": 1
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000029,
-        "title": "Closer",
-        "artists": [
-          "Joy Division"
-        ],
-        "art_filename": null,
-        "year": 1980,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "1",
-            "title": "Atrocity Exhibition - 2020 Digital Master",
-            "duration": "6:06"
-          },
-          {
-            "position": "2",
-            "title": "Isolation - 2020 Digital Master",
-            "duration": "2:53"
-          },
-          {
-            "position": "3",
-            "title": "Passover - 2020 Digital Master",
-            "duration": "4:46"
-          },
-          {
-            "position": "4",
-            "title": "Colony - 2020 Digital Master",
-            "duration": "3:55"
-          },
-          {
-            "position": "5",
-            "title": "A Means to an End - 2020 Digital Master",
-            "duration": "4:09"
-          },
-          {
-            "position": "6",
-            "title": "Heart and Soul - 2020 Digital Master",
-            "duration": "5:51"
-          },
-          {
-            "position": "7",
-            "title": "Twenty Four Hours - 2020 Digital Master",
-            "duration": "4:26"
-          },
-          {
-            "position": "8",
-            "title": "The Eternal - 2020 Digital Master",
-            "duration": "6:07"
-          },
-          {
-            "position": "9",
-            "title": "Decades - 2020 Digital Master",
-            "duration": "6:11"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Minor Threat": {
     "name": "Minor Threat",
@@ -26437,7 +26272,102 @@
         "count": 1
       }
     ],
-    "vinyl": []
+    "vinyl": [
+      {
+        "release_id": 9000002,
+        "title": "Loaded (2015 Remaster)",
+        "artists": [
+          "The Velvet Underground"
+        ],
+        "art_filename": null,
+        "year": 1970,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "Who Loves the Sun - 2015 Remaster",
+            "duration": "2:46"
+          },
+          {
+            "position": "2",
+            "title": "Sweet Jane - Full Length Version; 2015 Remaster",
+            "duration": "4:06"
+          },
+          {
+            "position": "3",
+            "title": "Rock & Roll - Full Length Version; 2015 Remaster",
+            "duration": "4:43"
+          },
+          {
+            "position": "4",
+            "title": "Cool It Down - 2015 Remaster",
+            "duration": "3:05"
+          },
+          {
+            "position": "5",
+            "title": "New Age - Full Length Version; 2015 Remaster",
+            "duration": "5:10"
+          },
+          {
+            "position": "6",
+            "title": "Head Held High - 2015 Remaster",
+            "duration": "2:56"
+          },
+          {
+            "position": "7",
+            "title": "Lonesome Cowboy Bill - 2015 Remaster",
+            "duration": "2:43"
+          },
+          {
+            "position": "8",
+            "title": "I Found a Reason - 2015 Remaster",
+            "duration": "4:15"
+          },
+          {
+            "position": "9",
+            "title": "Train Round the Bend - 2015 Remaster",
+            "duration": "3:21"
+          },
+          {
+            "position": "10",
+            "title": "Oh! Sweet Nuthin' - 2015 Remaster",
+            "duration": "7:25"
+          },
+          {
+            "position": "11",
+            "title": "I'm Sticking With You - Session Outtake; 2015 Remaster",
+            "duration": "2:53"
+          },
+          {
+            "position": "12",
+            "title": "Ocean - Session Outtake; 2015 Remaster",
+            "duration": "5:44"
+          },
+          {
+            "position": "13",
+            "title": "I Love You - Session Outtake; 2015 Remaster",
+            "duration": "2:53"
+          },
+          {
+            "position": "14",
+            "title": "Ride into the Sun - Session Outtake; 2015 Remaster",
+            "duration": "3:23"
+          }
+        ],
+        "vinyl_type": "LP"
+      }
+    ]
   },
   "Pinback": {
     "name": "Pinback",
@@ -26484,7 +26414,37 @@
         "count": 5
       }
     ],
-    "vinyl": []
+    "vinyl": [
+      {
+        "release_id": 9000024,
+        "title": "Blue Screen Life",
+        "artists": [
+          "Pinback"
+        ],
+        "art_filename": null,
+        "year": 2001,
+        "original_year": null,
+        "formats": [
+          "Vinyl"
+        ],
+        "format_descriptions": [
+          "LP",
+          "Album"
+        ],
+        "labels": [
+          "Independent"
+        ],
+        "catnos": [],
+        "tracklist": [
+          {
+            "position": "1",
+            "title": "Offline P.K.",
+            "duration": "3:17"
+          }
+        ],
+        "vinyl_type": "LP"
+      }
+    ]
   },
   "Son Volt": {
     "name": "Son Volt",
@@ -26693,7 +26653,7 @@
     ],
     "vinyl": [
       {
-        "release_id": 9000019,
+        "release_id": 9000027,
         "title": "Hybrid Theory (Bonus Edition)",
         "artists": [
           "Linkin Park"
@@ -27022,68 +26982,7 @@
         "count": 1
       }
     ],
-    "vinyl": [
-      {
-        "release_id": 9000048,
-        "title": "4ever",
-        "artists": [
-          "Axolotes Mexicanos",
-          "Aiko el grupo"
-        ],
-        "art_filename": null,
-        "year": 2024,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "6",
-            "title": "ROSAS y ESPINAS",
-            "duration": "2:20"
-          }
-        ],
-        "vinyl_type": "LP"
-      },
-      {
-        "release_id": 9000031,
-        "title": "No lo volver\u00e9 a hacer",
-        "artists": [
-          "shego",
-          "Aiko el grupo"
-        ],
-        "art_filename": null,
-        "year": 2025,
-        "original_year": null,
-        "formats": [
-          "Vinyl"
-        ],
-        "format_descriptions": [
-          "LP",
-          "Album"
-        ],
-        "labels": [
-          "Independent"
-        ],
-        "catnos": [],
-        "tracklist": [
-          {
-            "position": "11",
-            "title": "Te matar\u00e9",
-            "duration": "2:35"
-          }
-        ],
-        "vinyl_type": "LP"
-      }
-    ]
+    "vinyl": []
   },
   "Sparta": {
     "name": "Sparta",

@@ -1,0 +1,498 @@
+{
+  "playlists": [
+    {
+      "id": "pl-812638386",
+      "name": "Heavy Rotation",
+      "created_at": "2026-08-04T14:10:21.301364Z",
+      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "rule_groups": [],
+      "pinned_track_ids": [
+        "4R3yRj2LLHINYLf68HdlIK",
+        "1yr5rQnDL8QhJWCI6rPId8",
+        "4aeCuOowYXJXrMZsVHZbfF",
+        "3k4CoiIQXiNBrwrmbBMDxj",
+        "3pacfC2tJMJsrKk2baf5Bn",
+        "1JfNuvdAIqI3ggkzXuBvPp",
+        "4MdEYuoGhG2RTG3erOiu2H",
+        "3GAUibwOunKHF0Uo8JhvZi",
+        "5GO0qzKdvndy7g9r0iKEDz",
+        "4VWdOayiIDPEZNf7qBRylL"
+      ],
+      "excluded_track_ids": [],
+      "track_count": 10,
+      "art_filenames": [
+        "radiohead_kid_a.jpg",
+        "blink_182_blink_182.jpg",
+        "a_tribe_called_quest_the_low_end_theory.jpg",
+        "cocteau_twins_treasure.jpg"
+      ]
+    },
+    {
+      "id": "pl-329750614",
+      "name": "Late Night",
+      "created_at": "2026-08-04T14:10:21.301364Z",
+      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "rule_groups": [],
+      "pinned_track_ids": [
+        "3eV5sJVmS9Bt02k18YhulL",
+        "2ZS8jyDUXuAaNWxiwsOCER",
+        "5egqKwgK5r5rvGD1LrtR7J",
+        "2LlQb7Uoj1kKyGhlkBf9aC",
+        "1ZoK9LKJppVYpc5b1QtpD8",
+        "2Dc5eGTFOvu34x6ONYAdGt",
+        "4iO8rh9VV9Qi7QVFpfWvOP",
+        "6zrsmzrMoxNkXEQLubCWtA",
+        "1xq9GyfTbElPmxFMcKHNiI",
+        "3MgUsfZlYW1FakZT6oIW78"
+      ],
+      "excluded_track_ids": [],
+      "track_count": 10,
+      "art_filenames": [
+        "linkin_park_hybrid_theory_bonus_edition.jpg",
+        "refused_the_shape_of_punk_to_come_deluxe_edition.jpg",
+        "empire_empire_i_was_a_lonely_estate_when_the_sea_became_a_giant.jpg",
+        null
+      ]
+    },
+    {
+      "id": "pl-824893558",
+      "name": "Discovery Pile",
+      "created_at": "2026-08-04T14:10:21.301364Z",
+      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "rule_groups": [],
+      "pinned_track_ids": [
+        "0yCTslZ7KticDxTICEBnuz",
+        "6XYbMGvtl6tlPoGWaiH7EY",
+        "6b7mtbBPx9xcJK9Uz3cTcC",
+        "0zLClc0emc6qUeV1p5nc99",
+        "5bbvdCQ6kc3OeC3FzUl9Dx",
+        "0qTdLAVMXvWoangDwzSLEU",
+        "34VjbHxkXXjl7iv7df3rDt",
+        "09hctAvAEUpm7MKl1RBK2j",
+        "3R4IgnYTITZGpGfCZ3ptkM",
+        "6ntPs0i1rMvQ6DfuJt9sxX"
+      ],
+      "excluded_track_ids": [],
+      "track_count": 10,
+      "art_filenames": [
+        "kanye_west_the_life_of_pablo.jpg",
+        "jesusun_kil_moon_jesu_sun_kil_moon.jpg",
+        "vampire_weekend_modern_vampires_of_the_city.jpg",
+        "sun_kil_moon_admiral_fell_promises.jpg"
+      ]
+    },
+    {
+      "id": "pl-824380384",
+      "name": "Sunday Morning",
+      "created_at": "2026-08-04T14:10:21.301364Z",
+      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "rule_groups": [],
+      "pinned_track_ids": [
+        "0GrHWVTDsaWcD4nrCGr7VE",
+        "0M2ofyoY6FPzR8zmM1cag3",
+        "5hh5gq0u54rTP0iBYgZ2xW",
+        "3No4iSYhsogKapazLguERp",
+        "3uFVyg61HeKCMbL5N6LuSA",
+        "63W4sfeRTTiNKFLAzUJHFe",
+        "5eyatDYwM6jnqZT7hcPPV7",
+        "7IgBLFklu75pp8Y1vphChS",
+        "7GDIQqD5pdHCda5rpZ98Ie",
+        "0gTRROuntlrPQ64W3J2Etv"
+      ],
+      "excluded_track_ids": [],
+      "track_count": 10,
+      "art_filenames": [
+        "aiko_el_grupo_me_est\u00e1n_apuntando_con_un_arma.jpg",
+        "empire_empire_i_was_a_lonely_estate_you_will_eventually_be_forgotten.jpg",
+        "led_zeppelin_houses_of_the_holy_remaster.jpg",
+        "system_of_a_down_mezmerize.jpg"
+      ]
+    },
+    {
+      "id": "pl-275378331",
+      "name": "1960s",
+      "created_at": "2026-08-04T14:10:21.301364Z",
+      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "rule_groups": [
+        {
+          "conditions": [
+            {
+              "field": "release_year",
+              "op": "range",
+              "from": 1960,
+              "to": 1969
+            }
+          ]
+        }
+      ],
+      "pinned_track_ids": [],
+      "excluded_track_ids": [],
+      "track_count": 23,
+      "art_filenames": [
+        "milton_nascimento_travessia.jpg",
+        "gal_costa_gal_costa.jpg",
+        "bob_dylan_blonde_on_blonde.jpg",
+        "nina_simone_i_put_a_spell_on_you.jpg"
+      ]
+    },
+    {
+      "id": "pl-264682066",
+      "name": "1970s",
+      "created_at": "2026-08-04T14:10:21.301364Z",
+      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "rule_groups": [
+        {
+          "conditions": [
+            {
+              "field": "release_year",
+              "op": "range",
+              "from": 1970,
+              "to": 1979
+            }
+          ]
+        }
+      ],
+      "pinned_track_ids": [],
+      "excluded_track_ids": [],
+      "track_count": 139,
+      "art_filenames": [
+        "pink_floyd_wish_you_were_here.jpg",
+        "rita_lee_rita_lee.jpg",
+        "led_zeppelin_houses_of_the_holy_remaster.jpg",
+        "neu_neu.jpg"
+      ]
+    },
+    {
+      "id": "pl-467811629",
+      "name": "1980s",
+      "created_at": "2026-08-04T14:10:21.301364Z",
+      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "rule_groups": [
+        {
+          "conditions": [
+            {
+              "field": "release_year",
+              "op": "range",
+              "from": 1980,
+              "to": 1989
+            }
+          ]
+        }
+      ],
+      "pinned_track_ids": [],
+      "excluded_track_ids": [],
+      "track_count": 209,
+      "art_filenames": [
+        "jo\u00e3o_bosco_comiss\u00e3o_de_frente.jpg",
+        "gilberto_gil_luar.jpg",
+        "michael_jackson_thriller.jpg",
+        "talking_heads_remain_in_light.jpg"
+      ]
+    },
+    {
+      "id": "pl-709697974",
+      "name": "1990s",
+      "created_at": "2026-08-04T14:10:21.301364Z",
+      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "rule_groups": [
+        {
+          "conditions": [
+            {
+              "field": "release_year",
+              "op": "range",
+              "from": 1990,
+              "to": 1999
+            }
+          ]
+        }
+      ],
+      "pinned_track_ids": [],
+      "excluded_track_ids": [],
+      "track_count": 205,
+      "art_filenames": [
+        "a_tribe_called_quest_midnight_marauders.jpg",
+        "red_house_painters_red_house_painters_ii.jpg",
+        "envy_from_here_to_eternity.jpg",
+        "no_knife_fire_in_the_city_of_automatons.jpg"
+      ]
+    },
+    {
+      "id": "pl-669789198",
+      "name": "2000s",
+      "created_at": "2026-08-04T14:10:21.301364Z",
+      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "rule_groups": [
+        {
+          "conditions": [
+            {
+              "field": "release_year",
+              "op": "range",
+              "from": 2000,
+              "to": 2009
+            }
+          ]
+        }
+      ],
+      "pinned_track_ids": [],
+      "excluded_track_ids": [],
+      "track_count": 368,
+      "art_filenames": [
+        "\u00e9dith_piaf_edith_piaf_the_best_of.jpg",
+        "melvins_a_senile_animal.jpg",
+        null,
+        "circa_survive_on_letting_go.jpg"
+      ]
+    },
+    {
+      "id": "pl-780585091",
+      "name": "2010s",
+      "created_at": "2026-08-04T14:10:21.301364Z",
+      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "rule_groups": [
+        {
+          "conditions": [
+            {
+              "field": "release_year",
+              "op": "range",
+              "from": 2010,
+              "to": 2019
+            }
+          ]
+        }
+      ],
+      "pinned_track_ids": [],
+      "excluded_track_ids": [],
+      "track_count": 315,
+      "art_filenames": [
+        "sun_kil_moon_admiral_fell_promises.jpg",
+        "fiona_apple_the_idler_wheel_is_wiser_than_the_driver_of_the_.jpg",
+        "counterparts_nothing_left_to_love.jpg",
+        "i_kill_giants_i_kill_giants_remastered.jpg"
+      ]
+    },
+    {
+      "id": "pl-904433398",
+      "name": "2020s",
+      "created_at": "2026-08-04T14:10:21.301364Z",
+      "updated_at": "2026-08-04T14:10:21.301364Z",
+      "rule_groups": [
+        {
+          "conditions": [
+            {
+              "field": "release_year",
+              "op": "range",
+              "from": 2020,
+              "to": 2029
+            }
+          ]
+        }
+      ],
+      "pinned_track_ids": [],
+      "excluded_track_ids": [],
+      "track_count": 65,
+      "art_filenames": [
+        "prof_powderhorn_suites.jpg",
+        "caroline_polachek_desire_i_want_to_turn_into_you.jpg",
+        "axolotes_mexicanos_4ever.jpg",
+        "aiko_el_grupo_no_te_has_enterado.jpg"
+      ]
+    }
+  ],
+  "all_genres": [
+    "60s",
+    "70s",
+    "80s",
+    "90s",
+    "acoustic",
+    "afoxe",
+    "alt country",
+    "alt-country",
+    "alternative",
+    "alternative metal",
+    "alternative pop",
+    "alternative rap",
+    "alternative rnb",
+    "alternative rock",
+    "ambient",
+    "american",
+    "americana",
+    "art pop",
+    "art punk",
+    "atlanta",
+    "australian",
+    "avant-garde",
+    "balearic",
+    "beardcore",
+    "bebop",
+    "belchior",
+    "bluegrass",
+    "blues",
+    "bossa nova",
+    "brasil",
+    "brazil",
+    "brazilian",
+    "british",
+    "canada",
+    "canadian",
+    "catalan",
+    "chamber folk",
+    "chanson",
+    "chanson francaise",
+    "chaotic hardcore",
+    "chill906",
+    "chillout",
+    "chillwave",
+    "classic rock",
+    "clube da esquina",
+    "compton",
+    "country",
+    "cumbia",
+    "dance",
+    "deep house",
+    "deutsch",
+    "dischord",
+    "disco",
+    "downtempo",
+    "dream pop",
+    "east coast rap",
+    "easycore",
+    "electronic",
+    "electronica",
+    "elephant 6",
+    "emo",
+    "emocore",
+    "ethereal",
+    "experimental",
+    "female fronted",
+    "female vocalists",
+    "folk",
+    "folk rock",
+    "folk-rock",
+    "freak folk",
+    "french",
+    "funk",
+    "funk_add_to_lidarr_batch_18",
+    "fusion",
+    "gangsta rap",
+    "garage punk",
+    "german",
+    "glam rock",
+    "golden age",
+    "grunge",
+    "guitar",
+    "hard rock",
+    "hardcore",
+    "hardcore punk",
+    "hip hop",
+    "hip-hop",
+    "house",
+    "icelandic",
+    "idm",
+    "incubus",
+    "indie",
+    "indie emo",
+    "indie pop",
+    "indie punk",
+    "indie rock",
+    "instrumental",
+    "irish",
+    "italian",
+    "italy",
+    "japanese",
+    "jazz",
+    "jazz hop",
+    "kanye west",
+    "krautrock",
+    "latin",
+    "lo-fi",
+    "math rock",
+    "mathcore",
+    "mellow",
+    "melodic hardcore",
+    "melodic metalcore",
+    "metal",
+    "metalcore",
+    "mexico",
+    "midwest emo",
+    "mike patton",
+    "modern hardcore",
+    "mpb",
+    "neo-soul",
+    "new wave",
+    "no wave",
+    "noise rock",
+    "noisecore",
+    "nu metal",
+    "ofwgkta",
+    "oldies",
+    "omar rodriguez-lopez",
+    "peru",
+    "piano",
+    "poetry",
+    "political",
+    "pop",
+    "pop punk",
+    "pop-punk",
+    "post rock",
+    "post-emo indie rock",
+    "post-hardcore",
+    "post-metal",
+    "post-punk",
+    "post-rock",
+    "post-rock screamo",
+    "progressive",
+    "progressive metal",
+    "progressive rock",
+    "proto-punk",
+    "psychedelic",
+    "psychedelic rock",
+    "punk",
+    "punk rock",
+    "r&b",
+    "rap",
+    "rapcore",
+    "real emo",
+    "reggae",
+    "reggaeton",
+    "rhythm and blues",
+    "rnb",
+    "rock",
+    "sadcore",
+    "samba",
+    "samba rock",
+    "screamo",
+    "shoegaze",
+    "singer-songwriter",
+    "slowcore",
+    "sludge",
+    "soul",
+    "southern rock",
+    "space rock",
+    "spain",
+    "spanish",
+    "spanish or latin artists",
+    "spoken word",
+    "stoner rock",
+    "straight edge",
+    "supergroup",
+    "swedish",
+    "synth pop",
+    "synthpop",
+    "techno",
+    "thrash metal",
+    "tontipop",
+    "trap",
+    "trip hop",
+    "trip-hop",
+    "tropicalia",
+    "trumpet",
+    "turntablism",
+    "twee pop",
+    "ukhc",
+    "underground hip-hop",
+    "underground rap",
+    "vocal jazz",
+    "west coast",
+    "world"
+  ]
+}

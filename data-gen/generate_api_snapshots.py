@@ -60,6 +60,8 @@ ENDPOINTS = {
     "/api/settings": "settings.json",
     "/api/artists": "artists.json",
     "/api/albums": "albums.json",
+    "/api/playlists": "playlists.json",
+    "/api/playlists/sessions": "playlist-sessions.json",
 }
 
 _ABS_PATH_RE = re.compile(r"^/[^\s]*/([^/\s]+)$")
@@ -183,6 +185,7 @@ def main():
         OUT_DIR.mkdir(parents=True, exist_ok=True)
         valid_artwork = before["artwork_names"]
         artists_list = None
+        playlists_list = None
         for path, filename in ENDPOINTS.items():
             with urlopen(f"{BASE_URL}{path}", timeout=10) as resp:
                 data = json.load(resp)
@@ -193,6 +196,28 @@ def main():
             print(f"{path} -> {out_path.relative_to(ROOT)}")
             if path == "/api/artists":
                 artists_list = clean["artists"]
+            if path == "/api/playlists":
+                playlists_list = clean["playlists"]
+
+        # Per-playlist evaluated tracklist, keyed by playlist id (ids are plain
+        # ASCII already, no encoding concerns). Snapshotted once per playlist —
+        # editing a playlist's rules in the demo does NOT re-run live
+        # evaluation (there's no live backend to run it against); sw.js keeps
+        # serving this same canned tracklist regardless of rule edits, same
+        # "no live logic, cosmetic-only edits" spirit as every other mutation
+        # in this demo. Consistent with the Phase 1 decision to keep playlists
+        # simple (empty rule_groups, pinned-track-driven) in the first place.
+        if playlists_list is not None:
+            evaluated = {}
+            for p in playlists_list:
+                pid = p["id"]
+                with urlopen(f"{BASE_URL}/api/playlists/{pid}/evaluate", timeout=10) as resp:
+                    result = json.load(resp)
+                evaluated[pid] = scrub_stale_artwork(sanitize_paths(result["tracks"]), valid_artwork)
+            out_path = OUT_DIR / "playlists-evaluate.json"
+            with out_path.open("w") as f:
+                json.dump(evaluated, f, indent=2)
+            print(f"/api/playlists/<id>/evaluate x{len(evaluated)} -> {out_path.relative_to(ROOT)}")
 
         # Artist detail is keyed by name (not one file per artist) — sidesteps
         # any risk of encodeURIComponent (JS, in sw.js) and quote (Python, here)

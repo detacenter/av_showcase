@@ -2,8 +2,8 @@
   {
     "id": "pl-812638386",
     "name": "Heavy Rotation",
-    "created_at": "2026-08-04T13:56:12.673559Z",
-    "updated_at": "2026-08-04T13:56:12.673559Z",
+    "created_at": "2026-08-04T14:10:21.301364Z",
+    "updated_at": "2026-08-04T14:10:21.301364Z",
     "rule_groups": [],
     "pinned_track_ids": [
       "4R3yRj2LLHINYLf68HdlIK",
@@ -22,8 +22,8 @@
   {
     "id": "pl-329750614",
     "name": "Late Night",
-    "created_at": "2026-08-04T13:56:12.673559Z",
-    "updated_at": "2026-08-04T13:56:12.673559Z",
+    "created_at": "2026-08-04T14:10:21.301364Z",
+    "updated_at": "2026-08-04T14:10:21.301364Z",
     "rule_groups": [],
     "pinned_track_ids": [
       "3eV5sJVmS9Bt02k18YhulL",
@@ -42,8 +42,8 @@
   {
     "id": "pl-824893558",
     "name": "Discovery Pile",
-    "created_at": "2026-08-04T13:56:12.673559Z",
-    "updated_at": "2026-08-04T13:56:12.673559Z",
+    "created_at": "2026-08-04T14:10:21.301364Z",
+    "updated_at": "2026-08-04T14:10:21.301364Z",
     "rule_groups": [],
     "pinned_track_ids": [
       "0yCTslZ7KticDxTICEBnuz",
@@ -62,8 +62,8 @@
   {
     "id": "pl-824380384",
     "name": "Sunday Morning",
-    "created_at": "2026-08-04T13:56:12.673559Z",
-    "updated_at": "2026-08-04T13:56:12.673559Z",
+    "created_at": "2026-08-04T14:10:21.301364Z",
+    "updated_at": "2026-08-04T14:10:21.301364Z",
     "rule_groups": [],
     "pinned_track_ids": [
       "0GrHWVTDsaWcD4nrCGr7VE",
@@ -77,6 +77,146 @@
       "7GDIQqD5pdHCda5rpZ98Ie",
       "0gTRROuntlrPQ64W3J2Etv"
     ],
+    "excluded_track_ids": []
+  },
+  {
+    "id": "pl-275378331",
+    "name": "1960s",
+    "created_at": "2026-08-04T14:10:21.301364Z",
+    "updated_at": "2026-08-04T14:10:21.301364Z",
+    "rule_groups": [
+      {
+        "conditions": [
+          {
+            "field": "release_year",
+            "op": "range",
+            "from": 1960,
+            "to": 1969
+          }
+        ]
+      }
+    ],
+    "pinned_track_ids": [],
+    "excluded_track_ids": []
+  },
+  {
+    "id": "pl-264682066",
+    "name": "1970s",
+    "created_at": "2026-08-04T14:10:21.301364Z",
+    "updated_at": "2026-08-04T14:10:21.301364Z",
+    "rule_groups": [
+      {
+        "conditions": [
+          {
+            "field": "release_year",
+            "op": "range",
+            "from": 1970,
+            "to": 1979
+          }
+        ]
+      }
+    ],
+    "pinned_track_ids": [],
+    "excluded_track_ids": []
+  },
+  {
+    "id": "pl-467811629",
+    "name": "1980s",
+    "created_at": "2026-08-04T14:10:21.301364Z",
+    "updated_at": "2026-08-04T14:10:21.301364Z",
+    "rule_groups": [
+      {
+        "conditions": [
+          {
+            "field": "release_year",
+            "op": "range",
+            "from": 1980,
+            "to": 1989
+          }
+        ]
+      }
+    ],
+    "pinned_track_ids": [],
+    "excluded_track_ids": []
+  },
+  {
+    "id": "pl-709697974",
+    "name": "1990s",
+    "created_at": "2026-08-04T14:10:21.301364Z",
+    "updated_at": "2026-08-04T14:10:21.301364Z",
+    "rule_groups": [
+      {
+        "conditions": [
+          {
+            "field": "release_year",
+            "op": "range",
+            "from": 1990,
+            "to": 1999
+          }
+        ]
+      }
+    ],
+    "pinned_track_ids": [],
+    "excluded_track_ids": []
+  },
+  {
+    "id": "pl-669789198",
+    "name": "2000s",
+    "created_at": "2026-08-04T14:10:21.301364Z",
+    "updated_at": "2026-08-04T14:10:21.301364Z",
+    "rule_groups": [
+      {
+        "conditions": [
+          {
+            "field": "release_year",
+            "op": "range",
+            "from": 2000,
+            "to": 2009
+          }
+        ]
+      }
+    ],
+    "pinned_track_ids": [],
+    "excluded_track_ids": []
+  },
+  {
+    "id": "pl-780585091",
+    "name": "2010s",
+    "created_at": "2026-08-04T14:10:21.301364Z",
+    "updated_at": "2026-08-04T14:10:21.301364Z",
+    "rule_groups": [
+      {
+        "conditions": [
+          {
+            "field": "release_year",
+            "op": "range",
+            "from": 2010,
+            "to": 2019
+          }
+        ]
+      }
+    ],
+    "pinned_track_ids": [],
+    "excluded_track_ids": []
+  },
+  {
+    "id": "pl-904433398",
+    "name": "2020s",
+    "created_at": "2026-08-04T14:10:21.301364Z",
+    "updated_at": "2026-08-04T14:10:21.301364Z",
+    "rule_groups": [
+      {
+        "conditions": [
+          {
+            "field": "release_year",
+            "op": "range",
+            "from": 2020,
+            "to": 2029
+          }
+        ]
+      }
+    ],
+    "pinned_track_ids": [],
     "excluded_track_ids": []
   }
 ]

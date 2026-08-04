@@ -367,6 +367,34 @@ def main() -> None:
             "excluded_track_ids": [],
         })
 
+    # Decade smart playlists (session 5) — mirrors a real pattern the user
+    # keeps in the real app (decade-filter playlists), using a rule_group so
+    # the real playlist-evaluation engine (insights/playlist_insights.py)
+    # does the actual filtering, not a pinned-track list. Nothing behavioral
+    # here — just a release_year range rule over the already-real catalog.
+    decade_track_ids: dict[int, set[str]] = {}
+    for e in log_entries:
+        year = e.get("release_year")
+        if year:
+            decade = (year // 10) * 10
+            decade_track_ids.setdefault(decade, set()).add(e["track_id"])
+
+    for decade in sorted(decade_track_ids):
+        if len(decade_track_ids[decade]) < 5:
+            continue  # not enough real tracks in this decade to be worth a playlist
+        pid = f"pl-{rng.randrange(10**8, 10**9)}"
+        playlists_out.append({
+            "id": pid,
+            "name": f"{decade}s",
+            "created_at": now_iso,
+            "updated_at": now_iso,
+            "rule_groups": [{
+                "conditions": [{"field": "release_year", "op": "range", "from": decade, "to": decade + 9}],
+            }],
+            "pinned_track_ids": [],
+            "excluded_track_ids": [],
+        })
+
     # ── discogs_collection.json + vinyl_links.json ─────────────────────────
     target_vinyl_count = round(len(played_album_ids) * VINYL_COVERAGE_FRACTION)
     with_real_discogs = [
