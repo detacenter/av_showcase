@@ -6,3 +6,10 @@ dist/
 .DS_Store
 *.env
 .env
+.env.local
+
+# Secrets/local auth state — must never be committed, even accidentally.
+# (backend/.env and backend/.spotify_token.json leaked in during the Phase 2
+# code copy from the real repo, caught before any git add — see PRJ-0005 log.)
+backend/.spotify_token.json
+backend/.spotify_auth_status.json
