@@ -72,27 +72,6 @@
     ],
     "album_tiles": [
       {
-        "title": "Damaged",
-        "subtitle": "Black Flag",
-        "meta": "30 plays",
-        "art_path": "black_flag_damaged.jpg",
-        "art_key": "period_album_34aFnrFRBlErcbU6moRZR3"
-      },
-      {
-        "title": "Rain Dogs (2023 Remaster)",
-        "subtitle": "Tom Waits",
-        "meta": "34 plays",
-        "art_path": "tom_waits_rain_dogs_2023_remaster.jpg",
-        "art_key": "period_album_51CvLH7MxsLuFgTwVvzApx"
-      },
-      {
-        "title": "BEYONC\u00c9 [Platinum Edition]",
-        "subtitle": "Beyonc\u00e9",
-        "meta": "17 plays \u00b7 2 days",
-        "art_path": "beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg",
-        "art_key": "period_album_2UJwKSBUz6rtW4QLK74kQu"
-      },
-      {
         "title": "The Moon & Antarctica",
         "subtitle": "Modest Mouse",
         "meta": "13 plays",
@@ -107,25 +86,11 @@
         "art_key": "period_album_6FJxoadUE4JNVwWHghBwnb"
       },
       {
-        "title": "Treasure",
-        "subtitle": "Cocteau Twins",
-        "meta": "9 plays",
-        "art_path": "cocteau_twins_treasure.jpg",
-        "art_key": "period_album_7pBPB9vwqCMLKNmUCK4k62"
-      },
-      {
-        "title": "Seduzir",
-        "subtitle": "Djavan",
-        "meta": "9 plays",
-        "art_path": "djavan_seduzir.jpg",
-        "art_key": "period_album_52WarR7rVx473Mdvbu4tVF"
-      },
-      {
-        "title": "A volta de Secos & Molhados",
-        "subtitle": "Secos & Molhados",
-        "meta": "12 plays",
-        "art_path": "secos_molhados_a_volta_de_secos_molhados.jpg",
-        "art_key": "period_album_4rNGFFaXZ7l0Vg6QrcHcUi"
+        "title": "Marcos Valle",
+        "subtitle": "Marcos Valle",
+        "meta": "3 plays",
+        "art_path": "marcos_valle_marcos_valle.jpg",
+        "art_key": "period_album_0FOAFmdS9StYdW3hrSnJCe"
       },
       {
         "title": "A Love Supreme",
@@ -133,6 +98,27 @@
         "meta": "8 plays",
         "art_path": "john_coltrane_a_love_supreme.jpg",
         "art_key": "period_album_7Eoz7hJvaX1eFkbpQxC5PA"
+      },
+      {
+        "title": "Damaged",
+        "subtitle": "Black Flag",
+        "meta": "30 plays",
+        "art_path": "black_flag_damaged.jpg",
+        "art_key": "period_album_34aFnrFRBlErcbU6moRZR3"
+      },
+      {
+        "title": "BEYONC\u00c9 [Platinum Edition]",
+        "subtitle": "Beyonc\u00e9",
+        "meta": "17 plays \u00b7 2 days",
+        "art_path": "beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg",
+        "art_key": "period_album_2UJwKSBUz6rtW4QLK74kQu"
+      },
+      {
+        "title": "A volta de Secos & Molhados",
+        "subtitle": "Secos & Molhados",
+        "meta": "12 plays",
+        "art_path": "secos_molhados_a_volta_de_secos_molhados.jpg",
+        "art_key": "period_album_4rNGFFaXZ7l0Vg6QrcHcUi"
       },
       {
         "title": "Four Cornered Night",
@@ -218,11 +204,11 @@
     ],
     "album_tiles": [
       {
-        "title": "Gal Tropical",
-        "subtitle": "Gal Costa",
+        "title": "Comiss\u00e3o De Frente",
+        "subtitle": "Jo\u00e3o Bosco",
         "meta": "12 plays",
-        "art_path": "gal_costa_gal_tropical.jpg",
-        "art_key": "period_album_1Vjf7xPNvBhqKnAR4rAXR2"
+        "art_path": "jo\u00e3o_bosco_comiss\u00e3o_de_frente.jpg",
+        "art_key": "period_album_3391Q4zuKuz0JpHkmaJsQv"
       },
       {
         "title": "Body Talk",
@@ -239,20 +225,6 @@
         "art_key": "period_album_7HLVI2NCQz5DzL8VsB9A56"
       },
       {
-        "title": "Singles Going Steady",
-        "subtitle": "Buzzcocks",
-        "meta": "21 plays",
-        "art_path": "buzzcocks_singles_going_steady.jpg",
-        "art_key": "period_album_6TxgQwGrbG3XZLNPOEhg7E"
-      },
-      {
-        "title": "xx",
-        "subtitle": "The xx",
-        "meta": "8 plays",
-        "art_path": "the_xx_xx.jpg",
-        "art_key": "period_album_2av2ZSHlvD7rvLSsMvtYCG"
-      },
-      {
         "title": "Marquee Moon",
         "subtitle": "Television",
         "meta": "16 plays",
@@ -267,11 +239,11 @@
         "art_key": "period_album_38TTw10V04chCowK4hPsDu"
       },
       {
-        "title": "April",
-        "subtitle": "Sun Kil Moon",
-        "meta": "20 plays",
-        "art_path": "sun_kil_moon_april.jpg",
-        "art_key": "period_album_04XRtyMhwCe9HoWbzBO1eE"
+        "title": "In Rainbows",
+        "subtitle": "Radiohead",
+        "meta": "3 plays",
+        "art_path": "radiohead_in_rainbows.jpg",
+        "art_key": "period_album_5vkqYmiPBYLaalcmjujWxK"
       },
       {
         "title": "Why Should The Fire Die?",
@@ -309,6 +281,13 @@
         "art_key": "period_album_0FOAFmdS9StYdW3hrSnJCe"
       },
       {
+        "title": "Singles Going Steady",
+        "subtitle": "Buzzcocks",
+        "meta": "21 plays",
+        "art_path": "buzzcocks_singles_going_steady.jpg",
+        "art_key": "period_album_6TxgQwGrbG3XZLNPOEhg7E"
+      },
+      {
         "title": "August And Everything After",
         "subtitle": "Counting Crows",
         "meta": "9 plays",
@@ -316,18 +295,25 @@
         "art_key": "period_album_4nKfZbCALT9H9LfedtDwnZ"
       },
       {
-        "title": "Gish (Remastered)",
-        "subtitle": "The Smashing Pumpkins",
-        "meta": "9 plays",
-        "art_path": "the_smashing_pumpkins_gish_remastered.jpg",
-        "art_key": "period_album_7wJTn94PWzZ3zE0lg3qhld"
-      },
-      {
         "title": "Orange Rhyming Dictionary",
         "subtitle": "Jets To Brazil",
         "meta": "9 plays",
         "art_path": "jets_to_brazil_orange_rhyming_dictionary.jpg",
         "art_key": "period_album_5zaVtrjodNQru22Rj4FIcD"
+      },
+      {
+        "title": "April",
+        "subtitle": "Sun Kil Moon",
+        "meta": "20 plays",
+        "art_path": "sun_kil_moon_april.jpg",
+        "art_key": "period_album_04XRtyMhwCe9HoWbzBO1eE"
+      },
+      {
+        "title": "Gish (Remastered)",
+        "subtitle": "The Smashing Pumpkins",
+        "meta": "9 plays",
+        "art_path": "the_smashing_pumpkins_gish_remastered.jpg",
+        "art_key": "period_album_7wJTn94PWzZ3zE0lg3qhld"
       }
     ],
     "top_new_artist": {
@@ -416,13 +402,6 @@
         "art_key": "period_album_3FR05gmeoVRYr2i1MKqrcn"
       },
       {
-        "title": "Out Of Time (25th Anniversary Edition)",
-        "subtitle": "R.E.M.",
-        "meta": "40 plays",
-        "art_path": "rem_out_of_time_25th_anniversary_edition.jpg",
-        "art_key": "period_album_6yEuIwTQpciH1qtj7mP5GK"
-      },
-      {
         "title": "Takk...",
         "subtitle": "Sigur R\u00f3s",
         "meta": "22 plays",
@@ -465,6 +444,13 @@
         "art_key": "period_album_2btXQFitnklvkPC0dAIvAx"
       },
       {
+        "title": "13 Songs",
+        "subtitle": "Fugazi",
+        "meta": "6 plays",
+        "art_path": "fugazi_13_songs.jpg",
+        "art_key": "period_album_1FcRwT7uoNdO8L9wbYsfAY"
+      },
+      {
         "title": "Shed",
         "subtitle": "Title Fight",
         "meta": "11 plays",
@@ -479,11 +465,11 @@
         "art_key": "period_album_5feRs2ejrMcxuM5hcDDSBb"
       },
       {
-        "title": "Is This It",
-        "subtitle": "The Strokes",
-        "meta": "10 plays",
-        "art_path": "the_strokes_is_this_it.jpg",
-        "art_key": "period_album_2k8KgmDp9oHrmu0MIj4XDE"
+        "title": "Since I Left You (20th Anniversary Deluxe Edition)",
+        "subtitle": "The Avalanches",
+        "meta": "15 plays",
+        "art_path": "the_avalanches_since_i_left_you_20th_anniversary_deluxe_edition.jpg",
+        "art_key": "period_album_0YtYaaO0aipyeQl0xhAWTO"
       },
       {
         "title": "All of a Sudden I Miss Everyone",
@@ -491,6 +477,20 @@
         "meta": "5 plays",
         "art_path": "explosions_in_the_sky_all_of_a_sudden_i_miss_everyone.jpg",
         "art_key": "period_album_2BkhGv48TtChjKBwkC67eo"
+      },
+      {
+        "title": "Within and Without",
+        "subtitle": "Washed Out",
+        "meta": "8 plays",
+        "art_path": "washed_out_within_and_without.jpg",
+        "art_key": "period_album_1TwAADd8Z8C1GeeCSaXTNr"
+      },
+      {
+        "title": "Is This It",
+        "subtitle": "The Strokes",
+        "meta": "10 plays",
+        "art_path": "the_strokes_is_this_it.jpg",
+        "art_key": "period_album_2k8KgmDp9oHrmu0MIj4XDE"
       },
       {
         "title": "Milton",
@@ -505,13 +505,6 @@
         "meta": "13 plays",
         "art_path": "brian_eno_another_green_world_2004_remaster.jpg",
         "art_key": "period_album_6uoeezh45SYEb8lcT8gDTY"
-      },
-      {
-        "title": "I Never Loved a Man the Way I Love You",
-        "subtitle": "Aretha Franklin",
-        "meta": "11 plays",
-        "art_path": "aretha_franklin_i_never_loved_a_man_the_way_i_love_you.jpg",
-        "art_key": "period_album_5WndWfzGwCkHzAbQXVkg2V"
       }
     ],
     "top_new_artist": {
@@ -607,11 +600,25 @@
         "art_key": "period_album_2Us9qPHLvLoTl6HkYAPcz2"
       },
       {
+        "title": "Red Medicine",
+        "subtitle": "Fugazi",
+        "meta": "26 plays",
+        "art_path": "fugazi_red_medicine.jpg",
+        "art_key": "period_album_3ue3vifOfBG7KAV1FPFQa4"
+      },
+      {
         "title": "King of the Beach",
         "subtitle": "Wavves",
         "meta": "20 plays",
         "art_path": "wavves_king_of_the_beach.jpg",
         "art_key": "period_album_7Mn0aXVHjaoFZPKLssqI9d"
+      },
+      {
+        "title": "channel ORANGE",
+        "subtitle": "Frank Ocean",
+        "meta": "10 plays",
+        "art_path": "frank_ocean_channel_orange.jpg",
+        "art_key": "period_album_392p3shh2jkxUxY2VHvlH8"
       },
       {
         "title": "A Seat at the Table",
@@ -621,32 +628,11 @@
         "art_key": "period_album_3Yko2SxDk4hc6fncIBQlcM"
       },
       {
-        "title": "Is a Real Boy",
-        "subtitle": "Say Anything",
-        "meta": "19 plays",
-        "art_path": "say_anything_is_a_real_boy.jpg",
-        "art_key": "period_album_67GbWmsrvtIdOOUYRo7do7"
-      },
-      {
-        "title": "Mirrored",
-        "subtitle": "Battles",
-        "meta": "10 plays",
-        "art_path": "battles_mirrored.jpg",
-        "art_key": "period_album_64shsDEnphK07flo3DzWAc"
-      },
-      {
-        "title": "Red Medicine",
-        "subtitle": "Fugazi",
-        "meta": "26 plays",
-        "art_path": "fugazi_red_medicine.jpg",
-        "art_key": "period_album_3ue3vifOfBG7KAV1FPFQa4"
-      },
-      {
-        "title": "channel ORANGE",
-        "subtitle": "Frank Ocean",
-        "meta": "10 plays",
-        "art_path": "frank_ocean_channel_orange.jpg",
-        "art_key": "period_album_392p3shh2jkxUxY2VHvlH8"
+        "title": "More Than Any Other Day",
+        "subtitle": "Ought",
+        "meta": "3 plays",
+        "art_path": "ought_more_than_any_other_day.jpg",
+        "art_key": "period_album_0uOPPNiTA3k0HNvqKWcuSb"
       },
       {
         "title": "For Emma, Forever Ago",
@@ -663,18 +649,25 @@
         "art_key": "period_album_3JcNnjMVSKiNpqhErZarW0"
       },
       {
-        "title": "This Is Happening",
-        "subtitle": "LCD Soundsystem",
-        "meta": "9 plays",
-        "art_path": "lcd_soundsystem_this_is_happening.jpg",
-        "art_key": "period_album_4hnqM0JK4CM1phwfq1Ldyz"
-      },
-      {
         "title": "I Kill Giants (Remastered)",
         "subtitle": "I Kill Giants",
         "meta": "9 plays",
         "art_path": "i_kill_giants_i_kill_giants_remastered.jpg",
         "art_key": "period_album_3vxkGvc3QzZqLt6pQNw7qI"
+      },
+      {
+        "title": "Is a Real Boy",
+        "subtitle": "Say Anything",
+        "meta": "19 plays",
+        "art_path": "say_anything_is_a_real_boy.jpg",
+        "art_key": "period_album_67GbWmsrvtIdOOUYRo7do7"
+      },
+      {
+        "title": "This Is Happening",
+        "subtitle": "LCD Soundsystem",
+        "meta": "9 plays",
+        "art_path": "lcd_soundsystem_this_is_happening.jpg",
+        "art_key": "period_album_4hnqM0JK4CM1phwfq1Ldyz"
       },
       {
         "title": "Refazenda",
@@ -798,60 +791,25 @@
         "art_key": "period_album_0eGxAVwdwV2mHrUgLJ8R6Y"
       },
       {
-        "title": "\u00c1libi",
-        "subtitle": "Maria Beth\u00e2nia",
-        "meta": "18 plays",
-        "art_path": "maria_beth\u00e2nia_\u00e1libi.jpg",
-        "art_key": "period_album_4hjiHP3NIIzyYUgfs145zr"
-      },
-      {
-        "title": "Un Verano Sin Ti",
-        "subtitle": "Bad Bunny",
-        "meta": "6 plays",
-        "art_path": "bad_bunny_un_verano_sin_ti.jpg",
-        "art_key": "period_album_3RQQmkQEvNCY4prGKE6oc5"
-      },
-      {
-        "title": "DeB\u00cd TiRAR M\u00e1S FOToS",
-        "subtitle": "Bad Bunny",
-        "meta": "14 plays",
-        "art_path": "bad_bunny_deb\u00ed_tirar_m\u00e1s_fotos.jpg",
-        "art_key": "period_album_5K79FLRUCSysQnVESLcTdb"
-      },
-      {
-        "title": "Stage Four (Deluxe Edition)",
-        "subtitle": "Touch\u00e9 Amor\u00e9",
-        "meta": "11 plays",
-        "art_path": "touch\u00e9_amor\u00e9_stage_four_deluxe_edition.jpg",
-        "art_key": "period_album_6KiS2t3EapTmHSt9xGUqe7"
-      },
-      {
-        "title": "Loaded (2015 Remaster)",
-        "subtitle": "The Velvet Underground",
-        "meta": "12 plays",
-        "art_path": "the_velvet_underground_loaded_2015_remaster.jpg",
-        "art_key": "period_album_4RMGrhJRnGiNqmKqhqpLlX"
-      },
-      {
-        "title": "London Calling (Remastered)",
-        "subtitle": "The Clash",
-        "meta": "16 plays",
-        "art_path": "the_clash_london_calling_remastered.jpg",
-        "art_key": "period_album_6FCzvataOZh68j8OKzOt9a"
-      },
-      {
-        "title": "Home After Three Months Away",
-        "subtitle": "empire! empire! (i was a lonely estate)",
-        "meta": "9 plays",
-        "art_path": "empire_empire_i_was_a_lonely_estate_home_after_three_months_away.jpg",
-        "art_key": "period_album_6np6yPkSF9JsWcaEGUfNim"
-      },
-      {
         "title": "Stoner Witch",
         "subtitle": "Melvins",
         "meta": "21 plays",
         "art_path": "melvins_stoner_witch.jpg",
         "art_key": "period_album_1Ft1QQbUOCgSqumZKYuWhw"
+      },
+      {
+        "title": "Let It Enfold You",
+        "subtitle": "Senses Fail",
+        "meta": "12 plays",
+        "art_path": "senses_fail_let_it_enfold_you.jpg",
+        "art_key": "period_album_1dnNjLBeisuc0bUp3wwPR1"
+      },
+      {
+        "title": "\u00c1libi",
+        "subtitle": "Maria Beth\u00e2nia",
+        "meta": "18 plays",
+        "art_path": "maria_beth\u00e2nia_\u00e1libi.jpg",
+        "art_key": "period_album_4hjiHP3NIIzyYUgfs145zr"
       },
       {
         "title": "Live Through This",
@@ -861,18 +819,18 @@
         "art_key": "period_album_2Rwf2nPYZQ9aIe4QXACTC7"
       },
       {
-        "title": "The Great Adventures Of Slick Rick",
-        "subtitle": "Slick Rick",
-        "meta": "22 plays",
-        "art_path": "slick_rick_the_great_adventures_of_slick_rick.jpg",
-        "art_key": "period_album_71mmTJdWvpkzQNmVfFbRdN"
-      },
-      {
         "title": "OK Computer",
         "subtitle": "Radiohead",
         "meta": "11 plays",
         "art_path": "radiohead_ok_computer.jpg",
         "art_key": "period_album_6dVIqQ8qmQ5GBnJ9shOYGE"
+      },
+      {
+        "title": "Un Verano Sin Ti",
+        "subtitle": "Bad Bunny",
+        "meta": "6 plays",
+        "art_path": "bad_bunny_un_verano_sin_ti.jpg",
+        "art_key": "period_album_3RQQmkQEvNCY4prGKE6oc5"
       },
       {
         "title": "Somewhere at the Bottom of the River Between Vega and Altair (10th Anniversary)",
@@ -889,11 +847,46 @@
         "art_key": "period_album_1DMMv1Kmoli3Y9fVEZDUVC"
       },
       {
+        "title": "DeB\u00cd TiRAR M\u00e1S FOToS",
+        "subtitle": "Bad Bunny",
+        "meta": "14 plays",
+        "art_path": "bad_bunny_deb\u00ed_tirar_m\u00e1s_fotos.jpg",
+        "art_key": "period_album_5K79FLRUCSysQnVESLcTdb"
+      },
+      {
+        "title": "Stage Four (Deluxe Edition)",
+        "subtitle": "Touch\u00e9 Amor\u00e9",
+        "meta": "11 plays",
+        "art_path": "touch\u00e9_amor\u00e9_stage_four_deluxe_edition.jpg",
+        "art_key": "period_album_6KiS2t3EapTmHSt9xGUqe7"
+      },
+      {
         "title": "The Joshua Tree",
         "subtitle": "U2",
         "meta": "9 plays",
         "art_path": "u2_the_joshua_tree.jpg",
         "art_key": "period_album_5vBZRYu2GLA65nfxBvG1a7"
+      },
+      {
+        "title": "Loaded (2015 Remaster)",
+        "subtitle": "The Velvet Underground",
+        "meta": "12 plays",
+        "art_path": "the_velvet_underground_loaded_2015_remaster.jpg",
+        "art_key": "period_album_4RMGrhJRnGiNqmKqhqpLlX"
+      },
+      {
+        "title": "10,000 Days",
+        "subtitle": "TOOL",
+        "meta": "9 plays",
+        "art_path": "tool_10000_days.jpg",
+        "art_key": "period_album_1fvWYcbjuycyHpzNPH1Vfk"
+      },
+      {
+        "title": "Disintegration (2010 Remaster)",
+        "subtitle": "The Cure",
+        "meta": "10 plays",
+        "art_path": "the_cure_disintegration_2010_remaster.jpg",
+        "art_key": "period_album_0A13JySVHzBoRZFk2o89Wl"
       }
     ],
     "top_new_artist": {
@@ -982,39 +975,18 @@
         "art_key": "period_album_1uIM6TngoKF0S8oPaDZPvv"
       },
       {
-        "title": "The Miseducation of Lauryn Hill",
-        "subtitle": "Ms. Lauryn Hill",
-        "meta": "16 plays",
-        "art_path": "ms_lauryn_hill_the_miseducation_of_lauryn_hill.jpg",
-        "art_key": "period_album_1BZoqf8Zje5nGdwZhOjAtD"
-      },
-      {
-        "title": "Blonde",
-        "subtitle": "Frank Ocean",
-        "meta": "14 plays",
-        "art_path": "frank_ocean_blonde.jpg",
-        "art_key": "period_album_3mH6qwIy9crq0I9YQbOuDf"
-      },
-      {
-        "title": "Trace (Remastered)",
-        "subtitle": "Son Volt",
-        "meta": "10 plays",
-        "art_path": "son_volt_trace_remastered.jpg",
-        "art_key": "period_album_1SV1Fh8rLes7MeTYTXznKd"
-      },
-      {
-        "title": "Time For Us",
-        "subtitle": "Nicolas Jaar",
-        "meta": "4 plays",
-        "art_path": "nicolas_jaar_time_for_us.jpg",
-        "art_key": "period_album_42rcUTT9KiIZZusdoW0wXI"
-      },
-      {
         "title": "Deja Entendu",
         "subtitle": "Brand New",
         "meta": "10 plays",
         "art_path": "brand_new_deja_entendu.jpg",
         "art_key": "period_album_6vDiMhyfSnTn18OY99BSQX"
+      },
+      {
+        "title": "The Miseducation of Lauryn Hill",
+        "subtitle": "Ms. Lauryn Hill",
+        "meta": "16 plays",
+        "art_path": "ms_lauryn_hill_the_miseducation_of_lauryn_hill.jpg",
+        "art_key": "period_album_1BZoqf8Zje5nGdwZhOjAtD"
       },
       {
         "title": "Tigers Jaw",
@@ -1045,6 +1017,13 @@
         "art_key": "period_album_5EyIDBAqhnlkAHqvPRwdbX"
       },
       {
+        "title": "Blonde",
+        "subtitle": "Frank Ocean",
+        "meta": "14 plays",
+        "art_path": "frank_ocean_blonde.jpg",
+        "art_key": "period_album_3mH6qwIy9crq0I9YQbOuDf"
+      },
+      {
         "title": "American Football",
         "subtitle": "American Football",
         "meta": "8 plays",
@@ -1059,11 +1038,32 @@
         "art_key": "period_album_3wLCCtHNSLsDpIItmWZzS9"
       },
       {
+        "title": "Trace (Remastered)",
+        "subtitle": "Son Volt",
+        "meta": "10 plays",
+        "art_path": "son_volt_trace_remastered.jpg",
+        "art_key": "period_album_1SV1Fh8rLes7MeTYTXznKd"
+      },
+      {
         "title": "The Age of Adz",
         "subtitle": "Sufjan Stevens",
         "meta": "9 plays",
         "art_path": "sufjan_stevens_the_age_of_adz.jpg",
         "art_key": "period_album_4kRMCapj9nEyBWnM0kc9OX"
+      },
+      {
+        "title": "Stereo",
+        "subtitle": "Christie Front Drive",
+        "meta": "5 plays",
+        "art_path": "christie_front_drive_stereo.jpg",
+        "art_key": "period_album_16j7lqTblxGoqXXREFCEwT"
+      },
+      {
+        "title": "Time For Us",
+        "subtitle": "Nicolas Jaar",
+        "meta": "4 plays",
+        "art_path": "nicolas_jaar_time_for_us.jpg",
+        "art_key": "period_album_42rcUTT9KiIZZusdoW0wXI"
       },
       {
         "title": "Rintintin",
@@ -1078,13 +1078,6 @@
         "meta": "3 plays",
         "art_path": "nicolas_jaar_el_bandido.jpg",
         "art_key": "period_album_1utZh6tIEawpkgQCEnq0zK"
-      },
-      {
-        "title": "FlamenKora",
-        "subtitle": "Volker Goetze",
-        "meta": "5 plays",
-        "art_path": "volker_goetze_flamenkora.jpg",
-        "art_key": "period_album_4ztPeMlwNA723z0NoFsNO4"
       }
     ],
     "top_new_artist": {
@@ -1173,18 +1166,18 @@
         "art_key": "period_album_36zXCG5IcivCTOrVAZSBZH"
       },
       {
+        "title": "Africa Brasil",
+        "subtitle": "Jorge Ben Jor",
+        "meta": "27 plays",
+        "art_path": "jorge_ben_jor_africa_brasil.jpg",
+        "art_key": "period_album_0esHQqYklDPje00NUNq6py"
+      },
+      {
         "title": "...To the Beat of a Dead Horse",
         "subtitle": "Touch\u00e9 Amor\u00e9",
         "meta": "20 plays",
         "art_path": "touch\u00e9_amor\u00e9_to_the_beat_of_a_dead_horse.jpg",
         "art_key": "period_album_1nJQWexPwURsCTkp2THvg1"
-      },
-      {
-        "title": "Retratos",
-        "subtitle": "L\u00f4 Borges",
-        "meta": "44 plays",
-        "art_path": "l\u00f4_borges_retratos.jpg",
-        "art_key": "period_album_2ngEpie4g3Z2xtZhhwCAxH"
       },
       {
         "title": "Porcelain",
@@ -1201,41 +1194,6 @@
         "art_key": "period_album_2HTbQ0RHwukKVXAlTmCZP2"
       },
       {
-        "title": "Homework",
-        "subtitle": "Daft Punk",
-        "meta": "6 plays",
-        "art_path": "daft_punk_homework.jpg",
-        "art_key": "period_album_5uRdvUR7xCnHmUW8n64n9y"
-      },
-      {
-        "title": "The Suburbs (Deluxe)",
-        "subtitle": "Arcade Fire",
-        "meta": "17 plays",
-        "art_path": "arcade_fire_the_suburbs_deluxe.jpg",
-        "art_key": "period_album_0gkUcpkyW2SXN49Yktkf6F"
-      },
-      {
-        "title": "Clube Da Esquina",
-        "subtitle": "L\u00f4 Borges",
-        "meta": "19 plays",
-        "art_path": "l\u00f4_borges_clube_da_esquina.jpg",
-        "art_key": "period_album_5risYG7klZCSLMNxB9dZhf"
-      },
-      {
-        "title": "The Unheavenly Creatures",
-        "subtitle": "Coheed and Cambria",
-        "meta": "13 plays",
-        "art_path": "coheed_and_cambria_the_unheavenly_creatures.jpg",
-        "art_key": "period_album_42S0lDJT9wHKCVaMGgqKdm"
-      },
-      {
-        "title": "Africa Brasil",
-        "subtitle": "Jorge Ben Jor",
-        "meta": "27 plays",
-        "art_path": "jorge_ben_jor_africa_brasil.jpg",
-        "art_key": "period_album_0esHQqYklDPje00NUNq6py"
-      },
-      {
         "title": "Power Corruption and Lies",
         "subtitle": "New Order",
         "meta": "16 plays",
@@ -1248,13 +1206,6 @@
         "meta": "18 plays",
         "art_path": "thom_yorke_the_eraser.jpg",
         "art_key": "period_album_4X8Y79gWo6xm7Osdapg58E"
-      },
-      {
-        "title": "Mezmerize",
-        "subtitle": "System Of A Down",
-        "meta": "18 plays",
-        "art_path": "system_of_a_down_mezmerize.jpg",
-        "art_key": "period_album_0cn6MHyx4YuZauaB7Pb66o"
       },
       {
         "title": "In A Silent Way",
@@ -1271,11 +1222,53 @@
         "art_key": "period_album_75I9YI5opV3mBsKnay5pIR"
       },
       {
+        "title": "Homework",
+        "subtitle": "Daft Punk",
+        "meta": "6 plays",
+        "art_path": "daft_punk_homework.jpg",
+        "art_key": "period_album_5uRdvUR7xCnHmUW8n64n9y"
+      },
+      {
         "title": "Funeral",
         "subtitle": "Arcade Fire",
         "meta": "10 plays",
         "art_path": "arcade_fire_funeral.jpg",
         "art_key": "period_album_6ZB8qaR9JNuS0Q0bG1nbcH"
+      },
+      {
+        "title": "Steal This Album!",
+        "subtitle": "System Of A Down",
+        "meta": "15 plays",
+        "art_path": "system_of_a_down_steal_this_album.jpg",
+        "art_key": "period_album_6lA1sGw7eCv27bcpd5E0wT"
+      },
+      {
+        "title": "World Of Echo",
+        "subtitle": "Arthur Russell",
+        "meta": "17 plays \u00b7 2 days",
+        "art_path": "arthur_russell_world_of_echo.jpg",
+        "art_key": "period_album_7hodLjVNQZSsNEqvG77ZkI"
+      },
+      {
+        "title": "Clube Da Esquina",
+        "subtitle": "L\u00f4 Borges",
+        "meta": "19 plays",
+        "art_path": "l\u00f4_borges_clube_da_esquina.jpg",
+        "art_key": "period_album_5risYG7klZCSLMNxB9dZhf"
+      },
+      {
+        "title": "Best Buds",
+        "subtitle": "Mom Jeans.",
+        "meta": "8 plays",
+        "art_path": "mom_jeans_best_buds.jpg",
+        "art_key": "period_album_0KzElSxcfAvleUIuOg0TOQ"
+      },
+      {
+        "title": "Retratos",
+        "subtitle": "L\u00f4 Borges",
+        "meta": "44 plays",
+        "art_path": "l\u00f4_borges_retratos.jpg",
+        "art_key": "period_album_2ngEpie4g3Z2xtZhhwCAxH"
       }
     ],
     "top_new_artist": {
@@ -1364,46 +1357,25 @@
         "art_key": "period_album_2Y9IRtehByVkegoD7TcLfi"
       },
       {
+        "title": "Innundir Skinni",
+        "subtitle": "\u00d3l\u00f6f Arnalds",
+        "meta": "36 plays",
+        "art_path": "\u00f3l\u00f6f_arnalds_innundir_skinni.jpg",
+        "art_key": "period_album_1V99SZB8TKi7RxhALkkiH1"
+      },
+      {
+        "title": "ANTI",
+        "subtitle": "Rihanna",
+        "meta": "12 plays \u00b7 2 days",
+        "art_path": "rihanna_anti.jpg",
+        "art_key": "period_album_48i37aZTC1prDr4EcpQeEa"
+      },
+      {
         "title": "System Of A Down",
         "subtitle": "System Of A Down",
         "meta": "36 plays",
         "art_path": "system_of_a_down_system_of_a_down.jpg",
         "art_key": "period_album_7p5mnxLTjbvs4kInkK8za9"
-      },
-      {
-        "title": "Block out the Sun & Sleep",
-        "subtitle": "To The Wind",
-        "meta": "22 plays",
-        "art_path": "to_the_wind_block_out_the_sun_sleep.jpg",
-        "art_key": "period_album_3XQz5QVGMnDt8Kspu2HdOR"
-      },
-      {
-        "title": "Gal Costa",
-        "subtitle": "Gal Costa",
-        "meta": "11 plays",
-        "art_path": "gal_costa_gal_costa.jpg",
-        "art_key": "period_album_5ZVLLME05cmciSZz4IGcZu"
-      },
-      {
-        "title": "Vaya",
-        "subtitle": "At the Drive-In",
-        "meta": "2 plays",
-        "art_path": "at_the_drive_in_vaya.jpg",
-        "art_key": "period_album_1dQADTXF672pzeJPcRwjbs"
-      },
-      {
-        "title": "Trans-Europe Express (2009 Remaster)",
-        "subtitle": "Kraftwerk",
-        "meta": "7 plays",
-        "art_path": "kraftwerk_trans_europe_express_2009_remaster.jpg",
-        "art_key": "period_album_0HHRIVjvBcnTepfeRVgS2f"
-      },
-      {
-        "title": "Stadium Arcadium",
-        "subtitle": "Red Hot Chili Peppers",
-        "meta": "23 plays",
-        "art_path": "red_hot_chili_peppers_stadium_arcadium.jpg",
-        "art_key": "period_album_7xl50xr9NDkd3i2kBbzsNZ"
       },
       {
         "title": "The Current Will Carry Us",
@@ -1413,11 +1385,25 @@
         "art_key": "period_album_3bJtSVsqSsqmVtfvtnisbU"
       },
       {
+        "title": "Fleet Foxes",
+        "subtitle": "Fleet Foxes",
+        "meta": "10 plays",
+        "art_path": "fleet_foxes_fleet_foxes.jpg",
+        "art_key": "period_album_5GRnydamKvIeG46dycID6v"
+      },
+      {
         "title": "Computer World (2009 Remaster)",
         "subtitle": "Kraftwerk",
         "meta": "12 plays",
         "art_path": "kraftwerk_computer_world_2009_remaster.jpg",
         "art_key": "period_album_07BPkQfT4B5xjDwjCxRiN2"
+      },
+      {
+        "title": "We Are The Only Friends We Have",
+        "subtitle": "Piebald",
+        "meta": "10 plays",
+        "art_path": "piebald_we_are_the_only_friends_we_have.jpg",
+        "art_key": "period_album_0MtzNtKxLd7KthcSObeWJB"
       },
       {
         "title": "In A Silent Way",
@@ -1467,6 +1453,13 @@
         "meta": "9 plays",
         "art_path": "silversun_pickups_carnavas.jpg",
         "art_key": "period_album_7EGRR4WHgazThugwrMg2Y9"
+      },
+      {
+        "title": "Dummy",
+        "subtitle": "Portishead",
+        "meta": "11 plays",
+        "art_path": "portishead_dummy.jpg",
+        "art_key": "period_album_3539EbNgIdEDGBKkUf4wno"
       }
     ],
     "top_new_artist": {
@@ -1548,48 +1541,6 @@
     ],
     "album_tiles": [
       {
-        "title": "Remain in Light",
-        "subtitle": "Talking Heads",
-        "meta": "40 plays",
-        "art_path": "talking_heads_remain_in_light.jpg",
-        "art_key": "period_album_1JvXxLsm0PxlGH4LXzqMGq"
-      },
-      {
-        "title": "In / Casino / Out",
-        "subtitle": "At the Drive-In",
-        "meta": "9 plays",
-        "art_path": "at_the_drive_in_in_casino_out.jpg",
-        "art_key": "period_album_35qZXJifEQcpWnKP6E4oNv"
-      },
-      {
-        "title": "Exile In Guyville (2018 Remaster)",
-        "subtitle": "Liz Phair",
-        "meta": "16 plays",
-        "art_path": "liz_phair_exile_in_guyville_2018_remaster.jpg",
-        "art_key": "period_album_7sCpW2cLGcRk1zf9zi0Yqd"
-      },
-      {
-        "title": "Rites of Spring",
-        "subtitle": "Rites of Spring",
-        "meta": "15 plays",
-        "art_path": "rites_of_spring_rites_of_spring.jpg",
-        "art_key": "period_album_0pU2blS70BzVWyC1tVyaLg"
-      },
-      {
-        "title": "White Blood Cells",
-        "subtitle": "The White Stripes",
-        "meta": "14 plays",
-        "art_path": "the_white_stripes_white_blood_cells.jpg",
-        "art_key": "period_album_6Xvc1TfpVEhDeHhmTQEtp0"
-      },
-      {
-        "title": "Paul's Boutique (20th Anniversary Edition / Remastered)",
-        "subtitle": "Beastie Boys",
-        "meta": "19 plays",
-        "art_path": "beastie_boys_pauls_boutique_20th_anniversary_edition_remaster.jpg",
-        "art_key": "period_album_1kmyirVya5fRxdjsPFDM05"
-      },
-      {
         "title": "The Campfire Headphase",
         "subtitle": "Boards of Canada",
         "meta": "26 plays",
@@ -1604,11 +1555,11 @@
         "art_key": "period_album_4YXo7p7aubyVIbNLoVlBp9"
       },
       {
-        "title": "In A Beautiful Place Out In The Country",
-        "subtitle": "Boards of Canada",
-        "meta": "8 plays",
-        "art_path": "boards_of_canada_in_a_beautiful_place_out_in_the_country.jpg",
-        "art_key": "period_album_2U2WNneO3RdYEASjRI2OZx"
+        "title": "In the Aeroplane Over the Sea",
+        "subtitle": "Neutral Milk Hotel",
+        "meta": "3 plays",
+        "art_path": "neutral_milk_hotel_in_the_aeroplane_over_the_sea.jpg",
+        "art_key": "period_album_17q5eeNk3HAjX1gzQnkTX7"
       },
       {
         "title": "Rise or Die Trying",
@@ -1616,6 +1567,20 @@
         "meta": "10 plays",
         "art_path": "four_year_strong_rise_or_die_trying.jpg",
         "art_key": "period_album_08pL4gHGoa0GXyv9emugVv"
+      },
+      {
+        "title": "Geogaddi",
+        "subtitle": "Boards of Canada",
+        "meta": "10 plays",
+        "art_path": "boards_of_canada_geogaddi.jpg",
+        "art_key": "period_album_4T7JGfRryhw5POaXalkApE"
+      },
+      {
+        "title": "In / Casino / Out",
+        "subtitle": "At the Drive-In",
+        "meta": "9 plays",
+        "art_path": "at_the_drive_in_in_casino_out.jpg",
+        "art_key": "period_album_35qZXJifEQcpWnKP6E4oNv"
       },
       {
         "title": "Thriller",
@@ -1646,6 +1611,13 @@
         "art_key": "period_album_22PkV1Le9P3X4RY4xtmK0q"
       },
       {
+        "title": "Exile In Guyville (2018 Remaster)",
+        "subtitle": "Liz Phair",
+        "meta": "16 plays",
+        "art_path": "liz_phair_exile_in_guyville_2018_remaster.jpg",
+        "art_key": "period_album_7sCpW2cLGcRk1zf9zi0Yqd"
+      },
+      {
         "title": "Cardinal (Expanded Edition)",
         "subtitle": "Pinegrove",
         "meta": "10 plays",
@@ -1653,11 +1625,32 @@
         "art_key": "period_album_4hsC5IvasDOCrWwM8UQ3N4"
       },
       {
+        "title": "Rites of Spring",
+        "subtitle": "Rites of Spring",
+        "meta": "15 plays",
+        "art_path": "rites_of_spring_rites_of_spring.jpg",
+        "art_key": "period_album_0pU2blS70BzVWyC1tVyaLg"
+      },
+      {
         "title": "I'll Keep You in Mind, From Time to Time",
         "subtitle": "Moose Blood",
         "meta": "10 plays",
         "art_path": "moose_blood_ill_keep_you_in_mind_from_time_to_time.jpg",
         "art_key": "period_album_4MJXiUV12TyT5ZyXeWdnL3"
+      },
+      {
+        "title": "White Blood Cells",
+        "subtitle": "The White Stripes",
+        "meta": "14 plays",
+        "art_path": "the_white_stripes_white_blood_cells.jpg",
+        "art_key": "period_album_6Xvc1TfpVEhDeHhmTQEtp0"
+      },
+      {
+        "title": "Paul's Boutique (20th Anniversary Edition / Remastered)",
+        "subtitle": "Beastie Boys",
+        "meta": "19 plays",
+        "art_path": "beastie_boys_pauls_boutique_20th_anniversary_edition_remaster.jpg",
+        "art_key": "period_album_1kmyirVya5fRxdjsPFDM05"
       }
     ],
     "top_new_artist": {
@@ -1746,11 +1739,11 @@
         "art_key": "period_album_2oWXmi9uLRKn60yRmY22MB"
       },
       {
-        "title": "Riot!",
-        "subtitle": "Paramore",
-        "meta": "45 plays",
-        "art_path": "paramore_riot.jpg",
-        "art_key": "period_album_71rziY9eLo1tA2dBMxrwhc"
+        "title": "Fever Ray",
+        "subtitle": "Fever Ray",
+        "meta": "20 plays",
+        "art_path": "fever_ray_fever_ray.jpg",
+        "art_key": "period_album_019nA7vSKz0dD5yRKYRpbM"
       },
       {
         "title": "On Avery Island",
@@ -1760,6 +1753,13 @@
         "art_key": "period_album_3HTsNBfZLfRXQTfdLeLVK1"
       },
       {
+        "title": "Pure Heroine",
+        "subtitle": "Lorde",
+        "meta": "16 plays",
+        "art_path": "lorde_pure_heroine.jpg",
+        "art_key": "period_album_0rmhjUgoVa17LZuS8xWQ3v"
+      },
+      {
         "title": "Frame & Canvas",
         "subtitle": "Braid",
         "meta": "20 plays",
@@ -1767,11 +1767,25 @@
         "art_key": "period_album_4WBDw3hnJTvWXXDaCNKVqJ"
       },
       {
-        "title": "The Velvet Rope",
-        "subtitle": "Janet Jackson",
-        "meta": "40 plays",
-        "art_path": "janet_jackson_the_velvet_rope.jpg",
-        "art_key": "period_album_1uFp52Q9EXLNA6DTRYnpTj"
+        "title": "The Dark Side of the Moon",
+        "subtitle": "Pink Floyd",
+        "meta": "8 plays",
+        "art_path": "pink_floyd_the_dark_side_of_the_moon.jpg",
+        "art_key": "period_album_4LH4d3cOWNNsVw41Gqt2kv"
+      },
+      {
+        "title": "Geogaddi",
+        "subtitle": "Boards of Canada",
+        "meta": "10 plays",
+        "art_path": "boards_of_canada_geogaddi.jpg",
+        "art_key": "period_album_4T7JGfRryhw5POaXalkApE"
+      },
+      {
+        "title": "Future Days (Remastered Version)",
+        "subtitle": "CAN",
+        "meta": "3 plays",
+        "art_path": "can_future_days_remastered_version.jpg",
+        "art_key": "period_album_22ZgHorVJzcZ4m8YBZCw4w"
       },
       {
         "title": "Hybrid Theory (Bonus Edition)",
@@ -1788,6 +1802,13 @@
         "art_key": "period_album_0Pv5bdtwTTBSHy9GyUe9um"
       },
       {
+        "title": "Floral Green",
+        "subtitle": "Title Fight",
+        "meta": "6 plays",
+        "art_path": "title_fight_floral_green.jpg",
+        "art_key": "period_album_1sZsY3CrPE6z1xlOKzQs2X"
+      },
+      {
         "title": "By the Way (Deluxe Edition)",
         "subtitle": "Red Hot Chili Peppers",
         "meta": "16 plays",
@@ -1802,53 +1823,25 @@
         "art_key": "period_album_5Dbax7G8SWrP9xyzkOvy2F"
       },
       {
-        "title": "One Hot Minute (Deluxe Edition)",
-        "subtitle": "Red Hot Chili Peppers",
-        "meta": "8 plays",
-        "art_path": "red_hot_chili_peppers_one_hot_minute_deluxe_edition.jpg",
-        "art_key": "period_album_2rQ135imvelvp89D8eEZOi"
-      },
-      {
-        "title": "Fever Ray",
-        "subtitle": "Fever Ray",
-        "meta": "20 plays",
-        "art_path": "fever_ray_fever_ray.jpg",
-        "art_key": "period_album_019nA7vSKz0dD5yRKYRpbM"
-      },
-      {
-        "title": "Pure Heroine",
-        "subtitle": "Lorde",
-        "meta": "16 plays",
-        "art_path": "lorde_pure_heroine.jpg",
-        "art_key": "period_album_0rmhjUgoVa17LZuS8xWQ3v"
-      },
-      {
-        "title": "The Dark Side of the Moon",
-        "subtitle": "Pink Floyd",
-        "meta": "8 plays",
-        "art_path": "pink_floyd_the_dark_side_of_the_moon.jpg",
-        "art_key": "period_album_4LH4d3cOWNNsVw41Gqt2kv"
-      },
-      {
-        "title": "Future Days (Remastered Version)",
-        "subtitle": "CAN",
-        "meta": "3 plays",
-        "art_path": "can_future_days_remastered_version.jpg",
-        "art_key": "period_album_22ZgHorVJzcZ4m8YBZCw4w"
-      },
-      {
-        "title": "Floral Green",
-        "subtitle": "Title Fight",
-        "meta": "6 plays",
-        "art_path": "title_fight_floral_green.jpg",
-        "art_key": "period_album_1sZsY3CrPE6z1xlOKzQs2X"
-      },
-      {
         "title": "Meteora (Bonus Edition)",
         "subtitle": "Linkin Park",
         "meta": "12 plays",
         "art_path": "linkin_park_meteora_bonus_edition.jpg",
         "art_key": "period_album_0y13VbGddQ4azdVWakksAL"
+      },
+      {
+        "title": "Rid Of Me",
+        "subtitle": "PJ Harvey",
+        "meta": "4 plays",
+        "art_path": "pj_harvey_rid_of_me.jpg",
+        "art_key": "period_album_2fDJpBJhtloxzUENHlU9JB"
+      },
+      {
+        "title": "Speaking in Tongues",
+        "subtitle": "Talking Heads",
+        "meta": "9 plays",
+        "art_path": "talking_heads_speaking_in_tongues.jpg",
+        "art_key": "period_album_78MM8HrabEGPLVWaJkM2t1"
       }
     ],
     "top_new_artist": {
@@ -1951,11 +1944,32 @@
         "art_key": "period_album_2B87zXm9bOWvAJdkJBTpzF"
       },
       {
+        "title": "Homogenic",
+        "subtitle": "Bj\u00f6rk",
+        "meta": "18 plays",
+        "art_path": "bj\u00f6rk_homogenic.jpg",
+        "art_key": "period_album_0HMsmYvoT1h2x1C4di5faf"
+      },
+      {
         "title": "Toxicity",
         "subtitle": "System Of A Down",
         "meta": "12 plays",
         "art_path": "system_of_a_down_toxicity.jpg",
         "art_key": "period_album_6jWde94ln40epKIQCd8XUh"
+      },
+      {
+        "title": "Settle (Deluxe)",
+        "subtitle": "Disclosure",
+        "meta": "14 plays",
+        "art_path": "disclosure_settle_deluxe.jpg",
+        "art_key": "period_album_1lM5IfaqcIsXd6UCV3aDSs"
+      },
+      {
+        "title": "All Delighted People",
+        "subtitle": "Sufjan Stevens",
+        "meta": "7 plays",
+        "art_path": "sufjan_stevens_all_delighted_people.jpg",
+        "art_key": "period_album_1wnEAz2lDtNoUUZF0KStuo"
       },
       {
         "title": "Untrue",
@@ -1986,11 +2000,32 @@
         "art_key": "period_album_0puQN87m8wxSu8lcDkwV2k"
       },
       {
-        "title": "If It's Cool with You, It's Cool with Me",
-        "subtitle": "Hot Rod Circuit",
-        "meta": "10 plays",
-        "art_path": "hot_rod_circuit_if_its_cool_with_you_its_cool_with_me.jpg",
-        "art_key": "period_album_2Xkfh86aoHJXqUh3TfOZOp"
+        "title": "Black Messiah",
+        "subtitle": "D'Angelo",
+        "meta": "3 plays",
+        "art_path": "dangelo_black_messiah.jpg",
+        "art_key": "period_album_5Hfbag0SsHxafx1SySFSX6"
+      },
+      {
+        "title": "Rat Saw God",
+        "subtitle": "Wednesday",
+        "meta": "9 plays",
+        "art_path": "wednesday_rat_saw_god.jpg",
+        "art_key": "period_album_1oTR3aC0jYmwUlr9duBi05"
+      },
+      {
+        "title": "Magic Potion",
+        "subtitle": "The Black Keys",
+        "meta": "9 plays",
+        "art_path": "the_black_keys_magic_potion.jpg",
+        "art_key": "period_album_4jFfuHyKmhGeipjRmKIh8O"
+      },
+      {
+        "title": "There's No Leaving Now",
+        "subtitle": "The Tallest Man On Earth",
+        "meta": "9 plays",
+        "art_path": "the_tallest_man_on_earth_theres_no_leaving_now.jpg",
+        "art_key": "period_album_6Voznuxp5917IwIlLxSAik"
       },
       {
         "title": "Revolver (Remastered)",
@@ -1998,48 +2033,6 @@
         "meta": "36 plays",
         "art_path": "the_beatles_revolver_remastered.jpg",
         "art_key": "period_album_3PRoXYsngSwjEQWR5PsHWR"
-      },
-      {
-        "title": "Just Enough Bright",
-        "subtitle": "Time Spent Driving",
-        "meta": "24 plays",
-        "art_path": "time_spent_driving_just_enough_bright.jpg",
-        "art_key": "period_album_46yPjg7EzuRvtwSFtF1T6Z"
-      },
-      {
-        "title": "Homogenic",
-        "subtitle": "Bj\u00f6rk",
-        "meta": "18 plays",
-        "art_path": "bj\u00f6rk_homogenic.jpg",
-        "art_key": "period_album_0HMsmYvoT1h2x1C4di5faf"
-      },
-      {
-        "title": "James Brown Live At The Apollo, 1962",
-        "subtitle": "James Brown",
-        "meta": "9 plays \u00b7 2 days",
-        "art_path": "james_brown_james_brown_live_at_the_apollo_1962.jpg",
-        "art_key": "period_album_0B6BbyElOe4bwziJrunOTe"
-      },
-      {
-        "title": "Settle (Deluxe)",
-        "subtitle": "Disclosure",
-        "meta": "14 plays",
-        "art_path": "disclosure_settle_deluxe.jpg",
-        "art_key": "period_album_1lM5IfaqcIsXd6UCV3aDSs"
-      },
-      {
-        "title": "All Delighted People",
-        "subtitle": "Sufjan Stevens",
-        "meta": "7 plays",
-        "art_path": "sufjan_stevens_all_delighted_people.jpg",
-        "art_key": "period_album_1wnEAz2lDtNoUUZF0KStuo"
-      },
-      {
-        "title": "The Beatles (Remastered)",
-        "subtitle": "The Beatles",
-        "meta": "15 plays",
-        "art_path": "the_beatles_the_beatles_remastered.jpg",
-        "art_key": "period_album_1klALx0u4AavZNEvC4LrTL"
       }
     ],
     "top_new_artist": {
@@ -2128,18 +2121,11 @@
         "art_key": "period_album_5EyDvOit9McsAc9ao1QROt"
       },
       {
-        "title": "Yeezus",
-        "subtitle": "Kanye West",
-        "meta": "30 plays \u00b7 2 days",
-        "art_path": "kanye_west_yeezus.jpg",
-        "art_key": "period_album_7D2NdGvBHIavgLhmcwhluK"
-      },
-      {
-        "title": "My Beautiful Dark Twisted Fantasy",
-        "subtitle": "Kanye West",
-        "meta": "35 plays",
-        "art_path": "kanye_west_my_beautiful_dark_twisted_fantasy.jpg",
-        "art_key": "period_album_20r762YmB5HeofjMCiPMLv"
+        "title": "Ege Bamyasi (Remastered Version)",
+        "subtitle": "CAN",
+        "meta": "18 plays",
+        "art_path": "can_ege_bamyasi_remastered_version.jpg",
+        "art_key": "period_album_3Qa2CdymyGvXkqoqIZykmT"
       },
       {
         "title": "Pink Moon",
@@ -2149,11 +2135,25 @@
         "art_key": "period_album_5mwOo1zikswhmfHvtqVSXg"
       },
       {
-        "title": "Criminal Minded",
-        "subtitle": "Boogie Down Productions",
-        "meta": "30 plays",
-        "art_path": "boogie_down_productions_criminal_minded.jpg",
-        "art_key": "period_album_3AJ15ysr4Hz5p0N2tnNb1F"
+        "title": "Farbenblind EP",
+        "subtitle": "Nina Chuba",
+        "meta": "6 plays",
+        "art_path": "nina_chuba_farbenblind_ep.jpg",
+        "art_key": "period_album_2mzXddPCtNlGzttAcr97ON"
+      },
+      {
+        "title": "None Shall Pass",
+        "subtitle": "Aesop Rock",
+        "meta": "22 plays",
+        "art_path": "aesop_rock_none_shall_pass.jpg",
+        "art_key": "period_album_0u5NLD5OgDGDlpCIia1Igx"
+      },
+      {
+        "title": "Entertainment!",
+        "subtitle": "Gang Of Four",
+        "meta": "24 plays",
+        "art_path": "gang_of_four_entertainment.jpg",
+        "art_key": "period_album_7LMOo068Ndv0wjTGUDtYqK"
       },
       {
         "title": "NEVER ENOUGH",
@@ -2163,13 +2163,6 @@
         "art_key": "period_album_2z9lM6LDS58F70IGyQ1XMK"
       },
       {
-        "title": "Hatful of Hollow",
-        "subtitle": "The Smiths",
-        "meta": "26 plays \u00b7 2 days",
-        "art_path": "the_smiths_hatful_of_hollow.jpg",
-        "art_key": "period_album_1j57Q5ntVi7crpibb0h4sv"
-      },
-      {
         "title": "Teens Of Denial",
         "subtitle": "Car Seat Headrest",
         "meta": "16 plays",
@@ -2177,60 +2170,60 @@
         "art_key": "period_album_3KpYyDP8q8sUBxatHaYEsP"
       },
       {
-        "title": "Never for Ever (2018 Remaster)",
-        "subtitle": "Kate Bush",
-        "meta": "18 plays",
-        "art_path": "kate_bush_never_for_ever_2018_remaster.jpg",
-        "art_key": "period_album_7uNjeNs5AmDqZHzIbyPkZH"
-      },
-      {
-        "title": "The Battle Of Los Angeles",
-        "subtitle": "Rage Against The Machine",
+        "title": "808s & Heartbreak",
+        "subtitle": "Kanye West",
         "meta": "10 plays",
-        "art_path": "rage_against_the_machine_the_battle_of_los_angeles.jpg",
-        "art_key": "period_album_2eia0myWFgoHuttJytCxgX"
+        "art_path": "kanye_west_808s_heartbreak.jpg",
+        "art_key": "period_album_3WFTGIO6E3Xh4paEOBY9OU"
       },
       {
-        "title": "The Idler Wheel Is Wiser Than the Driver of the Screw and Whipping Cords Will Serve You More Than Ropes Will Ever Do (Expanded Edition)",
-        "subtitle": "Fiona Apple",
-        "meta": "11 plays",
-        "art_path": "fiona_apple_the_idler_wheel_is_wiser_than_the_driver_of_the_.jpg",
-        "art_key": "period_album_6B5favhKTShFTjRLsKIUfa"
+        "title": "Animals",
+        "subtitle": "Pink Floyd",
+        "meta": "4 plays",
+        "art_path": "pink_floyd_animals.jpg",
+        "art_key": "period_album_3b4E89rxzZQ9zkhgKpj8N4"
       },
       {
-        "title": "Hounds of Love (2018 Remaster)",
-        "subtitle": "Kate Bush",
-        "meta": "11 plays",
-        "art_path": "kate_bush_hounds_of_love_2018_remaster.jpg",
-        "art_key": "period_album_1ww8GdNvrF0dgJbrnVZmAr"
-      },
-      {
-        "title": "Let It Be",
-        "subtitle": "The Replacements",
+        "title": "Silent Shout",
+        "subtitle": "The Knife",
         "meta": "10 plays",
-        "art_path": "the_replacements_let_it_be.jpg",
-        "art_key": "period_album_2sOLW5TSgXiLZBacdHxO6m"
+        "art_path": "the_knife_silent_shout.jpg",
+        "art_key": "period_album_1UdCT7t0rfNPu5Bn957U8r"
       },
       {
-        "title": "Weezer",
-        "subtitle": "Weezer",
-        "meta": "14 plays",
-        "art_path": "weezer_weezer.jpg",
-        "art_key": "period_album_3hcrTu8zeynChXDOJt3lX2"
+        "title": "Right Now, You're in the Best of Hands",
+        "subtitle": "Bear Vs. Shark",
+        "meta": "10 plays",
+        "art_path": "bear_vs_shark_right_now_youre_in_the_best_of_hands.jpg",
+        "art_key": "period_album_0pGIIPdSojJ3t4yCIQWM78"
       },
       {
-        "title": "Ege Bamyasi (Remastered Version)",
-        "subtitle": "CAN",
-        "meta": "18 plays",
-        "art_path": "can_ege_bamyasi_remastered_version.jpg",
-        "art_key": "period_album_3Qa2CdymyGvXkqoqIZykmT"
+        "title": "Electric Ladyland",
+        "subtitle": "Jimi Hendrix",
+        "meta": "13 plays",
+        "art_path": "jimi_hendrix_electric_ladyland.jpg",
+        "art_key": "period_album_5z090LQztiqh13wYspQvKQ"
       },
       {
-        "title": "None Shall Pass",
-        "subtitle": "Aesop Rock",
-        "meta": "22 plays",
-        "art_path": "aesop_rock_none_shall_pass.jpg",
-        "art_key": "period_album_0u5NLD5OgDGDlpCIia1Igx"
+        "title": "Diaspora Problems",
+        "subtitle": "Soul Glo",
+        "meta": "10 plays",
+        "art_path": "soul_glo_diaspora_problems.jpg",
+        "art_key": "period_album_2ZYhM0LXHZ38te98EizcQW"
+      },
+      {
+        "title": "First Two Seven Inches",
+        "subtitle": "Minor Threat",
+        "meta": "12 plays",
+        "art_path": "minor_threat_first_two_seven_inches.jpg",
+        "art_key": "period_album_6Sty6rLnMTXFjKxKUZEfmy"
+      },
+      {
+        "title": "If I Knew What I Knew Then",
+        "subtitle": "Hot Rod Circuit",
+        "meta": "9 plays",
+        "art_path": "hot_rod_circuit_if_i_knew_what_i_knew_then.jpg",
+        "art_key": "period_album_4WIa7YKywqk8lXEvR5cx76"
       }
     ],
     "top_new_artist": {
@@ -2312,81 +2305,18 @@
     ],
     "album_tiles": [
       {
-        "title": "The Ugly Organ",
-        "subtitle": "Cursive",
-        "meta": "40 plays",
-        "art_path": "cursive_the_ugly_organ.jpg",
-        "art_key": "period_album_3ZoVW62G8g8GC0yzpXOcKz"
-      },
-      {
-        "title": "Doolittle",
-        "subtitle": "Pixies",
-        "meta": "24 plays",
-        "art_path": "pixies_doolittle.jpg",
-        "art_key": "period_album_0DQyTVcDhK9wm0f6RaErWO"
-      },
-      {
-        "title": "The Life Of Pablo",
-        "subtitle": "Kanye West",
-        "meta": "20 plays",
-        "art_path": "kanye_west_the_life_of_pablo.jpg",
-        "art_key": "period_album_7gsWAHLeT0w7es6FofOXk1"
-      },
-      {
-        "title": "You're Gonna Miss It All",
-        "subtitle": "Modern Baseball",
-        "meta": "10 plays",
-        "art_path": "modern_baseball_youre_gonna_miss_it_all.jpg",
-        "art_key": "period_album_4QElAwQufg6wCeyvpafqwA"
-      },
-      {
-        "title": "Va totalmente en serio...",
-        "subtitle": "Aiko el grupo",
-        "meta": "18 plays",
-        "art_path": "aiko_el_grupo_va_totalmente_en_serio.jpg",
-        "art_key": "period_album_7olidubXJ7Q1dM8CsMg044"
-      },
-      {
-        "title": "My Beautiful Dark Twisted Fantasy",
-        "subtitle": "Kanye West",
-        "meta": "9 plays",
-        "art_path": "kanye_west_my_beautiful_dark_twisted_fantasy.jpg",
-        "art_key": "period_album_20r762YmB5HeofjMCiPMLv"
-      },
-      {
-        "title": "Logos",
-        "subtitle": "Atlas Sound",
-        "meta": "9 plays",
-        "art_path": "atlas_sound_logos.jpg",
-        "art_key": "period_album_5j6RB5MpNUKWJJ2uxibdJh"
-      },
-      {
-        "title": "I Got Heaven",
-        "subtitle": "Mannequin Pussy",
-        "meta": "9 plays",
-        "art_path": "mannequin_pussy_i_got_heaven.jpg",
-        "art_key": "period_album_5ROzqM7rbMYoKbQIw4i7fp"
-      },
-      {
-        "title": "Surfer Rosa (2007 Remaster)",
-        "subtitle": "Pixies",
-        "meta": "12 plays",
-        "art_path": "pixies_surfer_rosa_2007_remaster.jpg",
-        "art_key": "period_album_50j4Wm1b9hLpSpPIA39Vp9"
-      },
-      {
-        "title": "Straight Outta Compton",
-        "subtitle": "N.W.A.",
-        "meta": "11 plays \u00b7 2 days",
-        "art_path": "nwa_straight_outta_compton.jpg",
-        "art_key": "period_album_0Y7qkJVZ06tS2GUCDptzyW"
-      },
-      {
         "title": "The Black Saint And The Sinner Lady",
         "subtitle": "Charles Mingus",
         "meta": "9 plays",
         "art_path": "charles_mingus_the_black_saint_and_the_sinner_lady.jpg",
         "art_key": "period_album_6Sts4Yh7KsDFwq2yTWrGGV"
+      },
+      {
+        "title": "ELOWI",
+        "subtitle": "Yam\u00ea",
+        "meta": "12 plays",
+        "art_path": "yam\u00ea_elowi.jpg",
+        "art_key": "period_album_49TUnWv5swURA9osAyLHI2"
       },
       {
         "title": "Aromanticism",
@@ -2403,6 +2333,13 @@
         "art_key": "period_album_7dBUmXkVXyQv60PoAWZAa1"
       },
       {
+        "title": "Doolittle",
+        "subtitle": "Pixies",
+        "meta": "24 plays",
+        "art_path": "pixies_doolittle.jpg",
+        "art_key": "period_album_0DQyTVcDhK9wm0f6RaErWO"
+      },
+      {
         "title": "Funhouse",
         "subtitle": "The Stooges",
         "meta": "12 plays",
@@ -2417,11 +2354,67 @@
         "art_key": "period_album_2guirTSEqLizK7j9i1MTTZ"
       },
       {
+        "title": "good kid, m.A.A.d city",
+        "subtitle": "Kendrick Lamar",
+        "meta": "4 plays",
+        "art_path": "kendrick_lamar_good_kid_maad_city.jpg",
+        "art_key": "period_album_0E47vczx9XVds1Lr2Y8rze"
+      },
+      {
+        "title": "Whenever, If Ever",
+        "subtitle": "The World Is A Beautiful Place & I Am No Longer Afraid To Die",
+        "meta": "4 plays",
+        "art_path": "the_world_is_a_beautiful_place_i_am_no_longer_af_whenever_if_ever.jpg",
+        "art_key": "period_album_40C7bBDW77dS5BBbNzcdmm"
+      },
+      {
+        "title": "The Life Of Pablo",
+        "subtitle": "Kanye West",
+        "meta": "20 plays",
+        "art_path": "kanye_west_the_life_of_pablo.jpg",
+        "art_key": "period_album_7gsWAHLeT0w7es6FofOXk1"
+      },
+      {
         "title": "Son Of Spergy",
         "subtitle": "Daniel Caesar",
         "meta": "12 plays",
         "art_path": "daniel_caesar_son_of_spergy.jpg",
         "art_key": "period_album_2LKW0m9cC63QzEI9tJH3ql"
+      },
+      {
+        "title": "You're Gonna Miss It All",
+        "subtitle": "Modern Baseball",
+        "meta": "10 plays",
+        "art_path": "modern_baseball_youre_gonna_miss_it_all.jpg",
+        "art_key": "period_album_4QElAwQufg6wCeyvpafqwA"
+      },
+      {
+        "title": "Wild Is The Wind",
+        "subtitle": "Nina Simone",
+        "meta": "9 plays",
+        "art_path": "nina_simone_wild_is_the_wind.jpg",
+        "art_key": "period_album_2EYVXfypcucR62WMKJl6Mr"
+      },
+      {
+        "title": "Come On Pilgrim",
+        "subtitle": "Pixies",
+        "meta": "8 plays",
+        "art_path": "pixies_come_on_pilgrim.jpg",
+        "art_key": "period_album_79CvxovoFgGNuAMvQp9wul"
+      },
+      {
+        "title": "Carry on Kid",
+        "subtitle": "Worthwhile",
+        "meta": "9 plays",
+        "art_path": "worthwhile_carry_on_kid.jpg",
+        "art_key": "period_album_6C5ED5twSt8dEbiffbFNe2"
+      },
+      {
+        "title": "Logos",
+        "subtitle": "Atlas Sound",
+        "meta": "9 plays",
+        "art_path": "atlas_sound_logos.jpg",
+        "art_key": "period_album_5j6RB5MpNUKWJJ2uxibdJh"
       }
     ],
     "top_new_artist": {
@@ -2517,60 +2510,11 @@
         "art_key": "period_album_6GEO5pSp3ojwIm9vZqTtRd"
       },
       {
-        "title": "Microcastle",
-        "subtitle": "Deerhunter",
-        "meta": "22 plays",
-        "art_path": "deerhunter_microcastle.jpg",
-        "art_key": "period_album_4wJ585ippGitIpRcGs1GD7"
-      },
-      {
-        "title": "Damaged",
-        "subtitle": "Black Flag",
-        "meta": "28 plays",
-        "art_path": "black_flag_damaged.jpg",
-        "art_key": "period_album_34aFnrFRBlErcbU6moRZR3"
-      },
-      {
         "title": "3 Feet High and Rising",
         "subtitle": "De La Soul",
         "meta": "20 plays",
         "art_path": "de_la_soul_3_feet_high_and_rising.jpg",
         "art_key": "period_album_34LxHI9x14qXUOS8AWRrYD"
-      },
-      {
-        "title": "Previs\u00e3o Do Tempo",
-        "subtitle": "Marcos Valle",
-        "meta": "12 plays",
-        "art_path": "marcos_valle_previs\u00e3o_do_tempo.jpg",
-        "art_key": "period_album_4SrPTE9sLJTE8mpeWFUhRL"
-      },
-      {
-        "title": "Treasure",
-        "subtitle": "Cocteau Twins",
-        "meta": "10 plays",
-        "art_path": "cocteau_twins_treasure.jpg",
-        "art_key": "period_album_7pBPB9vwqCMLKNmUCK4k62"
-      },
-      {
-        "title": "Rain Dogs (2023 Remaster)",
-        "subtitle": "Tom Waits",
-        "meta": "18 plays",
-        "art_path": "tom_waits_rain_dogs_2023_remaster.jpg",
-        "art_key": "period_album_51CvLH7MxsLuFgTwVvzApx"
-      },
-      {
-        "title": "Seduzir",
-        "subtitle": "Djavan",
-        "meta": "8 plays",
-        "art_path": "djavan_seduzir.jpg",
-        "art_key": "period_album_52WarR7rVx473Mdvbu4tVF"
-      },
-      {
-        "title": "Low (2017 Remaster)",
-        "subtitle": "David Bowie",
-        "meta": "11 plays",
-        "art_path": "david_bowie_low_2017_remaster.jpg",
-        "art_key": "period_album_2de6LD7eOW8zrlorbS28na"
       },
       {
         "title": "Person Pitch",
@@ -2587,18 +2531,32 @@
         "art_key": "period_album_3DSPggBtjAU0GtOSdNNn6x"
       },
       {
-        "title": "A Love Supreme",
-        "subtitle": "John Coltrane",
-        "meta": "2 plays",
-        "art_path": "john_coltrane_a_love_supreme.jpg",
-        "art_key": "period_album_7Eoz7hJvaX1eFkbpQxC5PA"
-      },
-      {
         "title": "Marcos Valle",
         "subtitle": "Marcos Valle",
         "meta": "9 plays",
         "art_path": "marcos_valle_marcos_valle.jpg",
         "art_key": "period_album_0FOAFmdS9StYdW3hrSnJCe"
+      },
+      {
+        "title": "Microcastle",
+        "subtitle": "Deerhunter",
+        "meta": "22 plays",
+        "art_path": "deerhunter_microcastle.jpg",
+        "art_key": "period_album_4wJ585ippGitIpRcGs1GD7"
+      },
+      {
+        "title": "Damaged",
+        "subtitle": "Black Flag",
+        "meta": "28 plays",
+        "art_path": "black_flag_damaged.jpg",
+        "art_key": "period_album_34aFnrFRBlErcbU6moRZR3"
+      },
+      {
+        "title": "A Love Supreme",
+        "subtitle": "John Coltrane",
+        "meta": "2 plays",
+        "art_path": "john_coltrane_a_love_supreme.jpg",
+        "art_key": "period_album_7Eoz7hJvaX1eFkbpQxC5PA"
       },
       {
         "title": "The Lion and the Cobra",
@@ -2613,6 +2571,20 @@
         "meta": "3 plays",
         "art_path": "aiko_el_grupo_no_te_has_enterado.jpg",
         "art_key": "period_album_3kINWHNCGlbYI56ZaRX8OY"
+      },
+      {
+        "title": "Let It Bleed",
+        "subtitle": "The Rolling Stones",
+        "meta": "9 plays",
+        "art_path": "the_rolling_stones_let_it_bleed.jpg",
+        "art_key": "period_album_4l4u9e9jSbotSXNjYfOugy"
+      },
+      {
+        "title": "A tomar por culo",
+        "subtitle": "Aiko el grupo",
+        "meta": "2 plays",
+        "art_path": "aiko_el_grupo_a_tomar_por_culo.jpg",
+        "art_key": "period_album_1u0KpgKOxJZY5wVrfbveOB"
       }
     ],
     "top_new_artist": {
@@ -2815,25 +2787,11 @@
     ],
     "album_tiles": [
       {
-        "title": "RENAISSANCE",
-        "subtitle": "Beyonc\u00e9",
-        "meta": "30 plays",
-        "art_path": "beyonc\u00e9_renaissance.jpg",
-        "art_key": "period_album_6FJxoadUE4JNVwWHghBwnb"
-      },
-      {
-        "title": "xx",
-        "subtitle": "The xx",
-        "meta": "14 plays",
-        "art_path": "the_xx_xx.jpg",
-        "art_key": "period_album_2av2ZSHlvD7rvLSsMvtYCG"
-      },
-      {
-        "title": "BEYONC\u00c9 [Platinum Edition]",
-        "subtitle": "Beyonc\u00e9",
-        "meta": "17 plays",
-        "art_path": "beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg",
-        "art_key": "period_album_2UJwKSBUz6rtW4QLK74kQu"
+        "title": "Within and Without",
+        "subtitle": "Washed Out",
+        "meta": "27 plays",
+        "art_path": "washed_out_within_and_without.jpg",
+        "art_key": "period_album_1TwAADd8Z8C1GeeCSaXTNr"
       },
       {
         "title": "Small Steps, Heavy Hooves",
@@ -2841,6 +2799,13 @@
         "meta": "26 plays",
         "art_path": "dear_and_the_headlights_small_steps_heavy_hooves.jpg",
         "art_key": "period_album_2btXQFitnklvkPC0dAIvAx"
+      },
+      {
+        "title": "RENAISSANCE",
+        "subtitle": "Beyonc\u00e9",
+        "meta": "30 plays",
+        "art_path": "beyonc\u00e9_renaissance.jpg",
+        "art_key": "period_album_6FJxoadUE4JNVwWHghBwnb"
       },
       {
         "title": "Merriweather Post Pavilion",
@@ -2876,6 +2841,20 @@
         "meta": "10 plays",
         "art_path": "stormzy_this_is_what_i_mean.jpg",
         "art_key": "period_album_5feRs2ejrMcxuM5hcDDSBb"
+      },
+      {
+        "title": "Blind Melon",
+        "subtitle": "Blind Melon",
+        "meta": "13 plays",
+        "art_path": "blind_melon_blind_melon.jpg",
+        "art_key": "period_album_0A6yLV44DEhpwXB7cyvLEP"
+      },
+      {
+        "title": "BEYONC\u00c9 [Platinum Edition]",
+        "subtitle": "Beyonc\u00e9",
+        "meta": "17 plays",
+        "art_path": "beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg",
+        "art_key": "period_album_2UJwKSBUz6rtW4QLK74kQu"
       },
       {
         "title": "Ocean Beach",
@@ -2971,25 +2950,11 @@
     ],
     "album_tiles": [
       {
-        "title": "Admiral Fell Promises",
-        "subtitle": "Sun Kil Moon",
-        "meta": "45 plays",
-        "art_path": "sun_kil_moon_admiral_fell_promises.jpg",
-        "art_key": "period_album_77AYdae70ldovpvRPS0Xjc"
-      },
-      {
-        "title": "Songs For A Blue Guitar",
-        "subtitle": "Red House Painters",
-        "meta": "11 plays",
-        "art_path": "red_house_painters_songs_for_a_blue_guitar.jpg",
-        "art_key": "period_album_7HLVI2NCQz5DzL8VsB9A56"
-      },
-      {
-        "title": "Gal Tropical",
-        "subtitle": "Gal Costa",
-        "meta": "5 plays",
-        "art_path": "gal_costa_gal_tropical.jpg",
-        "art_key": "period_album_1Vjf7xPNvBhqKnAR4rAXR2"
+        "title": "In Rainbows",
+        "subtitle": "Radiohead",
+        "meta": "9 plays",
+        "art_path": "radiohead_in_rainbows.jpg",
+        "art_key": "period_album_5vkqYmiPBYLaalcmjujWxK"
       },
       {
         "title": "Old Ramon",
@@ -2999,13 +2964,6 @@
         "art_key": "period_album_4rL0RzmHMQyHiZqJVdt7A8"
       },
       {
-        "title": "Milton",
-        "subtitle": "Milton Nascimento",
-        "meta": "14 plays",
-        "art_path": "milton_nascimento_milton.jpg",
-        "art_key": "period_album_6GPL5sMWxYibGoKnarlqUk"
-      },
-      {
         "title": "Kid A",
         "subtitle": "Radiohead",
         "meta": "11 plays",
@@ -3013,11 +2971,11 @@
         "art_key": "period_album_6GjwtEZcfenmOf6l18N7T7"
       },
       {
-        "title": "Benji",
-        "subtitle": "Sun Kil Moon",
-        "meta": "10 plays",
-        "art_path": "sun_kil_moon_benji.jpg",
-        "art_key": "period_album_2y2QZ4uDpzoZHgH2il5Ktu"
+        "title": "Songs For A Blue Guitar",
+        "subtitle": "Red House Painters",
+        "meta": "11 plays",
+        "art_path": "red_house_painters_songs_for_a_blue_guitar.jpg",
+        "art_key": "period_album_7HLVI2NCQz5DzL8VsB9A56"
       },
       {
         "title": "Since I Left You (20th Anniversary Deluxe Edition)",
@@ -3027,11 +2985,46 @@
         "art_key": "period_album_0YtYaaO0aipyeQl0xhAWTO"
       },
       {
+        "title": "Hazards Of Love",
+        "subtitle": "The Decemberists",
+        "meta": "6 plays",
+        "art_path": "the_decemberists_hazards_of_love.jpg",
+        "art_key": "period_album_4yngOTPwtS3iypFBwU5qqR"
+      },
+      {
         "title": "Farol da Barra",
         "subtitle": "Novos Baianos",
         "meta": "13 plays",
         "art_path": "novos_baianos_farol_da_barra.jpg",
         "art_key": "period_album_6R4gL2dyrbGpmgBOH9kvci"
+      },
+      {
+        "title": "Red House Painters I",
+        "subtitle": "Red House Painters",
+        "meta": "13 plays",
+        "art_path": "red_house_painters_red_house_painters_i.jpg",
+        "art_key": "period_album_3F9xD3Dg2zu2LZbVHdKeVD"
+      },
+      {
+        "title": "Admiral Fell Promises",
+        "subtitle": "Sun Kil Moon",
+        "meta": "45 plays",
+        "art_path": "sun_kil_moon_admiral_fell_promises.jpg",
+        "art_key": "period_album_77AYdae70ldovpvRPS0Xjc"
+      },
+      {
+        "title": "Milton",
+        "subtitle": "Milton Nascimento",
+        "meta": "14 plays",
+        "art_path": "milton_nascimento_milton.jpg",
+        "art_key": "period_album_6GPL5sMWxYibGoKnarlqUk"
+      },
+      {
+        "title": "Benji",
+        "subtitle": "Sun Kil Moon",
+        "meta": "10 plays",
+        "art_path": "sun_kil_moon_benji.jpg",
+        "art_key": "period_album_2y2QZ4uDpzoZHgH2il5Ktu"
       },
       {
         "title": "Is This It",
@@ -3046,13 +3039,6 @@
         "meta": "14 plays",
         "art_path": "brian_eno_another_green_world_2004_remaster.jpg",
         "art_key": "period_album_6uoeezh45SYEb8lcT8gDTY"
-      },
-      {
-        "title": "Red House Painters I",
-        "subtitle": "Red House Painters",
-        "meta": "13 plays",
-        "art_path": "red_house_painters_red_house_painters_i.jpg",
-        "art_key": "period_album_3F9xD3Dg2zu2LZbVHdKeVD"
       },
       {
         "title": "Ca\u00e7a A Raposa",
@@ -3074,13 +3060,6 @@
         "meta": "1 plays",
         "art_path": "atoms_for_peace_before_your_very_eyes_magic_beanz.jpg",
         "art_key": "period_album_08INtxsSmKWULibGC7DYDP"
-      },
-      {
-        "title": "Four Cornered Night",
-        "subtitle": "Jets To Brazil",
-        "meta": "12 plays",
-        "art_path": "jets_to_brazil_four_cornered_night.jpg",
-        "art_key": "period_album_2PRXw6VTFXoTBmeXerbf3z"
       }
     ],
     "top_new_artist": {
@@ -3162,6 +3141,13 @@
     ],
     "album_tiles": [
       {
+        "title": "Diamond Life",
+        "subtitle": "Sade",
+        "meta": "12 plays",
+        "art_path": "sade_diamond_life.jpg",
+        "art_key": "period_album_3JcNnjMVSKiNpqhErZarW0"
+      },
+      {
         "title": "A Seat at the Table",
         "subtitle": "Solange",
         "meta": "38 plays",
@@ -3174,34 +3160,6 @@
         "meta": "20 plays",
         "art_path": "maria_beth\u00e2nia_\u00e1libi.jpg",
         "art_key": "period_album_4hjiHP3NIIzyYUgfs145zr"
-      },
-      {
-        "title": "London Calling (Remastered)",
-        "subtitle": "The Clash",
-        "meta": "32 plays",
-        "art_path": "the_clash_london_calling_remastered.jpg",
-        "art_key": "period_album_6FCzvataOZh68j8OKzOt9a"
-      },
-      {
-        "title": "Stage Four (Deluxe Edition)",
-        "subtitle": "Touch\u00e9 Amor\u00e9",
-        "meta": "6 plays",
-        "art_path": "touch\u00e9_amor\u00e9_stage_four_deluxe_edition.jpg",
-        "art_key": "period_album_6KiS2t3EapTmHSt9xGUqe7"
-      },
-      {
-        "title": "AMOK",
-        "subtitle": "Atoms For Peace",
-        "meta": "8 plays",
-        "art_path": "atoms_for_peace_amok.jpg",
-        "art_key": "period_album_77Ie9frENeQwYUGHrrS0pk"
-      },
-      {
-        "title": "Gish (Remastered)",
-        "subtitle": "The Smashing Pumpkins",
-        "meta": "20 plays",
-        "art_path": "the_smashing_pumpkins_gish_remastered.jpg",
-        "art_key": "period_album_7wJTn94PWzZ3zE0lg3qhld"
       },
       {
         "title": "OK Computer",
@@ -3232,11 +3190,18 @@
         "art_key": "period_album_1R8kkopLT4IAxzMMkjic6X"
       },
       {
-        "title": "This Is Happening",
-        "subtitle": "LCD Soundsystem",
-        "meta": "7 plays",
-        "art_path": "lcd_soundsystem_this_is_happening.jpg",
-        "art_key": "period_album_4hnqM0JK4CM1phwfq1Ldyz"
+        "title": "Stage Four (Deluxe Edition)",
+        "subtitle": "Touch\u00e9 Amor\u00e9",
+        "meta": "6 plays",
+        "art_path": "touch\u00e9_amor\u00e9_stage_four_deluxe_edition.jpg",
+        "art_key": "period_album_6KiS2t3EapTmHSt9xGUqe7"
+      },
+      {
+        "title": "Unknown Pleasures",
+        "subtitle": "Joy Division",
+        "meta": "3 plays",
+        "art_path": "joy_division_unknown_pleasures.jpg",
+        "art_key": "period_album_5Dgqy4bBg09Rdw7CQM545s"
       },
       {
         "title": "Comiss\u00e3o De Frente",
@@ -3244,6 +3209,34 @@
         "meta": "9 plays",
         "art_path": "jo\u00e3o_bosco_comiss\u00e3o_de_frente.jpg",
         "art_key": "period_album_3391Q4zuKuz0JpHkmaJsQv"
+      },
+      {
+        "title": "AMOK",
+        "subtitle": "Atoms For Peace",
+        "meta": "8 plays",
+        "art_path": "atoms_for_peace_amok.jpg",
+        "art_key": "period_album_77Ie9frENeQwYUGHrrS0pk"
+      },
+      {
+        "title": "Gish (Remastered)",
+        "subtitle": "The Smashing Pumpkins",
+        "meta": "20 plays",
+        "art_path": "the_smashing_pumpkins_gish_remastered.jpg",
+        "art_key": "period_album_7wJTn94PWzZ3zE0lg3qhld"
+      },
+      {
+        "title": "London Calling (Remastered)",
+        "subtitle": "The Clash",
+        "meta": "32 plays",
+        "art_path": "the_clash_london_calling_remastered.jpg",
+        "art_key": "period_album_6FCzvataOZh68j8OKzOt9a"
+      },
+      {
+        "title": "This Is Happening",
+        "subtitle": "LCD Soundsystem",
+        "meta": "7 plays",
+        "art_path": "lcd_soundsystem_this_is_happening.jpg",
+        "art_key": "period_album_4hnqM0JK4CM1phwfq1Ldyz"
       },
       {
         "title": "April",
@@ -3258,13 +3251,6 @@
         "meta": "7 plays",
         "art_path": "red_house_painters_red_house_painters_ii.jpg",
         "art_key": "period_album_5tXmkwvOs934YJL26kgLnb"
-      },
-      {
-        "title": "Tiny Cities",
-        "subtitle": "Sun Kil Moon",
-        "meta": "9 plays",
-        "art_path": "sun_kil_moon_tiny_cities.jpg",
-        "art_key": "period_album_3bVDZOD7EnPkxludwZUidT"
       }
     ],
     "top_new_artist": {
@@ -3346,6 +3332,13 @@
     ],
     "album_tiles": [
       {
+        "title": "The Age of Adz",
+        "subtitle": "Sufjan Stevens",
+        "meta": "9 plays",
+        "art_path": "sufjan_stevens_the_age_of_adz.jpg",
+        "art_key": "period_album_4kRMCapj9nEyBWnM0kc9OX"
+      },
+      {
         "title": "Loaded (2015 Remaster)",
         "subtitle": "The Velvet Underground",
         "meta": "22 plays",
@@ -3358,48 +3351,6 @@
         "meta": "15 plays",
         "art_path": "bad_bunny_un_verano_sin_ti.jpg",
         "art_key": "period_album_3RQQmkQEvNCY4prGKE6oc5"
-      },
-      {
-        "title": "DeB\u00cd TiRAR M\u00e1S FOToS",
-        "subtitle": "Bad Bunny",
-        "meta": "14 plays",
-        "art_path": "bad_bunny_deb\u00ed_tirar_m\u00e1s_fotos.jpg",
-        "art_key": "period_album_5K79FLRUCSysQnVESLcTdb"
-      },
-      {
-        "title": "Blonde",
-        "subtitle": "Frank Ocean",
-        "meta": "15 plays",
-        "art_path": "frank_ocean_blonde.jpg",
-        "art_key": "period_album_3mH6qwIy9crq0I9YQbOuDf"
-      },
-      {
-        "title": "Among the Leaves",
-        "subtitle": "Sun Kil Moon",
-        "meta": "16 plays",
-        "art_path": "sun_kil_moon_among_the_leaves.jpg",
-        "art_key": "period_album_1uIM6TngoKF0S8oPaDZPvv"
-      },
-      {
-        "title": "A Better View Of The Rising Moon",
-        "subtitle": "1997",
-        "meta": "7 plays",
-        "art_path": "1997_a_better_view_of_the_rising_moon.jpg",
-        "art_key": "period_album_3FR05gmeoVRYr2i1MKqrcn"
-      },
-      {
-        "title": "Is a Real Boy",
-        "subtitle": "Say Anything",
-        "meta": "20 plays",
-        "art_path": "say_anything_is_a_real_boy.jpg",
-        "art_key": "period_album_67GbWmsrvtIdOOUYRo7do7"
-      },
-      {
-        "title": "Mirrored",
-        "subtitle": "Battles",
-        "meta": "11 plays",
-        "art_path": "battles_mirrored.jpg",
-        "art_key": "period_album_64shsDEnphK07flo3DzWAc"
       },
       {
         "title": "Tigers Jaw",
@@ -3423,6 +3374,20 @@
         "art_key": "period_album_1DMMv1Kmoli3Y9fVEZDUVC"
       },
       {
+        "title": "Takk...",
+        "subtitle": "Sigur R\u00f3s",
+        "meta": "5 plays",
+        "art_path": "sigur_r\u00f3s_takk.jpg",
+        "art_key": "period_album_12tw1A9HmwE3MHvPfHhdoP"
+      },
+      {
+        "title": "DeB\u00cd TiRAR M\u00e1S FOToS",
+        "subtitle": "Bad Bunny",
+        "meta": "14 plays",
+        "art_path": "bad_bunny_deb\u00ed_tirar_m\u00e1s_fotos.jpg",
+        "art_key": "period_album_5K79FLRUCSysQnVESLcTdb"
+      },
+      {
         "title": "Let It Enfold You",
         "subtitle": "Senses Fail",
         "meta": "11 plays",
@@ -3444,6 +3409,13 @@
         "art_key": "period_album_5CtxgcqieOcYKyQjGKI0nY"
       },
       {
+        "title": "Blonde",
+        "subtitle": "Frank Ocean",
+        "meta": "15 plays",
+        "art_path": "frank_ocean_blonde.jpg",
+        "art_key": "period_album_3mH6qwIy9crq0I9YQbOuDf"
+      },
+      {
         "title": "More Than Any Other Day",
         "subtitle": "Ought",
         "meta": "8 plays",
@@ -3451,11 +3423,25 @@
         "art_key": "period_album_0uOPPNiTA3k0HNvqKWcuSb"
       },
       {
-        "title": "Perch Patchwork",
-        "subtitle": "Maps & Atlases",
-        "meta": "10 plays",
-        "art_path": "maps_atlases_perch_patchwork.jpg",
-        "art_key": "period_album_5gbzC8YyCxUyb7Sh8veOWE"
+        "title": "Among the Leaves",
+        "subtitle": "Sun Kil Moon",
+        "meta": "16 plays",
+        "art_path": "sun_kil_moon_among_the_leaves.jpg",
+        "art_key": "period_album_1uIM6TngoKF0S8oPaDZPvv"
+      },
+      {
+        "title": "The Joshua Tree",
+        "subtitle": "U2",
+        "meta": "11 plays",
+        "art_path": "u2_the_joshua_tree.jpg",
+        "art_key": "period_album_5vBZRYu2GLA65nfxBvG1a7"
+      },
+      {
+        "title": "A Better View Of The Rising Moon",
+        "subtitle": "1997",
+        "meta": "7 plays",
+        "art_path": "1997_a_better_view_of_the_rising_moon.jpg",
+        "art_key": "period_album_3FR05gmeoVRYr2i1MKqrcn"
       }
     ],
     "top_new_artist": {
@@ -3558,32 +3544,18 @@
         "art_key": "period_album_1nJQWexPwURsCTkp2THvg1"
       },
       {
-        "title": "The Miseducation of Lauryn Hill",
-        "subtitle": "Ms. Lauryn Hill",
-        "meta": "13 plays",
-        "art_path": "ms_lauryn_hill_the_miseducation_of_lauryn_hill.jpg",
-        "art_key": "period_album_1BZoqf8Zje5nGdwZhOjAtD"
+        "title": "Takk...",
+        "subtitle": "Sigur R\u00f3s",
+        "meta": "5 plays",
+        "art_path": "sigur_r\u00f3s_takk.jpg",
+        "art_key": "period_album_12tw1A9HmwE3MHvPfHhdoP"
       },
       {
-        "title": "Trace (Remastered)",
-        "subtitle": "Son Volt",
-        "meta": "9 plays",
-        "art_path": "son_volt_trace_remastered.jpg",
-        "art_key": "period_album_1SV1Fh8rLes7MeTYTXznKd"
-      },
-      {
-        "title": "Ready to Die (The Remaster)",
-        "subtitle": "The Notorious B.I.G.",
-        "meta": "17 plays",
-        "art_path": "the_notorious_big_ready_to_die_the_remaster.jpg",
-        "art_key": "period_album_2HTbQ0RHwukKVXAlTmCZP2"
-      },
-      {
-        "title": "Retratos",
-        "subtitle": "L\u00f4 Borges",
+        "title": "Siamese Dream (Deluxe Edition)",
+        "subtitle": "The Smashing Pumpkins",
         "meta": "11 plays",
-        "art_path": "l\u00f4_borges_retratos.jpg",
-        "art_key": "period_album_2ngEpie4g3Z2xtZhhwCAxH"
+        "art_path": "the_smashing_pumpkins_siamese_dream_deluxe_edition.jpg",
+        "art_key": "period_album_0bQglEvsHphrS19FGODEGo"
       },
       {
         "title": "Funeral",
@@ -3591,6 +3563,20 @@
         "meta": "9 plays",
         "art_path": "arcade_fire_funeral.jpg",
         "art_key": "period_album_6ZB8qaR9JNuS0Q0bG1nbcH"
+      },
+      {
+        "title": "The Miseducation of Lauryn Hill",
+        "subtitle": "Ms. Lauryn Hill",
+        "meta": "13 plays",
+        "art_path": "ms_lauryn_hill_the_miseducation_of_lauryn_hill.jpg",
+        "art_key": "period_album_1BZoqf8Zje5nGdwZhOjAtD"
+      },
+      {
+        "title": "What It Takes To Move Forward",
+        "subtitle": "empire! empire! (i was a lonely estate)",
+        "meta": "6 plays",
+        "art_path": "empire_empire_i_was_a_lonely_estate_what_it_takes_to_move_forward.jpg",
+        "art_key": "period_album_3wLCCtHNSLsDpIItmWZzS9"
       },
       {
         "title": "Marquee Moon",
@@ -3607,11 +3593,11 @@
         "art_key": "period_album_4nKfZbCALT9H9LfedtDwnZ"
       },
       {
-        "title": "Neon Bible",
-        "subtitle": "Arcade Fire",
-        "meta": "10 plays",
-        "art_path": "arcade_fire_neon_bible.jpg",
-        "art_key": "period_album_4GT6uZod4p5RiDMOVHOMme"
+        "title": "Trace (Remastered)",
+        "subtitle": "Son Volt",
+        "meta": "9 plays",
+        "art_path": "son_volt_trace_remastered.jpg",
+        "art_key": "period_album_1SV1Fh8rLes7MeTYTXznKd"
       },
       {
         "title": "Live Through This",
@@ -3628,25 +3614,25 @@
         "art_key": "period_album_5as7hQXIniGbaltqM0yJud"
       },
       {
+        "title": "Ready to Die (The Remaster)",
+        "subtitle": "The Notorious B.I.G.",
+        "meta": "17 plays",
+        "art_path": "the_notorious_big_ready_to_die_the_remaster.jpg",
+        "art_key": "period_album_2HTbQ0RHwukKVXAlTmCZP2"
+      },
+      {
+        "title": "Neon Bible",
+        "subtitle": "Arcade Fire",
+        "meta": "10 plays",
+        "art_path": "arcade_fire_neon_bible.jpg",
+        "art_key": "period_album_4GT6uZod4p5RiDMOVHOMme"
+      },
+      {
         "title": "The Velvet Underground & Nico 45th Anniversary",
         "subtitle": "The Velvet Underground",
         "meta": "9 plays",
         "art_path": "the_velvet_underground_the_velvet_underground_nico_45th_anniversary.jpg",
         "art_key": "period_album_4xwx0x7k6c5VuThz5qVqmV"
-      },
-      {
-        "title": "Those Who Tell the Truth Shall Die, Those Who Tell the Truth Shall Live Forever (Anniversary Edition)",
-        "subtitle": "Explosions In The Sky",
-        "meta": "12 plays",
-        "art_path": "explosions_in_the_sky_those_who_tell_the_truth_shall_die_those_who_tel.jpg",
-        "art_key": "period_album_2TmYd2YYLJ5dpKiL4pEqkD"
-      },
-      {
-        "title": "blink-182",
-        "subtitle": "blink-182",
-        "meta": "15 plays",
-        "art_path": "blink_182_blink_182.jpg",
-        "art_key": "period_album_4hBTxv4QRPePXCFcEI7Vjp"
       }
     ],
     "top_new_artist": {
@@ -3728,41 +3714,6 @@
     ],
     "album_tiles": [
       {
-        "title": "Gal Costa",
-        "subtitle": "Gal Costa",
-        "meta": "11 plays",
-        "art_path": "gal_costa_gal_costa.jpg",
-        "art_key": "period_album_5ZVLLME05cmciSZz4IGcZu"
-      },
-      {
-        "title": "Pope Killdragon",
-        "subtitle": "Strand of Oaks",
-        "meta": "9 plays",
-        "art_path": "strand_of_oaks_pope_killdragon.jpg",
-        "art_key": "period_album_36zXCG5IcivCTOrVAZSBZH"
-      },
-      {
-        "title": "Clube Da Esquina",
-        "subtitle": "L\u00f4 Borges",
-        "meta": "21 plays",
-        "art_path": "l\u00f4_borges_clube_da_esquina.jpg",
-        "art_key": "period_album_5risYG7klZCSLMNxB9dZhf"
-      },
-      {
-        "title": "Trans-Europe Express (2009 Remaster)",
-        "subtitle": "Kraftwerk",
-        "meta": "6 plays",
-        "art_path": "kraftwerk_trans_europe_express_2009_remaster.jpg",
-        "art_key": "period_album_0HHRIVjvBcnTepfeRVgS2f"
-      },
-      {
-        "title": "Stadium Arcadium",
-        "subtitle": "Red Hot Chili Peppers",
-        "meta": "11 plays",
-        "art_path": "red_hot_chili_peppers_stadium_arcadium.jpg",
-        "art_key": "period_album_7xl50xr9NDkd3i2kBbzsNZ"
-      },
-      {
         "title": "Computer World (2009 Remaster)",
         "subtitle": "Kraftwerk",
         "meta": "18 plays",
@@ -3805,11 +3756,25 @@
         "art_key": "period_album_49buCcKCJwxvdl0R2dMoIU"
       },
       {
+        "title": "Gal Costa",
+        "subtitle": "Gal Costa",
+        "meta": "11 plays",
+        "art_path": "gal_costa_gal_costa.jpg",
+        "art_key": "period_album_5ZVLLME05cmciSZz4IGcZu"
+      },
+      {
         "title": "The Velvet Underground (45th Anniversary)",
         "subtitle": "The Velvet Underground",
         "meta": "9 plays",
         "art_path": "the_velvet_underground_the_velvet_underground_45th_anniversary.jpg",
         "art_key": "period_album_2HOf3Nb44Us8U9oEtKLSrX"
+      },
+      {
+        "title": "Pope Killdragon",
+        "subtitle": "Strand of Oaks",
+        "meta": "9 plays",
+        "art_path": "strand_of_oaks_pope_killdragon.jpg",
+        "art_key": "period_album_36zXCG5IcivCTOrVAZSBZH"
       },
       {
         "title": "The Eraser",
@@ -3833,11 +3798,32 @@
         "art_key": "period_album_2BkhGv48TtChjKBwkC67eo"
       },
       {
+        "title": "Clube Da Esquina",
+        "subtitle": "L\u00f4 Borges",
+        "meta": "21 plays",
+        "art_path": "l\u00f4_borges_clube_da_esquina.jpg",
+        "art_key": "period_album_5risYG7klZCSLMNxB9dZhf"
+      },
+      {
+        "title": "Trans-Europe Express (2009 Remaster)",
+        "subtitle": "Kraftwerk",
+        "meta": "6 plays",
+        "art_path": "kraftwerk_trans_europe_express_2009_remaster.jpg",
+        "art_key": "period_album_0HHRIVjvBcnTepfeRVgS2f"
+      },
+      {
         "title": "Best Buds",
         "subtitle": "Mom Jeans.",
         "meta": "9 plays",
         "art_path": "mom_jeans_best_buds.jpg",
         "art_key": "period_album_0KzElSxcfAvleUIuOg0TOQ"
+      },
+      {
+        "title": "Light As A Feather",
+        "subtitle": "Azymuth",
+        "meta": "10 plays",
+        "art_path": "azymuth_light_as_a_feather.jpg",
+        "art_key": "period_album_4Bc3Vi6eMdJKEGN3haOTGF"
       }
     ],
     "top_new_artist": {
@@ -3926,27 +3912,6 @@
         "art_key": "period_album_35qZXJifEQcpWnKP6E4oNv"
       },
       {
-        "title": "Block out the Sun & Sleep",
-        "subtitle": "To The Wind",
-        "meta": "20 plays",
-        "art_path": "to_the_wind_block_out_the_sun_sleep.jpg",
-        "art_key": "period_album_3XQz5QVGMnDt8Kspu2HdOR"
-      },
-      {
-        "title": "Paul's Boutique (20th Anniversary Edition / Remastered)",
-        "subtitle": "Beastie Boys",
-        "meta": "21 plays",
-        "art_path": "beastie_boys_pauls_boutique_20th_anniversary_edition_remaster.jpg",
-        "art_key": "period_album_1kmyirVya5fRxdjsPFDM05"
-      },
-      {
-        "title": "The Unheavenly Creatures",
-        "subtitle": "Coheed and Cambria",
-        "meta": "14 plays",
-        "art_path": "coheed_and_cambria_the_unheavenly_creatures.jpg",
-        "art_key": "period_album_42S0lDJT9wHKCVaMGgqKdm"
-      },
-      {
         "title": "Raising Hell",
         "subtitle": "Run\u2013D.M.C.",
         "meta": "24 plays",
@@ -3982,13 +3947,6 @@
         "art_key": "period_album_0MtzNtKxLd7KthcSObeWJB"
       },
       {
-        "title": "Spiderland",
-        "subtitle": "Slint",
-        "meta": "5 plays",
-        "art_path": "slint_spiderland.jpg",
-        "art_key": "period_album_2NnkLRaeX33d1Mn8ZLgTo8"
-      },
-      {
         "title": "Cardinal (Expanded Edition)",
         "subtitle": "Pinegrove",
         "meta": "11 plays",
@@ -3996,11 +3954,32 @@
         "art_key": "period_album_4hsC5IvasDOCrWwM8UQ3N4"
       },
       {
+        "title": "Paul's Boutique (20th Anniversary Edition / Remastered)",
+        "subtitle": "Beastie Boys",
+        "meta": "21 plays",
+        "art_path": "beastie_boys_pauls_boutique_20th_anniversary_edition_remaster.jpg",
+        "art_key": "period_album_1kmyirVya5fRxdjsPFDM05"
+      },
+      {
+        "title": "Spiderland",
+        "subtitle": "Slint",
+        "meta": "5 plays",
+        "art_path": "slint_spiderland.jpg",
+        "art_key": "period_album_2NnkLRaeX33d1Mn8ZLgTo8"
+      },
+      {
         "title": "Helplessness Blues",
         "subtitle": "Fleet Foxes",
         "meta": "10 plays",
         "art_path": "fleet_foxes_helplessness_blues.jpg",
         "art_key": "period_album_7D0rCfJjFj9x0bdgRKtvzb"
+      },
+      {
+        "title": "The Unheavenly Creatures",
+        "subtitle": "Coheed and Cambria",
+        "meta": "14 plays",
+        "art_path": "coheed_and_cambria_the_unheavenly_creatures.jpg",
+        "art_key": "period_album_42S0lDJT9wHKCVaMGgqKdm"
       },
       {
         "title": "You're Not You Anymore",
@@ -4096,25 +4075,18 @@
     ],
     "album_tiles": [
       {
-        "title": "Vaya",
-        "subtitle": "At the Drive-In",
-        "meta": "35 plays",
-        "art_path": "at_the_drive_in_vaya.jpg",
-        "art_key": "period_album_1dQADTXF672pzeJPcRwjbs"
-      },
-      {
-        "title": "One Hot Minute (Deluxe Edition)",
-        "subtitle": "Red Hot Chili Peppers",
-        "meta": "32 plays",
-        "art_path": "red_hot_chili_peppers_one_hot_minute_deluxe_edition.jpg",
-        "art_key": "period_album_2rQ135imvelvp89D8eEZOi"
-      },
-      {
         "title": "Rites of Spring",
         "subtitle": "Rites of Spring",
         "meta": "32 plays",
         "art_path": "rites_of_spring_rites_of_spring.jpg",
         "art_key": "period_album_0pU2blS70BzVWyC1tVyaLg"
+      },
+      {
+        "title": "In the Aeroplane Over the Sea",
+        "subtitle": "Neutral Milk Hotel",
+        "meta": "9 plays",
+        "art_path": "neutral_milk_hotel_in_the_aeroplane_over_the_sea.jpg",
+        "art_key": "period_album_17q5eeNk3HAjX1gzQnkTX7"
       },
       {
         "title": "In Keeping Secrets Of Silent Earth: 3",
@@ -4138,27 +4110,6 @@
         "art_key": "period_album_6deiaArbeoqp1xPEGdEKp1"
       },
       {
-        "title": "Frame & Canvas",
-        "subtitle": "Braid",
-        "meta": "10 plays",
-        "art_path": "braid_frame_canvas.jpg",
-        "art_key": "period_album_4WBDw3hnJTvWXXDaCNKVqJ"
-      },
-      {
-        "title": "Remain in Light",
-        "subtitle": "Talking Heads",
-        "meta": "6 plays",
-        "art_path": "talking_heads_remain_in_light.jpg",
-        "art_key": "period_album_1JvXxLsm0PxlGH4LXzqMGq"
-      },
-      {
-        "title": "In the Aeroplane Over the Sea",
-        "subtitle": "Neutral Milk Hotel",
-        "meta": "9 plays",
-        "art_path": "neutral_milk_hotel_in_the_aeroplane_over_the_sea.jpg",
-        "art_key": "period_album_17q5eeNk3HAjX1gzQnkTX7"
-      },
-      {
         "title": "You're Living All Over Me",
         "subtitle": "Dinosaur Jr.",
         "meta": "9 plays",
@@ -4173,11 +4124,11 @@
         "art_key": "period_album_78MM8HrabEGPLVWaJkM2t1"
       },
       {
-        "title": "There's a Riot Goin' On",
-        "subtitle": "Sly & The Family Stone",
-        "meta": "11 plays",
-        "art_path": "sly_the_family_stone_theres_a_riot_goin_on.jpg",
-        "art_key": "period_album_29f2cOueckYE8Nc1pkJjrU"
+        "title": "Frame & Canvas",
+        "subtitle": "Braid",
+        "meta": "10 plays",
+        "art_path": "braid_frame_canvas.jpg",
+        "art_key": "period_album_4WBDw3hnJTvWXXDaCNKVqJ"
       },
       {
         "title": "Rat Saw God",
@@ -4185,6 +4136,34 @@
         "meta": "8 plays",
         "art_path": "wednesday_rat_saw_god.jpg",
         "art_key": "period_album_1oTR3aC0jYmwUlr9duBi05"
+      },
+      {
+        "title": "Vaya",
+        "subtitle": "At the Drive-In",
+        "meta": "35 plays",
+        "art_path": "at_the_drive_in_vaya.jpg",
+        "art_key": "period_album_1dQADTXF672pzeJPcRwjbs"
+      },
+      {
+        "title": "One Hot Minute (Deluxe Edition)",
+        "subtitle": "Red Hot Chili Peppers",
+        "meta": "32 plays",
+        "art_path": "red_hot_chili_peppers_one_hot_minute_deluxe_edition.jpg",
+        "art_key": "period_album_2rQ135imvelvp89D8eEZOi"
+      },
+      {
+        "title": "There's a Riot Goin' On",
+        "subtitle": "Sly & The Family Stone",
+        "meta": "11 plays",
+        "art_path": "sly_the_family_stone_theres_a_riot_goin_on.jpg",
+        "art_key": "period_album_29f2cOueckYE8Nc1pkJjrU"
+      },
+      {
+        "title": "Remain in Light",
+        "subtitle": "Talking Heads",
+        "meta": "6 plays",
+        "art_path": "talking_heads_remain_in_light.jpg",
+        "art_key": "period_album_1JvXxLsm0PxlGH4LXzqMGq"
       }
     ],
     "top_new_artist": {
@@ -4266,6 +4245,13 @@
     ],
     "album_tiles": [
       {
+        "title": "All Delighted People",
+        "subtitle": "Sufjan Stevens",
+        "meta": "28 plays",
+        "art_path": "sufjan_stevens_all_delighted_people.jpg",
+        "art_key": "period_album_1wnEAz2lDtNoUUZF0KStuo"
+      },
+      {
         "title": "Jesu / Sun Kil Moon",
         "subtitle": "Jesu/Sun Kil Moon",
         "meta": "30 plays",
@@ -4278,6 +4264,27 @@
         "meta": "23 plays",
         "art_path": "lorde_melodrama.jpg",
         "art_key": "period_album_2B87zXm9bOWvAJdkJBTpzF"
+      },
+      {
+        "title": "Black Messiah",
+        "subtitle": "D'Angelo",
+        "meta": "10 plays",
+        "art_path": "dangelo_black_messiah.jpg",
+        "art_key": "period_album_5Hfbag0SsHxafx1SySFSX6"
+      },
+      {
+        "title": "Illinois",
+        "subtitle": "Sufjan Stevens",
+        "meta": "9 plays",
+        "art_path": "sufjan_stevens_illinois.jpg",
+        "art_key": "period_album_1pOl0KEC1iQnA6F0XxV4To"
+      },
+      {
+        "title": "The Dark Side of the Moon",
+        "subtitle": "Pink Floyd",
+        "meta": "9 plays",
+        "art_path": "pink_floyd_the_dark_side_of_the_moon.jpg",
+        "art_key": "period_album_4LH4d3cOWNNsVw41Gqt2kv"
       },
       {
         "title": "Relationship Of Command",
@@ -4308,60 +4315,11 @@
         "art_key": "period_album_7ycBtnsMtyVbbwTfJwRjSP"
       },
       {
-        "title": "The Wall",
-        "subtitle": "Pink Floyd",
-        "meta": "21 plays",
-        "art_path": "pink_floyd_the_wall.jpg",
-        "art_key": "period_album_5Dbax7G8SWrP9xyzkOvy2F"
-      },
-      {
-        "title": "Freudian",
-        "subtitle": "Daniel Caesar",
-        "meta": "9 plays",
-        "art_path": "daniel_caesar_freudian.jpg",
-        "art_key": "period_album_4E1XUBMTpLO7GpBzUo65Jp"
-      },
-      {
-        "title": "The Velvet Rope",
-        "subtitle": "Janet Jackson",
-        "meta": "20 plays",
-        "art_path": "janet_jackson_the_velvet_rope.jpg",
-        "art_key": "period_album_1uFp52Q9EXLNA6DTRYnpTj"
-      },
-      {
-        "title": "All Delighted People",
-        "subtitle": "Sufjan Stevens",
-        "meta": "28 plays",
-        "art_path": "sufjan_stevens_all_delighted_people.jpg",
-        "art_key": "period_album_1wnEAz2lDtNoUUZF0KStuo"
-      },
-      {
-        "title": "If It's Cool with You, It's Cool with Me",
-        "subtitle": "Hot Rod Circuit",
-        "meta": "11 plays",
-        "art_path": "hot_rod_circuit_if_its_cool_with_you_its_cool_with_me.jpg",
-        "art_key": "period_album_2Xkfh86aoHJXqUh3TfOZOp"
-      },
-      {
-        "title": "The Dark Side of the Moon",
-        "subtitle": "Pink Floyd",
-        "meta": "9 plays",
-        "art_path": "pink_floyd_the_dark_side_of_the_moon.jpg",
-        "art_key": "period_album_4LH4d3cOWNNsVw41Gqt2kv"
-      },
-      {
         "title": "Pure Heroine",
         "subtitle": "Lorde",
         "meta": "8 plays",
         "art_path": "lorde_pure_heroine.jpg",
         "art_key": "period_album_0rmhjUgoVa17LZuS8xWQ3v"
-      },
-      {
-        "title": "No Ser\u00e1 Regresar",
-        "subtitle": "Fuensanta",
-        "meta": "3 plays",
-        "art_path": "fuensanta_no_ser\u00e1_regresar.jpg",
-        "art_key": "period_album_0440XPxNir7Twxn0R5vYXp"
       },
       {
         "title": "Meteora (Bonus Edition)",
@@ -4371,11 +4329,32 @@
         "art_key": "period_album_0y13VbGddQ4azdVWakksAL"
       },
       {
+        "title": "The Wall",
+        "subtitle": "Pink Floyd",
+        "meta": "21 plays",
+        "art_path": "pink_floyd_the_wall.jpg",
+        "art_key": "period_album_5Dbax7G8SWrP9xyzkOvy2F"
+      },
+      {
         "title": "Spirit of Eden",
         "subtitle": "Talk Talk",
         "meta": "5 plays",
         "art_path": "talk_talk_spirit_of_eden.jpg",
         "art_key": "period_album_4YXo7p7aubyVIbNLoVlBp9"
+      },
+      {
+        "title": "Freudian",
+        "subtitle": "Daniel Caesar",
+        "meta": "9 plays",
+        "art_path": "daniel_caesar_freudian.jpg",
+        "art_key": "period_album_4E1XUBMTpLO7GpBzUo65Jp"
+      },
+      {
+        "title": "Control",
+        "subtitle": "Janet Jackson",
+        "meta": "9 plays",
+        "art_path": "janet_jackson_control.jpg",
+        "art_key": "period_album_7GWkceE5McMVfffd1RGL6Y"
       }
     ],
     "top_new_artist": {
@@ -4457,11 +4436,11 @@
     ],
     "album_tiles": [
       {
-        "title": "Let It Be",
-        "subtitle": "The Replacements",
-        "meta": "27 plays",
-        "art_path": "the_replacements_let_it_be.jpg",
-        "art_key": "period_album_2sOLW5TSgXiLZBacdHxO6m"
+        "title": "Wish You Were Here",
+        "subtitle": "Pink Floyd",
+        "meta": "8 plays",
+        "art_path": "pink_floyd_wish_you_were_here.jpg",
+        "art_key": "period_album_0bCAjiUamIFqKJsekOYuRw"
       },
       {
         "title": "NEVER ENOUGH",
@@ -4499,6 +4478,20 @@
         "art_key": "period_album_2B87zXm9bOWvAJdkJBTpzF"
       },
       {
+        "title": "Aromanticism",
+        "subtitle": "Moses Sumney",
+        "meta": "9 plays",
+        "art_path": "moses_sumney_aromanticism.jpg",
+        "art_key": "period_album_3GEa8PdRoag1vtVUQCAla1"
+      },
+      {
+        "title": "Animals",
+        "subtitle": "Pink Floyd",
+        "meta": "4 plays",
+        "art_path": "pink_floyd_animals.jpg",
+        "art_key": "period_album_3b4E89rxzZQ9zkhgKpj8N4"
+      },
+      {
         "title": "Teens Of Denial",
         "subtitle": "Car Seat Headrest",
         "meta": "5 plays",
@@ -4520,18 +4513,25 @@
         "art_key": "period_album_5mwOo1zikswhmfHvtqVSXg"
       },
       {
-        "title": "Hatful of Hollow",
-        "subtitle": "The Smiths",
-        "meta": "11 plays",
-        "art_path": "the_smiths_hatful_of_hollow.jpg",
-        "art_key": "period_album_1j57Q5ntVi7crpibb0h4sv"
+        "title": "Stankonia",
+        "subtitle": "Outkast",
+        "meta": "23 plays",
+        "art_path": "outkast_stankonia.jpg",
+        "art_key": "period_album_2tm3Ht61kqqRZtIYsBjxEj"
       },
       {
-        "title": "Criminal Minded",
-        "subtitle": "Boogie Down Productions",
-        "meta": "9 plays",
-        "art_path": "boogie_down_productions_criminal_minded.jpg",
-        "art_key": "period_album_3AJ15ysr4Hz5p0N2tnNb1F"
+        "title": "If I Knew What I Knew Then",
+        "subtitle": "Hot Rod Circuit",
+        "meta": "8 plays",
+        "art_path": "hot_rod_circuit_if_i_knew_what_i_knew_then.jpg",
+        "art_key": "period_album_4WIa7YKywqk8lXEvR5cx76"
+      },
+      {
+        "title": "Meus Caros Amigos",
+        "subtitle": "Chico Buarque",
+        "meta": "8 plays",
+        "art_path": "chico_buarque_meus_caros_amigos.jpg",
+        "art_key": "period_album_2LxncTIR5lf2dzoZb3QNC6"
       },
       {
         "title": "Weezer",
@@ -4541,32 +4541,11 @@
         "art_key": "period_album_3hcrTu8zeynChXDOJt3lX2"
       },
       {
-        "title": "Wish You Were Here",
-        "subtitle": "Pink Floyd",
-        "meta": "8 plays",
-        "art_path": "pink_floyd_wish_you_were_here.jpg",
-        "art_key": "period_album_0bCAjiUamIFqKJsekOYuRw"
-      },
-      {
-        "title": "Aromanticism",
-        "subtitle": "Moses Sumney",
-        "meta": "9 plays",
-        "art_path": "moses_sumney_aromanticism.jpg",
-        "art_key": "period_album_3GEa8PdRoag1vtVUQCAla1"
-      },
-      {
-        "title": "Animals",
-        "subtitle": "Pink Floyd",
-        "meta": "4 plays",
-        "art_path": "pink_floyd_animals.jpg",
-        "art_key": "period_album_3b4E89rxzZQ9zkhgKpj8N4"
-      },
-      {
-        "title": "Stankonia",
-        "subtitle": "Outkast",
-        "meta": "23 plays",
-        "art_path": "outkast_stankonia.jpg",
-        "art_key": "period_album_2tm3Ht61kqqRZtIYsBjxEj"
+        "title": "NEU!",
+        "subtitle": "NEU!",
+        "meta": "10 plays",
+        "art_path": "neu_neu.jpg",
+        "art_key": "period_album_1aKOQpS6TrGd3wTQooaIBH"
       }
     ],
     "top_new_artist": {
@@ -4648,32 +4627,11 @@
     ],
     "album_tiles": [
       {
-        "title": "Straight Outta Compton",
-        "subtitle": "N.W.A.",
-        "meta": "60 plays",
-        "art_path": "nwa_straight_outta_compton.jpg",
-        "art_key": "period_album_0Y7qkJVZ06tS2GUCDptzyW"
-      },
-      {
-        "title": "Surfer Rosa (2007 Remaster)",
-        "subtitle": "Pixies",
-        "meta": "40 plays",
-        "art_path": "pixies_surfer_rosa_2007_remaster.jpg",
-        "art_key": "period_album_50j4Wm1b9hLpSpPIA39Vp9"
-      },
-      {
-        "title": "The Idler Wheel Is Wiser Than the Driver of the Screw and Whipping Cords Will Serve You More Than Ropes Will Ever Do (Expanded Edition)",
-        "subtitle": "Fiona Apple",
-        "meta": "40 plays",
-        "art_path": "fiona_apple_the_idler_wheel_is_wiser_than_the_driver_of_the_.jpg",
-        "art_key": "period_album_6B5favhKTShFTjRLsKIUfa"
-      },
-      {
-        "title": "Yeezus",
-        "subtitle": "Kanye West",
-        "meta": "9 plays",
-        "art_path": "kanye_west_yeezus.jpg",
-        "art_key": "period_album_7D2NdGvBHIavgLhmcwhluK"
+        "title": "Diaspora Problems",
+        "subtitle": "Soul Glo",
+        "meta": "6 plays",
+        "art_path": "soul_glo_diaspora_problems.jpg",
+        "art_key": "period_album_2ZYhM0LXHZ38te98EizcQW"
       },
       {
         "title": "The Battle Of Los Angeles",
@@ -4690,6 +4648,20 @@
         "art_key": "period_album_5j6RB5MpNUKWJJ2uxibdJh"
       },
       {
+        "title": "The Queen Is Dead",
+        "subtitle": "The Smiths",
+        "meta": "18 plays",
+        "art_path": "the_smiths_the_queen_is_dead.jpg",
+        "art_key": "period_album_5Y0p2XCgRRIjna91aQE8q7"
+      },
+      {
+        "title": "ELOWI",
+        "subtitle": "Yam\u00ea",
+        "meta": "14 plays",
+        "art_path": "yam\u00ea_elowi.jpg",
+        "art_key": "period_album_49TUnWv5swURA9osAyLHI2"
+      },
+      {
         "title": "I Got Heaven",
         "subtitle": "Mannequin Pussy",
         "meta": "20 plays",
@@ -4697,25 +4669,11 @@
         "art_key": "period_album_5ROzqM7rbMYoKbQIw4i7fp"
       },
       {
-        "title": "My Beautiful Dark Twisted Fantasy",
-        "subtitle": "Kanye West",
-        "meta": "20 plays",
-        "art_path": "kanye_west_my_beautiful_dark_twisted_fantasy.jpg",
-        "art_key": "period_album_20r762YmB5HeofjMCiPMLv"
-      },
-      {
-        "title": "Hounds of Love (2018 Remaster)",
-        "subtitle": "Kate Bush",
-        "meta": "24 plays",
-        "art_path": "kate_bush_hounds_of_love_2018_remaster.jpg",
-        "art_key": "period_album_1ww8GdNvrF0dgJbrnVZmAr"
-      },
-      {
-        "title": "Never for Ever (2018 Remaster)",
-        "subtitle": "Kate Bush",
-        "meta": "18 plays",
-        "art_path": "kate_bush_never_for_ever_2018_remaster.jpg",
-        "art_key": "period_album_7uNjeNs5AmDqZHzIbyPkZH"
+        "title": "The Low End Theory",
+        "subtitle": "A Tribe Called Quest",
+        "meta": "12 plays",
+        "art_path": "a_tribe_called_quest_the_low_end_theory.jpg",
+        "art_key": "period_album_1p12OAWwudgMqfMzjMvl2a"
       },
       {
         "title": "Doolittle",
@@ -4725,39 +4683,60 @@
         "art_key": "period_album_0DQyTVcDhK9wm0f6RaErWO"
       },
       {
+        "title": "good kid, m.A.A.d city",
+        "subtitle": "Kendrick Lamar",
+        "meta": "12 plays",
+        "art_path": "kendrick_lamar_good_kid_maad_city.jpg",
+        "art_key": "period_album_0E47vczx9XVds1Lr2Y8rze"
+      },
+      {
+        "title": "Silent Shout",
+        "subtitle": "The Knife",
+        "meta": "9 plays",
+        "art_path": "the_knife_silent_shout.jpg",
+        "art_key": "period_album_1UdCT7t0rfNPu5Bn957U8r"
+      },
+      {
+        "title": "Right Now, You're in the Best of Hands",
+        "subtitle": "Bear Vs. Shark",
+        "meta": "11 plays",
+        "art_path": "bear_vs_shark_right_now_youre_in_the_best_of_hands.jpg",
+        "art_key": "period_album_0pGIIPdSojJ3t4yCIQWM78"
+      },
+      {
+        "title": "Rage Against The Machine - XX (20th Anniversary Special Edition)",
+        "subtitle": "Rage Against The Machine",
+        "meta": "9 plays",
+        "art_path": "rage_against_the_machine_rage_against_the_machine_xx_20th_anniversary_spe.jpg",
+        "art_key": "period_album_4Io5vWtmV1rFj4yirKb4y4"
+      },
+      {
+        "title": "Son Of Spergy",
+        "subtitle": "Daniel Caesar",
+        "meta": "12 plays",
+        "art_path": "daniel_caesar_son_of_spergy.jpg",
+        "art_key": "period_album_2LKW0m9cC63QzEI9tJH3ql"
+      },
+      {
+        "title": "The Black Saint And The Sinner Lady",
+        "subtitle": "Charles Mingus",
+        "meta": "3 plays",
+        "art_path": "charles_mingus_the_black_saint_and_the_sinner_lady.jpg",
+        "art_key": "period_album_6Sts4Yh7KsDFwq2yTWrGGV"
+      },
+      {
+        "title": "First Two Seven Inches",
+        "subtitle": "Minor Threat",
+        "meta": "12 plays",
+        "art_path": "minor_threat_first_two_seven_inches.jpg",
+        "art_key": "period_album_6Sty6rLnMTXFjKxKUZEfmy"
+      },
+      {
         "title": "You're Gonna Miss It All",
         "subtitle": "Modern Baseball",
         "meta": "5 plays",
         "art_path": "modern_baseball_youre_gonna_miss_it_all.jpg",
         "art_key": "period_album_4QElAwQufg6wCeyvpafqwA"
-      },
-      {
-        "title": "The Life Of Pablo",
-        "subtitle": "Kanye West",
-        "meta": "19 plays",
-        "art_path": "kanye_west_the_life_of_pablo.jpg",
-        "art_key": "period_album_7gsWAHLeT0w7es6FofOXk1"
-      },
-      {
-        "title": "System Of A Down",
-        "subtitle": "System Of A Down",
-        "meta": "11 plays",
-        "art_path": "system_of_a_down_system_of_a_down.jpg",
-        "art_key": "period_album_7p5mnxLTjbvs4kInkK8za9"
-      },
-      {
-        "title": "The Ugly Organ",
-        "subtitle": "Cursive",
-        "meta": "12 plays",
-        "art_path": "cursive_the_ugly_organ.jpg",
-        "art_key": "period_album_3ZoVW62G8g8GC0yzpXOcKz"
-      },
-      {
-        "title": "Va totalmente en serio...",
-        "subtitle": "Aiko el grupo",
-        "meta": "7 plays",
-        "art_path": "aiko_el_grupo_va_totalmente_en_serio.jpg",
-        "art_key": "period_album_7olidubXJ7Q1dM8CsMg044"
       }
     ],
     "top_new_artist": {
@@ -4839,18 +4818,11 @@
     ],
     "album_tiles": [
       {
-        "title": "Seduzir",
-        "subtitle": "Djavan",
-        "meta": "40 plays",
-        "art_path": "djavan_seduzir.jpg",
-        "art_key": "period_album_52WarR7rVx473Mdvbu4tVF"
-      },
-      {
-        "title": "Previs\u00e3o Do Tempo",
-        "subtitle": "Marcos Valle",
-        "meta": "48 plays",
-        "art_path": "marcos_valle_previs\u00e3o_do_tempo.jpg",
-        "art_key": "period_album_4SrPTE9sLJTE8mpeWFUhRL"
+        "title": "Person Pitch",
+        "subtitle": "Panda Bear",
+        "meta": "10 plays",
+        "art_path": "panda_bear_person_pitch.jpg",
+        "art_key": "period_album_64TDaAbxgO0TmKZrIavdLg"
       },
       {
         "title": "3 Feet High and Rising",
@@ -4860,13 +4832,6 @@
         "art_key": "period_album_34LxHI9x14qXUOS8AWRrYD"
       },
       {
-        "title": "Low (2017 Remaster)",
-        "subtitle": "David Bowie",
-        "meta": "30 plays",
-        "art_path": "david_bowie_low_2017_remaster.jpg",
-        "art_key": "period_album_2de6LD7eOW8zrlorbS28na"
-      },
-      {
         "title": "Toxicity",
         "subtitle": "System Of A Down",
         "meta": "28 plays",
@@ -4874,60 +4839,18 @@
         "art_key": "period_album_6jWde94ln40epKIQCd8XUh"
       },
       {
-        "title": "Microcastle",
-        "subtitle": "Deerhunter",
-        "meta": "20 plays",
-        "art_path": "deerhunter_microcastle.jpg",
-        "art_key": "period_album_4wJ585ippGitIpRcGs1GD7"
+        "title": "Marcos Valle",
+        "subtitle": "Marcos Valle",
+        "meta": "6 plays",
+        "art_path": "marcos_valle_marcos_valle.jpg",
+        "art_key": "period_album_0FOAFmdS9StYdW3hrSnJCe"
       },
       {
-        "title": "Treasure",
-        "subtitle": "Cocteau Twins",
-        "meta": "18 plays",
-        "art_path": "cocteau_twins_treasure.jpg",
-        "art_key": "period_album_7pBPB9vwqCMLKNmUCK4k62"
-      },
-      {
-        "title": "Rain Dogs (2023 Remaster)",
-        "subtitle": "Tom Waits",
-        "meta": "32 plays",
-        "art_path": "tom_waits_rain_dogs_2023_remaster.jpg",
-        "art_key": "period_album_51CvLH7MxsLuFgTwVvzApx"
-      },
-      {
-        "title": "Aquemini",
-        "subtitle": "Outkast",
-        "meta": "15 plays",
-        "art_path": "outkast_aquemini.jpg",
-        "art_key": "period_album_5ceB3rxgXqIRpsOvVzTG28"
-      },
-      {
-        "title": "Singles Going Steady",
-        "subtitle": "Buzzcocks",
-        "meta": "22 plays",
-        "art_path": "buzzcocks_singles_going_steady.jpg",
-        "art_key": "period_album_6TxgQwGrbG3XZLNPOEhg7E"
-      },
-      {
-        "title": "Damaged",
-        "subtitle": "Black Flag",
-        "meta": "15 plays",
-        "art_path": "black_flag_damaged.jpg",
-        "art_key": "period_album_34aFnrFRBlErcbU6moRZR3"
-      },
-      {
-        "title": "Quem \u00c9 Quem",
-        "subtitle": "Jo\u00e3o Donato",
-        "meta": "10 plays",
-        "art_path": "jo\u00e3o_donato_quem_\u00e9_quem.jpg",
-        "art_key": "period_album_6GEO5pSp3ojwIm9vZqTtRd"
-      },
-      {
-        "title": "The Lion and the Cobra",
-        "subtitle": "Sin\u00e9ad O'Connor",
-        "meta": "24 plays",
-        "art_path": "sin\u00e9ad_oconnor_the_lion_and_the_cobra.jpg",
-        "art_key": "period_album_5dVe3a5ld9uJC4VlpAXoJ6"
+        "title": "Downtown Battle Mountain II",
+        "subtitle": "Dance Gavin Dance",
+        "meta": "4 plays",
+        "art_path": "dance_gavin_dance_downtown_battle_mountain_ii.jpg",
+        "art_key": "period_album_7dBUmXkVXyQv60PoAWZAa1"
       },
       {
         "title": "Funhouse",
@@ -4944,11 +4867,67 @@
         "art_key": "period_album_3DSPggBtjAU0GtOSdNNn6x"
       },
       {
+        "title": "Aquemini",
+        "subtitle": "Outkast",
+        "meta": "15 plays",
+        "art_path": "outkast_aquemini.jpg",
+        "art_key": "period_album_5ceB3rxgXqIRpsOvVzTG28"
+      },
+      {
+        "title": "Singles Going Steady",
+        "subtitle": "Buzzcocks",
+        "meta": "22 plays",
+        "art_path": "buzzcocks_singles_going_steady.jpg",
+        "art_key": "period_album_6TxgQwGrbG3XZLNPOEhg7E"
+      },
+      {
+        "title": "Quem \u00c9 Quem",
+        "subtitle": "Jo\u00e3o Donato",
+        "meta": "10 plays",
+        "art_path": "jo\u00e3o_donato_quem_\u00e9_quem.jpg",
+        "art_key": "period_album_6GEO5pSp3ojwIm9vZqTtRd"
+      },
+      {
+        "title": "The Lion and the Cobra",
+        "subtitle": "Sin\u00e9ad O'Connor",
+        "meta": "24 plays",
+        "art_path": "sin\u00e9ad_oconnor_the_lion_and_the_cobra.jpg",
+        "art_key": "period_album_5dVe3a5ld9uJC4VlpAXoJ6"
+      },
+      {
+        "title": "Microcastle",
+        "subtitle": "Deerhunter",
+        "meta": "20 plays",
+        "art_path": "deerhunter_microcastle.jpg",
+        "art_key": "period_album_4wJ585ippGitIpRcGs1GD7"
+      },
+      {
         "title": "A Love Supreme",
         "subtitle": "John Coltrane",
         "meta": "4 plays",
         "art_path": "john_coltrane_a_love_supreme.jpg",
         "art_key": "period_album_7Eoz7hJvaX1eFkbpQxC5PA"
+      },
+      {
+        "title": "Damaged",
+        "subtitle": "Black Flag",
+        "meta": "15 plays",
+        "art_path": "black_flag_damaged.jpg",
+        "art_key": "period_album_34aFnrFRBlErcbU6moRZR3"
+      },
+      {
+        "title": "A tomar por culo",
+        "subtitle": "Aiko el grupo",
+        "meta": "2 plays",
+        "art_path": "aiko_el_grupo_a_tomar_por_culo.jpg",
+        "art_key": "period_album_1u0KpgKOxJZY5wVrfbveOB"
+      },
+      {
+        "title": "modo sigilo",
+        "subtitle": "Aiko el grupo",
+        "meta": "1 plays",
+        "art_path": "aiko_el_grupo_modo_sigilo.jpg",
+        "art_key": "period_album_69mralFmMbF9NcqdfG1pAM"
       }
     ],
     "top_new_artist": {
@@ -5009,13 +4988,6 @@
         "art_key": "period_album_0Rzg7fqyWE39G6wKipxrns"
       },
       {
-        "title": "A volta de Secos & Molhados",
-        "subtitle": "Secos & Molhados",
-        "meta": "11 plays",
-        "art_path": "secos_molhados_a_volta_de_secos_molhados.jpg",
-        "art_key": "period_album_4rNGFFaXZ7l0Vg6QrcHcUi"
-      },
-      {
         "title": "Collision Course",
         "subtitle": "JA\u0178-Z",
         "meta": "6 plays",
@@ -5028,6 +5000,13 @@
         "meta": "2 plays",
         "art_path": "the_story_so_far_the_story_so_far_stick_to_your_guns_split.jpg",
         "art_key": "period_album_7pVwJktWZLoZmvQo3LS2Y2"
+      },
+      {
+        "title": "A volta de Secos & Molhados",
+        "subtitle": "Secos & Molhados",
+        "meta": "11 plays",
+        "art_path": "secos_molhados_a_volta_de_secos_molhados.jpg",
+        "art_key": "period_album_4rNGFFaXZ7l0Vg6QrcHcUi"
       }
     ],
     "top_new_artist": {
@@ -5074,11 +5053,11 @@
     ],
     "album_tiles": [
       {
-        "title": "xx",
-        "subtitle": "The xx",
-        "meta": "28 plays",
-        "art_path": "the_xx_xx.jpg",
-        "art_key": "period_album_2av2ZSHlvD7rvLSsMvtYCG"
+        "title": "Blind Melon",
+        "subtitle": "Blind Melon",
+        "meta": "5 plays",
+        "art_path": "blind_melon_blind_melon.jpg",
+        "art_key": "period_album_0A6yLV44DEhpwXB7cyvLEP"
       }
     ],
     "top_new_artist": {
@@ -5218,11 +5197,11 @@
     ],
     "album_tiles": [
       {
-        "title": "Gal Tropical",
-        "subtitle": "Gal Costa",
-        "meta": "48 plays",
-        "art_path": "gal_costa_gal_tropical.jpg",
-        "art_key": "period_album_1Vjf7xPNvBhqKnAR4rAXR2"
+        "title": "OK Computer",
+        "subtitle": "Radiohead",
+        "meta": "15 plays",
+        "art_path": "radiohead_ok_computer.jpg",
+        "art_key": "period_album_6dVIqQ8qmQ5GBnJ9shOYGE"
       },
       {
         "title": "\u00c1libi",
@@ -5232,18 +5211,25 @@
         "art_key": "period_album_4hjiHP3NIIzyYUgfs145zr"
       },
       {
+        "title": "Kid A",
+        "subtitle": "Radiohead",
+        "meta": "8 plays",
+        "art_path": "radiohead_kid_a.jpg",
+        "art_key": "period_album_6GjwtEZcfenmOf6l18N7T7"
+      },
+      {
+        "title": "In Rainbows",
+        "subtitle": "Radiohead",
+        "meta": "4 plays",
+        "art_path": "radiohead_in_rainbows.jpg",
+        "art_key": "period_album_5vkqYmiPBYLaalcmjujWxK"
+      },
+      {
         "title": "Songs For A Blue Guitar",
         "subtitle": "Red House Painters",
         "meta": "10 plays",
         "art_path": "red_house_painters_songs_for_a_blue_guitar.jpg",
         "art_key": "period_album_7HLVI2NCQz5DzL8VsB9A56"
-      },
-      {
-        "title": "Before Your Very Eyes... / Magic Beanz",
-        "subtitle": "Atoms For Peace",
-        "meta": "3 plays",
-        "art_path": "atoms_for_peace_before_your_very_eyes_magic_beanz.jpg",
-        "art_key": "period_album_08INtxsSmKWULibGC7DYDP"
       },
       {
         "title": "Old Ramon",
@@ -5258,6 +5244,20 @@
         "meta": "12 plays",
         "art_path": "red_house_painters_red_house_painters_i.jpg",
         "art_key": "period_album_3F9xD3Dg2zu2LZbVHdKeVD"
+      },
+      {
+        "title": "Gal Tropical",
+        "subtitle": "Gal Costa",
+        "meta": "48 plays",
+        "art_path": "gal_costa_gal_tropical.jpg",
+        "art_key": "period_album_1Vjf7xPNvBhqKnAR4rAXR2"
+      },
+      {
+        "title": "Before Your Very Eyes... / Magic Beanz",
+        "subtitle": "Atoms For Peace",
+        "meta": "3 plays",
+        "art_path": "atoms_for_peace_before_your_very_eyes_magic_beanz.jpg",
+        "art_key": "period_album_08INtxsSmKWULibGC7DYDP"
       },
       {
         "title": "Ocean Beach",
@@ -5360,53 +5360,18 @@
         "art_key": "period_album_3mH6qwIy9crq0I9YQbOuDf"
       },
       {
-        "title": "Un Verano Sin Ti",
-        "subtitle": "Bad Bunny",
-        "meta": "19 plays",
-        "art_path": "bad_bunny_un_verano_sin_ti.jpg",
-        "art_key": "period_album_3RQQmkQEvNCY4prGKE6oc5"
-      },
-      {
-        "title": "DeB\u00cd TiRAR M\u00e1S FOToS",
-        "subtitle": "Bad Bunny",
-        "meta": "16 plays",
-        "art_path": "bad_bunny_deb\u00ed_tirar_m\u00e1s_fotos.jpg",
-        "art_key": "period_album_5K79FLRUCSysQnVESLcTdb"
-      },
-      {
-        "title": "Among the Leaves",
-        "subtitle": "Sun Kil Moon",
-        "meta": "16 plays",
-        "art_path": "sun_kil_moon_among_the_leaves.jpg",
-        "art_key": "period_album_1uIM6TngoKF0S8oPaDZPvv"
-      },
-      {
-        "title": "A Better View Of The Rising Moon",
-        "subtitle": "1997",
-        "meta": "7 plays",
-        "art_path": "1997_a_better_view_of_the_rising_moon.jpg",
-        "art_key": "period_album_3FR05gmeoVRYr2i1MKqrcn"
-      },
-      {
-        "title": "Is a Real Boy",
-        "subtitle": "Say Anything",
-        "meta": "18 plays",
-        "art_path": "say_anything_is_a_real_boy.jpg",
-        "art_key": "period_album_67GbWmsrvtIdOOUYRo7do7"
-      },
-      {
-        "title": "Admiral Fell Promises",
-        "subtitle": "Sun Kil Moon",
-        "meta": "10 plays",
-        "art_path": "sun_kil_moon_admiral_fell_promises.jpg",
-        "art_key": "period_album_77AYdae70ldovpvRPS0Xjc"
-      },
-      {
         "title": "Orange Rhyming Dictionary",
         "subtitle": "Jets To Brazil",
         "meta": "20 plays",
         "art_path": "jets_to_brazil_orange_rhyming_dictionary.jpg",
         "art_key": "period_album_5zaVtrjodNQru22Rj4FIcD"
+      },
+      {
+        "title": "Un Verano Sin Ti",
+        "subtitle": "Bad Bunny",
+        "meta": "19 plays",
+        "art_path": "bad_bunny_un_verano_sin_ti.jpg",
+        "art_key": "period_album_3RQQmkQEvNCY4prGKE6oc5"
       },
       {
         "title": "channel ORANGE",
@@ -5423,11 +5388,39 @@
         "art_key": "period_album_1JpwFoxVVutPXtSBohj0rJ"
       },
       {
+        "title": "DeB\u00cd TiRAR M\u00e1S FOToS",
+        "subtitle": "Bad Bunny",
+        "meta": "16 plays",
+        "art_path": "bad_bunny_deb\u00ed_tirar_m\u00e1s_fotos.jpg",
+        "art_key": "period_album_5K79FLRUCSysQnVESLcTdb"
+      },
+      {
         "title": "Let It Enfold You",
         "subtitle": "Senses Fail",
         "meta": "11 plays",
         "art_path": "senses_fail_let_it_enfold_you.jpg",
         "art_key": "period_album_1dnNjLBeisuc0bUp3wwPR1"
+      },
+      {
+        "title": "Among the Leaves",
+        "subtitle": "Sun Kil Moon",
+        "meta": "16 plays",
+        "art_path": "sun_kil_moon_among_the_leaves.jpg",
+        "art_key": "period_album_1uIM6TngoKF0S8oPaDZPvv"
+      },
+      {
+        "title": "A Better View Of The Rising Moon",
+        "subtitle": "1997",
+        "meta": "7 plays",
+        "art_path": "1997_a_better_view_of_the_rising_moon.jpg",
+        "art_key": "period_album_3FR05gmeoVRYr2i1MKqrcn"
+      },
+      {
+        "title": "Comiss\u00e3o De Frente",
+        "subtitle": "Jo\u00e3o Bosco",
+        "meta": "10 plays",
+        "art_path": "jo\u00e3o_bosco_comiss\u00e3o_de_frente.jpg",
+        "art_key": "period_album_3391Q4zuKuz0JpHkmaJsQv"
       },
       {
         "title": "Benji",
@@ -5437,11 +5430,11 @@
         "art_key": "period_album_2y2QZ4uDpzoZHgH2il5Ktu"
       },
       {
-        "title": "Comiss\u00e3o De Frente",
-        "subtitle": "Jo\u00e3o Bosco",
-        "meta": "10 plays",
-        "art_path": "jo\u00e3o_bosco_comiss\u00e3o_de_frente.jpg",
-        "art_key": "period_album_3391Q4zuKuz0JpHkmaJsQv"
+        "title": "Is a Real Boy",
+        "subtitle": "Say Anything",
+        "meta": "18 plays",
+        "art_path": "say_anything_is_a_real_boy.jpg",
+        "art_key": "period_album_67GbWmsrvtIdOOUYRo7do7"
       },
       {
         "title": "Tiny Cities",
@@ -5456,6 +5449,13 @@
         "meta": "12 plays",
         "art_path": "jo\u00e3o_bosco_ca\u00e7a_a_raposa.jpg",
         "art_key": "period_album_4kN4kVVwgQ9jOBlIRQ86NU"
+      },
+      {
+        "title": "Admiral Fell Promises",
+        "subtitle": "Sun Kil Moon",
+        "meta": "10 plays",
+        "art_path": "sun_kil_moon_admiral_fell_promises.jpg",
+        "art_key": "period_album_77AYdae70ldovpvRPS0Xjc"
       },
       {
         "title": "Perfecting Loneliness",
@@ -5544,39 +5544,11 @@
     ],
     "album_tiles": [
       {
-        "title": "Mirrored",
-        "subtitle": "Battles",
-        "meta": "40 plays",
-        "art_path": "battles_mirrored.jpg",
-        "art_key": "period_album_64shsDEnphK07flo3DzWAc"
-      },
-      {
-        "title": "The Suburbs (Deluxe)",
-        "subtitle": "Arcade Fire",
-        "meta": "34 plays",
-        "art_path": "arcade_fire_the_suburbs_deluxe.jpg",
-        "art_key": "period_album_0gkUcpkyW2SXN49Yktkf6F"
-      },
-      {
         "title": "King of the Beach",
         "subtitle": "Wavves",
         "meta": "20 plays",
         "art_path": "wavves_king_of_the_beach.jpg",
         "art_key": "period_album_7Mn0aXVHjaoFZPKLssqI9d"
-      },
-      {
-        "title": "Homework",
-        "subtitle": "Daft Punk",
-        "meta": "13 plays",
-        "art_path": "daft_punk_homework.jpg",
-        "art_key": "period_album_5uRdvUR7xCnHmUW8n64n9y"
-      },
-      {
-        "title": "London Calling (Remastered)",
-        "subtitle": "The Clash",
-        "meta": "18 plays",
-        "art_path": "the_clash_london_calling_remastered.jpg",
-        "art_key": "period_album_6FCzvataOZh68j8OKzOt9a"
       },
       {
         "title": "Funeral",
@@ -5586,11 +5558,25 @@
         "art_key": "period_album_6ZB8qaR9JNuS0Q0bG1nbcH"
       },
       {
+        "title": "Homework",
+        "subtitle": "Daft Punk",
+        "meta": "13 plays",
+        "art_path": "daft_punk_homework.jpg",
+        "art_key": "period_album_5uRdvUR7xCnHmUW8n64n9y"
+      },
+      {
         "title": "We're New Here",
         "subtitle": "Gil Scott-Heron",
         "meta": "11 plays",
         "art_path": "gil_scott_heron_were_new_here.jpg",
         "art_key": "period_album_7BuwwZzrJCAJaC12QKkDOh"
+      },
+      {
+        "title": "The Suburbs (Deluxe)",
+        "subtitle": "Arcade Fire",
+        "meta": "34 plays",
+        "art_path": "arcade_fire_the_suburbs_deluxe.jpg",
+        "art_key": "period_album_0gkUcpkyW2SXN49Yktkf6F"
       },
       {
         "title": "Neon Bible",
@@ -5605,6 +5591,13 @@
         "meta": "8 plays",
         "art_path": "milton_nascimento_milton.jpg",
         "art_key": "period_album_6GPL5sMWxYibGoKnarlqUk"
+      },
+      {
+        "title": "London Calling (Remastered)",
+        "subtitle": "The Clash",
+        "meta": "18 plays",
+        "art_path": "the_clash_london_calling_remastered.jpg",
+        "art_key": "period_album_6FCzvataOZh68j8OKzOt9a"
       },
       {
         "title": "Discovery",
@@ -5700,20 +5693,6 @@
         "art_key": "period_album_5ZVLLME05cmciSZz4IGcZu"
       },
       {
-        "title": "Porcelain",
-        "subtitle": "Sparta",
-        "meta": "26 plays",
-        "art_path": "sparta_porcelain.jpg",
-        "art_key": "period_album_17Mq1v9fKGSmCabI7DaV4S"
-      },
-      {
-        "title": "Handsome",
-        "subtitle": "Handsome",
-        "meta": "30 plays",
-        "art_path": "handsome_handsome.jpg",
-        "art_key": "period_album_4Erk4K1hOnmQbfamo4xgid"
-      },
-      {
         "title": "Expensive Shit",
         "subtitle": "Fela Kuti",
         "meta": "3 plays",
@@ -5726,6 +5705,27 @@
         "meta": "14 plays",
         "art_path": "television_marquee_moon.jpg",
         "art_key": "period_album_630o1rKTDsLeIPreOY1jqP"
+      },
+      {
+        "title": "Porcelain",
+        "subtitle": "Sparta",
+        "meta": "26 plays",
+        "art_path": "sparta_porcelain.jpg",
+        "art_key": "period_album_17Mq1v9fKGSmCabI7DaV4S"
+      },
+      {
+        "title": "More Than Any Other Day",
+        "subtitle": "Ought",
+        "meta": "2 plays",
+        "art_path": "ought_more_than_any_other_day.jpg",
+        "art_key": "period_album_0uOPPNiTA3k0HNvqKWcuSb"
+      },
+      {
+        "title": "Handsome",
+        "subtitle": "Handsome",
+        "meta": "30 plays",
+        "art_path": "handsome_handsome.jpg",
+        "art_key": "period_album_4Erk4K1hOnmQbfamo4xgid"
       },
       {
         "title": "Is This It",
@@ -5814,6 +5814,13 @@
         "art_key": "period_album_4RMGrhJRnGiNqmKqhqpLlX"
       },
       {
+        "title": "The Velvet Underground (45th Anniversary)",
+        "subtitle": "The Velvet Underground",
+        "meta": "9 plays",
+        "art_path": "the_velvet_underground_the_velvet_underground_45th_anniversary.jpg",
+        "art_key": "period_album_2HOf3Nb44Us8U9oEtKLSrX"
+      },
+      {
         "title": "Clube Da Esquina",
         "subtitle": "L\u00f4 Borges",
         "meta": "19 plays",
@@ -5826,13 +5833,6 @@
         "meta": "11 plays",
         "art_path": "l\u00f4_borges_retratos.jpg",
         "art_key": "period_album_2ngEpie4g3Z2xtZhhwCAxH"
-      },
-      {
-        "title": "The Velvet Underground (45th Anniversary)",
-        "subtitle": "The Velvet Underground",
-        "meta": "9 plays",
-        "art_path": "the_velvet_underground_the_velvet_underground_45th_anniversary.jpg",
-        "art_key": "period_album_2HOf3Nb44Us8U9oEtKLSrX"
       }
     ],
     "top_new_artist": {
@@ -5921,6 +5921,13 @@
         "art_key": "period_album_2Y9IRtehByVkegoD7TcLfi"
       },
       {
+        "title": "In A Silent Way",
+        "subtitle": "Miles Davis",
+        "meta": "8 plays",
+        "art_path": "miles_davis_in_a_silent_way.jpg",
+        "art_key": "period_album_0Hs3BomCdwIWRhgT57x22T"
+      },
+      {
         "title": "Stage Four (Deluxe Edition)",
         "subtitle": "Touch\u00e9 Amor\u00e9",
         "meta": "24 plays",
@@ -5935,6 +5942,13 @@
         "art_key": "period_album_0Pv5bdtwTTBSHy9GyUe9um"
       },
       {
+        "title": "Ciencia De Los In\u00fatiles",
+        "subtitle": "El Tr\u00edo De Omar Rodr\u00edguez-L\u00f3pez",
+        "meta": "28 plays",
+        "art_path": "el_tr\u00edo_de_omar_rodr\u00edguez_l\u00f3pez_ciencia_de_los_in\u00fatiles.jpg",
+        "art_key": "period_album_5as7hQXIniGbaltqM0yJud"
+      },
+      {
         "title": "Trans-Europe Express (2009 Remaster)",
         "subtitle": "Kraftwerk",
         "meta": "32 plays",
@@ -5942,11 +5956,25 @@
         "art_key": "period_album_0HHRIVjvBcnTepfeRVgS2f"
       },
       {
+        "title": "In the Aeroplane Over the Sea",
+        "subtitle": "Neutral Milk Hotel",
+        "meta": "18 plays",
+        "art_path": "neutral_milk_hotel_in_the_aeroplane_over_the_sea.jpg",
+        "art_key": "period_album_17q5eeNk3HAjX1gzQnkTX7"
+      },
+      {
         "title": "In / Casino / Out",
         "subtitle": "At the Drive-In",
         "meta": "18 plays",
         "art_path": "at_the_drive_in_in_casino_out.jpg",
         "art_key": "period_album_35qZXJifEQcpWnKP6E4oNv"
+      },
+      {
+        "title": "The Joshua Tree",
+        "subtitle": "U2",
+        "meta": "18 plays",
+        "art_path": "u2_the_joshua_tree.jpg",
+        "art_key": "period_album_5vBZRYu2GLA65nfxBvG1a7"
       },
       {
         "title": "White Blood Cells",
@@ -5963,11 +5991,25 @@
         "art_key": "period_album_0pU2blS70BzVWyC1tVyaLg"
       },
       {
+        "title": "Rise or Die Trying",
+        "subtitle": "Four Year Strong",
+        "meta": "5 plays",
+        "art_path": "four_year_strong_rise_or_die_trying.jpg",
+        "art_key": "period_album_08pL4gHGoa0GXyv9emugVv"
+      },
+      {
         "title": "The Miseducation of Lauryn Hill",
         "subtitle": "Ms. Lauryn Hill",
         "meta": "15 plays",
         "art_path": "ms_lauryn_hill_the_miseducation_of_lauryn_hill.jpg",
         "art_key": "period_album_1BZoqf8Zje5nGdwZhOjAtD"
+      },
+      {
+        "title": "Dummy",
+        "subtitle": "Portishead",
+        "meta": "10 plays",
+        "art_path": "portishead_dummy.jpg",
+        "art_key": "period_album_3539EbNgIdEDGBKkUf4wno"
       },
       {
         "title": "Hybrid Theory (Bonus Edition)",
@@ -5982,48 +6024,6 @@
         "meta": "9 plays",
         "art_path": "touch\u00e9_amor\u00e9_to_the_beat_of_a_dead_horse.jpg",
         "art_key": "period_album_1nJQWexPwURsCTkp2THvg1"
-      },
-      {
-        "title": "By the Way (Deluxe Edition)",
-        "subtitle": "Red Hot Chili Peppers",
-        "meta": "17 plays",
-        "art_path": "red_hot_chili_peppers_by_the_way_deluxe_edition.jpg",
-        "art_key": "period_album_6deiaArbeoqp1xPEGdEKp1"
-      },
-      {
-        "title": "Vaya",
-        "subtitle": "At the Drive-In",
-        "meta": "2 plays",
-        "art_path": "at_the_drive_in_vaya.jpg",
-        "art_key": "period_album_1dQADTXF672pzeJPcRwjbs"
-      },
-      {
-        "title": "Frame & Canvas",
-        "subtitle": "Braid",
-        "meta": "10 plays",
-        "art_path": "braid_frame_canvas.jpg",
-        "art_key": "period_album_4WBDw3hnJTvWXXDaCNKVqJ"
-      },
-      {
-        "title": "Stadium Arcadium",
-        "subtitle": "Red Hot Chili Peppers",
-        "meta": "25 plays",
-        "art_path": "red_hot_chili_peppers_stadium_arcadium.jpg",
-        "art_key": "period_album_7xl50xr9NDkd3i2kBbzsNZ"
-      },
-      {
-        "title": "One Hot Minute (Deluxe Edition)",
-        "subtitle": "Red Hot Chili Peppers",
-        "meta": "18 plays \u00b7 2 days",
-        "art_path": "red_hot_chili_peppers_one_hot_minute_deluxe_edition.jpg",
-        "art_key": "period_album_2rQ135imvelvp89D8eEZOi"
-      },
-      {
-        "title": "Spiderland",
-        "subtitle": "Slint",
-        "meta": "30 plays \u00b7 2 days",
-        "art_path": "slint_spiderland.jpg",
-        "art_key": "period_album_2NnkLRaeX33d1Mn8ZLgTo8"
       }
     ],
     "top_new_artist": {
@@ -6112,11 +6112,25 @@
         "art_key": "period_album_1iRPiEYHIX2zpF8lkW54SK"
       },
       {
+        "title": "Unknown Pleasures",
+        "subtitle": "Joy Division",
+        "meta": "20 plays",
+        "art_path": "joy_division_unknown_pleasures.jpg",
+        "art_key": "period_album_5Dgqy4bBg09Rdw7CQM545s"
+      },
+      {
         "title": "The Second Stage Turbine Blade (Re-Issue)",
         "subtitle": "Coheed and Cambria",
         "meta": "26 plays",
         "art_path": "coheed_and_cambria_the_second_stage_turbine_blade_re_issue.jpg",
         "art_key": "period_album_0puQN87m8wxSu8lcDkwV2k"
+      },
+      {
+        "title": "Somewhere at the Bottom of the River Between Vega and Altair (10th Anniversary)",
+        "subtitle": "La Dispute",
+        "meta": "11 plays",
+        "art_path": "la_dispute_somewhere_at_the_bottom_of_the_river_between_veg.jpg",
+        "art_key": "period_album_5fzDxefGUH8jM7T9HCLSNr"
       },
       {
         "title": "In Keeping Secrets Of Silent Earth: 3",
@@ -6133,55 +6147,6 @@
         "art_key": "period_album_2wE1bvm3Ha0BvkHTvwk6rw"
       },
       {
-        "title": "If It's Cool with You, It's Cool with Me",
-        "subtitle": "Hot Rod Circuit",
-        "meta": "33 plays",
-        "art_path": "hot_rod_circuit_if_its_cool_with_you_its_cool_with_me.jpg",
-        "art_key": "period_album_2Xkfh86aoHJXqUh3TfOZOp"
-      },
-      {
-        "title": "Freudian",
-        "subtitle": "Daniel Caesar",
-        "meta": "10 plays",
-        "art_path": "daniel_caesar_freudian.jpg",
-        "art_key": "period_album_4E1XUBMTpLO7GpBzUo65Jp"
-      },
-      {
-        "title": "NEVER ENOUGH",
-        "subtitle": "Daniel Caesar",
-        "meta": "11 plays",
-        "art_path": "daniel_caesar_never_enough.jpg",
-        "art_key": "period_album_2z9lM6LDS58F70IGyQ1XMK"
-      },
-      {
-        "title": "The Unheavenly Creatures",
-        "subtitle": "Coheed and Cambria",
-        "meta": "15 plays",
-        "art_path": "coheed_and_cambria_the_unheavenly_creatures.jpg",
-        "art_key": "period_album_42S0lDJT9wHKCVaMGgqKdm"
-      },
-      {
-        "title": "Weezer",
-        "subtitle": "Weezer",
-        "meta": "14 plays",
-        "art_path": "weezer_weezer.jpg",
-        "art_key": "period_album_3hcrTu8zeynChXDOJt3lX2"
-      },
-      {
-        "title": "Unknown Pleasures",
-        "subtitle": "Joy Division",
-        "meta": "20 plays",
-        "art_path": "joy_division_unknown_pleasures.jpg",
-        "art_key": "period_album_5Dgqy4bBg09Rdw7CQM545s"
-      },
-      {
-        "title": "Somewhere at the Bottom of the River Between Vega and Altair (10th Anniversary)",
-        "subtitle": "La Dispute",
-        "meta": "11 plays",
-        "art_path": "la_dispute_somewhere_at_the_bottom_of_the_river_between_veg.jpg",
-        "art_key": "period_album_5fzDxefGUH8jM7T9HCLSNr"
-      },
-      {
         "title": "Black Messiah",
         "subtitle": "D'Angelo",
         "meta": "10 plays",
@@ -6194,6 +6159,13 @@
         "meta": "10 plays",
         "art_path": "bj\u00f6rk_homogenic.jpg",
         "art_key": "period_album_0HMsmYvoT1h2x1C4di5faf"
+      },
+      {
+        "title": "Freudian",
+        "subtitle": "Daniel Caesar",
+        "meta": "10 plays",
+        "art_path": "daniel_caesar_freudian.jpg",
+        "art_key": "period_album_4E1XUBMTpLO7GpBzUo65Jp"
       },
       {
         "title": "Meteora (Bonus Edition)",
@@ -6215,6 +6187,34 @@
         "meta": "15 plays",
         "art_path": "lewis_capaldi_divinely_uninspired_to_a_hellish_extent_extended.jpg",
         "art_key": "period_album_2wiPF3m0ylst0JSk1IvZL8"
+      },
+      {
+        "title": "NEVER ENOUGH",
+        "subtitle": "Daniel Caesar",
+        "meta": "11 plays",
+        "art_path": "daniel_caesar_never_enough.jpg",
+        "art_key": "period_album_2z9lM6LDS58F70IGyQ1XMK"
+      },
+      {
+        "title": "Rat Saw God",
+        "subtitle": "Wednesday",
+        "meta": "8 plays",
+        "art_path": "wednesday_rat_saw_god.jpg",
+        "art_key": "period_album_1oTR3aC0jYmwUlr9duBi05"
+      },
+      {
+        "title": "If It's Cool with You, It's Cool with Me",
+        "subtitle": "Hot Rod Circuit",
+        "meta": "33 plays",
+        "art_path": "hot_rod_circuit_if_its_cool_with_you_its_cool_with_me.jpg",
+        "art_key": "period_album_2Xkfh86aoHJXqUh3TfOZOp"
+      },
+      {
+        "title": "The Unheavenly Creatures",
+        "subtitle": "Coheed and Cambria",
+        "meta": "15 plays",
+        "art_path": "coheed_and_cambria_the_unheavenly_creatures.jpg",
+        "art_key": "period_album_42S0lDJT9wHKCVaMGgqKdm"
       }
     ],
     "top_new_artist": {
@@ -6303,11 +6303,11 @@
         "art_key": "period_album_4nYsnQpTAQaPzrPc6rOsBN"
       },
       {
-        "title": "Let It Be",
-        "subtitle": "The Replacements",
-        "meta": "22 plays",
-        "art_path": "the_replacements_let_it_be.jpg",
-        "art_key": "period_album_2sOLW5TSgXiLZBacdHxO6m"
+        "title": "Acabou Chorare",
+        "subtitle": "Novos Baianos",
+        "meta": "9 plays",
+        "art_path": "novos_baianos_acabou_chorare.jpg",
+        "art_key": "period_album_76iTNsPU1yhKWcQrTc2qdA"
       },
       {
         "title": "NEVER ENOUGH",
@@ -6338,32 +6338,18 @@
         "art_key": "period_album_5mwOo1zikswhmfHvtqVSXg"
       },
       {
-        "title": "The Sensual World (2018 Remaster)",
-        "subtitle": "Kate Bush",
-        "meta": "8 plays",
-        "art_path": "kate_bush_the_sensual_world_2018_remaster.jpg",
-        "art_key": "period_album_5EyDvOit9McsAc9ao1QROt"
-      },
-      {
-        "title": "Hatful of Hollow",
-        "subtitle": "The Smiths",
-        "meta": "11 plays",
-        "art_path": "the_smiths_hatful_of_hollow.jpg",
-        "art_key": "period_album_1j57Q5ntVi7crpibb0h4sv"
-      },
-      {
-        "title": "Acabou Chorare",
-        "subtitle": "Novos Baianos",
-        "meta": "9 plays",
-        "art_path": "novos_baianos_acabou_chorare.jpg",
-        "art_key": "period_album_76iTNsPU1yhKWcQrTc2qdA"
-      },
-      {
         "title": "Meus Caros Amigos",
         "subtitle": "Chico Buarque",
         "meta": "9 plays",
         "art_path": "chico_buarque_meus_caros_amigos.jpg",
         "art_key": "period_album_2LxncTIR5lf2dzoZb3QNC6"
+      },
+      {
+        "title": "The Sensual World (2018 Remaster)",
+        "subtitle": "Kate Bush",
+        "meta": "8 plays",
+        "art_path": "kate_bush_the_sensual_world_2018_remaster.jpg",
+        "art_key": "period_album_5EyDvOit9McsAc9ao1QROt"
       },
       {
         "title": "Wild Is The Wind",
@@ -6406,6 +6392,13 @@
         "meta": "9 plays",
         "art_path": "the_anniversary_designing_a_nervous_breakdown.jpg",
         "art_key": "period_album_1LD2jBpotKpAuC0vQtK9Nu"
+      },
+      {
+        "title": "NEU!",
+        "subtitle": "NEU!",
+        "meta": "5 plays",
+        "art_path": "neu_neu.jpg",
+        "art_key": "period_album_1aKOQpS6TrGd3wTQooaIBH"
       }
     ],
     "top_new_artist": {
@@ -6487,13 +6480,6 @@
     ],
     "album_tiles": [
       {
-        "title": "The Ugly Organ",
-        "subtitle": "Cursive",
-        "meta": "20 plays",
-        "art_path": "cursive_the_ugly_organ.jpg",
-        "art_key": "period_album_3ZoVW62G8g8GC0yzpXOcKz"
-      },
-      {
         "title": "You're Gonna Miss It All",
         "subtitle": "Modern Baseball",
         "meta": "44 plays",
@@ -6501,53 +6487,11 @@
         "art_key": "period_album_4QElAwQufg6wCeyvpafqwA"
       },
       {
-        "title": "Hounds of Love (2018 Remaster)",
-        "subtitle": "Kate Bush",
-        "meta": "22 plays",
-        "art_path": "kate_bush_hounds_of_love_2018_remaster.jpg",
-        "art_key": "period_album_1ww8GdNvrF0dgJbrnVZmAr"
-      },
-      {
-        "title": "Doolittle",
-        "subtitle": "Pixies",
+        "title": "Nevermind (Remastered)",
+        "subtitle": "Nirvana",
         "meta": "12 plays",
-        "art_path": "pixies_doolittle.jpg",
-        "art_key": "period_album_0DQyTVcDhK9wm0f6RaErWO"
-      },
-      {
-        "title": "Microcastle",
-        "subtitle": "Deerhunter",
-        "meta": "10 plays",
-        "art_path": "deerhunter_microcastle.jpg",
-        "art_key": "period_album_4wJ585ippGitIpRcGs1GD7"
-      },
-      {
-        "title": "Va totalmente en serio...",
-        "subtitle": "Aiko el grupo",
-        "meta": "18 plays",
-        "art_path": "aiko_el_grupo_va_totalmente_en_serio.jpg",
-        "art_key": "period_album_7olidubXJ7Q1dM8CsMg044"
-      },
-      {
-        "title": "Logos",
-        "subtitle": "Atlas Sound",
-        "meta": "10 plays",
-        "art_path": "atlas_sound_logos.jpg",
-        "art_key": "period_album_5j6RB5MpNUKWJJ2uxibdJh"
-      },
-      {
-        "title": "I Got Heaven",
-        "subtitle": "Mannequin Pussy",
-        "meta": "10 plays",
-        "art_path": "mannequin_pussy_i_got_heaven.jpg",
-        "art_key": "period_album_5ROzqM7rbMYoKbQIw4i7fp"
-      },
-      {
-        "title": "Surfer Rosa (2007 Remaster)",
-        "subtitle": "Pixies",
-        "meta": "13 plays",
-        "art_path": "pixies_surfer_rosa_2007_remaster.jpg",
-        "art_key": "period_album_50j4Wm1b9hLpSpPIA39Vp9"
+        "art_path": "nirvana_nevermind_remastered.jpg",
+        "art_key": "period_album_2guirTSEqLizK7j9i1MTTZ"
       },
       {
         "title": "Carry on Kid",
@@ -6557,11 +6501,25 @@
         "art_key": "period_album_6C5ED5twSt8dEbiffbFNe2"
       },
       {
+        "title": "Aromanticism",
+        "subtitle": "Moses Sumney",
+        "meta": "5 plays",
+        "art_path": "moses_sumney_aromanticism.jpg",
+        "art_key": "period_album_3GEa8PdRoag1vtVUQCAla1"
+      },
+      {
         "title": "Downtown Battle Mountain II",
         "subtitle": "Dance Gavin Dance",
         "meta": "9 plays",
         "art_path": "dance_gavin_dance_downtown_battle_mountain_ii.jpg",
         "art_key": "period_album_7dBUmXkVXyQv60PoAWZAa1"
+      },
+      {
+        "title": "Doolittle",
+        "subtitle": "Pixies",
+        "meta": "12 plays",
+        "art_path": "pixies_doolittle.jpg",
+        "art_key": "period_album_0DQyTVcDhK9wm0f6RaErWO"
       },
       {
         "title": "good kid, m.A.A.d city",
@@ -6578,6 +6536,13 @@
         "art_key": "period_album_2LKW0m9cC63QzEI9tJH3ql"
       },
       {
+        "title": "Logos",
+        "subtitle": "Atlas Sound",
+        "meta": "10 plays",
+        "art_path": "atlas_sound_logos.jpg",
+        "art_key": "period_album_5j6RB5MpNUKWJJ2uxibdJh"
+      },
+      {
         "title": "The Queen Is Dead",
         "subtitle": "The Smiths",
         "meta": "9 plays",
@@ -6585,18 +6550,46 @@
         "art_key": "period_album_5Y0p2XCgRRIjna91aQE8q7"
       },
       {
+        "title": "I Got Heaven",
+        "subtitle": "Mannequin Pussy",
+        "meta": "10 plays",
+        "art_path": "mannequin_pussy_i_got_heaven.jpg",
+        "art_key": "period_album_5ROzqM7rbMYoKbQIw4i7fp"
+      },
+      {
+        "title": "Hounds of Love (2018 Remaster)",
+        "subtitle": "Kate Bush",
+        "meta": "22 plays",
+        "art_path": "kate_bush_hounds_of_love_2018_remaster.jpg",
+        "art_key": "period_album_1ww8GdNvrF0dgJbrnVZmAr"
+      },
+      {
+        "title": "Microcastle",
+        "subtitle": "Deerhunter",
+        "meta": "10 plays",
+        "art_path": "deerhunter_microcastle.jpg",
+        "art_key": "period_album_4wJ585ippGitIpRcGs1GD7"
+      },
+      {
+        "title": "Va totalmente en serio...",
+        "subtitle": "Aiko el grupo",
+        "meta": "18 plays",
+        "art_path": "aiko_el_grupo_va_totalmente_en_serio.jpg",
+        "art_key": "period_album_7olidubXJ7Q1dM8CsMg044"
+      },
+      {
+        "title": "Surfer Rosa (2007 Remaster)",
+        "subtitle": "Pixies",
+        "meta": "13 plays",
+        "art_path": "pixies_surfer_rosa_2007_remaster.jpg",
+        "art_key": "period_album_50j4Wm1b9hLpSpPIA39Vp9"
+      },
+      {
         "title": "Toro",
         "subtitle": "Aiko el grupo",
         "meta": "4 plays",
         "art_path": "aiko_el_grupo_toro.jpg",
         "art_key": "period_album_6yolmmNdajAr99jxhprzow"
-      },
-      {
-        "title": "No te has enterado",
-        "subtitle": "Aiko el grupo",
-        "meta": "4 plays",
-        "art_path": "aiko_el_grupo_no_te_has_enterado.jpg",
-        "art_key": "period_album_3kINWHNCGlbYI56ZaRX8OY"
       }
     ],
     "top_new_artist": {
@@ -6678,67 +6671,11 @@
     ],
     "album_tiles": [
       {
-        "title": "Damaged",
-        "subtitle": "Black Flag",
-        "meta": "12 plays",
-        "art_path": "black_flag_damaged.jpg",
-        "art_key": "period_album_34aFnrFRBlErcbU6moRZR3"
-      },
-      {
         "title": "3 Feet High and Rising",
         "subtitle": "De La Soul",
         "meta": "20 plays",
         "art_path": "de_la_soul_3_feet_high_and_rising.jpg",
         "art_key": "period_album_34LxHI9x14qXUOS8AWRrYD"
-      },
-      {
-        "title": "Aquemini",
-        "subtitle": "Outkast",
-        "meta": "13 plays",
-        "art_path": "outkast_aquemini.jpg",
-        "art_key": "period_album_5ceB3rxgXqIRpsOvVzTG28"
-      },
-      {
-        "title": "Singles Going Steady",
-        "subtitle": "Buzzcocks",
-        "meta": "23 plays",
-        "art_path": "buzzcocks_singles_going_steady.jpg",
-        "art_key": "period_album_6TxgQwGrbG3XZLNPOEhg7E"
-      },
-      {
-        "title": "Quem \u00c9 Quem",
-        "subtitle": "Jo\u00e3o Donato",
-        "meta": "10 plays",
-        "art_path": "jo\u00e3o_donato_quem_\u00e9_quem.jpg",
-        "art_key": "period_album_6GEO5pSp3ojwIm9vZqTtRd"
-      },
-      {
-        "title": "Previs\u00e3o Do Tempo",
-        "subtitle": "Marcos Valle",
-        "meta": "5 plays",
-        "art_path": "marcos_valle_previs\u00e3o_do_tempo.jpg",
-        "art_key": "period_album_4SrPTE9sLJTE8mpeWFUhRL"
-      },
-      {
-        "title": "Treasure",
-        "subtitle": "Cocteau Twins",
-        "meta": "9 plays",
-        "art_path": "cocteau_twins_treasure.jpg",
-        "art_key": "period_album_7pBPB9vwqCMLKNmUCK4k62"
-      },
-      {
-        "title": "Rain Dogs (2023 Remaster)",
-        "subtitle": "Tom Waits",
-        "meta": "19 plays",
-        "art_path": "tom_waits_rain_dogs_2023_remaster.jpg",
-        "art_key": "period_album_51CvLH7MxsLuFgTwVvzApx"
-      },
-      {
-        "title": "Seduzir",
-        "subtitle": "Djavan",
-        "meta": "8 plays",
-        "art_path": "djavan_seduzir.jpg",
-        "art_key": "period_album_52WarR7rVx473Mdvbu4tVF"
       },
       {
         "title": "Person Pitch",
@@ -6755,11 +6692,11 @@
         "art_key": "period_album_3DSPggBtjAU0GtOSdNNn6x"
       },
       {
-        "title": "A tomar por culo",
-        "subtitle": "Aiko el grupo",
-        "meta": "6 plays",
-        "art_path": "aiko_el_grupo_a_tomar_por_culo.jpg",
-        "art_key": "period_album_1u0KpgKOxJZY5wVrfbveOB"
+        "title": "Aquemini",
+        "subtitle": "Outkast",
+        "meta": "13 plays",
+        "art_path": "outkast_aquemini.jpg",
+        "art_key": "period_album_5ceB3rxgXqIRpsOvVzTG28"
       },
       {
         "title": "ELOWI",
@@ -6769,11 +6706,32 @@
         "art_key": "period_album_49TUnWv5swURA9osAyLHI2"
       },
       {
+        "title": "Singles Going Steady",
+        "subtitle": "Buzzcocks",
+        "meta": "23 plays",
+        "art_path": "buzzcocks_singles_going_steady.jpg",
+        "art_key": "period_album_6TxgQwGrbG3XZLNPOEhg7E"
+      },
+      {
         "title": "Marcos Valle",
         "subtitle": "Marcos Valle",
         "meta": "9 plays",
         "art_path": "marcos_valle_marcos_valle.jpg",
         "art_key": "period_album_0FOAFmdS9StYdW3hrSnJCe"
+      },
+      {
+        "title": "Quem \u00c9 Quem",
+        "subtitle": "Jo\u00e3o Donato",
+        "meta": "10 plays",
+        "art_path": "jo\u00e3o_donato_quem_\u00e9_quem.jpg",
+        "art_key": "period_album_6GEO5pSp3ojwIm9vZqTtRd"
+      },
+      {
+        "title": "A tomar por culo",
+        "subtitle": "Aiko el grupo",
+        "meta": "6 plays",
+        "art_path": "aiko_el_grupo_a_tomar_por_culo.jpg",
+        "art_key": "period_album_1u0KpgKOxJZY5wVrfbveOB"
       }
     ],
     "top_new_artist": {
@@ -6855,13 +6813,6 @@
     ],
     "album_tiles": [
       {
-        "title": "Gal Tropical",
-        "subtitle": "Gal Costa",
-        "meta": "12 plays",
-        "art_path": "gal_costa_gal_tropical.jpg",
-        "art_key": "period_album_1Vjf7xPNvBhqKnAR4rAXR2"
-      },
-      {
         "title": "Body Talk",
         "subtitle": "Robyn",
         "meta": "28 plays",
@@ -6869,25 +6820,11 @@
         "art_key": "period_album_0Rzg7fqyWE39G6wKipxrns"
       },
       {
-        "title": "Damaged",
-        "subtitle": "Black Flag",
-        "meta": "30 plays",
-        "art_path": "black_flag_damaged.jpg",
-        "art_key": "period_album_34aFnrFRBlErcbU6moRZR3"
-      },
-      {
-        "title": "Rain Dogs (2023 Remaster)",
-        "subtitle": "Tom Waits",
-        "meta": "34 plays",
-        "art_path": "tom_waits_rain_dogs_2023_remaster.jpg",
-        "art_key": "period_album_51CvLH7MxsLuFgTwVvzApx"
-      },
-      {
-        "title": "BEYONC\u00c9 [Platinum Edition]",
-        "subtitle": "Beyonc\u00e9",
-        "meta": "17 plays \u00b7 2 days",
-        "art_path": "beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg",
-        "art_key": "period_album_2UJwKSBUz6rtW4QLK74kQu"
+        "title": "Why Should The Fire Die?",
+        "subtitle": "Nickel Creek",
+        "meta": "13 plays",
+        "art_path": "nickel_creek_why_should_the_fire_die.jpg",
+        "art_key": "period_album_6l61p7zbizBUjQWY10LWmb"
       },
       {
         "title": "The Moon & Antarctica",
@@ -6904,53 +6841,18 @@
         "art_key": "period_album_6FJxoadUE4JNVwWHghBwnb"
       },
       {
-        "title": "Singles Going Steady",
-        "subtitle": "Buzzcocks",
-        "meta": "21 plays",
-        "art_path": "buzzcocks_singles_going_steady.jpg",
-        "art_key": "period_album_6TxgQwGrbG3XZLNPOEhg7E"
-      },
-      {
-        "title": "Treasure",
-        "subtitle": "Cocteau Twins",
-        "meta": "9 plays",
-        "art_path": "cocteau_twins_treasure.jpg",
-        "art_key": "period_album_7pBPB9vwqCMLKNmUCK4k62"
-      },
-      {
-        "title": "Seduzir",
-        "subtitle": "Djavan",
-        "meta": "9 plays",
-        "art_path": "djavan_seduzir.jpg",
-        "art_key": "period_album_52WarR7rVx473Mdvbu4tVF"
-      },
-      {
-        "title": "A volta de Secos & Molhados",
-        "subtitle": "Secos & Molhados",
-        "meta": "12 plays",
-        "art_path": "secos_molhados_a_volta_de_secos_molhados.jpg",
-        "art_key": "period_album_4rNGFFaXZ7l0Vg6QrcHcUi"
-      },
-      {
-        "title": "A Love Supreme",
-        "subtitle": "John Coltrane",
-        "meta": "8 plays",
-        "art_path": "john_coltrane_a_love_supreme.jpg",
-        "art_key": "period_album_7Eoz7hJvaX1eFkbpQxC5PA"
-      },
-      {
-        "title": "Why Should The Fire Die?",
-        "subtitle": "Nickel Creek",
-        "meta": "13 plays",
-        "art_path": "nickel_creek_why_should_the_fire_die.jpg",
-        "art_key": "period_album_6l61p7zbizBUjQWY10LWmb"
-      },
-      {
         "title": "Marcos Valle",
         "subtitle": "Marcos Valle",
         "meta": "8 plays",
         "art_path": "marcos_valle_marcos_valle.jpg",
         "art_key": "period_album_0FOAFmdS9StYdW3hrSnJCe"
+      },
+      {
+        "title": "Singles Going Steady",
+        "subtitle": "Buzzcocks",
+        "meta": "21 plays",
+        "art_path": "buzzcocks_singles_going_steady.jpg",
+        "art_key": "period_album_6TxgQwGrbG3XZLNPOEhg7E"
       },
       {
         "title": "August And Everything After",
@@ -6960,11 +6862,53 @@
         "art_key": "period_album_4nKfZbCALT9H9LfedtDwnZ"
       },
       {
+        "title": "A Love Supreme",
+        "subtitle": "John Coltrane",
+        "meta": "8 plays",
+        "art_path": "john_coltrane_a_love_supreme.jpg",
+        "art_key": "period_album_7Eoz7hJvaX1eFkbpQxC5PA"
+      },
+      {
+        "title": "Damaged",
+        "subtitle": "Black Flag",
+        "meta": "30 plays",
+        "art_path": "black_flag_damaged.jpg",
+        "art_key": "period_album_34aFnrFRBlErcbU6moRZR3"
+      },
+      {
+        "title": "BEYONC\u00c9 [Platinum Edition]",
+        "subtitle": "Beyonc\u00e9",
+        "meta": "17 plays \u00b7 2 days",
+        "art_path": "beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg",
+        "art_key": "period_album_2UJwKSBUz6rtW4QLK74kQu"
+      },
+      {
+        "title": "A volta de Secos & Molhados",
+        "subtitle": "Secos & Molhados",
+        "meta": "12 plays",
+        "art_path": "secos_molhados_a_volta_de_secos_molhados.jpg",
+        "art_key": "period_album_4rNGFFaXZ7l0Vg6QrcHcUi"
+      },
+      {
         "title": "Four Cornered Night",
         "subtitle": "Jets To Brazil",
         "meta": "12 plays",
         "art_path": "jets_to_brazil_four_cornered_night.jpg",
         "art_key": "period_album_2PRXw6VTFXoTBmeXerbf3z"
+      },
+      {
+        "title": "The Story So Far / Stick To Your Guns Split",
+        "subtitle": "The Story So Far",
+        "meta": "1 plays",
+        "art_path": "the_story_so_far_the_story_so_far_stick_to_your_guns_split.jpg",
+        "art_key": "period_album_7pVwJktWZLoZmvQo3LS2Y2"
+      },
+      {
+        "title": "Salam",
+        "subtitle": "MESTIZA",
+        "meta": "1 plays",
+        "art_path": "mestiza_salam.jpg",
+        "art_key": "period_album_5MflkuFCNL0Uye0uy4OrrH"
       }
     ],
     "top_new_artist": null,
@@ -7071,18 +7015,18 @@
         "art_key": "period_album_2CNEkSE8TADXRT2AzcEt1b"
       },
       {
-        "title": "Out Of Time (25th Anniversary Edition)",
-        "subtitle": "R.E.M.",
-        "meta": "40 plays",
-        "art_path": "rem_out_of_time_25th_anniversary_edition.jpg",
-        "art_key": "period_album_6yEuIwTQpciH1qtj7mP5GK"
-      },
-      {
         "title": "Among the Leaves",
         "subtitle": "Sun Kil Moon",
         "meta": "48 plays",
         "art_path": "sun_kil_moon_among_the_leaves.jpg",
         "art_key": "period_album_1uIM6TngoKF0S8oPaDZPvv"
+      },
+      {
+        "title": "Comiss\u00e3o De Frente",
+        "subtitle": "Jo\u00e3o Bosco",
+        "meta": "12 plays",
+        "art_path": "jo\u00e3o_bosco_comiss\u00e3o_de_frente.jpg",
+        "art_key": "period_album_3391Q4zuKuz0JpHkmaJsQv"
       },
       {
         "title": "Picaresque",
@@ -7092,6 +7036,27 @@
         "art_key": "period_album_0eGxAVwdwV2mHrUgLJ8R6Y"
       },
       {
+        "title": "Stoner Witch",
+        "subtitle": "Melvins",
+        "meta": "21 plays",
+        "art_path": "melvins_stoner_witch.jpg",
+        "art_key": "period_album_1Ft1QQbUOCgSqumZKYuWhw"
+      },
+      {
+        "title": "Takk...",
+        "subtitle": "Sigur R\u00f3s",
+        "meta": "22 plays",
+        "art_path": "sigur_r\u00f3s_takk.jpg",
+        "art_key": "period_album_12tw1A9HmwE3MHvPfHhdoP"
+      },
+      {
+        "title": "Let It Enfold You",
+        "subtitle": "Senses Fail",
+        "meta": "12 plays",
+        "art_path": "senses_fail_let_it_enfold_you.jpg",
+        "art_key": "period_album_1dnNjLBeisuc0bUp3wwPR1"
+      },
+      {
         "title": "Songs For A Blue Guitar",
         "subtitle": "Red House Painters",
         "meta": "20 plays",
@@ -7099,60 +7064,39 @@
         "art_key": "period_album_7HLVI2NCQz5DzL8VsB9A56"
       },
       {
+        "title": "Marquee Moon",
+        "subtitle": "Television",
+        "meta": "16 plays",
+        "art_path": "television_marquee_moon.jpg",
+        "art_key": "period_album_630o1rKTDsLeIPreOY1jqP"
+      },
+      {
+        "title": "Drunk Like Bible Times",
+        "subtitle": "Dear and the Headlights",
+        "meta": "20 plays",
+        "art_path": "dear_and_the_headlights_drunk_like_bible_times.jpg",
+        "art_key": "period_album_38TTw10V04chCowK4hPsDu"
+      },
+      {
+        "title": "Sound of Silver",
+        "subtitle": "LCD Soundsystem",
+        "meta": "12 plays",
+        "art_path": "lcd_soundsystem_sound_of_silver.jpg",
+        "art_key": "period_album_1R8kkopLT4IAxzMMkjic6X"
+      },
+      {
+        "title": "Red Medicine",
+        "subtitle": "Fugazi",
+        "meta": "26 plays",
+        "art_path": "fugazi_red_medicine.jpg",
+        "art_key": "period_album_3ue3vifOfBG7KAV1FPFQa4"
+      },
+      {
         "title": "King of the Beach",
         "subtitle": "Wavves",
         "meta": "20 plays",
         "art_path": "wavves_king_of_the_beach.jpg",
         "art_key": "period_album_7Mn0aXVHjaoFZPKLssqI9d"
-      },
-      {
-        "title": "\u00c1libi",
-        "subtitle": "Maria Beth\u00e2nia",
-        "meta": "18 plays",
-        "art_path": "maria_beth\u00e2nia_\u00e1libi.jpg",
-        "art_key": "period_album_4hjiHP3NIIzyYUgfs145zr"
-      },
-      {
-        "title": "Un Verano Sin Ti",
-        "subtitle": "Bad Bunny",
-        "meta": "6 plays",
-        "art_path": "bad_bunny_un_verano_sin_ti.jpg",
-        "art_key": "period_album_3RQQmkQEvNCY4prGKE6oc5"
-      },
-      {
-        "title": "DeB\u00cd TiRAR M\u00e1S FOToS",
-        "subtitle": "Bad Bunny",
-        "meta": "16 plays",
-        "art_path": "bad_bunny_deb\u00ed_tirar_m\u00e1s_fotos.jpg",
-        "art_key": "period_album_5K79FLRUCSysQnVESLcTdb"
-      },
-      {
-        "title": "The Miseducation of Lauryn Hill",
-        "subtitle": "Ms. Lauryn Hill",
-        "meta": "16 plays",
-        "art_path": "ms_lauryn_hill_the_miseducation_of_lauryn_hill.jpg",
-        "art_key": "period_album_1BZoqf8Zje5nGdwZhOjAtD"
-      },
-      {
-        "title": "A Seat at the Table",
-        "subtitle": "Solange",
-        "meta": "17 plays",
-        "art_path": "solange_a_seat_at_the_table.jpg",
-        "art_key": "period_album_3Yko2SxDk4hc6fncIBQlcM"
-      },
-      {
-        "title": "Stage Four (Deluxe Edition)",
-        "subtitle": "Touch\u00e9 Amor\u00e9",
-        "meta": "11 plays",
-        "art_path": "touch\u00e9_amor\u00e9_stage_four_deluxe_edition.jpg",
-        "art_key": "period_album_6KiS2t3EapTmHSt9xGUqe7"
-      },
-      {
-        "title": "Loaded (2015 Remaster)",
-        "subtitle": "The Velvet Underground",
-        "meta": "12 plays",
-        "art_path": "the_velvet_underground_loaded_2015_remaster.jpg",
-        "art_key": "period_album_4RMGrhJRnGiNqmKqhqpLlX"
       }
     ],
     "top_new_artist": {
@@ -7248,11 +7192,18 @@
         "art_key": "period_album_2Y9IRtehByVkegoD7TcLfi"
       },
       {
-        "title": "Remain in Light",
-        "subtitle": "Talking Heads",
-        "meta": "40 plays",
-        "art_path": "talking_heads_remain_in_light.jpg",
-        "art_key": "period_album_1JvXxLsm0PxlGH4LXzqMGq"
+        "title": "Innundir Skinni",
+        "subtitle": "\u00d3l\u00f6f Arnalds",
+        "meta": "36 plays",
+        "art_path": "\u00f3l\u00f6f_arnalds_innundir_skinni.jpg",
+        "art_key": "period_album_1V99SZB8TKi7RxhALkkiH1"
+      },
+      {
+        "title": "Africa Brasil",
+        "subtitle": "Jorge Ben Jor",
+        "meta": "27 plays",
+        "art_path": "jorge_ben_jor_africa_brasil.jpg",
+        "art_key": "period_album_0esHQqYklDPje00NUNq6py"
       },
       {
         "title": "In Keeping Secrets Of Silent Earth: 3",
@@ -7262,11 +7213,11 @@
         "art_key": "period_album_2oWXmi9uLRKn60yRmY22MB"
       },
       {
-        "title": "Riot!",
-        "subtitle": "Paramore",
-        "meta": "45 plays",
-        "art_path": "paramore_riot.jpg",
-        "art_key": "period_album_71rziY9eLo1tA2dBMxrwhc"
+        "title": "ANTI",
+        "subtitle": "Rihanna",
+        "meta": "12 plays \u00b7 2 days",
+        "art_path": "rihanna_anti.jpg",
+        "art_key": "period_album_48i37aZTC1prDr4EcpQeEa"
       },
       {
         "title": "System Of A Down",
@@ -7276,6 +7227,41 @@
         "art_key": "period_album_7p5mnxLTjbvs4kInkK8za9"
       },
       {
+        "title": "In A Silent Way",
+        "subtitle": "Miles Davis",
+        "meta": "4 plays",
+        "art_path": "miles_davis_in_a_silent_way.jpg",
+        "art_key": "period_album_0Hs3BomCdwIWRhgT57x22T"
+      },
+      {
+        "title": "The Campfire Headphase",
+        "subtitle": "Boards of Canada",
+        "meta": "26 plays",
+        "art_path": "boards_of_canada_the_campfire_headphase.jpg",
+        "art_key": "period_album_6uO5B6km2Dco28tOBmZtSU"
+      },
+      {
+        "title": "The Current Will Carry Us",
+        "subtitle": "Counterparts",
+        "meta": "20 plays",
+        "art_path": "counterparts_the_current_will_carry_us.jpg",
+        "art_key": "period_album_3bJtSVsqSsqmVtfvtnisbU"
+      },
+      {
+        "title": "Fleet Foxes",
+        "subtitle": "Fleet Foxes",
+        "meta": "10 plays",
+        "art_path": "fleet_foxes_fleet_foxes.jpg",
+        "art_key": "period_album_5GRnydamKvIeG46dycID6v"
+      },
+      {
+        "title": "Fever Ray",
+        "subtitle": "Fever Ray",
+        "meta": "20 plays",
+        "art_path": "fever_ray_fever_ray.jpg",
+        "art_key": "period_album_019nA7vSKz0dD5yRKYRpbM"
+      },
+      {
         "title": "...To the Beat of a Dead Horse",
         "subtitle": "Touch\u00e9 Amor\u00e9",
         "meta": "20 plays",
@@ -7283,67 +7269,25 @@
         "art_key": "period_album_1nJQWexPwURsCTkp2THvg1"
       },
       {
+        "title": "Computer World (2009 Remaster)",
+        "subtitle": "Kraftwerk",
+        "meta": "12 plays",
+        "art_path": "kraftwerk_computer_world_2009_remaster.jpg",
+        "art_key": "period_album_07BPkQfT4B5xjDwjCxRiN2"
+      },
+      {
+        "title": "We Are The Only Friends We Have",
+        "subtitle": "Piebald",
+        "meta": "10 plays",
+        "art_path": "piebald_we_are_the_only_friends_we_have.jpg",
+        "art_key": "period_album_0MtzNtKxLd7KthcSObeWJB"
+      },
+      {
         "title": "On Avery Island",
         "subtitle": "Neutral Milk Hotel",
         "meta": "22 plays",
         "art_path": "neutral_milk_hotel_on_avery_island.jpg",
         "art_key": "period_album_3HTsNBfZLfRXQTfdLeLVK1"
-      },
-      {
-        "title": "Retratos",
-        "subtitle": "L\u00f4 Borges",
-        "meta": "44 plays",
-        "art_path": "l\u00f4_borges_retratos.jpg",
-        "art_key": "period_album_2ngEpie4g3Z2xtZhhwCAxH"
-      },
-      {
-        "title": "Porcelain",
-        "subtitle": "Sparta",
-        "meta": "12 plays",
-        "art_path": "sparta_porcelain.jpg",
-        "art_key": "period_album_17Mq1v9fKGSmCabI7DaV4S"
-      },
-      {
-        "title": "Ready to Die (The Remaster)",
-        "subtitle": "The Notorious B.I.G.",
-        "meta": "30 plays",
-        "art_path": "the_notorious_big_ready_to_die_the_remaster.jpg",
-        "art_key": "period_album_2HTbQ0RHwukKVXAlTmCZP2"
-      },
-      {
-        "title": "Frame & Canvas",
-        "subtitle": "Braid",
-        "meta": "20 plays",
-        "art_path": "braid_frame_canvas.jpg",
-        "art_key": "period_album_4WBDw3hnJTvWXXDaCNKVqJ"
-      },
-      {
-        "title": "Block out the Sun & Sleep",
-        "subtitle": "To The Wind",
-        "meta": "22 plays",
-        "art_path": "to_the_wind_block_out_the_sun_sleep.jpg",
-        "art_key": "period_album_3XQz5QVGMnDt8Kspu2HdOR"
-      },
-      {
-        "title": "The Velvet Rope",
-        "subtitle": "Janet Jackson",
-        "meta": "40 plays",
-        "art_path": "janet_jackson_the_velvet_rope.jpg",
-        "art_key": "period_album_1uFp52Q9EXLNA6DTRYnpTj"
-      },
-      {
-        "title": "Homework",
-        "subtitle": "Daft Punk",
-        "meta": "6 plays",
-        "art_path": "daft_punk_homework.jpg",
-        "art_key": "period_album_5uRdvUR7xCnHmUW8n64n9y"
-      },
-      {
-        "title": "In / Casino / Out",
-        "subtitle": "At the Drive-In",
-        "meta": "9 plays",
-        "art_path": "at_the_drive_in_in_casino_out.jpg",
-        "art_key": "period_album_35qZXJifEQcpWnKP6E4oNv"
       }
     ],
     "top_new_artist": {
@@ -7453,13 +7397,6 @@
         "art_key": "period_album_5EyDvOit9McsAc9ao1QROt"
       },
       {
-        "title": "My Beautiful Dark Twisted Fantasy",
-        "subtitle": "Kanye West",
-        "meta": "44 plays",
-        "art_path": "kanye_west_my_beautiful_dark_twisted_fantasy.jpg",
-        "art_key": "period_album_20r762YmB5HeofjMCiPMLv"
-      },
-      {
         "title": "Quem \u00c9 Quem",
         "subtitle": "Jo\u00e3o Donato",
         "meta": "48 plays",
@@ -7467,18 +7404,11 @@
         "art_key": "period_album_6GEO5pSp3ojwIm9vZqTtRd"
       },
       {
-        "title": "The Ugly Organ",
-        "subtitle": "Cursive",
-        "meta": "40 plays",
-        "art_path": "cursive_the_ugly_organ.jpg",
-        "art_key": "period_album_3ZoVW62G8g8GC0yzpXOcKz"
-      },
-      {
-        "title": "Yeezus",
-        "subtitle": "Kanye West",
-        "meta": "30 plays \u00b7 2 days",
-        "art_path": "kanye_west_yeezus.jpg",
-        "art_key": "period_album_7D2NdGvBHIavgLhmcwhluK"
+        "title": "Ege Bamyasi (Remastered Version)",
+        "subtitle": "CAN",
+        "meta": "18 plays",
+        "art_path": "can_ege_bamyasi_remastered_version.jpg",
+        "art_key": "period_album_3Qa2CdymyGvXkqoqIZykmT"
       },
       {
         "title": "Pink Moon",
@@ -7488,6 +7418,27 @@
         "art_key": "period_album_5mwOo1zikswhmfHvtqVSXg"
       },
       {
+        "title": "Farbenblind EP",
+        "subtitle": "Nina Chuba",
+        "meta": "6 plays",
+        "art_path": "nina_chuba_farbenblind_ep.jpg",
+        "art_key": "period_album_2mzXddPCtNlGzttAcr97ON"
+      },
+      {
+        "title": "The Black Saint And The Sinner Lady",
+        "subtitle": "Charles Mingus",
+        "meta": "9 plays",
+        "art_path": "charles_mingus_the_black_saint_and_the_sinner_lady.jpg",
+        "art_key": "period_album_6Sts4Yh7KsDFwq2yTWrGGV"
+      },
+      {
+        "title": "ELOWI",
+        "subtitle": "Yam\u00ea",
+        "meta": "12 plays",
+        "art_path": "yam\u00ea_elowi.jpg",
+        "art_key": "period_album_49TUnWv5swURA9osAyLHI2"
+      },
+      {
         "title": "The Moon & Antarctica",
         "subtitle": "Modest Mouse",
         "meta": "39 plays",
@@ -7495,11 +7446,18 @@
         "art_key": "period_album_5SbcupirEParczvqqyUPXL"
       },
       {
-        "title": "Criminal Minded",
-        "subtitle": "Boogie Down Productions",
-        "meta": "30 plays",
-        "art_path": "boogie_down_productions_criminal_minded.jpg",
-        "art_key": "period_album_3AJ15ysr4Hz5p0N2tnNb1F"
+        "title": "Aromanticism",
+        "subtitle": "Moses Sumney",
+        "meta": "18 plays",
+        "art_path": "moses_sumney_aromanticism.jpg",
+        "art_key": "period_album_3GEa8PdRoag1vtVUQCAla1"
+      },
+      {
+        "title": "Downtown Battle Mountain II",
+        "subtitle": "Dance Gavin Dance",
+        "meta": "20 plays",
+        "art_path": "dance_gavin_dance_downtown_battle_mountain_ii.jpg",
+        "art_key": "period_album_7dBUmXkVXyQv60PoAWZAa1"
       },
       {
         "title": "Melodrama",
@@ -7516,25 +7474,11 @@
         "art_key": "period_album_0DQyTVcDhK9wm0f6RaErWO"
       },
       {
-        "title": "Microcastle",
-        "subtitle": "Deerhunter",
+        "title": "None Shall Pass",
+        "subtitle": "Aesop Rock",
         "meta": "22 plays",
-        "art_path": "deerhunter_microcastle.jpg",
-        "art_key": "period_album_4wJ585ippGitIpRcGs1GD7"
-      },
-      {
-        "title": "NEVER ENOUGH",
-        "subtitle": "Daniel Caesar",
-        "meta": "28 plays",
-        "art_path": "daniel_caesar_never_enough.jpg",
-        "art_key": "period_album_2z9lM6LDS58F70IGyQ1XMK"
-      },
-      {
-        "title": "Hatful of Hollow",
-        "subtitle": "The Smiths",
-        "meta": "26 plays \u00b7 2 days",
-        "art_path": "the_smiths_hatful_of_hollow.jpg",
-        "art_key": "period_album_1j57Q5ntVi7crpibb0h4sv"
+        "art_path": "aesop_rock_none_shall_pass.jpg",
+        "art_key": "period_album_0u5NLD5OgDGDlpCIia1Igx"
       }
     ],
     "top_new_artist": {
@@ -7616,11 +7560,39 @@
     ],
     "album_tiles": [
       {
-        "title": "Admiral Fell Promises",
-        "subtitle": "Sun Kil Moon",
-        "meta": "45 plays",
-        "art_path": "sun_kil_moon_admiral_fell_promises.jpg",
-        "art_key": "period_album_77AYdae70ldovpvRPS0Xjc"
+        "title": "Diamond Life",
+        "subtitle": "Sade",
+        "meta": "12 plays",
+        "art_path": "sade_diamond_life.jpg",
+        "art_key": "period_album_3JcNnjMVSKiNpqhErZarW0"
+      },
+      {
+        "title": "In Rainbows",
+        "subtitle": "Radiohead",
+        "meta": "9 plays",
+        "art_path": "radiohead_in_rainbows.jpg",
+        "art_key": "period_album_5vkqYmiPBYLaalcmjujWxK"
+      },
+      {
+        "title": "The Age of Adz",
+        "subtitle": "Sufjan Stevens",
+        "meta": "9 plays",
+        "art_path": "sufjan_stevens_the_age_of_adz.jpg",
+        "art_key": "period_album_4kRMCapj9nEyBWnM0kc9OX"
+      },
+      {
+        "title": "Within and Without",
+        "subtitle": "Washed Out",
+        "meta": "27 plays",
+        "art_path": "washed_out_within_and_without.jpg",
+        "art_key": "period_album_1TwAADd8Z8C1GeeCSaXTNr"
+      },
+      {
+        "title": "Small Steps, Heavy Hooves",
+        "subtitle": "Dear and the Headlights",
+        "meta": "26 plays",
+        "art_path": "dear_and_the_headlights_small_steps_heavy_hooves.jpg",
+        "art_key": "period_album_2btXQFitnklvkPC0dAIvAx"
       },
       {
         "title": "A Seat at the Table",
@@ -7644,6 +7616,13 @@
         "art_key": "period_album_6FJxoadUE4JNVwWHghBwnb"
       },
       {
+        "title": "Old Ramon",
+        "subtitle": "Red House Painters",
+        "meta": "16 plays",
+        "art_path": "red_house_painters_old_ramon.jpg",
+        "art_key": "period_album_4rL0RzmHMQyHiZqJVdt7A8"
+      },
+      {
         "title": "\u00c1libi",
         "subtitle": "Maria Beth\u00e2nia",
         "meta": "20 plays",
@@ -7651,18 +7630,25 @@
         "art_key": "period_album_4hjiHP3NIIzyYUgfs145zr"
       },
       {
-        "title": "London Calling (Remastered)",
-        "subtitle": "The Clash",
-        "meta": "32 plays",
-        "art_path": "the_clash_london_calling_remastered.jpg",
-        "art_key": "period_album_6FCzvataOZh68j8OKzOt9a"
+        "title": "Kid A",
+        "subtitle": "Radiohead",
+        "meta": "11 plays",
+        "art_path": "radiohead_kid_a.jpg",
+        "art_key": "period_album_6GjwtEZcfenmOf6l18N7T7"
       },
       {
-        "title": "xx",
-        "subtitle": "The xx",
-        "meta": "14 plays",
-        "art_path": "the_xx_xx.jpg",
-        "art_key": "period_album_2av2ZSHlvD7rvLSsMvtYCG"
+        "title": "OK Computer",
+        "subtitle": "Radiohead",
+        "meta": "12 plays",
+        "art_path": "radiohead_ok_computer.jpg",
+        "art_key": "period_album_6dVIqQ8qmQ5GBnJ9shOYGE"
+      },
+      {
+        "title": "Somewhere at the Bottom of the River Between Vega and Altair (10th Anniversary)",
+        "subtitle": "La Dispute",
+        "meta": "11 plays",
+        "art_path": "la_dispute_somewhere_at_the_bottom_of_the_river_between_veg.jpg",
+        "art_key": "period_album_5fzDxefGUH8jM7T9HCLSNr"
       },
       {
         "title": "Un Verano Sin Ti",
@@ -7672,60 +7658,18 @@
         "art_key": "period_album_3RQQmkQEvNCY4prGKE6oc5"
       },
       {
-        "title": "Body Talk",
-        "subtitle": "Robyn",
-        "meta": "15 plays",
-        "art_path": "robyn_body_talk.jpg",
-        "art_key": "period_album_0Rzg7fqyWE39G6wKipxrns"
+        "title": "Merriweather Post Pavilion",
+        "subtitle": "Animal Collective",
+        "meta": "9 plays",
+        "art_path": "animal_collective_merriweather_post_pavilion.jpg",
+        "art_key": "period_album_6BRq5g6CWiFgN3NrjLGAYq"
       },
       {
-        "title": "DeB\u00cd TiRAR M\u00e1S FOToS",
-        "subtitle": "Bad Bunny",
-        "meta": "14 plays",
-        "art_path": "bad_bunny_deb\u00ed_tirar_m\u00e1s_fotos.jpg",
-        "art_key": "period_album_5K79FLRUCSysQnVESLcTdb"
-      },
-      {
-        "title": "Songs For A Blue Guitar",
-        "subtitle": "Red House Painters",
-        "meta": "11 plays",
-        "art_path": "red_house_painters_songs_for_a_blue_guitar.jpg",
-        "art_key": "period_album_7HLVI2NCQz5DzL8VsB9A56"
-      },
-      {
-        "title": "Stage Four (Deluxe Edition)",
-        "subtitle": "Touch\u00e9 Amor\u00e9",
-        "meta": "6 plays",
-        "art_path": "touch\u00e9_amor\u00e9_stage_four_deluxe_edition.jpg",
-        "art_key": "period_album_6KiS2t3EapTmHSt9xGUqe7"
-      },
-      {
-        "title": "Blonde",
+        "title": "channel ORANGE",
         "subtitle": "Frank Ocean",
-        "meta": "15 plays",
-        "art_path": "frank_ocean_blonde.jpg",
-        "art_key": "period_album_3mH6qwIy9crq0I9YQbOuDf"
-      },
-      {
-        "title": "Among the Leaves",
-        "subtitle": "Sun Kil Moon",
-        "meta": "16 plays",
-        "art_path": "sun_kil_moon_among_the_leaves.jpg",
-        "art_key": "period_album_1uIM6TngoKF0S8oPaDZPvv"
-      },
-      {
-        "title": "A Better View Of The Rising Moon",
-        "subtitle": "1997",
-        "meta": "7 plays",
-        "art_path": "1997_a_better_view_of_the_rising_moon.jpg",
-        "art_key": "period_album_3FR05gmeoVRYr2i1MKqrcn"
-      },
-      {
-        "title": "Is a Real Boy",
-        "subtitle": "Say Anything",
-        "meta": "20 plays",
-        "art_path": "say_anything_is_a_real_boy.jpg",
-        "art_key": "period_album_67GbWmsrvtIdOOUYRo7do7"
+        "meta": "10 plays",
+        "art_path": "frank_ocean_channel_orange.jpg",
+        "art_key": "period_album_392p3shh2jkxUxY2VHvlH8"
       }
     ],
     "top_new_artist": {
@@ -7807,11 +7751,11 @@
     ],
     "album_tiles": [
       {
-        "title": "Vaya",
-        "subtitle": "At the Drive-In",
-        "meta": "35 plays",
-        "art_path": "at_the_drive_in_vaya.jpg",
-        "art_key": "period_album_1dQADTXF672pzeJPcRwjbs"
+        "title": "Computer World (2009 Remaster)",
+        "subtitle": "Kraftwerk",
+        "meta": "18 plays",
+        "art_path": "kraftwerk_computer_world_2009_remaster.jpg",
+        "art_key": "period_album_07BPkQfT4B5xjDwjCxRiN2"
       },
       {
         "title": "Picaresque",
@@ -7842,13 +7786,6 @@
         "art_key": "period_album_1nJQWexPwURsCTkp2THvg1"
       },
       {
-        "title": "One Hot Minute (Deluxe Edition)",
-        "subtitle": "Red Hot Chili Peppers",
-        "meta": "32 plays",
-        "art_path": "red_hot_chili_peppers_one_hot_minute_deluxe_edition.jpg",
-        "art_key": "period_album_2rQ135imvelvp89D8eEZOi"
-      },
-      {
         "title": "Rites of Spring",
         "subtitle": "Rites of Spring",
         "meta": "32 plays",
@@ -7856,67 +7793,74 @@
         "art_key": "period_album_0pU2blS70BzVWyC1tVyaLg"
       },
       {
-        "title": "Block out the Sun & Sleep",
-        "subtitle": "To The Wind",
-        "meta": "20 plays",
-        "art_path": "to_the_wind_block_out_the_sun_sleep.jpg",
-        "art_key": "period_album_3XQz5QVGMnDt8Kspu2HdOR"
+        "title": "Raising Hell",
+        "subtitle": "Run\u2013D.M.C.",
+        "meta": "24 plays",
+        "art_path": "rundmc_raising_hell.jpg",
+        "art_key": "period_album_7AFsTiojVaB2I58oZ1tMRg"
       },
       {
-        "title": "The Miseducation of Lauryn Hill",
-        "subtitle": "Ms. Lauryn Hill",
-        "meta": "13 plays",
-        "art_path": "ms_lauryn_hill_the_miseducation_of_lauryn_hill.jpg",
-        "art_key": "period_album_1BZoqf8Zje5nGdwZhOjAtD"
+        "title": "In A Silent Way",
+        "subtitle": "Miles Davis",
+        "meta": "2 plays",
+        "art_path": "miles_davis_in_a_silent_way.jpg",
+        "art_key": "period_album_0Hs3BomCdwIWRhgT57x22T"
       },
       {
-        "title": "In Keeping Secrets Of Silent Earth: 3",
-        "subtitle": "Coheed and Cambria",
-        "meta": "12 plays",
-        "art_path": "coheed_and_cambria_in_keeping_secrets_of_silent_earth_3.jpg",
-        "art_key": "period_album_2oWXmi9uLRKn60yRmY22MB"
-      },
-      {
-        "title": "Hybrid Theory (Bonus Edition)",
-        "subtitle": "Linkin Park",
-        "meta": "12 plays",
-        "art_path": "linkin_park_hybrid_theory_bonus_edition.jpg",
-        "art_key": "period_album_6hPkbAV3ZXpGZBGUvL6jVM"
-      },
-      {
-        "title": "Gal Costa",
-        "subtitle": "Gal Costa",
-        "meta": "11 plays",
-        "art_path": "gal_costa_gal_costa.jpg",
-        "art_key": "period_album_5ZVLLME05cmciSZz4IGcZu"
-      },
-      {
-        "title": "By the Way (Deluxe Edition)",
-        "subtitle": "Red Hot Chili Peppers",
-        "meta": "16 plays",
-        "art_path": "red_hot_chili_peppers_by_the_way_deluxe_edition.jpg",
-        "art_key": "period_album_6deiaArbeoqp1xPEGdEKp1"
-      },
-      {
-        "title": "Relationship Of Command",
-        "subtitle": "At the Drive-In",
-        "meta": "13 plays",
-        "art_path": "at_the_drive_in_relationship_of_command.jpg",
-        "art_key": "period_album_0Pv5bdtwTTBSHy9GyUe9um"
-      },
-      {
-        "title": "Untrue",
-        "subtitle": "Burial",
-        "meta": "10 plays",
-        "art_path": "burial_untrue.jpg",
-        "art_key": "period_album_1iRPiEYHIX2zpF8lkW54SK"
-      },
-      {
-        "title": "Trace (Remastered)",
-        "subtitle": "Son Volt",
+        "title": "In the Aeroplane Over the Sea",
+        "subtitle": "Neutral Milk Hotel",
         "meta": "9 plays",
-        "art_path": "son_volt_trace_remastered.jpg",
-        "art_key": "period_album_1SV1Fh8rLes7MeTYTXznKd"
+        "art_path": "neutral_milk_hotel_in_the_aeroplane_over_the_sea.jpg",
+        "art_key": "period_album_17q5eeNk3HAjX1gzQnkTX7"
+      },
+      {
+        "title": "Tigers Jaw",
+        "subtitle": "Tigers Jaw",
+        "meta": "10 plays \u00b7 2 days",
+        "art_path": "tigers_jaw_tigers_jaw.jpg",
+        "art_key": "period_album_431AISQsFUi33lirU9vNI5"
+      },
+      {
+        "title": "\u00c1g\u00e6tis byrjun",
+        "subtitle": "Sigur R\u00f3s",
+        "meta": "9 plays",
+        "art_path": "sigur_r\u00f3s_\u00e1g\u00e6tis_byrjun.jpg",
+        "art_key": "period_album_1DMMv1Kmoli3Y9fVEZDUVC"
+      },
+      {
+        "title": "Takk...",
+        "subtitle": "Sigur R\u00f3s",
+        "meta": "10 plays",
+        "art_path": "sigur_r\u00f3s_takk.jpg",
+        "art_key": "period_album_12tw1A9HmwE3MHvPfHhdoP"
+      },
+      {
+        "title": "Siamese Dream (Deluxe Edition)",
+        "subtitle": "The Smashing Pumpkins",
+        "meta": "11 plays",
+        "art_path": "the_smashing_pumpkins_siamese_dream_deluxe_edition.jpg",
+        "art_key": "period_album_0bQglEvsHphrS19FGODEGo"
+      },
+      {
+        "title": "Rise or Die Trying",
+        "subtitle": "Four Year Strong",
+        "meta": "11 plays",
+        "art_path": "four_year_strong_rise_or_die_trying.jpg",
+        "art_key": "period_album_08pL4gHGoa0GXyv9emugVv"
+      },
+      {
+        "title": "We're New Here",
+        "subtitle": "Gil Scott-Heron",
+        "meta": "10 plays",
+        "art_path": "gil_scott_heron_were_new_here.jpg",
+        "art_key": "period_album_7BuwwZzrJCAJaC12QKkDOh"
+      },
+      {
+        "title": "Me\u00f0 su\u00f0 \u00ed eyrum vi\u00f0 spilum endalaust",
+        "subtitle": "Sigur R\u00f3s",
+        "meta": "10 plays",
+        "art_path": "sigur_r\u00f3s_me\u00f0_su\u00f0_\u00ed_eyrum_vi\u00f0_spilum_endalaust.jpg",
+        "art_key": "period_album_5CtxgcqieOcYKyQjGKI0nY"
       }
     ],
     "top_new_artist": {
@@ -7998,18 +7942,11 @@
     ],
     "album_tiles": [
       {
-        "title": "Straight Outta Compton",
-        "subtitle": "N.W.A.",
-        "meta": "60 plays",
-        "art_path": "nwa_straight_outta_compton.jpg",
-        "art_key": "period_album_0Y7qkJVZ06tS2GUCDptzyW"
-      },
-      {
-        "title": "Seduzir",
-        "subtitle": "Djavan",
-        "meta": "40 plays",
-        "art_path": "djavan_seduzir.jpg",
-        "art_key": "period_album_52WarR7rVx473Mdvbu4tVF"
+        "title": "Person Pitch",
+        "subtitle": "Panda Bear",
+        "meta": "10 plays",
+        "art_path": "panda_bear_person_pitch.jpg",
+        "art_key": "period_album_64TDaAbxgO0TmKZrIavdLg"
       },
       {
         "title": "Melodrama",
@@ -8019,32 +7956,18 @@
         "art_key": "period_album_2B87zXm9bOWvAJdkJBTpzF"
       },
       {
+        "title": "All Delighted People",
+        "subtitle": "Sufjan Stevens",
+        "meta": "28 plays",
+        "art_path": "sufjan_stevens_all_delighted_people.jpg",
+        "art_key": "period_album_1wnEAz2lDtNoUUZF0KStuo"
+      },
+      {
         "title": "The Battle Of Los Angeles",
         "subtitle": "Rage Against The Machine",
         "meta": "40 plays",
         "art_path": "rage_against_the_machine_the_battle_of_los_angeles.jpg",
         "art_key": "period_album_2eia0myWFgoHuttJytCxgX"
-      },
-      {
-        "title": "Surfer Rosa (2007 Remaster)",
-        "subtitle": "Pixies",
-        "meta": "40 plays",
-        "art_path": "pixies_surfer_rosa_2007_remaster.jpg",
-        "art_key": "period_album_50j4Wm1b9hLpSpPIA39Vp9"
-      },
-      {
-        "title": "The Idler Wheel Is Wiser Than the Driver of the Screw and Whipping Cords Will Serve You More Than Ropes Will Ever Do (Expanded Edition)",
-        "subtitle": "Fiona Apple",
-        "meta": "40 plays",
-        "art_path": "fiona_apple_the_idler_wheel_is_wiser_than_the_driver_of_the_.jpg",
-        "art_key": "period_album_6B5favhKTShFTjRLsKIUfa"
-      },
-      {
-        "title": "Previs\u00e3o Do Tempo",
-        "subtitle": "Marcos Valle",
-        "meta": "48 plays",
-        "art_path": "marcos_valle_previs\u00e3o_do_tempo.jpg",
-        "art_key": "period_album_4SrPTE9sLJTE8mpeWFUhRL"
       },
       {
         "title": "3 Feet High and Rising",
@@ -8061,25 +7984,11 @@
         "art_key": "period_album_2wE1bvm3Ha0BvkHTvwk6rw"
       },
       {
-        "title": "Yeezus",
-        "subtitle": "Kanye West",
-        "meta": "9 plays",
-        "art_path": "kanye_west_yeezus.jpg",
-        "art_key": "period_album_7D2NdGvBHIavgLhmcwhluK"
-      },
-      {
-        "title": "Let It Be",
-        "subtitle": "The Replacements",
-        "meta": "27 plays",
-        "art_path": "the_replacements_let_it_be.jpg",
-        "art_key": "period_album_2sOLW5TSgXiLZBacdHxO6m"
-      },
-      {
-        "title": "Low (2017 Remaster)",
-        "subtitle": "David Bowie",
-        "meta": "30 plays",
-        "art_path": "david_bowie_low_2017_remaster.jpg",
-        "art_key": "period_album_2de6LD7eOW8zrlorbS28na"
+        "title": "Wish You Were Here",
+        "subtitle": "Pink Floyd",
+        "meta": "8 plays",
+        "art_path": "pink_floyd_wish_you_were_here.jpg",
+        "art_key": "period_album_0bCAjiUamIFqKJsekOYuRw"
       },
       {
         "title": "Toxicity",
@@ -8089,11 +7998,18 @@
         "art_key": "period_album_6jWde94ln40epKIQCd8XUh"
       },
       {
-        "title": "Microcastle",
-        "subtitle": "Deerhunter",
-        "meta": "20 plays",
-        "art_path": "deerhunter_microcastle.jpg",
-        "art_key": "period_album_4wJ585ippGitIpRcGs1GD7"
+        "title": "Diaspora Problems",
+        "subtitle": "Soul Glo",
+        "meta": "6 plays",
+        "art_path": "soul_glo_diaspora_problems.jpg",
+        "art_key": "period_album_2ZYhM0LXHZ38te98EizcQW"
+      },
+      {
+        "title": "Black Messiah",
+        "subtitle": "D'Angelo",
+        "meta": "10 plays",
+        "art_path": "dangelo_black_messiah.jpg",
+        "art_key": "period_album_5Hfbag0SsHxafx1SySFSX6"
       },
       {
         "title": "NEVER ENOUGH",
@@ -8108,6 +8024,34 @@
         "meta": "18 plays",
         "art_path": "kate_bush_the_sensual_world_2018_remaster.jpg",
         "art_key": "period_album_5EyDvOit9McsAc9ao1QROt"
+      },
+      {
+        "title": "Exile In Guyville (2018 Remaster)",
+        "subtitle": "Liz Phair",
+        "meta": "36 plays",
+        "art_path": "liz_phair_exile_in_guyville_2018_remaster.jpg",
+        "art_key": "period_album_7sCpW2cLGcRk1zf9zi0Yqd"
+      },
+      {
+        "title": "Logos",
+        "subtitle": "Atlas Sound",
+        "meta": "20 plays",
+        "art_path": "atlas_sound_logos.jpg",
+        "art_key": "period_album_5j6RB5MpNUKWJJ2uxibdJh"
+      },
+      {
+        "title": "The Queen Is Dead",
+        "subtitle": "The Smiths",
+        "meta": "18 plays",
+        "art_path": "the_smiths_the_queen_is_dead.jpg",
+        "art_key": "period_album_5Y0p2XCgRRIjna91aQE8q7"
+      },
+      {
+        "title": "ELOWI",
+        "subtitle": "Yam\u00ea",
+        "meta": "14 plays",
+        "art_path": "yam\u00ea_elowi.jpg",
+        "art_key": "period_album_49TUnWv5swURA9osAyLHI2"
       }
     ],
     "top_new_artist": {
@@ -8189,18 +8133,11 @@
     ],
     "album_tiles": [
       {
-        "title": "Gal Tropical",
-        "subtitle": "Gal Costa",
-        "meta": "48 plays",
-        "art_path": "gal_costa_gal_tropical.jpg",
-        "art_key": "period_album_1Vjf7xPNvBhqKnAR4rAXR2"
-      },
-      {
-        "title": "xx",
-        "subtitle": "The xx",
-        "meta": "28 plays",
-        "art_path": "the_xx_xx.jpg",
-        "art_key": "period_album_2av2ZSHlvD7rvLSsMvtYCG"
+        "title": "OK Computer",
+        "subtitle": "Radiohead",
+        "meta": "15 plays",
+        "art_path": "radiohead_ok_computer.jpg",
+        "art_key": "period_album_6dVIqQ8qmQ5GBnJ9shOYGE"
       },
       {
         "title": "Blonde",
@@ -8217,6 +8154,20 @@
         "art_key": "period_album_4hjiHP3NIIzyYUgfs145zr"
       },
       {
+        "title": "Kid A",
+        "subtitle": "Radiohead",
+        "meta": "8 plays",
+        "art_path": "radiohead_kid_a.jpg",
+        "art_key": "period_album_6GjwtEZcfenmOf6l18N7T7"
+      },
+      {
+        "title": "In Rainbows",
+        "subtitle": "Radiohead",
+        "meta": "4 plays",
+        "art_path": "radiohead_in_rainbows.jpg",
+        "art_key": "period_album_5vkqYmiPBYLaalcmjujWxK"
+      },
+      {
         "title": "Un Verano Sin Ti",
         "subtitle": "Bad Bunny",
         "meta": "19 plays",
@@ -8224,11 +8175,25 @@
         "art_key": "period_album_3RQQmkQEvNCY4prGKE6oc5"
       },
       {
+        "title": "channel ORANGE",
+        "subtitle": "Frank Ocean",
+        "meta": "10 plays",
+        "art_path": "frank_ocean_channel_orange.jpg",
+        "art_key": "period_album_392p3shh2jkxUxY2VHvlH8"
+      },
+      {
         "title": "Body Talk",
         "subtitle": "Robyn",
         "meta": "14 plays",
         "art_path": "robyn_body_talk.jpg",
         "art_key": "period_album_0Rzg7fqyWE39G6wKipxrns"
+      },
+      {
+        "title": "Ghosts of the Great Highway",
+        "subtitle": "Sun Kil Moon",
+        "meta": "15 plays",
+        "art_path": "sun_kil_moon_ghosts_of_the_great_highway.jpg",
+        "art_key": "period_album_1JpwFoxVVutPXtSBohj0rJ"
       },
       {
         "title": "DeB\u00cd TiRAR M\u00e1S FOToS",
@@ -8259,6 +8224,13 @@
         "art_key": "period_album_6FJxoadUE4JNVwWHghBwnb"
       },
       {
+        "title": "Old Ramon",
+        "subtitle": "Red House Painters",
+        "meta": "10 plays",
+        "art_path": "red_house_painters_old_ramon.jpg",
+        "art_key": "period_album_4rL0RzmHMQyHiZqJVdt7A8"
+      },
+      {
         "title": "A Better View Of The Rising Moon",
         "subtitle": "1997",
         "meta": "7 plays",
@@ -8266,39 +8238,11 @@
         "art_key": "period_album_3FR05gmeoVRYr2i1MKqrcn"
       },
       {
-        "title": "BEYONC\u00c9 [Platinum Edition]",
-        "subtitle": "Beyonc\u00e9",
-        "meta": "19 plays",
-        "art_path": "beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg",
-        "art_key": "period_album_2UJwKSBUz6rtW4QLK74kQu"
-      },
-      {
-        "title": "A volta de Secos & Molhados",
-        "subtitle": "Secos & Molhados",
-        "meta": "11 plays",
-        "art_path": "secos_molhados_a_volta_de_secos_molhados.jpg",
-        "art_key": "period_album_4rNGFFaXZ7l0Vg6QrcHcUi"
-      },
-      {
-        "title": "Admiral Fell Promises",
-        "subtitle": "Sun Kil Moon",
-        "meta": "10 plays",
-        "art_path": "sun_kil_moon_admiral_fell_promises.jpg",
-        "art_key": "period_album_77AYdae70ldovpvRPS0Xjc"
-      },
-      {
-        "title": "channel ORANGE",
-        "subtitle": "Frank Ocean",
-        "meta": "10 plays",
-        "art_path": "frank_ocean_channel_orange.jpg",
-        "art_key": "period_album_392p3shh2jkxUxY2VHvlH8"
-      },
-      {
-        "title": "Collision Course",
-        "subtitle": "JA\u0178-Z",
-        "meta": "6 plays",
-        "art_path": "ja\u00ff_z_collision_course.jpg",
-        "art_key": "period_album_5NH94cATqx5fjBE794xZLy"
+        "title": "Red House Painters I",
+        "subtitle": "Red House Painters",
+        "meta": "12 plays",
+        "art_path": "red_house_painters_red_house_painters_i.jpg",
+        "art_key": "period_album_3F9xD3Dg2zu2LZbVHdKeVD"
       }
     ],
     "top_new_artist": {
@@ -8394,6 +8338,13 @@
         "art_key": "period_album_2Y9IRtehByVkegoD7TcLfi"
       },
       {
+        "title": "In A Silent Way",
+        "subtitle": "Miles Davis",
+        "meta": "8 plays",
+        "art_path": "miles_davis_in_a_silent_way.jpg",
+        "art_key": "period_album_0Hs3BomCdwIWRhgT57x22T"
+      },
+      {
         "title": "Stage Four (Deluxe Edition)",
         "subtitle": "Touch\u00e9 Amor\u00e9",
         "meta": "24 plays",
@@ -8408,6 +8359,13 @@
         "art_key": "period_album_0Pv5bdtwTTBSHy9GyUe9um"
       },
       {
+        "title": "Ciencia De Los In\u00fatiles",
+        "subtitle": "El Tr\u00edo De Omar Rodr\u00edguez-L\u00f3pez",
+        "meta": "28 plays",
+        "art_path": "el_tr\u00edo_de_omar_rodr\u00edguez_l\u00f3pez_ciencia_de_los_in\u00fatiles.jpg",
+        "art_key": "period_album_5as7hQXIniGbaltqM0yJud"
+      },
+      {
         "title": "Trans-Europe Express (2009 Remaster)",
         "subtitle": "Kraftwerk",
         "meta": "32 plays",
@@ -8415,11 +8373,11 @@
         "art_key": "period_album_0HHRIVjvBcnTepfeRVgS2f"
       },
       {
-        "title": "Mirrored",
-        "subtitle": "Battles",
-        "meta": "40 plays",
-        "art_path": "battles_mirrored.jpg",
-        "art_key": "period_album_64shsDEnphK07flo3DzWAc"
+        "title": "Expensive Shit",
+        "subtitle": "Fela Kuti",
+        "meta": "3 plays",
+        "art_path": "fela_kuti_expensive_shit.jpg",
+        "art_key": "period_album_5QtXhQE2WvVLz60sYwafQH"
       },
       {
         "title": "Trace (Remastered)",
@@ -8429,6 +8387,13 @@
         "art_key": "period_album_1SV1Fh8rLes7MeTYTXznKd"
       },
       {
+        "title": "In the Aeroplane Over the Sea",
+        "subtitle": "Neutral Milk Hotel",
+        "meta": "18 plays",
+        "art_path": "neutral_milk_hotel_in_the_aeroplane_over_the_sea.jpg",
+        "art_key": "period_album_17q5eeNk3HAjX1gzQnkTX7"
+      },
+      {
         "title": "In / Casino / Out",
         "subtitle": "At the Drive-In",
         "meta": "18 plays",
@@ -8436,11 +8401,25 @@
         "art_key": "period_album_35qZXJifEQcpWnKP6E4oNv"
       },
       {
-        "title": "The Suburbs (Deluxe)",
-        "subtitle": "Arcade Fire",
-        "meta": "34 plays",
-        "art_path": "arcade_fire_the_suburbs_deluxe.jpg",
-        "art_key": "period_album_0gkUcpkyW2SXN49Yktkf6F"
+        "title": "Marquee Moon",
+        "subtitle": "Television",
+        "meta": "14 plays",
+        "art_path": "television_marquee_moon.jpg",
+        "art_key": "period_album_630o1rKTDsLeIPreOY1jqP"
+      },
+      {
+        "title": "The Joshua Tree",
+        "subtitle": "U2",
+        "meta": "18 plays",
+        "art_path": "u2_the_joshua_tree.jpg",
+        "art_key": "period_album_5vBZRYu2GLA65nfxBvG1a7"
+      },
+      {
+        "title": "Orange Rhyming Dictionary",
+        "subtitle": "Jets To Brazil",
+        "meta": "20 plays",
+        "art_path": "jets_to_brazil_orange_rhyming_dictionary.jpg",
+        "art_key": "period_album_5zaVtrjodNQru22Rj4FIcD"
       },
       {
         "title": "King of the Beach",
@@ -8455,41 +8434,6 @@
         "meta": "26 plays",
         "art_path": "sparta_porcelain.jpg",
         "art_key": "period_album_17Mq1v9fKGSmCabI7DaV4S"
-      },
-      {
-        "title": "White Blood Cells",
-        "subtitle": "The White Stripes",
-        "meta": "32 plays",
-        "art_path": "the_white_stripes_white_blood_cells.jpg",
-        "art_key": "period_album_6Xvc1TfpVEhDeHhmTQEtp0"
-      },
-      {
-        "title": "Rites of Spring",
-        "subtitle": "Rites of Spring",
-        "meta": "28 plays",
-        "art_path": "rites_of_spring_rites_of_spring.jpg",
-        "art_key": "period_album_0pU2blS70BzVWyC1tVyaLg"
-      },
-      {
-        "title": "Homework",
-        "subtitle": "Daft Punk",
-        "meta": "13 plays",
-        "art_path": "daft_punk_homework.jpg",
-        "art_key": "period_album_5uRdvUR7xCnHmUW8n64n9y"
-      },
-      {
-        "title": "The Miseducation of Lauryn Hill",
-        "subtitle": "Ms. Lauryn Hill",
-        "meta": "15 plays",
-        "art_path": "ms_lauryn_hill_the_miseducation_of_lauryn_hill.jpg",
-        "art_key": "period_album_1BZoqf8Zje5nGdwZhOjAtD"
-      },
-      {
-        "title": "Hybrid Theory (Bonus Edition)",
-        "subtitle": "Linkin Park",
-        "meta": "12 plays",
-        "art_path": "linkin_park_hybrid_theory_bonus_edition.jpg",
-        "art_key": "period_album_6hPkbAV3ZXpGZBGUvL6jVM"
       }
     ],
     "top_new_artist": {
@@ -8571,25 +8515,11 @@
     ],
     "album_tiles": [
       {
-        "title": "The Ugly Organ",
-        "subtitle": "Cursive",
-        "meta": "20 plays",
-        "art_path": "cursive_the_ugly_organ.jpg",
-        "art_key": "period_album_3ZoVW62G8g8GC0yzpXOcKz"
-      },
-      {
         "title": "You're Gonna Miss It All",
         "subtitle": "Modern Baseball",
         "meta": "44 plays",
         "art_path": "modern_baseball_youre_gonna_miss_it_all.jpg",
         "art_key": "period_album_4QElAwQufg6wCeyvpafqwA"
-      },
-      {
-        "title": "Damaged",
-        "subtitle": "Black Flag",
-        "meta": "12 plays",
-        "art_path": "black_flag_damaged.jpg",
-        "art_key": "period_album_34aFnrFRBlErcbU6moRZR3"
       },
       {
         "title": "Untrue",
@@ -8599,11 +8529,25 @@
         "art_key": "period_album_1iRPiEYHIX2zpF8lkW54SK"
       },
       {
+        "title": "Nevermind (Remastered)",
+        "subtitle": "Nirvana",
+        "meta": "12 plays",
+        "art_path": "nirvana_nevermind_remastered.jpg",
+        "art_key": "period_album_2guirTSEqLizK7j9i1MTTZ"
+      },
+      {
         "title": "Good Apollo I'm Burning Star IV Volume One: From Fear Through The Eyes Of Madness",
         "subtitle": "Coheed and Cambria",
         "meta": "26 plays",
         "art_path": "coheed_and_cambria_good_apollo_im_burning_star_iv_volume_one_from_f.jpg",
         "art_key": "period_album_4nYsnQpTAQaPzrPc6rOsBN"
+      },
+      {
+        "title": "Unknown Pleasures",
+        "subtitle": "Joy Division",
+        "meta": "20 plays",
+        "art_path": "joy_division_unknown_pleasures.jpg",
+        "art_key": "period_album_5Dgqy4bBg09Rdw7CQM545s"
       },
       {
         "title": "The Second Stage Turbine Blade (Re-Issue)",
@@ -8620,18 +8564,32 @@
         "art_key": "period_album_2z9lM6LDS58F70IGyQ1XMK"
       },
       {
-        "title": "Hounds of Love (2018 Remaster)",
-        "subtitle": "Kate Bush",
+        "title": "Carry on Kid",
+        "subtitle": "Worthwhile",
         "meta": "22 plays",
-        "art_path": "kate_bush_hounds_of_love_2018_remaster.jpg",
-        "art_key": "period_album_1ww8GdNvrF0dgJbrnVZmAr"
+        "art_path": "worthwhile_carry_on_kid.jpg",
+        "art_key": "period_album_6C5ED5twSt8dEbiffbFNe2"
       },
       {
-        "title": "Let It Be",
-        "subtitle": "The Replacements",
-        "meta": "22 plays",
-        "art_path": "the_replacements_let_it_be.jpg",
-        "art_key": "period_album_2sOLW5TSgXiLZBacdHxO6m"
+        "title": "Somewhere at the Bottom of the River Between Vega and Altair (10th Anniversary)",
+        "subtitle": "La Dispute",
+        "meta": "11 plays",
+        "art_path": "la_dispute_somewhere_at_the_bottom_of_the_river_between_veg.jpg",
+        "art_key": "period_album_5fzDxefGUH8jM7T9HCLSNr"
+      },
+      {
+        "title": "Aromanticism",
+        "subtitle": "Moses Sumney",
+        "meta": "5 plays",
+        "art_path": "moses_sumney_aromanticism.jpg",
+        "art_key": "period_album_3GEa8PdRoag1vtVUQCAla1"
+      },
+      {
+        "title": "Downtown Battle Mountain II",
+        "subtitle": "Dance Gavin Dance",
+        "meta": "9 plays",
+        "art_path": "dance_gavin_dance_downtown_battle_mountain_ii.jpg",
+        "art_key": "period_album_7dBUmXkVXyQv60PoAWZAa1"
       },
       {
         "title": "In Keeping Secrets Of Silent Earth: 3",
@@ -8641,6 +8599,13 @@
         "art_key": "period_album_2oWXmi9uLRKn60yRmY22MB"
       },
       {
+        "title": "Acabou Chorare",
+        "subtitle": "Novos Baianos",
+        "meta": "9 plays",
+        "art_path": "novos_baianos_acabou_chorare.jpg",
+        "art_key": "period_album_76iTNsPU1yhKWcQrTc2qdA"
+      },
+      {
         "title": "Doolittle",
         "subtitle": "Pixies",
         "meta": "12 plays",
@@ -8648,39 +8613,18 @@
         "art_key": "period_album_0DQyTVcDhK9wm0f6RaErWO"
       },
       {
+        "title": "good kid, m.A.A.d city",
+        "subtitle": "Kendrick Lamar",
+        "meta": "12 plays",
+        "art_path": "kendrick_lamar_good_kid_maad_city.jpg",
+        "art_key": "period_album_0E47vczx9XVds1Lr2Y8rze"
+      },
+      {
         "title": "3 Feet High and Rising",
         "subtitle": "De La Soul",
         "meta": "20 plays",
         "art_path": "de_la_soul_3_feet_high_and_rising.jpg",
         "art_key": "period_album_34LxHI9x14qXUOS8AWRrYD"
-      },
-      {
-        "title": "Jesu / Sun Kil Moon",
-        "subtitle": "Jesu/Sun Kil Moon",
-        "meta": "5 plays",
-        "art_path": "jesusun_kil_moon_jesu_sun_kil_moon.jpg",
-        "art_key": "period_album_2wE1bvm3Ha0BvkHTvwk6rw"
-      },
-      {
-        "title": "On Avery Island",
-        "subtitle": "Neutral Milk Hotel",
-        "meta": "10 plays",
-        "art_path": "neutral_milk_hotel_on_avery_island.jpg",
-        "art_key": "period_album_3HTsNBfZLfRXQTfdLeLVK1"
-      },
-      {
-        "title": "To Pimp A Butterfly",
-        "subtitle": "Kendrick Lamar",
-        "meta": "16 plays",
-        "art_path": "kendrick_lamar_to_pimp_a_butterfly.jpg",
-        "art_key": "period_album_7ycBtnsMtyVbbwTfJwRjSP"
-      },
-      {
-        "title": "Pink Moon",
-        "subtitle": "Nick Drake",
-        "meta": "9 plays",
-        "art_path": "nick_drake_pink_moon.jpg",
-        "art_key": "period_album_5mwOo1zikswhmfHvtqVSXg"
       }
     ],
     "top_new_artist": {

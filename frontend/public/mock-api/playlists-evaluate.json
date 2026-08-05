@@ -1,122 +1,6 @@
 {
   "pl-331421700": [
     {
-      "played_at": "2026-07-02T21:18:19.761625Z",
-      "track_name": "Chemicals",
-      "artist_names": [
-        "Tigers Jaw"
-      ],
-      "artist_ids": [
-        "0tLaqkKW7K6tc3QF9SM0M8"
-      ],
-      "album_name": "Tigers Jaw",
-      "track_id": "5O8NZbdm6mLy8HgJzROeJG",
-      "album_id": "431AISQsFUi33lirU9vNI5",
-      "duration_ms": 180026,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 10,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737fa27627513898e457d8f9b5",
-      "album_art_local_path": "tigers_jaw_tigers_jaw.jpg",
-      "release_year": 2008,
-      "track_number": 4,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-188813029",
-      "device_name": "Desktop App",
-      "device_type": "Computer",
-      "shuffle_state": true,
-      "_play_count": 2,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-07-15T23:15:19.018939Z",
-      "track_name": "Yellow Cat (Slash) Red Cat",
-      "artist_names": [
-        "Say Anything"
-      ],
-      "artist_ids": [
-        "3ImqpXKKgkH5VydfgX1hd4"
-      ],
-      "album_name": "Is a Real Boy",
-      "track_id": "22aVjp6vuqnAJJMaaRUwEh",
-      "album_id": "67GbWmsrvtIdOOUYRo7do7",
-      "duration_ms": 317736,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 21,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273dbbf2c06de655b35bec9ea1c",
-      "album_art_local_path": "say_anything_is_a_real_boy.jpg",
-      "release_year": 2005,
-      "track_number": 5,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-331421700",
-      "device_name": "Desktop App",
-      "device_type": "Computer",
-      "shuffle_state": true,
-      "_play_count": 3,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-06-24T22:31:58.165808Z",
-      "track_name": "I'll Be Your Mirror",
-      "artist_names": [
-        "The Velvet Underground"
-      ],
-      "artist_ids": [
-        "1nJvji2KIlWSseXRSlNYsC"
-      ],
-      "album_name": "The Velvet Underground & Nico 45th Anniversary",
-      "track_id": "4PINSJIlBWsnVeveicq1S8",
-      "album_id": "4xwx0x7k6c5VuThz5qVqmV",
-      "duration_ms": 134040,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "compilation",
-      "album_total_tracks": 11,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27398260c528e6eec9dd431c1d7",
-      "album_art_local_path": "the_velvet_underground_the_velvet_underground_nico_45th_anniversary.jpg",
-      "release_year": 1967,
-      "track_number": 9,
-      "context_type": null,
-      "context_uri": null,
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
-      "shuffle_state": false,
-      "_play_count": 3,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-07-06T00:31:36.429096Z",
-      "track_name": "Wilderness - 2019 Digital Master",
-      "artist_names": [
-        "Joy Division"
-      ],
-      "artist_ids": [
-        "432R46LaYsJZV2Gmc4jUV5"
-      ],
-      "album_name": "Unknown Pleasures",
-      "track_id": "5YCjJwmUKpUQRzgPDm3iFm",
-      "album_id": "5Dgqy4bBg09Rdw7CQM545s",
-      "duration_ms": 158920,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 10,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27327cc8b0ed297111f53009772",
-      "album_art_local_path": "joy_division_unknown_pleasures.jpg",
-      "release_year": 1979,
-      "track_number": 8,
-      "context_type": "album",
-      "context_uri": "spotify:album:5Dgqy4bBg09Rdw7CQM545s",
-      "device_name": "Living Room Speaker",
-      "device_type": "Speaker",
-      "shuffle_state": false,
-      "_play_count": 3,
-      "_pinned": true
-    },
-    {
       "played_at": "2026-05-24T13:34:00Z",
       "track_name": "My Name Is Jonas",
       "artist_names": [
@@ -146,236 +30,89 @@
       "_pinned": true
     },
     {
-      "played_at": "2026-05-18T23:47:39.949138Z",
-      "track_name": "Minor Threat",
+      "played_at": "2026-06-15T21:35:59.754000Z",
+      "track_name": "A conjunction of drones simulating the way in which Sufjan Stevens has an existential crisis in the Great Godfrey Maze",
       "artist_names": [
-        "Minor Threat"
+        "Sufjan Stevens"
       ],
       "artist_ids": [
-        "07PiZYrhllpSXtELkUxlrf"
+        "4MXUO7sVCaFgFjoTI5ox5c"
       ],
-      "album_name": "First Two Seven Inches",
-      "track_id": "7pADnbKBmN6bY2YfLXCIgU",
-      "album_id": "6Sty6rLnMTXFjKxKUZEfmy",
-      "duration_ms": 89160,
+      "album_name": "Illinois",
+      "track_id": "4a82CKrAXdeHFJPTwEuEm8",
+      "album_id": "1pOl0KEC1iQnA6F0XxV4To",
+      "duration_ms": 19653,
       "explicit": false,
       "isrc": null,
-      "album_type": "single",
-      "album_total_tracks": 14,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27384dfb3b0e738e2cc8e29d8fa",
-      "album_art_local_path": "minor_threat_first_two_seven_inches.jpg",
-      "release_year": 1981,
-      "track_number": 8,
-      "context_type": null,
-      "context_uri": null,
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
-      "shuffle_state": false,
+      "album_type": "album",
+      "album_total_tracks": 22,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273712c76b4152918fb8d37c53d",
+      "album_art_local_path": "sufjan_stevens_illinois.jpg",
+      "release_year": 2005,
+      "track_number": 14,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-906155271",
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
+      "shuffle_state": true,
       "_play_count": 2,
       "_pinned": true
     },
     {
-      "played_at": "2026-06-20T21:57:22.154731Z",
-      "track_name": "Jumping Ship",
+      "played_at": "2026-06-22T23:55:07.145428Z",
+      "track_name": "Vento De Maio / M\u00fasica Incidental: Um Girassol Da Cor Do Seu Cabelo",
       "artist_names": [
-        "Counterparts"
+        "L\u00f4 Borges"
       ],
       "artist_ids": [
-        "5LyRnL0rysObxDRxzSfV1z"
+        "0yFvXd36g5sNKYDi0Kkvl8"
       ],
-      "album_name": "The Current Will Carry Us",
-      "track_id": "3bKXba0FSBFfWOzIAViBat",
-      "album_id": "3bJtSVsqSsqmVtfvtnisbU",
-      "duration_ms": 191586,
+      "album_name": "Retratos",
+      "track_id": "6NLPsM5iMf8NOvOKvgyIRn",
+      "album_id": "2ngEpie4g3Z2xtZhhwCAxH",
+      "duration_ms": 265640,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "compilation",
+      "album_total_tracks": 12,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273983305ecf906b6c9e56b2884",
+      "album_art_local_path": "l\u00f4_borges_retratos.jpg",
+      "release_year": 2004,
+      "track_number": 4,
+      "context_type": "album",
+      "context_uri": "spotify:album:2ngEpie4g3Z2xtZhhwCAxH",
+      "device_name": "Web Player (Chrome)",
+      "device_type": "Computer",
+      "shuffle_state": false,
+      "_play_count": 6,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-07-02T21:18:19.761625Z",
+      "track_name": "Chemicals",
+      "artist_names": [
+        "Tigers Jaw"
+      ],
+      "artist_ids": [
+        "0tLaqkKW7K6tc3QF9SM0M8"
+      ],
+      "album_name": "Tigers Jaw",
+      "track_id": "5O8NZbdm6mLy8HgJzROeJG",
+      "album_id": "431AISQsFUi33lirU9vNI5",
+      "duration_ms": 180026,
       "explicit": false,
       "isrc": null,
       "album_type": "album",
-      "album_total_tracks": 11,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273c9376ee1bb33cd9cb5066d5b",
-      "album_art_local_path": "counterparts_the_current_will_carry_us.jpg",
-      "release_year": 2011,
-      "track_number": 6,
+      "album_total_tracks": 10,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737fa27627513898e457d8f9b5",
+      "album_art_local_path": "tigers_jaw_tigers_jaw.jpg",
+      "release_year": 2008,
+      "track_number": 4,
       "context_type": "playlist",
       "context_uri": "spotify:playlist:pl-188813029",
       "device_name": "Desktop App",
       "device_type": "Computer",
       "shuffle_state": true,
-      "_play_count": 3,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-07-18T18:10:56.685863Z",
-      "track_name": "Stuck Together Pieces",
-      "artist_names": [
-        "Atoms For Peace"
-      ],
-      "artist_ids": [
-        "7tA9Eeeb68kkiG9Nrvuzmi"
-      ],
-      "album_name": "AMOK",
-      "track_id": "2Q2t0qJx2AlPb3vvDeTWni",
-      "album_id": "77Ie9frENeQwYUGHrrS0pk",
-      "duration_ms": 328443,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 9,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27385c9a2b110adf7692693ee6b",
-      "album_art_local_path": "atoms_for_peace_amok.jpg",
-      "release_year": 2013,
-      "track_number": 6,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-906155271",
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
-      "shuffle_state": true,
-      "_play_count": 6,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-07-22T23:03:43.307178Z",
-      "track_name": "Phantom Fireworks",
-      "artist_names": [
-        "Carissa's Wierd"
-      ],
-      "artist_ids": [
-        "5VnYwYnG7QmpzQtxyubIwh"
-      ],
-      "album_name": "I Before E",
-      "track_id": "6g4UXDoTJc1xUWXcubvnAK",
-      "album_id": "3Fl3sBZrRO8M35YWqbicmt",
-      "duration_ms": 332040,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 12,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273068d8dfe04176810c0b8b8eb",
-      "album_art_local_path": "carissas_wierd_i_before_e.jpg",
-      "release_year": 2004,
-      "track_number": 1,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-331421700",
-      "device_name": "iPhone",
-      "device_type": "Smartphone",
-      "shuffle_state": false,
-      "_play_count": 2,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-03-10T22:02:58.195902Z",
-      "track_name": "American Hearts",
-      "artist_names": [
-        "Piebald"
-      ],
-      "artist_ids": [
-        "4rOGGTXaYygtFIHsPgLKJv"
-      ],
-      "album_name": "We Are The Only Friends We Have",
-      "track_id": "3EWJg0d2CMtst83tU5nZiq",
-      "album_id": "0MtzNtKxLd7KthcSObeWJB",
-      "duration_ms": 189828,
-      "explicit": false,
-      "isrc": "US3E40600382",
-      "album_type": "album",
-      "album_total_tracks": 12,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27323fe8a3ef7da6d5b9568f6d7",
-      "album_art_local_path": "piebald_we_are_the_only_friends_we_have.jpg",
-      "release_year": 2002,
-      "track_number": 3,
-      "context_type": "collection",
-      "context_uri": "spotify:collection:tracks",
-      "device_name": "Desktop App",
-      "device_type": "Computer",
-      "shuffle_state": false,
-      "_play_count": 2,
-      "_pinned": true
-    }
-  ],
-  "pl-906155271": [
-    {
-      "played_at": "2026-03-20T18:52:43.989844Z",
-      "track_name": "Yeah, I Said It",
-      "artist_names": [
-        "Rihanna"
-      ],
-      "artist_ids": [
-        "5pKCCKE2ajJHZ9KAiaK11H"
-      ],
-      "album_name": "ANTI",
-      "track_id": "1q35smJsSPtVl4aoc72wYN",
-      "album_id": "48i37aZTC1prDr4EcpQeEa",
-      "duration_ms": 133080,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 13,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737b688587a6754481c53f6bb7",
-      "album_art_local_path": "rihanna_anti.jpg",
-      "release_year": 2016,
-      "track_number": 8,
-      "context_type": "album",
-      "context_uri": "spotify:album:48i37aZTC1prDr4EcpQeEa",
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
-      "shuffle_state": false,
-      "_play_count": 1,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-07-25T22:02:05.788447Z",
-      "track_name": "Saidas E Bandeiras (Exits And Flags)",
-      "artist_names": [
-        "Milton Nascimento"
-      ],
-      "artist_ids": [
-        "3Bnq7jiU506HcPjRgQ43TM"
-      ],
-      "album_name": "Milton",
-      "track_id": "09hnFZ9stGVGKqoeEQZXRz",
-      "album_id": "6GPL5sMWxYibGoKnarlqUk",
-      "duration_ms": 285573,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 9,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2734536274f7f2eee8097dacd2d",
-      "album_art_local_path": "milton_nascimento_milton.jpg",
-      "release_year": 1976,
-      "track_number": 8,
-      "context_type": "album",
-      "context_uri": "spotify:album:6GPL5sMWxYibGoKnarlqUk",
-      "device_name": "iPhone",
-      "device_type": "Smartphone",
-      "shuffle_state": false,
-      "_play_count": 2,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-06-13T04:50:38.305730Z",
-      "track_name": "Egg Man",
-      "artist_names": [
-        "Beastie Boys"
-      ],
-      "artist_ids": [
-        "03r4iKL2g2442PT9n2UKsx"
-      ],
-      "album_name": "Paul's Boutique (20th Anniversary Edition / Remastered)",
-      "track_id": "6vcf7sA7tsNiIeufH0FUFL",
-      "album_id": "1kmyirVya5fRxdjsPFDM05",
-      "duration_ms": 177679,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 23,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2732288f4cd4bf3a8764624a0d2",
-      "album_art_local_path": "beastie_boys_pauls_boutique_20th_anniversary_edition_remaster.jpg",
-      "release_year": 1989,
-      "track_number": 4,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-906155271",
-      "device_name": "Desktop App",
-      "device_type": "Computer",
-      "shuffle_state": false,
       "_play_count": 2,
       "_pinned": true
     },
@@ -409,119 +146,61 @@
       "_pinned": true
     },
     {
-      "played_at": "2026-05-18T20:10:22.064496Z",
-      "track_name": "Born As Ghosts",
+      "played_at": "2026-07-22T23:03:43.307178Z",
+      "track_name": "Phantom Fireworks",
       "artist_names": [
-        "Rage Against The Machine"
+        "Carissa's Wierd"
       ],
       "artist_ids": [
-        "2d0hyoQ5ynDBnkvAbJKORj"
+        "5VnYwYnG7QmpzQtxyubIwh"
       ],
-      "album_name": "The Battle Of Los Angeles",
-      "track_id": "3moeHk8eIajvUEzVocXukf",
-      "album_id": "2eia0myWFgoHuttJytCxgX",
-      "duration_ms": 202040,
+      "album_name": "I Before E",
+      "track_id": "6g4UXDoTJc1xUWXcubvnAK",
+      "album_id": "3Fl3sBZrRO8M35YWqbicmt",
+      "duration_ms": 332040,
       "explicit": false,
       "isrc": null,
       "album_type": "album",
       "album_total_tracks": 12,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2733c2579a4f8cacd5b95b8fa68",
-      "album_art_local_path": "rage_against_the_machine_the_battle_of_los_angeles.jpg",
-      "release_year": 1999,
-      "track_number": 7,
-      "context_type": "album",
-      "context_uri": "spotify:album:2eia0myWFgoHuttJytCxgX",
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
-      "shuffle_state": false,
-      "_play_count": 5,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-06-15T21:35:59.754000Z",
-      "track_name": "A conjunction of drones simulating the way in which Sufjan Stevens has an existential crisis in the Great Godfrey Maze",
-      "artist_names": [
-        "Sufjan Stevens"
-      ],
-      "artist_ids": [
-        "4MXUO7sVCaFgFjoTI5ox5c"
-      ],
-      "album_name": "Illinois",
-      "track_id": "4a82CKrAXdeHFJPTwEuEm8",
-      "album_id": "1pOl0KEC1iQnA6F0XxV4To",
-      "duration_ms": 19653,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 22,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273712c76b4152918fb8d37c53d",
-      "album_art_local_path": "sufjan_stevens_illinois.jpg",
-      "release_year": 2005,
-      "track_number": 14,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-906155271",
-      "device_name": "iPhone",
-      "device_type": "Smartphone",
-      "shuffle_state": true,
-      "_play_count": 2,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-04-16T00:16:47.289937Z",
-      "track_name": "Estrada Do Sol",
-      "artist_names": [
-        "Gal Costa"
-      ],
-      "artist_ids": [
-        "1b8kpp4DUwt1hWaxTiWQhD"
-      ],
-      "album_name": "Gal Tropical",
-      "track_id": "0OF14BivUjlWIsSkM8YkID",
-      "album_id": "1Vjf7xPNvBhqKnAR4rAXR2",
-      "duration_ms": 204026,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 12,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273de4828d89731083b45eb1521",
-      "album_art_local_path": "gal_costa_gal_tropical.jpg",
-      "release_year": 1979,
-      "track_number": 4,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273068d8dfe04176810c0b8b8eb",
+      "album_art_local_path": "carissas_wierd_i_before_e.jpg",
+      "release_year": 2004,
+      "track_number": 1,
       "context_type": "playlist",
       "context_uri": "spotify:playlist:pl-331421700",
-      "device_name": "Living Room Speaker",
-      "device_type": "Speaker",
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
       "shuffle_state": false,
-      "_play_count": 5,
+      "_play_count": 2,
       "_pinned": true
     },
     {
-      "played_at": "2026-07-10T21:34:54.026001Z",
-      "track_name": "Vi\u00f0rar vel til loft\u00e1r\u00e1sa",
+      "played_at": "2026-07-15T23:15:19.018939Z",
+      "track_name": "Yellow Cat (Slash) Red Cat",
       "artist_names": [
-        "Sigur R\u00f3s"
+        "Say Anything"
       ],
       "artist_ids": [
-        "6UUrUCIZtQeOf8tC0WuzRy"
+        "3ImqpXKKgkH5VydfgX1hd4"
       ],
-      "album_name": "\u00c1g\u00e6tis byrjun",
-      "track_id": "1blbT2vGiqxICPoyxzfVn1",
-      "album_id": "1DMMv1Kmoli3Y9fVEZDUVC",
-      "duration_ms": 617746,
+      "album_name": "Is a Real Boy",
+      "track_id": "22aVjp6vuqnAJJMaaRUwEh",
+      "album_id": "67GbWmsrvtIdOOUYRo7do7",
+      "duration_ms": 317736,
       "explicit": false,
       "isrc": null,
       "album_type": "album",
-      "album_total_tracks": 10,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737d5c9fa537845b71c4eb3b5e",
-      "album_art_local_path": "sigur_r\u00f3s_\u00e1g\u00e6tis_byrjun.jpg",
-      "release_year": 1999,
-      "track_number": 7,
-      "context_type": "album",
-      "context_uri": "spotify:album:1DMMv1Kmoli3Y9fVEZDUVC",
-      "device_name": "Web Player (Chrome)",
+      "album_total_tracks": 21,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273dbbf2c06de655b35bec9ea1c",
+      "album_art_local_path": "say_anything_is_a_real_boy.jpg",
+      "release_year": 2005,
+      "track_number": 5,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-331421700",
+      "device_name": "Desktop App",
       "device_type": "Computer",
       "shuffle_state": true,
-      "_play_count": 2,
+      "_play_count": 3,
       "_pinned": true
     },
     {
@@ -554,36 +233,152 @@
       "_pinned": true
     },
     {
-      "played_at": "2026-06-22T23:55:07.145428Z",
-      "track_name": "Vento De Maio / M\u00fasica Incidental: Um Girassol Da Cor Do Seu Cabelo",
+      "played_at": "2026-07-10T21:34:54.026001Z",
+      "track_name": "Vi\u00f0rar vel til loft\u00e1r\u00e1sa",
       "artist_names": [
-        "L\u00f4 Borges"
+        "Sigur R\u00f3s"
       ],
       "artist_ids": [
-        "0yFvXd36g5sNKYDi0Kkvl8"
+        "6UUrUCIZtQeOf8tC0WuzRy"
       ],
-      "album_name": "Retratos",
-      "track_id": "6NLPsM5iMf8NOvOKvgyIRn",
-      "album_id": "2ngEpie4g3Z2xtZhhwCAxH",
-      "duration_ms": 265640,
+      "album_name": "\u00c1g\u00e6tis byrjun",
+      "track_id": "1blbT2vGiqxICPoyxzfVn1",
+      "album_id": "1DMMv1Kmoli3Y9fVEZDUVC",
+      "duration_ms": 617746,
       "explicit": false,
       "isrc": null,
-      "album_type": "compilation",
-      "album_total_tracks": 12,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273983305ecf906b6c9e56b2884",
-      "album_art_local_path": "l\u00f4_borges_retratos.jpg",
-      "release_year": 2004,
-      "track_number": 4,
+      "album_type": "album",
+      "album_total_tracks": 10,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737d5c9fa537845b71c4eb3b5e",
+      "album_art_local_path": "sigur_r\u00f3s_\u00e1g\u00e6tis_byrjun.jpg",
+      "release_year": 1999,
+      "track_number": 7,
       "context_type": "album",
-      "context_uri": "spotify:album:2ngEpie4g3Z2xtZhhwCAxH",
+      "context_uri": "spotify:album:1DMMv1Kmoli3Y9fVEZDUVC",
       "device_name": "Web Player (Chrome)",
       "device_type": "Computer",
+      "shuffle_state": true,
+      "_play_count": 2,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-04-16T00:16:47.289937Z",
+      "track_name": "Estrada Do Sol",
+      "artist_names": [
+        "Gal Costa"
+      ],
+      "artist_ids": [
+        "1b8kpp4DUwt1hWaxTiWQhD"
+      ],
+      "album_name": "Gal Tropical",
+      "track_id": "0OF14BivUjlWIsSkM8YkID",
+      "album_id": "1Vjf7xPNvBhqKnAR4rAXR2",
+      "duration_ms": 204026,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 12,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273de4828d89731083b45eb1521",
+      "album_art_local_path": "gal_costa_gal_tropical.jpg",
+      "release_year": 1979,
+      "track_number": 4,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-331421700",
+      "device_name": "Living Room Speaker",
+      "device_type": "Speaker",
       "shuffle_state": false,
-      "_play_count": 6,
+      "_play_count": 5,
       "_pinned": true
     }
   ],
-  "pl-950271614": [
+  "pl-906155271": [
+    {
+      "played_at": "2026-07-25T22:02:05.788447Z",
+      "track_name": "Saidas E Bandeiras (Exits And Flags)",
+      "artist_names": [
+        "Milton Nascimento"
+      ],
+      "artist_ids": [
+        "3Bnq7jiU506HcPjRgQ43TM"
+      ],
+      "album_name": "Milton",
+      "track_id": "09hnFZ9stGVGKqoeEQZXRz",
+      "album_id": "6GPL5sMWxYibGoKnarlqUk",
+      "duration_ms": 285573,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 9,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2734536274f7f2eee8097dacd2d",
+      "album_art_local_path": "milton_nascimento_milton.jpg",
+      "release_year": 1976,
+      "track_number": 8,
+      "context_type": "album",
+      "context_uri": "spotify:album:6GPL5sMWxYibGoKnarlqUk",
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
+      "shuffle_state": false,
+      "_play_count": 2,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-06-18T21:39:57.660678Z",
+      "track_name": "Brave & Strong - Single Version",
+      "artist_names": [
+        "Sly & The Family Stone"
+      ],
+      "artist_ids": [
+        "5m8H6zSadhu1j9Yi04VLqD"
+      ],
+      "album_name": "There's a Riot Goin' On",
+      "track_id": "2ONfhlZHOklTZHkhPkMpNF",
+      "album_id": "29f2cOueckYE8Nc1pkJjrU",
+      "duration_ms": 212066,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 12,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273de27ae35f785ac370120ab14",
+      "album_art_local_path": "sly_the_family_stone_theres_a_riot_goin_on.jpg",
+      "release_year": 1971,
+      "track_number": 7,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-950271614",
+      "device_name": "Web Player (Chrome)",
+      "device_type": "Computer",
+      "shuffle_state": false,
+      "_play_count": 2,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-06-13T04:50:38.305730Z",
+      "track_name": "Egg Man",
+      "artist_names": [
+        "Beastie Boys"
+      ],
+      "artist_ids": [
+        "03r4iKL2g2442PT9n2UKsx"
+      ],
+      "album_name": "Paul's Boutique (20th Anniversary Edition / Remastered)",
+      "track_id": "6vcf7sA7tsNiIeufH0FUFL",
+      "album_id": "1kmyirVya5fRxdjsPFDM05",
+      "duration_ms": 177679,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 23,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2732288f4cd4bf3a8764624a0d2",
+      "album_art_local_path": "beastie_boys_pauls_boutique_20th_anniversary_edition_remaster.jpg",
+      "release_year": 1989,
+      "track_number": 4,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-906155271",
+      "device_name": "Desktop App",
+      "device_type": "Computer",
+      "shuffle_state": false,
+      "_play_count": 2,
+      "_pinned": true
+    },
     {
       "played_at": "2026-05-07T00:41:08.250502Z",
       "track_name": "I Want Your (Hands on Me)",
@@ -672,177 +467,32 @@
       "_pinned": true
     },
     {
-      "played_at": "2026-06-18T21:39:57.660678Z",
-      "track_name": "Brave & Strong - Single Version",
+      "played_at": "2026-05-18T20:10:22.064496Z",
+      "track_name": "Born As Ghosts",
       "artist_names": [
-        "Sly & The Family Stone"
+        "Rage Against The Machine"
       ],
       "artist_ids": [
-        "5m8H6zSadhu1j9Yi04VLqD"
+        "2d0hyoQ5ynDBnkvAbJKORj"
       ],
-      "album_name": "There's a Riot Goin' On",
-      "track_id": "2ONfhlZHOklTZHkhPkMpNF",
-      "album_id": "29f2cOueckYE8Nc1pkJjrU",
-      "duration_ms": 212066,
+      "album_name": "The Battle Of Los Angeles",
+      "track_id": "3moeHk8eIajvUEzVocXukf",
+      "album_id": "2eia0myWFgoHuttJytCxgX",
+      "duration_ms": 202040,
       "explicit": false,
       "isrc": null,
       "album_type": "album",
       "album_total_tracks": 12,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273de27ae35f785ac370120ab14",
-      "album_art_local_path": "sly_the_family_stone_theres_a_riot_goin_on.jpg",
-      "release_year": 1971,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2733c2579a4f8cacd5b95b8fa68",
+      "album_art_local_path": "rage_against_the_machine_the_battle_of_los_angeles.jpg",
+      "release_year": 1999,
       "track_number": 7,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-950271614",
+      "context_type": "album",
+      "context_uri": "spotify:album:2eia0myWFgoHuttJytCxgX",
       "device_name": "Web Player (Chrome)",
       "device_type": "Computer",
       "shuffle_state": false,
-      "_play_count": 2,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-04-14T21:07:31.100294Z",
-      "track_name": "Escadas Da Penha",
-      "artist_names": [
-        "Jo\u00e3o Bosco"
-      ],
-      "artist_ids": [
-        "3DF0ClNOUuvS3gh8V8sRJH"
-      ],
-      "album_name": "Ca\u00e7a A Raposa",
-      "track_id": "5nEgq6w7txlKPMG6J4vDBR",
-      "album_id": "4kN4kVVwgQ9jOBlIRQ86NU",
-      "duration_ms": 167826,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 12,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e045bcd1dd9f96f2c7b6073b",
-      "album_art_local_path": "jo\u00e3o_bosco_ca\u00e7a_a_raposa.jpg",
-      "release_year": 1975,
-      "track_number": 6,
-      "context_type": "album",
-      "context_uri": "spotify:album:4kN4kVVwgQ9jOBlIRQ86NU",
-      "device_name": "Living Room Speaker",
-      "device_type": "Speaker",
-      "shuffle_state": true,
-      "_play_count": 2,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-08-04T05:32:29.443639Z",
-      "track_name": "Wild Packs of Family Dogs",
-      "artist_names": [
-        "Modest Mouse"
-      ],
-      "artist_ids": [
-        "1yAwtBaoHLEDWAnWR87hBT"
-      ],
-      "album_name": "The Moon & Antarctica",
-      "track_id": "20iMumN7WDTDWgY0c3UvCB",
-      "album_id": "5SbcupirEParczvqqyUPXL",
-      "duration_ms": 104400,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 15,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2738f7128431367ce70f773651c",
-      "album_art_local_path": "modest_mouse_the_moon_antarctica.jpg",
-      "release_year": 2000,
-      "track_number": 10,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-188813029",
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
-      "shuffle_state": false,
-      "_play_count": 4,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-07-05T23:18:37.704000Z",
-      "track_name": "We'll Be Fine",
-      "artist_names": [
-        "Drake"
-      ],
-      "artist_ids": [
-        "3TVXtAsR1Inumwj472S9r4"
-      ],
-      "album_name": "Take Care (Deluxe)",
-      "track_id": "7udsBKuqnJ5csWTAkR0vEI",
-      "album_id": "6X1x82kppWZmDzlXXK3y3q",
-      "duration_ms": 247946,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 19,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273c7ea04a9b455e3f68ef82550",
-      "album_art_local_path": "drake_take_care_deluxe.jpg",
-      "release_year": 2011,
-      "track_number": 9,
-      "context_type": "playlist",
-      "context_uri": "spotify:playlist:pl-188813029",
-      "device_name": "Desktop App",
-      "device_type": "Computer",
-      "shuffle_state": true,
-      "_play_count": 1,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-07-25T11:59:40.398000Z",
-      "track_name": "Good Riddance (Time of Your Life)",
-      "artist_names": [
-        "Green Day"
-      ],
-      "artist_ids": [
-        "7oPftvlwr6VrsViSDV7fJY"
-      ],
-      "album_name": "Nimrod",
-      "track_id": "6ORqU0bHbVCRjXm9AjyHyZ",
-      "album_id": "3x2uer6Xh0d5rF8toWpRDA",
-      "duration_ms": 153466,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 18,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273da4f6706ae0f2501c61ce776",
-      "album_art_local_path": "green_day_nimrod.jpg",
-      "release_year": 1997,
-      "track_number": 17,
-      "context_type": "album",
-      "context_uri": "spotify:album:3x2uer6Xh0d5rF8toWpRDA",
-      "device_name": "Web Player (Chrome)",
-      "device_type": "Computer",
-      "shuffle_state": false,
-      "_play_count": 10,
-      "_pinned": true
-    },
-    {
-      "played_at": "2026-06-25T00:40:37.844350Z",
-      "track_name": "Roulette",
-      "artist_names": [
-        "System Of A Down"
-      ],
-      "artist_ids": [
-        "5eAWCfyUhZtHHtBdNk56l1"
-      ],
-      "album_name": "Steal This Album!",
-      "track_id": "4sM7v7wyRAuV6ZTO2dvnCA",
-      "album_id": "6lA1sGw7eCv27bcpd5E0wT",
-      "duration_ms": 201200,
-      "explicit": false,
-      "isrc": null,
-      "album_type": "album",
-      "album_total_tracks": 16,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737cf4c0d42c5b62c9deebdcd8",
-      "album_art_local_path": "system_of_a_down_steal_this_album.jpg",
-      "release_year": 2002,
-      "track_number": 15,
-      "context_type": "album",
-      "context_uri": "spotify:album:6lA1sGw7eCv27bcpd5E0wT",
-      "device_name": "iPhone",
-      "device_type": "Smartphone",
-      "shuffle_state": false,
-      "_play_count": 2,
+      "_play_count": 5,
       "_pinned": true
     },
     {
@@ -873,38 +523,67 @@
       "shuffle_state": false,
       "_play_count": 3,
       "_pinned": true
-    }
-  ],
-  "pl-188813029": [
+    },
     {
-      "played_at": "2026-06-25T20:34:20.333000Z",
-      "track_name": "Une Annee Sans Lumiere",
+      "played_at": "2026-03-20T18:52:43.989844Z",
+      "track_name": "Yeah, I Said It",
       "artist_names": [
-        "Arcade Fire"
+        "Rihanna"
       ],
       "artist_ids": [
-        "3kjuyTCjPG1WMFCiyc5IuB"
+        "5pKCCKE2ajJHZ9KAiaK11H"
       ],
-      "album_name": "Funeral",
-      "track_id": "7D5mjGj6O2cHHCoBF8O7qV",
-      "album_id": "6ZB8qaR9JNuS0Q0bG1nbcH",
-      "duration_ms": 220960,
+      "album_name": "ANTI",
+      "track_id": "1q35smJsSPtVl4aoc72wYN",
+      "album_id": "48i37aZTC1prDr4EcpQeEa",
+      "duration_ms": 133080,
       "explicit": false,
       "isrc": null,
       "album_type": "album",
-      "album_total_tracks": 10,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737870762a58313ad6f981d664",
-      "album_art_local_path": "arcade_fire_funeral.jpg",
-      "release_year": 2004,
-      "track_number": 3,
+      "album_total_tracks": 13,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737b688587a6754481c53f6bb7",
+      "album_art_local_path": "rihanna_anti.jpg",
+      "release_year": 2016,
+      "track_number": 8,
       "context_type": "album",
-      "context_uri": "spotify:album:6ZB8qaR9JNuS0Q0bG1nbcH",
-      "device_name": "Living Room Speaker",
-      "device_type": "Speaker",
+      "context_uri": "spotify:album:48i37aZTC1prDr4EcpQeEa",
+      "device_name": "Web Player (Chrome)",
+      "device_type": "Computer",
       "shuffle_state": false,
-      "_play_count": 3,
+      "_play_count": 1,
       "_pinned": true
     },
+    {
+      "played_at": "2026-04-14T21:07:31.100294Z",
+      "track_name": "Escadas Da Penha",
+      "artist_names": [
+        "Jo\u00e3o Bosco"
+      ],
+      "artist_ids": [
+        "3DF0ClNOUuvS3gh8V8sRJH"
+      ],
+      "album_name": "Ca\u00e7a A Raposa",
+      "track_id": "5nEgq6w7txlKPMG6J4vDBR",
+      "album_id": "4kN4kVVwgQ9jOBlIRQ86NU",
+      "duration_ms": 167826,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 12,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e045bcd1dd9f96f2c7b6073b",
+      "album_art_local_path": "jo\u00e3o_bosco_ca\u00e7a_a_raposa.jpg",
+      "release_year": 1975,
+      "track_number": 6,
+      "context_type": "album",
+      "context_uri": "spotify:album:4kN4kVVwgQ9jOBlIRQ86NU",
+      "device_name": "Living Room Speaker",
+      "device_type": "Speaker",
+      "shuffle_state": true,
+      "_play_count": 2,
+      "_pinned": true
+    }
+  ],
+  "pl-950271614": [
     {
       "played_at": "2026-07-01T22:00:00Z",
       "track_name": "The Shower Scene",
@@ -964,28 +643,144 @@
       "_pinned": true
     },
     {
-      "played_at": "2026-04-08T02:54:14.018987Z",
-      "track_name": "Space Travel Is Boring",
+      "played_at": "2026-07-25T11:59:40.398000Z",
+      "track_name": "Good Riddance (Time of Your Life)",
       "artist_names": [
-        "Sun Kil Moon"
+        "Green Day"
       ],
       "artist_ids": [
-        "4G0XDEk7RbA4BBCTs917U9"
+        "7oPftvlwr6VrsViSDV7fJY"
       ],
-      "album_name": "Tiny Cities",
-      "track_id": "1HYZjQjNbBiEAsaNADRDDE",
-      "album_id": "3bVDZOD7EnPkxludwZUidT",
-      "duration_ms": 222840,
+      "album_name": "Nimrod",
+      "track_id": "6ORqU0bHbVCRjXm9AjyHyZ",
+      "album_id": "3x2uer6Xh0d5rF8toWpRDA",
+      "duration_ms": 153466,
       "explicit": false,
       "isrc": null,
       "album_type": "album",
-      "album_total_tracks": 11,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2735b2e4e5f4f13c263ad282a80",
-      "album_art_local_path": "sun_kil_moon_tiny_cities.jpg",
-      "release_year": 2005,
-      "track_number": 4,
+      "album_total_tracks": 18,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273da4f6706ae0f2501c61ce776",
+      "album_art_local_path": "green_day_nimrod.jpg",
+      "release_year": 1997,
+      "track_number": 17,
       "context_type": "album",
-      "context_uri": "spotify:album:3bVDZOD7EnPkxludwZUidT",
+      "context_uri": "spotify:album:3x2uer6Xh0d5rF8toWpRDA",
+      "device_name": "Web Player (Chrome)",
+      "device_type": "Computer",
+      "shuffle_state": false,
+      "_play_count": 10,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-05-05T20:26:10.536217Z",
+      "track_name": "Search For Delicious",
+      "artist_names": [
+        "Panda Bear"
+      ],
+      "artist_ids": [
+        "1R84VlXnFFULOsWWV8IrCQ"
+      ],
+      "album_name": "Person Pitch",
+      "track_id": "1RltJo16uDzpVCTxPvR2l8",
+      "album_id": "64TDaAbxgO0TmKZrIavdLg",
+      "duration_ms": 292080,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 7,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273ed4196ab68bf2a9f0c507edd",
+      "album_art_local_path": "panda_bear_person_pitch.jpg",
+      "release_year": 2007,
+      "track_number": 6,
+      "context_type": "album",
+      "context_uri": "spotify:album:64TDaAbxgO0TmKZrIavdLg",
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
+      "shuffle_state": false,
+      "_play_count": 7,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-07-05T23:18:37.704000Z",
+      "track_name": "We'll Be Fine",
+      "artist_names": [
+        "Drake"
+      ],
+      "artist_ids": [
+        "3TVXtAsR1Inumwj472S9r4"
+      ],
+      "album_name": "Take Care (Deluxe)",
+      "track_id": "7udsBKuqnJ5csWTAkR0vEI",
+      "album_id": "6X1x82kppWZmDzlXXK3y3q",
+      "duration_ms": 247946,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 19,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273c7ea04a9b455e3f68ef82550",
+      "album_art_local_path": "drake_take_care_deluxe.jpg",
+      "release_year": 2011,
+      "track_number": 9,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-188813029",
+      "device_name": "Desktop App",
+      "device_type": "Computer",
+      "shuffle_state": true,
+      "_play_count": 1,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-08-04T05:32:29.443639Z",
+      "track_name": "Wild Packs of Family Dogs",
+      "artist_names": [
+        "Modest Mouse"
+      ],
+      "artist_ids": [
+        "1yAwtBaoHLEDWAnWR87hBT"
+      ],
+      "album_name": "The Moon & Antarctica",
+      "track_id": "20iMumN7WDTDWgY0c3UvCB",
+      "album_id": "5SbcupirEParczvqqyUPXL",
+      "duration_ms": 104400,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 15,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2738f7128431367ce70f773651c",
+      "album_art_local_path": "modest_mouse_the_moon_antarctica.jpg",
+      "release_year": 2000,
+      "track_number": 10,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-188813029",
+      "device_name": "Web Player (Chrome)",
+      "device_type": "Computer",
+      "shuffle_state": false,
+      "_play_count": 4,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-06-20T04:30:49.484860Z",
+      "track_name": "Falling Away from Me",
+      "artist_names": [
+        "Korn"
+      ],
+      "artist_ids": [
+        "3RNrq3jvMZxD9ZyoOZbQOD"
+      ],
+      "album_name": "Issues",
+      "track_id": "2F6FfZ4w8z3eJpSxPotVO5",
+      "album_id": "5U0pevIOTrPoDsN8YsBCBh",
+      "duration_ms": 270920,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 16,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e19ecb8de414a0294bd0bf13",
+      "album_art_local_path": "korn_issues.jpg",
+      "release_year": 1999,
+      "track_number": 2,
+      "context_type": "album",
+      "context_uri": "spotify:album:5U0pevIOTrPoDsN8YsBCBh",
       "device_name": "iPhone",
       "device_type": "Smartphone",
       "shuffle_state": true,
@@ -1051,34 +846,36 @@
       "_pinned": true
     },
     {
-      "played_at": "2026-05-05T20:26:10.536217Z",
-      "track_name": "Search For Delicious",
+      "played_at": "2026-06-25T00:40:37.844350Z",
+      "track_name": "Roulette",
       "artist_names": [
-        "Panda Bear"
+        "System Of A Down"
       ],
       "artist_ids": [
-        "1R84VlXnFFULOsWWV8IrCQ"
+        "5eAWCfyUhZtHHtBdNk56l1"
       ],
-      "album_name": "Person Pitch",
-      "track_id": "1RltJo16uDzpVCTxPvR2l8",
-      "album_id": "64TDaAbxgO0TmKZrIavdLg",
-      "duration_ms": 292080,
+      "album_name": "Steal This Album!",
+      "track_id": "4sM7v7wyRAuV6ZTO2dvnCA",
+      "album_id": "6lA1sGw7eCv27bcpd5E0wT",
+      "duration_ms": 201200,
       "explicit": false,
       "isrc": null,
       "album_type": "album",
-      "album_total_tracks": 7,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273ed4196ab68bf2a9f0c507edd",
-      "album_art_local_path": "panda_bear_person_pitch.jpg",
-      "release_year": 2007,
-      "track_number": 6,
+      "album_total_tracks": 16,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737cf4c0d42c5b62c9deebdcd8",
+      "album_art_local_path": "system_of_a_down_steal_this_album.jpg",
+      "release_year": 2002,
+      "track_number": 15,
       "context_type": "album",
-      "context_uri": "spotify:album:64TDaAbxgO0TmKZrIavdLg",
+      "context_uri": "spotify:album:6lA1sGw7eCv27bcpd5E0wT",
       "device_name": "iPhone",
       "device_type": "Smartphone",
       "shuffle_state": false,
-      "_play_count": 7,
+      "_play_count": 2,
       "_pinned": true
-    },
+    }
+  ],
+  "pl-188813029": [
     {
       "played_at": "2026-06-25T22:00:36.387989Z",
       "track_name": "Full time papi",
@@ -1109,32 +906,61 @@
       "_pinned": true
     },
     {
-      "played_at": "2026-06-20T04:30:49.484860Z",
-      "track_name": "Falling Away from Me",
+      "played_at": "2026-04-08T02:54:14.018987Z",
+      "track_name": "Space Travel Is Boring",
       "artist_names": [
-        "Korn"
+        "Sun Kil Moon"
       ],
       "artist_ids": [
-        "3RNrq3jvMZxD9ZyoOZbQOD"
+        "4G0XDEk7RbA4BBCTs917U9"
       ],
-      "album_name": "Issues",
-      "track_id": "2F6FfZ4w8z3eJpSxPotVO5",
-      "album_id": "5U0pevIOTrPoDsN8YsBCBh",
-      "duration_ms": 270920,
+      "album_name": "Tiny Cities",
+      "track_id": "1HYZjQjNbBiEAsaNADRDDE",
+      "album_id": "3bVDZOD7EnPkxludwZUidT",
+      "duration_ms": 222840,
       "explicit": false,
       "isrc": null,
       "album_type": "album",
-      "album_total_tracks": 16,
-      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273e19ecb8de414a0294bd0bf13",
-      "album_art_local_path": "korn_issues.jpg",
-      "release_year": 1999,
-      "track_number": 2,
+      "album_total_tracks": 11,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2735b2e4e5f4f13c263ad282a80",
+      "album_art_local_path": "sun_kil_moon_tiny_cities.jpg",
+      "release_year": 2005,
+      "track_number": 4,
       "context_type": "album",
-      "context_uri": "spotify:album:5U0pevIOTrPoDsN8YsBCBh",
+      "context_uri": "spotify:album:3bVDZOD7EnPkxludwZUidT",
       "device_name": "iPhone",
       "device_type": "Smartphone",
       "shuffle_state": true,
       "_play_count": 2,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-07-11T22:07:20.434746Z",
+      "track_name": "El Apag\u00f3n",
+      "artist_names": [
+        "Bad Bunny"
+      ],
+      "artist_ids": [
+        "4q3ewBCX7sLwd24euuV69X"
+      ],
+      "album_name": "Un Verano Sin Ti",
+      "track_id": "0UvZcEfpzVyx47QsRbjyBz",
+      "album_id": "3RQQmkQEvNCY4prGKE6oc5",
+      "duration_ms": 201816,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 23,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72",
+      "album_art_local_path": "bad_bunny_un_verano_sin_ti.jpg",
+      "release_year": 2022,
+      "track_number": 16,
+      "context_type": null,
+      "context_uri": null,
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
+      "shuffle_state": false,
+      "_play_count": 3,
       "_pinned": true
     },
     {
@@ -1165,9 +991,183 @@
       "shuffle_state": false,
       "_play_count": 2,
       "_pinned": true
+    },
+    {
+      "played_at": "2026-03-19T23:43:33.824506Z",
+      "track_name": "Hard to Live, Harder to Love",
+      "artist_names": [
+        "To The Wind"
+      ],
+      "artist_ids": [
+        "10L1VW4paw39JoQ5YhzL8Y"
+      ],
+      "album_name": "The Brighter View",
+      "track_id": "7BmYms2N8k6C8LSo7U4nRn",
+      "album_id": "5YlSucquisid7OajXkWlez",
+      "duration_ms": 194026,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 10,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b27390aa867ec808e6c1055af768",
+      "album_art_local_path": "to_the_wind_the_brighter_view.jpg",
+      "release_year": 2016,
+      "track_number": 9,
+      "context_type": "album",
+      "context_uri": "spotify:album:5YlSucquisid7OajXkWlez",
+      "device_name": "Desktop App",
+      "device_type": "Computer",
+      "shuffle_state": false,
+      "_play_count": 3,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-06-25T20:34:20.333000Z",
+      "track_name": "Une Annee Sans Lumiere",
+      "artist_names": [
+        "Arcade Fire"
+      ],
+      "artist_ids": [
+        "3kjuyTCjPG1WMFCiyc5IuB"
+      ],
+      "album_name": "Funeral",
+      "track_id": "7D5mjGj6O2cHHCoBF8O7qV",
+      "album_id": "6ZB8qaR9JNuS0Q0bG1nbcH",
+      "duration_ms": 220960,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 10,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2737870762a58313ad6f981d664",
+      "album_art_local_path": "arcade_fire_funeral.jpg",
+      "release_year": 2004,
+      "track_number": 3,
+      "context_type": "album",
+      "context_uri": "spotify:album:6ZB8qaR9JNuS0Q0bG1nbcH",
+      "device_name": "Living Room Speaker",
+      "device_type": "Speaker",
+      "shuffle_state": false,
+      "_play_count": 3,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-05-23T21:30:32.108233Z",
+      "track_name": "One More Night - 2004 Remastered Version",
+      "artist_names": [
+        "CAN"
+      ],
+      "artist_ids": [
+        "4l8xPGtl6DHR2uvunqrl8r"
+      ],
+      "album_name": "Ege Bamyasi (Remastered Version)",
+      "track_id": "13Q0XPq59cQ6E948WMPYR0",
+      "album_id": "3Qa2CdymyGvXkqoqIZykmT",
+      "duration_ms": 335199,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "compilation",
+      "album_total_tracks": 7,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273416cc99a089bbe8db8ac1311",
+      "album_art_local_path": "can_ege_bamyasi_remastered_version.jpg",
+      "release_year": 1972,
+      "track_number": 3,
+      "context_type": null,
+      "context_uri": null,
+      "device_name": "Living Room Speaker",
+      "device_type": "Speaker",
+      "shuffle_state": false,
+      "_play_count": 3,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-04-21T09:49:39.992270Z",
+      "track_name": "Alligator Song",
+      "artist_names": [
+        "Sun Kil Moon"
+      ],
+      "artist_ids": [
+        "4G0XDEk7RbA4BBCTs917U9"
+      ],
+      "album_name": "Murals",
+      "track_id": "4OpMYqmcEBfkIYXh1dzR8C",
+      "album_id": "1YnyKib5MeZf95KY5GHvxc",
+      "duration_ms": 746648,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 4,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b2739b2d3bbb4d58cf25cf7b9d66",
+      "album_art_local_path": "sun_kil_moon_murals.jpg",
+      "release_year": 2026,
+      "track_number": 3,
+      "context_type": "playlist",
+      "context_uri": "spotify:playlist:pl-331421700",
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
+      "shuffle_state": false,
+      "_play_count": 5,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-04-18T17:36:29.161894Z",
+      "track_name": "Half Moon Bay",
+      "artist_names": [
+        "Sun Kil Moon"
+      ],
+      "artist_ids": [
+        "4G0XDEk7RbA4BBCTs917U9"
+      ],
+      "album_name": "Admiral Fell Promises",
+      "track_id": "4WSAMz7v5v3H6ATPTRQcnE",
+      "album_id": "77AYdae70ldovpvRPS0Xjc",
+      "duration_ms": 413333,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 10,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273fef973b0606511ccf6a379e9",
+      "album_art_local_path": "sun_kil_moon_admiral_fell_promises.jpg",
+      "release_year": 2010,
+      "track_number": 2,
+      "context_type": null,
+      "context_uri": null,
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
+      "shuffle_state": false,
+      "_play_count": 6,
+      "_pinned": true
+    },
+    {
+      "played_at": "2026-06-23T21:17:22.290609Z",
+      "track_name": "Ultraviolence - 2015 Remaster",
+      "artist_names": [
+        "New Order"
+      ],
+      "artist_ids": [
+        "0yNLKJebCb8Aueb54LYya3"
+      ],
+      "album_name": "Power Corruption and Lies",
+      "track_id": "2dcAhmbVvnPDj0uB66S09K",
+      "album_id": "6NTrwu1XJ56jBPx7HMksbZ",
+      "duration_ms": 291226,
+      "explicit": false,
+      "isrc": null,
+      "album_type": "album",
+      "album_total_tracks": 8,
+      "album_art_url": "https://i.scdn.co/image/ab67616d0000b273a0bb93884823982d57cb2004",
+      "album_art_local_path": "new_order_power_corruption_and_lies.jpg",
+      "release_year": 1983,
+      "track_number": 6,
+      "context_type": "album",
+      "context_uri": "spotify:album:6NTrwu1XJ56jBPx7HMksbZ",
+      "device_name": "iPhone",
+      "device_type": "Smartphone",
+      "shuffle_state": true,
+      "_play_count": 2,
+      "_pinned": true
     }
   ],
-  "pl-511568475": [
+  "pl-646374929": [
     {
       "played_at": "2026-08-04T02:59:57.932196Z",
       "track_name": "A Love Supreme, Pt. IV - Psalm",
@@ -6737,7 +6737,7 @@
       "_pinned": false
     }
   ],
-  "pl-189426709": [
+  "pl-785033855": [
     {
       "played_at": "2026-08-05T00:20:35.259646Z",
       "track_name": "Fala",
@@ -21268,7 +21268,7 @@
       "_pinned": false
     }
   ],
-  "pl-385092635": [
+  "pl-290529769": [
     {
       "played_at": "2026-08-04T23:31:33.628755Z",
       "track_name": "Damaged I",
@@ -38061,7 +38061,7 @@
       "_pinned": false
     }
   ],
-  "pl-760608162": [
+  "pl-528570189": [
     {
       "played_at": "2026-08-01T21:33:33.453859Z",
       "track_name": "A Murder Of One",
@@ -58160,7 +58160,7 @@
       "_pinned": false
     }
   ],
-  "pl-311393973": [
+  "pl-171677484": [
     {
       "played_at": "2026-08-04T23:42:39.732940Z",
       "track_name": "With Every Heartbeat",
@@ -92823,7 +92823,7 @@
       "_pinned": false
     }
   ],
-  "pl-678237187": [
+  "pl-152169853": [
     {
       "played_at": "2026-08-04T09:13:01.739955Z",
       "track_name": "Empty Space",
@@ -117953,7 +117953,7 @@
       "_pinned": false
     }
   ],
-  "pl-329134862": [
+  "pl-640931282": [
     {
       "played_at": "2026-08-04T03:18:33.900712Z",
       "track_name": "Ni\u00f1a Tarara",

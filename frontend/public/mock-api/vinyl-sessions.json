@@ -1,127 +1,61 @@
 [
   {
-    "id": "9af89d7c-4518-477c-8606-843b455e506f",
-    "started_at": 1785857651.0,
-    "ended_at": 1785859333.0,
-    "duration_seconds": 1682,
+    "id": "11231f8d-9808-4acd-a781-5651d06101ed",
+    "started_at": 1785787004.0,
+    "ended_at": 1785788462.0,
+    "duration_seconds": 1458,
     "status": "confirmed",
-    "release_id": 34396339,
-    "title": "Holy Roller Novocaine",
+    "release_id": 6476151,
+    "title": "In A Beautiful Place Out In The Country",
     "artists": [
-      "Kings Of Leon"
+      "Boards Of Canada"
     ],
-    "art_filename": "vinyl/34396339.jpg"
+    "art_filename": "vinyl/6476151.jpg"
   },
   {
-    "id": "139cadff-067f-4102-af1f-c9447f048e1b",
-    "started_at": 1785217263.0,
-    "ended_at": 1785222214.0,
-    "duration_seconds": 4951,
+    "id": "47683e68-49fb-46a7-9b5d-74d82d45b1ce",
+    "started_at": 1785773814.0,
+    "ended_at": 1785778274.0,
+    "duration_seconds": 4460,
     "status": "confirmed",
-    "release_id": 3849831,
-    "title": "Centipede Hz",
+    "release_id": 4418695,
+    "title": "Homework",
     "artists": [
-      "Animal Collective"
+      "Daft Punk"
     ],
-    "art_filename": "vinyl/3849831.jpg"
+    "art_filename": "vinyl/4418695.jpg"
   },
   {
-    "id": "f2809c74-5cda-4167-a4bd-aac68236c739",
-    "started_at": 1784973460.0,
-    "ended_at": 1784975706.0,
-    "duration_seconds": 2246,
+    "id": "a9774396-ce20-4d9f-877d-a67fd7d098d3",
+    "started_at": 1785762826.0,
+    "ended_at": 1785764820.0,
+    "duration_seconds": 1994,
     "status": "confirmed",
-    "release_id": 2331725,
-    "title": "Ciencia De Los In\u00fatiles",
+    "release_id": 9755401,
+    "title": "Untrue",
     "artists": [
-      "El Tr\u00edo De Omar Rodriguez Lopez"
+      "Burial"
     ],
-    "art_filename": "vinyl/2331725.jpg"
+    "art_filename": "vinyl/9755401.jpg"
   },
   {
-    "id": "86b7b78c-825b-4d63-bab1-a2b3a46208cd",
-    "started_at": 1784950162.0,
-    "ended_at": 1784953537.0,
-    "duration_seconds": 3375,
+    "id": "2b4bc7fa-2cd2-45a7-83a1-acad32b0cdc2",
+    "started_at": 1785540792.0,
+    "ended_at": 1785543548.0,
+    "duration_seconds": 2756,
     "status": "confirmed",
-    "release_id": 2831206,
-    "title": "An Introduction To Syd Barrett",
+    "release_id": 649184,
+    "title": "Acabou Chorare",
     "artists": [
-      "Syd Barrett"
+      "Os Novos Baianos"
     ],
-    "art_filename": "vinyl/2831206.jpg"
+    "art_filename": "vinyl/649184.jpg"
   },
   {
-    "id": "e548f0f8-5c91-4105-a0ba-2071ee49054d",
-    "started_at": 1784852882.0,
-    "ended_at": 1784854031.0,
-    "duration_seconds": 1149,
-    "status": "confirmed",
-    "release_id": 5579611,
-    "title": "Hang On To Each Other",
-    "artists": [
-      "A Silver Mt. Zion",
-      "Ariel Engle"
-    ],
-    "art_filename": "vinyl/5579611.jpg"
-  },
-  {
-    "id": "81a36b62-81e7-41e3-9764-fa5b6c8fff23",
-    "started_at": 1784442984.0,
-    "ended_at": 1784445103.0,
-    "duration_seconds": 2119,
-    "status": "confirmed",
-    "release_id": 12670310,
-    "title": "El Camino",
-    "artists": [
-      "The Black Keys"
-    ],
-    "art_filename": "vinyl/12670310.jpg"
-  },
-  {
-    "id": "a7d7c284-0b61-4e0e-9640-c795125d962a",
-    "started_at": 1784245283.0,
-    "ended_at": 1784245914.0,
-    "duration_seconds": 631,
-    "status": "confirmed",
-    "release_id": 2589826,
-    "title": "Post Suite / Almost In Profile",
-    "artists": [
-      "Floating Points Ensemble"
-    ],
-    "art_filename": "vinyl/2589826.jpg"
-  },
-  {
-    "id": "3d53fd4d-4b87-44e9-9ba5-3111eb3d3a4d",
-    "started_at": 1784068971.0,
-    "ended_at": 1784070661.0,
-    "duration_seconds": 1690,
-    "status": "confirmed",
-    "release_id": 10511319,
-    "title": "Looking Ocean ",
-    "artists": [
-      "Daedelus"
-    ],
-    "art_filename": "vinyl/10511319.jpg"
-  },
-  {
-    "id": "fb5921c0-ae65-43cd-93ba-922e717abd12",
-    "started_at": 1784051198.0,
-    "ended_at": 1784052212.0,
-    "duration_seconds": 1014,
-    "status": "confirmed",
-    "release_id": 3080009,
-    "title": "Tripper",
-    "artists": [
-      "Hella"
-    ],
-    "art_filename": "vinyl/3080009.jpg"
-  },
-  {
-    "id": "85693e83-d10d-4f16-93ee-2166246773d3",
-    "started_at": 1784045049.0,
-    "ended_at": 1784046446.0,
-    "duration_seconds": 1397,
+    "id": "7149d1a5-0168-4bb8-a42c-756e2960208b",
+    "started_at": 1785226327.0,
+    "ended_at": 1785228047.0,
+    "duration_seconds": 1720,
     "status": "confirmed",
     "release_id": 1627979,
     "title": "Out Of Step",
@@ -131,23 +65,36 @@
     "art_filename": "vinyl/1627979.jpg"
   },
   {
-    "id": "c61a9c56-c1f2-4530-be0d-c57442abaa15",
-    "started_at": 1784027340.0,
-    "ended_at": 1784029098.0,
-    "duration_seconds": 1758,
+    "id": "d7df3e25-930d-4e91-933e-bd11bbc68962",
+    "started_at": 1784852882.0,
+    "ended_at": 1784854810.0,
+    "duration_seconds": 1928,
     "status": "confirmed",
-    "release_id": 12235767,
-    "title": "On Avery Island",
+    "release_id": 2173833,
+    "title": "In The Aeroplane Over The Sea",
     "artists": [
       "Neutral Milk Hotel"
     ],
-    "art_filename": "vinyl/12235767.jpg"
+    "art_filename": "vinyl/2173833.jpg"
   },
   {
-    "id": "37a8aa8e-9f00-4dc7-a689-ad79e9a484a4",
-    "started_at": 1784011589.0,
-    "ended_at": 1784014098.0,
-    "duration_seconds": 2509,
+    "id": "8e5e9461-2a55-4f60-b410-ca4ddd171a47",
+    "started_at": 1784814538.0,
+    "ended_at": 1784815872.0,
+    "duration_seconds": 1334,
+    "status": "confirmed",
+    "release_id": 29869081,
+    "title": "No Place",
+    "artists": [
+      "A Lot Like Birds"
+    ],
+    "art_filename": "vinyl/29869081.jpg"
+  },
+  {
+    "id": "6c35fd38-dc3f-41a3-b2c7-980314d4a3d7",
+    "started_at": 1784570023.0,
+    "ended_at": 1784571691.0,
+    "duration_seconds": 1668,
     "status": "confirmed",
     "release_id": 2831739,
     "title": "Lafayette Blues / Sugar Never Tasted So Good",
@@ -157,352 +104,10 @@
     "art_filename": "vinyl/2831739.jpg"
   },
   {
-    "id": "8801982e-54f5-4c0e-9c5e-1159145aac5f",
-    "started_at": 1783983042.0,
-    "ended_at": 1783983781.0,
-    "duration_seconds": 739,
-    "status": "confirmed",
-    "release_id": 4491822,
-    "title": "Brian Eno x Nicolas Jaar x Grizzly Bear ",
-    "artists": [
-      "Brian Eno",
-      "Nicolas Jaar",
-      "Grizzly Bear"
-    ],
-    "art_filename": "vinyl/4491822.jpg"
-  },
-  {
-    "id": "0dfe2d42-2c2b-493f-bd9a-c7fdc5f6e024",
-    "started_at": 1783484351.0,
-    "ended_at": 1783486465.0,
-    "duration_seconds": 2114,
-    "status": "confirmed",
-    "release_id": 4321323,
-    "title": "Amok",
-    "artists": [
-      "Atoms For Peace (2)"
-    ],
-    "art_filename": "vinyl/4321323.jpg"
-  },
-  {
-    "id": "cc430351-8424-47c4-9d6c-b929f75452fc",
-    "started_at": 1783036990.0,
-    "ended_at": 1783040502.0,
-    "duration_seconds": 3512,
-    "status": "confirmed",
-    "release_id": 1364851,
-    "title": "The Bedlam In Goliath",
-    "artists": [
-      "The Mars Volta"
-    ],
-    "art_filename": "vinyl/1364851.jpg"
-  },
-  {
-    "id": "56a0e40d-6336-45a8-ae1f-b799431c7e9b",
-    "started_at": 1783006000.0,
-    "ended_at": 1783006368.0,
-    "duration_seconds": 368,
-    "status": "confirmed",
-    "release_id": 2415792,
-    "title": "Glitter",
-    "artists": [
-      "No Age"
-    ],
-    "art_filename": "vinyl/2415792.jpg"
-  },
-  {
-    "id": "4bece629-0cc4-43e0-b844-361f52e2d074",
-    "started_at": 1782353683.0,
-    "ended_at": 1782355208.0,
-    "duration_seconds": 1525,
-    "status": "confirmed",
-    "release_id": 6384435,
-    "title": "Let's Get It On",
-    "artists": [
-      "Marvin Gaye"
-    ],
-    "art_filename": "vinyl/6384435.jpg"
-  },
-  {
-    "id": "4fc28d46-e94f-4624-95c2-a0af30007cb8",
-    "started_at": 1782064063.0,
-    "ended_at": 1782065150.0,
-    "duration_seconds": 1087,
-    "status": "confirmed",
-    "release_id": 2353120,
-    "title": "You And Me And The Mountain",
-    "artists": [
-      "Maps And Atlases"
-    ],
-    "art_filename": "vinyl/2353120.jpg"
-  },
-  {
-    "id": "a936576c-3e44-4b82-b116-beddbc5dbb16",
-    "started_at": 1781969298.0,
-    "ended_at": 1781971003.0,
-    "duration_seconds": 1705,
-    "status": "confirmed",
-    "release_id": 10511319,
-    "title": "Looking Ocean ",
-    "artists": [
-      "Daedelus"
-    ],
-    "art_filename": "vinyl/10511319.jpg"
-  },
-  {
-    "id": "180e2b3a-d308-4c9f-b791-fbae8e0204a5",
-    "started_at": 1781839468.0,
-    "ended_at": 1781841920.0,
-    "duration_seconds": 2452,
-    "status": "confirmed",
-    "release_id": 2940876,
-    "title": "Bon Iver, Bon Iver",
-    "artists": [
-      "Bon Iver"
-    ],
-    "art_filename": "vinyl/2940876.jpg"
-  },
-  {
-    "id": "e1f538b3-4667-4267-aad4-b876faa072ac",
-    "started_at": 1781698381.0,
-    "ended_at": 1781699622.0,
-    "duration_seconds": 1241,
-    "status": "confirmed",
-    "release_id": 1709731,
-    "title": "Cryptomnesia",
-    "artists": [
-      "El Grupo Nuevo De Omar Rodriguez Lopez"
-    ],
-    "art_filename": "vinyl/1709731.jpg"
-  },
-  {
-    "id": "5ee36db2-06be-4e6b-b4b7-aaf93831855e",
-    "started_at": 1781605820.0,
-    "ended_at": 1781606493.0,
-    "duration_seconds": 673,
-    "status": "confirmed",
-    "release_id": 4491822,
-    "title": "Brian Eno x Nicolas Jaar x Grizzly Bear ",
-    "artists": [
-      "Brian Eno",
-      "Nicolas Jaar",
-      "Grizzly Bear"
-    ],
-    "art_filename": "vinyl/4491822.jpg"
-  },
-  {
-    "id": "1b81e016-e4db-47ae-819e-abedf7d66b91",
-    "started_at": 1781566145.0,
-    "ended_at": 1781566573.0,
-    "duration_seconds": 428,
-    "status": "confirmed",
-    "release_id": 2831131,
-    "title": "Helplessness Blues / Battery Kinzie",
-    "artists": [
-      "Fleet Foxes"
-    ],
-    "art_filename": "vinyl/2831131.jpg"
-  },
-  {
-    "id": "00d214c1-9db4-4986-a5fa-6ccf2f364b83",
-    "started_at": 1781120466.0,
-    "ended_at": 1781122794.0,
-    "duration_seconds": 2328,
-    "status": "confirmed",
-    "release_id": 6314990,
-    "title": "The Eraser",
-    "artists": [
-      "Thom Yorke"
-    ],
-    "art_filename": "vinyl/6314990.jpg"
-  },
-  {
-    "id": "eb3de898-963d-44cf-ac5a-72755cfaba2e",
-    "started_at": 1781090915.0,
-    "ended_at": 1781092531.0,
-    "duration_seconds": 1616,
-    "status": "confirmed",
-    "release_id": 3025716,
-    "title": "Immaculada",
-    "artists": [
-      "The Men (2)"
-    ],
-    "art_filename": "vinyl/3025716.jpg"
-  },
-  {
-    "id": "fade29a4-26d7-49be-8377-25bfc9f04e6a",
-    "started_at": 1781079799.0,
-    "ended_at": 1781083375.0,
-    "duration_seconds": 3576,
-    "status": "confirmed",
-    "release_id": 1855760,
-    "title": "Spirit They're Gone, Spirit They've Vanished",
-    "artists": [
-      "Animal Collective"
-    ],
-    "art_filename": "vinyl/1855760.jpg"
-  },
-  {
-    "id": "6e50d540-2353-4994-8e78-9dd10ed8cb10",
-    "started_at": 1780930369.0,
-    "ended_at": 1780934287.0,
-    "duration_seconds": 3918,
-    "status": "confirmed",
-    "release_id": 9216088,
-    "title": "Random Access Memories",
-    "artists": [
-      "Daft Punk"
-    ],
-    "art_filename": "vinyl/9216088.jpg"
-  },
-  {
-    "id": "1dcfb7c7-9f74-4cce-bbc4-3796b36fe84e",
-    "started_at": 1780461768.0,
-    "ended_at": 1780464057.0,
-    "duration_seconds": 2289,
-    "status": "confirmed",
-    "release_id": 3255473,
-    "title": "Siamese Dream",
-    "artists": [
-      "The Smashing Pumpkins"
-    ],
-    "art_filename": "vinyl/3255473.jpg"
-  },
-  {
-    "id": "ee049ac9-3904-42b8-a2b5-e474689c61f1",
-    "started_at": 1780311930.0,
-    "ended_at": 1780313059.0,
-    "duration_seconds": 1129,
-    "status": "confirmed",
-    "release_id": 1944456,
-    "title": "Summertime Clothes",
-    "artists": [
-      "Animal Collective"
-    ],
-    "art_filename": "vinyl/1944456.jpg"
-  },
-  {
-    "id": "76a74e93-c4f2-4035-a1d5-5ce133164222",
-    "started_at": 1780121386.0,
-    "ended_at": 1780123052.0,
-    "duration_seconds": 1666,
-    "status": "confirmed",
-    "release_id": 2940876,
-    "title": "Bon Iver, Bon Iver",
-    "artists": [
-      "Bon Iver"
-    ],
-    "art_filename": "vinyl/2940876.jpg"
-  },
-  {
-    "id": "15fda55e-5416-4438-a319-cfb2de4e4c2d",
-    "started_at": 1780100197.0,
-    "ended_at": 1780102608.0,
-    "duration_seconds": 2411,
-    "status": "confirmed",
-    "release_id": 6314990,
-    "title": "The Eraser",
-    "artists": [
-      "Thom Yorke"
-    ],
-    "art_filename": "vinyl/6314990.jpg"
-  },
-  {
-    "id": "88875250-9be8-405c-be05-39820ecc1a71",
-    "started_at": 1779932991.0,
-    "ended_at": 1779934679.0,
-    "duration_seconds": 1688,
-    "status": "confirmed",
-    "release_id": 10511319,
-    "title": "Looking Ocean ",
-    "artists": [
-      "Daedelus"
-    ],
-    "art_filename": "vinyl/10511319.jpg"
-  },
-  {
-    "id": "6b267e42-8b68-4585-b004-617b0435e500",
-    "started_at": 1779824692.0,
-    "ended_at": 1779825996.0,
-    "duration_seconds": 1304,
-    "status": "confirmed",
-    "release_id": 2787969,
-    "title": "Innundir Skinni",
-    "artists": [
-      "\u00d3l\u00f6f Arnalds"
-    ],
-    "art_filename": "vinyl/2787969.jpg"
-  },
-  {
-    "id": "0cb01a62-f57d-4da9-bfd8-254b3ac57e4c",
-    "started_at": 1779344134.0,
-    "ended_at": 1779347204.0,
-    "duration_seconds": 3070,
-    "status": "confirmed",
-    "release_id": 2856645,
-    "title": "Helplessness Blues",
-    "artists": [
-      "Fleet Foxes"
-    ],
-    "art_filename": "vinyl/2856645.jpg"
-  },
-  {
-    "id": "b6c6fd4d-dd8b-413c-b1d6-c12ce35f7535",
-    "started_at": 1779214257.0,
-    "ended_at": 1779216972.0,
-    "duration_seconds": 2715,
-    "status": "confirmed",
-    "release_id": 24149831,
-    "title": "The College Dropout",
-    "artists": [
-      "Kanye West"
-    ],
-    "art_filename": "vinyl/24149831.jpg"
-  },
-  {
-    "id": "c4c273c1-3260-4175-92ef-eef4698a5b76",
-    "started_at": 1779023943.0,
-    "ended_at": 1779026093.0,
-    "duration_seconds": 2150,
-    "status": "confirmed",
-    "release_id": 2477601,
-    "title": "Repeater",
-    "artists": [
-      "Fugazi"
-    ],
-    "art_filename": "vinyl/2477601.jpg"
-  },
-  {
-    "id": "cf69d0be-bc40-420a-808f-6c2e1f7269cb",
-    "started_at": 1778892767.0,
-    "ended_at": 1778895815.0,
-    "duration_seconds": 3048,
-    "status": "confirmed",
-    "release_id": 33861543,
-    "title": "Deb\u00ed Tirar M\u00e1s Fotos",
-    "artists": [
-      "Bad Bunny"
-    ],
-    "art_filename": "vinyl/33861543.jpg"
-  },
-  {
-    "id": "06baa2b3-cceb-41a6-a04c-2e65a5160201",
-    "started_at": 1778746780.0,
-    "ended_at": 1778747166.0,
-    "duration_seconds": 386,
-    "status": "confirmed",
-    "release_id": 2831131,
-    "title": "Helplessness Blues / Battery Kinzie",
-    "artists": [
-      "Fleet Foxes"
-    ],
-    "art_filename": "vinyl/2831131.jpg"
-  },
-  {
-    "id": "beb7a3bd-c2ba-4b2b-8033-6bf6d557a0ca",
-    "started_at": 1778724348.0,
-    "ended_at": 1778726307.0,
-    "duration_seconds": 1959,
+    "id": "107175c8-7914-4437-be18-190f8876f07d",
+    "started_at": 1784442984.0,
+    "ended_at": 1784444994.0,
+    "duration_seconds": 2010,
     "status": "confirmed",
     "release_id": 2331725,
     "title": "Ciencia De Los In\u00fatiles",
@@ -512,23 +117,49 @@
     "art_filename": "vinyl/2331725.jpg"
   },
   {
-    "id": "1e68704c-ab19-4e5b-a2fa-e49a189a214d",
-    "started_at": 1778473374.0,
-    "ended_at": 1778475332.0,
-    "duration_seconds": 1958,
+    "id": "3c45746c-9852-4783-8d45-de203f421596",
+    "started_at": 1784434770.0,
+    "ended_at": 1784437057.0,
+    "duration_seconds": 2287,
     "status": "confirmed",
-    "release_id": 3255473,
-    "title": "Siamese Dream",
+    "release_id": 43337,
+    "title": "Ege Bamyasi",
     "artists": [
-      "The Smashing Pumpkins"
+      "Can"
     ],
-    "art_filename": "vinyl/3255473.jpg"
+    "art_filename": "vinyl/43337.jpg"
   },
   {
-    "id": "188b5910-6ea3-4c44-9cf2-eda479d3eb23",
-    "started_at": 1778420180.0,
-    "ended_at": 1778430157.0,
-    "duration_seconds": 9977,
+    "id": "8f274730-c2ca-4063-865f-5141c4bd1733",
+    "started_at": 1784068971.0,
+    "ended_at": 1784070661.0,
+    "duration_seconds": 1690,
+    "status": "confirmed",
+    "release_id": 2379457,
+    "title": "Perch Patchwork",
+    "artists": [
+      "Maps And Atlases"
+    ],
+    "art_filename": "vinyl/2379457.jpg"
+  },
+  {
+    "id": "11bf22d9-e5ad-4881-987d-d11dc15de476",
+    "started_at": 1784051198.0,
+    "ended_at": 1784052212.0,
+    "duration_seconds": 1014,
+    "status": "confirmed",
+    "release_id": 5006908,
+    "title": "Music Has The Right To Children",
+    "artists": [
+      "Boards Of Canada"
+    ],
+    "art_filename": "vinyl/5006908.jpg"
+  },
+  {
+    "id": "7f43f7c4-f614-49a1-a78f-02d9a46ccbbd",
+    "started_at": 1783983042.0,
+    "ended_at": 1783990623.0,
+    "duration_seconds": 7581,
     "status": "confirmed",
     "release_id": 2833901,
     "title": "Telesterion",
@@ -538,10 +169,504 @@
     "art_filename": "vinyl/2833901.jpg"
   },
   {
-    "id": "1b224bda-f6f1-46d7-b2ac-bcf4c28b4bb0",
-    "started_at": 1778305045.0,
-    "ended_at": 1778306801.0,
-    "duration_seconds": 1756,
+    "id": "a65f1746-efda-4232-95dc-877f885d458e",
+    "started_at": 1783865255.0,
+    "ended_at": 1783866378.0,
+    "duration_seconds": 1123,
+    "status": "confirmed",
+    "release_id": 5803552,
+    "title": "King Bromeliad",
+    "artists": [
+      "Floating Points"
+    ],
+    "art_filename": "vinyl/5803552.jpg"
+  },
+  {
+    "id": "391f6463-8d02-4dc2-b2f2-c6806e0f1bc6",
+    "started_at": 1783706139.0,
+    "ended_at": 1783707640.0,
+    "duration_seconds": 1501,
+    "status": "confirmed",
+    "release_id": 2359724,
+    "title": "Solar Gambling",
+    "artists": [
+      "Omar Rodriguez-Lopez"
+    ],
+    "art_filename": "vinyl/2359724.jpg"
+  },
+  {
+    "id": "9bd39edd-42c7-41b9-8f9b-7bb93861a487",
+    "started_at": 1783484351.0,
+    "ended_at": 1783486465.0,
+    "duration_seconds": 2114,
+    "status": "confirmed",
+    "release_id": 5041370,
+    "title": "Reflektor",
+    "artists": [
+      "Arcade Fire"
+    ],
+    "art_filename": "vinyl/5041370.jpg"
+  },
+  {
+    "id": "47138c69-43d1-4f15-bf93-7f89a081a52e",
+    "started_at": 1783153852.0,
+    "ended_at": 1783155876.0,
+    "duration_seconds": 2024,
+    "status": "confirmed",
+    "release_id": 2359724,
+    "title": "Solar Gambling",
+    "artists": [
+      "Omar Rodriguez-Lopez"
+    ],
+    "art_filename": "vinyl/2359724.jpg"
+  },
+  {
+    "id": "484f842e-af4c-4309-a39c-711f4e88558a",
+    "started_at": 1783066247.0,
+    "ended_at": 1783067301.0,
+    "duration_seconds": 1054,
+    "status": "confirmed",
+    "release_id": 12235767,
+    "title": "On Avery Island",
+    "artists": [
+      "Neutral Milk Hotel"
+    ],
+    "art_filename": "vinyl/12235767.jpg"
+  },
+  {
+    "id": "ef18ffb7-2e4b-446a-8d38-42214ef1d762",
+    "started_at": 1782813650.0,
+    "ended_at": 1782815151.0,
+    "duration_seconds": 1501,
+    "status": "confirmed",
+    "release_id": 2156856,
+    "title": "by-",
+    "artists": [
+      "Bygones"
+    ],
+    "art_filename": "vinyl/2156856.jpg"
+  },
+  {
+    "id": "bafc2ca6-10b5-4bde-b4e0-5a4d467bb436",
+    "started_at": 1782353683.0,
+    "ended_at": 1782353992.0,
+    "duration_seconds": 309,
+    "status": "confirmed",
+    "release_id": 2415792,
+    "title": "Glitter",
+    "artists": [
+      "No Age"
+    ],
+    "art_filename": "vinyl/2415792.jpg"
+  },
+  {
+    "id": "d26c6233-7402-4e94-a98a-676721b5c4f0",
+    "started_at": 1782115106.0,
+    "ended_at": 1782117611.0,
+    "duration_seconds": 2505,
+    "status": "confirmed",
+    "release_id": 2999723,
+    "title": "Sung Tongs",
+    "artists": [
+      "Animal Collective"
+    ],
+    "art_filename": "vinyl/2999723.jpg"
+  },
+  {
+    "id": "65f54a4d-1976-49e2-a07f-ffc774998723",
+    "started_at": 1782064063.0,
+    "ended_at": 1782065528.0,
+    "duration_seconds": 1465,
+    "status": "confirmed",
+    "release_id": 3535483,
+    "title": "Superfuzz Bigmuff",
+    "artists": [
+      "Mudhoney"
+    ],
+    "art_filename": "vinyl/3535483.jpg"
+  },
+  {
+    "id": "e09f62d2-83ed-461e-89c6-249982910677",
+    "started_at": 1782049557.0,
+    "ended_at": 1782050227.0,
+    "duration_seconds": 670,
+    "status": "confirmed",
+    "release_id": 3095995,
+    "title": "Good Evening Mrs Magpie (Modeselektor RMX) / Bloom (Objekt RMX)",
+    "artists": [
+      "Radiohead"
+    ],
+    "art_filename": "vinyl/3095995.jpg"
+  },
+  {
+    "id": "dfde1fdb-4a4f-43e0-b0c2-45e891d1222e",
+    "started_at": 1782046413.0,
+    "ended_at": 1782048342.0,
+    "duration_seconds": 1929,
+    "status": "confirmed",
+    "release_id": 12670310,
+    "title": "El Camino",
+    "artists": [
+      "The Black Keys"
+    ],
+    "art_filename": "vinyl/12670310.jpg"
+  },
+  {
+    "id": "ad359b02-449e-463d-a8bf-d430deefacc7",
+    "started_at": 1781969298.0,
+    "ended_at": 1781971003.0,
+    "duration_seconds": 1705,
+    "status": "confirmed",
+    "release_id": 2379457,
+    "title": "Perch Patchwork",
+    "artists": [
+      "Maps And Atlases"
+    ],
+    "art_filename": "vinyl/2379457.jpg"
+  },
+  {
+    "id": "979969d6-f97f-4006-9232-85105d8579e4",
+    "started_at": 1781698381.0,
+    "ended_at": 1781699813.0,
+    "duration_seconds": 1432,
+    "status": "confirmed",
+    "release_id": 3535483,
+    "title": "Superfuzz Bigmuff",
+    "artists": [
+      "Mudhoney"
+    ],
+    "art_filename": "vinyl/3535483.jpg"
+  },
+  {
+    "id": "188b78d1-b16a-43c9-948f-0d775c4ce359",
+    "started_at": 1781605820.0,
+    "ended_at": 1781612727.0,
+    "duration_seconds": 6907,
+    "status": "confirmed",
+    "release_id": 2833901,
+    "title": "Telesterion",
+    "artists": [
+      "Omar Rodriguez-Lopez"
+    ],
+    "art_filename": "vinyl/2833901.jpg"
+  },
+  {
+    "id": "be30c533-51c1-4b5e-a218-085f0fabdd37",
+    "started_at": 1781090915.0,
+    "ended_at": 1781093367.0,
+    "duration_seconds": 2452,
+    "status": "confirmed",
+    "release_id": 43337,
+    "title": "Ege Bamyasi",
+    "artists": [
+      "Can"
+    ],
+    "art_filename": "vinyl/43337.jpg"
+  },
+  {
+    "id": "705816ed-3ed0-4474-b6d8-a798c6bd27d6",
+    "started_at": 1780930369.0,
+    "ended_at": 1780931323.0,
+    "duration_seconds": 954,
+    "status": "confirmed",
+    "release_id": 1428079,
+    "title": "Water Curses",
+    "artists": [
+      "Animal Collective"
+    ],
+    "art_filename": "vinyl/1428079.jpg"
+  },
+  {
+    "id": "91cea346-e5bd-4266-84cf-5cf8d1e5db7a",
+    "started_at": 1780843398.0,
+    "ended_at": 1780845250.0,
+    "duration_seconds": 1852,
+    "status": "confirmed",
+    "release_id": 3255473,
+    "title": "Siamese Dream",
+    "artists": [
+      "The Smashing Pumpkins"
+    ],
+    "art_filename": "vinyl/3255473.jpg"
+  },
+  {
+    "id": "f1601bbf-71bd-4417-b72d-f246f85a59eb",
+    "started_at": 1780323927.0,
+    "ended_at": 1780325529.0,
+    "duration_seconds": 1602,
+    "status": "confirmed",
+    "release_id": 1404179,
+    "title": "Let The Blind Lead Those Who Can See But Cannot Feel",
+    "artists": [
+      "Atlas Sound"
+    ],
+    "art_filename": "vinyl/1404179.jpg"
+  },
+  {
+    "id": "3de04f12-8f38-4ff1-9bfc-9a35a58fa9a3",
+    "started_at": 1780311930.0,
+    "ended_at": 1780313425.0,
+    "duration_seconds": 1495,
+    "status": "confirmed",
+    "release_id": 2031556,
+    "title": "Xenophanes",
+    "artists": [
+      "Omar Rodriguez-Lopez"
+    ],
+    "art_filename": "vinyl/2031556.jpg"
+  },
+  {
+    "id": "5f0db2c2-114b-4e33-98e4-43525f977877",
+    "started_at": 1780121386.0,
+    "ended_at": 1780121794.0,
+    "duration_seconds": 408,
+    "status": "confirmed",
+    "release_id": 1078940,
+    "title": "Alpha & Omega",
+    "artists": [
+      "Boards Of Canada"
+    ],
+    "art_filename": "vinyl/1078940.jpg"
+  },
+  {
+    "id": "53d9a9ba-8c01-47a9-842d-fa30e054cd0f",
+    "started_at": 1779932991.0,
+    "ended_at": 1779934679.0,
+    "duration_seconds": 1688,
+    "status": "confirmed",
+    "release_id": 2379457,
+    "title": "Perch Patchwork",
+    "artists": [
+      "Maps And Atlases"
+    ],
+    "art_filename": "vinyl/2379457.jpg"
+  },
+  {
+    "id": "11dcc6a7-04b5-4877-9217-a5e8fa28a1da",
+    "started_at": 1779824692.0,
+    "ended_at": 1779825812.0,
+    "duration_seconds": 1120,
+    "status": "confirmed",
+    "release_id": 83677,
+    "title": "I Might Be Wrong - Live Recordings",
+    "artists": [
+      "Radiohead"
+    ],
+    "art_filename": "vinyl/83677.jpg"
+  },
+  {
+    "id": "919355c9-3112-4a3a-8061-c1378a60670a",
+    "started_at": 1779810901.0,
+    "ended_at": 1779812519.0,
+    "duration_seconds": 1618,
+    "status": "confirmed",
+    "release_id": 4449766,
+    "title": "\u00c1g\u00e6tis Byrjun",
+    "artists": [
+      "Sigur R\u00f3s"
+    ],
+    "art_filename": "vinyl/4449766.jpg"
+  },
+  {
+    "id": "38453ce7-2bb8-4e4c-8cb7-2ce4f9dec3c1",
+    "started_at": 1779344134.0,
+    "ended_at": 1779345602.0,
+    "duration_seconds": 1468,
+    "status": "confirmed",
+    "release_id": 6384435,
+    "title": "Let's Get It On",
+    "artists": [
+      "Marvin Gaye"
+    ],
+    "art_filename": "vinyl/6384435.jpg"
+  },
+  {
+    "id": "5840b2fc-08f0-4385-abe0-554bc563ebd1",
+    "started_at": 1779115623.0,
+    "ended_at": 1779119781.0,
+    "duration_seconds": 4158,
+    "status": "confirmed",
+    "release_id": 4418695,
+    "title": "Homework",
+    "artists": [
+      "Daft Punk"
+    ],
+    "art_filename": "vinyl/4418695.jpg"
+  },
+  {
+    "id": "829d3add-5397-4768-92a5-663a16726c91",
+    "started_at": 1779100528.0,
+    "ended_at": 1779102455.0,
+    "duration_seconds": 1927,
+    "status": "confirmed",
+    "release_id": 2813317,
+    "title": "Tomboy",
+    "artists": [
+      "Panda Bear"
+    ],
+    "art_filename": "vinyl/2813317.jpg"
+  },
+  {
+    "id": "60637050-19cb-40d3-8e97-7a5bda4dcc78",
+    "started_at": 1779023943.0,
+    "ended_at": 1779025462.0,
+    "duration_seconds": 1519,
+    "status": "confirmed",
+    "release_id": 1629810,
+    "title": "Me\u00f0 Su\u00f0 \u00cd Eyrum Vi\u00f0 Spilum Endalaust",
+    "artists": [
+      "Sigur R\u00f3s"
+    ],
+    "art_filename": "vinyl/1629810.jpg"
+  },
+  {
+    "id": "984158ea-1889-4185-84d5-522fadfdb043",
+    "started_at": 1778928441.0,
+    "ended_at": 1778930149.0,
+    "duration_seconds": 1708,
+    "status": "confirmed",
+    "release_id": 6426728,
+    "title": "Alive 1997 / Alive 2007",
+    "artists": [
+      "Daft Punk"
+    ],
+    "art_filename": "vinyl/6426728.jpg"
+  },
+  {
+    "id": "b1e29245-5886-4d14-b632-59d1d23b793d",
+    "started_at": 1778892767.0,
+    "ended_at": 1778895267.0,
+    "duration_seconds": 2500,
+    "status": "confirmed",
+    "release_id": 458611,
+    "title": "The Milk-Eyed Mender",
+    "artists": [
+      "Joanna Newsom"
+    ],
+    "art_filename": "vinyl/458611.jpg"
+  },
+  {
+    "id": "44f4664e-aac1-4241-853b-412f24f65256",
+    "started_at": 1778860752.0,
+    "ended_at": 1778862207.0,
+    "duration_seconds": 1455,
+    "status": "confirmed",
+    "release_id": 6880569,
+    "title": "Gorillaz",
+    "artists": [
+      "Gorillaz"
+    ],
+    "art_filename": "vinyl/6880569.jpg"
+  },
+  {
+    "id": "956ad01c-9325-4e78-8827-62f6c79fa470",
+    "started_at": 1778746780.0,
+    "ended_at": 1778748806.0,
+    "duration_seconds": 2026,
+    "status": "confirmed",
+    "release_id": 4449766,
+    "title": "\u00c1g\u00e6tis Byrjun",
+    "artists": [
+      "Sigur R\u00f3s"
+    ],
+    "art_filename": "vinyl/4449766.jpg"
+  },
+  {
+    "id": "acc02fad-c73c-4c22-8195-b34e0e55fbc3",
+    "started_at": 1778724348.0,
+    "ended_at": 1778725965.0,
+    "duration_seconds": 1617,
+    "status": "confirmed",
+    "release_id": 2156856,
+    "title": "by-",
+    "artists": [
+      "Bygones"
+    ],
+    "art_filename": "vinyl/2156856.jpg"
+  },
+  {
+    "id": "20421389-675c-4fd0-a3c3-e683895b2d2a",
+    "started_at": 1778721563.0,
+    "ended_at": 1778722027.0,
+    "duration_seconds": 464,
+    "status": "confirmed",
+    "release_id": 1490485,
+    "title": "Nothing Ever Happened",
+    "artists": [
+      "Deerhunter"
+    ],
+    "art_filename": "vinyl/1490485.jpg"
+  },
+  {
+    "id": "5b168fe7-ffcc-41eb-9df2-3a7d8b4b4bbc",
+    "started_at": 1778312892.0,
+    "ended_at": 1778315226.0,
+    "duration_seconds": 2334,
+    "status": "confirmed",
+    "release_id": 9755401,
+    "title": "Untrue",
+    "artists": [
+      "Burial"
+    ],
+    "art_filename": "vinyl/9755401.jpg"
+  },
+  {
+    "id": "2da14d8b-56fd-44a0-be61-c21b73d53b94",
+    "started_at": 1778285601.0,
+    "ended_at": 1778287649.0,
+    "duration_seconds": 2048,
+    "status": "confirmed",
+    "release_id": 2885498,
+    "title": "Shed",
+    "artists": [
+      "Title Fight"
+    ],
+    "art_filename": "vinyl/2885498.jpg"
+  },
+  {
+    "id": "d55499dc-9957-436f-9868-81af890915b1",
+    "started_at": 1778246917.0,
+    "ended_at": 1778247689.0,
+    "duration_seconds": 772,
+    "status": "confirmed",
+    "release_id": 3095995,
+    "title": "Good Evening Mrs Magpie (Modeselektor RMX) / Bloom (Objekt RMX)",
+    "artists": [
+      "Radiohead"
+    ],
+    "art_filename": "vinyl/3095995.jpg"
+  },
+  {
+    "id": "92930fa9-f185-4936-87c7-a37dbf7e33b7",
+    "started_at": 1778083780.0,
+    "ended_at": 1778084175.0,
+    "duration_seconds": 395,
+    "status": "confirmed",
+    "release_id": 1078940,
+    "title": "Alpha & Omega",
+    "artists": [
+      "Boards Of Canada"
+    ],
+    "art_filename": "vinyl/1078940.jpg"
+  },
+  {
+    "id": "4517668a-2b39-489a-8fa2-8ef126d2f83f",
+    "started_at": 1777682135.0,
+    "ended_at": 1777684337.0,
+    "duration_seconds": 2202,
+    "status": "confirmed",
+    "release_id": 2885498,
+    "title": "Shed",
+    "artists": [
+      "Title Fight"
+    ],
+    "art_filename": "vinyl/2885498.jpg"
+  },
+  {
+    "id": "6ec294d8-8038-4c87-b71c-83ffcedb5f26",
+    "started_at": 1777508081.0,
+    "ended_at": 1777509765.0,
+    "duration_seconds": 1684,
     "status": "confirmed",
     "release_id": 1081394,
     "title": "Strawberry Jam",
@@ -551,75 +676,62 @@
     "art_filename": "vinyl/1081394.jpg"
   },
   {
-    "id": "1a514fc3-8009-4ed3-8719-871c89b7773f",
-    "started_at": 1778285601.0,
-    "ended_at": 1778287649.0,
-    "duration_seconds": 2048,
+    "id": "342ea064-388c-4598-aa8d-1cf08737e1bc",
+    "started_at": 1777153211.0,
+    "ended_at": 1777154473.0,
+    "duration_seconds": 1262,
     "status": "confirmed",
-    "release_id": 83677,
-    "title": "I Might Be Wrong - Live Recordings",
+    "release_id": 4321323,
+    "title": "Amok",
     "artists": [
-      "Radiohead"
+      "Atoms For Peace (2)"
     ],
-    "art_filename": "vinyl/83677.jpg"
+    "art_filename": "vinyl/4321323.jpg"
   },
   {
-    "id": "cb1f3982-8ffa-445b-bc15-c40e9094d304",
-    "started_at": 1777957957.0,
-    "ended_at": 1777960437.0,
-    "duration_seconds": 2480,
+    "id": "8bf2f67e-5f24-4d57-886e-97fe92d801c4",
+    "started_at": 1776908499.0,
+    "ended_at": 1776910775.0,
+    "duration_seconds": 2276,
     "status": "confirmed",
-    "release_id": 2940876,
-    "title": "Bon Iver, Bon Iver",
+    "release_id": 33960828,
+    "title": "Nevermind",
     "artists": [
-      "Bon Iver"
+      "Nirvana"
     ],
-    "art_filename": "vinyl/2940876.jpg"
+    "art_filename": "vinyl/33960828.jpg"
   },
   {
-    "id": "453060f6-2265-4f1a-a574-b1c00435e76d",
-    "started_at": 1777867950.0,
-    "ended_at": 1777869380.0,
-    "duration_seconds": 1430,
+    "id": "d1f7854b-5ad7-4599-8c34-55a2d4d8619c",
+    "started_at": 1776441764.0,
+    "ended_at": 1776443678.0,
+    "duration_seconds": 1914,
     "status": "confirmed",
-    "release_id": 2006659,
-    "title": "Fugazi",
+    "release_id": 34396339,
+    "title": "Holy Roller Novocaine",
     "artists": [
-      "Fugazi"
+      "Kings Of Leon"
     ],
-    "art_filename": "vinyl/2006659.jpg"
+    "art_filename": "vinyl/34396339.jpg"
   },
   {
-    "id": "af8235ec-139a-4be9-ad2e-e95d76d585cb",
-    "started_at": 1777682135.0,
-    "ended_at": 1777684337.0,
-    "duration_seconds": 2202,
+    "id": "79786c1b-e0ee-4f40-9c31-72c5a81f4ed9",
+    "started_at": 1776352317.0,
+    "ended_at": 1776354418.0,
+    "duration_seconds": 2101,
     "status": "confirmed",
-    "release_id": 83677,
-    "title": "I Might Be Wrong - Live Recordings",
+    "release_id": 2173833,
+    "title": "In The Aeroplane Over The Sea",
     "artists": [
-      "Radiohead"
+      "Neutral Milk Hotel"
     ],
-    "art_filename": "vinyl/83677.jpg"
+    "art_filename": "vinyl/2173833.jpg"
   },
   {
-    "id": "33b25bfd-daab-49ab-96bc-6adbc8d64dfb",
-    "started_at": 1777591104.0,
-    "ended_at": 1777592651.0,
-    "duration_seconds": 1547,
-    "status": "confirmed",
-    "release_id": 4491942,
-    "title": "Relationship Of Command",
-    "artists": [
-      "At The Drive-In"
-    ],
-    "art_filename": "vinyl/4491942.jpg"
-  },
-  {
-    "id": "548b5023-1ddd-42d1-95ed-6d588dfd3322",
-    "started_at": 1777508081.0,
-    "ended_at": 1777509486.0,
-    "duration_seconds": 1405,
+    "id": "81f1247f-88f5-4c12-9f7d-71e8f67fec31",
+    "started_at": 1775832537.0,
+    "ended_at": 1775834127.0,
+    "duration_seconds": 1590,
     "status": "confirmed",
     "release_id": 2504307,
     "title": "Sepulcros De Miel",
@@ -629,50 +741,348 @@
     "art_filename": "vinyl/2504307.jpg"
   },
   {
-    "id": "3b903953-c89f-4b2d-825b-5df7b54a5fb4",
-    "started_at": 1776714159.0,
-    "ended_at": 1776716844.0,
-    "duration_seconds": 2685,
+    "id": "0ed00394-ab99-41ac-a153-1c3fec336076",
+    "started_at": 1775794417.0,
+    "ended_at": 1775796201.0,
+    "duration_seconds": 1784,
     "status": "confirmed",
-    "release_id": 1779487,
-    "title": "Magic Potion",
+    "release_id": 2585954,
+    "title": "Last Night At The Jetty",
+    "artists": [
+      "Panda Bear"
+    ],
+    "art_filename": "vinyl/2585954.jpg"
+  },
+  {
+    "id": "a8a60335-19e8-4a53-b88c-c10a86022961",
+    "started_at": 1775732071.0,
+    "ended_at": 1775733375.0,
+    "duration_seconds": 1304,
+    "status": "confirmed",
+    "release_id": 2006659,
+    "title": "Fugazi",
+    "artists": [
+      "Fugazi"
+    ],
+    "art_filename": "vinyl/2006659.jpg"
+  },
+  {
+    "id": "bbb067e7-9ce6-4f72-9444-2708ec1cca97",
+    "started_at": 1775545962.0,
+    "ended_at": 1775551042.0,
+    "duration_seconds": 5080,
+    "status": "confirmed",
+    "release_id": 9127152,
+    "title": "A Moon Shaped Pool",
+    "artists": [
+      "Radiohead"
+    ],
+    "art_filename": "vinyl/9127152.jpg"
+  },
+  {
+    "id": "033602ee-c3e8-4138-b4b1-a9154a0068e6",
+    "started_at": 1775147293.0,
+    "ended_at": 1775148664.0,
+    "duration_seconds": 1371,
+    "status": "confirmed",
+    "release_id": 6384435,
+    "title": "Let's Get It On",
+    "artists": [
+      "Marvin Gaye"
+    ],
+    "art_filename": "vinyl/6384435.jpg"
+  },
+  {
+    "id": "e52f1290-5031-4770-8ef5-1cf44b8beec8",
+    "started_at": 1774341829.0,
+    "ended_at": 1774344504.0,
+    "duration_seconds": 2675,
+    "status": "confirmed",
+    "release_id": 1709731,
+    "title": "Cryptomnesia",
+    "artists": [
+      "El Grupo Nuevo De Omar Rodriguez Lopez"
+    ],
+    "art_filename": "vinyl/1709731.jpg"
+  },
+  {
+    "id": "c47df480-7eac-4d80-90b8-ef31a237aa7b",
+    "started_at": 1773544224.0,
+    "ended_at": 1773546410.0,
+    "duration_seconds": 2186,
+    "status": "confirmed",
+    "release_id": 2173833,
+    "title": "In The Aeroplane Over The Sea",
+    "artists": [
+      "Neutral Milk Hotel"
+    ],
+    "art_filename": "vinyl/2173833.jpg"
+  },
+  {
+    "id": "6fef8a6c-51a8-492c-8ffe-276031397f0b",
+    "started_at": 1773483925.0,
+    "ended_at": 1773485808.0,
+    "duration_seconds": 1883,
+    "status": "confirmed",
+    "release_id": 2885498,
+    "title": "Shed",
+    "artists": [
+      "Title Fight"
+    ],
+    "art_filename": "vinyl/2885498.jpg"
+  },
+  {
+    "id": "f4de11a7-2d6a-4736-9c99-c73934a9fd2e",
+    "started_at": 1773391958.0,
+    "ended_at": 1773393005.0,
+    "duration_seconds": 1047,
+    "status": "confirmed",
+    "release_id": 4321323,
+    "title": "Amok",
+    "artists": [
+      "Atoms For Peace (2)"
+    ],
+    "art_filename": "vinyl/4321323.jpg"
+  },
+  {
+    "id": "6a3d9e89-baf9-4335-a150-486c2325559d",
+    "started_at": 1773190814.0,
+    "ended_at": 1773193528.0,
+    "duration_seconds": 2714,
+    "status": "confirmed",
+    "release_id": 4491337,
+    "title": "Jamie xx Edits",
+    "artists": [
+      "The XX"
+    ],
+    "art_filename": "vinyl/4491337.jpg"
+  },
+  {
+    "id": "9ed78f3a-f20a-4411-8230-af012acb632b",
+    "started_at": 1773094705.0,
+    "ended_at": 1773096784.0,
+    "duration_seconds": 2079,
+    "status": "confirmed",
+    "release_id": 9755401,
+    "title": "Untrue",
+    "artists": [
+      "Burial"
+    ],
+    "art_filename": "vinyl/9755401.jpg"
+  },
+  {
+    "id": "c8d694e0-d920-4e29-b2e7-6ae3d6285eb2",
+    "started_at": 1772552804.0,
+    "ended_at": 1772553814.0,
+    "duration_seconds": 1010,
+    "status": "confirmed",
+    "release_id": 4321323,
+    "title": "Amok",
+    "artists": [
+      "Atoms For Peace (2)"
+    ],
+    "art_filename": "vinyl/4321323.jpg"
+  },
+  {
+    "id": "7e2b97e1-c905-464f-9fb8-57dd5a7308cd",
+    "started_at": 1772303781.0,
+    "ended_at": 1772305469.0,
+    "duration_seconds": 1688,
+    "status": "confirmed",
+    "release_id": 2787969,
+    "title": "Innundir Skinni",
+    "artists": [
+      "\u00d3l\u00f6f Arnalds"
+    ],
+    "art_filename": "vinyl/2787969.jpg"
+  },
+  {
+    "id": "413ebdf4-cd3d-4e3b-b186-685e849d5cef",
+    "started_at": 1772082189.0,
+    "ended_at": 1772084040.0,
+    "duration_seconds": 1851,
+    "status": "confirmed",
+    "release_id": 3535483,
+    "title": "Superfuzz Bigmuff",
+    "artists": [
+      "Mudhoney"
+    ],
+    "art_filename": "vinyl/3535483.jpg"
+  },
+  {
+    "id": "2ee98b79-5d16-4073-bd6e-33fd1280cc6c",
+    "started_at": 1771881085.0,
+    "ended_at": 1771882810.0,
+    "duration_seconds": 1725,
+    "status": "confirmed",
+    "release_id": 12670310,
+    "title": "El Camino",
     "artists": [
       "The Black Keys"
     ],
-    "art_filename": "vinyl/1779487.jpg"
+    "art_filename": "vinyl/12670310.jpg"
   },
   {
-    "id": "6b5f0c6a-2446-40b6-ad84-93b1797ca0c5",
-    "started_at": 1776450869.0,
-    "ended_at": 1776452777.0,
-    "duration_seconds": 1908,
+    "id": "f9fb0aab-be15-4d1f-aba5-9a1737e5d78d",
+    "started_at": 1771871826.0,
+    "ended_at": 1771873984.0,
+    "duration_seconds": 2158,
     "status": "confirmed",
-    "release_id": 11307601,
-    "title": "Christmas Unicorn: Songs For Christmas Vol.10",
+    "release_id": 4491337,
+    "title": "Jamie xx Edits",
     "artists": [
-      "Sufjan Stevens"
+      "The XX"
     ],
-    "art_filename": "vinyl/11307601.jpg"
+    "art_filename": "vinyl/4491337.jpg"
   },
   {
-    "id": "c06e056a-74b4-48ab-8db6-90bc892e3f70",
-    "started_at": 1776424256.0,
-    "ended_at": 1776424999.0,
-    "duration_seconds": 743,
+    "id": "0baeac68-643f-4f58-bfe8-65489b818020",
+    "started_at": 1771779771.0,
+    "ended_at": 1771781092.0,
+    "duration_seconds": 1321,
     "status": "confirmed",
-    "release_id": 2768615,
-    "title": "Pinnacles / Ye Ye",
+    "release_id": 2504307,
+    "title": "Sepulcros De Miel",
     "artists": [
-      "Four Tet",
-      "Daphni"
+      "Omar Rodriguez Lopez Quartet"
     ],
-    "art_filename": "vinyl/2768615.jpg"
+    "art_filename": "vinyl/2504307.jpg"
   },
   {
-    "id": "6f485c83-3329-4fd1-8fa8-bcfadf7c0205",
-    "started_at": 1776352317.0,
-    "ended_at": 1776353570.0,
-    "duration_seconds": 1253,
+    "id": "e625d52f-d1dd-41eb-a345-45e825abd098",
+    "started_at": 1771569919.0,
+    "ended_at": 1771573595.0,
+    "duration_seconds": 3676,
+    "status": "confirmed",
+    "release_id": 1855760,
+    "title": "Spirit They're Gone, Spirit They've Vanished",
+    "artists": [
+      "Animal Collective"
+    ],
+    "art_filename": "vinyl/1855760.jpg"
+  },
+  {
+    "id": "0cb3b6b6-a25d-437c-ba26-40893992dc3e",
+    "started_at": 1771463726.0,
+    "ended_at": 1771465226.0,
+    "duration_seconds": 1500,
+    "status": "confirmed",
+    "release_id": 3080009,
+    "title": "Tripper",
+    "artists": [
+      "Hella"
+    ],
+    "art_filename": "vinyl/3080009.jpg"
+  },
+  {
+    "id": "96096cbf-0afc-4d1d-9d84-fadc0d3e8529",
+    "started_at": 1771413663.0,
+    "ended_at": 1771415516.0,
+    "duration_seconds": 1853,
+    "status": "confirmed",
+    "release_id": 32949843,
+    "title": "Porcelain",
+    "artists": [
+      "Sparta"
+    ],
+    "art_filename": "vinyl/32949843.jpg"
+  },
+  {
+    "id": "a464016e-bb20-4cd7-966b-9b603ae54fcc",
+    "started_at": 1771082227.0,
+    "ended_at": 1771082537.0,
+    "duration_seconds": 310,
+    "status": "confirmed",
+    "release_id": 2415792,
+    "title": "Glitter",
+    "artists": [
+      "No Age"
+    ],
+    "art_filename": "vinyl/2415792.jpg"
+  },
+  {
+    "id": "b3e83509-4235-42de-853d-c574fb2568a8",
+    "started_at": 1770467813.0,
+    "ended_at": 1770468355.0,
+    "duration_seconds": 542,
+    "status": "confirmed",
+    "release_id": 1490485,
+    "title": "Nothing Ever Happened",
+    "artists": [
+      "Deerhunter"
+    ],
+    "art_filename": "vinyl/1490485.jpg"
+  },
+  {
+    "id": "56e1477f-fbaa-483b-a64f-9d7c4a4eb4eb",
+    "started_at": 1770467285.0,
+    "ended_at": 1770468545.0,
+    "duration_seconds": 1260,
+    "status": "confirmed",
+    "release_id": 1404179,
+    "title": "Let The Blind Lead Those Who Can See But Cannot Feel",
+    "artists": [
+      "Atlas Sound"
+    ],
+    "art_filename": "vinyl/1404179.jpg"
+  },
+  {
+    "id": "10c785cc-a390-4156-9676-58a25c13fd8a",
+    "started_at": 1770004096.0,
+    "ended_at": 1770005423.0,
+    "duration_seconds": 1327,
+    "status": "confirmed",
+    "release_id": 2031556,
+    "title": "Xenophanes",
+    "artists": [
+      "Omar Rodriguez-Lopez"
+    ],
+    "art_filename": "vinyl/2031556.jpg"
+  },
+  {
+    "id": "0a998bdf-88dc-4a86-a298-d7b013af2cff",
+    "started_at": 1769843321.0,
+    "ended_at": 1769846669.0,
+    "duration_seconds": 3348,
+    "status": "confirmed",
+    "release_id": 2891664,
+    "title": "Blood Sugar Sex Magik",
+    "artists": [
+      "Red Hot Chili Peppers"
+    ],
+    "art_filename": "vinyl/2891664.jpg"
+  },
+  {
+    "id": "118b9343-c4fa-4127-8d48-bc044c49f4ce",
+    "started_at": 1769808765.0,
+    "ended_at": 1769810375.0,
+    "duration_seconds": 1610,
+    "status": "confirmed",
+    "release_id": 2504307,
+    "title": "Sepulcros De Miel",
+    "artists": [
+      "Omar Rodriguez Lopez Quartet"
+    ],
+    "art_filename": "vinyl/2504307.jpg"
+  },
+  {
+    "id": "ae83b182-3652-47d4-a7c2-c54412e91bed",
+    "started_at": 1769755492.0,
+    "ended_at": 1769757748.0,
+    "duration_seconds": 2256,
+    "status": "confirmed",
+    "release_id": 2585954,
+    "title": "Last Night At The Jetty",
+    "artists": [
+      "Panda Bear"
+    ],
+    "art_filename": "vinyl/2585954.jpg"
+  },
+  {
+    "id": "90b1db6e-9078-4630-8139-488c0ed69ff7",
+    "started_at": 1769722919.0,
+    "ended_at": 1769724238.0,
+    "duration_seconds": 1319,
     "status": "confirmed",
     "release_id": 5579611,
     "title": "Hang On To Each Other",
@@ -683,49 +1093,75 @@
     "art_filename": "vinyl/5579611.jpg"
   },
   {
-    "id": "121e0851-c62c-4211-977d-db6f211c264f",
-    "started_at": 1776073932.0,
-    "ended_at": 1776075237.0,
-    "duration_seconds": 1305,
+    "id": "4783e2f3-1714-4384-b60d-32bf6791b56f",
+    "started_at": 1769636958.0,
+    "ended_at": 1769638886.0,
+    "duration_seconds": 1928,
     "status": "confirmed",
-    "release_id": 2353120,
-    "title": "You And Me And The Mountain",
+    "release_id": 2902536,
+    "title": "Leave Home",
+    "artists": [
+      "The Men (2)"
+    ],
+    "art_filename": "vinyl/2902536.jpg"
+  },
+  {
+    "id": "685f2abf-8e1c-4960-b776-4ac1b3d2859b",
+    "started_at": 1769610146.0,
+    "ended_at": 1769611443.0,
+    "duration_seconds": 1297,
+    "status": "confirmed",
+    "release_id": 1944456,
+    "title": "Summertime Clothes",
+    "artists": [
+      "Animal Collective"
+    ],
+    "art_filename": "vinyl/1944456.jpg"
+  },
+  {
+    "id": "e6f58fdc-2c17-4873-9f1f-73e69f498442",
+    "started_at": 1769606051.0,
+    "ended_at": 1769607422.0,
+    "duration_seconds": 1371,
+    "status": "confirmed",
+    "release_id": 29869081,
+    "title": "No Place",
+    "artists": [
+      "A Lot Like Birds"
+    ],
+    "art_filename": "vinyl/29869081.jpg"
+  },
+  {
+    "id": "fae3824f-e557-4463-a5b0-4f549a519679",
+    "started_at": 1769597675.0,
+    "ended_at": 1769599510.0,
+    "duration_seconds": 1835,
+    "status": "confirmed",
+    "release_id": 2890941,
+    "title": "Take Care, Take Care, Take Care",
+    "artists": [
+      "Explosions In The Sky"
+    ],
+    "art_filename": "vinyl/2890941.jpg"
+  },
+  {
+    "id": "891ace05-98c9-4819-89b1-978db9df3c08",
+    "started_at": 1769116083.0,
+    "ended_at": 1769117701.0,
+    "duration_seconds": 1618,
+    "status": "confirmed",
+    "release_id": 2379457,
+    "title": "Perch Patchwork",
     "artists": [
       "Maps And Atlases"
     ],
-    "art_filename": "vinyl/2353120.jpg"
+    "art_filename": "vinyl/2379457.jpg"
   },
   {
-    "id": "57281497-8742-40c2-8265-bd795111d2f8",
-    "started_at": 1775794417.0,
-    "ended_at": 1775795838.0,
-    "duration_seconds": 1421,
-    "status": "confirmed",
-    "release_id": 12235767,
-    "title": "On Avery Island",
-    "artists": [
-      "Neutral Milk Hotel"
-    ],
-    "art_filename": "vinyl/12235767.jpg"
-  },
-  {
-    "id": "044881f6-aac0-4717-8e2f-30e4d4fb8ee5",
-    "started_at": 1775732071.0,
-    "ended_at": 1775734146.0,
-    "duration_seconds": 2075,
-    "status": "confirmed",
-    "release_id": 135284,
-    "title": "Monster Movie",
-    "artists": [
-      "Can"
-    ],
-    "art_filename": "vinyl/135284.jpg"
-  },
-  {
-    "id": "128c3b24-b908-446e-b286-eef38f696be0",
-    "started_at": 1775554897.0,
-    "ended_at": 1775556961.0,
-    "duration_seconds": 2064,
+    "id": "f526d347-d8ef-431e-ad44-2015648657a2",
+    "started_at": 1769114436.0,
+    "ended_at": 1769116298.0,
+    "duration_seconds": 1862,
     "status": "confirmed",
     "release_id": 5041370,
     "title": "Reflektor",
@@ -735,101 +1171,49 @@
     "art_filename": "vinyl/5041370.jpg"
   },
   {
-    "id": "6db8e955-7254-4a23-9627-9992a084aa7f",
-    "started_at": 1775266300.0,
-    "ended_at": 1775268653.0,
-    "duration_seconds": 2353,
+    "id": "29b2e006-172c-4200-b89a-f1b8c949bafd",
+    "started_at": 1769084601.0,
+    "ended_at": 1769086947.0,
+    "duration_seconds": 2346,
     "status": "confirmed",
-    "release_id": 11304449,
-    "title": "I Am Santa's Helper! Even More Songs For Christmas Vol.7",
+    "release_id": 29868991,
+    "title": "Conversation Piece",
     "artists": [
-      "Sufjan Stevens"
+      "A Lot Like Birds"
     ],
-    "art_filename": "vinyl/11304449.jpg"
+    "art_filename": "vinyl/29868991.jpg"
   },
   {
-    "id": "231f23cd-1a58-48a3-ab14-e98db047cf94",
-    "started_at": 1775147293.0,
-    "ended_at": 1775150384.0,
-    "duration_seconds": 3091,
+    "id": "7d7ac1c3-a833-4ef8-a4c2-17da1fccb192",
+    "started_at": 1769061737.0,
+    "ended_at": 1769062467.0,
+    "duration_seconds": 730,
     "status": "confirmed",
-    "release_id": 4418695,
-    "title": "Homework",
+    "release_id": 1838416,
+    "title": "J&W Beat",
     "artists": [
-      "Daft Punk"
+      "Floating Points"
     ],
-    "art_filename": "vinyl/4418695.jpg"
+    "art_filename": "vinyl/1838416.jpg"
   },
   {
-    "id": "0d118887-4a46-462b-9c07-720c7574cd7e",
-    "started_at": 1774248537.0,
-    "ended_at": 1774250513.0,
-    "duration_seconds": 1976,
+    "id": "f6542d3a-2fbe-4705-aab1-7ee60fbaee87",
+    "started_at": 1769058322.0,
+    "ended_at": 1769059650.0,
+    "duration_seconds": 1328,
     "status": "confirmed",
-    "release_id": 649184,
-    "title": "Acabou Chorare",
+    "release_id": 10511319,
+    "title": "Looking Ocean ",
     "artists": [
-      "Os Novos Baianos"
+      "Daedelus"
     ],
-    "art_filename": "vinyl/649184.jpg"
+    "art_filename": "vinyl/10511319.jpg"
   },
   {
-    "id": "a3baf523-bd05-4d6e-b60a-9e7d3851a033",
-    "started_at": 1773483925.0,
-    "ended_at": 1773485808.0,
-    "duration_seconds": 1883,
-    "status": "confirmed",
-    "release_id": 83677,
-    "title": "I Might Be Wrong - Live Recordings",
-    "artists": [
-      "Radiohead"
-    ],
-    "art_filename": "vinyl/83677.jpg"
-  },
-  {
-    "id": "ae4960e7-d4ba-4806-b3f2-61adce5a02fc",
-    "started_at": 1773391958.0,
-    "ended_at": 1773395817.0,
-    "duration_seconds": 3859,
-    "status": "confirmed",
-    "release_id": 541614,
-    "title": "The Campfire Headphase",
-    "artists": [
-      "Boards Of Canada"
-    ],
-    "art_filename": "vinyl/541614.jpg"
-  },
-  {
-    "id": "a3adc056-33a3-451b-a180-59fc363f6ae5",
-    "started_at": 1773307352.0,
-    "ended_at": 1773309897.0,
-    "duration_seconds": 2545,
-    "status": "confirmed",
-    "release_id": 6426728,
-    "title": "Alive 1997 / Alive 2007",
-    "artists": [
-      "Daft Punk"
-    ],
-    "art_filename": "vinyl/6426728.jpg"
-  },
-  {
-    "id": "c327f3bb-c77a-42e9-a328-950f1e2599b6",
-    "started_at": 1773190814.0,
-    "ended_at": 1773193528.0,
-    "duration_seconds": 2714,
-    "status": "confirmed",
-    "release_id": 3535483,
-    "title": "Superfuzz Bigmuff",
-    "artists": [
-      "Mudhoney"
-    ],
-    "art_filename": "vinyl/3535483.jpg"
-  },
-  {
-    "id": "aba5abd3-3e10-49a5-9b8b-0596f685ac7d",
-    "started_at": 1773094705.0,
-    "ended_at": 1773096677.0,
-    "duration_seconds": 1972,
+    "id": "5ef06c62-e847-4a05-86eb-8dc11bb4c7a6",
+    "started_at": 1769024301.0,
+    "ended_at": 1769025894.0,
+    "duration_seconds": 1593,
     "status": "confirmed",
     "release_id": 1081394,
     "title": "Strawberry Jam",
@@ -839,23 +1223,49 @@
     "art_filename": "vinyl/1081394.jpg"
   },
   {
-    "id": "59b8a901-82f9-4daa-a0a2-461f57c83ee6",
-    "started_at": 1772832974.0,
-    "ended_at": 1772834753.0,
-    "duration_seconds": 1779,
+    "id": "a6cb8733-43c6-4887-abc3-11825aab0abc",
+    "started_at": 1769022205.0,
+    "ended_at": 1769025101.0,
+    "duration_seconds": 2896,
     "status": "confirmed",
-    "release_id": 649184,
-    "title": "Acabou Chorare",
+    "release_id": 458611,
+    "title": "The Milk-Eyed Mender",
     "artists": [
-      "Os Novos Baianos"
+      "Joanna Newsom"
     ],
-    "art_filename": "vinyl/649184.jpg"
+    "art_filename": "vinyl/458611.jpg"
   },
   {
-    "id": "e80c7629-9329-4d7a-a810-00302de57a44",
-    "started_at": 1772767153.0,
-    "ended_at": 1772768741.0,
-    "duration_seconds": 1588,
+    "id": "93842020-be4c-4dab-816a-bf24d95c0f7a",
+    "started_at": 1769001777.0,
+    "ended_at": 1769004233.0,
+    "duration_seconds": 2456,
+    "status": "confirmed",
+    "release_id": 2813317,
+    "title": "Tomboy",
+    "artists": [
+      "Panda Bear"
+    ],
+    "art_filename": "vinyl/2813317.jpg"
+  },
+  {
+    "id": "14532384-6497-42cc-8381-c093f60005b7",
+    "started_at": 1768961196.0,
+    "ended_at": 1768962857.0,
+    "duration_seconds": 1661,
+    "status": "confirmed",
+    "release_id": 11307601,
+    "title": "Christmas Unicorn: Songs For Christmas Vol.10",
+    "artists": [
+      "Sufjan Stevens"
+    ],
+    "art_filename": "vinyl/11307601.jpg"
+  },
+  {
+    "id": "86fa14ca-bcd6-42df-8199-980b23a777be",
+    "started_at": 1768608774.0,
+    "ended_at": 1768610393.0,
+    "duration_seconds": 1619,
     "status": "confirmed",
     "release_id": 4449766,
     "title": "\u00c1g\u00e6tis Byrjun",
@@ -865,218 +1275,283 @@
     "art_filename": "vinyl/4449766.jpg"
   },
   {
-    "id": "77b1ffb8-96d3-47d4-ae81-9183e5dfc590",
-    "started_at": 1772552804.0,
-    "ended_at": 1772555683.0,
-    "duration_seconds": 2879,
+    "id": "542d5407-4304-4905-9cfb-d243d742ad46",
+    "started_at": 1768568736.0,
+    "ended_at": 1768570837.0,
+    "duration_seconds": 2101,
     "status": "confirmed",
-    "release_id": 541614,
-    "title": "The Campfire Headphase",
-    "artists": [
-      "Boards Of Canada"
-    ],
-    "art_filename": "vinyl/541614.jpg"
-  },
-  {
-    "id": "1628590c-5b66-4e6f-9c35-a7cece87519e",
-    "started_at": 1772544944.0,
-    "ended_at": 1772547686.0,
-    "duration_seconds": 2742,
-    "status": "confirmed",
-    "release_id": 2856645,
-    "title": "Helplessness Blues",
-    "artists": [
-      "Fleet Foxes"
-    ],
-    "art_filename": "vinyl/2856645.jpg"
-  },
-  {
-    "id": "7e12e8e4-b65f-4915-8b99-309517c400f0",
-    "started_at": 1772507551.0,
-    "ended_at": 1772510141.0,
-    "duration_seconds": 2590,
-    "status": "confirmed",
-    "release_id": 2831739,
-    "title": "Lafayette Blues / Sugar Never Tasted So Good",
-    "artists": [
-      "The White Stripes"
-    ],
-    "art_filename": "vinyl/2831739.jpg"
-  },
-  {
-    "id": "4ec3136e-933d-4449-b39b-b2001d2ca023",
-    "started_at": 1772303781.0,
-    "ended_at": 1772305261.0,
-    "duration_seconds": 1480,
-    "status": "confirmed",
-    "release_id": 4491942,
-    "title": "Relationship Of Command",
-    "artists": [
-      "At The Drive-In"
-    ],
-    "art_filename": "vinyl/4491942.jpg"
-  },
-  {
-    "id": "180e3c42-ebdf-4345-9171-db28c15b5887",
-    "started_at": 1771905769.0,
-    "ended_at": 1771908277.0,
-    "duration_seconds": 2508,
-    "status": "confirmed",
-    "release_id": 2902536,
-    "title": "Leave Home",
-    "artists": [
-      "The Men (2)"
-    ],
-    "art_filename": "vinyl/2902536.jpg"
-  },
-  {
-    "id": "70beb9f4-8dbd-402f-8805-ce6d62db4fc4",
-    "started_at": 1771881085.0,
-    "ended_at": 1771882109.0,
-    "duration_seconds": 1024,
-    "status": "confirmed",
-    "release_id": 1629810,
-    "title": "Me\u00f0 Su\u00f0 \u00cd Eyrum Vi\u00f0 Spilum Endalaust",
-    "artists": [
-      "Sigur R\u00f3s"
-    ],
-    "art_filename": "vinyl/1629810.jpg"
-  },
-  {
-    "id": "ef63b210-d5dc-4b17-9bc8-97743f5c5c98",
-    "started_at": 1771871826.0,
-    "ended_at": 1771873984.0,
-    "duration_seconds": 2158,
-    "status": "confirmed",
-    "release_id": 3535483,
-    "title": "Superfuzz Bigmuff",
-    "artists": [
-      "Mudhoney"
-    ],
-    "art_filename": "vinyl/3535483.jpg"
-  },
-  {
-    "id": "977d21ff-7ac2-4029-81e4-6bfc7b5686bc",
-    "started_at": 1771697436.0,
-    "ended_at": 1771699101.0,
-    "duration_seconds": 1665,
-    "status": "confirmed",
-    "release_id": 1081394,
-    "title": "Strawberry Jam",
-    "artists": [
-      "Animal Collective"
-    ],
-    "art_filename": "vinyl/1081394.jpg"
-  },
-  {
-    "id": "58dcb8af-4a8e-4ec1-b797-5ef911e63bd3",
-    "started_at": 1771578691.0,
-    "ended_at": 1771580608.0,
-    "duration_seconds": 1917,
-    "status": "confirmed",
-    "release_id": 2902536,
-    "title": "Leave Home",
-    "artists": [
-      "The Men (2)"
-    ],
-    "art_filename": "vinyl/2902536.jpg"
-  },
-  {
-    "id": "c6c10c64-6ee6-4f59-b2b4-0e72afbacd57",
-    "started_at": 1771569919.0,
-    "ended_at": 1771572500.0,
-    "duration_seconds": 2581,
-    "status": "confirmed",
-    "release_id": 1187003,
-    "title": "In Rainbows",
-    "artists": [
-      "Radiohead"
-    ],
-    "art_filename": "vinyl/1187003.jpg"
-  },
-  {
-    "id": "15d69326-5988-4bbb-86f4-e04426e2111b",
-    "started_at": 1771463726.0,
-    "ended_at": 1771465226.0,
-    "duration_seconds": 1500,
-    "status": "confirmed",
-    "release_id": 4146204,
-    "title": "Floral Green",
+    "release_id": 2885498,
+    "title": "Shed",
     "artists": [
       "Title Fight"
     ],
-    "art_filename": "vinyl/4146204.jpg"
+    "art_filename": "vinyl/2885498.jpg"
   },
   {
-    "id": "30391cf0-dfcd-408d-9251-7afc88014e36",
-    "started_at": 1771413663.0,
-    "ended_at": 1771415516.0,
-    "duration_seconds": 1853,
+    "id": "fe6ff8d6-4353-464f-9c50-ecbc4a47bbea",
+    "started_at": 1768522761.0,
+    "ended_at": 1768523188.0,
+    "duration_seconds": 427,
     "status": "confirmed",
-    "release_id": 1404179,
-    "title": "Let The Blind Lead Those Who Can See But Cannot Feel",
+    "release_id": 1078940,
+    "title": "Alpha & Omega",
     "artists": [
-      "Atlas Sound"
+      "Boards Of Canada"
     ],
-    "art_filename": "vinyl/1404179.jpg"
+    "art_filename": "vinyl/1078940.jpg"
   },
   {
-    "id": "3fbd3710-7911-424a-b956-cd1078314a46",
-    "started_at": 1771082227.0,
-    "ended_at": 1771083759.0,
-    "duration_seconds": 1532,
+    "id": "e146753d-3d8f-451a-96ab-eca6514dc477",
+    "started_at": 1768496118.0,
+    "ended_at": 1768498157.0,
+    "duration_seconds": 2039,
     "status": "confirmed",
-    "release_id": 6384435,
-    "title": "Let's Get It On",
+    "release_id": 8325190,
+    "title": "Bushwick Is Melting Volume 3",
     "artists": [
-      "Marvin Gaye"
+      "Various"
     ],
-    "art_filename": "vinyl/6384435.jpg"
+    "art_filename": "vinyl/8325190.jpg"
   },
   {
-    "id": "a0998af9-d2c7-4d29-b2eb-21908300db3c",
-    "started_at": 1770652441.0,
-    "ended_at": 1770654795.0,
-    "duration_seconds": 2354,
+    "id": "8ad76c12-77a5-45dd-997e-32bbca02fbf6",
+    "started_at": 1768135021.0,
+    "ended_at": 1768136669.0,
+    "duration_seconds": 1648,
     "status": "confirmed",
-    "release_id": 6314990,
-    "title": "The Eraser",
+    "release_id": 2787969,
+    "title": "Innundir Skinni",
     "artists": [
-      "Thom Yorke"
+      "\u00d3l\u00f6f Arnalds"
     ],
-    "art_filename": "vinyl/6314990.jpg"
+    "art_filename": "vinyl/2787969.jpg"
   },
   {
-    "id": "68d7602e-eb1e-473c-980d-8536e5f1121f",
-    "started_at": 1770467813.0,
-    "ended_at": 1770469945.0,
-    "duration_seconds": 2132,
+    "id": "75e05d20-b819-4a42-ba67-b912a4403cc7",
+    "started_at": 1767839519.0,
+    "ended_at": 1767841485.0,
+    "duration_seconds": 1966,
     "status": "confirmed",
-    "release_id": 2856645,
-    "title": "Helplessness Blues",
+    "release_id": 2331725,
+    "title": "Ciencia De Los In\u00fatiles",
+    "artists": [
+      "El Tr\u00edo De Omar Rodriguez Lopez"
+    ],
+    "art_filename": "vinyl/2331725.jpg"
+  },
+  {
+    "id": "f590bd95-9f40-4665-9176-cc7cde25cf4e",
+    "started_at": 1767794433.0,
+    "ended_at": 1767795707.0,
+    "duration_seconds": 1274,
+    "status": "confirmed",
+    "release_id": 6476151,
+    "title": "In A Beautiful Place Out In The Country",
+    "artists": [
+      "Boards Of Canada"
+    ],
+    "art_filename": "vinyl/6476151.jpg"
+  },
+  {
+    "id": "c9a5ddaa-ec48-4f3e-b98f-1ee92983cc97",
+    "started_at": 1767732556.0,
+    "ended_at": 1767734449.0,
+    "duration_seconds": 1893,
+    "status": "confirmed",
+    "release_id": 15346241,
+    "title": "Fleet Foxes",
     "artists": [
       "Fleet Foxes"
     ],
-    "art_filename": "vinyl/2856645.jpg"
+    "art_filename": "vinyl/15346241.jpg"
   },
   {
-    "id": "cdc09309-6dc5-4dfa-8f5c-4bcb8b1e7e3a",
-    "started_at": 1769843321.0,
-    "ended_at": 1769848327.0,
-    "duration_seconds": 5006,
+    "id": "c6a98d4b-752d-4db0-853b-b627ebeb8f06",
+    "started_at": 1767713146.0,
+    "ended_at": 1767715183.0,
+    "duration_seconds": 2037,
     "status": "confirmed",
-    "release_id": 9127152,
-    "title": "A Moon Shaped Pool",
+    "release_id": 3255473,
+    "title": "Siamese Dream",
+    "artists": [
+      "The Smashing Pumpkins"
+    ],
+    "art_filename": "vinyl/3255473.jpg"
+  },
+  {
+    "id": "d6b5eefb-d104-4b17-ac67-74c714442057",
+    "started_at": 1767679095.0,
+    "ended_at": 1767681615.0,
+    "duration_seconds": 2520,
+    "status": "confirmed",
+    "release_id": 2902536,
+    "title": "Leave Home",
+    "artists": [
+      "The Men (2)"
+    ],
+    "art_filename": "vinyl/2902536.jpg"
+  },
+  {
+    "id": "5f907e3f-4e49-40f3-88ce-359bbaee2a79",
+    "started_at": 1767592852.0,
+    "ended_at": 1767595810.0,
+    "duration_seconds": 2958,
+    "status": "confirmed",
+    "release_id": 1855760,
+    "title": "Spirit They're Gone, Spirit They've Vanished",
+    "artists": [
+      "Animal Collective"
+    ],
+    "art_filename": "vinyl/1855760.jpg"
+  },
+  {
+    "id": "891b3d8f-0417-48a4-8265-fd8f652e01aa",
+    "started_at": 1767507038.0,
+    "ended_at": 1767510640.0,
+    "duration_seconds": 3602,
+    "status": "confirmed",
+    "release_id": 1855760,
+    "title": "Spirit They're Gone, Spirit They've Vanished",
+    "artists": [
+      "Animal Collective"
+    ],
+    "art_filename": "vinyl/1855760.jpg"
+  },
+  {
+    "id": "968c2648-bc7f-4a37-94dc-31b91513638f",
+    "started_at": 1767388050.0,
+    "ended_at": 1767392712.0,
+    "duration_seconds": 4662,
+    "status": "confirmed",
+    "release_id": 1364851,
+    "title": "The Bedlam In Goliath",
+    "artists": [
+      "The Mars Volta"
+    ],
+    "art_filename": "vinyl/1364851.jpg"
+  },
+  {
+    "id": "ffc5c391-cfdf-4b42-92f6-b5c7553d3534",
+    "started_at": 1767328394.0,
+    "ended_at": 1767329952.0,
+    "duration_seconds": 1558,
+    "status": "confirmed",
+    "release_id": 2156856,
+    "title": "by-",
+    "artists": [
+      "Bygones"
+    ],
+    "art_filename": "vinyl/2156856.jpg"
+  },
+  {
+    "id": "358435c5-cbdb-48af-b8f1-e31e4ada8018",
+    "started_at": 1767321244.0,
+    "ended_at": 1767322467.0,
+    "duration_seconds": 1223,
+    "status": "confirmed",
+    "release_id": 83677,
+    "title": "I Might Be Wrong - Live Recordings",
     "artists": [
       "Radiohead"
     ],
-    "art_filename": "vinyl/9127152.jpg"
+    "art_filename": "vinyl/83677.jpg"
   },
   {
-    "id": "7b2ae18a-aa6b-43c1-987d-3c210592885e",
-    "started_at": 1769808765.0,
-    "ended_at": 1769809615.0,
-    "duration_seconds": 850,
+    "id": "c7c5db5e-2954-441a-808f-f25b5be64d9c",
+    "started_at": 1767320151.0,
+    "ended_at": 1767321858.0,
+    "duration_seconds": 1707,
+    "status": "confirmed",
+    "release_id": 12670310,
+    "title": "El Camino",
+    "artists": [
+      "The Black Keys"
+    ],
+    "art_filename": "vinyl/12670310.jpg"
+  },
+  {
+    "id": "77f23503-f0b8-481e-a809-42ccc7d82b22",
+    "started_at": 1767051156.0,
+    "ended_at": 1767053231.0,
+    "duration_seconds": 2075,
+    "status": "confirmed",
+    "release_id": 2538763,
+    "title": "There Is Love In You",
+    "artists": [
+      "Four Tet"
+    ],
+    "art_filename": "vinyl/2538763.jpg"
+  },
+  {
+    "id": "7a4bff25-1344-4a00-8459-ba7ca31bc25e",
+    "started_at": 1767012819.0,
+    "ended_at": 1767014044.0,
+    "duration_seconds": 1225,
+    "status": "confirmed",
+    "release_id": 5803552,
+    "title": "King Bromeliad",
+    "artists": [
+      "Floating Points"
+    ],
+    "art_filename": "vinyl/5803552.jpg"
+  },
+  {
+    "id": "210afb91-1dd1-46d0-82ed-b3969a6e2bf5",
+    "started_at": 1766730247.0,
+    "ended_at": 1766732165.0,
+    "duration_seconds": 1918,
+    "status": "confirmed",
+    "release_id": 2477601,
+    "title": "Repeater",
+    "artists": [
+      "Fugazi"
+    ],
+    "art_filename": "vinyl/2477601.jpg"
+  },
+  {
+    "id": "cf3b42d2-9f15-400f-8f6c-48ba6eaccb26",
+    "started_at": 1766574057.0,
+    "ended_at": 1766575353.0,
+    "duration_seconds": 1296,
+    "status": "confirmed",
+    "release_id": 6476151,
+    "title": "In A Beautiful Place Out In The Country",
+    "artists": [
+      "Boards Of Canada"
+    ],
+    "art_filename": "vinyl/6476151.jpg"
+  },
+  {
+    "id": "d8c5cb25-1ca5-464d-8108-733f7da267de",
+    "started_at": 1766504202.0,
+    "ended_at": 1766505422.0,
+    "duration_seconds": 1220,
+    "status": "confirmed",
+    "release_id": 2006659,
+    "title": "Fugazi",
+    "artists": [
+      "Fugazi"
+    ],
+    "art_filename": "vinyl/2006659.jpg"
+  },
+  {
+    "id": "06c62cdf-2978-4189-9443-fdd60083fa89",
+    "started_at": 1766157415.0,
+    "ended_at": 1766160354.0,
+    "duration_seconds": 2939,
+    "status": "confirmed",
+    "release_id": 458611,
+    "title": "The Milk-Eyed Mender",
+    "artists": [
+      "Joanna Newsom"
+    ],
+    "art_filename": "vinyl/458611.jpg"
+  },
+  {
+    "id": "b9f2c7f7-7b06-409c-bc0f-6069794ff47e",
+    "started_at": 1766123530.0,
+    "ended_at": 1766124406.0,
+    "duration_seconds": 876,
     "status": "confirmed",
     "release_id": 2768615,
     "title": "Pinnacles / Ye Ye",
@@ -1087,88 +1562,37 @@
     "art_filename": "vinyl/2768615.jpg"
   },
   {
-    "id": "aa670be8-3b9a-47b2-8f6a-66096f223dfe",
-    "started_at": 1769755492.0,
-    "ended_at": 1769757428.0,
-    "duration_seconds": 1936,
+    "id": "6433a8df-e7e3-4be4-bc00-b660094a9872",
+    "started_at": 1765988616.0,
+    "ended_at": 1765989264.0,
+    "duration_seconds": 648,
     "status": "confirmed",
-    "release_id": 12235767,
-    "title": "On Avery Island",
+    "release_id": 2768615,
+    "title": "Pinnacles / Ye Ye",
     "artists": [
-      "Neutral Milk Hotel"
+      "Four Tet",
+      "Daphni"
     ],
-    "art_filename": "vinyl/12235767.jpg"
+    "art_filename": "vinyl/2768615.jpg"
   },
   {
-    "id": "6363262e-f768-4414-ba66-20409079dc58",
-    "started_at": 1769636958.0,
-    "ended_at": 1769638886.0,
-    "duration_seconds": 1928,
+    "id": "9f4c41c2-4145-4236-b2d8-32b3a829338d",
+    "started_at": 1765594195.0,
+    "ended_at": 1765598203.0,
+    "duration_seconds": 4008,
     "status": "confirmed",
-    "release_id": 2254563,
-    "title": "Blue Sky Noise",
+    "release_id": 2891664,
+    "title": "Blood Sugar Sex Magik",
     "artists": [
-      "Circa Survive"
+      "Red Hot Chili Peppers"
     ],
-    "art_filename": "vinyl/2254563.jpg"
+    "art_filename": "vinyl/2891664.jpg"
   },
   {
-    "id": "7dda4e4f-574c-472c-bad6-d994256cf8b7",
-    "started_at": 1769610146.0,
-    "ended_at": 1769612323.0,
-    "duration_seconds": 2177,
-    "status": "confirmed",
-    "release_id": 6426728,
-    "title": "Alive 1997 / Alive 2007",
-    "artists": [
-      "Daft Punk"
-    ],
-    "art_filename": "vinyl/6426728.jpg"
-  },
-  {
-    "id": "342b3f03-f9a2-429c-ad63-6b26bcb55bf2",
-    "started_at": 1769606051.0,
-    "ended_at": 1769607638.0,
-    "duration_seconds": 1587,
-    "status": "confirmed",
-    "release_id": 11307601,
-    "title": "Christmas Unicorn: Songs For Christmas Vol.10",
-    "artists": [
-      "Sufjan Stevens"
-    ],
-    "art_filename": "vinyl/11307601.jpg"
-  },
-  {
-    "id": "421ab761-6452-4cce-a102-eb442ce2e178",
-    "started_at": 1769116083.0,
-    "ended_at": 1769117701.0,
-    "duration_seconds": 1618,
-    "status": "confirmed",
-    "release_id": 10511319,
-    "title": "Looking Ocean ",
-    "artists": [
-      "Daedelus"
-    ],
-    "art_filename": "vinyl/10511319.jpg"
-  },
-  {
-    "id": "d58c2cef-4d9f-458c-a51b-ac7737b3f0ca",
-    "started_at": 1769114436.0,
-    "ended_at": 1769116298.0,
-    "duration_seconds": 1862,
-    "status": "confirmed",
-    "release_id": 4321323,
-    "title": "Amok",
-    "artists": [
-      "Atoms For Peace (2)"
-    ],
-    "art_filename": "vinyl/4321323.jpg"
-  },
-  {
-    "id": "92ab6ff3-2c01-4359-be51-3604388cee4c",
-    "started_at": 1769061737.0,
-    "ended_at": 1769063895.0,
-    "duration_seconds": 2158,
+    "id": "460aea29-7bba-4dca-a681-e680c66d7887",
+    "started_at": 1765540386.0,
+    "ended_at": 1765542134.0,
+    "duration_seconds": 1748,
     "status": "confirmed",
     "release_id": 1361007,
     "title": "For Emma, Forever Ago",
@@ -1178,257 +1602,23 @@
     "art_filename": "vinyl/1361007.jpg"
   },
   {
-    "id": "eccb3dcf-c5c3-41f0-bb53-f42f00faa540",
-    "started_at": 1769024301.0,
-    "ended_at": 1769025899.0,
-    "duration_seconds": 1598,
+    "id": "bb0d1217-2957-4484-8792-7d8e3d4ed67d",
+    "started_at": 1765153065.0,
+    "ended_at": 1765153942.0,
+    "duration_seconds": 877,
     "status": "confirmed",
-    "release_id": 2504307,
-    "title": "Sepulcros De Miel",
-    "artists": [
-      "Omar Rodriguez Lopez Quartet"
-    ],
-    "art_filename": "vinyl/2504307.jpg"
-  },
-  {
-    "id": "5b2ab089-d20b-4235-a400-e93f7904f492",
-    "started_at": 1769022205.0,
-    "ended_at": 1769025736.0,
-    "duration_seconds": 3531,
-    "status": "confirmed",
-    "release_id": 33861543,
-    "title": "Deb\u00ed Tirar M\u00e1s Fotos",
-    "artists": [
-      "Bad Bunny"
-    ],
-    "art_filename": "vinyl/33861543.jpg"
-  },
-  {
-    "id": "1016748a-694d-4768-8cfa-87343069f5f7",
-    "started_at": 1768961196.0,
-    "ended_at": 1768962683.0,
-    "duration_seconds": 1487,
-    "status": "confirmed",
-    "release_id": 1709731,
-    "title": "Cryptomnesia",
-    "artists": [
-      "El Grupo Nuevo De Omar Rodriguez Lopez"
-    ],
-    "art_filename": "vinyl/1709731.jpg"
-  },
-  {
-    "id": "d8368cf0-58d3-4ab2-8d44-1a078b40e47a",
-    "started_at": 1768568736.0,
-    "ended_at": 1768570837.0,
-    "duration_seconds": 2101,
-    "status": "confirmed",
-    "release_id": 83677,
-    "title": "I Might Be Wrong - Live Recordings",
+    "release_id": 7272971,
+    "title": "2+2=5",
     "artists": [
       "Radiohead"
     ],
-    "art_filename": "vinyl/83677.jpg"
+    "art_filename": "vinyl/7272971.jpg"
   },
   {
-    "id": "03f45dd1-864c-47bf-96cb-171d3f1e285e",
-    "started_at": 1768496118.0,
-    "ended_at": 1768498157.0,
-    "duration_seconds": 2039,
-    "status": "confirmed",
-    "release_id": 2379457,
-    "title": "Perch Patchwork",
-    "artists": [
-      "Maps And Atlases"
-    ],
-    "art_filename": "vinyl/2379457.jpg"
-  },
-  {
-    "id": "9762cc6c-b0e3-4b6c-ac4d-e019f6b5979d",
-    "started_at": 1768349020.0,
-    "ended_at": 1768349375.0,
-    "duration_seconds": 355,
-    "status": "confirmed",
-    "release_id": 1078940,
-    "title": "Alpha & Omega",
-    "artists": [
-      "Boards Of Canada"
-    ],
-    "art_filename": "vinyl/1078940.jpg"
-  },
-  {
-    "id": "931e3555-62a7-4f46-b445-4925522d1352",
-    "started_at": 1768348680.0,
-    "ended_at": 1768351342.0,
-    "duration_seconds": 2662,
-    "status": "confirmed",
-    "release_id": 29869081,
-    "title": "No Place",
-    "artists": [
-      "A Lot Like Birds"
-    ],
-    "art_filename": "vinyl/29869081.jpg"
-  },
-  {
-    "id": "7cda824e-28dd-4742-aef3-3b86969ecba0",
-    "started_at": 1768313021.0,
-    "ended_at": 1768314064.0,
-    "duration_seconds": 1043,
-    "status": "confirmed",
-    "release_id": 1629810,
-    "title": "Me\u00f0 Su\u00f0 \u00cd Eyrum Vi\u00f0 Spilum Endalaust",
-    "artists": [
-      "Sigur R\u00f3s"
-    ],
-    "art_filename": "vinyl/1629810.jpg"
-  },
-  {
-    "id": "1bbbdc39-a677-489f-afe7-5deab71fffba",
-    "started_at": 1768042889.0,
-    "ended_at": 1768044570.0,
-    "duration_seconds": 1681,
-    "status": "confirmed",
-    "release_id": 2331725,
-    "title": "Ciencia De Los In\u00fatiles",
-    "artists": [
-      "El Tr\u00edo De Omar Rodriguez Lopez"
-    ],
-    "art_filename": "vinyl/2331725.jpg"
-  },
-  {
-    "id": "64da2465-b026-4c40-bd09-43f3ecc7dc96",
-    "started_at": 1767889203.0,
-    "ended_at": 1767890814.0,
-    "duration_seconds": 1611,
-    "status": "confirmed",
-    "release_id": 3025716,
-    "title": "Immaculada",
-    "artists": [
-      "The Men (2)"
-    ],
-    "art_filename": "vinyl/3025716.jpg"
-  },
-  {
-    "id": "93435d95-7740-478f-8059-4a473b105b4a",
-    "started_at": 1767839519.0,
-    "ended_at": 1767841592.0,
-    "duration_seconds": 2073,
-    "status": "confirmed",
-    "release_id": 12670310,
-    "title": "El Camino",
-    "artists": [
-      "The Black Keys"
-    ],
-    "art_filename": "vinyl/12670310.jpg"
-  },
-  {
-    "id": "403ad1ff-1f21-4fbb-8171-58835dd4bf3d",
-    "started_at": 1767794433.0,
-    "ended_at": 1767796481.0,
-    "duration_seconds": 2048,
-    "status": "confirmed",
-    "release_id": 2585954,
-    "title": "Last Night At The Jetty",
-    "artists": [
-      "Panda Bear"
-    ],
-    "art_filename": "vinyl/2585954.jpg"
-  },
-  {
-    "id": "a34b5cd0-9697-485a-b36a-46f5cdf86d5e",
-    "started_at": 1767786222.0,
-    "ended_at": 1767786887.0,
-    "duration_seconds": 665,
-    "status": "confirmed",
-    "release_id": 3095995,
-    "title": "Good Evening Mrs Magpie (Modeselektor RMX) / Bloom (Objekt RMX)",
-    "artists": [
-      "Radiohead"
-    ],
-    "art_filename": "vinyl/3095995.jpg"
-  },
-  {
-    "id": "c6713180-97d4-4a2b-b4b3-1529281a3ddf",
-    "started_at": 1767732556.0,
-    "ended_at": 1767734075.0,
-    "duration_seconds": 1519,
-    "status": "confirmed",
-    "release_id": 2031556,
-    "title": "Xenophanes",
-    "artists": [
-      "Omar Rodriguez-Lopez"
-    ],
-    "art_filename": "vinyl/2031556.jpg"
-  },
-  {
-    "id": "edaeb5a0-233c-4796-af9c-da56bddf085c",
-    "started_at": 1767725757.0,
-    "ended_at": 1767727927.0,
-    "duration_seconds": 2170,
-    "status": "confirmed",
-    "release_id": 2253877,
-    "title": "Cosmogramma",
-    "artists": [
-      "Flying Lotus"
-    ],
-    "art_filename": "vinyl/2253877.jpg"
-  },
-  {
-    "id": "124ece3a-6878-4209-8ef9-2d52b783ac25",
-    "started_at": 1767713146.0,
-    "ended_at": 1767716945.0,
-    "duration_seconds": 3799,
-    "status": "confirmed",
-    "release_id": 1855760,
-    "title": "Spirit They're Gone, Spirit They've Vanished",
-    "artists": [
-      "Animal Collective"
-    ],
-    "art_filename": "vinyl/1855760.jpg"
-  },
-  {
-    "id": "4734e62b-92aa-4611-abc7-f8113a697f9e",
-    "started_at": 1767679095.0,
-    "ended_at": 1767681615.0,
-    "duration_seconds": 2520,
-    "status": "confirmed",
-    "release_id": 2254563,
-    "title": "Blue Sky Noise",
-    "artists": [
-      "Circa Survive"
-    ],
-    "art_filename": "vinyl/2254563.jpg"
-  },
-  {
-    "id": "0ac04744-d932-40c6-8589-4fcef66f2ea9",
-    "started_at": 1767592852.0,
-    "ended_at": 1767594929.0,
-    "duration_seconds": 2077,
-    "status": "confirmed",
-    "release_id": 1187003,
-    "title": "In Rainbows",
-    "artists": [
-      "Radiohead"
-    ],
-    "art_filename": "vinyl/1187003.jpg"
-  },
-  {
-    "id": "3056bbe1-eeb6-4fff-98b6-1f084fcf36ab",
-    "started_at": 1767507038.0,
-    "ended_at": 1767509567.0,
-    "duration_seconds": 2529,
-    "status": "confirmed",
-    "release_id": 1187003,
-    "title": "In Rainbows",
-    "artists": [
-      "Radiohead"
-    ],
-    "art_filename": "vinyl/1187003.jpg"
-  },
-  {
-    "id": "2a86a56a-472a-4fb8-af66-c4d85c8030c8",
-    "started_at": 1767051156.0,
-    "ended_at": 1767051784.0,
-    "duration_seconds": 628,
+    "id": "1290a70c-46c3-4126-921a-2428b2918b2f",
+    "started_at": 1764784921.0,
+    "ended_at": 1764785613.0,
+    "duration_seconds": 692,
     "status": "confirmed",
     "release_id": 1838416,
     "title": "J&W Beat",
@@ -1438,23 +1628,62 @@
     "art_filename": "vinyl/1838416.jpg"
   },
   {
-    "id": "a2939deb-156e-4ab8-832e-3bcecd6fada7",
-    "started_at": 1767012819.0,
-    "ended_at": 1767015304.0,
-    "duration_seconds": 2485,
+    "id": "5219ecbd-ae59-42f8-a4d5-a43ad1b9a0bf",
+    "started_at": 1764018252.0,
+    "ended_at": 1764019747.0,
+    "duration_seconds": 1495,
     "status": "confirmed",
-    "release_id": 649042,
-    "title": "Illinois",
+    "release_id": 24149831,
+    "title": "The College Dropout",
     "artists": [
-      "Sufjan Stevens"
+      "Kanye West"
     ],
-    "art_filename": "vinyl/649042.jpg"
+    "art_filename": "vinyl/24149831.jpg"
   },
   {
-    "id": "38a48702-23dd-4988-b544-61a4a8944df8",
-    "started_at": 1766730247.0,
-    "ended_at": 1766732484.0,
-    "duration_seconds": 2237,
+    "id": "f075277b-0017-4393-b484-ad06bc49a14b",
+    "started_at": 1763755900.0,
+    "ended_at": 1763756228.0,
+    "duration_seconds": 328,
+    "status": "confirmed",
+    "release_id": 1078940,
+    "title": "Alpha & Omega",
+    "artists": [
+      "Boards Of Canada"
+    ],
+    "art_filename": "vinyl/1078940.jpg"
+  },
+  {
+    "id": "50b133a6-f478-4d40-92cc-2b041d8f2d48",
+    "started_at": 1763511333.0,
+    "ended_at": 1763513413.0,
+    "duration_seconds": 2080,
+    "status": "confirmed",
+    "release_id": 2902536,
+    "title": "Leave Home",
+    "artists": [
+      "The Men (2)"
+    ],
+    "art_filename": "vinyl/2902536.jpg"
+  },
+  {
+    "id": "2200ed12-77dc-4e91-bcd9-2eab07609996",
+    "started_at": 1763107270.0,
+    "ended_at": 1763109337.0,
+    "duration_seconds": 2067,
+    "status": "confirmed",
+    "release_id": 2902536,
+    "title": "Leave Home",
+    "artists": [
+      "The Men (2)"
+    ],
+    "art_filename": "vinyl/2902536.jpg"
+  },
+  {
+    "id": "9d620a7d-80c8-4e69-8445-b2f636f306b7",
+    "started_at": 1762672963.0,
+    "ended_at": 1762674320.0,
+    "duration_seconds": 1357,
     "status": "confirmed",
     "release_id": 29869081,
     "title": "No Place",
@@ -1464,153 +1693,10 @@
     "art_filename": "vinyl/29869081.jpg"
   },
   {
-    "id": "29bdd042-4140-4318-a057-f1b9e06c2a04",
-    "started_at": 1766574057.0,
-    "ended_at": 1766576140.0,
-    "duration_seconds": 2083,
-    "status": "confirmed",
-    "release_id": 2585954,
-    "title": "Last Night At The Jetty",
-    "artists": [
-      "Panda Bear"
-    ],
-    "art_filename": "vinyl/2585954.jpg"
-  },
-  {
-    "id": "06c5d5da-9dff-42f1-adec-7399bc442c2a",
-    "started_at": 1766157415.0,
-    "ended_at": 1766160998.0,
-    "duration_seconds": 3583,
-    "status": "confirmed",
-    "release_id": 33861543,
-    "title": "Deb\u00ed Tirar M\u00e1s Fotos",
-    "artists": [
-      "Bad Bunny"
-    ],
-    "art_filename": "vinyl/33861543.jpg"
-  },
-  {
-    "id": "37e5d9a2-bd52-41cb-932a-fa000e3c13af",
-    "started_at": 1766027660.0,
-    "ended_at": 1766031760.0,
-    "duration_seconds": 4100,
-    "status": "confirmed",
-    "release_id": 4418695,
-    "title": "Homework",
-    "artists": [
-      "Daft Punk"
-    ],
-    "art_filename": "vinyl/4418695.jpg"
-  },
-  {
-    "id": "9511810e-8826-457d-8fad-3afdd024d96b",
-    "started_at": 1765988616.0,
-    "ended_at": 1765991953.0,
-    "duration_seconds": 3337,
-    "status": "confirmed",
-    "release_id": 4418695,
-    "title": "Homework",
-    "artists": [
-      "Daft Punk"
-    ],
-    "art_filename": "vinyl/4418695.jpg"
-  },
-  {
-    "id": "2bcdfef0-8d35-48cb-b41c-3748b1732873",
-    "started_at": 1765830117.0,
-    "ended_at": 1765834619.0,
-    "duration_seconds": 4502,
-    "status": "confirmed",
-    "release_id": 1364851,
-    "title": "The Bedlam In Goliath",
-    "artists": [
-      "The Mars Volta"
-    ],
-    "art_filename": "vinyl/1364851.jpg"
-  },
-  {
-    "id": "1dcff19a-5e6f-4433-ad9e-4d28ed6d4469",
-    "started_at": 1765594195.0,
-    "ended_at": 1765600188.0,
-    "duration_seconds": 5993,
-    "status": "confirmed",
-    "release_id": 9127152,
-    "title": "A Moon Shaped Pool",
-    "artists": [
-      "Radiohead"
-    ],
-    "art_filename": "vinyl/9127152.jpg"
-  },
-  {
-    "id": "02303b55-c6b7-4f08-90f2-f70b8ff01a52",
-    "started_at": 1764784921.0,
-    "ended_at": 1764786965.0,
-    "duration_seconds": 2044,
-    "status": "confirmed",
-    "release_id": 1361007,
-    "title": "For Emma, Forever Ago",
-    "artists": [
-      "Bon Iver"
-    ],
-    "art_filename": "vinyl/1361007.jpg"
-  },
-  {
-    "id": "a59ef600-1764-48bf-9a51-e4f5ccdb534d",
-    "started_at": 1764259732.0,
-    "ended_at": 1764261782.0,
-    "duration_seconds": 2050,
-    "status": "confirmed",
-    "release_id": 2813317,
-    "title": "Tomboy",
-    "artists": [
-      "Panda Bear"
-    ],
-    "art_filename": "vinyl/2813317.jpg"
-  },
-  {
-    "id": "7c65c180-747d-495a-9ca9-63ecadcaa55c",
-    "started_at": 1763511333.0,
-    "ended_at": 1763513413.0,
-    "duration_seconds": 2080,
-    "status": "confirmed",
-    "release_id": 2254563,
-    "title": "Blue Sky Noise",
-    "artists": [
-      "Circa Survive"
-    ],
-    "art_filename": "vinyl/2254563.jpg"
-  },
-  {
-    "id": "a9fea316-1e49-4f55-8055-0779329fb883",
-    "started_at": 1763324267.0,
-    "ended_at": 1763327598.0,
-    "duration_seconds": 3331,
-    "status": "confirmed",
-    "release_id": 541614,
-    "title": "The Campfire Headphase",
-    "artists": [
-      "Boards Of Canada"
-    ],
-    "art_filename": "vinyl/541614.jpg"
-  },
-  {
-    "id": "d24c5d28-3637-4e91-9bec-168f99d5d5f8",
-    "started_at": 1763107270.0,
-    "ended_at": 1763109337.0,
-    "duration_seconds": 2067,
-    "status": "confirmed",
-    "release_id": 2254563,
-    "title": "Blue Sky Noise",
-    "artists": [
-      "Circa Survive"
-    ],
-    "art_filename": "vinyl/2254563.jpg"
-  },
-  {
-    "id": "9bb4f6e3-8a79-44dd-a3a1-df711b51a93d",
-    "started_at": 1762672963.0,
-    "ended_at": 1762674539.0,
-    "duration_seconds": 1576,
+    "id": "bedc85b3-6f79-4ed3-923f-92d3e0fb1f42",
+    "started_at": 1762550014.0,
+    "ended_at": 1762551653.0,
+    "duration_seconds": 1639,
     "status": "confirmed",
     "release_id": 11307601,
     "title": "Christmas Unicorn: Songs For Christmas Vol.10",
@@ -1620,75 +1706,10 @@
     "art_filename": "vinyl/11307601.jpg"
   },
   {
-    "id": "5adecaa7-2670-4ddc-b7f9-580554138ccc",
-    "started_at": 1762625786.0,
-    "ended_at": 1762627886.0,
-    "duration_seconds": 2100,
-    "status": "confirmed",
-    "release_id": 5006908,
-    "title": "Music Has The Right To Children",
-    "artists": [
-      "Boards Of Canada"
-    ],
-    "art_filename": "vinyl/5006908.jpg"
-  },
-  {
-    "id": "eedf3033-3457-4f1d-98ea-0238311f238b",
-    "started_at": 1762550014.0,
-    "ended_at": 1762551441.0,
-    "duration_seconds": 1427,
-    "status": "confirmed",
-    "release_id": 1709731,
-    "title": "Cryptomnesia",
-    "artists": [
-      "El Grupo Nuevo De Omar Rodriguez Lopez"
-    ],
-    "art_filename": "vinyl/1709731.jpg"
-  },
-  {
-    "id": "ef289030-85f9-4f0d-b6b1-530a3c295083",
+    "id": "8c9cfddb-d418-4efd-9f5a-23ec5077b626",
     "started_at": 1762548885.0,
-    "ended_at": 1762550734.0,
-    "duration_seconds": 1849,
-    "status": "confirmed",
-    "release_id": 2031556,
-    "title": "Xenophanes",
-    "artists": [
-      "Omar Rodriguez-Lopez"
-    ],
-    "art_filename": "vinyl/2031556.jpg"
-  },
-  {
-    "id": "64cf7dff-8c14-44b1-8522-0f15ecdb59ac",
-    "started_at": 1762508199.0,
-    "ended_at": 1762512094.0,
-    "duration_seconds": 3895,
-    "status": "confirmed",
-    "release_id": 9216088,
-    "title": "Random Access Memories",
-    "artists": [
-      "Daft Punk"
-    ],
-    "art_filename": "vinyl/9216088.jpg"
-  },
-  {
-    "id": "d31006f5-c6a4-41e3-bce2-03c47ddaa77e",
-    "started_at": 1762484233.0,
-    "ended_at": 1762486351.0,
-    "duration_seconds": 2118,
-    "status": "confirmed",
-    "release_id": 2538763,
-    "title": "There Is Love In You",
-    "artists": [
-      "Four Tet"
-    ],
-    "art_filename": "vinyl/2538763.jpg"
-  },
-  {
-    "id": "62c30d82-1cbc-40dd-99d9-660648c7147f",
-    "started_at": 1762375749.0,
-    "ended_at": 1762377624.0,
-    "duration_seconds": 1875,
+    "ended_at": 1762550713.0,
+    "duration_seconds": 1828,
     "status": "confirmed",
     "release_id": 15346241,
     "title": "Fleet Foxes",
@@ -1696,5 +1717,70 @@
       "Fleet Foxes"
     ],
     "art_filename": "vinyl/15346241.jpg"
+  },
+  {
+    "id": "deca9a93-f8d5-4258-b3a5-45a279ab679f",
+    "started_at": 1762527314.0,
+    "ended_at": 1762528199.0,
+    "duration_seconds": 885,
+    "status": "confirmed",
+    "release_id": 5803552,
+    "title": "King Bromeliad",
+    "artists": [
+      "Floating Points"
+    ],
+    "art_filename": "vinyl/5803552.jpg"
+  },
+  {
+    "id": "a04342a8-1296-48fd-a7c4-c683af04b9af",
+    "started_at": 1762375749.0,
+    "ended_at": 1762377624.0,
+    "duration_seconds": 1875,
+    "status": "confirmed",
+    "release_id": 2353120,
+    "title": "You And Me And The Mountain",
+    "artists": [
+      "Maps And Atlases"
+    ],
+    "art_filename": "vinyl/2353120.jpg"
+  },
+  {
+    "id": "0c6533b4-553f-4dcf-aaf6-564eb80dd8d7",
+    "started_at": 1762343111.0,
+    "ended_at": 1762345050.0,
+    "duration_seconds": 1939,
+    "status": "confirmed",
+    "release_id": 6384435,
+    "title": "Let's Get It On",
+    "artists": [
+      "Marvin Gaye"
+    ],
+    "art_filename": "vinyl/6384435.jpg"
+  },
+  {
+    "id": "82dcac24-0549-4cec-9420-1954b71c81c6",
+    "started_at": 1762273640.0,
+    "ended_at": 1762275261.0,
+    "duration_seconds": 1621,
+    "status": "confirmed",
+    "release_id": 6880569,
+    "title": "Gorillaz",
+    "artists": [
+      "Gorillaz"
+    ],
+    "art_filename": "vinyl/6880569.jpg"
+  },
+  {
+    "id": "5f8e3c94-9d7a-42d4-9209-522fd2b2b2ff",
+    "started_at": 1762271371.0,
+    "ended_at": 1762272610.0,
+    "duration_seconds": 1239,
+    "status": "confirmed",
+    "release_id": 10511319,
+    "title": "Looking Ocean ",
+    "artists": [
+      "Daedelus"
+    ],
+    "art_filename": "vinyl/10511319.jpg"
   }
 ]

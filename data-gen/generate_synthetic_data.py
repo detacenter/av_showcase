@@ -181,6 +181,21 @@ def main() -> None:
         for a in artists for al in a["albums"] if al.get("real_rating")
     }
 
+    # Real favorite flags (session 7, user's explicit ask), carried over
+    # verbatim from catalog_seed.json — same "curated opinion, not
+    # synthesized" tier as the ratings above. A favorited album/track/artist
+    # in the demo is one that's actually favorited in real life; nothing here
+    # is picked by synthetic play count anymore.
+    album_real_favorited = {
+        al["album_id"] for a in artists for al in a["albums"] if al.get("real_favorited")
+    }
+    track_real_favorited = {
+        t["track_id"]
+        for a in artists for al in a["albums"] for t in al["tracks"]
+        if t.get("real_favorited")
+    }
+    artist_real_favorited = {a["artist_name"] for a in artists if a.get("real_favorited")}
+
     era_of_genre = assign_genre_eras(artists, GENRE_DRIFT_ERAS)
 
     # ── Timespan ─────────────────────────────────────────────────────────
@@ -538,8 +553,10 @@ def main() -> None:
     rng.shuffle(notes_pool)
     noted_albums = played_album_ids[:HANDWRITTEN_NOTES_COUNT]
 
-    top_albums_by_plays = sorted(play_counts_by_album, key=lambda k: -play_counts_by_album[k])
-    favorited_album_ids = set(top_albums_by_plays[:max(1, len(top_albums_by_plays) // 6)])
+    # Real favorites, intersected with what actually got a synthetic play this
+    # run (an album/track/artist that's real-favorited but drew zero plays
+    # this run simply can't surface here — same expected gap as album_tops).
+    favorited_album_ids = album_real_favorited & set(play_counts_by_album)
 
     library_albums = {}
     for album_id in played_album_ids:
@@ -554,7 +571,7 @@ def main() -> None:
             library_albums[album_id] = entry
 
     top_artists_by_plays = sorted(play_counts_by_artist, key=lambda k: -play_counts_by_artist[k])
-    favorited_artists = set(top_artists_by_plays[:max(1, len(top_artists_by_plays) // 8)])
+    favorited_artists = artist_real_favorited & set(play_counts_by_artist)
     revisit_artists = set(rng.sample(
         [a for a in play_counts_by_artist if a not in favorited_artists],
         k=min(5, max(0, len(play_counts_by_artist) - len(favorited_artists))),
@@ -569,7 +586,7 @@ def main() -> None:
         library_artists[name] = entry
 
     top_tracks_by_plays = sorted(play_counts_by_track, key=lambda k: -play_counts_by_track[k])
-    favorited_tracks = set(top_tracks_by_plays[:max(1, len(top_tracks_by_plays) // 10)])
+    favorited_tracks = track_real_favorited & set(play_counts_by_track)
     library_tracks = {tid: {"favorited": True} for tid in favorited_tracks}
 
     # Track-level revisit flags — sparse subset, disjoint from favorited (a

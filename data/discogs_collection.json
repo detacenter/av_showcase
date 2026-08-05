@@ -90,8 +90,8 @@
     "original_year": 2007,
     "art_path": "data/artwork/vinyl/1081394.jpg",
     "instance_id": 100000,
-    "date_added": "2025-11-22T00:00:00Z",
-    "user_rating": 5,
+    "date_added": "2026-06-12T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -159,8 +159,8 @@
     "original_year": 2009,
     "art_path": "data/artwork/vinyl/1944456.jpg",
     "instance_id": 100001,
-    "date_added": "2026-05-27T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-04-25T00:00:00Z",
+    "user_rating": 5,
     "notes": ""
   },
   {
@@ -228,8 +228,8 @@
     "original_year": 2008,
     "art_path": "data/artwork/vinyl/1428079.jpg",
     "instance_id": 100002,
-    "date_added": "2026-05-06T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-03-19T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -343,8 +343,8 @@
     "original_year": 2013,
     "art_path": "data/artwork/vinyl/5041370.jpg",
     "instance_id": 100003,
-    "date_added": "2026-04-25T00:00:00Z",
-    "user_rating": 5,
+    "date_added": "2025-12-29T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -495,8 +495,8 @@
     "original_year": 2008,
     "art_path": "data/artwork/vinyl/1404179.jpg",
     "instance_id": 100004,
-    "date_added": "2026-03-19T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2026-07-12T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -601,7 +601,7 @@
     "original_year": 2009,
     "art_path": "data/artwork/vinyl/1978515.jpg",
     "instance_id": 100005,
-    "date_added": "2025-12-29T00:00:00Z",
+    "date_added": "2026-02-11T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -698,8 +698,8 @@
     "original_year": 2013,
     "art_path": "data/artwork/vinyl/4321323.jpg",
     "instance_id": 100006,
-    "date_added": "2026-07-12T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-06-30T00:00:00Z",
+    "user_rating": 3,
     "notes": ""
   },
   {
@@ -763,9 +763,9 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/2900860.jpg",
     "instance_id": 100007,
-    "date_added": "2026-02-11T00:00:00Z",
+    "date_added": "2026-05-14T00:00:00Z",
     "user_rating": 0,
-    "notes": ""
+    "notes": "First half is stronger than the back half, but worth it for the singles alone."
   },
   {
     "release_id": 4423803,
@@ -845,8 +845,8 @@
     "original_year": 2013,
     "art_path": "data/artwork/vinyl/4423803.jpg",
     "instance_id": 100008,
-    "date_added": "2026-06-30T00:00:00Z",
-    "user_rating": 3,
+    "date_added": "2026-06-28T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -951,7 +951,7 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/12670310.jpg",
     "instance_id": 100009,
-    "date_added": "2026-05-14T00:00:00Z",
+    "date_added": "2026-07-25T00:00:00Z",
     "user_rating": 0,
     "notes": "The kind of record that rewards headphones. Missed so much on tiny speakers."
   },
@@ -1053,8 +1053,8 @@
     "original_year": 2006,
     "art_path": "data/artwork/vinyl/1779487.jpg",
     "instance_id": 100010,
-    "date_added": "2026-06-28T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2025-12-23T00:00:00Z",
+    "user_rating": 3,
     "notes": ""
   },
   {
@@ -1115,9 +1115,9 @@
     "original_year": 2001,
     "art_path": "data/artwork/vinyl/1078940.jpg",
     "instance_id": 100011,
-    "date_added": "2026-07-25T00:00:00Z",
+    "date_added": "2026-04-25T00:00:00Z",
     "user_rating": 0,
-    "notes": "Grower, not a shower. Took three listens before it clicked."
+    "notes": ""
   },
   {
     "release_id": 4985843,
@@ -1287,8 +1287,8 @@
     "original_year": 2002,
     "art_path": "data/artwork/vinyl/4985843.jpg",
     "instance_id": 100012,
-    "date_added": "2025-12-23T00:00:00Z",
-    "user_rating": 3,
+    "date_added": "2025-12-02T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -1424,8 +1424,8 @@
     "original_year": 1998,
     "art_path": "data/artwork/vinyl/5006908.jpg",
     "instance_id": 100013,
-    "date_added": "2026-04-25T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2025-12-20T00:00:00Z",
+    "user_rating": 3,
     "notes": ""
   },
   {
@@ -1549,8 +1549,8 @@
     "original_year": 2005,
     "art_path": "data/artwork/vinyl/541614.jpg",
     "instance_id": 100014,
-    "date_added": "2025-12-02T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-04-21T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -1685,8 +1685,8 @@
     "original_year": 2013,
     "art_path": "data/artwork/vinyl/4548231.jpg",
     "instance_id": 100015,
-    "date_added": "2025-12-20T00:00:00Z",
-    "user_rating": 3,
+    "date_added": "2026-06-17T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -1795,8 +1795,8 @@
     "original_year": 2010,
     "art_path": "data/artwork/vinyl/2191572.jpg",
     "instance_id": 100016,
-    "date_added": "2026-04-21T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2025-12-06T00:00:00Z",
+    "user_rating": 5,
     "notes": ""
   },
   {
@@ -1858,8 +1858,8 @@
     "original_year": 2013,
     "art_path": "data/artwork/vinyl/4491822.jpg",
     "instance_id": 100017,
-    "date_added": "2026-06-17T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2025-11-18T00:00:00Z",
+    "user_rating": 5,
     "notes": ""
   },
   {
@@ -1919,8 +1919,8 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/2770087.jpg",
     "instance_id": 100018,
-    "date_added": "2025-12-06T00:00:00Z",
-    "user_rating": 5,
+    "date_added": "2026-06-13T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -2021,9 +2021,9 @@
     "original_year": 2009,
     "art_path": "data/artwork/vinyl/2156856.jpg",
     "instance_id": 100019,
-    "date_added": "2025-11-18T00:00:00Z",
-    "user_rating": 5,
-    "notes": ""
+    "date_added": "2026-03-12T00:00:00Z",
+    "user_rating": 4,
+    "notes": "First half is stronger than the back half, but worth it for the singles alone."
   },
   {
     "release_id": 2254563,
@@ -2129,8 +2129,8 @@
     "original_year": 2010,
     "art_path": "data/artwork/vinyl/2254563.jpg",
     "instance_id": 100020,
-    "date_added": "2026-06-13T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2026-03-31T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -2205,9 +2205,9 @@
     "original_year": null,
     "art_path": "data/artwork/vinyl/10511319.jpg",
     "instance_id": 100021,
-    "date_added": "2026-03-12T00:00:00Z",
-    "user_rating": 4,
-    "notes": "The kind of record that rewards headphones. Missed so much on tiny speakers."
+    "date_added": "2025-12-20T00:00:00Z",
+    "user_rating": 0,
+    "notes": ""
   },
   {
     "release_id": 6426728,
@@ -2437,8 +2437,8 @@
     "original_year": 2009,
     "art_path": "data/artwork/vinyl/6426728.jpg",
     "instance_id": 100022,
-    "date_added": "2026-03-31T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-03-24T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -2573,7 +2573,7 @@
     "original_year": 1997,
     "art_path": "data/artwork/vinyl/4418695.jpg",
     "instance_id": 100023,
-    "date_added": "2025-12-20T00:00:00Z",
+    "date_added": "2026-07-20T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -2694,8 +2694,8 @@
     "original_year": 2013,
     "art_path": "data/artwork/vinyl/9216088.jpg",
     "instance_id": 100024,
-    "date_added": "2026-03-24T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2025-11-23T00:00:00Z",
+    "user_rating": 3,
     "notes": ""
   },
   {
@@ -2868,8 +2868,8 @@
     "original_year": 2009,
     "art_path": "data/artwork/vinyl/1668310.jpg",
     "instance_id": 100025,
-    "date_added": "2026-07-20T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-02-09T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -2929,9 +2929,9 @@
     "original_year": 2008,
     "art_path": "data/artwork/vinyl/1490485.jpg",
     "instance_id": 100026,
-    "date_added": "2025-11-23T00:00:00Z",
+    "date_added": "2026-07-21T00:00:00Z",
     "user_rating": 3,
-    "notes": ""
+    "notes": "Solid front-to-back, no skips. Rare these days."
   },
   {
     "release_id": 2331725,
@@ -3022,9 +3022,9 @@
     "original_year": 2010,
     "art_path": "data/artwork/vinyl/2331725.jpg",
     "instance_id": 100027,
-    "date_added": "2026-02-09T00:00:00Z",
-    "user_rating": 4,
-    "notes": ""
+    "date_added": "2025-11-05T00:00:00Z",
+    "user_rating": 0,
+    "notes": "Mood music. Not for every day, but perfect when it fits."
   },
   {
     "release_id": 1838416,
@@ -3082,9 +3082,9 @@
     "original_year": 2009,
     "art_path": "data/artwork/vinyl/1838416.jpg",
     "instance_id": 100028,
-    "date_added": "2026-07-21T00:00:00Z",
-    "user_rating": 3,
-    "notes": "Been meaning to give this a proper relisten \u2014 revisiting after a couple years."
+    "date_added": "2026-04-13T00:00:00Z",
+    "user_rating": 4,
+    "notes": ""
   },
   {
     "release_id": 5803552,
@@ -3141,9 +3141,9 @@
     "original_year": 2014,
     "art_path": "data/artwork/vinyl/5803552.jpg",
     "instance_id": 100029,
-    "date_added": "2025-11-05T00:00:00Z",
+    "date_added": "2025-12-12T00:00:00Z",
     "user_rating": 0,
-    "notes": "Didn't expect to like this as much as I did. Kept it on repeat for a week."
+    "notes": ""
   },
   {
     "release_id": 6393317,
@@ -3198,8 +3198,8 @@
     "original_year": 2014,
     "art_path": "data/artwork/vinyl/6393317.jpg",
     "instance_id": 100030,
-    "date_added": "2026-04-13T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2026-01-05T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -3253,7 +3253,7 @@
     "original_year": 2014,
     "art_path": "data/artwork/vinyl/5976818.jpg",
     "instance_id": 100031,
-    "date_added": "2025-12-12T00:00:00Z",
+    "date_added": "2026-05-10T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -3319,8 +3319,8 @@
     "original_year": 2009,
     "art_path": "data/artwork/vinyl/1912828.jpg",
     "instance_id": 100032,
-    "date_added": "2026-01-05T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-04-08T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -3457,7 +3457,7 @@
     "original_year": 2010,
     "art_path": "data/artwork/vinyl/2253877.jpg",
     "instance_id": 100033,
-    "date_added": "2026-05-10T00:00:00Z",
+    "date_added": "2026-05-17T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -3555,8 +3555,8 @@
     "original_year": 2010,
     "art_path": "data/artwork/vinyl/2538763.jpg",
     "instance_id": 100034,
-    "date_added": "2026-04-08T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2026-07-19T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -3614,7 +3614,7 @@
     "original_year": null,
     "art_path": "data/artwork/vinyl/2768615.jpg",
     "instance_id": 100035,
-    "date_added": "2026-05-17T00:00:00Z",
+    "date_added": "2026-06-28T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -3725,7 +3725,7 @@
     "original_year": 1990,
     "art_path": "data/artwork/vinyl/2477601.jpg",
     "instance_id": 100036,
-    "date_added": "2026-07-19T00:00:00Z",
+    "date_added": "2026-01-18T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -3870,8 +3870,8 @@
     "original_year": 2001,
     "art_path": "data/artwork/vinyl/6880569.jpg",
     "instance_id": 100037,
-    "date_added": "2026-06-28T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-04-13T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -3982,9 +3982,9 @@
     "original_year": 2009,
     "art_path": "data/artwork/vinyl/10069983.jpg",
     "instance_id": 100038,
-    "date_added": "2026-01-18T00:00:00Z",
-    "user_rating": 0,
-    "notes": ""
+    "date_added": "2026-07-25T00:00:00Z",
+    "user_rating": 3,
+    "notes": "Solid front-to-back, no skips. Rare these days."
   },
   {
     "release_id": 3080009,
@@ -4083,8 +4083,8 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/3080009.jpg",
     "instance_id": 100039,
-    "date_added": "2026-04-13T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2026-05-04T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -4147,8 +4147,8 @@
     "original_year": 2014,
     "art_path": "data/artwork/vinyl/5678589.jpg",
     "instance_id": 100040,
-    "date_added": "2026-07-25T00:00:00Z",
-    "user_rating": 3,
+    "date_added": "2026-07-16T00:00:00Z",
+    "user_rating": 4,
     "notes": "Been meaning to give this a proper relisten \u2014 revisiting after a couple years."
   },
   {
@@ -4257,7 +4257,7 @@
     "original_year": 2004,
     "art_path": "data/artwork/vinyl/458611.jpg",
     "instance_id": 100041,
-    "date_added": "2026-05-04T00:00:00Z",
+    "date_added": "2026-06-05T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -4334,9 +4334,9 @@
     "original_year": 2006,
     "art_path": "data/artwork/vinyl/831253.jpg",
     "instance_id": 100042,
-    "date_added": "2026-07-16T00:00:00Z",
-    "user_rating": 4,
-    "notes": "Discovered through a genre rabbit hole and glad I did."
+    "date_added": "2026-07-12T00:00:00Z",
+    "user_rating": 3,
+    "notes": ""
   },
   {
     "release_id": 12292679,
@@ -4419,8 +4419,8 @@
     "original_year": 2018,
     "art_path": "data/artwork/vinyl/12292679.jpg",
     "instance_id": 100043,
-    "date_added": "2026-06-05T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-07-29T00:00:00Z",
+    "user_rating": 5,
     "notes": ""
   },
   {
@@ -4495,8 +4495,8 @@
     "original_year": 2003,
     "art_path": "data/artwork/vinyl/34396339.jpg",
     "instance_id": 100044,
-    "date_added": "2026-07-12T00:00:00Z",
-    "user_rating": 3,
+    "date_added": "2026-02-23T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -4603,9 +4603,9 @@
     "original_year": 2010,
     "art_path": "data/artwork/vinyl/2379457.jpg",
     "instance_id": 100045,
-    "date_added": "2026-07-29T00:00:00Z",
-    "user_rating": 5,
-    "notes": ""
+    "date_added": "2026-06-14T00:00:00Z",
+    "user_rating": 0,
+    "notes": "The kind of record that rewards headphones. Missed so much on tiny speakers."
   },
   {
     "release_id": 2902536,
@@ -4692,8 +4692,8 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/2902536.jpg",
     "instance_id": 100046,
-    "date_added": "2026-02-23T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2026-06-09T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -4791,9 +4791,9 @@
     "original_year": 2012,
     "art_path": "data/artwork/vinyl/3442933.jpg",
     "instance_id": 100047,
-    "date_added": "2026-06-14T00:00:00Z",
+    "date_added": "2026-05-23T00:00:00Z",
     "user_rating": 0,
-    "notes": "Grower, not a shower. Took three listens before it clicked."
+    "notes": ""
   },
   {
     "release_id": 1627979,
@@ -4890,8 +4890,8 @@
     "original_year": 1983,
     "art_path": "data/artwork/vinyl/1627979.jpg",
     "instance_id": 100048,
-    "date_added": "2026-06-09T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-01-29T00:00:00Z",
+    "user_rating": 5,
     "notes": ""
   },
   {
@@ -4970,8 +4970,8 @@
     "original_year": 1988,
     "art_path": "data/artwork/vinyl/3535483.jpg",
     "instance_id": 100049,
-    "date_added": "2026-05-23T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-02-18T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -5060,8 +5060,8 @@
     "original_year": 2014,
     "art_path": "data/artwork/vinyl/6155228.jpg",
     "instance_id": 100050,
-    "date_added": "2026-01-29T00:00:00Z",
-    "user_rating": 5,
+    "date_added": "2026-02-21T00:00:00Z",
+    "user_rating": 3,
     "notes": ""
   },
   {
@@ -5119,9 +5119,9 @@
     "original_year": 2010,
     "art_path": "data/artwork/vinyl/2415792.jpg",
     "instance_id": 100051,
-    "date_added": "2026-02-18T00:00:00Z",
+    "date_added": "2026-07-29T00:00:00Z",
     "user_rating": 4,
-    "notes": ""
+    "notes": "Mood music. Not for every day, but perfect when it fits."
   },
   {
     "release_id": 2787969,
@@ -5215,8 +5215,8 @@
     "original_year": 2010,
     "art_path": "data/artwork/vinyl/2787969.jpg",
     "instance_id": 100052,
-    "date_added": "2026-02-21T00:00:00Z",
-    "user_rating": 3,
+    "date_added": "2026-05-09T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -5306,9 +5306,9 @@
     "original_year": 2010,
     "art_path": "data/artwork/vinyl/2504307.jpg",
     "instance_id": 100053,
-    "date_added": "2026-07-29T00:00:00Z",
-    "user_rating": 4,
-    "notes": "Didn't expect to like this as much as I did. Kept it on repeat for a week."
+    "date_added": "2026-01-04T00:00:00Z",
+    "user_rating": 0,
+    "notes": ""
   },
   {
     "release_id": 1565992,
@@ -5380,7 +5380,7 @@
     "original_year": 2005,
     "art_path": "data/artwork/vinyl/1565992.jpg",
     "instance_id": 100054,
-    "date_added": "2026-05-09T00:00:00Z",
+    "date_added": "2026-02-03T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -5478,8 +5478,8 @@
     "original_year": 2007,
     "art_path": "data/artwork/vinyl/1566000.jpg",
     "instance_id": 100055,
-    "date_added": "2026-01-04T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-07-31T00:00:00Z",
+    "user_rating": 3,
     "notes": ""
   },
   {
@@ -5713,7 +5713,7 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/2833901.jpg",
     "instance_id": 100056,
-    "date_added": "2026-02-03T00:00:00Z",
+    "date_added": "2026-06-06T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -5795,8 +5795,8 @@
     "original_year": 2010,
     "art_path": "data/artwork/vinyl/2701391.jpg",
     "instance_id": 100057,
-    "date_added": "2026-07-31T00:00:00Z",
-    "user_rating": 3,
+    "date_added": "2026-04-05T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -5880,8 +5880,8 @@
     "original_year": 2009,
     "art_path": "data/artwork/vinyl/2031556.jpg",
     "instance_id": 100058,
-    "date_added": "2026-06-06T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-07-26T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -5982,7 +5982,7 @@
     "original_year": 1972,
     "art_path": "data/artwork/vinyl/649184.jpg",
     "instance_id": 100059,
-    "date_added": "2026-04-05T00:00:00Z",
+    "date_added": "2026-04-07T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -6041,8 +6041,8 @@
     "original_year": 2010,
     "art_path": "data/artwork/vinyl/2585954.jpg",
     "instance_id": 100060,
-    "date_added": "2026-07-26T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2026-06-05T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -6147,9 +6147,9 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/2813317.jpg",
     "instance_id": 100061,
-    "date_added": "2026-04-07T00:00:00Z",
-    "user_rating": 0,
-    "notes": ""
+    "date_added": "2026-01-19T00:00:00Z",
+    "user_rating": 4,
+    "notes": "Weird pacing but the highs are genuinely high."
   },
   {
     "release_id": 25300834,
@@ -6229,7 +6229,7 @@
     "original_year": null,
     "art_path": "data/artwork/vinyl/25300834.jpg",
     "instance_id": 100062,
-    "date_added": "2026-06-05T00:00:00Z",
+    "date_added": "2026-05-09T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -6403,9 +6403,9 @@
     "original_year": 2016,
     "art_path": "data/artwork/vinyl/9127152.jpg",
     "instance_id": 100063,
-    "date_added": "2026-01-19T00:00:00Z",
-    "user_rating": 4,
-    "notes": "Mood music. Not for every day, but perfect when it fits."
+    "date_added": "2026-03-09T00:00:00Z",
+    "user_rating": 5,
+    "notes": ""
   },
   {
     "release_id": 3095995,
@@ -6467,7 +6467,7 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/3095995.jpg",
     "instance_id": 100064,
-    "date_added": "2026-05-09T00:00:00Z",
+    "date_added": "2026-03-18T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -6571,8 +6571,8 @@
     "original_year": 2000,
     "art_path": "data/artwork/vinyl/15443160.jpg",
     "instance_id": 100065,
-    "date_added": "2026-03-09T00:00:00Z",
-    "user_rating": 5,
+    "date_added": "2026-05-29T00:00:00Z",
+    "user_rating": 3,
     "notes": ""
   },
   {
@@ -6667,7 +6667,7 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/2798688.jpg",
     "instance_id": 100066,
-    "date_added": "2026-03-18T00:00:00Z",
+    "date_added": "2026-05-29T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -6728,9 +6728,9 @@
     "original_year": 2003,
     "art_path": "data/artwork/vinyl/171890.jpg",
     "instance_id": 100067,
-    "date_added": "2026-05-29T00:00:00Z",
-    "user_rating": 3,
-    "notes": ""
+    "date_added": "2026-02-28T00:00:00Z",
+    "user_rating": 0,
+    "notes": "First half is stronger than the back half, but worth it for the singles alone."
   },
   {
     "release_id": 4449766,
@@ -6825,7 +6825,7 @@
     "original_year": 1999,
     "art_path": "data/artwork/vinyl/4449766.jpg",
     "instance_id": 100068,
-    "date_added": "2026-05-29T00:00:00Z",
+    "date_added": "2026-03-24T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -6934,9 +6934,9 @@
     "original_year": 2008,
     "art_path": "data/artwork/vinyl/1629810.jpg",
     "instance_id": 100069,
-    "date_added": "2026-02-28T00:00:00Z",
+    "date_added": "2026-04-25T00:00:00Z",
     "user_rating": 0,
-    "notes": "The kind of record that rewards headphones. Missed so much on tiny speakers."
+    "notes": ""
   },
   {
     "release_id": 3255473,
@@ -7049,8 +7049,8 @@
     "original_year": 1993,
     "art_path": "data/artwork/vinyl/3255473.jpg",
     "instance_id": 100070,
-    "date_added": "2026-03-24T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-04-18T00:00:00Z",
+    "user_rating": 5,
     "notes": ""
   },
   {
@@ -7147,7 +7147,7 @@
     "original_year": 2010,
     "art_path": "data/artwork/vinyl/6265500.jpg",
     "instance_id": 100071,
-    "date_added": "2026-04-25T00:00:00Z",
+    "date_added": "2026-06-16T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -7244,9 +7244,9 @@
     "original_year": 2012,
     "art_path": "data/artwork/vinyl/11307601.jpg",
     "instance_id": 100072,
-    "date_added": "2026-04-18T00:00:00Z",
-    "user_rating": 5,
-    "notes": ""
+    "date_added": "2026-02-24T00:00:00Z",
+    "user_rating": 0,
+    "notes": "Recommended by a friend, wasn't sure at first \u2014 now can't stop coming back to it."
   },
   {
     "release_id": 2529888,
@@ -7355,8 +7355,8 @@
     "original_year": 2010,
     "art_path": "data/artwork/vinyl/2529888.jpg",
     "instance_id": 100073,
-    "date_added": "2026-06-16T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-07-13T00:00:00Z",
+    "user_rating": 3,
     "notes": ""
   },
   {
@@ -7463,9 +7463,9 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/2885498.jpg",
     "instance_id": 100074,
-    "date_added": "2026-02-24T00:00:00Z",
+    "date_added": "2026-06-02T00:00:00Z",
     "user_rating": 0,
-    "notes": "Solid front-to-back, no skips. Rare these days."
+    "notes": ""
   },
   {
     "release_id": 3192070,
@@ -7562,8 +7562,8 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/3192070.jpg",
     "instance_id": 100075,
-    "date_added": "2026-07-13T00:00:00Z",
-    "user_rating": 3,
+    "date_added": "2026-07-29T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -7685,7 +7685,7 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/2866477.jpg",
     "instance_id": 100076,
-    "date_added": "2026-06-02T00:00:00Z",
+    "date_added": "2026-07-29T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -7748,8 +7748,8 @@
     "original_year": 1998,
     "art_path": "data/artwork/vinyl/2831739.jpg",
     "instance_id": 100077,
-    "date_added": "2026-07-29T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-07-16T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -7809,9 +7809,9 @@
     "original_year": 2013,
     "art_path": "data/artwork/vinyl/4491337.jpg",
     "instance_id": 100078,
-    "date_added": "2026-07-29T00:00:00Z",
+    "date_added": "2025-11-08T00:00:00Z",
     "user_rating": 0,
-    "notes": ""
+    "notes": "Discovered through a genre rabbit hole and glad I did."
   },
   {
     "release_id": 29868991,
@@ -7914,9 +7914,9 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/29868991.jpg",
     "instance_id": 100079,
-    "date_added": "2026-07-16T00:00:00Z",
-    "user_rating": 4,
-    "notes": ""
+    "date_added": "2025-11-11T00:00:00Z",
+    "user_rating": 0,
+    "notes": "First half is stronger than the back half, but worth it for the singles alone."
   },
   {
     "release_id": 29869081,
@@ -8014,9 +8014,9 @@
     "original_year": 2013,
     "art_path": "data/artwork/vinyl/29869081.jpg",
     "instance_id": 100080,
-    "date_added": "2025-11-08T00:00:00Z",
+    "date_added": "2026-06-25T00:00:00Z",
     "user_rating": 0,
-    "notes": "One of those albums that sounds better with every listen."
+    "notes": ""
   },
   {
     "release_id": 26515631,
@@ -8116,8 +8116,8 @@
     "original_year": 2008,
     "art_path": "data/artwork/vinyl/26515631.jpg",
     "instance_id": 100081,
-    "date_added": "2025-11-11T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-03-11T00:00:00Z",
+    "user_rating": 3,
     "notes": "The kind of record that rewards headphones. Missed so much on tiny speakers."
   },
   {
@@ -8228,8 +8228,8 @@
     "original_year": 2014,
     "art_path": "data/artwork/vinyl/31807715.jpg",
     "instance_id": 100082,
-    "date_added": "2026-06-25T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-04-26T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -8326,9 +8326,9 @@
     "original_year": 2014,
     "art_path": "data/artwork/vinyl/6939080.jpg",
     "instance_id": 100083,
-    "date_added": "2026-03-11T00:00:00Z",
-    "user_rating": 3,
-    "notes": "Grower, not a shower. Took three listens before it clicked."
+    "date_added": "2026-07-16T00:00:00Z",
+    "user_rating": 4,
+    "notes": ""
   },
   {
     "release_id": 10884550,
@@ -8434,8 +8434,8 @@
     "original_year": 2017,
     "art_path": "data/artwork/vinyl/10884550.jpg",
     "instance_id": 100084,
-    "date_added": "2026-04-26T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2026-05-13T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -8558,8 +8558,8 @@
     "original_year": 2004,
     "art_path": "data/artwork/vinyl/32949843.jpg",
     "instance_id": 100085,
-    "date_added": "2026-07-16T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2025-12-21T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -8625,7 +8625,7 @@
     "original_year": null,
     "art_path": "data/artwork/vinyl/5386582.jpg",
     "instance_id": 100086,
-    "date_added": "2026-05-13T00:00:00Z",
+    "date_added": "2026-01-21T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -8689,7 +8689,7 @@
     "original_year": null,
     "art_path": "data/artwork/vinyl/6801316.jpg",
     "instance_id": 100087,
-    "date_added": "2025-12-21T00:00:00Z",
+    "date_added": "2026-03-24T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -8755,7 +8755,7 @@
     "original_year": null,
     "art_path": "data/artwork/vinyl/8325190.jpg",
     "instance_id": 100088,
-    "date_added": "2026-01-21T00:00:00Z",
+    "date_added": "2026-03-27T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -8834,7 +8834,7 @@
     "original_year": 2014,
     "art_path": "data/artwork/vinyl/5283950.jpg",
     "instance_id": 100089,
-    "date_added": "2026-03-24T00:00:00Z",
+    "date_added": "2026-04-02T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -8899,8 +8899,8 @@
     "original_year": 2014,
     "art_path": "data/artwork/vinyl/5579611.jpg",
     "instance_id": 100090,
-    "date_added": "2026-03-27T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-02-11T00:00:00Z",
+    "user_rating": 5,
     "notes": ""
   },
   {
@@ -9045,9 +9045,9 @@
     "original_year": 1999,
     "art_path": "data/artwork/vinyl/29856154.jpg",
     "instance_id": 100091,
-    "date_added": "2026-04-02T00:00:00Z",
+    "date_added": "2026-03-31T00:00:00Z",
     "user_rating": 0,
-    "notes": ""
+    "notes": "First half is stronger than the back half, but worth it for the singles alone."
   },
   {
     "release_id": 3849831,
@@ -9229,8 +9229,8 @@
     "original_year": 2012,
     "art_path": "data/artwork/vinyl/3849831.jpg",
     "instance_id": 100092,
-    "date_added": "2026-02-11T00:00:00Z",
-    "user_rating": 5,
+    "date_added": "2026-06-11T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -9319,9 +9319,9 @@
     "original_year": 2003,
     "art_path": "data/artwork/vinyl/2640217.jpg",
     "instance_id": 100093,
-    "date_added": "2026-03-31T00:00:00Z",
-    "user_rating": 0,
-    "notes": "The kind of record that rewards headphones. Missed so much on tiny speakers."
+    "date_added": "2026-07-02T00:00:00Z",
+    "user_rating": 4,
+    "notes": ""
   },
   {
     "release_id": 1855760,
@@ -9426,8 +9426,8 @@
     "original_year": 2000,
     "art_path": "data/artwork/vinyl/1855760.jpg",
     "instance_id": 100094,
-    "date_added": "2026-06-11T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-08-04T00:00:00Z",
+    "user_rating": 3,
     "notes": ""
   },
   {
@@ -9537,8 +9537,8 @@
     "original_year": 2004,
     "art_path": "data/artwork/vinyl/2999723.jpg",
     "instance_id": 100095,
-    "date_added": "2026-07-02T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2025-11-18T00:00:00Z",
+    "user_rating": 5,
     "notes": ""
   },
   {
@@ -9651,8 +9651,8 @@
     "original_year": 2000,
     "art_path": "data/artwork/vinyl/4491942.jpg",
     "instance_id": 100096,
-    "date_added": "2026-08-04T00:00:00Z",
-    "user_rating": 3,
+    "date_added": "2026-03-18T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -9797,8 +9797,8 @@
     "original_year": 2025,
     "art_path": "data/artwork/vinyl/33861543.jpg",
     "instance_id": 100097,
-    "date_added": "2025-11-18T00:00:00Z",
-    "user_rating": 5,
+    "date_added": "2026-07-28T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -9870,8 +9870,8 @@
     "original_year": 2000,
     "art_path": "data/artwork/vinyl/6476151.jpg",
     "instance_id": 100098,
-    "date_added": "2026-03-18T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-04-14T00:00:00Z",
+    "user_rating": 3,
     "notes": ""
   },
   {
@@ -9970,7 +9970,7 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/2940876.jpg",
     "instance_id": 100099,
-    "date_added": "2026-07-28T00:00:00Z",
+    "date_added": "2026-03-04T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -10066,7 +10066,7 @@
     "original_year": 2007,
     "art_path": "data/artwork/vinyl/1361007.jpg",
     "instance_id": 100100,
-    "date_added": "2026-04-14T00:00:00Z",
+    "date_added": "2025-12-20T00:00:00Z",
     "user_rating": 3,
     "notes": ""
   },
@@ -10163,8 +10163,8 @@
     "original_year": 2007,
     "art_path": "data/artwork/vinyl/9755401.jpg",
     "instance_id": 100101,
-    "date_added": "2026-03-04T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-03-10T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -10250,9 +10250,9 @@
     "original_year": 1972,
     "art_path": "data/artwork/vinyl/43337.jpg",
     "instance_id": 100102,
-    "date_added": "2025-12-20T00:00:00Z",
-    "user_rating": 3,
-    "notes": ""
+    "date_added": "2025-12-13T00:00:00Z",
+    "user_rating": 5,
+    "notes": "Discovered through a genre rabbit hole and glad I did."
   },
   {
     "release_id": 993778,
@@ -10321,8 +10321,8 @@
     "original_year": 1973,
     "art_path": "data/artwork/vinyl/993778.jpg",
     "instance_id": 100103,
-    "date_added": "2026-03-10T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2026-07-04T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -10393,9 +10393,9 @@
     "original_year": 1969,
     "art_path": "data/artwork/vinyl/135284.jpg",
     "instance_id": 100104,
-    "date_added": "2025-12-13T00:00:00Z",
-    "user_rating": 5,
-    "notes": "One of those albums that sounds better with every listen."
+    "date_added": "2026-05-30T00:00:00Z",
+    "user_rating": 0,
+    "notes": ""
   },
   {
     "release_id": 1709731,
@@ -10496,8 +10496,8 @@
     "original_year": 2009,
     "art_path": "data/artwork/vinyl/1709731.jpg",
     "instance_id": 100105,
-    "date_added": "2026-07-04T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-08-04T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -10582,7 +10582,7 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/2890941.jpg",
     "instance_id": 100106,
-    "date_added": "2026-05-30T00:00:00Z",
+    "date_added": "2026-02-23T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -10660,8 +10660,8 @@
     "original_year": 2003,
     "art_path": "data/artwork/vinyl/7256636.jpg",
     "instance_id": 100107,
-    "date_added": "2026-08-04T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2025-11-28T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -10723,8 +10723,8 @@
     "original_year": 1985,
     "art_path": "data/artwork/vinyl/106584.jpg",
     "instance_id": 100108,
-    "date_added": "2026-02-23T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-02-13T00:00:00Z",
+    "user_rating": 3,
     "notes": ""
   },
   {
@@ -10854,8 +10854,8 @@
     "original_year": 2008,
     "art_path": "data/artwork/vinyl/15346241.jpg",
     "instance_id": 100109,
-    "date_added": "2025-11-28T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-06-03T00:00:00Z",
+    "user_rating": 5,
     "notes": ""
   },
   {
@@ -10964,8 +10964,8 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/2856645.jpg",
     "instance_id": 100110,
-    "date_added": "2026-02-13T00:00:00Z",
-    "user_rating": 3,
+    "date_added": "2025-11-09T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -11025,9 +11025,9 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/2831131.jpg",
     "instance_id": 100111,
-    "date_added": "2026-06-03T00:00:00Z",
-    "user_rating": 5,
-    "notes": ""
+    "date_added": "2025-11-20T00:00:00Z",
+    "user_rating": 0,
+    "notes": "Mood music. Not for every day, but perfect when it fits."
   },
   {
     "release_id": 2589826,
@@ -11083,9 +11083,9 @@
     "original_year": 2010,
     "art_path": "data/artwork/vinyl/2589826.jpg",
     "instance_id": 100112,
-    "date_added": "2025-11-09T00:00:00Z",
+    "date_added": "2026-01-15T00:00:00Z",
     "user_rating": 0,
-    "notes": ""
+    "notes": "Been meaning to give this a proper relisten \u2014 revisiting after a couple years."
   },
   {
     "release_id": 2006659,
@@ -11171,9 +11171,9 @@
     "original_year": 1988,
     "art_path": "data/artwork/vinyl/2006659.jpg",
     "instance_id": 100113,
-    "date_added": "2025-11-20T00:00:00Z",
+    "date_added": "2026-05-21T00:00:00Z",
     "user_rating": 0,
-    "notes": "Didn't expect to like this as much as I did. Kept it on repeat for a week."
+    "notes": ""
   },
   {
     "release_id": 3917263,
@@ -11244,9 +11244,9 @@
     "original_year": 2012,
     "art_path": "data/artwork/vinyl/3917263.jpg",
     "instance_id": 100114,
-    "date_added": "2026-01-15T00:00:00Z",
+    "date_added": "2026-02-12T00:00:00Z",
     "user_rating": 0,
-    "notes": "Discovered through a genre rabbit hole and glad I did."
+    "notes": ""
   },
   {
     "release_id": 74260,
@@ -11291,8 +11291,8 @@
     "original_year": 2000,
     "art_path": "data/artwork/vinyl/74260.jpg",
     "instance_id": 100115,
-    "date_added": "2026-05-21T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-06-06T00:00:00Z",
+    "user_rating": 5,
     "notes": ""
   },
   {
@@ -11351,8 +11351,8 @@
     "original_year": 1999,
     "art_path": "data/artwork/vinyl/28392721.jpg",
     "instance_id": 100116,
-    "date_added": "2026-02-12T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-07-04T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -11473,8 +11473,8 @@
     "original_year": 1971,
     "art_path": "data/artwork/vinyl/1701748.jpg",
     "instance_id": 100117,
-    "date_added": "2026-06-06T00:00:00Z",
-    "user_rating": 5,
+    "date_added": "2025-12-05T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -11602,8 +11602,8 @@
     "original_year": 2004,
     "art_path": "data/artwork/vinyl/24149831.jpg",
     "instance_id": 100118,
-    "date_added": "2026-07-04T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2026-05-15T00:00:00Z",
+    "user_rating": 3,
     "notes": ""
   },
   {
@@ -11678,7 +11678,7 @@
     "original_year": 2009,
     "art_path": "data/artwork/vinyl/2353120.jpg",
     "instance_id": 100119,
-    "date_added": "2025-12-05T00:00:00Z",
+    "date_added": "2026-01-06T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -11806,7 +11806,7 @@
     "original_year": 2008,
     "art_path": "data/artwork/vinyl/1364851.jpg",
     "instance_id": 100120,
-    "date_added": "2026-05-15T00:00:00Z",
+    "date_added": "2025-12-12T00:00:00Z",
     "user_rating": 3,
     "notes": ""
   },
@@ -11893,7 +11893,7 @@
     "original_year": 2010,
     "art_path": "data/artwork/vinyl/3025716.jpg",
     "instance_id": 100121,
-    "date_added": "2026-01-06T00:00:00Z",
+    "date_added": "2026-06-06T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -12035,7 +12035,7 @@
     "original_year": 2013,
     "art_path": "data/artwork/vinyl/4331747.jpg",
     "instance_id": 100122,
-    "date_added": "2025-12-12T00:00:00Z",
+    "date_added": "2026-01-21T00:00:00Z",
     "user_rating": 3,
     "notes": ""
   },
@@ -12142,7 +12142,7 @@
     "original_year": 1998,
     "art_path": "data/artwork/vinyl/2173833.jpg",
     "instance_id": 100123,
-    "date_added": "2026-06-06T00:00:00Z",
+    "date_added": "2026-02-13T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -12252,8 +12252,8 @@
     "original_year": 1996,
     "art_path": "data/artwork/vinyl/12235767.jpg",
     "instance_id": 100124,
-    "date_added": "2026-01-21T00:00:00Z",
-    "user_rating": 3,
+    "date_added": "2026-01-09T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -12367,7 +12367,7 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/3380043.jpg",
     "instance_id": 100125,
-    "date_added": "2026-02-13T00:00:00Z",
+    "date_added": "2026-02-24T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -12476,7 +12476,7 @@
     "original_year": 1991,
     "art_path": "data/artwork/vinyl/33960828.jpg",
     "instance_id": 100126,
-    "date_added": "2026-01-09T00:00:00Z",
+    "date_added": "2026-06-11T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -12570,7 +12570,7 @@
     "original_year": 2009,
     "art_path": "data/artwork/vinyl/2359724.jpg",
     "instance_id": 100127,
-    "date_added": "2026-02-24T00:00:00Z",
+    "date_added": "2026-01-14T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -12661,7 +12661,7 @@
     "original_year": 2007,
     "art_path": "data/artwork/vinyl/8340363.jpg",
     "instance_id": 100128,
-    "date_added": "2026-06-11T00:00:00Z",
+    "date_added": "2026-01-08T00:00:00Z",
     "user_rating": 0,
     "notes": ""
   },
@@ -12750,9 +12750,9 @@
     "original_year": 2011,
     "art_path": "data/artwork/vinyl/4286669.jpg",
     "instance_id": 100129,
-    "date_added": "2026-01-14T00:00:00Z",
-    "user_rating": 0,
-    "notes": ""
+    "date_added": "2026-01-25T00:00:00Z",
+    "user_rating": 5,
+    "notes": "The kind of record that rewards headphones. Missed so much on tiny speakers."
   },
   {
     "release_id": 7272971,
@@ -12814,8 +12814,8 @@
     "original_year": 2003,
     "art_path": "data/artwork/vinyl/7272971.jpg",
     "instance_id": 100130,
-    "date_added": "2026-01-08T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-05-30T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -12905,8 +12905,8 @@
     "original_year": 2001,
     "art_path": "data/artwork/vinyl/83677.jpg",
     "instance_id": 100131,
-    "date_added": "2026-01-25T00:00:00Z",
-    "user_rating": 5,
+    "date_added": "2025-11-22T00:00:00Z",
+    "user_rating": 0,
     "notes": "Grower, not a shower. Took three listens before it clicked."
   },
   {
@@ -13008,8 +13008,8 @@
     "original_year": 2007,
     "art_path": "data/artwork/vinyl/1187003.jpg",
     "instance_id": 100132,
-    "date_added": "2026-05-30T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2025-12-27T00:00:00Z",
+    "user_rating": 0,
     "notes": ""
   },
   {
@@ -13145,9 +13145,9 @@
     "original_year": 1991,
     "art_path": "data/artwork/vinyl/2891664.jpg",
     "instance_id": 100133,
-    "date_added": "2025-11-22T00:00:00Z",
+    "date_added": "2026-03-26T00:00:00Z",
     "user_rating": 0,
-    "notes": "Weird pacing but the highs are genuinely high."
+    "notes": ""
   },
   {
     "release_id": 11304449,
@@ -13312,8 +13312,8 @@
     "original_year": null,
     "art_path": "data/artwork/vinyl/11304449.jpg",
     "instance_id": 100134,
-    "date_added": "2025-12-27T00:00:00Z",
-    "user_rating": 0,
+    "date_added": "2026-03-02T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -13470,9 +13470,9 @@
     "original_year": 2005,
     "art_path": "data/artwork/vinyl/649042.jpg",
     "instance_id": 100135,
-    "date_added": "2026-03-26T00:00:00Z",
-    "user_rating": 0,
-    "notes": ""
+    "date_added": "2026-05-31T00:00:00Z",
+    "user_rating": 4,
+    "notes": "Mood music. Not for every day, but perfect when it fits."
   },
   {
     "release_id": 2831206,
@@ -13611,8 +13611,8 @@
     "original_year": 2010,
     "art_path": "data/artwork/vinyl/2831206.jpg",
     "instance_id": 100136,
-    "date_added": "2026-03-02T00:00:00Z",
-    "user_rating": 4,
+    "date_added": "2025-11-13T00:00:00Z",
+    "user_rating": 5,
     "notes": ""
   },
   {
@@ -13710,9 +13710,9 @@
     "original_year": 2006,
     "art_path": "data/artwork/vinyl/6314990.jpg",
     "instance_id": 100137,
-    "date_added": "2026-05-31T00:00:00Z",
-    "user_rating": 4,
-    "notes": "Didn't expect to like this as much as I did. Kept it on repeat for a week."
+    "date_added": "2026-01-18T00:00:00Z",
+    "user_rating": 5,
+    "notes": ""
   },
   {
     "release_id": 4146204,
@@ -13812,8 +13812,8 @@
     "original_year": 2012,
     "art_path": "data/artwork/vinyl/4146204.jpg",
     "instance_id": 100138,
-    "date_added": "2025-11-13T00:00:00Z",
-    "user_rating": 5,
+    "date_added": "2025-12-02T00:00:00Z",
+    "user_rating": 3,
     "notes": ""
   },
   {
@@ -13934,8 +13934,8 @@
     "original_year": 2003,
     "art_path": "data/artwork/vinyl/3613814.jpg",
     "instance_id": 100139,
-    "date_added": "2026-01-18T00:00:00Z",
-    "user_rating": 5,
+    "date_added": "2026-04-27T00:00:00Z",
+    "user_rating": 3,
     "notes": ""
   },
   {
@@ -14045,8 +14045,8 @@
     "original_year": 2009,
     "art_path": "data/artwork/vinyl/18492652.jpg",
     "instance_id": 100140,
-    "date_added": "2025-12-02T00:00:00Z",
-    "user_rating": 3,
+    "date_added": "2025-11-19T00:00:00Z",
+    "user_rating": 4,
     "notes": ""
   },
   {
@@ -14136,7 +14136,7 @@
     "original_year": 1973,
     "art_path": "data/artwork/vinyl/6384435.jpg",
     "instance_id": 100141,
-    "date_added": "2026-04-27T00:00:00Z",
+    "date_added": "2026-01-14T00:00:00Z",
     "user_rating": 3,
     "notes": ""
   }

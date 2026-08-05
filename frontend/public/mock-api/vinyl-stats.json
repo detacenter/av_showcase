@@ -2,107 +2,107 @@
   "collection_size": 142,
   "played_count": 71,
   "unplayed_count": 71,
-  "total_sessions": 130,
-  "total_minutes": 4676,
+  "total_sessions": 137,
+  "total_minutes": 4228,
   "top_records": [
     {
-      "release_id": 10511319,
-      "title": "Looking Ocean ",
+      "release_id": 2379457,
+      "title": "Perch Patchwork",
       "artists": [
-        "Daedelus"
+        "Maps And Atlases"
       ],
-      "art_filename": "vinyl/10511319.jpg",
-      "year": 2012,
+      "art_filename": "vinyl/2379457.jpg",
+      "year": 2010,
       "sessions": 4
     },
     {
-      "release_id": 83677,
-      "title": "I Might Be Wrong - Live Recordings",
+      "release_id": 1078940,
+      "title": "Alpha & Omega",
       "artists": [
-        "Radiohead"
+        "Boards Of Canada"
       ],
-      "art_filename": "vinyl/83677.jpg",
+      "art_filename": "vinyl/1078940.jpg",
       "year": 2001,
       "sessions": 4
     },
     {
-      "release_id": 2254563,
-      "title": "Blue Sky Noise",
+      "release_id": 2885498,
+      "title": "Shed",
       "artists": [
-        "Circa Survive"
+        "Title Fight"
       ],
-      "art_filename": "vinyl/2254563.jpg",
-      "year": 2010,
+      "art_filename": "vinyl/2885498.jpg",
+      "year": 2011,
       "sessions": 4
     },
     {
-      "release_id": 2331725,
-      "title": "Ciencia De Los In\u00fatiles",
+      "release_id": 2902536,
+      "title": "Leave Home",
       "artists": [
-        "El Tr\u00edo De Omar Rodriguez Lopez"
+        "The Men (2)"
       ],
-      "art_filename": "vinyl/2331725.jpg",
-      "year": 2010,
+      "art_filename": "vinyl/2902536.jpg",
+      "year": 2011,
+      "sessions": 4
+    },
+    {
+      "release_id": 6476151,
+      "title": "In A Beautiful Place Out In The Country",
+      "artists": [
+        "Boards Of Canada"
+      ],
+      "art_filename": "vinyl/6476151.jpg",
+      "year": 2000,
       "sessions": 3
     },
     {
-      "release_id": 12235767,
-      "title": "On Avery Island",
+      "release_id": 9755401,
+      "title": "Untrue",
+      "artists": [
+        "Burial"
+      ],
+      "art_filename": "vinyl/9755401.jpg",
+      "year": 2007,
+      "sessions": 3
+    },
+    {
+      "release_id": 2173833,
+      "title": "In The Aeroplane Over The Sea",
       "artists": [
         "Neutral Milk Hotel"
       ],
-      "art_filename": "vinyl/12235767.jpg",
-      "year": 1996,
+      "art_filename": "vinyl/2173833.jpg",
+      "year": 1998,
       "sessions": 3
     },
     {
-      "release_id": 2940876,
-      "title": "Bon Iver, Bon Iver",
+      "release_id": 29869081,
+      "title": "No Place",
       "artists": [
-        "Bon Iver"
+        "A Lot Like Birds"
       ],
-      "art_filename": "vinyl/2940876.jpg",
-      "year": 2011,
+      "art_filename": "vinyl/29869081.jpg",
+      "year": 2013,
       "sessions": 3
     },
     {
-      "release_id": 1709731,
-      "title": "Cryptomnesia",
+      "release_id": 5803552,
+      "title": "King Bromeliad",
       "artists": [
-        "El Grupo Nuevo De Omar Rodriguez Lopez"
+        "Floating Points"
       ],
-      "art_filename": "vinyl/1709731.jpg",
+      "art_filename": "vinyl/5803552.jpg",
+      "year": 2014,
+      "sessions": 3
+    },
+    {
+      "release_id": 2156856,
+      "title": "by-",
+      "artists": [
+        "Bygones"
+      ],
+      "art_filename": "vinyl/2156856.jpg",
       "year": 2009,
-      "sessions": 3
-    },
-    {
-      "release_id": 6314990,
-      "title": "The Eraser",
-      "artists": [
-        "Thom Yorke"
-      ],
-      "art_filename": "vinyl/6314990.jpg",
-      "year": 2006,
-      "sessions": 3
-    },
-    {
-      "release_id": 2856645,
-      "title": "Helplessness Blues",
-      "artists": [
-        "Fleet Foxes"
-      ],
-      "art_filename": "vinyl/2856645.jpg",
-      "year": 2011,
-      "sessions": 3
-    },
-    {
-      "release_id": 33861543,
-      "title": "Deb\u00ed Tirar M\u00e1s Fotos",
-      "artists": [
-        "Bad Bunny"
-      ],
-      "art_filename": "vinyl/33861543.jpg",
-      "year": 2025,
       "sessions": 3
     }
   ]

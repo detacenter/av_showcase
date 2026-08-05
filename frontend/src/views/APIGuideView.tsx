@@ -51,7 +51,7 @@ const GROUPS: Group[] = [
     endpoints: [
       { method: "GET", path: "/api/playlists", desc: "All playlists with track counts.", live: true },
       { method: "GET", path: "/api/playlists/sessions", desc: "Playlists grouped for the sidebar session view.", live: true },
-      { method: "GET", path: "/api/playlists/{id}/evaluate", desc: "A playlist's evaluated tracklist (rule_groups applied once, snapshotted).", live: true, paramLabel: "playlist id", paramDefault: "pl-246216236" },
+      { method: "GET", path: "/api/playlists/{id}/evaluate", desc: "A playlist's evaluated tracklist (rule_groups applied once, snapshotted).", live: true, paramLabel: "playlist id", paramDefault: "pl-331421700" },
       { method: "POST", path: "/api/playlists", desc: "Create a playlist (overlay only, empty tracklist)." },
       { method: "PUT", path: "/api/playlists/{id}", desc: "Update a playlist's rules/name (overlay only, does not re-evaluate)." },
       { method: "DELETE", path: "/api/playlists/{id}", desc: "Delete a playlist (overlay only)." },

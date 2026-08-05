@@ -4,13 +4,14 @@ Stage 1 of the synthetic data pipeline: one-time, local-only tool.
 Reads REAL catalog metadata (artist/album/track/genre/vinyl names, structure) from
 the real av app's data directory and writes data/catalog_seed.json — a weighted
 sample of real catalog vocabulary with ZERO behavioral data (no play timestamps,
-no personal notes/dates, no session info), with ONE deliberate exception: real
-per-album star ratings. User's explicit rule change (session 5) — ratings are real
-opinions about public albums, not privacy-sensitive in the way timestamps/session
-patterns are, and the user wants their actual taste reflected rather than a
-randomized stand-in. Every other behavioral field (timestamps, notes, favorites,
-session/device patterns) stays fully synthetic, generated fresh in stage 2 — this
-exception is scoped to ratings only.
+no personal notes/dates, no session info), with a handful of deliberate exceptions:
+real per-album star ratings, and (session 7, user's explicit ask) real
+album/track/artist favorite flags. These are all curated opinions about public
+albums/artists, not privacy-sensitive in the way timestamps/session patterns are —
+the user wants their actual taste reflected rather than a randomized stand-in, and
+specifically doesn't want to see an album favorited in the demo that isn't
+favorited in real life. Every other behavioral field (timestamps, notes,
+session/device patterns) stays fully synthetic, generated fresh in stage 2.
 
 This script is meant to be run once by the repo owner, locally, against their own
 real data directory. It is never run as part of the public demo and never ships
@@ -122,6 +123,8 @@ def main() -> None:
     discogs_collection = _load("discogs_collection.json") or []
     real_library = _load("library.json") or {}
     real_album_ratings = real_library.get("albums", {})
+    real_track_favorites = real_library.get("tracks", {})
+    real_artist_favorites = real_library.get("artists", {})
 
     if log is None:
         raise SystemExit(
@@ -218,6 +221,13 @@ def main() -> None:
                 album_tracks.get(album_id, {}).values(),
                 key=lambda t: (t.get("track_number") is None, t.get("track_number")),
             )
+            # Real per-track favorite (session 7, user's explicit ask) — same
+            # "curated opinion, not behavioral data" tier as ratings/tops above.
+            # Only set when the real track is actually favorited; nothing here
+            # is synthesized.
+            for t in tracks_sorted:
+                if real_track_favorites.get(t["track_id"], {}).get("favorited"):
+                    t["real_favorited"] = True
             # Real tracks can be credited to multiple artists (collabs/features).
             # Filter down to only the curated/reviewed artist set — otherwise a
             # collaborator who was never sampled or shown for review leaks
@@ -247,6 +257,12 @@ def main() -> None:
             if real_rating:
                 album_out["real_rating"] = real_rating
 
+            # Real per-album favorite (session 7, user's explicit ask) — same
+            # "curated opinion, not behavioral data" tier as the rating above.
+            # Only carried over when actually favorited in real life.
+            if real_album_ratings.get(album_id, {}).get("favorited"):
+                album_out["real_favorited"] = True
+
             # If this real album has a real confirmed vinyl link, carry over the
             # real Discogs catalog metadata (never the personal fields).
             release_id = album_id_to_release_id.get(album_id)
@@ -265,12 +281,17 @@ def main() -> None:
             artist_albums_out.append(album_out)
             seed_album_count += 1
 
-        seed_artists.append({
+        seed_artist = {
             "artist_name": name,
             "artist_id": artist_id_by_name.get(name),
             "genres": genres.get(name, []),
             "albums": artist_albums_out,
-        })
+        }
+        # Real per-artist favorite (session 7, user's explicit ask) — same tier
+        # as the album/track favorites above.
+        if real_artist_favorites.get(name, {}).get("favorited"):
+            seed_artist["real_favorited"] = True
+        seed_artists.append(seed_artist)
 
     # Full real vinyl collection (session 5, user's explicit ask) — every real
     # discogs_collection.json record, independent of whether it's linked to a
