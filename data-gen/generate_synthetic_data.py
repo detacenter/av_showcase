@@ -10,6 +10,7 @@ Deterministic: re-running with the same config produces byte-identical output.
 """
 from __future__ import annotations
 
+import bisect
 import json
 import math
 import random
@@ -330,6 +331,23 @@ def main() -> None:
         # day for months. Decaying per-day penalty breaks that without
         # touching the long-run rotation weight at all.
         picks_today: dict[str, int] = {}
+        # Tracks the wall-clock end of the most recently scheduled pick today
+        # (session 6, tenth pass). Each pick used to call daypart_time()
+        # completely independently, so a second pick could land its start
+        # time *inside* a still-running first pick — once every pick's
+        # tracks get globally sorted by timestamp, that produces literal
+        # song-by-song interleaving between two different artists (verified
+        # against the real log: real sessions have a blocks-per-distinct-
+        # artist ratio of ~1.17 — once you switch artists you basically stay
+        # there — not the constant back-and-forth this bug produced). Became
+        # far more likely once sessions started playing through whole albums
+        # (session 6, ninth pass) instead of a short ~3.6-track sample, since
+        # a single pick's real-time span grew from minutes to potentially
+        # hours. Clamping each new pick's start to no earlier than the
+        # previous one's end (plus a short gap) keeps every pick a clean,
+        # non-overlapping block — multiple artists can still show up in one
+        # merged 30-min-gap "session", just back-to-back, never interleaved.
+        day_time_cursor: datetime | None = None
         while remaining > 0:
             # Discovery-spike boost (session 5, second pass): a plain unlock
             # schedule left new-artist events to Zipf-weighted chance, which
@@ -416,7 +434,12 @@ def main() -> None:
             n_passes = rng.choices([1, 2, 3, 4, 5], weights=[0.55, 0.2, 0.12, 0.08, 0.05], k=1)[0]
             n_passes = max(1, min(n_passes, max(1, remaining // n)))
 
-            session_start = daypart_time(rng, day, is_weekend)
+            candidate_start = daypart_time(rng, day, is_weekend)
+            gap_before_s = rng.uniform(30, 600)
+            session_start = (
+                candidate_start if day_time_cursor is None
+                else max(candidate_start, day_time_cursor + timedelta(seconds=gap_before_s))
+            )
             t = session_start
             ctx_type = weighted_choice(rng, CONTEXT_CHOICES)
             device_name, device_type, _ = rng.choices(DEVICES, weights=[d[2] for d in DEVICES], k=1)[0]
@@ -459,6 +482,7 @@ def main() -> None:
                     gap_s = rng.expovariate(1 / 15) if rng.random() < 0.15 else 0
                     t = t + timedelta(milliseconds=track["duration_ms"] or 200_000) + timedelta(seconds=gap_s)
 
+            day_time_cursor = t
             remaining -= n * n_passes
             _dbg_success_picks += 1
 
@@ -557,20 +581,20 @@ def main() -> None:
     for tid in revisit_tracks:
         library_tracks.setdefault(tid, {})["revisit"] = True
 
-    decades: dict[str, int] = {}
-    for album_id in played_album_ids:
-        artist_name = artist_of_album.get(album_id)
-        album = next((al for al in artist_by_name[artist_name]["albums"] if al["album_id"] == album_id), None)
-        year = album.get("release_year") if album else None
-        if year:
-            decade = f"{(year // 10) * 10}s"
-            decades[decade] = decades.get(decade, 0) + 1
+    # Real per-decade top-10 picks (session 6), carried straight through from
+    # Stage 1 — a curated opinion about public albums, same tier as the real
+    # ratings above. Only ever resolves for an album_id that also appears in
+    # this run's synthetic log (the real app's own /api/tops builds its
+    # album index from state.log), so some real picks may not surface if
+    # that particular album didn't get a synthetic play this run - a real,
+    # expected gap, not a bug.
+    album_tops_decades = seed_data.get("album_tops", {})
 
     library_out = {
         "albums": library_albums,
         "artists": library_artists,
         "tracks": library_tracks,
-        "album_tops": {"decades": decades},
+        "album_tops": {"decades": album_tops_decades},
     }
 
     # ── playlists.json ───────────────────────────────────────────────────
@@ -691,6 +715,33 @@ def main() -> None:
             return None
         return art_path[len(prefix):] if art_path.startswith(prefix) else Path(art_path).name
 
+    # Digital-listening busy intervals (session 6, eleventh pass) — vinyl
+    # sessions used to be scheduled with zero awareness of the digital
+    # listening_log, so a vinyl spin could (and did — caught via a real
+    # screenshot showing a purple digital-session bar and a gold vinyl-
+    # session bar overlapping in the same Sessions-tab hour) land in the
+    # middle of an ongoing digital session. You can't physically be doing
+    # both at once. Build a sorted list of every digital track's own
+    # (start, end) interval and reject/retry any candidate vinyl session
+    # that overlaps one, rather than generating blind.
+    digital_intervals = sorted(
+        (
+            datetime.fromisoformat(e["played_at"].replace("Z", "+00:00")).timestamp(),
+            datetime.fromisoformat(e["played_at"].replace("Z", "+00:00")).timestamp()
+            + (e.get("duration_ms") or 0) / 1000,
+        )
+        for e in log_entries
+    )
+    digital_starts = [iv[0] for iv in digital_intervals]
+
+    def _overlaps_digital(start_ts: float, end_ts: float) -> bool:
+        idx = bisect.bisect_right(digital_starts, end_ts)
+        for i in range(max(0, idx - 50), idx):
+            s, e = digital_intervals[i]
+            if s < end_ts and e > start_ts:
+                return True
+        return False
+
     played_records = rng.sample(discogs_out, k=round(len(discogs_out) * 0.5))
     vinyl_sessions_out = []
     for record in played_records:
@@ -705,11 +756,16 @@ def main() -> None:
             total_secs = rng.randint(20 * 60, 45 * 60)  # no tracklist duration data — plausible LP length
 
         for _ in range(n_sessions):
-            started = start_date + timedelta(
-                days=rng.randint(0, total_days), seconds=rng.randint(0, 86399),
-            )
             duration = round(total_secs * rng.uniform(0.7, 1.05))  # occasionally stopped early
-            ended = started + timedelta(seconds=duration)
+            for _attempt in range(30):
+                started = start_date + timedelta(
+                    days=rng.randint(0, total_days), seconds=rng.randint(0, 86399),
+                )
+                ended = started + timedelta(seconds=duration)
+                if not _overlaps_digital(started.timestamp(), ended.timestamp()):
+                    break
+            else:
+                continue  # couldn't find a free slot after 30 tries — skip this instance
             vinyl_sessions_out.append({
                 "id": str(uuid.uuid4()),
                 "started_at": started.timestamp(),

@@ -231,6 +231,10 @@ async function handleVinylStats() {
   return jsonResponse(await loadSnapshot("vinyl-stats.json"));
 }
 
+async function handleTops() {
+  return jsonResponse(await loadSnapshot("tops.json"));
+}
+
 async function handleVinylSessions() {
   const sessions = await loadSnapshot("vinyl-sessions.json");
   const filtered = sessions.filter((s) => !overlay.deletedVinylSessions.has(s.id));
@@ -522,6 +526,9 @@ async function handleApiRequest(request) {
   }
   if (path === "/api/vinyl/stats" && method === "GET") {
     return handleVinylStats();
+  }
+  if (path === "/api/tops" && method === "GET") {
+    return handleTops();
   }
   if (path === "/api/vinyl/sessions" && method === "GET") {
     return handleVinylSessions();

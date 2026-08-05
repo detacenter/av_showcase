@@ -1,61 +1,105 @@
 {
   "initial": [
     {
-      "generated_at": "2026-07-29T14:32:00+00:00",
+      "generated_at": "2026-05-24T03:32:24.450683+00:00",
       "recommendations": [
         {
-          "album": "GLOW ON",
-          "artist": "Turnstile",
-          "year": 2021,
-          "genres": ["hardcore punk", "post-hardcore"],
-          "track_count": 15,
-          "why_you": "Your post-hardcore/emo lean points straight at this crossover breakout.",
-          "blurb": "Turnstile blew hardcore's doors open with GLOW ON, folding shoegaze haze and pure pop hooks into two-minute blasts. It's the rare hardcore record that rewards repeat listens for the melodies, not just the riffs.",
-          "sounds_like": ["Circa Survive", "Touché Amoré", "La Dispute"],
+          "album": "XO",
+          "artist": "Elliott Smith",
+          "year": 1998,
+          "genres": [
+            "indie rock",
+            "singer-songwriter",
+            "alternative"
+          ],
+          "track_count": 16,
+          "why_you": "Draws on the indie rock side of your library.",
+          "blurb": "Elliott Smith's major-label breakthrough wraps devastating emotional candor in lush Beatles-influenced arrangements. Where his earlier work was spare and acoustic, XO opens up into full orchestral color without losing his wounded intimacy. It remains one of the great singer-songwriter records of the 1990s.",
+          "sounds_like": [
+            "Nick Drake",
+            "Red House Painters",
+            "Carissa's Wierd"
+          ],
+          "art_local_path": "data/artwork/elliott_smith_xo.jpg",
           "feedback": null
         },
         {
-          "album": "Racional Vol. 1",
-          "artist": "Tim Maia",
-          "year": 1975,
-          "genres": ["mpb", "soul", "funk"],
-          "track_count": 9,
-          "why_you": "Deep MPB listening history but this one's an outlier you likely haven't hit.",
-          "blurb": "Tim Maia's strangest, most inspired record — a spiritual-funk left turn recorded after he joined a UFO-adjacent cult, then largely disowned by him for decades. It's since been reappraised as one of Brazilian music's great cult classics.",
-          "sounds_like": ["Jorge Ben Jor", "Curtis Mayfield", "Gilberto Gil"],
+          "album": "Rated R",
+          "artist": "Queens of the Stone Age",
+          "year": 2000,
+          "genres": [
+            "rock",
+            "alternative rock",
+            "stoner rock"
+          ],
+          "track_count": 13,
+          "why_you": "Sits close to Red Hot Chili Peppers in your library.",
+          "blurb": "Rated R is where Queens of the Stone Age shed their heavy-metal roots and discovered something stranger and more seductive: cinematic desert rock with a junkie cool and hooks buried under layers of fuzz. The Lost Art of Keeping a Secret and Feel Good Hit of the Summer are effortlessly iconic. It remains their most atmospherically cohesive record.",
+          "sounds_like": [
+            "Red Hot Chili Peppers",
+            "TOOL",
+            "The Stooges"
+          ],
+          "art_local_path": "data/artwork/queens_of_the_stone_age_rated_r.jpg",
           "feedback": null
         },
         {
-          "album": "Teen Dream",
-          "artist": "Beach House",
-          "year": 2010,
-          "genres": ["dream pop", "shoegaze"],
-          "track_count": 10,
-          "why_you": "Sits right next to your Cocteau Twins/Slowdive listening.",
-          "blurb": "The record where Beach House's hazy bedroom-pop fully bloomed into something widescreen. Warm organ, reverb-soaked guitar, and Victoria Legrand's voice doing most of the emotional heavy lifting.",
-          "sounds_like": ["Cocteau Twins", "Slowdive", "Fleet Foxes"],
+          "album": "Kind of Blue",
+          "artist": "Miles Davis",
+          "year": 1959,
+          "genres": [
+            "jazz",
+            "modal jazz"
+          ],
+          "track_count": 5,
+          "why_you": "A natural next step from Miles Davis.",
+          "blurb": "The best-selling jazz album of all time is also one of the most genuinely beautiful records ever made, built on modal scales that gave players room to breathe and improvise without the constraints of bebop changes. So What and Blue in Green have never aged. A necessary cornerstone for any serious listener.",
+          "sounds_like": [
+            "Miles Davis",
+            "John Coltrane",
+            "Charles Mingus"
+          ],
+          "art_local_path": "data/artwork/miles_davis_kind_of_blue.jpg",
           "feedback": null
         },
         {
-          "album": "By the Time I Get to Phoenix",
-          "artist": "Injury Reserve",
-          "year": 2021,
-          "genres": ["experimental hip-hop", "noise"],
-          "track_count": 11,
-          "why_you": "For the Run the Jewels / Kanye side of your rotation, but pushed further left.",
-          "blurb": "Made in the aftermath of a bandmate's death, this is grief processed as noise-rap — abrasive, fractured, and genuinely unlike anything else in hip-hop that year. Hard to recommend casually, harder to forget.",
-          "sounds_like": ["Run The Jewels", "Kanye West", "TOOL"],
+          "album": "Vivadixiesubmarinetransmissionplot",
+          "artist": "Sparklehorse",
+          "year": 1995,
+          "genres": [
+            "indie rock",
+            "alternative",
+            "lo-fi"
+          ],
+          "track_count": 14,
+          "why_you": "Overlaps with your indie rock listening.",
+          "blurb": "Mark Linkous's debut as Sparklehorse is a woozy, damaged masterpiece of Southern lo-fi indie rock, where country, noise, and heartbreak coexist in recordings that sound like they're dissolving. Hammering the Cramps and Homecoming Queen are singular songs. It sits in the same emotional universe as your most-played artists.",
+          "sounds_like": [
+            "Red House Painters",
+            "Carissa's Wierd",
+            "Heatmiser"
+          ],
+          "art_local_path": "data/artwork/sparklehorse_vivadixiesubmarinetransmissionplot.jpg",
           "feedback": null
         },
         {
-          "album": "Journey in Satchidananda",
-          "artist": "Alice Coltrane",
-          "year": 1971,
-          "genres": ["spiritual jazz", "jazz"],
-          "track_count": 6,
-          "why_you": "Your Arthur Russell / Brian Eno listening suggests you'd take to this.",
-          "blurb": "Harp, oud, and saxophone drifting over a single meditative pulse. One of spiritual jazz's defining records, and a good entry point if modal, trance-like composition is new territory.",
-          "sounds_like": ["Arthur Russell", "Brian Eno", "Miles Davis"],
+          "album": "Embrya",
+          "artist": "Maxwell",
+          "year": 1998,
+          "genres": [
+            "rnb",
+            "soul",
+            "neo-soul"
+          ],
+          "track_count": 13,
+          "why_you": "In the same lane as D'Angelo, from a different angle.",
+          "blurb": "Maxwell's second album is a dense, sensual, avant-garde take on R&B, full of extended arrangements and a willingness to push the genre into strange territory. It flopped commercially at the time but has aged into a cult touchstone of late-90s neo-soul experimentation. If you love Black Messiah, this is the next step.",
+          "sounds_like": [
+            "D'Angelo",
+            "Frank Ocean",
+            "Erykah Badu"
+          ],
+          "art_local_path": "data/artwork/maxwell_embrya.jpg",
           "feedback": null
         }
       ]
@@ -63,121 +107,504 @@
   ],
   "pool": [
     {
-      "generated_at": "2026-07-15T09:10:00+00:00",
+      "generated_at": "2026-04-19T18:17:52.078022+00:00",
       "recommendations": [
         {
-          "album": "Grace",
-          "artist": "Jeff Buckley",
-          "year": 1994,
-          "genres": ["alternative rock", "singer-songwriter"],
-          "track_count": 10,
-          "why_you": "Tim Buckley's in your library — this is his son's one studio album, and it's a landmark in its own right.",
-          "blurb": "A singular vocal performance across ten songs that swing from delicate to devastating. Grace took years to find its audience but is now regarded as one of the great '90s rock records.",
-          "sounds_like": ["Tim Buckley", "Fiona Apple", "Radiohead"],
-          "feedback": null
-        },
-        {
-          "album": "Lift Yr. Skinny Fists Like Antennas to Heaven",
-          "artist": "Godspeed You! Black Emperor",
-          "year": 2000,
-          "genres": ["post-rock", "instrumental"],
-          "track_count": 4,
-          "why_you": "Your Explosions in the Sky / Russian Circles listening points here directly.",
-          "blurb": "Four side-long movements of slow-building dread and release, built from field recordings and a wall of strings and guitar. One of post-rock's essential, most-imitated records.",
-          "sounds_like": ["Explosions In The Sky", "Russian Circles", "Slint"],
-          "feedback": null
-        },
-        {
-          "album": "Elis & Tom",
-          "artist": "Elis Regina & Antônio Carlos Jobim",
-          "year": 1974,
-          "genres": ["mpb", "bossa nova"],
+          "album": "The Ugly Organ",
+          "artist": "Cursive",
+          "year": 2003,
+          "genres": [
+            "emo",
+            "post-hardcore",
+            "indie rock"
+          ],
           "track_count": 11,
-          "why_you": "Same Brazilian songbook lineage as Gal Costa and Milton Nascimento in your library.",
-          "blurb": "Widely considered the finest bossa nova recording ever made — Elis Regina's voice and Jobim's writing at their absolute peak, recorded live-in-studio in Los Angeles over a handful of days.",
-          "sounds_like": ["Gal Costa", "Milton Nascimento", "João Bosco"],
+          "why_you": "Sits close to Jets To Brazil in your library.",
+          "blurb": "Tim Kasher's tortured cello-laced breakup record is one of emo's most literate and devastating statements. Cursive blend chamber instrumentation with jagged post-hardcore in a way few bands ever matched. It sits comfortably alongside Orange Rhyming Dictionary as a late-era emo masterwork.",
+          "sounds_like": [
+            "Jets To Brazil",
+            "Mineral",
+            "The Promise Ring"
+          ],
+          "art_local_path": "data/artwork/cursive_the_ugly_organ.jpg",
           "feedback": null
         },
         {
-          "album": "Splendor & Misery",
-          "artist": "clipping.",
-          "year": 2016,
-          "genres": ["hip-hop", "industrial", "experimental"],
-          "track_count": 14,
-          "why_you": "A concept album (runaway slave, alone on a spaceship) built from pure noise-rap production.",
-          "blurb": "A sci-fi concept record told through harsh, glitchy production and Daveed Diggs' rapid-fire delivery. Nominated for a Hugo Award for best dramatic presentation — not something you can say about many rap records.",
-          "sounds_like": ["Run The Jewels", "Kanye West", "Kendrick Lamar"],
+          "album": "Spiderland",
+          "artist": "Slint",
+          "year": 1991,
+          "genres": [
+            "post-rock",
+            "math rock",
+            "indie rock"
+          ],
+          "track_count": 6,
+          "why_you": "A natural next step from Explosions In The Sky.",
+          "blurb": "Slint's second and final album essentially invented post-rock and math rock in one quiet-loud gesture. Its tense, whispered narratives and sprawling guitar work cast a shadow over nearly everything in your library from Explosions In The Sky to Drive Like Jehu. Six tracks, zero filler, complete devastation.",
+          "sounds_like": [
+            "Explosions In The Sky",
+            "Fugazi",
+            "Drive Like Jehu"
+          ],
+          "art_local_path": "data/artwork/slint_spiderland.jpg",
           "feedback": null
         },
         {
-          "album": "LEGACY! LEGACY!",
-          "artist": "Jamila Woods",
-          "year": 2019,
-          "genres": ["neo-soul", "r&b"],
-          "track_count": 13,
-          "why_you": "Sits next to Erykah Badu and Daniel Caesar in your listening.",
-          "blurb": "Each song named for a Black artist or writer who shaped Woods — Zora, Betty, Miles, Sun Ra — turning tribute into some of the sharpest neo-soul songwriting of the decade.",
-          "sounds_like": ["Erykah Badu", "Daniel Caesar", "Solange"],
+          "album": "Is This Thing Loaded?",
+          "artist": "Northstar",
+          "year": 2002,
+          "genres": [
+            "emo",
+            "indie rock",
+            "alternative"
+          ],
+          "track_count": 11,
+          "why_you": "Overlaps with your emo listening.",
+          "blurb": "Northstar's debut is one of the most criminally slept-on emo records of the early 2000s, pairing huge melodic guitar work with genuinely affecting lyrics. The band occupied a sweet spot between the polish of Saves The Day and the earnestness of The Early November. If you loved those two favorited tracks, the full record more than delivers.",
+          "sounds_like": [
+            "Saves The Day",
+            "The Early November",
+            "Hot Rod Circuit"
+          ],
+          "art_local_path": "data/artwork/northstar_is_this_thing_loaded.jpg",
+          "feedback": null
+        },
+        {
+          "album": "Hex; Or Printing in the Infernal Method",
+          "artist": "Earth",
+          "year": 2005,
+          "genres": [
+            "drone",
+            "ambient country",
+            "experimental"
+          ],
+          "track_count": 8,
+          "why_you": "In the same lane as Boards of Canada, from a different angle.",
+          "blurb": "Earth's Dylan Carlson essentially reinvented his own band here, swapping crushing drone metal for vast, dusty Americana guitar figures that feel like the soundtrack to a dying frontier town. It is a genuinely singular record with no obvious peers, hypnotic and patient in a way that rewards the same kind of listening Boards of Canada demands. An overlooked touchstone that connects your ambient side to your heavier instincts.",
+          "sounds_like": [
+            "Boards of Canada",
+            "Sun Kil Moon",
+            "Explosions In The Sky"
+          ],
+          "art_local_path": "data/artwork/earth_hex_or_printing_in_the_infernal_method.jpg",
           "feedback": null
         }
       ]
     },
     {
-      "generated_at": "2026-06-28T18:45:00+00:00",
+      "generated_at": "2026-04-20T04:05:58.298365+00:00",
       "recommendations": [
         {
-          "album": "Loveless",
-          "artist": "My Bloody Valentine",
-          "year": 1991,
-          "genres": ["shoegaze", "noise pop"],
+          "album": "Is A Real Boy",
+          "artist": "Say Anything",
+          "year": 2004,
+          "genres": [
+            "indie rock",
+            "emo",
+            "alternative rock"
+          ],
+          "track_count": 14,
+          "why_you": "Draws on the indie rock side of your library.",
+          "blurb": "Max Bemis's unhinged debut is one of the sharpest, most melodically inventive emo records of the 2000s. Self-aware, literate, and emotionally raw, it pairs biting wit with genuinely anthemic songwriting. If Through Being Cool and Orange Rhyming Dictionary live in your rotation, this belongs there too.",
+          "sounds_like": [
+            "Saves The Day",
+            "Jets To Brazil",
+            "The Get Up Kids"
+          ],
+          "art_local_path": "data/artwork/say_anything_is_a_real_boy.jpg",
+          "feedback": null
+        },
+        {
+          "album": "All Hail West Texas",
+          "artist": "The Mountain Goats",
+          "year": 2002,
+          "genres": [
+            "indie folk",
+            "indie rock",
+            "lo-fi"
+          ],
+          "track_count": 14,
+          "why_you": "Sits close to Sun Kil Moon in your library.",
+          "blurb": "Recorded on a boombox, All Hail West Texas is lo-fi confessional songwriting at its most devastating. John Darnielle's narrative precision rivals any songwriter of his generation, spinning small-town American desperation into something mythic. Raw and intimate in the way only truly great records can be.",
+          "sounds_like": [
+            "Sun Kil Moon",
+            "Nick Drake",
+            "Neutral Milk Hotel"
+          ],
+          "art_local_path": "data/artwork/the_mountain_goats_all_hail_west_texas.jpg",
+          "feedback": null
+        },
+        {
+          "album": "Something To Write Home About",
+          "artist": "The Get Up Kids",
+          "year": 1999,
+          "genres": [
+            "emo",
+            "indie rock",
+            "alternative rock"
+          ],
           "track_count": 11,
-          "why_you": "The record most of your Cocteau Twins / Slowdive listening traces back to.",
-          "blurb": "Guitar as texture, not riff — an entire genre's blueprint, made by bending pitch and layering guitars until the songs dissolve into pure sound. Took two years and reportedly bankrupted a label to finish.",
-          "sounds_like": ["Cocteau Twins", "Slowdive", "Deerhunter"],
+          "why_you": "A natural next step from Saves The Day.",
+          "blurb": "Something To Write Home About is one of the defining records of late-90s emo, balancing earnest romanticism with muscular indie rock energy. The Get Up Kids perfected the blueprint that dozens of your favorite artists built upon. Melodic, urgent, and emotionally generous in every direction.",
+          "sounds_like": [
+            "Saves The Day",
+            "Hot Rod Circuit",
+            "Jets To Brazil"
+          ],
+          "art_local_path": "data/artwork/the_get_up_kids_something_to_write_home_about.jpg",
           "feedback": null
         },
         {
-          "album": "The Money Store",
-          "artist": "Death Grips",
-          "year": 2012,
-          "genres": ["experimental hip-hop", "industrial hip-hop"],
-          "track_count": 13,
-          "why_you": "For when Run the Jewels and TOOL aren't quite abrasive enough.",
-          "blurb": "Blown-out drums, screamed vocals, and production that sounds like it's actively falling apart — still one of the most influential and imitated rap records of the 2010s.",
-          "sounds_like": ["Run The Jewels", "TOOL", "Kanye West"],
-          "feedback": null
-        },
-        {
-          "album": "Terra dos Pássaros",
-          "artist": "Toninho Horta",
-          "year": 1980,
-          "genres": ["mpb", "jazz fusion"],
-          "track_count": 8,
-          "why_you": "Same Clube da Esquina circle as Milton Nascimento and João Bosco.",
-          "blurb": "Intricate, jazz-inflected guitar work from one of the quieter figures in the Clube da Esquina scene — a record beloved by guitarists and largely unknown outside Brazil.",
-          "sounds_like": ["Milton Nascimento", "João Bosco", "João Donato"],
-          "feedback": null
-        },
-        {
-          "album": "Simple Math",
-          "artist": "Manchester Orchestra",
-          "year": 2011,
-          "genres": ["indie rock", "alternative rock"],
-          "track_count": 11,
-          "why_you": "For the heavier, more orchestral end of your Brand New / The Hotelier listening.",
-          "blurb": "A breakup record scaled up to full orchestra and choir in places, without losing the raw nerve of the band's earlier, scrappier records.",
-          "sounds_like": ["Brand New", "The Hotelier", "Thursday"],
-          "feedback": null
-        },
-        {
-          "album": "Nine",
-          "artist": "Sault",
-          "year": 2021,
-          "genres": ["soul", "funk", "r&b"],
+          "album": "Disco Volante",
+          "artist": "Mr. Bungle",
+          "year": 1995,
+          "genres": [
+            "avant-garde",
+            "experimental rock",
+            "progressive rock"
+          ],
           "track_count": 9,
-          "why_you": "Modern soul in the Sade / Erykah Badu lane you already spend time in.",
-          "blurb": "Self-released, credits deliberately withheld, and available for exactly 99 days before the group pulled it — Sault's whole run has been an exercise in letting the music speak with zero context. This one leans hardest into groove.",
-          "sounds_like": ["Sade", "Erykah Badu", "Solange"],
+          "why_you": "Overlaps with your avant-garde listening.",
+          "blurb": "Mr. Bungle's second album is a genuinely unclassifiable collision of jazz, metal, ska, noise, and carnival music, held together by sheer compositional audacity. Mike Patton leads the ensemble through whiplash genre shifts that somehow cohere into something exhilarating. It rewards the kind of deep listening your profile clearly embraces.",
+          "sounds_like": [
+            "The Mars Volta",
+            "TOOL",
+            "CAN"
+          ],
+          "art_local_path": "data/artwork/mr_bungle_disco_volante.jpg",
+          "feedback": null
+        },
+        {
+          "album": "Hospice",
+          "artist": "The Antlers",
+          "year": 2009,
+          "genres": [
+            "indie rock",
+            "chamber pop",
+            "post-rock"
+          ],
+          "track_count": 10,
+          "why_you": "In the same lane as Sufjan Stevens, from a different angle.",
+          "blurb": "Hospice is a concept album built around grief, illness, and co-dependency, told with chamber pop arrangements and falsetto vocals that somehow make the weight bearable. Peter Silberman crafted one of the most emotionally profound indie records of the late 2000s, drawing comparisons to Sufjan and Bon Iver while sounding entirely singular. Rarely has an album earned its emotional extremity so honestly.",
+          "sounds_like": [
+            "Sufjan Stevens",
+            "Silver Mt. Zion",
+            "Bon Iver"
+          ],
+          "art_local_path": "data/artwork/the_antlers_hospice.jpg",
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "generated_at": "2026-05-02T17:14:13.117990+00:00",
+      "recommendations": [
+        {
+          "album": "The Moon & Antarctica",
+          "artist": "Modest Mouse",
+          "year": 2000,
+          "genres": [
+            "indie rock",
+            "alternative rock",
+            "lo-fi"
+          ],
+          "track_count": 14,
+          "why_you": "Draws on the indie rock side of your library.",
+          "blurb": "Modest Mouse's sprawling masterpiece blends existential dread with jagged guitar work and Isaac Brock's desperate vocals. It occupies a strange, haunted space between post-rock grandeur and indie rock intimacy. Few albums capture cosmic loneliness this viscerally.",
+          "sounds_like": [
+            "Red House Painters",
+            "Slint",
+            "Carissa's Wierd"
+          ],
+          "art_local_path": "data/artwork/modest_mouse_the_moon_antarctica.jpg",
+          "feedback": null
+        },
+        {
+          "album": "Something to Write Home About",
+          "artist": "The Get Up Kids",
+          "year": 1999,
+          "genres": [
+            "emo",
+            "indie rock",
+            "alternative rock"
+          ],
+          "track_count": 11,
+          "why_you": "Sits close to Jets To Brazil in your library.",
+          "blurb": "The Get Up Kids' defining record perfected the mid-period emo blueprint \u2014 melodic, urgent, and emotionally direct. Matt Pryor's plain-spoken heartbreak fits perfectly alongside Jets to Brazil's literate yearning. It remains a cornerstone of late-90s Midwest emo.",
+          "sounds_like": [
+            "Jets To Brazil",
+            "Hot Rod Circuit",
+            "The Promise Ring"
+          ],
+          "art_local_path": "data/artwork/the_get_up_kids_something_to_write_home_about.jpg",
+          "feedback": null
+        },
+        {
+          "album": "Lonesome Crowded West",
+          "artist": "Modest Mouse",
+          "year": 1997,
+          "genres": [
+            "indie rock",
+            "alternative rock",
+            "lo-fi"
+          ],
+          "track_count": 13,
+          "why_you": "A natural next step from Pixies.",
+          "blurb": "Loud, frantic, and deeply American, this is Modest Mouse at their most feral and propulsive. Isaac Brock spits anxious observations over lurching, distorted guitars that reward the same attention you give RHCP and Pixies. A rawer, scrappier companion to The Moon & Antarctica.",
+          "sounds_like": [
+            "Pixies",
+            "Red House Painters",
+            "Slint"
+          ],
+          "art_local_path": "data/artwork/modest_mouse_lonesome_crowded_west.jpg",
+          "feedback": null
+        },
+        {
+          "album": "Give Up",
+          "artist": "The Postal Service",
+          "year": 2003,
+          "genres": [
+            "indie pop",
+            "electronic",
+            "indie rock"
+          ],
+          "track_count": 10,
+          "why_you": "Overlaps with your indie pop listening.",
+          "blurb": "Ben Gibbard and Jimmy Tamborello's sole album is a meticulous fusion of warm electronic production and confessional indie songwriting. It's emotionally immediate in the way Sufjan Stevens is, but built on beats and synthesizers in the vein of your Boards of Canada obsession. Few albums in this vein have aged as gracefully.",
+          "sounds_like": [
+            "Boards of Canada",
+            "Sufjan Stevens",
+            "The Shins"
+          ],
+          "art_local_path": "data/artwork/the_postal_service_give_up.jpg",
+          "feedback": null
+        },
+        {
+          "album": "Lifted or The Story Is in the Soil, Keep Your Ear to the Ground",
+          "artist": "Bright Eyes",
+          "year": 2002,
+          "genres": [
+            "indie folk",
+            "emo",
+            "singer-songwriter"
+          ],
+          "track_count": 14,
+          "why_you": "In the same lane as Nick Drake, from a different angle.",
+          "blurb": "Conor Oberst's breakthrough is an ornate, sprawling folk-rock record that channels raw emotional urgency into something genuinely literary. It bridges the confessional singer-songwriter tradition of Nick Drake with the melodic emo sensibility you love in Jets to Brazil. Deeply felt and endlessly replayable.",
+          "sounds_like": [
+            "Nick Drake",
+            "Jets To Brazil",
+            "Sun Kil Moon"
+          ],
+          "art_local_path": "data/artwork/bright_eyes_lifted_or_the_story_is_in_the_soil_keep_your_ear.jpg",
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "generated_at": "2026-05-08T22:07:31.793401+00:00",
+      "recommendations": [
+        {
+          "album": "The Sunset Tree",
+          "artist": "The Mountain Goats",
+          "year": 2005,
+          "genres": [
+            "indie folk",
+            "singer-songwriter",
+            "indie rock"
+          ],
+          "track_count": 15,
+          "why_you": "Draws on the indie folk side of your library.",
+          "blurb": "John Darnielle's most acclaimed record, a semi-autobiographical account of surviving an abusive stepfather, delivered with raw emotional precision. It trades the lo-fi bedroom recordings of earlier work for a fuller band sound without losing any of its gut-punch intimacy. Widely considered the definitive Mountain Goats album.",
+          "sounds_like": [
+            "Jets To Brazil",
+            "Sun Kil Moon",
+            "Neutral Milk Hotel"
+          ],
+          "art_local_path": "data/artwork/the_mountain_goats_the_sunset_tree.jpg",
+          "feedback": null
+        },
+        {
+          "album": "Nebraska",
+          "artist": "Bruce Springsteen",
+          "year": 1982,
+          "genres": [
+            "folk rock",
+            "singer-songwriter",
+            "americana"
+          ],
+          "track_count": 10,
+          "why_you": "Sits close to Nick Drake in your library.",
+          "blurb": "Recorded entirely on a four-track cassette in Springsteen's bedroom, Nebraska is a harrowing tour through working-class desperation and moral darkness. Its stark minimalism and storytelling depth make it an outlier in his catalog and one of the most influential American albums ever made. Nothing sounds quite like it.",
+          "sounds_like": [
+            "Nick Drake",
+            "Bob Dylan",
+            "Red House Painters"
+          ],
+          "art_local_path": "data/artwork/bruce_springsteen_nebraska.jpg",
+          "feedback": null
+        },
+        {
+          "album": "Hymn to the Immortal Wind",
+          "artist": "Mono",
+          "year": 2009,
+          "genres": [
+            "post-rock",
+            "orchestral",
+            "instrumental rock"
+          ],
+          "track_count": 6,
+          "why_you": "A natural next step from Explosions In The Sky.",
+          "blurb": "Mono's masterpiece pairs crushing guitar walls with string orchestras across six massive tracks, reaching emotional peaks that feel genuinely transcendent. Recorded in New York with the American Contemporary Music Ensemble, it's post-rock at its most cinematic and devastating. Frequently cited alongside the genre's all-time greats.",
+          "sounds_like": [
+            "Explosions In The Sky",
+            "Silver Mt. Zion",
+            "Hammock"
+          ],
+          "art_local_path": "data/artwork/mono_hymn_to_the_immortal_wind.jpg",
+          "feedback": null
+        },
+        {
+          "album": "Endtroducing.....",
+          "artist": "DJ Shadow",
+          "year": 1996,
+          "genres": [
+            "electronic",
+            "trip-hop",
+            "instrumental hip-hop"
+          ],
+          "track_count": 12,
+          "why_you": "Overlaps with your electronic listening.",
+          "blurb": "Constructed entirely from vinyl samples, DJ Shadow's debut is a landmark of instrumental hip-hop that feels simultaneously melancholic, cinematic, and beat-driven. It opened a lane that Boards of Canada, Burial, and countless others would later inhabit. The Guinness World Record holder for first album made entirely from samples.",
+          "sounds_like": [
+            "Boards of Canada",
+            "Burial",
+            "De La Soul"
+          ],
+          "art_local_path": "data/artwork/dj_shadow_endtroducing.jpg",
+          "feedback": null
+        },
+        {
+          "album": "Dummy",
+          "artist": "Portishead",
+          "year": 1994,
+          "genres": [
+            "trip-hop",
+            "electronic",
+            "alternative"
+          ],
+          "track_count": 11,
+          "why_you": "In the same lane as Sade, from a different angle.",
+          "blurb": "Portishead's debut defined a generation of cinematic trip-hop, blending scratchy vinyl loops, spy-film guitar, and Beth Gibbons's devastated vocals into something utterly sui generis. Dummy went on to win the Mercury Prize and remains the entry point for the genre. Gorgeous, heavy, and timelessly melancholy.",
+          "sounds_like": [
+            "Sade",
+            "Burial",
+            "Boards of Canada"
+          ],
+          "art_local_path": "data/artwork/portishead_dummy.jpg",
+          "feedback": null
+        }
+      ]
+    },
+    {
+      "generated_at": "2026-05-24T03:22:32.594003+00:00",
+      "recommendations": [
+        {
+          "album": "Either/Or",
+          "artist": "Elliott Smith",
+          "year": 1997,
+          "genres": [
+            "indie folk",
+            "singer-songwriter",
+            "lo-fi"
+          ],
+          "track_count": 12,
+          "why_you": "Draws on the indie folk side of your library.",
+          "blurb": "Elliott Smith's breakthrough record is a masterclass in intimate, devastating songwriting. Hushed acoustic guitars and doubled vocals carry confessional lyrics that never tip into sentimentality. It's the kind of album that Red House Painters fans tend to describe as life-changing.",
+          "sounds_like": [
+            "Red House Painters",
+            "Nick Drake",
+            "Heatmiser"
+          ],
+          "art_local_path": "data/artwork/elliott_smith_eitheror.jpg",
+          "feedback": null
+        },
+        {
+          "album": "Madvillainy",
+          "artist": "Madvillain",
+          "year": 2004,
+          "genres": [
+            "hip-hop",
+            "underground rap",
+            "experimental"
+          ],
+          "track_count": 22,
+          "why_you": "Sits close to De La Soul in your library.",
+          "blurb": "MF DOOM and Madlib's collaborative masterpiece is the definitive underground hip-hop album\u201422 short, dense tracks where DOOM's labyrinthine rhymes sit over Madlib's crate-dug, warped production. It rewards obsessive relisting in the same way your favorite concept records do. Widely considered one of the greatest rap albums ever made.",
+          "sounds_like": [
+            "De La Soul",
+            "Aesop Rock",
+            "A Tribe Called Quest"
+          ],
+          "art_local_path": "data/artwork/madvillain_madvillainy.jpg",
+          "feedback": null
+        },
+        {
+          "album": "Illinois",
+          "artist": "Sufjan Stevens",
+          "year": 2005,
+          "genres": [
+            "indie folk",
+            "chamber pop",
+            "singer-songwriter"
+          ],
+          "track_count": 22,
+          "why_you": "A natural next step from Sufjan Stevens.",
+          "blurb": "INVALID \u2014 already in library. Buffer slot.",
+          "sounds_like": [
+            "Sufjan Stevens"
+          ],
+          "art_local_path": "data/artwork/sufjan_stevens_illinois.jpg",
+          "feedback": null
+        },
+        {
+          "album": "The Glow Pt. 2",
+          "artist": "The Microphones",
+          "year": 2001,
+          "genres": [
+            "lo-fi",
+            "indie folk",
+            "experimental rock"
+          ],
+          "track_count": 17,
+          "why_you": "Overlaps with your lo-fi listening.",
+          "blurb": "Phil Elverum's landmark record blends fragile bedroom folk with lurching noise and orchestral swells in ways that feel simultaneously broken and transcendent. It's the Pacific Northwest indie scene at its most emotionally unguarded. Fans of Carissa's Wierd and Sun Kil Moon consistently cite it as a companion piece.",
+          "sounds_like": [
+            "Carissa's Wierd",
+            "Red House Painters",
+            "Neutral Milk Hotel"
+          ],
+          "art_local_path": "data/artwork/the_microphones_the_glow_pt_2.jpg",
+          "feedback": null
+        },
+        {
+          "album": "Things We Lost in the Fire",
+          "artist": "Low",
+          "year": 2001,
+          "genres": [
+            "slowcore",
+            "indie rock",
+            "dream pop"
+          ],
+          "track_count": 11,
+          "why_you": "In the same lane as Carissa's Wierd, from a different angle.",
+          "blurb": "Low's fifth album perfected their signature slowcore approach\u2014glacially paced tempos, Alan and Mimi Parker's interlocking harmonies, and an emotional weight that feels almost unbearable by the final track. It sits in the same hushed, devastated space as Carissa's Wierd and Red House Painters. One of the defining records of early-2000s indie.",
+          "sounds_like": [
+            "Carissa's Wierd",
+            "Red House Painters",
+            "American Football"
+          ],
+          "art_local_path": "data/artwork/low_things_we_lost_in_the_fire.jpg",
           "feedback": null
         }
       ]

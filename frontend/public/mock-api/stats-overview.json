@@ -1,353 +1,353 @@
 {
-  "play_count": 12395,
-  "total_ms": 2975653383,
+  "play_count": 12223,
+  "total_ms": 2925645275,
   "days_span": 274,
   "top_artists": [
     {
-      "name": "Red Hot Chili Peppers",
-      "count": 316,
-      "album_title": "By the Way (Deluxe Edition)",
-      "art_path": "red_hot_chili_peppers_by_the_way_deluxe_edition.jpg",
-      "release_year": 2002
+      "name": "Sun Kil Moon",
+      "count": 310,
+      "album_title": "Among the Leaves",
+      "art_path": "sun_kil_moon_among_the_leaves.jpg",
+      "release_year": 2012
     },
     {
-      "name": "Sun Kil Moon",
-      "count": 306,
-      "album_title": "Benji",
-      "art_path": "sun_kil_moon_benji.jpg",
-      "release_year": 2014
+      "name": "Red Hot Chili Peppers",
+      "count": 274,
+      "album_title": "Californication (Deluxe Edition)",
+      "art_path": "red_hot_chili_peppers_californication_deluxe_edition.jpg",
+      "release_year": 1999
+    },
+    {
+      "name": "Daniel Caesar",
+      "count": 216,
+      "album_title": "NEVER ENOUGH",
+      "art_path": "daniel_caesar_never_enough.jpg",
+      "release_year": 2023
     },
     {
       "name": "Coheed and Cambria",
-      "count": 273,
+      "count": 212,
       "album_title": "In Keeping Secrets Of Silent Earth: 3",
       "art_path": "coheed_and_cambria_in_keeping_secrets_of_silent_earth_3.jpg",
       "release_year": 2003
     },
     {
-      "name": "Red House Painters",
-      "count": 166,
-      "album_title": "Songs For A Blue Guitar",
-      "art_path": "red_house_painters_songs_for_a_blue_guitar.jpg",
-      "release_year": 1996
+      "name": "At the Drive-In",
+      "count": 164,
+      "album_title": "Relationship Of Command",
+      "art_path": "at_the_drive_in_relationship_of_command.jpg",
+      "release_year": 2000
+    },
+    {
+      "name": "Kanye West",
+      "count": 154,
+      "album_title": "My Beautiful Dark Twisted Fantasy",
+      "art_path": "kanye_west_my_beautiful_dark_twisted_fantasy.jpg",
+      "release_year": 2010
     },
     {
       "name": "Kate Bush",
-      "count": 165,
+      "count": 154,
       "album_title": "The Sensual World (2018 Remaster)",
       "art_path": "kate_bush_the_sensual_world_2018_remaster.jpg",
       "release_year": 1989
     },
     {
-      "name": "Outkast",
-      "count": 159,
-      "album_title": "Stankonia",
-      "art_path": "outkast_stankonia.jpg",
-      "release_year": 2000
-    },
-    {
-      "name": "The Velvet Underground",
-      "count": 150,
-      "album_title": "Loaded (2015 Remaster)",
-      "art_path": "the_velvet_underground_loaded_2015_remaster.jpg",
-      "release_year": 1970
+      "name": "Red House Painters",
+      "count": 151,
+      "album_title": "Songs For A Blue Guitar",
+      "art_path": "red_house_painters_songs_for_a_blue_guitar.jpg",
+      "release_year": 1996
     },
     {
       "name": "Pixies",
-      "count": 144,
+      "count": 137,
       "album_title": "Surfer Rosa (2007 Remaster)",
       "art_path": "pixies_surfer_rosa_2007_remaster.jpg",
       "release_year": 1988
     },
     {
-      "name": "Black Flag",
-      "count": 140,
-      "album_title": "Damaged",
-      "art_path": "black_flag_damaged.jpg",
-      "release_year": 1981
-    },
-    {
-      "name": "L\u00f4 Borges",
+      "name": "System Of A Down",
       "count": 136,
-      "album_title": "Clube Da Esquina",
-      "art_path": "l\u00f4_borges_clube_da_esquina.jpg",
-      "release_year": 1972
+      "album_title": "System Of A Down",
+      "art_path": "system_of_a_down_system_of_a_down.jpg",
+      "release_year": 1998
     }
   ],
   "top_tracks": [
     [
-      "Temecula Sunrise  \u2014  Dirty Projectors",
-      13
-    ],
-    [
-      "It Must Really Suck To Be Four Year Strong Right Now  \u2014  Four Year Strong",
-      12
-    ],
-    [
-      "Strange Fruit  \u2014  Nina Simone",
-      11
-    ],
-    [
-      "Breaking the Habit  \u2014  Linkin Park",
-      11
-    ],
-    [
-      "Figure.09  \u2014  Linkin Park",
-      11
-    ],
-    [
-      "Faint  \u2014  Linkin Park",
-      11
-    ],
-    [
-      "Easier to Run  \u2014  Linkin Park",
-      11
-    ],
-    [
-      "Hit the Floor  \u2014  Linkin Park",
-      11
-    ],
-    [
-      "M\u00edlan\u00f3  \u2014  Sigur R\u00f3s",
+      "Good Riddance (Time of Your Life)  \u2014  Green Day",
       10
     ],
     [
-      "S\u00e6gl\u00f3pur  \u2014  Sigur R\u00f3s",
+      "Dropped  \u2014  Atoms For Peace",
+      10
+    ],
+    [
+      "Ingenue  \u2014  Atoms For Peace",
+      10
+    ],
+    [
+      "Cover Up  \u2014  Name Taken",
+      10
+    ],
+    [
+      "A Year Spent Cold  \u2014  Name Taken",
+      10
+    ],
+    [
+      "Control  \u2014  Name Taken",
+      10
+    ],
+    [
+      "Don't Ever Tell Locke What He Can't Do  \u2014  Moneen",
+      10
+    ],
+    [
+      "This Velvet Glove  \u2014  Red Hot Chili Peppers",
+      10
+    ],
+    [
+      "I Like Dirt  \u2014  Red Hot Chili Peppers",
+      10
+    ],
+    [
+      "Emit Remmus  \u2014  Red Hot Chili Peppers",
       10
     ]
   ],
   "by_decade": [
     [
       "1950s",
-      1
+      2
     ],
     [
       "1960s",
-      444
+      427
     ],
     [
       "1970s",
-      1485
+      1434
     ],
     [
       "1980s",
-      1717
+      1818
     ],
     [
       "1990s",
-      1879
+      1956
     ],
     [
       "2000s",
-      3623
+      3251
     ],
     [
       "2010s",
-      2540
+      2566
     ],
     [
       "2020s",
-      681
+      743
     ]
   ],
   "by_genre": [
     [
-      "rock",
-      4499
+      "alternative",
+      4344
     ],
     [
-      "alternative",
-      4419
+      "rock",
+      4338
     ],
     [
       "indie",
-      4230
+      4179
     ],
     [
       "indie rock",
-      2934
-    ],
-    [
-      "alternative rock",
-      1793
+      2799
     ],
     [
       "emo",
-      1741
+      1707
+    ],
+    [
+      "alternative rock",
+      1641
     ],
     [
       "singer-songwriter",
-      1357
-    ],
-    [
-      "electronic",
-      1177
-    ],
-    [
-      "folk",
-      1164
-    ],
-    [
-      "hip-hop",
-      1152
+      1379
     ],
     [
       "pop",
-      1108
+      1233
+    ],
+    [
+      "electronic",
+      1205
     ],
     [
       "female vocalists",
-      1101
+      1205
+    ],
+    [
+      "hip-hop",
+      1194
+    ],
+    [
+      "folk",
+      1193
     ]
   ],
   "top_albums": [
     {
+      "title": "Californication (Deluxe Edition)",
+      "subtitle": "Red Hot Chili Peppers",
+      "count": 108,
+      "art_path": "red_hot_chili_peppers_californication_deluxe_edition.jpg",
+      "art_key": "overview_album_2Y9IRtehByVkegoD7TcLfi"
+    },
+    {
+      "title": "3 Feet High and Rising",
+      "subtitle": "De La Soul",
+      "count": 106,
+      "art_path": "de_la_soul_3_feet_high_and_rising.jpg",
+      "art_key": "overview_album_34LxHI9x14qXUOS8AWRrYD"
+    },
+    {
+      "title": "Rain Dogs (2023 Remaster)",
+      "subtitle": "Tom Waits",
+      "count": 103,
+      "art_path": "tom_waits_rain_dogs_2023_remaster.jpg",
+      "art_key": "overview_album_51CvLH7MxsLuFgTwVvzApx"
+    },
+    {
+      "title": "Singles Going Steady",
+      "subtitle": "Buzzcocks",
+      "count": 86,
+      "art_path": "buzzcocks_singles_going_steady.jpg",
+      "art_key": "overview_album_6TxgQwGrbG3XZLNPOEhg7E"
+    },
+    {
       "title": "Damaged",
       "subtitle": "Black Flag",
-      "count": 140,
+      "count": 85,
       "art_path": "black_flag_damaged.jpg",
       "art_key": "overview_album_34aFnrFRBlErcbU6moRZR3"
     },
     {
-      "title": "Is a Real Boy",
-      "subtitle": "Say Anything",
-      "count": 124,
-      "art_path": "say_anything_is_a_real_boy.jpg",
-      "art_key": "overview_album_67GbWmsrvtIdOOUYRo7do7"
+      "title": "NEVER ENOUGH",
+      "subtitle": "Daniel Caesar",
+      "count": 82,
+      "art_path": "daniel_caesar_never_enough.jpg",
+      "art_key": "overview_album_2z9lM6LDS58F70IGyQ1XMK"
     },
     {
-      "title": "By the Way (Deluxe Edition)",
-      "subtitle": "Red Hot Chili Peppers",
-      "count": 121,
-      "art_path": "red_hot_chili_peppers_by_the_way_deluxe_edition.jpg",
-      "art_key": "overview_album_6deiaArbeoqp1xPEGdEKp1"
+      "title": "Blonde",
+      "subtitle": "Frank Ocean",
+      "count": 80,
+      "art_path": "frank_ocean_blonde.jpg",
+      "art_key": "overview_album_3mH6qwIy9crq0I9YQbOuDf"
     },
     {
-      "title": "Ready to Die (The Remaster)",
-      "subtitle": "The Notorious B.I.G.",
-      "count": 111,
-      "art_path": "the_notorious_big_ready_to_die_the_remaster.jpg",
-      "art_key": "overview_album_2HTbQ0RHwukKVXAlTmCZP2"
+      "title": "Among the Leaves",
+      "subtitle": "Sun Kil Moon",
+      "count": 80,
+      "art_path": "sun_kil_moon_among_the_leaves.jpg",
+      "art_key": "overview_album_1uIM6TngoKF0S8oPaDZPvv"
     },
     {
-      "title": "Stankonia",
-      "subtitle": "Outkast",
-      "count": 99,
-      "art_path": "outkast_stankonia.jpg",
-      "art_key": "overview_album_2tm3Ht61kqqRZtIYsBjxEj"
+      "title": "Relationship Of Command",
+      "subtitle": "At the Drive-In",
+      "count": 76,
+      "art_path": "at_the_drive_in_relationship_of_command.jpg",
+      "art_key": "overview_album_0Pv5bdtwTTBSHy9GyUe9um"
     },
     {
-      "title": "Quem \u00c9 Quem",
-      "subtitle": "Jo\u00e3o Donato",
-      "count": 99,
-      "art_path": "jo\u00e3o_donato_quem_\u00e9_quem.jpg",
-      "art_key": "overview_album_6GEO5pSp3ojwIm9vZqTtRd"
+      "title": "Rites of Spring",
+      "subtitle": "Rites of Spring",
+      "count": 75,
+      "art_path": "rites_of_spring_rites_of_spring.jpg",
+      "art_key": "overview_album_0pU2blS70BzVWyC1tVyaLg"
     },
     {
-      "title": "Stadium Arcadium",
-      "subtitle": "Red Hot Chili Peppers",
-      "count": 94,
-      "art_path": "red_hot_chili_peppers_stadium_arcadium.jpg",
-      "art_key": "overview_album_7xl50xr9NDkd3i2kBbzsNZ"
+      "title": "The Ugly Organ",
+      "subtitle": "Cursive",
+      "count": 72,
+      "art_path": "cursive_the_ugly_organ.jpg",
+      "art_key": "overview_album_3ZoVW62G8g8GC0yzpXOcKz"
     },
     {
-      "title": "Meteora (Bonus Edition)",
-      "subtitle": "Linkin Park",
-      "count": 94,
-      "art_path": "linkin_park_meteora_bonus_edition.jpg",
-      "art_key": "overview_album_0y13VbGddQ4azdVWakksAL"
-    },
-    {
-      "title": "Clube Da Esquina",
-      "subtitle": "L\u00f4 Borges",
-      "count": 91,
-      "art_path": "l\u00f4_borges_clube_da_esquina.jpg",
-      "art_key": "overview_album_5risYG7klZCSLMNxB9dZhf"
-    },
-    {
-      "title": "Weezer",
-      "subtitle": "Weezer",
-      "count": 85,
-      "art_path": "weezer_weezer.jpg",
-      "art_key": "overview_album_3hcrTu8zeynChXDOJt3lX2"
-    },
-    {
-      "title": "Paul's Boutique (20th Anniversary Edition / Remastered)",
-      "subtitle": "Beastie Boys",
-      "count": 84,
-      "art_path": "beastie_boys_pauls_boutique_20th_anniversary_edition_remaster.jpg",
-      "art_key": "overview_album_1kmyirVya5fRxdjsPFDM05"
-    },
-    {
-      "title": "Low (2017 Remaster)",
-      "subtitle": "David Bowie",
-      "count": 83,
-      "art_path": "david_bowie_low_2017_remaster.jpg",
-      "art_key": "overview_album_2de6LD7eOW8zrlorbS28na"
+      "title": "Straight Outta Compton",
+      "subtitle": "N.W.A.",
+      "count": 71,
+      "art_path": "nwa_straight_outta_compton.jpg",
+      "art_key": "overview_album_0Y7qkJVZ06tS2GUCDptzyW"
     }
   ],
   "time_of_day": {
-    "morning": 2891,
-    "afternoon": 5354,
-    "evening": 1725,
-    "night": 2425
+    "morning": 1001,
+    "afternoon": 3952,
+    "evening": 5258,
+    "night": 2012
   },
   "unique_artists": 355,
-  "unique_albums": 636,
+  "unique_albums": 633,
   "genre_detail": [
     {
-      "name": "rock",
-      "plays": 4499,
-      "avg_hour": 12.140253389642142,
-      "unique_tracks": 1571
+      "name": "alternative",
+      "plays": 4344,
+      "avg_hour": 16.054097605893187,
+      "unique_tracks": 1474
     },
     {
-      "name": "alternative",
-      "plays": 4419,
-      "avg_hour": 12.062683865127857,
-      "unique_tracks": 1453
+      "name": "rock",
+      "plays": 4338,
+      "avg_hour": 15.650069156293222,
+      "unique_tracks": 1519
     },
     {
       "name": "indie",
-      "plays": 4230,
-      "avg_hour": 11.87210401891253,
-      "unique_tracks": 1473
+      "plays": 4179,
+      "avg_hour": 16.0689160086145,
+      "unique_tracks": 1456
     },
     {
       "name": "indie rock",
-      "plays": 2934,
-      "avg_hour": 12.073278800272666,
-      "unique_tracks": 1026
-    },
-    {
-      "name": "alternative rock",
-      "plays": 1793,
-      "avg_hour": 12.272727272727273,
-      "unique_tracks": 528
+      "plays": 2799,
+      "avg_hour": 15.9167559842801,
+      "unique_tracks": 999
     },
     {
       "name": "emo",
-      "plays": 1741,
-      "avg_hour": 11.556576680068925,
-      "unique_tracks": 548
+      "plays": 1707,
+      "avg_hour": 16.009373169302872,
+      "unique_tracks": 577
+    },
+    {
+      "name": "alternative rock",
+      "plays": 1641,
+      "avg_hour": 15.528945764777575,
+      "unique_tracks": 532
     },
     {
       "name": "singer-songwriter",
-      "plays": 1357,
-      "avg_hour": 11.787030213706705,
-      "unique_tracks": 451
+      "plays": 1379,
+      "avg_hour": 15.329224075416969,
+      "unique_tracks": 445
+    },
+    {
+      "name": "pop",
+      "plays": 1233,
+      "avg_hour": 15.673154906731549,
+      "unique_tracks": 416
     },
     {
       "name": "electronic",
-      "plays": 1177,
-      "avg_hour": 11.561597281223449,
-      "unique_tracks": 471
-    },
-    {
-      "name": "folk",
-      "plays": 1164,
-      "avg_hour": 12.09192439862543,
-      "unique_tracks": 435
+      "plays": 1205,
+      "avg_hour": 15.91701244813278,
+      "unique_tracks": 464
     }
   ]
 }

@@ -2,57 +2,37 @@
   "collection_size": 142,
   "played_count": 71,
   "unplayed_count": 71,
-  "total_sessions": 126,
-  "total_minutes": 3842,
+  "total_sessions": 130,
+  "total_minutes": 4676,
   "top_records": [
     {
-      "release_id": 2379457,
-      "title": "Perch Patchwork",
+      "release_id": 10511319,
+      "title": "Looking Ocean ",
       "artists": [
-        "Maps And Atlases"
+        "Daedelus"
       ],
-      "art_filename": "vinyl/2379457.jpg",
-      "year": 2010,
+      "art_filename": "vinyl/10511319.jpg",
+      "year": 2012,
       "sessions": 4
     },
     {
-      "release_id": 6880569,
-      "title": "Gorillaz",
+      "release_id": 83677,
+      "title": "I Might Be Wrong - Live Recordings",
       "artists": [
-        "Gorillaz"
+        "Radiohead"
       ],
-      "art_filename": "vinyl/6880569.jpg",
+      "art_filename": "vinyl/83677.jpg",
       "year": 2001,
       "sessions": 4
     },
     {
-      "release_id": 12235767,
-      "title": "On Avery Island",
+      "release_id": 2254563,
+      "title": "Blue Sky Noise",
       "artists": [
-        "Neutral Milk Hotel"
+        "Circa Survive"
       ],
-      "art_filename": "vinyl/12235767.jpg",
-      "year": 1996,
-      "sessions": 4
-    },
-    {
-      "release_id": 6426728,
-      "title": "Alive 1997 / Alive 2007",
-      "artists": [
-        "Daft Punk"
-      ],
-      "art_filename": "vinyl/6426728.jpg",
-      "year": 2009,
-      "sessions": 4
-    },
-    {
-      "release_id": 4146204,
-      "title": "Floral Green",
-      "artists": [
-        "Title Fight"
-      ],
-      "art_filename": "vinyl/4146204.jpg",
-      "year": 2012,
+      "art_filename": "vinyl/2254563.jpg",
+      "year": 2010,
       "sessions": 4
     },
     {
@@ -66,44 +46,63 @@
       "sessions": 3
     },
     {
-      "release_id": 29868991,
-      "title": "Conversation Piece",
+      "release_id": 12235767,
+      "title": "On Avery Island",
       "artists": [
-        "A Lot Like Birds"
+        "Neutral Milk Hotel"
       ],
-      "art_filename": "vinyl/29868991.jpg",
+      "art_filename": "vinyl/12235767.jpg",
+      "year": 1996,
+      "sessions": 3
+    },
+    {
+      "release_id": 2940876,
+      "title": "Bon Iver, Bon Iver",
+      "artists": [
+        "Bon Iver"
+      ],
+      "art_filename": "vinyl/2940876.jpg",
       "year": 2011,
       "sessions": 3
     },
     {
-      "release_id": 2866477,
-      "title": "Goblin",
+      "release_id": 1709731,
+      "title": "Cryptomnesia",
       "artists": [
-        "Tyler, The Creator"
+        "El Grupo Nuevo De Omar Rodriguez Lopez"
       ],
-      "art_filename": "vinyl/2866477.jpg",
+      "art_filename": "vinyl/1709731.jpg",
+      "year": 2009,
+      "sessions": 3
+    },
+    {
+      "release_id": 6314990,
+      "title": "The Eraser",
+      "artists": [
+        "Thom Yorke"
+      ],
+      "art_filename": "vinyl/6314990.jpg",
+      "year": 2006,
+      "sessions": 3
+    },
+    {
+      "release_id": 2856645,
+      "title": "Helplessness Blues",
+      "artists": [
+        "Fleet Foxes"
+      ],
+      "art_filename": "vinyl/2856645.jpg",
       "year": 2011,
       "sessions": 3
     },
     {
-      "release_id": 2768615,
-      "title": "Pinnacles / Ye Ye",
+      "release_id": 33861543,
+      "title": "Deb\u00ed Tirar M\u00e1s Fotos",
       "artists": [
-        "Four Tet",
-        "Daphni"
+        "Bad Bunny"
       ],
-      "art_filename": "vinyl/2768615.jpg",
-      "year": 2011,
-      "sessions": 3
-    },
-    {
-      "release_id": 7256636,
-      "title": "The Earth Is Not A Cold Dead Place",
-      "artists": [
-        "Explosions In The Sky"
-      ],
-      "art_filename": "vinyl/7256636.jpg",
-      "year": 2003,
+      "art_filename": "vinyl/33861543.jpg",
+      "year": 2025,
       "sessions": 3
     }
   ]

@@ -10,6 +10,7 @@ const NAV = [
   { to: "/artists",   label: "Artists" },
   { to: "/albums",    label: "Albums" },
   { to: "/stats",     label: "Stats" },
+  { to: "/tops",      label: "Tops" },
   { to: "/vinyl",     label: "Vinyl" },
   { to: "/playlists", label: "Playlists" },
   { to: "/revisit",   label: "Revisit" },

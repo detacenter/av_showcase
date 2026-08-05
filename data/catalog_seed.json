@@ -67582,5 +67582,90 @@
       },
       "local_artwork": "data/artwork/vinyl/6384435.jpg"
     }
-  ]
+  ],
+  "album_tops": {
+    "2020s": [
+      "3RQQmkQEvNCY4prGKE6oc5",
+      "5feRs2ejrMcxuM5hcDDSBb",
+      "5K79FLRUCSysQnVESLcTdb",
+      "49TUnWv5swURA9osAyLHI2",
+      "22PkV1Le9P3X4RY4xtmK0q",
+      "2mzXddPCtNlGzttAcr97ON",
+      "2LKW0m9cC63QzEI9tJH3ql",
+      "6FJxoadUE4JNVwWHghBwnb",
+      "5ROzqM7rbMYoKbQIw4i7fp",
+      "7doW9YWOtpmqHBqAUuBaKO"
+    ],
+    "1990s": [
+      "6dVIqQ8qmQ5GBnJ9shOYGE",
+      "1DMMv1Kmoli3Y9fVEZDUVC",
+      "2guirTSEqLizK7j9i1MTTZ",
+      "17q5eeNk3HAjX1gzQnkTX7",
+      "0bQglEvsHphrS19FGODEGo",
+      "4uG8q3GPuWHQlRbswMIRS6",
+      "6LZiNXaDvhzvnXUubVOmNU",
+      "35qZXJifEQcpWnKP6E4oNv",
+      "2Us9qPHLvLoTl6HkYAPcz2",
+      "5uRdvUR7xCnHmUW8n64n9y"
+    ],
+    "Unknown": [],
+    "2010s": [
+      "3GEa8PdRoag1vtVUQCAla1",
+      "1SR0ivY6mBiJSSMhHOjzxQ",
+      "5fzDxefGUH8jM7T9HCLSNr",
+      "392p3shh2jkxUxY2VHvlH8",
+      "1lM5IfaqcIsXd6UCV3aDSs",
+      "7dBUmXkVXyQv60PoAWZAa1",
+      "3KpYyDP8q8sUBxatHaYEsP",
+      "7gsWAHLeT0w7es6FofOXk1",
+      "3bJtSVsqSsqmVtfvtnisbU",
+      "40C7bBDW77dS5BBbNzcdmm"
+    ],
+    "1980s": [
+      "34LxHI9x14qXUOS8AWRrYD",
+      "0DQyTVcDhK9wm0f6RaErWO",
+      "4YXo7p7aubyVIbNLoVlBp9",
+      "07BPkQfT4B5xjDwjCxRiN2",
+      "1FcRwT7uoNdO8L9wbYsfAY",
+      "78MM8HrabEGPLVWaJkM2t1",
+      "2ANVost0y2y52ema1E9xAZ",
+      "0A13JySVHzBoRZFk2o89Wl",
+      "6Sty6rLnMTXFjKxKUZEfmy",
+      "5Y0p2XCgRRIjna91aQE8q7"
+    ],
+    "1970s": [
+      "4LH4d3cOWNNsVw41Gqt2kv",
+      "0esHQqYklDPje00NUNq6py",
+      "3Qa2CdymyGvXkqoqIZykmT",
+      "76iTNsPU1yhKWcQrTc2qdA",
+      "630o1rKTDsLeIPreOY1jqP",
+      "5QtXhQE2WvVLz60sYwafQH",
+      "3b4E89rxzZQ9zkhgKpj8N4",
+      "5mwOo1zikswhmfHvtqVSXg",
+      "5EyIDBAqhnlkAHqvPRwdbX",
+      "0HHRIVjvBcnTepfeRVgS2f"
+    ],
+    "2000s": [
+      "6GjwtEZcfenmOf6l18N7T7",
+      "6vDiMhyfSnTn18OY99BSQX",
+      "3WFTGIO6E3Xh4paEOBY9OU",
+      "6uO5B6km2Dco28tOBmZtSU",
+      "2oWXmi9uLRKn60yRmY22MB",
+      "1pOl0KEC1iQnA6F0XxV4To",
+      "6ZB8qaR9JNuS0Q0bG1nbcH",
+      "3fNRzhnl6WAtghBXEeyaub",
+      "6jWde94ln40epKIQCd8XUh",
+      "0CA2EVHhRPR5VPV78KZw89"
+    ],
+    "1960s": [
+      "0ETFjACtuP2ADo6LFhL6HN",
+      "0Hs3BomCdwIWRhgT57x22T",
+      "5z090LQztiqh13wYspQvKQ",
+      "2EYVXfypcucR62WMKJl6Mr",
+      "2HOf3Nb44Us8U9oEtKLSrX",
+      "6Sts4Yh7KsDFwq2yTWrGGV",
+      "4NP1rhnsPdYpnyJP0p0k0L",
+      "2CNEkSE8TADXRT2AzcEt1b"
+    ]
+  }
 }

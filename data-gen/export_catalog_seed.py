@@ -325,6 +325,21 @@ def main() -> None:
             "local_artwork": bundle_vinyl_art(release_id),
         })
 
+    # Real per-decade "top 10 albums" picks (session 6) — a curated opinion
+    # about public albums, same "safe to reuse" tier as the real ratings
+    # already carried through above, not behavioral/timing data. Filtered to
+    # only album_ids actually present in this seed's catalog — a top pick
+    # for an album outside the seed can never resolve to anything real
+    # downstream anyway (the real app's own /api/tops builds its album index
+    # from the log, same filtering it already does for stored-but-untouched
+    # picks).
+    seed_album_ids = {al["album_id"] for a in seed_artists for al in a["albums"]}
+    real_album_tops = real_library.get("album_tops", {}).get("decades", {})
+    album_tops = {
+        decade: [aid for aid in ids if aid in seed_album_ids]
+        for decade, ids in real_album_tops.items()
+    }
+
     out = {
         "_meta": {
             "generated_by": "export_catalog_seed.py",
@@ -336,6 +351,7 @@ def main() -> None:
         },
         "artists": seed_artists,
         "vinyl_collection": vinyl_collection,
+        "album_tops": album_tops,
     }
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)

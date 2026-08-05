@@ -71,6 +71,7 @@ ENDPOINTS = {
     "/api/stats/sessions": "stats-sessions.json",
     "/api/vinyl/stats": "vinyl-stats.json",
     "/api/vinyl/sessions": "vinyl-sessions.json",
+    "/api/tops": "tops.json",
 }
 
 # Stats tabs with paginated/parameterized endpoints — bounded by the actual
