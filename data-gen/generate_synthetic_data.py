@@ -11,6 +11,7 @@ Deterministic: re-running with the same config produces byte-identical output.
 from __future__ import annotations
 
 import json
+import math
 import random
 import uuid
 from collections import defaultdict
@@ -120,14 +121,6 @@ def daypart_time(rng: random.Random, day: datetime, is_weekend: bool) -> datetim
     return day.replace(hour=0, minute=0, second=0, microsecond=0) + timedelta(minutes=minute)
 
 
-def session_length(rng: random.Random, remaining: int) -> int:
-    # geometric-ish: mostly short sessions, occasional long album-through listens
-    length = 1
-    while rng.random() < 0.72 and length < 16:
-        length += 1
-    return min(length, remaining)
-
-
 def make_context_uri(rng: random.Random, ctx_type: str | None, album_id: str, playlist_ids: list[str], artist_id: str | None) -> str | None:
     if ctx_type == "album":
         return f"spotify:album:{album_id}"
@@ -202,20 +195,37 @@ def main() -> None:
     # does. Caught via a real browser screenshot of the Discovery Balance
     # chart showing almost no "new" activity past the first couple weeks.
     # Top-ranked artists form the immediate "core rotation" (always
-    # available); the rest unlock on a random day spread across the full
-    # timespan, so new-artist events keep happening throughout.
-    # Unlocks are spread across the first ~40% of the timespan, not the
-    # whole thing — a late-unlocking tail artist still needs real runway to
-    # actually get sampled at all given the Zipf weighting (an artist
-    # unlocking with only 2-3 weeks left rarely gets drawn), so spreading
-    # across the full span was quietly starving catalog coverage (dropped
-    # from ~192/200 to ~124/200 artists ever played — caught by re-checking
-    # after the first version of this change, not just eyeballing the chart).
+    # available); the rest unlock on a random day spread across most of the
+    # timespan, so new-artist events keep happening throughout instead of
+    # concentrating early.
+    #
+    # Session 5, sixth pass: this was previously capped to the first ~40% of
+    # the timespan — an earlier attempt at spreading across the *full* span
+    # (under the old, narrower 200-artist catalog) had starved overall
+    # coverage (~192/200 -> ~124/200 artists ever played), since a
+    # late-unlocking artist needs real runway to actually get sampled. But
+    # capping at 40% has its own real cost, invisible until checked directly:
+    # every artist's *first-ever* appearance ends up crammed into the first
+    # ~108 of 270 days, so any trailing window (e.g. Trends' default "last 3
+    # months") shows literally zero new-artist events for its entire span —
+    # not thin, exactly zero, every day — because discovery has already
+    # structurally finished. Now that the catalog is 362 artists (up from
+    # 200) with healthy 360/362 coverage even before this change, there's
+    # real headroom to widen this back out — leaving ~15% of the timespan as
+    # a tail so a late unlock still gets some runway, rather than 0%.
+    # Own seeded stream (session 5, seventh pass) — this used to draw from the
+    # shared `rng`, which meant every tuning attempt on the unlock spread also
+    # silently reshuffled every *other* random decision in the whole
+    # simulation (day volume, artist picks, track selection — all downstream
+    # of the same stream), making the effect of any single change unpredictable
+    # and hard to reason about. Isolated the same way month_multiplier already
+    # is, so retuning this going forward only changes who unlocks when.
+    unlock_rng = random.Random(f"{BEHAVIOR_SEED}-unlock")
     core_count = max(1, len(ranked_artists) // 5)
     unlock_day: dict[str, int] = {}
     for i, a in enumerate(ranked_artists):
         name = a["artist_name"]
-        unlock_day[name] = 0 if i < core_count else rng.randint(0, max(1, int(total_days * 0.4)))
+        unlock_day[name] = 0 if i < core_count else unlock_rng.randint(0, max(1, int(total_days * 0.98)))
 
     # ── Pick a small set of "sticky partial" albums from the final era ────
     # (kept below 100% catalog completion on purpose, to show the "still
@@ -270,6 +280,9 @@ def main() -> None:
     mood_era = 0
     days_until_mood_change = 0
 
+    _dbg_deadend = 0
+    _dbg_success_picks = 0
+
     day = start_date
     day_index = 0
     while day < end_date:
@@ -287,9 +300,22 @@ def main() -> None:
         month_multiplier = month_multiplier_cache[month_key]
 
         day_multiplier = 1.15 if is_weekend else 1.0
-        plays_today = max(0, round(rng.gauss(
-            AVG_PLAYS_PER_DAY * day_multiplier * month_multiplier, AVG_PLAYS_PER_DAY * 0.3,
-        )))
+        # Log-normal, not Gaussian (session 5, eighth pass) — checked against
+        # the real listening_log's actual daily play counts (non-invasive:
+        # aggregate stats only, no real values copied through): real days
+        # ranged 4-192 plays with a coefficient of variation of ~0.51 (stdev
+        # 44 / mean 86), a heavily right-skewed "mostly quiet, occasional
+        # binge day" shape. A symmetric Gaussian at 0.3 CV was structurally
+        # incapable of producing that — real listening doesn't cluster near
+        # the mean, it has rare big spikes pulling the average up. Log-normal
+        # reproduces both the right skew and gives new-artist discovery counts
+        # (drawn from this same day's budget) the same day-to-day burstiness,
+        # without needing a separate mechanic for it.
+        target_mean = max(1.0, AVG_PLAYS_PER_DAY * day_multiplier * month_multiplier)
+        _cv = 0.55
+        _sigma = math.sqrt(math.log(1 + _cv ** 2))
+        _mu = math.log(target_mean) - _sigma ** 2 / 2
+        plays_today = max(0, round(rng.lognormvariate(_mu, _sigma)))
 
         remaining = plays_today
         current_time = None
@@ -312,44 +338,83 @@ def main() -> None:
             # stayed thin. A short, strong boost right at unlock guarantees
             # a real discovery event shows up there, without permanently
             # inflating that artist's long-run rotation weight.
-            weights = [
-                base_weight[a["artist_name"]] * era_weight(a, era, era_of_genre)
-                * (6.0 if 0 <= day_index - unlock_day[a["artist_name"]] <= 3 else 1.0)
-                * (0.3 ** picks_today.get(a["artist_name"], 0))
-                if unlock_day[a["artist_name"]] <= day_index
-                and picks_today.get(a["artist_name"], 0) < 3  # hard per-day cap, not just decay
-                else 0
-                for a in artists
-            ]
+            #
+            # Weights fold in album-cooldown eligibility directly (session 5,
+            # fourth pass) rather than drawing blind and retrying on a miss:
+            # a draw-then-retry design here (tried first) hit ~77 wasted
+            # retries per successful pick, because 54% of this catalog is
+            # single-album and a 90-day cooldown means "album on cooldown" is
+            # the *common* case, not rare. Filtering eligibility into the
+            # weights up front makes every draw either succeed or reflect a
+            # genuine dead end — no retry loop, no stall-guard needed, and an
+            # accurate signal for how much of the day's budget dead-ends.
+            eligible_by_artist: dict[str, list] = {}
+            weights = []
+            for a in artists:
+                name = a["artist_name"]
+                if unlock_day[name] > day_index or picks_today.get(name, 0) >= 3:
+                    weights.append(0)
+                    continue
+                elig = [
+                    al for al in a["albums"]
+                    if day_index - album_last_played_day.get(al["album_id"], -(ALBUM_COOLDOWN_DAYS + 1)) >= ALBUM_COOLDOWN_DAYS
+                ]
+                if not elig:
+                    weights.append(0)
+                    continue
+                eligible_by_artist[name] = elig
+                weights.append(
+                    base_weight[name] * era_weight(a, era, era_of_genre)
+                    * (6.0 if 0 <= day_index - unlock_day[name] <= 3 else 1.0)
+                    * (0.3 ** picks_today.get(name, 0))
+                )
             if not any(weights):
+                # No artist has both an unlocked slot and an eligible album
+                # today — a real dead end, so it does consume budget.
                 remaining -= 1
+                _dbg_deadend += 1
                 continue
             artist = rng.choices(artists, weights=weights, k=1)[0]
             picks_today[artist["artist_name"]] = picks_today.get(artist["artist_name"], 0) + 1
-            if not artist["albums"]:
-                remaining -= 1
-                continue
-            eligible_albums = [
-                al for al in artist["albums"]
-                if day_index - album_last_played_day.get(al["album_id"], -(ALBUM_COOLDOWN_DAYS + 1)) >= ALBUM_COOLDOWN_DAYS
-            ]
-            if not eligible_albums:
-                eligible_albums = artist["albums"]  # every album on cooldown — relax rather than block the artist
-            album = rng.choice(eligible_albums)
+            album = rng.choice(eligible_by_artist[artist["artist_name"]])
             album_last_played_day[album["album_id"]] = day_index
             tracks = album["tracks"]
             if not tracks:
                 remaining -= 1
                 continue
 
-            eligible_tracks = tracks
+            # Session shape (session 5, ninth pass — the actual root cause of
+            # Periods' sparse album grids). Checked against the real
+            # listening_log: when a real album gets played at all in a given
+            # week, it almost always gets *most or all* of its tracks played
+            # (25/29 albums in a sample real week hit >=80% real-tracklist
+            # coverage, several with play/distinct-track ratios up to ~4.7x —
+            # i.e. multiple full passes, not one partial sample). The old
+            # `session_length()` (~3.6 tracks on average, geometric) could
+            # never cross the real app's own 50%-of-tracklist Periods
+            # eligibility bar for a typical 8-15 track album, no matter how
+            # much catalog width, volume, or cooldown tuning happened
+            # upstream — that mismatch, not catalog size, was the real bug.
             if album["album_id"] in partial_albums:
+                # Sticky-partial albums are a small, deliberate subset kept
+                # below full completion on purpose (shows the real app's
+                # "still working through this album" UI state) — always
+                # low-coverage, not random.
                 cutoff = max(1, int(len(tracks) * 0.6))
                 eligible_tracks = tracks[:cutoff]
+                coverage_frac = 1.0
+            else:
+                eligible_tracks = tracks
+                coverage_frac = rng.uniform(0.8, 1.0) if rng.random() < 0.85 else rng.uniform(0.1, 0.5)
 
-            n = min(session_length(rng, remaining), len(eligible_tracks))
+            n = max(1, min(round(len(eligible_tracks) * coverage_frac), len(eligible_tracks)))
             start_idx = rng.randrange(0, max(1, len(eligible_tracks) - n + 1))
             session_tracks = eligible_tracks[start_idx:start_idx + n]
+
+            # How many times through this sitting — real data shows repeat
+            # listens within the same week for some albums, not just one pass.
+            n_passes = rng.choices([1, 2, 3, 4, 5], weights=[0.55, 0.2, 0.12, 0.08, 0.05], k=1)[0]
+            n_passes = max(1, min(n_passes, max(1, remaining // n)))
 
             session_start = daypart_time(rng, day, is_weekend)
             t = session_start
@@ -357,46 +422,51 @@ def main() -> None:
             device_name, device_type, _ = rng.choices(DEVICES, weights=[d[2] for d in DEVICES], k=1)[0]
             shuffle_state = rng.random() < 0.35
 
-            for track in session_tracks:
-                artist_ids = [artist["artist_id"]] if artist.get("artist_id") else []
-                entry = {
-                    "played_at": t.isoformat().replace("+00:00", "Z"),
-                    "track_name": track["track_name"],
-                    "artist_names": album.get("artist_names") or [artist["artist_name"]],
-                    "artist_ids": artist_ids,
-                    "album_name": album["album_name"],
-                    "track_id": track["track_id"],
-                    "album_id": album["album_id"],
-                    "duration_ms": track["duration_ms"],
-                    "explicit": False,
-                    "isrc": track.get("isrc"),
-                    "album_type": album.get("album_type"),
-                    "album_total_tracks": album.get("album_total_tracks"),
-                    "album_art_url": album.get("album_art_url"),
-                    "album_art_local_path": album.get("local_artwork"),
-                    "release_year": album.get("release_year"),
-                    "track_number": track.get("track_number"),
-                    "context_type": ctx_type,
-                    "context_uri": make_context_uri(rng, ctx_type, album["album_id"], playlist_ids, artist.get("artist_id")),
-                    "device_name": device_name,
-                    "device_type": device_type,
-                    "shuffle_state": shuffle_state,
-                }
-                log_entries.append(entry)
+            for _pass in range(n_passes):
+                for track in session_tracks:
+                    artist_ids = [artist["artist_id"]] if artist.get("artist_id") else []
+                    entry = {
+                        "played_at": t.isoformat().replace("+00:00", "Z"),
+                        "track_name": track["track_name"],
+                        "artist_names": album.get("artist_names") or [artist["artist_name"]],
+                        "artist_ids": artist_ids,
+                        "album_name": album["album_name"],
+                        "track_id": track["track_id"],
+                        "album_id": album["album_id"],
+                        "duration_ms": track["duration_ms"],
+                        "explicit": False,
+                        "isrc": track.get("isrc"),
+                        "album_type": album.get("album_type"),
+                        "album_total_tracks": album.get("album_total_tracks"),
+                        "album_art_url": album.get("album_art_url"),
+                        "album_art_local_path": album.get("local_artwork"),
+                        "release_year": album.get("release_year"),
+                        "track_number": track.get("track_number"),
+                        "context_type": ctx_type,
+                        "context_uri": make_context_uri(rng, ctx_type, album["album_id"], playlist_ids, artist.get("artist_id")),
+                        "device_name": device_name,
+                        "device_type": device_type,
+                        "shuffle_state": shuffle_state,
+                    }
+                    log_entries.append(entry)
 
-                play_counts_by_track[track["track_id"]] = play_counts_by_track.get(track["track_id"], 0) + 1
-                play_counts_by_album[album["album_id"]] = play_counts_by_album.get(album["album_id"], 0) + 1
-                play_counts_by_artist[artist["artist_name"]] = play_counts_by_artist.get(artist["artist_name"], 0) + 1
-                album_of_track[track["track_id"]] = album["album_id"]
-                artist_of_album[album["album_id"]] = artist["artist_name"]
+                    play_counts_by_track[track["track_id"]] = play_counts_by_track.get(track["track_id"], 0) + 1
+                    play_counts_by_album[album["album_id"]] = play_counts_by_album.get(album["album_id"], 0) + 1
+                    play_counts_by_artist[artist["artist_name"]] = play_counts_by_artist.get(artist["artist_name"], 0) + 1
+                    album_of_track[track["track_id"]] = album["album_id"]
+                    artist_of_album[album["album_id"]] = artist["artist_name"]
 
-                gap_s = rng.expovariate(1 / 15) if rng.random() < 0.15 else 0
-                t = t + timedelta(milliseconds=track["duration_ms"] or 200_000) + timedelta(seconds=gap_s)
+                    gap_s = rng.expovariate(1 / 15) if rng.random() < 0.15 else 0
+                    t = t + timedelta(milliseconds=track["duration_ms"] or 200_000) + timedelta(seconds=gap_s)
 
-            remaining -= n
+            remaining -= n * n_passes
+            _dbg_success_picks += 1
 
         day += timedelta(days=1)
         day_index += 1
+
+    print(f"  [debug] day-loop: {_dbg_success_picks} successful picks, "
+          f"{_dbg_deadend} dead-end budget losses")
 
     # Newest-first — matches the real app's actual invariant for
     # listening_log.json/state.log (routers/recent.py: "log = state.log  #

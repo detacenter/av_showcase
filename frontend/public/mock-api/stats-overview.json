@@ -1,349 +1,353 @@
 {
-  "play_count": 4640,
-  "total_ms": 1132407799,
+  "play_count": 12395,
+  "total_ms": 2975653383,
   "days_span": 274,
   "top_artists": [
     {
-      "name": "The Notorious B.I.G.",
-      "count": 594,
-      "album_title": "Ready to Die (The Remaster)",
-      "art_path": "the_notorious_big_ready_to_die_the_remaster.jpg",
-      "release_year": 1994
+      "name": "Red Hot Chili Peppers",
+      "count": 316,
+      "album_title": "By the Way (Deluxe Edition)",
+      "art_path": "red_hot_chili_peppers_by_the_way_deluxe_edition.jpg",
+      "release_year": 2002
     },
     {
-      "name": "Beyonc\u00e9",
-      "count": 406,
-      "album_title": "BEYONC\u00c9 [Platinum Edition]",
-      "art_path": "beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg",
+      "name": "Sun Kil Moon",
+      "count": 306,
+      "album_title": "Benji",
+      "art_path": "sun_kil_moon_benji.jpg",
       "release_year": 2014
     },
     {
-      "name": "Mom Jeans.",
-      "count": 301,
-      "album_title": "Best Buds",
-      "art_path": "mom_jeans_best_buds.jpg",
-      "release_year": 2016
+      "name": "Coheed and Cambria",
+      "count": 273,
+      "album_title": "In Keeping Secrets Of Silent Earth: 3",
+      "art_path": "coheed_and_cambria_in_keeping_secrets_of_silent_earth_3.jpg",
+      "release_year": 2003
     },
     {
-      "name": "Janet Jackson",
-      "count": 279,
-      "album_title": "Rhythm Nation 1814",
-      "art_path": "janet_jackson_rhythm_nation_1814.jpg",
+      "name": "Red House Painters",
+      "count": 166,
+      "album_title": "Songs For A Blue Guitar",
+      "art_path": "red_house_painters_songs_for_a_blue_guitar.jpg",
+      "release_year": 1996
+    },
+    {
+      "name": "Kate Bush",
+      "count": 165,
+      "album_title": "The Sensual World (2018 Remaster)",
+      "art_path": "kate_bush_the_sensual_world_2018_remaster.jpg",
       "release_year": 1989
     },
     {
-      "name": "Radiohead",
-      "count": 198,
-      "album_title": "Kid A",
-      "art_path": "radiohead_kid_a.jpg",
+      "name": "Outkast",
+      "count": 159,
+      "album_title": "Stankonia",
+      "art_path": "outkast_stankonia.jpg",
       "release_year": 2000
     },
     {
-      "name": "U2",
-      "count": 171,
-      "album_title": "The Joshua Tree",
-      "art_path": "u2_the_joshua_tree.jpg",
-      "release_year": 1987
-    },
-    {
-      "name": "Edu Lobo",
-      "count": 163,
-      "album_title": "Cantiga De Longe",
-      "art_path": "edu_lobo_cantiga_de_longe.jpg",
+      "name": "The Velvet Underground",
+      "count": 150,
+      "album_title": "Loaded (2015 Remaster)",
+      "art_path": "the_velvet_underground_loaded_2015_remaster.jpg",
       "release_year": 1970
     },
     {
-      "name": "L\u00f4 Borges",
+      "name": "Pixies",
       "count": 144,
+      "album_title": "Surfer Rosa (2007 Remaster)",
+      "art_path": "pixies_surfer_rosa_2007_remaster.jpg",
+      "release_year": 1988
+    },
+    {
+      "name": "Black Flag",
+      "count": 140,
+      "album_title": "Damaged",
+      "art_path": "black_flag_damaged.jpg",
+      "release_year": 1981
+    },
+    {
+      "name": "L\u00f4 Borges",
+      "count": 136,
       "album_title": "Clube Da Esquina",
       "art_path": "l\u00f4_borges_clube_da_esquina.jpg",
       "release_year": 1972
-    },
-    {
-      "name": "Dance Gavin Dance",
-      "count": 114,
-      "album_title": "Downtown Battle Mountain II",
-      "art_path": "dance_gavin_dance_downtown_battle_mountain_ii.jpg",
-      "release_year": 2011
-    },
-    {
-      "name": "Frank Ocean",
-      "count": 105,
-      "album_title": "channel ORANGE",
-      "art_path": "frank_ocean_channel_orange.jpg",
-      "release_year": 2012
     }
   ],
   "top_tracks": [
     [
-      "Zanzibar  \u2014  Edu Lobo",
-      163
+      "Temecula Sunrise  \u2014  Dirty Projectors",
+      13
     ],
     [
-      "Everyday Struggle - 2005 Remaster  \u2014  The Notorious B.I.G.",
-      48
+      "It Must Really Suck To Be Four Year Strong Right Now  \u2014  Four Year Strong",
+      12
     ],
     [
-      "Fuck Me (Interlude) - Interlude; 2005 Remaster  \u2014  The Notorious B.I.G.",
-      47
+      "Strange Fruit  \u2014  Nina Simone",
+      11
     ],
     [
-      "The What - 2005 Remaster  \u2014  The Notorious B.I.G.",
-      44
+      "Breaking the Habit  \u2014  Linkin Park",
+      11
     ],
     [
-      "*Sobs Quietly*  \u2014  Mom Jeans.",
-      43
+      "Figure.09  \u2014  Linkin Park",
+      11
     ],
     [
-      "Poor Boxer Shorts  \u2014  Mom Jeans.",
-      42
+      "Faint  \u2014  Linkin Park",
+      11
     ],
     [
-      "Juicy - 2005 Remaster  \u2014  The Notorious B.I.G.",
-      41
+      "Easier to Run  \u2014  Linkin Park",
+      11
     ],
     [
-      "Me and My Bitch - 2005 Remaster  \u2014  The Notorious B.I.G.",
-      39
+      "Hit the Floor  \u2014  Linkin Park",
+      11
     ],
     [
-      "Remy's Boyz  \u2014  Mom Jeans.",
-      39
+      "M\u00edlan\u00f3  \u2014  Sigur R\u00f3s",
+      10
     ],
     [
-      "Edward 40hands  \u2014  Mom Jeans.",
-      38
+      "S\u00e6gl\u00f3pur  \u2014  Sigur R\u00f3s",
+      10
     ]
   ],
   "by_decade": [
     [
+      "1950s",
+      1
+    ],
+    [
       "1960s",
-      81
+      444
     ],
     [
       "1970s",
-      599
+      1485
     ],
     [
       "1980s",
-      677
+      1717
     ],
     [
       "1990s",
-      964
+      1879
     ],
     [
       "2000s",
-      829
+      3623
     ],
     [
       "2010s",
-      1220
+      2540
     ],
     [
       "2020s",
-      270
+      681
     ]
   ],
   "by_genre": [
     [
-      "hip-hop",
-      1264
-    ],
-    [
-      "indie",
-      1249
+      "rock",
+      4499
     ],
     [
       "alternative",
-      1122
+      4419
     ],
     [
-      "rock",
-      1070
-    ],
-    [
-      "pop",
-      1031
-    ],
-    [
-      "female vocalists",
-      985
-    ],
-    [
-      "soul",
-      964
+      "indie",
+      4230
     ],
     [
       "indie rock",
-      898
+      2934
     ],
     [
-      "rnb",
-      889
-    ],
-    [
-      "rap",
-      735
-    ],
-    [
-      "hip hop",
-      704
+      "alternative rock",
+      1793
     ],
     [
       "emo",
-      653
+      1741
+    ],
+    [
+      "singer-songwriter",
+      1357
+    ],
+    [
+      "electronic",
+      1177
+    ],
+    [
+      "folk",
+      1164
+    ],
+    [
+      "hip-hop",
+      1152
+    ],
+    [
+      "pop",
+      1108
+    ],
+    [
+      "female vocalists",
+      1101
     ]
   ],
   "top_albums": [
     {
+      "title": "Damaged",
+      "subtitle": "Black Flag",
+      "count": 140,
+      "art_path": "black_flag_damaged.jpg",
+      "art_key": "overview_album_34aFnrFRBlErcbU6moRZR3"
+    },
+    {
+      "title": "Is a Real Boy",
+      "subtitle": "Say Anything",
+      "count": 124,
+      "art_path": "say_anything_is_a_real_boy.jpg",
+      "art_key": "overview_album_67GbWmsrvtIdOOUYRo7do7"
+    },
+    {
+      "title": "By the Way (Deluxe Edition)",
+      "subtitle": "Red Hot Chili Peppers",
+      "count": 121,
+      "art_path": "red_hot_chili_peppers_by_the_way_deluxe_edition.jpg",
+      "art_key": "overview_album_6deiaArbeoqp1xPEGdEKp1"
+    },
+    {
       "title": "Ready to Die (The Remaster)",
       "subtitle": "The Notorious B.I.G.",
-      "count": 594,
+      "count": 111,
       "art_path": "the_notorious_big_ready_to_die_the_remaster.jpg",
       "art_key": "overview_album_2HTbQ0RHwukKVXAlTmCZP2"
     },
     {
-      "title": "Best Buds",
-      "subtitle": "Mom Jeans.",
-      "count": 301,
-      "art_path": "mom_jeans_best_buds.jpg",
-      "art_key": "overview_album_0KzElSxcfAvleUIuOg0TOQ"
+      "title": "Stankonia",
+      "subtitle": "Outkast",
+      "count": 99,
+      "art_path": "outkast_stankonia.jpg",
+      "art_key": "overview_album_2tm3Ht61kqqRZtIYsBjxEj"
     },
     {
-      "title": "BEYONC\u00c9 [Platinum Edition]",
-      "subtitle": "Beyonc\u00e9",
-      "count": 223,
-      "art_path": "beyonc\u00e9_beyonc\u00e9_platinum_edition.jpg",
-      "art_key": "overview_album_2UJwKSBUz6rtW4QLK74kQu"
+      "title": "Quem \u00c9 Quem",
+      "subtitle": "Jo\u00e3o Donato",
+      "count": 99,
+      "art_path": "jo\u00e3o_donato_quem_\u00e9_quem.jpg",
+      "art_key": "overview_album_6GEO5pSp3ojwIm9vZqTtRd"
     },
     {
-      "title": "RENAISSANCE",
-      "subtitle": "Beyonc\u00e9",
-      "count": 183,
-      "art_path": "beyonc\u00e9_renaissance.jpg",
-      "art_key": "overview_album_6FJxoadUE4JNVwWHghBwnb"
+      "title": "Stadium Arcadium",
+      "subtitle": "Red Hot Chili Peppers",
+      "count": 94,
+      "art_path": "red_hot_chili_peppers_stadium_arcadium.jpg",
+      "art_key": "overview_album_7xl50xr9NDkd3i2kBbzsNZ"
     },
     {
-      "title": "The Joshua Tree",
-      "subtitle": "U2",
-      "count": 171,
-      "art_path": "u2_the_joshua_tree.jpg",
-      "art_key": "overview_album_5vBZRYu2GLA65nfxBvG1a7"
-    },
-    {
-      "title": "Cantiga De Longe",
-      "subtitle": "Edu Lobo",
-      "count": 163,
-      "art_path": "edu_lobo_cantiga_de_longe.jpg",
-      "art_key": "overview_album_5S7lcrRerABwsWzHisYsxP"
-    },
-    {
-      "title": "Rhythm Nation 1814",
-      "subtitle": "Janet Jackson",
-      "count": 103,
-      "art_path": "janet_jackson_rhythm_nation_1814.jpg",
-      "art_key": "overview_album_4OD3LU6001esAtFshDX46M"
+      "title": "Meteora (Bonus Edition)",
+      "subtitle": "Linkin Park",
+      "count": 94,
+      "art_path": "linkin_park_meteora_bonus_edition.jpg",
+      "art_key": "overview_album_0y13VbGddQ4azdVWakksAL"
     },
     {
       "title": "Clube Da Esquina",
       "subtitle": "L\u00f4 Borges",
-      "count": 97,
+      "count": 91,
       "art_path": "l\u00f4_borges_clube_da_esquina.jpg",
       "art_key": "overview_album_5risYG7klZCSLMNxB9dZhf"
     },
     {
-      "title": "Control",
-      "subtitle": "Janet Jackson",
-      "count": 96,
-      "art_path": "janet_jackson_control.jpg",
-      "art_key": "overview_album_7GWkceE5McMVfffd1RGL6Y"
+      "title": "Weezer",
+      "subtitle": "Weezer",
+      "count": 85,
+      "art_path": "weezer_weezer.jpg",
+      "art_key": "overview_album_3hcrTu8zeynChXDOJt3lX2"
     },
     {
-      "title": "The Velvet Rope",
-      "subtitle": "Janet Jackson",
-      "count": 80,
-      "art_path": "janet_jackson_the_velvet_rope.jpg",
-      "art_key": "overview_album_1uFp52Q9EXLNA6DTRYnpTj"
+      "title": "Paul's Boutique (20th Anniversary Edition / Remastered)",
+      "subtitle": "Beastie Boys",
+      "count": 84,
+      "art_path": "beastie_boys_pauls_boutique_20th_anniversary_edition_remaster.jpg",
+      "art_key": "overview_album_1kmyirVya5fRxdjsPFDM05"
     },
     {
-      "title": "Kid A",
-      "subtitle": "Radiohead",
-      "count": 76,
-      "art_path": "radiohead_kid_a.jpg",
-      "art_key": "overview_album_6GjwtEZcfenmOf6l18N7T7"
-    },
-    {
-      "title": "channel ORANGE",
-      "subtitle": "Frank Ocean",
-      "count": 73,
-      "art_path": "frank_ocean_channel_orange.jpg",
-      "art_key": "overview_album_392p3shh2jkxUxY2VHvlH8"
+      "title": "Low (2017 Remaster)",
+      "subtitle": "David Bowie",
+      "count": 83,
+      "art_path": "david_bowie_low_2017_remaster.jpg",
+      "art_key": "overview_album_2de6LD7eOW8zrlorbS28na"
     }
   ],
   "time_of_day": {
-    "morning": 1048,
-    "afternoon": 2270,
-    "evening": 338,
-    "night": 984
+    "morning": 2891,
+    "afternoon": 5354,
+    "evening": 1725,
+    "night": 2425
   },
-  "unique_artists": 178,
-  "unique_albums": 306,
+  "unique_artists": 355,
+  "unique_albums": 636,
   "genre_detail": [
     {
-      "name": "hip-hop",
-      "plays": 1264,
-      "avg_hour": 11.42009493670886,
-      "unique_tracks": 175
-    },
-    {
-      "name": "indie",
-      "plays": 1249,
-      "avg_hour": 11.547638110488391,
-      "unique_tracks": 435
+      "name": "rock",
+      "plays": 4499,
+      "avg_hour": 12.140253389642142,
+      "unique_tracks": 1571
     },
     {
       "name": "alternative",
-      "plays": 1122,
-      "avg_hour": 11.29144385026738,
-      "unique_tracks": 417
+      "plays": 4419,
+      "avg_hour": 12.062683865127857,
+      "unique_tracks": 1453
     },
     {
-      "name": "rock",
-      "plays": 1070,
-      "avg_hour": 11.202803738317757,
-      "unique_tracks": 398
-    },
-    {
-      "name": "pop",
-      "plays": 1031,
-      "avg_hour": 11.417070805043647,
-      "unique_tracks": 185
-    },
-    {
-      "name": "female vocalists",
-      "plays": 985,
-      "avg_hour": 11.279187817258883,
-      "unique_tracks": 213
-    },
-    {
-      "name": "soul",
-      "plays": 964,
-      "avg_hour": 11.127593360995851,
-      "unique_tracks": 201
+      "name": "indie",
+      "plays": 4230,
+      "avg_hour": 11.87210401891253,
+      "unique_tracks": 1473
     },
     {
       "name": "indie rock",
-      "plays": 898,
-      "avg_hour": 11.670378619153675,
-      "unique_tracks": 329
+      "plays": 2934,
+      "avg_hour": 12.073278800272666,
+      "unique_tracks": 1026
     },
     {
-      "name": "rnb",
-      "plays": 889,
-      "avg_hour": 11.176602924634421,
-      "unique_tracks": 183
+      "name": "alternative rock",
+      "plays": 1793,
+      "avg_hour": 12.272727272727273,
+      "unique_tracks": 528
+    },
+    {
+      "name": "emo",
+      "plays": 1741,
+      "avg_hour": 11.556576680068925,
+      "unique_tracks": 548
+    },
+    {
+      "name": "singer-songwriter",
+      "plays": 1357,
+      "avg_hour": 11.787030213706705,
+      "unique_tracks": 451
+    },
+    {
+      "name": "electronic",
+      "plays": 1177,
+      "avg_hour": 11.561597281223449,
+      "unique_tracks": 471
+    },
+    {
+      "name": "folk",
+      "plays": 1164,
+      "avg_hour": 12.09192439862543,
+      "unique_tracks": 435
     }
   ]
 }

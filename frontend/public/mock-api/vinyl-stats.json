@@ -2,107 +2,108 @@
   "collection_size": 142,
   "played_count": 71,
   "unplayed_count": 71,
-  "total_sessions": 117,
-  "total_minutes": 3840,
+  "total_sessions": 126,
+  "total_minutes": 3842,
   "top_records": [
     {
-      "release_id": 6265500,
-      "title": "Pope Killdragon",
+      "release_id": 2379457,
+      "title": "Perch Patchwork",
       "artists": [
-        "Strand Of Oaks"
+        "Maps And Atlases"
       ],
-      "art_filename": "vinyl/6265500.jpg",
+      "art_filename": "vinyl/2379457.jpg",
       "year": 2010,
       "sessions": 4
     },
     {
-      "release_id": 2940876,
-      "title": "Bon Iver, Bon Iver",
+      "release_id": 6880569,
+      "title": "Gorillaz",
       "artists": [
-        "Bon Iver"
+        "Gorillaz"
       ],
-      "art_filename": "vinyl/2940876.jpg",
-      "year": 2011,
+      "art_filename": "vinyl/6880569.jpg",
+      "year": 2001,
       "sessions": 4
     },
     {
-      "release_id": 1428079,
-      "title": "Water Curses",
+      "release_id": 12235767,
+      "title": "On Avery Island",
       "artists": [
-        "Animal Collective"
+        "Neutral Milk Hotel"
       ],
-      "art_filename": "vinyl/1428079.jpg",
-      "year": 2008,
+      "art_filename": "vinyl/12235767.jpg",
+      "year": 1996,
       "sessions": 4
     },
     {
-      "release_id": 28392721,
-      "title": "Slow Riot For New Zero Kanada E.P.",
+      "release_id": 6426728,
+      "title": "Alive 1997 / Alive 2007",
       "artists": [
-        "Godspeed You Black Emperor!"
+        "Daft Punk"
       ],
-      "art_filename": "vinyl/28392721.jpg",
-      "year": 1999,
-      "sessions": 4
-    },
-    {
-      "release_id": 1566000,
-      "title": "Se Dice Bisonte, No B\u00f9falo",
-      "artists": [
-        "Omar Rodriguez-Lopez"
-      ],
-      "art_filename": "vinyl/1566000.jpg",
-      "year": 2007,
-      "sessions": 4
-    },
-    {
-      "release_id": 1668310,
-      "title": "Microcastle / Weird Era Continued",
-      "artists": [
-        "Deerhunter"
-      ],
-      "art_filename": "vinyl/1668310.jpg",
+      "art_filename": "vinyl/6426728.jpg",
       "year": 2009,
       "sessions": 4
     },
     {
-      "release_id": 2831206,
-      "title": "An Introduction To Syd Barrett",
+      "release_id": 4146204,
+      "title": "Floral Green",
       "artists": [
-        "Syd Barrett"
+        "Title Fight"
       ],
-      "art_filename": "vinyl/2831206.jpg",
+      "art_filename": "vinyl/4146204.jpg",
+      "year": 2012,
+      "sessions": 4
+    },
+    {
+      "release_id": 2331725,
+      "title": "Ciencia De Los In\u00fatiles",
+      "artists": [
+        "El Tr\u00edo De Omar Rodriguez Lopez"
+      ],
+      "art_filename": "vinyl/2331725.jpg",
       "year": 2010,
       "sessions": 3
     },
     {
-      "release_id": 171890,
-      "title": "There There",
+      "release_id": 29868991,
+      "title": "Conversation Piece",
       "artists": [
-        "Radiohead"
+        "A Lot Like Birds"
       ],
-      "art_filename": "vinyl/171890.jpg",
+      "art_filename": "vinyl/29868991.jpg",
+      "year": 2011,
+      "sessions": 3
+    },
+    {
+      "release_id": 2866477,
+      "title": "Goblin",
+      "artists": [
+        "Tyler, The Creator"
+      ],
+      "art_filename": "vinyl/2866477.jpg",
+      "year": 2011,
+      "sessions": 3
+    },
+    {
+      "release_id": 2768615,
+      "title": "Pinnacles / Ye Ye",
+      "artists": [
+        "Four Tet",
+        "Daphni"
+      ],
+      "art_filename": "vinyl/2768615.jpg",
+      "year": 2011,
+      "sessions": 3
+    },
+    {
+      "release_id": 7256636,
+      "title": "The Earth Is Not A Cold Dead Place",
+      "artists": [
+        "Explosions In The Sky"
+      ],
+      "art_filename": "vinyl/7256636.jpg",
       "year": 2003,
-      "sessions": 3
-    },
-    {
-      "release_id": 4985843,
-      "title": "Geogaddi",
-      "artists": [
-        "Boards Of Canada"
-      ],
-      "art_filename": "vinyl/4985843.jpg",
-      "year": 2002,
-      "sessions": 3
-    },
-    {
-      "release_id": 8340363,
-      "title": "Person Pitch",
-      "artists": [
-        "Panda Bear"
-      ],
-      "art_filename": "vinyl/8340363.jpg",
-      "year": 2007,
       "sessions": 3
     }
   ]
