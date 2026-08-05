@@ -179,7 +179,7 @@ function SparklineGrid({ days }: { days: DailyEntry[] }) {
   }
 
   function renderAll() {
-    return METRICS.map((m, idx) => {
+    return METRICS.map((m) => {
       const values = days.map(d => d[m.key as keyof DailyEntry] as number);
       const avg = rolling(values);
       const maxAvg = Math.max(...avg) || 1;
@@ -775,7 +775,6 @@ function GenreWeatherChart({ data }: { data: WeatherData }) {
         {/* Right panel */}
         {(() => {
           const x0 = w - PAD_R + 14;
-          const panelW = PAD_R - 18;
           if (hoveredDayI >= 0 && hoveredDayI < n) {
             const total = totals[hoveredDayI] ?? 0;
             const dayGenres = genres

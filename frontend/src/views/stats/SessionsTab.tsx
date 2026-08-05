@@ -205,7 +205,7 @@ function WeekGrid({ sessions, vinylSessions, weekStart, selectedId, onSelect }: 
   selectedId: string | null;
   onSelect: (id: string) => void;
 }) {
-  const [tick, setTick] = useState(0);
+  const [, setTick] = useState(0);
 
   useEffect(() => {
     const hasLive = vinylSessions.some(isLive);

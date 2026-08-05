@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect, useCallback } from "react";
+import { useState, useRef, useEffect, useCallback, type JSX } from "react";
 import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import { api } from "../../api/client";
 

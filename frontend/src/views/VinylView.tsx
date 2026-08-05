@@ -337,7 +337,7 @@ function WantlistPanel() {
   const startPoll = useCallback(() => {
     if (syncPollRef.current) clearInterval(syncPollRef.current);
     syncPollRef.current = setInterval(async () => {
-      const s = await api.get("/api/vinyl/wantlist/sync/status");
+      const s = await api.get<{ running: boolean; message: string }>("/api/vinyl/wantlist/sync/status");
       setSyncMsg(s.message);
       if (!s.running) {
         clearInterval(syncPollRef.current!);
@@ -355,7 +355,7 @@ function WantlistPanel() {
 
   // On mount: resume tracking if a sync is already running on the backend
   useEffect(() => {
-    api.get("/api/vinyl/wantlist/sync/status").then(s => {
+    api.get<{ running: boolean; message: string }>("/api/vinyl/wantlist/sync/status").then(s => {
       if (s.running) { setSyncing(true); setSyncMsg(s.message); startPoll(); }
     }).catch(() => {});
     return () => { if (syncPollRef.current) clearInterval(syncPollRef.current); };

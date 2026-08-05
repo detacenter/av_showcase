@@ -189,7 +189,7 @@ export function VisualizerView() {
   const [running, setRunning] = useState(false);
   const [devices, setDevices] = useState<MediaDeviceInfo[]>([]);
   const [deviceId, setDeviceId] = useState("");
-  const [status, setStatus] = useState("Idle");
+  const [, setStatus] = useState("Idle");
   const modeRef = useRef<Mode>(mode);
   modeRef.current = mode;
 
