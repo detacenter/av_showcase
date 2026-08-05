@@ -162,6 +162,15 @@ function computeWindow(
     const startMin = minutesOfDay(new Date(s.start));
     const endMin = startMin + s.duration_minutes;
     offsets.push([startMin, Math.min(endMin, 1440)]);
+    // A session crossing midnight gets rendered as a second segment starting
+    // at minute 0 on the following day (see the dayDigital-building loop
+    // below) — that continuation segment's own start (0) needs to be part of
+    // this window computation too, or it can fall outside [winStart, winEnd]
+    // and render at a negative pct(), pushing the bar left of the timeline
+    // into the date-label column.
+    if (endMin > 1440) {
+      offsets.push([0, endMin - 1440]);
+    }
   }
   for (const vs of weekVinyl) {
     const d = vinylStartDate(vs);
