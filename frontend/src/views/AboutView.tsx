@@ -321,7 +321,9 @@ export function AboutView() {
           behind this page: everything you see is served from static files, with a service
           worker standing in for the real API. See the{" "}
           <Link to="/api-guide" style={{ color: "var(--white)" }}>API guide ↗</Link> to try the
-          actual endpoints behind every view on this site.
+          actual endpoints behind every view on this site, or the{" "}
+          <Link to="/shortcuts" style={{ color: "var(--white)" }}>keyboard shortcuts ↗</Link>{" "}
+          reference for how it's meant to be driven.
         </p>
 
         <StackAndScale />

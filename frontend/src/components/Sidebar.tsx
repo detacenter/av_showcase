@@ -211,6 +211,26 @@ export function Sidebar() {
         >
           ?
         </NavLink>
+        <NavLink
+          to="/shortcuts"
+          title="Keyboard shortcuts"
+          style={({ isActive }) => ({
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: 22,
+            height: 22,
+            borderRadius: "50%",
+            border: `1px solid ${isActive ? "var(--white)" : "var(--dim)"}`,
+            color: isActive ? "var(--white)" : "var(--dim)",
+            fontSize: 11,
+            fontWeight: 700,
+            textDecoration: "none",
+            flexShrink: 0,
+          })}
+        >
+          ⌘
+        </NavLink>
       </div>
     </aside>
   );

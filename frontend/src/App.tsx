@@ -16,6 +16,7 @@ import { ClaudioView } from "./views/ClaudioView";
 import { RevisitView } from "./views/RevisitView";
 import { AboutView } from "./views/AboutView";
 import { APIGuideView } from "./views/APIGuideView";
+import { ShortcutsView } from "./views/ShortcutsView";
 import { VinylSessionPrompt } from "./components/VinylSessionPrompt";
 import { SpotifyReauthBanner } from "./components/SpotifyReauthBanner";
 import { SandboxBanner } from "./components/SandboxBanner";
@@ -84,6 +85,7 @@ export default function App() {
           <Route path="/claudio" element={<Layout><ClaudioView /></Layout>} />
           <Route path="/about" element={<Layout><AboutView /></Layout>} />
           <Route path="/api-guide" element={<Layout><APIGuideView /></Layout>} />
+          <Route path="/shortcuts" element={<Layout><ShortcutsView /></Layout>} />
           <Route path="/visualizer" element={<VisualizerRoute />} />
           <Route path="*" element={<Layout><div style={{ padding: 24, color: "var(--dim)" }}>Coming soon</div></Layout>} />
         </Routes>
