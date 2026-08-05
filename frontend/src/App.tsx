@@ -10,13 +10,15 @@ import { PlaylistsView, PlaylistDetailView } from "./views/PlaylistsView";
 import { VinylView } from "./views/VinylView";
 import { SettingsView, applyAccent } from "./views/SettingsView";
 import { StatsView } from "./views/StatsView";
-import { DevView } from "./views/DevView";
 import { TopsView } from "./views/TopsView";
 import { VisualizerView } from "./views/VisualizerView";
 import { ClaudioView } from "./views/ClaudioView";
 import { RevisitView } from "./views/RevisitView";
+import { AboutView } from "./views/AboutView";
+import { APIGuideView } from "./views/APIGuideView";
 import { VinylSessionPrompt } from "./components/VinylSessionPrompt";
 import { SpotifyReauthBanner } from "./components/SpotifyReauthBanner";
+import { SandboxBanner } from "./components/SandboxBanner";
 import { api } from "./api/client";
 import type { AppSettings } from "./api/types";
 
@@ -42,6 +44,7 @@ function Layout({ children }: { children: React.ReactNode }) {
       <Sidebar />
       <main style={{ flex: 1, overflow: "hidden", display: "flex", flexDirection: "column" }}>
         <SpotifyReauthBanner />
+        <SandboxBanner />
         {children}
       </main>
     </>
@@ -77,9 +80,10 @@ export default function App() {
           <Route path="/vinyl" element={<Layout><VinylView /></Layout>} />
           <Route path="/settings" element={<Layout><SettingsView /></Layout>} />
           <Route path="/stats" element={<Layout><StatsView /></Layout>} />
-          <Route path="/dev" element={<Layout><DevView /></Layout>} />
           <Route path="/tops" element={<Layout><TopsView /></Layout>} />
           <Route path="/claudio" element={<Layout><ClaudioView /></Layout>} />
+          <Route path="/about" element={<Layout><AboutView /></Layout>} />
+          <Route path="/api-guide" element={<Layout><APIGuideView /></Layout>} />
           <Route path="/visualizer" element={<VisualizerRoute />} />
           <Route path="*" element={<Layout><div style={{ padding: 24, color: "var(--dim)" }}>Coming soon</div></Layout>} />
         </Routes>

@@ -2,9 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api/client";
 import type { AppSettings } from "../api/types";
-import { LogoMark } from "../components/LogoMark";
 
-import { API_BASE as ICON_BASE } from "../api/config";
 
 // ── Color math ────────────────────────────────────────────────────────────────
 
@@ -114,118 +112,6 @@ function HueBar({ color, onChange }: { color: string; onChange: (hex: string) =>
   );
 }
 
-// ── App icons ─────────────────────────────────────────────────────────────────
-
-const ICON_OPTIONS: [string, string][] = [
-  ["play_burst", "Play Burst"],
-  ["fan",        "Fan"],
-  ["fan_av",     "Fan AV"],
-  ["fan_down",   "Fan ↓"],
-  ["fan_down_av","Fan ↓ AV"],
-  ["lines",      "Lines"],
-  ["prism",      "Prism"],
-  ["bloom",      "Bloom"],
-];
-
-function IconPicker({ value, onChange }: { value: string; onChange: (v: string) => void }) {
-  return (
-    <div style={{ display: "flex", flexWrap: "wrap", gap: 16 }}>
-      {ICON_OPTIONS.map(([key, label]) => {
-        const active = value === key;
-        return (
-          <div key={key} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
-            <div
-              onClick={() => onChange(key)}
-              style={{
-                width: 80, height: 80, borderRadius: 18, overflow: "hidden",
-                border: active ? "2px solid var(--green)" : "2px solid #2a2a2a",
-                cursor: "pointer", background: "#0a0a0a",
-                display: "flex", alignItems: "center", justifyContent: "center",
-                transition: "border-color 0.15s",
-              }}
-            >
-              <img
-                src={`${ICON_BASE}/icons/${key}.png`}
-                width={72} height={72}
-                style={{ display: "block", borderRadius: 14 }}
-              />
-            </div>
-            <span style={{ fontSize: 11, color: active ? "var(--green)" : "#666" }}>{label}</span>
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-
-// ── Sidebar logos ─────────────────────────────────────────────────────────────
-
-const LOGO_OPTIONS: [string, string][] = [
-  ["rings",    "Rings"],
-  ["spectrum", "Spectrum"],
-  ["fan",      "Fan"],
-  ["prism",    "Prism"],
-];
-
-function LogoPicker({ value, onChange }: { value: string; onChange: (v: string) => void }) {
-  return (
-    <div style={{ display: "flex", gap: 16 }}>
-      {LOGO_OPTIONS.map(([key, label]) => {
-        const active = value === key;
-        return (
-          <div key={key} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 8 }}>
-            <div
-              onClick={() => onChange(key)}
-              style={{
-                width: 86, height: 86, borderRadius: 14,
-                border: active ? "2px solid var(--green)" : "2px solid #2a2a2a",
-                cursor: "pointer", background: "#111",
-                display: "flex", alignItems: "center", justifyContent: "center",
-                transition: "border-color 0.15s",
-              }}
-            >
-              <LogoMark style={key} width={60} />
-            </div>
-            <span style={{ fontSize: 11, color: active ? "var(--green)" : "#666" }}>{label}</span>
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-
-// ── Splash picker ─────────────────────────────────────────────────────────────
-
-const SPLASH_OPTIONS: [string, string, string][] = [
-  ["waves",   "Waves",   "Classic wave lanes"],
-  ["ribbons", "Ribbons", "Flowing filled ribbons"],
-];
-
-function SplashPicker({ value, onChange }: { value: string; onChange: (v: string) => void }) {
-  return (
-    <div style={{ display: "flex", gap: 10 }}>
-      {SPLASH_OPTIONS.map(([key, label, desc]) => {
-        const active = value === key;
-        return (
-          <button
-            key={key}
-            onClick={() => onChange(key)}
-            title={desc}
-            style={{
-              padding: "8px 22px", borderRadius: 10, cursor: "pointer",
-              background: active ? "#1a2a1a" : "#1e1e1e",
-              border: active ? "1px solid var(--green)" : "1px solid #2a2a2a",
-              color: active ? "var(--green)" : "#777",
-              fontSize: 13, fontWeight: active ? 700 : 500,
-              transition: "all 0.15s",
-            }}
-          >{label}</button>
-        );
-      })}
-    </div>
-  );
-}
-
 // ── Section wrapper ───────────────────────────────────────────────────────────
 
 function Section({ title, subtitle, children }: {
@@ -291,30 +177,6 @@ export function SettingsView() {
 
         <Section title="Accent Color" subtitle="Sets the highlight color used throughout the interface.">
           <HueBar color={color} onChange={handleColorChange} />
-        </Section>
-
-        <Section title="App Icon" subtitle="Choose the icon shown in the dock (takes effect in the Electron shell).">
-          <IconPicker
-            value={settings.app_icon}
-            onChange={v => save({ app_icon: v })}
-          />
-        </Section>
-
-        <Section title="Sidebar Logo" subtitle="Choose the mark shown at the top of the sidebar.">
-          <LogoPicker
-            value={settings.sidebar_logo}
-            onChange={v => {
-              queryClient.setQueryData<AppSettings>(["settings"], s => s ? { ...s, sidebar_logo: v } : s);
-              save({ sidebar_logo: v });
-            }}
-          />
-        </Section>
-
-        <Section title="Splash Screen" subtitle="Animation shown at startup (applies to the desktop app).">
-          <SplashPicker
-            value={settings.splash_style}
-            onChange={v => save({ splash_style: v })}
-          />
         </Section>
 
         <Section title="Auto-Poll Spotify" subtitle="Automatically fetch new plays from Spotify every 3 minutes. Disable to only sync manually (Cmd+R).">

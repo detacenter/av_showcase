@@ -14,7 +14,6 @@ const NAV = [
   { to: "/playlists", label: "Playlists" },
   { to: "/revisit",   label: "Revisit" },
   { to: "/claudio",   label: "Claudio" },
-  { to: "/dev",       label: "Dev" },
   { to: "/settings",  label: "Settings" },
 ];
 
@@ -56,18 +55,27 @@ export function Sidebar() {
   const navigateRef = useRef(navigate);
   navigateRef.current = navigate;
 
-  // Cmd+[/] — cycle tabs via IPC (keydown never fires for these in Electron
-  // because before-input-event intercepts them before the renderer sees them)
+  // Cmd+[/] — cycle tabs. In the real Electron app this never reaches the
+  // renderer's keydown handler at all (before-input-event intercepts it
+  // first), so cycling is wired through an IPC bridge instead. That bridge
+  // doesn't exist in this browser-based demo — window.electronEvents is
+  // undefined — so cycleTab needs a real keydown case here too. Without it,
+  // Cmd+[/] falls through to the browser's own native History Back/Forward
+  // binding, which only looks like it works for whatever routes happen to
+  // already be in the tab's click history, and not in cycle order.
+  const cycleTab = (dir: number) => {
+    const current = NAV.findIndex(n => window.location.pathname.startsWith(n.to));
+    const base = current === -1 ? 0 : current;
+    const next = dir > 0
+      ? (base + 1) % NAV.length
+      : (base - 1 + NAV.length) % NAV.length;
+    navigateRef.current(NAV[next].to);
+  };
+  const cycleTabRef = useRef(cycleTab);
+  cycleTabRef.current = cycleTab;
+
   useEffect(() => {
-    const cycleTab = (dir: number) => {
-      const current = NAV.findIndex(n => window.location.pathname.startsWith(n.to));
-      const base = current === -1 ? 0 : current;
-      const next = dir > 0
-        ? (base + 1) % NAV.length
-        : (base - 1 + NAV.length) % NAV.length;
-      navigateRef.current(NAV[next].to);
-    };
-    window.electronEvents?.onCycleTab(cycleTab);
+    window.electronEvents?.onCycleTab((dir: number) => cycleTabRef.current(dir));
   }, []);
 
   useEffect(() => {
@@ -78,6 +86,14 @@ export function Sidebar() {
       if (e.key === "r") {
         e.preventDefault();
         triggerFetchRef.current();
+        return;
+      }
+
+      // Cmd+[/] — cycle tabs (must preventDefault, or the browser's own
+      // History Back/Forward binding fires alongside this and fights it)
+      if (e.key === "[" || e.key === "]") {
+        e.preventDefault();
+        cycleTabRef.current(e.key === "]" ? 1 : -1);
         return;
       }
 
@@ -152,6 +168,49 @@ export function Sidebar() {
           {label}
         </NavLink>
       ))}
+
+      <div style={{ marginTop: "auto", display: "flex", flexDirection: "column", gap: 8, marginLeft: 11 }}>
+        <NavLink
+          to="/api-guide"
+          title="API guide"
+          style={({ isActive }) => ({
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: 22,
+            height: 22,
+            borderRadius: "50%",
+            border: `1px solid ${isActive ? "var(--white)" : "var(--dim)"}`,
+            color: isActive ? "var(--white)" : "var(--dim)",
+            fontSize: 10,
+            fontWeight: 700,
+            textDecoration: "none",
+            flexShrink: 0,
+          })}
+        >
+          {"</>"}
+        </NavLink>
+        <NavLink
+          to="/about"
+          title="About this demo"
+          style={({ isActive }) => ({
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: 22,
+            height: 22,
+            borderRadius: "50%",
+            border: `1px solid ${isActive ? "var(--white)" : "var(--dim)"}`,
+            color: isActive ? "var(--white)" : "var(--dim)",
+            fontSize: 12,
+            fontWeight: 700,
+            textDecoration: "none",
+            flexShrink: 0,
+          })}
+        >
+          ?
+        </NavLink>
+      </div>
     </aside>
   );
 }
