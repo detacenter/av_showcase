@@ -19,17 +19,18 @@ export function SandboxBanner() {
         display: "flex",
         alignItems: "center",
         gap: 12,
-        padding: "7px 20px",
+        padding: "8px 20px",
         background: "var(--surface)",
         borderBottom: "1px solid var(--border)",
-        fontSize: 12,
-        color: "var(--gray)",
+        borderLeft: "3px solid var(--green)",
+        fontSize: 13,
+        color: "var(--white)",
         flexShrink: 0,
       }}
     >
       <span>
         This is a sandbox: real catalog data, sample listening history.{" "}
-        <Link to="/about" style={{ color: "var(--white)", fontWeight: 600 }}>
+        <Link to="/about" style={{ color: "var(--green)", fontWeight: 600 }}>
           How it works ↗
         </Link>
       </span>
