@@ -7,6 +7,7 @@ LOG_FILE             = data_path("listening_log.json")
 BLOCKLIST_FILE       = data_path("deleted_plays.json")
 DELETION_COUNTS_FILE = data_path("deletion_counts.json")
 TRACK_BLOCKS_FILE    = data_path("track_blocks.json")
+TRACK_OVERRIDES_FILE = data_path("track_overrides.json")
 
 _DELETION_WINDOW_MIN = 30   # sliding window to count deletions
 _DELETION_THRESHOLD  = 3    # deletions within window that triggers a block
@@ -149,12 +150,40 @@ def deduplicate_log(entries: list[dict]) -> tuple[list[dict], int]:
     return cleaned, removed
 
 
+# ── Track overrides ───────────────────────────────────────────────────────────
+
+def load_track_overrides() -> dict[str, dict]:
+    ensure_data_dir()
+    if not TRACK_OVERRIDES_FILE.exists():
+        return {}
+    with TRACK_OVERRIDES_FILE.open() as f:
+        return json.load(f)
+
+
+def save_track_overrides(overrides: dict[str, dict]) -> None:
+    ensure_data_dir()
+    with TRACK_OVERRIDES_FILE.open("w") as f:
+        json.dump(overrides, f, indent=2)
+
+
+def _apply_overrides(entries: list[dict]) -> list[dict]:
+    overrides = load_track_overrides()
+    if not overrides:
+        return entries
+    for entry in entries:
+        ov = overrides.get(entry.get("track_id", ""))
+        if ov:
+            entry.update(ov)
+    return entries
+
+
 def load_log() -> list[dict]:
     ensure_data_dir()
     if not LOG_FILE.exists():
         return []
     with LOG_FILE.open() as f:
-        return json.load(f)
+        entries = json.load(f)
+    return _apply_overrides(entries)
 
 
 def save_log(entries: list[dict]) -> None:

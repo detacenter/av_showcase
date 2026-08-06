@@ -405,7 +405,9 @@ mg.append("feMergeNode").attr("in", "blur");
 mg.append("feMergeNode").attr("in", "SourceGraphic");
 
 const g = svg.append("g");
-svg.call(d3.zoom().scaleExtent([0.15, 6]).on("zoom", e => g.attr("transform", e.transform)));
+const zoom = d3.zoom().scaleExtent([0.15, 6]).on("zoom", e => g.attr("transform", e.transform));
+svg.call(zoom);
+requestAnimationFrame(() => svg.call(zoom.transform, d3.zoomIdentity.translate(w / 4, h / 4).scale(0.5)));
 
 const visibleLinks = DATA.links;
 
@@ -815,7 +817,18 @@ simulation.on("tick", () => {
         .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
     node.attr("transform", d => "translate(" + d.x + "," + d.y + ")");
     if (++_tickCount % 10 === 0) computeColors(false);
-}).on("end", () => computeColors(true));
+}).on("end", () => {
+    computeColors(true);
+    if (!DATA.nodes.length) return;
+    const xs = DATA.nodes.map(d => d.x), ys = DATA.nodes.map(d => d.y);
+    const x0 = Math.min(...xs), x1 = Math.max(...xs);
+    const y0 = Math.min(...ys), y1 = Math.max(...ys);
+    const pad = 48;
+    const scale = Math.min((w - pad * 2) / (x1 - x0 + 1), (h - pad * 2) / (y1 - y0 + 1), 1.0);
+    const tx = (w - scale * (x0 + x1)) / 2;
+    const ty = (h - scale * (y0 + y1)) / 2;
+    svg.transition().duration(600).call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(scale));
+});
 
 function recenter() {
     w = window.innerWidth;
@@ -836,6 +849,7 @@ requestAnimationFrame(recenter);
 
 
 _genres_cache: dict | None = None
+_genres_network_cache: dict | None = None
 
 
 @router.get("/genres")
@@ -855,19 +869,20 @@ def get_genres():
 
 @router.get("/genres-page", response_class=HTMLResponse)
 def get_genres_page():
-    state = get_state()
-    network = build_genre_network(state.log, state.lib)
-    for node in network.get("nodes", []):
-        for artist in node.get("artists", []):
-            art = artist.get("art") or ""
-            if art.startswith("file://"):
-                art_path = art.replace("file://", "")
-                idx = art_path.find("artwork/")
-                if idx != -1:
-                    artist["art"] = f"/artwork/{art_path[idx + 8:]}"
-                else:
-                    artist["art"] = f"/artwork/{Path(art_path).name}"
-    return HTMLResponse(
-        content=_GENRES_HTML.replace("__DATA__", _json.dumps(network)),
-        headers={"Cache-Control": "no-cache"},
-    )
+    global _genres_network_cache
+    if _genres_network_cache is None:
+        state = get_state()
+        network = build_genre_network(state.log, state.lib)
+        for node in network.get("nodes", []):
+            for artist in node.get("artists", []):
+                art = artist.get("art") or ""
+                if art.startswith("file://"):
+                    art_path = art.replace("file://", "")
+                    idx = art_path.find("artwork/")
+                    if idx != -1:
+                        artist["art"] = f"/artwork/{art_path[idx + 8:]}"
+                    else:
+                        artist["art"] = f"/artwork/{Path(art_path).name}"
+        _genres_network_cache = network
+    html = _GENRES_HTML.replace("__DATA__", _json.dumps(_genres_network_cache))
+    return HTMLResponse(content=html, headers={"Cache-Control": "no-store"})

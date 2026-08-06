@@ -4,6 +4,7 @@ RECENTLY_PLAYED_URL = "https://api.spotify.com/v1/me/player/recently-played"
 PLAYER_URL          = "https://api.spotify.com/v1/me/player"
 ARTISTS_URL         = "https://api.spotify.com/v1/artists"
 ALBUM_TRACKS_URL    = "https://api.spotify.com/v1/albums/{}/tracks"
+ALBUM_URL           = "https://api.spotify.com/v1/albums/{}"
 
 
 def get_recently_played(access_token: str, limit: int = 50) -> list[dict]:
@@ -127,3 +128,25 @@ def get_artists(access_token: str, artist_ids: list[str]) -> dict[str, list[str]
             if a:
                 result[a["id"]] = a.get("genres", [])
     return result
+
+
+def get_album(access_token: str, album_id: str) -> dict | None:
+    """Fetch a single album's metadata for track-override corrections."""
+    resp = api_metrics.get(
+        "Spotify", "album", ALBUM_URL.format(album_id),
+        headers={"Authorization": f"Bearer {access_token}"},
+    )
+    if not resp.ok:
+        return None
+    d = resp.json()
+    artists = [a["name"] for a in d.get("artists", [])]
+    images = d.get("images", [])
+    art_url = images[0]["url"] if images else None
+    release_date = d.get("release_date", "")
+    return {
+        "album_id": d["id"],
+        "album_name": d["name"],
+        "artist_names": artists,
+        "release_year": int(release_date[:4]) if release_date[:4].isdigit() else None,
+        "album_art_url": art_url,
+    }

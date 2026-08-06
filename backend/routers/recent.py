@@ -177,12 +177,16 @@ def get_recent_albums(q: str = Query("")):
             "vinyl_type": None,
             "tracklist": [],
             "entries": track_entries,
+            "played_at": first.get("played_at", ""),
         })
 
         if len(result) >= 28:
             break
 
-    # Merge vinyl sessions — filter by query if active, then insert chronologically
+    # Merge vinyl sessions — filter by query if active, then compete for a spot on
+    # recency just like Spotify plays do, instead of appearing unconditionally
+    # regardless of age (that was the bug: every confirmed vinyl session got kept
+    # forever since nothing here ever capped or aged them out).
     vinyl_albums = _load_vinyl_albums()
     if query:
         vinyl_albums = [
@@ -192,11 +196,10 @@ def get_recent_albums(q: str = Query("")):
         ]
     for v in vinyl_albums:
         played_at = v.pop("_played_at")
-        # Insert at the correct chronological position
-        pos = next((i for i, r in enumerate(result) if r.get("entries") and r["entries"][0]["played_at"] < played_at), len(result))
-        result.insert(pos, {**v, "entries": [], "played_at": played_at})
+        result.append({**v, "entries": [], "played_at": played_at})
 
-    return {"albums": result}
+    result.sort(key=lambda r: r["played_at"], reverse=True)
+    return {"albums": result[:28]}
 
 
 @router.get("")

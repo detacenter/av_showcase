@@ -116,3 +116,53 @@ def track_revisit(track_id: str):
     save_library(lib)
     reload_state()
     return {"ok": True}
+
+
+# ── Track overrides ───────────────────────────────────────────────────────────
+
+from persistence.storage import load_track_overrides, save_track_overrides
+from integrations.spotify.auth import get_access_token
+from integrations.spotify.client import get_album
+from integrations.spotify.artwork import download_artwork
+
+
+class TrackOverrideIn(BaseModel):
+    track_id: str
+    album_id: str
+
+
+@router.post("/track-override")
+def set_track_override(body: TrackOverrideIn):
+    token = get_access_token()
+    album = get_album(token, body.album_id)
+    if not album:
+        from fastapi import HTTPException
+        raise HTTPException(404, "Album not found on Spotify")
+    artist = album["artist_names"][0] if album["artist_names"] else "unknown"
+    art_path = download_artwork(artist, album["album_name"], album.get("album_art_url"))
+    overrides = load_track_overrides()
+    overrides[body.track_id] = {
+        "album_id":             album["album_id"],
+        "album_name":           album["album_name"],
+        "artist_names":         album["artist_names"],
+        "release_year":         album["release_year"],
+        "album_art_local_path": art_path,
+    }
+    save_track_overrides(overrides)
+    reload_state()
+    return {"ok": True, "override": overrides[body.track_id]}
+
+
+@router.delete("/track-override/{track_id}")
+def delete_track_override(track_id: str):
+    overrides = load_track_overrides()
+    if track_id in overrides:
+        del overrides[track_id]
+        save_track_overrides(overrides)
+        reload_state()
+    return {"ok": True}
+
+
+@router.get("/track-overrides")
+def list_track_overrides():
+    return load_track_overrides()
