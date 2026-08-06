@@ -4,7 +4,7 @@ A portfolio demo of **Audiovault (`av`)**, a Spotify listening-history logger an
 I built and use daily. This repo is a from-scratch, sanitized rebuild of the real app: real
 architecture and API design, synthetic personal data.
 
-**[Live demo →](#)** _(coming soon)_
+**[Live demo →](https://av-showcase.vercel.app)**
 
 ![Stats view screenshot](#) <!-- TODO: add screenshot before flipping public -->
 
