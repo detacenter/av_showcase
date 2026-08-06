@@ -98,7 +98,7 @@ const GROUPS: Group[] = [
     endpoints: [
       { method: "GET", path: "/api/claudio/history", desc: "All past recommendation batches.", live: true },
       { method: "GET", path: "/api/claudio/status", desc: "Whether a recommendation batch is currently generating.", live: true },
-      { method: "POST", path: "/api/claudio/generate", desc: "Start generating a new batch (simulated wait, hand-written picks — see About)." },
+      { method: "POST", path: "/api/claudio/generate", desc: "Start generating a new batch (simulated wait, hand-written picks, see About)." },
       { method: "POST", path: "/api/claudio/feedback", desc: "Thumbs up/down a recommendation (overlay only)." },
     ],
   },
@@ -227,7 +227,7 @@ export function APIGuideView() {
         <p style={{ fontSize: 13, color: "var(--gray)", lineHeight: 1.6, marginBottom: 28 }}>
           Every endpoint this demo actually implements, answered by the service worker
           shown on the <Link to="/about" style={{ color: "var(--white)" }}>About page</Link>.
-          "Try it" fires a real <code>fetch()</code> from this page — same call the app
+          "Try it" fires a real <code>fetch()</code> from this page: same call the app
           itself makes, same response. GET requests are safe to fire; anything that would
           mutate data only touches an in-memory overlay for this browser tab, so it's
           documented here rather than wired to a button.

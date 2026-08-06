@@ -1,0 +1,1388 @@
+{
+  "2020s": {
+    "albums": [
+      {
+        "album_id": "3sq57EactOjc9RJqk6Yl1y",
+        "album_name": "Prophecy At 1420 MHz",
+        "artist": "Boards of Canada",
+        "art_url": "/artwork/boards_of_canada_prophecy_at_1420_mhz.jpg",
+        "release_year": 2026,
+        "rating": 18
+      },
+      {
+        "album_id": "2ZYhM0LXHZ38te98EizcQW",
+        "album_name": "Diaspora Problems",
+        "artist": "Soul Glo",
+        "art_url": "/artwork/soul_glo_diaspora_problems.jpg",
+        "release_year": 2022,
+        "rating": 17
+      },
+      {
+        "album_id": "2z9lM6LDS58F70IGyQ1XMK",
+        "album_name": "NEVER ENOUGH",
+        "artist": "Daniel Caesar",
+        "art_url": "/artwork/daniel_caesar_never_enough.jpg",
+        "release_year": 2023,
+        "rating": 16
+      },
+      {
+        "album_id": "1oTR3aC0jYmwUlr9duBi05",
+        "album_name": "Rat Saw God",
+        "artist": "Wednesday",
+        "art_url": "/artwork/wednesday_rat_saw_god.jpg",
+        "release_year": 2023,
+        "rating": 15
+      },
+      {
+        "album_id": "6zt8N56kz8b58cnHnBhx9f",
+        "album_name": "Madres",
+        "artist": "Sofia Kourtesis",
+        "art_url": "/artwork/sofia_kourtesis_madres.jpg",
+        "release_year": 2023,
+        "rating": 15
+      }
+    ]
+  },
+  "2010s": {
+    "albums": [
+      {
+        "album_id": "2B87zXm9bOWvAJdkJBTpzF",
+        "album_name": "Melodrama",
+        "artist": "Lorde",
+        "art_url": "/artwork/lorde_melodrama.jpg",
+        "release_year": 2017,
+        "rating": 18
+      },
+      {
+        "album_id": "0Rzg7fqyWE39G6wKipxrns",
+        "album_name": "Body Talk",
+        "artist": "Robyn",
+        "art_url": "/artwork/robyn_body_talk.jpg",
+        "release_year": 2010,
+        "rating": 18
+      },
+      {
+        "album_id": "0E47vczx9XVds1Lr2Y8rze",
+        "album_name": "good kid, m.A.A.d city",
+        "artist": "Kendrick Lamar",
+        "art_url": "/artwork/kendrick_lamar_good_kid_maad_city.jpg",
+        "release_year": 2012,
+        "rating": 18
+      },
+      {
+        "album_id": "7BuwwZzrJCAJaC12QKkDOh",
+        "album_name": "We're New Here",
+        "artist": "Gil Scott-Heron",
+        "art_url": "/artwork/gil_scott_heron_were_new_here.jpg",
+        "release_year": 2011,
+        "rating": 18
+      },
+      {
+        "album_id": "6KiS2t3EapTmHSt9xGUqe7",
+        "album_name": "Stage Four (Deluxe Edition)",
+        "artist": "Touch\u00e9 Amor\u00e9",
+        "art_url": "/artwork/touch\u00e9_amor\u00e9_stage_four_deluxe_edition.jpg",
+        "release_year": 2016,
+        "rating": 17
+      },
+      {
+        "album_id": "1uIM6TngoKF0S8oPaDZPvv",
+        "album_name": "Among the Leaves",
+        "artist": "Sun Kil Moon",
+        "art_url": "/artwork/sun_kil_moon_among_the_leaves.jpg",
+        "release_year": 2012,
+        "rating": 17
+      },
+      {
+        "album_id": "0rmhjUgoVa17LZuS8xWQ3v",
+        "album_name": "Pure Heroine",
+        "artist": "Lorde",
+        "art_url": "/artwork/lorde_pure_heroine.jpg",
+        "release_year": 2013,
+        "rating": 17
+      },
+      {
+        "album_id": "3Yko2SxDk4hc6fncIBQlcM",
+        "album_name": "A Seat at the Table",
+        "artist": "Solange",
+        "art_url": "/artwork/solange_a_seat_at_the_table.jpg",
+        "release_year": 2016,
+        "rating": 17
+      },
+      {
+        "album_id": "3mH6qwIy9crq0I9YQbOuDf",
+        "album_name": "Blonde",
+        "artist": "Frank Ocean",
+        "art_url": "/artwork/frank_ocean_blonde.jpg",
+        "release_year": 2016,
+        "rating": 17
+      },
+      {
+        "album_id": "7ycBtnsMtyVbbwTfJwRjSP",
+        "album_name": "To Pimp A Butterfly",
+        "artist": "Kendrick Lamar",
+        "art_url": "/artwork/kendrick_lamar_to_pimp_a_butterfly.jpg",
+        "release_year": 2015,
+        "rating": 17
+      },
+      {
+        "album_id": "1sZsY3CrPE6z1xlOKzQs2X",
+        "album_name": "Floral Green",
+        "artist": "Title Fight",
+        "art_url": "/artwork/title_fight_floral_green.jpg",
+        "release_year": 2012,
+        "rating": 17
+      },
+      {
+        "album_id": "6B3tIntlJIe0cdG1lIkE0l",
+        "album_name": "Shed",
+        "artist": "Title Fight",
+        "art_url": "/artwork/title_fight_shed.jpg",
+        "release_year": 2011,
+        "rating": 17
+      },
+      {
+        "album_id": "4QElAwQufg6wCeyvpafqwA",
+        "album_name": "You're Gonna Miss It All",
+        "artist": "Modern Baseball",
+        "art_url": "/artwork/modern_baseball_youre_gonna_miss_it_all.jpg",
+        "release_year": 2014,
+        "rating": 17
+      },
+      {
+        "album_id": "0uOPPNiTA3k0HNvqKWcuSb",
+        "album_name": "More Than Any Other Day",
+        "artist": "Ought",
+        "art_url": "/artwork/ought_more_than_any_other_day.jpg",
+        "release_year": 2014,
+        "rating": 17
+      },
+      {
+        "album_id": "0JvkUMttIwTRYwm3OVBoch",
+        "album_name": "The Lack Long After",
+        "artist": "Pianos Become The Teeth",
+        "art_url": "/artwork/pianos_become_the_teeth_the_lack_long_after.jpg",
+        "release_year": 2011,
+        "rating": 17
+      },
+      {
+        "album_id": "2wE1bvm3Ha0BvkHTvwk6rw",
+        "album_name": "Jesu / Sun Kil Moon",
+        "artist": "Jesu/Sun Kil Moon",
+        "art_url": "/artwork/jesusun_kil_moon_jesu_sun_kil_moon.jpg",
+        "release_year": 2016,
+        "rating": 17
+      },
+      {
+        "album_id": "1wnEAz2lDtNoUUZF0KStuo",
+        "album_name": "All Delighted People",
+        "artist": "Sufjan Stevens",
+        "art_url": "/artwork/sufjan_stevens_all_delighted_people.jpg",
+        "release_year": 2010,
+        "rating": 17
+      },
+      {
+        "album_id": "5kXmpj8YLcxEMk8BWc57UV",
+        "album_name": "Let It Out",
+        "artist": "I Kill Giants",
+        "art_url": "/artwork/i_kill_giants_let_it_out.jpg",
+        "release_year": 2011,
+        "rating": 17
+      },
+      {
+        "album_id": "6C5ED5twSt8dEbiffbFNe2",
+        "album_name": "Carry on Kid",
+        "artist": "Worthwhile",
+        "art_url": "/artwork/worthwhile_carry_on_kid.jpg",
+        "release_year": 2013,
+        "rating": 16
+      },
+      {
+        "album_id": "36zXCG5IcivCTOrVAZSBZH",
+        "album_name": "Pope Killdragon",
+        "artist": "Strand of Oaks",
+        "art_url": "/artwork/strand_of_oaks_pope_killdragon.jpg",
+        "release_year": 2010,
+        "rating": 16
+      },
+      {
+        "album_id": "2wiPF3m0ylst0JSk1IvZL8",
+        "album_name": "Divinely Uninspired To A Hellish Extent (Extended Edition)",
+        "artist": "Lewis Capaldi",
+        "art_url": "/artwork/lewis_capaldi_divinely_uninspired_to_a_hellish_extent_extended.jpg",
+        "release_year": 2019,
+        "rating": 16
+      },
+      {
+        "album_id": "48i37aZTC1prDr4EcpQeEa",
+        "album_name": "ANTI",
+        "artist": "Rihanna",
+        "art_url": "/artwork/rihanna_anti.jpg",
+        "release_year": 2016,
+        "rating": 16
+      },
+      {
+        "album_id": "5Hfbag0SsHxafx1SySFSX6",
+        "album_name": "Black Messiah",
+        "artist": "D'Angelo",
+        "art_url": "/artwork/dangelo_black_messiah.jpg",
+        "release_year": 2014,
+        "rating": 16
+      },
+      {
+        "album_id": "4hsC5IvasDOCrWwM8UQ3N4",
+        "album_name": "Cardinal (Expanded Edition)",
+        "artist": "Pinegrove",
+        "art_url": "/artwork/pinegrove_cardinal_expanded_edition.jpg",
+        "release_year": 2016,
+        "rating": 16
+      },
+      {
+        "album_id": "7Mn0aXVHjaoFZPKLssqI9d",
+        "album_name": "King of the Beach",
+        "artist": "Wavves",
+        "art_url": "/artwork/wavves_king_of_the_beach.jpg",
+        "release_year": 2010,
+        "rating": 16
+      },
+      {
+        "album_id": "4MJXiUV12TyT5ZyXeWdnL3",
+        "album_name": "I'll Keep You in Mind, From Time to Time",
+        "artist": "Moose Blood",
+        "art_url": "/artwork/moose_blood_ill_keep_you_in_mind_from_time_to_time.jpg",
+        "release_year": 2014,
+        "rating": 16
+      },
+      {
+        "album_id": "4kRMCapj9nEyBWnM0kc9OX",
+        "album_name": "The Age of Adz",
+        "artist": "Sufjan Stevens",
+        "art_url": "/artwork/sufjan_stevens_the_age_of_adz.jpg",
+        "release_year": 2010,
+        "rating": 16
+      },
+      {
+        "album_id": "4E1XUBMTpLO7GpBzUo65Jp",
+        "album_name": "Freudian",
+        "artist": "Daniel Caesar",
+        "art_url": "/artwork/daniel_caesar_freudian.jpg",
+        "release_year": 2017,
+        "rating": 16
+      },
+      {
+        "album_id": "3vxkGvc3QzZqLt6pQNw7qI",
+        "album_name": "I Kill Giants (Remastered)",
+        "artist": "I Kill Giants",
+        "art_url": "/artwork/i_kill_giants_i_kill_giants_remastered.jpg",
+        "release_year": 2018,
+        "rating": 16
+      },
+      {
+        "album_id": "5as7hQXIniGbaltqM0yJud",
+        "album_name": "Ciencia De Los In\u00fatiles",
+        "artist": "El Tr\u00edo De Omar Rodr\u00edguez-L\u00f3pez",
+        "art_url": "/artwork/el_tr\u00edo_de_omar_rodr\u00edguez_l\u00f3pez_ciencia_de_los_in\u00fatiles.jpg",
+        "release_year": 2010,
+        "rating": 16
+      },
+      {
+        "album_id": "172GEyILIzsGA8PJqrsHmL",
+        "album_name": "Home, Like Noplace Is There",
+        "artist": "The Hotelier",
+        "art_url": "/artwork/the_hotelier_home_like_noplace_is_there.jpg",
+        "release_year": 2014,
+        "rating": 16
+      },
+      {
+        "album_id": "0KzElSxcfAvleUIuOg0TOQ",
+        "album_name": "Best Buds",
+        "artist": "Mom Jeans.",
+        "art_url": "/artwork/mom_jeans_best_buds.jpg",
+        "release_year": 2016,
+        "rating": 15
+      },
+      {
+        "album_id": "6Voznuxp5917IwIlLxSAik",
+        "album_name": "There's No Leaving Now",
+        "artist": "The Tallest Man On Earth",
+        "art_url": "/artwork/the_tallest_man_on_earth_theres_no_leaving_now.jpg",
+        "release_year": 2012,
+        "rating": 15
+      },
+      {
+        "album_id": "77Ie9frENeQwYUGHrrS0pk",
+        "album_name": "AMOK",
+        "artist": "Atoms For Peace",
+        "art_url": "/artwork/atoms_for_peace_amok.jpg",
+        "release_year": 2013,
+        "rating": 15
+      },
+      {
+        "album_id": "1V99SZB8TKi7RxhALkkiH1",
+        "album_name": "Innundir Skinni",
+        "artist": "\u00d3l\u00f6f Arnalds",
+        "art_url": "/artwork/\u00f3l\u00f6f_arnalds_innundir_skinni.jpg",
+        "release_year": 2010,
+        "rating": 14
+      },
+      {
+        "album_id": "1TwAADd8Z8C1GeeCSaXTNr",
+        "album_name": "Within and Without",
+        "artist": "Washed Out",
+        "art_url": "/artwork/washed_out_within_and_without.jpg",
+        "release_year": 2011,
+        "rating": 14
+      },
+      {
+        "album_id": "3C6pVtRNzuqlwOyqeraoP3",
+        "album_name": "Rooms of the House",
+        "artist": "La Dispute",
+        "art_url": "/artwork/la_dispute_rooms_of_the_house.jpg",
+        "release_year": 2015,
+        "rating": 0
+      },
+      {
+        "album_id": "1brn037iBip5zM6gpmoPdl",
+        "album_name": "Old Pride",
+        "artist": "Pianos Become The Teeth",
+        "art_url": "/artwork/pianos_become_the_teeth_old_pride.jpg",
+        "release_year": 2010,
+        "rating": 0
+      }
+    ]
+  },
+  "2000s": {
+    "albums": [
+      {
+        "album_id": "5vkqYmiPBYLaalcmjujWxK",
+        "album_name": "In Rainbows",
+        "artist": "Radiohead",
+        "art_url": "/artwork/radiohead_in_rainbows.jpg",
+        "release_year": 2007,
+        "rating": 20
+      },
+      {
+        "album_id": "4T7JGfRryhw5POaXalkApE",
+        "album_name": "Geogaddi",
+        "artist": "Boards of Canada",
+        "art_url": "/artwork/boards_of_canada_geogaddi.jpg",
+        "release_year": 2002,
+        "rating": 19
+      },
+      {
+        "album_id": "6BRq5g6CWiFgN3NrjLGAYq",
+        "album_name": "Merriweather Post Pavilion",
+        "artist": "Animal Collective",
+        "art_url": "/artwork/animal_collective_merriweather_post_pavilion.jpg",
+        "release_year": 2009,
+        "rating": 19
+      },
+      {
+        "album_id": "08pL4gHGoa0GXyv9emugVv",
+        "album_name": "Rise or Die Trying",
+        "artist": "Four Year Strong",
+        "art_url": "/artwork/four_year_strong_rise_or_die_trying.jpg",
+        "release_year": 2007,
+        "rating": 19
+      },
+      {
+        "album_id": "3Lfxp4dgtCBJN74rmo7tiE",
+        "album_name": "Translating the Name",
+        "artist": "Saosin",
+        "art_url": "/artwork/saosin_translating_the_name.jpg",
+        "release_year": 2003,
+        "rating": 19
+      },
+      {
+        "album_id": "12tw1A9HmwE3MHvPfHhdoP",
+        "album_name": "Takk...",
+        "artist": "Sigur R\u00f3s",
+        "art_url": "/artwork/sigur_r\u00f3s_takk.jpg",
+        "release_year": 2005,
+        "rating": 19
+      },
+      {
+        "album_id": "1JpwFoxVVutPXtSBohj0rJ",
+        "album_name": "Ghosts of the Great Highway",
+        "artist": "Sun Kil Moon",
+        "art_url": "/artwork/sun_kil_moon_ghosts_of_the_great_highway.jpg",
+        "release_year": 2003,
+        "rating": 18
+      },
+      {
+        "album_id": "6l61p7zbizBUjQWY10LWmb",
+        "album_name": "Why Should The Fire Die?",
+        "artist": "Nickel Creek",
+        "art_url": "/artwork/nickel_creek_why_should_the_fire_die.jpg",
+        "release_year": 2005,
+        "rating": 18
+      },
+      {
+        "album_id": "6hPkbAV3ZXpGZBGUvL6jVM",
+        "album_name": "Hybrid Theory (Bonus Edition)",
+        "artist": "Linkin Park",
+        "art_url": "/artwork/linkin_park_hybrid_theory_bonus_edition.jpg",
+        "release_year": 2000,
+        "rating": 18
+      },
+      {
+        "album_id": "1dnNjLBeisuc0bUp3wwPR1",
+        "album_name": "Let It Enfold You",
+        "artist": "Senses Fail",
+        "art_url": "/artwork/senses_fail_let_it_enfold_you.jpg",
+        "release_year": 2004,
+        "rating": 18
+      },
+      {
+        "album_id": "5GRnydamKvIeG46dycID6v",
+        "album_name": "Fleet Foxes",
+        "artist": "Fleet Foxes",
+        "art_url": "/artwork/fleet_foxes_fleet_foxes.jpg",
+        "release_year": 2008,
+        "rating": 18
+      },
+      {
+        "album_id": "7EGRR4WHgazThugwrMg2Y9",
+        "album_name": "Carnavas",
+        "artist": "Silversun Pickups",
+        "art_url": "/artwork/silversun_pickups_carnavas.jpg",
+        "release_year": 2006,
+        "rating": 18
+      },
+      {
+        "album_id": "019nA7vSKz0dD5yRKYRpbM",
+        "album_name": "Fever Ray",
+        "artist": "Fever Ray",
+        "art_url": "/artwork/fever_ray_fever_ray.jpg",
+        "release_year": 2009,
+        "rating": 18
+      },
+      {
+        "album_id": "1UdCT7t0rfNPu5Bn957U8r",
+        "album_name": "Silent Shout",
+        "artist": "The Knife",
+        "art_url": "/artwork/the_knife_silent_shout.jpg",
+        "release_year": 2006,
+        "rating": 18
+      },
+      {
+        "album_id": "431AISQsFUi33lirU9vNI5",
+        "album_name": "Tigers Jaw",
+        "artist": "Tigers Jaw",
+        "art_url": "/artwork/tigers_jaw_tigers_jaw.jpg",
+        "release_year": 2008,
+        "rating": 18
+      },
+      {
+        "album_id": "75I9YI5opV3mBsKnay5pIR",
+        "album_name": "Solar Gambling",
+        "artist": "Omar Rodr\u00edguez-L\u00f3pez",
+        "art_url": "/artwork/omar_rodr\u00edguez_l\u00f3pez_solar_gambling.jpg",
+        "release_year": 2009,
+        "rating": 18
+      },
+      {
+        "album_id": "64TDaAbxgO0TmKZrIavdLg",
+        "album_name": "Person Pitch",
+        "artist": "Panda Bear",
+        "art_url": "/artwork/panda_bear_person_pitch.jpg",
+        "release_year": 2007,
+        "rating": 18
+      },
+      {
+        "album_id": "2btXQFitnklvkPC0dAIvAx",
+        "album_name": "Small Steps, Heavy Hooves",
+        "artist": "Dear and the Headlights",
+        "art_url": "/artwork/dear_and_the_headlights_small_steps_heavy_hooves.jpg",
+        "release_year": 2007,
+        "rating": 18
+      },
+      {
+        "album_id": "49buCcKCJwxvdl0R2dMoIU",
+        "album_name": "The Earth Is Not a Cold Dead Place (Anniversary Edition)",
+        "artist": "Explosions In The Sky",
+        "art_url": "/artwork/explosions_in_the_sky_the_earth_is_not_a_cold_dead_place_anniversary_e.jpg",
+        "release_year": 2003,
+        "rating": 18
+      },
+      {
+        "album_id": "0pGIIPdSojJ3t4yCIQWM78",
+        "album_name": "Right Now, You're in the Best of Hands",
+        "artist": "Bear Vs. Shark",
+        "art_url": "/artwork/bear_vs_shark_right_now_youre_in_the_best_of_hands.jpg",
+        "release_year": 2003,
+        "rating": 18
+      },
+      {
+        "album_id": "6izpMELenbJKGs845N1qTt",
+        "album_name": "13 Blues For Thirteen Moons",
+        "artist": "Silver Mt. Zion",
+        "art_url": "/artwork/silver_mt_zion_13_blues_for_thirteen_moons.jpg",
+        "release_year": 2008,
+        "rating": 18
+      },
+      {
+        "album_id": "5CtxgcqieOcYKyQjGKI0nY",
+        "album_name": "Me\u00f0 su\u00f0 \u00ed eyrum vi\u00f0 spilum endalaust",
+        "artist": "Sigur R\u00f3s",
+        "art_url": "/artwork/sigur_r\u00f3s_me\u00f0_su\u00f0_\u00ed_eyrum_vi\u00f0_spilum_endalaust.jpg",
+        "release_year": 2008,
+        "rating": 18
+      },
+      {
+        "album_id": "2tm3Ht61kqqRZtIYsBjxEj",
+        "album_name": "Stankonia",
+        "artist": "Outkast",
+        "art_url": "/artwork/outkast_stankonia.jpg",
+        "release_year": 2000,
+        "rating": 17
+      },
+      {
+        "album_id": "0YtYaaO0aipyeQl0xhAWTO",
+        "album_name": "Since I Left You (20th Anniversary Deluxe Edition)",
+        "artist": "The Avalanches",
+        "art_url": "/artwork/the_avalanches_since_i_left_you_20th_anniversary_deluxe_edition.jpg",
+        "release_year": 2000,
+        "rating": 17
+      },
+      {
+        "album_id": "6Y3ALtSpmXlui2AZe80Nor",
+        "album_name": "You Should Be at Home Here",
+        "artist": "Carissa's Wierd",
+        "art_url": "/artwork/carissas_wierd_you_should_be_at_home_here.jpg",
+        "release_year": 2001,
+        "rating": 17
+      },
+      {
+        "album_id": "6deiaArbeoqp1xPEGdEKp1",
+        "album_name": "By the Way (Deluxe Edition)",
+        "artist": "Red Hot Chili Peppers",
+        "art_url": "/artwork/red_hot_chili_peppers_by_the_way_deluxe_edition.jpg",
+        "release_year": 2002,
+        "rating": 17
+      },
+      {
+        "album_id": "6lA1sGw7eCv27bcpd5E0wT",
+        "album_name": "Steal This Album!",
+        "artist": "System Of A Down",
+        "art_url": "/artwork/system_of_a_down_steal_this_album.jpg",
+        "release_year": 2002,
+        "rating": 17
+      },
+      {
+        "album_id": "4nYsnQpTAQaPzrPc6rOsBN",
+        "album_name": "Good Apollo I'm Burning Star IV Volume One: From Fear Through The Eyes Of Madness",
+        "artist": "Coheed and Cambria",
+        "art_url": "/artwork/coheed_and_cambria_good_apollo_im_burning_star_iv_volume_one_from_f.jpg",
+        "release_year": 2005,
+        "rating": 17
+      },
+      {
+        "album_id": "0u5NLD5OgDGDlpCIia1Igx",
+        "album_name": "None Shall Pass",
+        "artist": "Aesop Rock",
+        "art_url": "/artwork/aesop_rock_none_shall_pass.jpg",
+        "release_year": 2007,
+        "rating": 17
+      },
+      {
+        "album_id": "1iRPiEYHIX2zpF8lkW54SK",
+        "album_name": "Untrue",
+        "artist": "Burial",
+        "art_url": "/artwork/burial_untrue.jpg",
+        "release_year": 2007,
+        "rating": 17
+      },
+      {
+        "album_id": "3wLCCtHNSLsDpIItmWZzS9",
+        "album_name": "What It Takes To Move Forward",
+        "artist": "empire! empire! (i was a lonely estate)",
+        "art_url": "/artwork/empire_empire_i_was_a_lonely_estate_what_it_takes_to_move_forward.jpg",
+        "release_year": 2009,
+        "rating": 17
+      },
+      {
+        "album_id": "0Pv5bdtwTTBSHy9GyUe9um",
+        "album_name": "Relationship Of Command",
+        "artist": "At the Drive-In",
+        "art_url": "/artwork/at_the_drive_in_relationship_of_command.jpg",
+        "release_year": 2000,
+        "rating": 17
+      },
+      {
+        "album_id": "2osTPStH5H7i4fMHS7eauR",
+        "album_name": "Saosin",
+        "artist": "Saosin",
+        "art_url": "/artwork/saosin_saosin.jpg",
+        "release_year": 2006,
+        "rating": 17
+      },
+      {
+        "album_id": "0MtzNtKxLd7KthcSObeWJB",
+        "album_name": "We Are The Only Friends We Have",
+        "artist": "Piebald",
+        "art_url": "/artwork/piebald_we_are_the_only_friends_we_have.jpg",
+        "release_year": 2002,
+        "rating": 17
+      },
+      {
+        "album_id": "1nJQWexPwURsCTkp2THvg1",
+        "album_name": "...To the Beat of a Dead Horse",
+        "artist": "Touch\u00e9 Amor\u00e9",
+        "art_url": "/artwork/touch\u00e9_amor\u00e9_to_the_beat_of_a_dead_horse.jpg",
+        "release_year": 2009,
+        "rating": 17
+      },
+      {
+        "album_id": "1fvWYcbjuycyHpzNPH1Vfk",
+        "album_name": "10,000 Days",
+        "artist": "TOOL",
+        "art_url": "/artwork/tool_10000_days.jpg",
+        "release_year": 2006,
+        "rating": 17
+      },
+      {
+        "album_id": "7EJ0OT5ZqybXxcYRa6mccM",
+        "album_name": "For Emma, Forever Ago",
+        "artist": "Bon Iver",
+        "art_url": "/artwork/bon_iver_for_emma_forever_ago.jpg",
+        "release_year": 2008,
+        "rating": 17
+      },
+      {
+        "album_id": "1R8kkopLT4IAxzMMkjic6X",
+        "album_name": "Sound of Silver",
+        "artist": "LCD Soundsystem",
+        "art_url": "/artwork/lcd_soundsystem_sound_of_silver.jpg",
+        "release_year": 2007,
+        "rating": 17
+      },
+      {
+        "album_id": "38TTw10V04chCowK4hPsDu",
+        "album_name": "Drunk Like Bible Times",
+        "artist": "Dear and the Headlights",
+        "art_url": "/artwork/dear_and_the_headlights_drunk_like_bible_times.jpg",
+        "release_year": 2008,
+        "rating": 17
+      },
+      {
+        "album_id": "1eIzVBHA5NvX0wo2nLACew",
+        "album_name": "Sing The Sorrow",
+        "artist": "AFI",
+        "art_url": "/artwork/afi_sing_the_sorrow.jpg",
+        "release_year": 2003,
+        "rating": 17
+      },
+      {
+        "album_id": "3FR05gmeoVRYr2i1MKqrcn",
+        "album_name": "A Better View Of The Rising Moon",
+        "artist": "1997",
+        "art_url": "/artwork/1997_a_better_view_of_the_rising_moon.jpg",
+        "release_year": 2007,
+        "rating": 16
+      },
+      {
+        "album_id": "5SbcupirEParczvqqyUPXL",
+        "album_name": "The Moon & Antarctica",
+        "artist": "Modest Mouse",
+        "art_url": "/artwork/modest_mouse_the_moon_antarctica.jpg",
+        "release_year": 2000,
+        "rating": 16
+      },
+      {
+        "album_id": "4yngOTPwtS3iypFBwU5qqR",
+        "album_name": "Hazards Of Love",
+        "artist": "The Decemberists",
+        "art_url": "/artwork/the_decemberists_hazards_of_love.jpg",
+        "release_year": 2009,
+        "rating": 16
+      },
+      {
+        "album_id": "0puQN87m8wxSu8lcDkwV2k",
+        "album_name": "The Second Stage Turbine Blade (Re-Issue)",
+        "artist": "Coheed and Cambria",
+        "art_url": "/artwork/coheed_and_cambria_the_second_stage_turbine_blade_re_issue.jpg",
+        "release_year": 2002,
+        "rating": 16
+      },
+      {
+        "album_id": "6Xvc1TfpVEhDeHhmTQEtp0",
+        "album_name": "White Blood Cells",
+        "artist": "The White Stripes",
+        "art_url": "/artwork/the_white_stripes_white_blood_cells.jpg",
+        "release_year": 2001,
+        "rating": 16
+      },
+      {
+        "album_id": "0y13VbGddQ4azdVWakksAL",
+        "album_name": "Meteora (Bonus Edition)",
+        "artist": "Linkin Park",
+        "art_url": "/artwork/linkin_park_meteora_bonus_edition.jpg",
+        "release_year": 2003,
+        "rating": 16
+      },
+      {
+        "album_id": "17Mq1v9fKGSmCabI7DaV4S",
+        "album_name": "Porcelain",
+        "artist": "Sparta",
+        "art_url": "/artwork/sparta_porcelain.jpg",
+        "release_year": 2004,
+        "rating": 16
+      },
+      {
+        "album_id": "5j6RB5MpNUKWJJ2uxibdJh",
+        "album_name": "Logos",
+        "artist": "Atlas Sound",
+        "art_url": "/artwork/atlas_sound_logos.jpg",
+        "release_year": 2009,
+        "rating": 16
+      },
+      {
+        "album_id": "4rL0RzmHMQyHiZqJVdt7A8",
+        "album_name": "Old Ramon",
+        "artist": "Red House Painters",
+        "art_url": "/artwork/red_house_painters_old_ramon.jpg",
+        "release_year": 2001,
+        "rating": 16
+      },
+      {
+        "album_id": "4X8Y79gWo6xm7Osdapg58E",
+        "album_name": "The Eraser",
+        "artist": "Thom Yorke",
+        "art_url": "/artwork/thom_yorke_the_eraser.jpg",
+        "release_year": 2006,
+        "rating": 16
+      },
+      {
+        "album_id": "2BkhGv48TtChjKBwkC67eo",
+        "album_name": "All of a Sudden I Miss Everyone",
+        "artist": "Explosions In The Sky",
+        "art_url": "/artwork/explosions_in_the_sky_all_of_a_sudden_i_miss_everyone.jpg",
+        "release_year": 2007,
+        "rating": 16
+      },
+      {
+        "album_id": "7h5rbCRV3FcOgxZyRQTTS6",
+        "album_name": "Is This Thing Loaded?",
+        "artist": "Northstar",
+        "art_url": "/artwork/northstar_is_this_thing_loaded.jpg",
+        "release_year": 2002,
+        "rating": 15
+      },
+      {
+        "album_id": "0eGxAVwdwV2mHrUgLJ8R6Y",
+        "album_name": "Picaresque",
+        "artist": "The Decemberists",
+        "art_url": "/artwork/the_decemberists_picaresque.jpg",
+        "release_year": 2005,
+        "rating": 15
+      },
+      {
+        "album_id": "4jFfuHyKmhGeipjRmKIh8O",
+        "album_name": "Magic Potion",
+        "artist": "The Black Keys",
+        "art_url": "/artwork/the_black_keys_magic_potion.jpg",
+        "release_year": 2006,
+        "rating": 15
+      },
+      {
+        "album_id": "5mYC4LiADDrGcudmweZfea",
+        "album_name": "The Last Thing You Forget",
+        "artist": "Title Fight",
+        "art_url": "/artwork/title_fight_the_last_thing_you_forget.jpg",
+        "release_year": 2009,
+        "rating": 0
+      },
+      {
+        "album_id": "4kDzCMsxuZwsqqTPyL4yr6",
+        "album_name": "Hold Your Horse Is",
+        "artist": "Hella",
+        "art_url": "/artwork/hella_hold_your_horse_is.jpg",
+        "release_year": 2002,
+        "rating": 0
+      },
+      {
+        "album_id": "4TInspTe354xywdT2aJ2bi",
+        "album_name": "Manipulator",
+        "artist": "The Fall of Troy",
+        "art_url": "/artwork/the_fall_of_troy_manipulator.jpg",
+        "release_year": 2008,
+        "rating": 0
+      },
+      {
+        "album_id": "1rQZbncicoXyB64DqoH7OY",
+        "album_name": "Morning View",
+        "artist": "Incubus",
+        "art_url": "/artwork/incubus_morning_view.jpg",
+        "release_year": 2001,
+        "rating": 0
+      },
+      {
+        "album_id": "4Chn7XF8fzngf9GPfTMXLz",
+        "album_name": "On Letting Go",
+        "artist": "Circa Survive",
+        "art_url": "/artwork/circa_survive_on_letting_go.jpg",
+        "release_year": 2007,
+        "rating": 0
+      },
+      {
+        "album_id": "2C6NX2mhcHVSLDRZsZlrVy",
+        "album_name": "Vacuum Boogie",
+        "artist": "Floating Points",
+        "art_url": "/artwork/floating_points_vacuum_boogie.jpg",
+        "release_year": 2009,
+        "rating": 0
+      }
+    ]
+  },
+  "1990s": {
+    "albums": [
+      {
+        "album_id": "0AP5O47kJWlaKVnnybKvQI",
+        "album_name": "Everybody Else Is Doing It, So Why Can't We?",
+        "artist": "The Cranberries",
+        "art_url": "/artwork/the_cranberries_everybody_else_is_doing_it_so_why_cant_we.jpg",
+        "release_year": 1993,
+        "rating": 18
+      },
+      {
+        "album_id": "4bPT6Q8ppaSNppk1kbEbLl",
+        "album_name": "Mellon Collie And The Infinite Sadness (Remastered)",
+        "artist": "The Smashing Pumpkins",
+        "art_url": "/artwork/the_smashing_pumpkins_mellon_collie_and_the_infinite_sadness_remastere.jpg",
+        "release_year": 1995,
+        "rating": 18
+      },
+      {
+        "album_id": "1BZoqf8Zje5nGdwZhOjAtD",
+        "album_name": "The Miseducation of Lauryn Hill",
+        "artist": "Ms. Lauryn Hill",
+        "art_url": "/artwork/ms_lauryn_hill_the_miseducation_of_lauryn_hill.jpg",
+        "release_year": 1998,
+        "rating": 18
+      },
+      {
+        "album_id": "3539EbNgIdEDGBKkUf4wno",
+        "album_name": "Dummy",
+        "artist": "Portishead",
+        "art_url": "/artwork/portishead_dummy.jpg",
+        "release_year": 1994,
+        "rating": 18
+      },
+      {
+        "album_id": "5ceB3rxgXqIRpsOvVzTG28",
+        "album_name": "Aquemini",
+        "artist": "Outkast",
+        "art_url": "/artwork/outkast_aquemini.jpg",
+        "release_year": 1998,
+        "rating": 17
+      },
+      {
+        "album_id": "7HLVI2NCQz5DzL8VsB9A56",
+        "album_name": "Songs For A Blue Guitar",
+        "artist": "Red House Painters",
+        "art_url": "/artwork/red_house_painters_songs_for_a_blue_guitar.jpg",
+        "release_year": 1996,
+        "rating": 17
+      },
+      {
+        "album_id": "3HTsNBfZLfRXQTfdLeLVK1",
+        "album_name": "On Avery Island",
+        "artist": "Neutral Milk Hotel",
+        "art_url": "/artwork/neutral_milk_hotel_on_avery_island.jpg",
+        "release_year": 1996,
+        "rating": 17
+      },
+      {
+        "album_id": "4Io5vWtmV1rFj4yirKb4y4",
+        "album_name": "Rage Against The Machine - XX (20th Anniversary Special Edition)",
+        "artist": "Rage Against The Machine",
+        "art_url": "/artwork/rage_against_the_machine_rage_against_the_machine_xx_20th_anniversary_spe.jpg",
+        "release_year": 1992,
+        "rating": 17
+      },
+      {
+        "album_id": "70OkRXiiwdTCtZ9YiPBzPp",
+        "album_name": "American Football",
+        "artist": "American Football",
+        "art_url": "/artwork/american_football_american_football.jpg",
+        "release_year": 1999,
+        "rating": 17
+      },
+      {
+        "album_id": "3yRpyOundyELlkOO6O4YSo",
+        "album_name": "Through Being Cool",
+        "artist": "Saves The Day",
+        "art_url": "/artwork/saves_the_day_through_being_cool.jpg",
+        "release_year": 1999,
+        "rating": 17
+      },
+      {
+        "album_id": "4WIa7YKywqk8lXEvR5cx76",
+        "album_name": "If I Knew What I Knew Then",
+        "artist": "Hot Rod Circuit",
+        "art_url": "/artwork/hot_rod_circuit_if_i_knew_what_i_knew_then.jpg",
+        "release_year": 1999,
+        "rating": 16
+      },
+      {
+        "album_id": "5zaVtrjodNQru22Rj4FIcD",
+        "album_name": "Orange Rhyming Dictionary",
+        "artist": "Jets To Brazil",
+        "art_url": "/artwork/jets_to_brazil_orange_rhyming_dictionary.jpg",
+        "release_year": 1998,
+        "rating": 16
+      },
+      {
+        "album_id": "7sCpW2cLGcRk1zf9zi0Yqd",
+        "album_name": "Exile In Guyville (2018 Remaster)",
+        "artist": "Liz Phair",
+        "art_url": "/artwork/liz_phair_exile_in_guyville_2018_remaster.jpg",
+        "release_year": 1993,
+        "rating": 16
+      },
+      {
+        "album_id": "2HTbQ0RHwukKVXAlTmCZP2",
+        "album_name": "Ready to Die (The Remaster)",
+        "artist": "The Notorious B.I.G.",
+        "art_url": "/artwork/the_notorious_big_ready_to_die_the_remaster.jpg",
+        "release_year": 1994,
+        "rating": 16
+      },
+      {
+        "album_id": "2Y9IRtehByVkegoD7TcLfi",
+        "album_name": "Californication (Deluxe Edition)",
+        "artist": "Red Hot Chili Peppers",
+        "art_url": "/artwork/red_hot_chili_peppers_californication_deluxe_edition.jpg",
+        "release_year": 1999,
+        "rating": 16
+      },
+      {
+        "album_id": "2Rwf2nPYZQ9aIe4QXACTC7",
+        "album_name": "Live Through This",
+        "artist": "Hole",
+        "art_url": "/artwork/hole_live_through_this.jpg",
+        "release_year": 1994,
+        "rating": 16
+      },
+      {
+        "album_id": "3qr4pTBWEU1SVf01j6RAx3",
+        "album_name": "Baduizm",
+        "artist": "Erykah Badu",
+        "art_url": "/artwork/erykah_badu_baduizm.jpg",
+        "release_year": 1997,
+        "rating": 16
+      },
+      {
+        "album_id": "2fDJpBJhtloxzUENHlU9JB",
+        "album_name": "Rid Of Me",
+        "artist": "PJ Harvey",
+        "art_url": "/artwork/pj_harvey_rid_of_me.jpg",
+        "release_year": 1993,
+        "rating": 16
+      },
+      {
+        "album_id": "1p12OAWwudgMqfMzjMvl2a",
+        "album_name": "The Low End Theory",
+        "artist": "A Tribe Called Quest",
+        "art_url": "/artwork/a_tribe_called_quest_the_low_end_theory.jpg",
+        "release_year": 1991,
+        "rating": 16
+      },
+      {
+        "album_id": "3ue3vifOfBG7KAV1FPFQa4",
+        "album_name": "Red Medicine",
+        "artist": "Fugazi",
+        "art_url": "/artwork/fugazi_red_medicine.jpg",
+        "release_year": 1995,
+        "rating": 16
+      },
+      {
+        "album_id": "7p5mnxLTjbvs4kInkK8za9",
+        "album_name": "System Of A Down",
+        "artist": "System Of A Down",
+        "art_url": "/artwork/system_of_a_down_system_of_a_down.jpg",
+        "release_year": 1998,
+        "rating": 16
+      },
+      {
+        "album_id": "2eia0myWFgoHuttJytCxgX",
+        "album_name": "The Battle Of Los Angeles",
+        "artist": "Rage Against The Machine",
+        "art_url": "/artwork/rage_against_the_machine_the_battle_of_los_angeles.jpg",
+        "release_year": 1999,
+        "rating": 16
+      },
+      {
+        "album_id": "4nKfZbCALT9H9LfedtDwnZ",
+        "album_name": "August And Everything After",
+        "artist": "Counting Crows",
+        "art_url": "/artwork/counting_crows_august_and_everything_after.jpg",
+        "release_year": 1993,
+        "rating": 16
+      },
+      {
+        "album_id": "1SV1Fh8rLes7MeTYTXznKd",
+        "album_name": "Trace (Remastered)",
+        "artist": "Son Volt",
+        "art_url": "/artwork/son_volt_trace_remastered.jpg",
+        "release_year": 1995,
+        "rating": 16
+      },
+      {
+        "album_id": "0HMsmYvoT1h2x1C4di5faf",
+        "album_name": "Homogenic",
+        "artist": "Bj\u00f6rk",
+        "art_url": "/artwork/bj\u00f6rk_homogenic.jpg",
+        "release_year": 1997,
+        "rating": 16
+      },
+      {
+        "album_id": "4WBDw3hnJTvWXXDaCNKVqJ",
+        "album_name": "Frame & Canvas",
+        "artist": "Braid",
+        "art_url": "/artwork/braid_frame_canvas.jpg",
+        "release_year": 1998,
+        "rating": 15
+      },
+      {
+        "album_id": "3F9xD3Dg2zu2LZbVHdKeVD",
+        "album_name": "Red House Painters I",
+        "artist": "Red House Painters",
+        "art_url": "/artwork/red_house_painters_red_house_painters_i.jpg",
+        "release_year": 1993,
+        "rating": 15
+      },
+      {
+        "album_id": "1Ft1QQbUOCgSqumZKYuWhw",
+        "album_name": "Stoner Witch",
+        "artist": "Melvins",
+        "art_url": "/artwork/melvins_stoner_witch.jpg",
+        "release_year": 1994,
+        "rating": 15
+      },
+      {
+        "album_id": "46522TAHAMPyA2utw8bo3F",
+        "album_name": "The End Of The Ring Wars",
+        "artist": "The Appleseed Cast",
+        "art_url": "/artwork/the_appleseed_cast_the_end_of_the_ring_wars.jpg",
+        "release_year": 1998,
+        "rating": 14
+      },
+      {
+        "album_id": "0A6yLV44DEhpwXB7cyvLEP",
+        "album_name": "Blind Melon",
+        "artist": "Blind Melon",
+        "art_url": "/artwork/blind_melon_blind_melon.jpg",
+        "release_year": 1992,
+        "rating": 14
+      },
+      {
+        "album_id": "16j7lqTblxGoqXXREFCEwT",
+        "album_name": "Stereo",
+        "artist": "Christie Front Drive",
+        "art_url": "/artwork/christie_front_drive_stereo.jpg",
+        "release_year": 1997,
+        "rating": 0
+      },
+      {
+        "album_id": "3ShOlS0OwhEq4ai8K9dvko",
+        "album_name": "From here to eternity",
+        "artist": "envy",
+        "art_url": "/artwork/envy_from_here_to_eternity.jpg",
+        "release_year": 1998,
+        "rating": 0
+      }
+    ]
+  },
+  "1980s": {
+    "albums": [
+      {
+        "album_id": "5vBZRYu2GLA65nfxBvG1a7",
+        "album_name": "The Joshua Tree",
+        "artist": "U2",
+        "art_url": "/artwork/u2_the_joshua_tree.jpg",
+        "release_year": 1987,
+        "rating": 17
+      },
+      {
+        "album_id": "3DSPggBtjAU0GtOSdNNn6x",
+        "album_name": "Luz",
+        "artist": "Djavan",
+        "art_url": "/artwork/djavan_luz.jpg",
+        "release_year": 1982,
+        "rating": 17
+      },
+      {
+        "album_id": "0FOAFmdS9StYdW3hrSnJCe",
+        "album_name": "Marcos Valle",
+        "artist": "Marcos Valle",
+        "art_url": "/artwork/marcos_valle_marcos_valle.jpg",
+        "release_year": 1983,
+        "rating": 16
+      },
+      {
+        "album_id": "0pU2blS70BzVWyC1tVyaLg",
+        "album_name": "Rites of Spring",
+        "artist": "Rites of Spring",
+        "art_url": "/artwork/rites_of_spring_rites_of_spring.jpg",
+        "release_year": 1985,
+        "rating": 16
+      },
+      {
+        "album_id": "3BYlBcND6PeKoW6ZODjZO3",
+        "album_name": "Daydream Nation (Remastered Original Album)",
+        "artist": "Sonic Youth",
+        "art_url": "/artwork/sonic_youth_daydream_nation_remastered_original_album.jpg",
+        "release_year": 1988,
+        "rating": 16
+      },
+      {
+        "album_id": "5EyDvOit9McsAc9ao1QROt",
+        "album_name": "The Sensual World (2018 Remaster)",
+        "artist": "Kate Bush",
+        "art_url": "/artwork/kate_bush_the_sensual_world_2018_remaster.jpg",
+        "release_year": 1989,
+        "rating": 16
+      },
+      {
+        "album_id": "3391Q4zuKuz0JpHkmaJsQv",
+        "album_name": "Comiss\u00e3o De Frente",
+        "artist": "Jo\u00e3o Bosco",
+        "art_url": "/artwork/jo\u00e3o_bosco_comiss\u00e3o_de_frente.jpg",
+        "release_year": 1982,
+        "rating": 16
+      },
+      {
+        "album_id": "3peMqhMZ1HT8N4lvSS3GPu",
+        "album_name": "You're Living All Over Me",
+        "artist": "Dinosaur Jr.",
+        "art_url": "/artwork/dinosaur_jr_youre_living_all_over_me.jpg",
+        "release_year": 1987,
+        "rating": 16
+      },
+      {
+        "album_id": "3JcNnjMVSKiNpqhErZarW0",
+        "album_name": "Diamond Life",
+        "artist": "Sade",
+        "art_url": "/artwork/sade_diamond_life.jpg",
+        "release_year": 1984,
+        "rating": 16
+      },
+      {
+        "album_id": "6wPX4FdHqmn0aHZ84WUCW5",
+        "album_name": "Out of Step",
+        "artist": "Minor Threat",
+        "art_url": "/artwork/minor_threat_out_of_step.jpg",
+        "release_year": 1984,
+        "rating": 16
+      },
+      {
+        "album_id": "79CvxovoFgGNuAMvQp9wul",
+        "album_name": "Come On Pilgrim",
+        "artist": "Pixies",
+        "art_url": "/artwork/pixies_come_on_pilgrim.jpg",
+        "release_year": 1987,
+        "rating": 16
+      },
+      {
+        "album_id": "6NTrwu1XJ56jBPx7HMksbZ",
+        "album_name": "Power Corruption and Lies",
+        "artist": "New Order",
+        "art_url": "/artwork/new_order_power_corruption_and_lies.jpg",
+        "release_year": 1983,
+        "rating": 16
+      },
+      {
+        "album_id": "7hodLjVNQZSsNEqvG77ZkI",
+        "album_name": "World Of Echo",
+        "artist": "Arthur Russell",
+        "art_url": "/artwork/arthur_russell_world_of_echo.jpg",
+        "release_year": 1986,
+        "rating": 15
+      },
+      {
+        "album_id": "1kmyirVya5fRxdjsPFDM05",
+        "album_name": "Paul's Boutique (20th Anniversary Edition / Remastered)",
+        "artist": "Beastie Boys",
+        "art_url": "/artwork/beastie_boys_pauls_boutique_20th_anniversary_edition_remaster.jpg",
+        "release_year": 1989,
+        "rating": 15
+      },
+      {
+        "album_id": "7GWkceE5McMVfffd1RGL6Y",
+        "album_name": "Control",
+        "artist": "Janet Jackson",
+        "art_url": "/artwork/janet_jackson_control.jpg",
+        "release_year": 1986,
+        "rating": 15
+      },
+      {
+        "album_id": "7AFsTiojVaB2I58oZ1tMRg",
+        "album_name": "Raising Hell",
+        "artist": "Run\u2013D.M.C.",
+        "art_url": "/artwork/rundmc_raising_hell.jpg",
+        "release_year": 1986,
+        "rating": 15
+      }
+    ]
+  },
+  "1970s": {
+    "albums": [
+      {
+        "album_id": "0bCAjiUamIFqKJsekOYuRw",
+        "album_name": "Wish You Were Here",
+        "artist": "Pink Floyd",
+        "art_url": "/artwork/pink_floyd_wish_you_were_here.jpg",
+        "release_year": 1975,
+        "rating": 18
+      },
+      {
+        "album_id": "22ZgHorVJzcZ4m8YBZCw4w",
+        "album_name": "Future Days (Remastered Version)",
+        "artist": "CAN",
+        "art_url": "/artwork/can_future_days_remastered_version.jpg",
+        "release_year": 1973,
+        "rating": 18
+      },
+      {
+        "album_id": "4RMGrhJRnGiNqmKqhqpLlX",
+        "album_name": "Loaded (2015 Remaster)",
+        "artist": "The Velvet Underground",
+        "art_url": "/artwork/the_velvet_underground_loaded_2015_remaster.jpg",
+        "release_year": 1970,
+        "rating": 17
+      },
+      {
+        "album_id": "7LMOo068Ndv0wjTGUDtYqK",
+        "album_name": "Entertainment!",
+        "artist": "Gang Of Four",
+        "art_url": "/artwork/gang_of_four_entertainment.jpg",
+        "release_year": 1979,
+        "rating": 17
+      },
+      {
+        "album_id": "5qhXaVIC5BdE4a5Kq1FMZG",
+        "album_name": "Funhouse",
+        "artist": "The Stooges",
+        "art_url": "/artwork/the_stooges_funhouse.jpg",
+        "release_year": 1970,
+        "rating": 17
+      },
+      {
+        "album_id": "5Dbax7G8SWrP9xyzkOvy2F",
+        "album_name": "The Wall",
+        "artist": "Pink Floyd",
+        "art_url": "/artwork/pink_floyd_the_wall.jpg",
+        "release_year": 1979,
+        "rating": 16
+      },
+      {
+        "album_id": "5risYG7klZCSLMNxB9dZhf",
+        "album_name": "Clube Da Esquina",
+        "artist": "L\u00f4 Borges",
+        "art_url": "/artwork/l\u00f4_borges_clube_da_esquina.jpg",
+        "release_year": 1972,
+        "rating": 16
+      },
+      {
+        "album_id": "6TxgQwGrbG3XZLNPOEhg7E",
+        "album_name": "Singles Going Steady",
+        "artist": "Buzzcocks",
+        "art_url": "/artwork/buzzcocks_singles_going_steady.jpg",
+        "release_year": 1979,
+        "rating": 16
+      },
+      {
+        "album_id": "5U4dnRZsfW8NmwBBkELFPh",
+        "album_name": "Exile On Main Street (2010 Re-Mastered)",
+        "artist": "The Rolling Stones",
+        "art_url": "/artwork/the_rolling_stones_exile_on_main_street_2010_re_mastered.jpg",
+        "release_year": 1972,
+        "rating": 16
+      },
+      {
+        "album_id": "6R4gL2dyrbGpmgBOH9kvci",
+        "album_name": "Farol da Barra",
+        "artist": "Novos Baianos",
+        "art_url": "/artwork/novos_baianos_farol_da_barra.jpg",
+        "release_year": 1978,
+        "rating": 16
+      },
+      {
+        "album_id": "4hjiHP3NIIzyYUgfs145zr",
+        "album_name": "\u00c1libi",
+        "artist": "Maria Beth\u00e2nia",
+        "art_url": "/artwork/maria_beth\u00e2nia_\u00e1libi.jpg",
+        "release_year": 1978,
+        "rating": 16
+      },
+      {
+        "album_id": "2LxncTIR5lf2dzoZb3QNC6",
+        "album_name": "Meus Caros Amigos",
+        "artist": "Chico Buarque",
+        "art_url": "/artwork/chico_buarque_meus_caros_amigos.jpg",
+        "release_year": 1976,
+        "rating": 16
+      },
+      {
+        "album_id": "5Dgqy4bBg09Rdw7CQM545s",
+        "album_name": "Unknown Pleasures",
+        "artist": "Joy Division",
+        "art_url": "/artwork/joy_division_unknown_pleasures.jpg",
+        "release_year": 1979,
+        "rating": 16
+      },
+      {
+        "album_id": "5mQnSrc0cFV6greyhJJIR6",
+        "album_name": "Who's Next (Remastered 2022)",
+        "artist": "The Who",
+        "art_url": "/artwork/the_who_whos_next_remastered_2022.jpg",
+        "release_year": 1971,
+        "rating": 16
+      },
+      {
+        "album_id": "6GEO5pSp3ojwIm9vZqTtRd",
+        "album_name": "Quem \u00c9 Quem",
+        "artist": "Jo\u00e3o Donato",
+        "art_url": "/artwork/jo\u00e3o_donato_quem_\u00e9_quem.jpg",
+        "release_year": 1973,
+        "rating": 15
+      },
+      {
+        "album_id": "53cxrg7kbFQxDizY0kcDQo",
+        "album_name": "Parallelograms",
+        "artist": "Linda Perhacs",
+        "art_url": "/artwork/linda_perhacs_parallelograms.jpg",
+        "release_year": 1970,
+        "rating": 15
+      },
+      {
+        "album_id": "4Bc3Vi6eMdJKEGN3haOTGF",
+        "album_name": "Light As A Feather",
+        "artist": "Azymuth",
+        "art_url": "/artwork/azymuth_light_as_a_feather.jpg",
+        "release_year": 1979,
+        "rating": 15
+      }
+    ]
+  },
+  "1960s": {
+    "albums": [
+      {
+        "album_id": "5ZVLLME05cmciSZz4IGcZu",
+        "album_name": "Gal Costa",
+        "artist": "Gal Costa",
+        "art_url": "/artwork/gal_costa_gal_costa.jpg",
+        "release_year": 1969,
+        "rating": 17
+      }
+    ]
+  },
+  "1950s": {
+    "albums": []
+  },
+  "Unknown": {
+    "albums": []
+  }
+}

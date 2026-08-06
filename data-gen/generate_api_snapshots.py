@@ -274,6 +274,7 @@ def main():
         valid_artwork = before["artwork_names"]
         artists_list = None
         playlists_list = None
+        tops_decades = None
         for path, filename in ENDPOINTS.items():
             with urlopen(f"{BASE_URL}{path}", timeout=10) as resp:
                 data = json.load(resp)
@@ -286,6 +287,38 @@ def main():
                 artists_list = clean["artists"]
             if path == "/api/playlists":
                 playlists_list = clean["playlists"]
+            if path == "/api/tops":
+                tops_decades = [d["decade"] for d in clean["decades"]]
+
+        # Per-decade eligible-favorites list for the Tops editor (favorited
+        # albums in that decade not already in the top 10) — same "snapshot
+        # every real parameterized response, one file per key" pattern as
+        # playlists-evaluate/artists-detail above.
+        if tops_decades is not None:
+            catalog_seed = json.loads((DATA_DIR / "catalog_seed.json").read_text())
+            real_eligible_order = catalog_seed.get("eligible_order", {})
+
+            eligible_out = {}
+            for decade in tops_decades:
+                encoded = quote(decade, safe="")
+                with urlopen(f"{BASE_URL}/api/tops/{encoded}/eligible", timeout=10) as resp:
+                    result = json.load(resp)
+                result = scrub_stale_artwork(sanitize_paths(result), valid_artwork)
+                # Re-sort to match the real app's own order (real rating + real play
+                # count) instead of the order this run's synthetic-data-driven backend
+                # computed (same rating, but a synthetic play-count tiebreak) — see
+                # export_catalog_seed.py's "eligible_order" comment and PRJ-0005
+                # session log. Anything not in the real order (shouldn't normally
+                # happen — eligibility itself is entirely real-field-driven) keeps its
+                # existing relative order, appended after every ranked album.
+                order = real_eligible_order.get(decade, [])
+                rank = {aid: i for i, aid in enumerate(order)}
+                result["albums"].sort(key=lambda a: rank.get(a["album_id"], len(order)))
+                eligible_out[decade] = result
+            out_path = OUT_DIR / "tops-eligible.json"
+            with out_path.open("w") as f:
+                json.dump(eligible_out, f, indent=2)
+            print(f"/api/tops/<decade>/eligible x{len(eligible_out)} -> {out_path.relative_to(ROOT)}")
 
         # Per-playlist evaluated tracklist, keyed by playlist id (ids are plain
         # ASCII already, no encoding concerns). Snapshotted once per playlist —

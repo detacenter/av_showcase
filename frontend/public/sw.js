@@ -30,6 +30,7 @@ const overlay = {
   claudioGenerate: { running: false, startedAt: 0, poolIndex: 0 },
   claudioAddedBatches: [],       // batches appended by "Generate" clicks this session
   claudioFeedback: {},           // "batchIdx:recIdx" -> "up" | "down" | null
+  topsDecades: {},       // decade -> album_ids[] (only stores overrides, not full state)
 };
 
 let _playlistCounter = 0;
@@ -232,7 +233,31 @@ async function handleVinylStats() {
 }
 
 async function handleTops() {
-  return jsonResponse(await loadSnapshot("tops.json"));
+  const data = await loadSnapshot("tops.json");
+  const eligible = await loadSnapshot("tops-eligible.json");
+  const decades = data.decades.map((d) => {
+    const ids = (overlay.topsDecades[d.decade] ?? d.album_ids).slice(0, 10);
+    const albums = { ...d.albums };
+    for (const info of eligible[d.decade]?.albums ?? []) {
+      if (!albums[info.album_id]) albums[info.album_id] = info;
+    }
+    return { decade: d.decade, album_ids: ids, albums };
+  });
+  return jsonResponse({ decades });
+}
+
+async function handleTopsEligible(decade) {
+  const data = await loadSnapshot("tops.json");
+  const eligible = await loadSnapshot("tops-eligible.json");
+  const decadeData = data.decades.find((d) => d.decade === decade);
+  const placedIds = new Set(overlay.topsDecades[decade] ?? decadeData?.album_ids ?? []);
+  const albums = (eligible[decade]?.albums ?? []).filter((info) => !placedIds.has(info.album_id));
+  return jsonResponse({ albums });
+}
+
+function handleSaveTops(decade, body) {
+  overlay.topsDecades[decade] = (body.album_ids || []).map(String);
+  return jsonResponse({ ok: true });
 }
 
 async function handleVinylSessions() {
@@ -615,6 +640,12 @@ async function handleApiRequest(request) {
   }
   if ((m = path.match(/^\/api\/recent\/([^/]+)$/)) && method === "DELETE") {
     return handleDeletePlay(m[1]);
+  }
+  if ((m = path.match(/^\/api\/tops\/([^/]+)\/eligible$/)) && method === "GET") {
+    return handleTopsEligible(decodeURIComponent(m[1]));
+  }
+  if ((m = path.match(/^\/api\/tops\/([^/]+)$/)) && method === "POST") {
+    return handleSaveTops(decodeURIComponent(m[1]), await request.json());
   }
 
   // Not-yet-implemented endpoint — fail loud in the console instead of a

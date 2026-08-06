@@ -361,6 +361,46 @@ def main() -> None:
         for decade, ids in real_album_tops.items()
     }
 
+    # Real Tops-editor "eligible" ordering (session 7) — the real /api/tops/{decade}/
+    # eligible endpoint sorts by (-rating, -play_count, name), and rating is already
+    # real/carried-through above, but play_count comes from whichever log the backend
+    # is pointed at. Stage 2's synthetic log gives a different play-count tiebreak than
+    # the user's real listening history, so two albums tied on rating can land in a
+    # different order than the real app shows — caught by the user directly comparing
+    # a real screenshot against the demo's Tops editor. Fixed by precomputing the real
+    # order here (real ratings + real play counts, both from real data) and having
+    # generate_api_snapshots.py re-sort the demo's eligible list to match it, instead of
+    # trusting whatever order the synthetic-data-driven backend run happens to produce.
+    real_play_count_by_album: dict[str, int] = {}
+    for e in log:
+        aid = e.get("album_id")
+        if aid:
+            real_play_count_by_album[aid] = real_play_count_by_album.get(aid, 0) + 1
+
+    def _decade_for_year(year: int | None) -> str:
+        if not year:
+            return "Unknown"
+        return f"{(year // 10) * 10}s"
+
+    eligible_rows: dict[str, list[tuple]] = {}
+    for album_id, entry in real_album_ratings.items():
+        if not entry.get("favorited"):
+            continue
+        album = albums.get(album_id)
+        if not album:
+            continue
+        decade = _decade_for_year(album.get("release_year"))
+        eligible_rows.setdefault(decade, []).append((
+            -entry.get("rating", 0),
+            -real_play_count_by_album.get(album_id, 0),
+            (album.get("album_name") or "").lower(),
+            album_id,
+        ))
+    eligible_order = {
+        decade: [aid for (*_ , aid) in sorted(rows) if aid in seed_album_ids]
+        for decade, rows in eligible_rows.items()
+    }
+
     out = {
         "_meta": {
             "generated_by": "export_catalog_seed.py",
@@ -373,6 +413,7 @@ def main() -> None:
         "artists": seed_artists,
         "vinyl_collection": vinyl_collection,
         "album_tops": album_tops,
+        "eligible_order": eligible_order,
     }
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)

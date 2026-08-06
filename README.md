@@ -1,4 +1,4 @@
-# av — listening intelligence for your own music library
+# av: listening intelligence for your own music library
 
 A portfolio demo of **Audiovault (`av`)**, a Spotify listening-history logger and analyzer
 I built and use daily. This repo is a from-scratch, sanitized rebuild of the real app: real
@@ -15,31 +15,31 @@ turns the combined history into things Spotify itself doesn't show me: session-l
 listening patterns, per-decade "tops," discovery-vs-comfort balance over time, and an
 LLM-assisted recommendation engine (Claudio) tuned to my actual taste.
 
-This repo is **not** a copy of that app's git history or its live backend — it's a separate
+This repo is **not** a copy of that app's git history or its live backend. It's a separate
 project, built to show the engineering behind it without exposing any of my real listening
 data. Two exceptions, made deliberately: album star ratings and the vinyl collection are
 real (they're curated opinions about public albums, not behavioral data), and Tops/Claudio
 draw on my real per-decade picks and recommendation history for the same reason. Everything
-else — every timestamp, session, favorite, and note — is synthetic, generated from real
+else (every timestamp, session, favorite, and note) is synthetic, generated from real
 catalog data (artists/albums/tracklists) run through a statistical model calibrated against
 my actual listening patterns, not copied from them.
 
 ## Architecture
 
-- **`frontend/`** — the real React/Vite UI, unmodified except for stripping Electron-only
+- **`frontend/`**: the real React/Vite UI, unmodified except for stripping Electron-only
   coupling (it degrades gracefully to a plain browser tab).
-- **`backend/`** — the real FastAPI backend source: routers, insights/analytics modules,
+- **`backend/`**: the real FastAPI backend source: routers, insights/analytics modules,
   query engine. Included as **reference code you can read**, not something the live demo
-  runs — see below.
-- **`electron/`** — the real desktop shell source (`main.js`/`preload.js`), also included as
+  runs (see below).
+- **`electron/`**: the real desktop shell source (`main.js`/`preload.js`), also included as
   inert reference, not runnable here.
 
-The deployed demo is a **fully static site** — no live backend, nothing to host or pay for
+The deployed demo is a **fully static site**: no live backend, nothing to host or pay for
 beyond static hosting. A service worker (`frontend/public/sw.js`) intercepts every `/api/*`
 call the real frontend makes and answers it from static JSON snapshots. Those snapshots
 aren't hand-written: `data-gen/` actually runs the real (sanitized) backend once against a
 synthetic dataset and captures its genuine responses, so the API shapes, computed stats, and
-edge cases are all authentic — just frozen instead of live. For the full interactive
+edge cases are all authentic, just frozen instead of live. For the full interactive
 breakdown, see the **About** page in the running demo.
 
 ## Features
@@ -63,7 +63,7 @@ mocked endpoint directly and see real request/response shapes.
 
 ## Keyboard shortcuts
 
-The UI is fully keyboard-navigable — vim-style (`h`/`j`/`k`/`l`) plus arrow keys throughout.
+The UI is fully keyboard-navigable: vim-style (`h`/`j`/`k`/`l`) plus arrow keys throughout.
 
 <details>
 <summary><strong>Full shortcut reference</strong></summary>
@@ -76,7 +76,7 @@ The UI is fully keyboard-navigable — vim-style (`h`/`j`/`k`/`l`) plus arrow ke
 | `Cmd/Ctrl` + `1`–`9`, `0` | Jump directly to nav tab N |
 | `Cmd/Ctrl` + `R` | Trigger a library sync |
 
-**Grid views** (Artists, Albums, Vinyl, Playlists — shared pattern)
+**Grid views** (shared pattern across Artists, Albums, Vinyl, Playlists)
 
 | Key | Action |
 |---|---|
@@ -149,8 +149,8 @@ The UI is fully keyboard-navigable — vim-style (`h`/`j`/`k`/`l`) plus arrow ke
 
 ## Run it locally
 
-The demo only needs the frontend — no backend process, no environment variables, no API
-keys:
+The demo only needs the frontend, with no backend process, no environment variables, and no
+API keys:
 
 ```bash
 cd frontend

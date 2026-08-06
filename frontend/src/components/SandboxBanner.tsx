@@ -28,7 +28,7 @@ export function SandboxBanner() {
       }}
     >
       <span>
-        This is a sandbox — real catalog data, sample listening history.{" "}
+        This is a sandbox: real catalog data, sample listening history.{" "}
         <Link to="/about" style={{ color: "var(--white)", fontWeight: 600 }}>
           How it works ↗
         </Link>

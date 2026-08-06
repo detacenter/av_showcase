@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const NODE_INFO: Record<string, { title: string; body: string }> = {
   "electron-desktop": {
     title: "Electron Desktop (Mac)",
-    body: "The primary client — a React app wrapped in Electron, talking to the Pi backend over Tailscale. Handles Spotify re-auth via an IPC bridge to the OS browser.",
+    body: "The primary client: a React app wrapped in Electron, talking to the Pi backend over Tailscale. Handles Spotify re-auth via an IPC bridge to the OS browser.",
   },
   "react-pwa": {
     title: "React PWA (mobile)",
@@ -18,7 +18,7 @@ const NODE_INFO: Record<string, { title: string; body: string }> = {
   },
   "vinyl-monitor": {
     title: "vinyl_monitor.service",
-    body: "A separate systemd service watching the audio input's RMS level to detect when a record is playing, then automatically opens and closes vinyl listening sessions — no manual logging.",
+    body: "A separate systemd service watching the audio input's RMS level to detect when a record is playing, then automatically opens and closes vinyl listening sessions, no manual logging.",
   },
   "json-store": {
     title: "Local JSON data store",
@@ -30,7 +30,7 @@ const NODE_INFO: Record<string, { title: string; body: string }> = {
   },
   "turntable": {
     title: "Turntable",
-    body: "The actual record player. Just a line-level audio connection to the USB interface — no digital/smart integration on the turntable itself.",
+    body: "The actual record player. Just a line-level audio connection to the USB interface, no digital/smart integration on the turntable itself.",
   },
   "api-spotify": {
     title: "Spotify",
@@ -46,15 +46,15 @@ const NODE_INFO: Record<string, { title: string; body: string }> = {
   },
   "api-anthropic": {
     title: "Anthropic (Claude)",
-    body: "Powers Claudio — generates album recommendations from the listening profile, hard-filtered against everything already owned or ever recommended before.",
+    body: "Powers Claudio: generates album recommendations from the listening profile, hard-filtered against everything already owned or ever recommended before.",
   },
   "browser": {
     title: "Your browser",
-    body: "Running the actual real-app React frontend — same components, same styling. There's no separate \"demo mode\" UI.",
+    body: "Running the actual real-app React frontend, same components, same styling. There's no separate \"demo mode\" UI.",
   },
   "service-worker": {
     title: "Service worker",
-    body: "Registered on page load, intercepts every /api/* fetch and answers from static snapshots instead of a live server — the same offline-support mechanism the real app already had, repurposed here to remove the backend entirely.",
+    body: "Registered on page load, intercepts every /api/* fetch and answers from static snapshots instead of a live server: the same offline-support mechanism the real app already had, repurposed here to remove the backend entirely.",
   },
   "snapshots": {
     title: "Static JSON snapshots",
@@ -62,7 +62,7 @@ const NODE_INFO: Record<string, { title: string; body: string }> = {
   },
   "vercel": {
     title: "Vercel",
-    body: "Serves the static build. No compute, no database, no live third-party API calls at runtime — just files.",
+    body: "Serves the static build. No compute, no database, no live third-party API calls at runtime, just files.",
   },
 };
 
@@ -116,12 +116,18 @@ function GroupLabel({ x, y, text }: { x: number; y: number; text: string }) {
   );
 }
 
+// y2 is always given as the destination box's top edge, not the visual line
+// end — boxes render after (on top of) lines in SVG paint order, so a line
+// drawn all the way to y2 gets its arrowhead clipped by the box beneath it.
+// Pulling back by ARROW_GAP leaves the arrowhead fully visible in the gap.
+const ARROW_GAP = 6;
+
 function VLine({
   x, y1, y2, markerId, label,
 }: { x: number; y1: number; y2: number; markerId: string; label?: string }) {
   return (
     <g>
-      <line x1={x} y1={y1} x2={x} y2={y2} stroke="var(--dim)" strokeWidth={1.5} markerEnd={`url(#${markerId})`} />
+      <line x1={x} y1={y1} x2={x} y2={y2 - ARROW_GAP} stroke="var(--dim)" strokeWidth={1.5} markerEnd={`url(#${markerId})`} />
       {label && (
         <text x={x + 6} y={(y1 + y2) / 2} style={{ fill: "var(--dim)", fontSize: 9, fontStyle: "italic" }}>
           {label}
@@ -315,7 +321,7 @@ export function AboutView() {
         <p style={{ fontSize: 13, color: "var(--gray)", lineHeight: 1.6, marginBottom: 32 }}>
           AudioVault is a personal Spotify listening-history logger and analyzer that runs
           on a Raspberry Pi at home, with an Electron desktop app and a mobile PWA as
-          clients. This site is a public, static demo of that app's frontend — real album
+          clients. This site is a public, static demo of that app's frontend: real album
           artwork, artist names, and genre data, paired with a synthetic listening history
           generated to look plausible without exposing anything personal. There's no server
           behind this page: everything you see is served from static files, with a service
@@ -349,7 +355,7 @@ export function AboutView() {
         <Section title="What's real vs. synthetic here">
           <p style={{ fontSize: 13, color: "var(--gray)", lineHeight: 1.7 }}>
             Artist names, album metadata, genres, and artwork are all real public catalog
-            data. Listening history — play timestamps, session patterns — is fully
+            data. Listening history (play timestamps, session patterns) is fully
             synthetic, generated from a statistical model rather than derived from any
             real listening data. Two deliberate exceptions: album star ratings and the
             vinyl record collection are real, since neither reveals anything about
