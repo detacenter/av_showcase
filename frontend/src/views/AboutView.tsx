@@ -338,7 +338,7 @@ export function AboutView() {
             data: thin, once-a-year, style-over-substance in <em>Wrapped</em>. After years of
             vibe-coding for work and smaller personal projects, the gap between how much I
             care about music and how little insight Spotify actually gives me into my own
-            listening was reason enough to just build the thing myself.
+            listening inspired me to build it myself.
           </p>
           <p style={{ fontSize: 13, color: "var(--gray)", lineHeight: 1.7 }}>
             It grew organically from there. Spotify doesn't return genre in its metadata, so
@@ -373,7 +373,9 @@ export function AboutView() {
 
         <Section title="About this build">
           <p style={{ fontSize: 13, color: "var(--gray)", lineHeight: 1.7 }}>
-            This site was built with <a href="https://claude.com/claude-code" target="_blank" rel="noreferrer" style={{ color: "var(--green)" }}>Claude Code</a>,
+Not just this showcase site: the real AudioVault app it demos, and the synthetic-data
+            pipeline behind this demo, were all built with{" "}
+            <a href="https://claude.com/claude-code" target="_blank" rel="noreferrer" style={{ color: "var(--green)" }}>Claude Code</a>,
             Anthropic's agentic coding CLI, over a series of sessions with a human in the
             loop for every product and architecture decision. It's a companion piece to an
             ongoing personal project, not a finished one-off: the real app keeps evolving,
