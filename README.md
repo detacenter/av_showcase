@@ -168,4 +168,4 @@ Electron (reference) · deployed on Vercel
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT, see [LICENSE](LICENSE).
