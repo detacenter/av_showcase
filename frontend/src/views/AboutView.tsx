@@ -327,9 +327,10 @@ export function AboutView() {
           behind this page; everything you see is served from static files, with a service
           worker standing in for the real API. See the{" "}
           <Link to="/api-guide" style={{ color: "var(--green)" }}>API guide ↗</Link> to try the
-          actual endpoints behind every view on this site, or the{" "}
+          actual endpoints behind every view on this site, the{" "}
           <Link to="/shortcuts" style={{ color: "var(--green)" }}>keyboard shortcuts ↗</Link>{" "}
-          reference for how it's meant to be driven.
+          reference for how it's meant to be driven, or the{" "}
+          <a href="https://github.com/detaels/av_showcase" target="_blank" rel="noreferrer" style={{ color: "var(--green)" }}>source on GitHub ↗</a>.
         </p>
 
         <Section title="Why I built this">
