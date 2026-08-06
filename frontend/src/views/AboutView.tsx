@@ -326,9 +326,9 @@ export function AboutView() {
           generated to look plausible without exposing anything personal. There's no server
           behind this page; everything you see is served from static files, with a service
           worker standing in for the real API. See the{" "}
-          <Link to="/api-guide" style={{ color: "var(--white)" }}>API guide ↗</Link> to try the
+          <Link to="/api-guide" style={{ color: "var(--green)" }}>API guide ↗</Link> to try the
           actual endpoints behind every view on this site, or the{" "}
-          <Link to="/shortcuts" style={{ color: "var(--white)" }}>keyboard shortcuts ↗</Link>{" "}
+          <Link to="/shortcuts" style={{ color: "var(--green)" }}>keyboard shortcuts ↗</Link>{" "}
           reference for how it's meant to be driven.
         </p>
 
@@ -350,6 +350,16 @@ export function AboutView() {
             </div>
           </div>
           <DetailPanel selected={selected} />
+        </Section>
+
+        <Section title="About this build">
+          <p style={{ fontSize: 13, color: "var(--gray)", lineHeight: 1.7 }}>
+            This site was built with <a href="https://claude.com/claude-code" target="_blank" rel="noreferrer" style={{ color: "var(--green)" }}>Claude Code</a>,
+            Anthropic's agentic coding CLI, over a series of sessions with a human in the
+            loop for every product and architecture decision. It's a companion piece to an
+            ongoing personal project, not a finished one-off: the real app keeps evolving,
+            and this demo gets refreshed periodically to stay in step with it.
+          </p>
         </Section>
 
         <Section title="What's real vs. synthetic here">
