@@ -1,118 +1,118 @@
 {
   "playlists": [
     {
-      "id": "pl-331421700",
+      "id": "pl-810969766",
       "name": "Heavy Rotation",
-      "created_at": "2026-08-05T16:17:00.133130Z",
-      "updated_at": "2026-08-05T16:17:00.133130Z",
+      "created_at": "2026-08-06T14:35:31.714671Z",
+      "updated_at": "2026-08-06T14:35:31.714671Z",
       "rule_groups": [],
       "pinned_track_ids": [
-        "5lb1sCWLqKIEGqUjjRtD9L",
-        "22aVjp6vuqnAJJMaaRUwEh",
-        "5O8NZbdm6mLy8HgJzROeJG",
-        "6g4UXDoTJc1xUWXcubvnAK",
-        "4a82CKrAXdeHFJPTwEuEm8",
-        "3f6CxJwss4Ujza2fElmkrq",
-        "5Og9VyCOfxmZCuv1UhIyxE",
-        "6NLPsM5iMf8NOvOKvgyIRn",
-        "0OF14BivUjlWIsSkM8YkID",
-        "1blbT2vGiqxICPoyxzfVn1"
+        "2GKxyUw8MQNvc0EP4016Yg",
+        "6xG0SjYnSeyTkXr9EFizvr",
+        "6kh5fj610DhNF1e02og1PL",
+        "7fNtCzpdpJkznfEddCYEav",
+        "7dWfTdoKjUip1fAW7cdcIX",
+        "6thuhn22JZPruCfJnHtTq1",
+        "5JhZWM8gnhG3FywK8mckZX",
+        "1weOavX2CfP2pfGNVTVMsT",
+        "6Vdb2b4goEtPxI1DUTS98A",
+        "2QHf2UijcOOpLgEsA3YOjm"
       ],
       "excluded_track_ids": [],
       "track_count": 10,
       "art_filenames": [
-        "l\u00f4_borges_retratos.jpg",
-        "say_anything_is_a_real_boy.jpg",
-        "black_flag_damaged.jpg",
-        "sufjan_stevens_illinois.jpg"
+        "grimes_art_angels.jpg",
+        "blind_melon_blind_melon.jpg",
+        "the_velvet_underground_the_velvet_underground_45th_anniversary.jpg",
+        "minor_threat_first_two_seven_inches.jpg"
       ]
     },
     {
-      "id": "pl-906155271",
+      "id": "pl-242603213",
       "name": "Late Night",
-      "created_at": "2026-08-05T16:17:00.133130Z",
-      "updated_at": "2026-08-05T16:17:00.133130Z",
+      "created_at": "2026-08-06T14:35:31.714671Z",
+      "updated_at": "2026-08-06T14:35:31.714671Z",
       "rule_groups": [],
       "pinned_track_ids": [
-        "09hnFZ9stGVGKqoeEQZXRz",
-        "1q35smJsSPtVl4aoc72wYN",
-        "6vcf7sA7tsNiIeufH0FUFL",
-        "3moeHk8eIajvUEzVocXukf",
-        "3FwJ6vxxKhhvet3DM042p9",
-        "4bD3XTXXqfVEIJTbUwf3Ym",
-        "2ONfhlZHOklTZHkhPkMpNF",
-        "5yWb2JejRqElK4e1xJoEaZ",
-        "5nEgq6w7txlKPMG6J4vDBR",
-        "0HuENYYemxOE3RoVft3w4t"
+        "6l46SZseHwATzOIrZJ62du",
+        "74mpiRPDd2rFeBR1Yl60I3",
+        "5ySEtpFdc6EmTvcozjkb9p",
+        "14QaXYIK3K3QPtezqxRRPN",
+        "0QwZfbw26QeUoIy82Z2jYp",
+        "2eDdFHgqNJltzlvlZFVDWd",
+        "3wDCvt4mbwe4uDBijouMWo",
+        "5xIO4m9K8uJBCUSsAK2NS7",
+        "3ODXRUPL44f04cCacwiCLC",
+        "4LyO99BhEMAyVGe4J5genE"
       ],
       "excluded_track_ids": [],
       "track_count": 10,
       "art_filenames": [
-        "jo\u00e3o_bosco_ca\u00e7a_a_raposa.jpg",
-        "sin\u00e9ad_oconnor_the_lion_and_the_cobra.jpg",
-        "beastie_boys_pauls_boutique_20th_anniversary_edition_remaster.jpg",
-        "knapsack_this_conversation_is_ending_starting_right_now.jpg"
+        "the_rolling_stones_exile_on_main_street_2010_re_mastered.jpg",
+        "novos_baianos_acabou_chorare.jpg",
+        "bad_bunny_deb\u00ed_tirar_m\u00e1s_fotos.jpg",
+        "led_zeppelin_houses_of_the_holy_remaster.jpg"
       ]
     },
     {
-      "id": "pl-950271614",
+      "id": "pl-440524662",
       "name": "Discovery Pile",
-      "created_at": "2026-08-05T16:17:00.133130Z",
-      "updated_at": "2026-08-05T16:17:00.133130Z",
+      "created_at": "2026-08-06T14:35:31.714671Z",
+      "updated_at": "2026-08-06T14:35:31.714671Z",
       "rule_groups": [],
       "pinned_track_ids": [
-        "7udsBKuqnJ5csWTAkR0vEI",
-        "6ORqU0bHbVCRjXm9AjyHyZ",
-        "4sM7v7wyRAuV6ZTO2dvnCA",
-        "20iMumN7WDTDWgY0c3UvCB",
-        "35iLpqqQg4KrfYAzbvN1vH",
-        "2F6FfZ4w8z3eJpSxPotVO5",
-        "5iI8FlUKwKNocBZnd284j6",
-        "3eZixQQs5gHPeAflvjhc7E",
-        "6ZYvlKKiccbtX1N0lJUonV",
-        "1RltJo16uDzpVCTxPvR2l8"
+        "4FQUCR27kog7WSGctxEDxU",
+        "4cgjA7B4fJBHyB9Ya2bu0t",
+        "6uqg2Dc7CTy7CBUtkAUp3L",
+        "6wIvZ5wznQFTNGA4JyQSkF",
+        "7y4aQuePr8SgBH14rXzheh",
+        "61yB5D3qM6TU3cjMUppwlT",
+        "18HOjcvTVV7W8YzBuOsAPS",
+        "2lpMC27e3E4caqUn4EEhQw",
+        "0bMMFw4tQ5oXIKgbJneCQp",
+        "5nccnfjaIAcVFUsvBbZ5E5"
       ],
       "excluded_track_ids": [],
       "track_count": 10,
       "art_filenames": [
-        "brand_new_your_favorite_weapon.jpg",
-        "tycho_weather_remixes.jpg",
-        "korn_issues.jpg",
-        "refused_the_shape_of_punk_to_come_deluxe_edition.jpg"
+        "michael_jackson_thriller.jpg",
+        "fugazi_red_medicine.jpg",
+        "bad_bunny_un_verano_sin_ti.jpg",
+        "sun_kil_moon_all_the_artists.jpg"
       ]
     },
     {
-      "id": "pl-188813029",
+      "id": "pl-115118405",
       "name": "Sunday Morning",
-      "created_at": "2026-08-05T16:17:00.133130Z",
-      "updated_at": "2026-08-05T16:17:00.133130Z",
+      "created_at": "2026-08-06T14:35:31.714671Z",
+      "updated_at": "2026-08-06T14:35:31.714671Z",
       "rule_groups": [],
       "pinned_track_ids": [
-        "5tXoi9LUv2Eniq6h0OHoVN",
-        "7D5mjGj6O2cHHCoBF8O7qV",
-        "1HYZjQjNbBiEAsaNADRDDE",
-        "6vuPZX9fWESg5js2JFTQRJ",
-        "2dcAhmbVvnPDj0uB66S09K",
-        "4OpMYqmcEBfkIYXh1dzR8C",
-        "13Q0XPq59cQ6E948WMPYR0",
-        "7BmYms2N8k6C8LSo7U4nRn",
-        "0UvZcEfpzVyx47QsRbjyBz",
-        "4WSAMz7v5v3H6ATPTRQcnE"
+        "3FcufFKC7OT3CFQyC9BgUQ",
+        "52IuMfbQa9aqRPz2oYPAI8",
+        "2oe4wyycSHGBXGIaY4Fll5",
+        "6M1RScZGJZ8Z0dejxRNqas",
+        "7gQzzsppcAezKh0HFjrG3q",
+        "5WMScdGn4owWF8zQx6sMjg",
+        "6Mk96t3t5qR5YJ8ftCW18V",
+        "62LGxlBqJcx0xEBhIzB4d0",
+        "4W3kBwsjFLcfa1Wm8qLijJ",
+        "6F1nkRSfNUh3FcoSmuO4fu"
       ],
       "excluded_track_ids": [],
       "track_count": 10,
       "art_filenames": [
-        "sun_kil_moon_murals.jpg",
-        "new_order_power_corruption_and_lies.jpg",
-        "sun_kil_moon_tiny_cities.jpg",
-        "bad_bunny_un_verano_sin_ti.jpg"
+        "modest_mouse_the_moon_antarctica.jpg",
+        "nwa_straight_outta_compton.jpg",
+        "the_knife_silent_shout.jpg",
+        "dangelo_black_messiah.jpg"
       ]
     },
     {
-      "id": "pl-646374929",
+      "id": "pl-704689137",
       "name": "1960s",
-      "created_at": "2026-08-05T16:17:00.133130Z",
-      "updated_at": "2026-08-05T16:17:00.133130Z",
+      "created_at": "2026-08-06T14:35:31.714671Z",
+      "updated_at": "2026-08-06T14:35:31.714671Z",
       "rule_groups": [
         {
           "conditions": [
@@ -127,19 +127,19 @@
       ],
       "pinned_track_ids": [],
       "excluded_track_ids": [],
-      "track_count": 192,
+      "track_count": 215,
       "art_filenames": [
-        "led_zeppelin_led_zeppelin.jpg",
-        "charles_mingus_the_black_saint_and_the_sinner_lady.jpg",
-        "james_brown_james_brown_live_at_the_apollo_1962.jpg",
-        "the_velvet_underground_the_velvet_underground_nico_45th_anniversary.jpg"
+        "milton_nascimento_travessia.jpg",
+        "the_mamas_the_papas_if_you_can_believe_your_eyes_ears.jpg",
+        "jorge_ben_jor_samba_esquema_novo.jpg",
+        "nina_simone_i_put_a_spell_on_you.jpg"
       ]
     },
     {
-      "id": "pl-785033855",
+      "id": "pl-239802505",
       "name": "1970s",
-      "created_at": "2026-08-05T16:17:00.133130Z",
-      "updated_at": "2026-08-05T16:17:00.133130Z",
+      "created_at": "2026-08-06T14:35:31.714671Z",
+      "updated_at": "2026-08-06T14:35:31.714671Z",
       "rule_groups": [
         {
           "conditions": [
@@ -154,19 +154,19 @@
       ],
       "pinned_track_ids": [],
       "excluded_track_ids": [],
-      "track_count": 501,
+      "track_count": 509,
       "art_filenames": [
-        "marvin_gaye_whats_going_on.jpg",
-        "electric_light_orchestra_no_answer.jpg",
-        "sly_the_family_stone_theres_a_riot_goin_on.jpg",
-        "hyldon_na_rua_na_chuva_na_fazenda.jpg"
+        "secos_molhados_a_volta_de_secos_molhados.jpg",
+        "gal_costa_gal_tropical.jpg",
+        "edu_lobo_cantiga_de_longe.jpg",
+        "los_wemblers_de_iquitos_la_danza_del_petrolero.jpg"
       ]
     },
     {
-      "id": "pl-290529769",
+      "id": "pl-924965195",
       "name": "1980s",
-      "created_at": "2026-08-05T16:17:00.133130Z",
-      "updated_at": "2026-08-05T16:17:00.133130Z",
+      "created_at": "2026-08-06T14:35:31.714671Z",
+      "updated_at": "2026-08-06T14:35:31.714671Z",
       "rule_groups": [
         {
           "conditions": [
@@ -181,19 +181,19 @@
       ],
       "pinned_track_ids": [],
       "excluded_track_ids": [],
-      "track_count": 579,
+      "track_count": 569,
       "art_filenames": [
-        "djavan_seduzir.jpg",
-        "boogie_down_productions_criminal_minded.jpg",
-        "boca_livre_boca_livre.jpg",
-        "minor_threat_out_of_step.jpg"
+        "gilberto_gil_um_banda_um.jpg",
+        "djavan_luz.jpg",
+        "the_replacements_let_it_be.jpg",
+        "minor_threat_first_two_seven_inches.jpg"
       ]
     },
     {
-      "id": "pl-528570189",
+      "id": "pl-446654971",
       "name": "1990s",
-      "created_at": "2026-08-05T16:17:00.133130Z",
-      "updated_at": "2026-08-05T16:17:00.133130Z",
+      "created_at": "2026-08-06T14:35:31.714671Z",
+      "updated_at": "2026-08-06T14:35:31.714671Z",
       "rule_groups": [
         {
           "conditions": [
@@ -208,19 +208,19 @@
       ],
       "pinned_track_ids": [],
       "excluded_track_ids": [],
-      "track_count": 693,
+      "track_count": 708,
       "art_filenames": [
-        "korn_korn.jpg",
-        "korn_follow_the_leader.jpg",
-        "knapsack_day_three_of_my_new_life.jpg",
-        "slint_spiderland.jpg"
+        "red_hot_chili_peppers_one_hot_minute_deluxe_edition.jpg",
+        "drive_like_jehu_yank_crime.jpg",
+        "outkast_aquemini.jpg",
+        "belchior_divina_com\u00e9dia_humana.jpg"
       ]
     },
     {
-      "id": "pl-171677484",
+      "id": "pl-647736523",
       "name": "2000s",
-      "created_at": "2026-08-05T16:17:00.133130Z",
-      "updated_at": "2026-08-05T16:17:00.133130Z",
+      "created_at": "2026-08-06T14:35:31.714671Z",
+      "updated_at": "2026-08-06T14:35:31.714671Z",
       "rule_groups": [
         {
           "conditions": [
@@ -235,19 +235,19 @@
       ],
       "pinned_track_ids": [],
       "excluded_track_ids": [],
-      "track_count": 1195,
+      "track_count": 1222,
       "art_filenames": [
-        "two_tongues_two_tongues.jpg",
-        "at_the_drive_in_relationship_of_command.jpg",
-        "nirvana_nirvana.jpg",
-        "deerhunter_weird_era_cont.jpg"
+        "rival_schools_united_by_fate.jpg",
+        "atlas_sound_logos.jpg",
+        "hot_rod_circuit_if_its_cool_with_you_its_cool_with_me.jpg",
+        "the_avalanches_since_i_left_you_20th_anniversary_deluxe_edition.jpg"
       ]
     },
     {
-      "id": "pl-152169853",
+      "id": "pl-869987694",
       "name": "2010s",
-      "created_at": "2026-08-05T16:17:00.133130Z",
-      "updated_at": "2026-08-05T16:17:00.133130Z",
+      "created_at": "2026-08-06T14:35:31.714671Z",
+      "updated_at": "2026-08-06T14:35:31.714671Z",
       "rule_groups": [
         {
           "conditions": [
@@ -262,19 +262,19 @@
       ],
       "pinned_track_ids": [],
       "excluded_track_ids": [],
-      "track_count": 866,
+      "track_count": 845,
       "art_filenames": [
-        "mom_jeans_best_buds.jpg",
-        "fiona_apple_the_idler_wheel_is_wiser_than_the_driver_of_the_.jpg",
-        "texas_is_the_reason_do_you_know_who_you_are_the_complete_collection.jpg",
-        "title_fight_floral_green.jpg"
+        "la_dispute_somewhere_at_the_bottom_of_the_river_between_veg.jpg",
+        "vampire_weekend_modern_vampires_of_the_city.jpg",
+        "fleet_foxes_helplessness_blues.jpg",
+        "gal_costa_a_arte_de_gal_costa.jpg"
       ]
     },
     {
-      "id": "pl-640931282",
+      "id": "pl-215132012",
       "name": "2020s",
-      "created_at": "2026-08-05T16:17:00.133130Z",
-      "updated_at": "2026-08-05T16:17:00.133130Z",
+      "created_at": "2026-08-06T14:35:31.714671Z",
+      "updated_at": "2026-08-06T14:35:31.714671Z",
       "rule_groups": [
         {
           "conditions": [
@@ -289,12 +289,12 @@
       ],
       "pinned_track_ids": [],
       "excluded_track_ids": [],
-      "track_count": 254,
+      "track_count": 251,
       "art_filenames": [
-        "tokischa_amor_droga.jpg",
-        "mestiza_campanera.jpg",
-        "aiko_el_grupo_va_totalmente_en_serio.jpg",
-        "mestiza_salam.jpg"
+        "mestiza_salam.jpg",
+        "bad_bunny_un_verano_sin_ti.jpg",
+        "los_punsetes_que_le_den_por_culo_a_tus_amigos.jpg",
+        "mestiza_asereje_remix.jpg"
       ]
     }
   ],
@@ -316,6 +316,7 @@
     "alt-country",
     "alternative",
     "alternative metal",
+    "alternative pop",
     "alternative rap",
     "alternative rnb",
     "alternative rock",
@@ -328,6 +329,7 @@
     "art punk",
     "art rock",
     "art-rock",
+    "atlanta",
     "australian",
     "avant-garde",
     "avant-garde jazz",
@@ -447,6 +449,7 @@
     "jazz fusion",
     "jazz hop",
     "jazz rap",
+    "jazz rock",
     "kanye west",
     "krautrock",
     "latin",

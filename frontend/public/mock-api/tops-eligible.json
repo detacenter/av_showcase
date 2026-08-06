@@ -610,6 +610,14 @@
         "rating": 17
       },
       {
+        "album_id": "5CiZOqd3iF6p2PsqBjljat",
+        "album_name": "Because Of The Times",
+        "artist": "Kings of Leon",
+        "art_url": "/artwork/kings_of_leon_because_of_the_times.jpg",
+        "release_year": 2007,
+        "rating": 17
+      },
+      {
         "album_id": "2osTPStH5H7i4fMHS7eauR",
         "album_name": "Saosin",
         "artist": "Saosin",
@@ -718,6 +726,14 @@
         "album_name": "Meteora (Bonus Edition)",
         "artist": "Linkin Park",
         "art_url": "/artwork/linkin_park_meteora_bonus_edition.jpg",
+        "release_year": 2003,
+        "rating": 16
+      },
+      {
+        "album_id": "2137zeBGNgOWP4D96q6qxd",
+        "album_name": "Youth And Young Manhood",
+        "artist": "Kings of Leon",
+        "art_url": "/artwork/kings_of_leon_youth_and_young_manhood.jpg",
         "release_year": 2003,
         "rating": 16
       },
@@ -947,14 +963,6 @@
         "artist": "The Notorious B.I.G.",
         "art_url": "/artwork/the_notorious_big_ready_to_die_the_remaster.jpg",
         "release_year": 1994,
-        "rating": 16
-      },
-      {
-        "album_id": "2Y9IRtehByVkegoD7TcLfi",
-        "album_name": "Californication (Deluxe Edition)",
-        "artist": "Red Hot Chili Peppers",
-        "art_url": "/artwork/red_hot_chili_peppers_californication_deluxe_edition.jpg",
-        "release_year": 1999,
         "rating": 16
       },
       {
@@ -1259,6 +1267,14 @@
         "artist": "Gang Of Four",
         "art_url": "/artwork/gang_of_four_entertainment.jpg",
         "release_year": 1979,
+        "rating": 17
+      },
+      {
+        "album_id": "0GqpoHJREPp0iuXK3HzrHk",
+        "album_name": "Houses of the Holy (Remaster)",
+        "artist": "Led Zeppelin",
+        "art_url": "/artwork/led_zeppelin_houses_of_the_holy_remaster.jpg",
+        "release_year": 1973,
         "rating": 17
       },
       {

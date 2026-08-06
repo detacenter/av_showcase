@@ -4,6 +4,8 @@ Changing the sample size, weighting, timespan, or volume is a config edit + re-r
 never a code change. See ~/.engram/PRJ/PRJ-0005/notes.md for the design rationale.
 """
 
+import os
+
 # ── Stage 1: catalog seed selection (export_catalog_seed.py) ────────────────
 
 # Fixed seed for reproducible sampling. Tied to the decision date for traceability.
@@ -29,7 +31,12 @@ WEIGHT_BASE = 1.0
 
 # Fixed seed for reproducible synthetic behavior. Independent of CATALOG_SEED so
 # re-rolling behavior doesn't require re-rolling which artists were selected.
-BEHAVIOR_SEED = 20260803
+# Overridable via env var so refresh_demo_data.sh can roll a fresh one without
+# editing this file — every real-data exception (ratings/favorites/tops/Claudio)
+# stays anchored to truth regardless of this value; only the synthetic scaffolding
+# around it (session timing, discovery pacing, which of the eligible plays actually
+# happened) changes.
+BEHAVIOR_SEED = int(os.environ.get("BEHAVIOR_SEED", 20260803))
 
 # Simulated history length, in months, ending "today" (relative to generation time).
 TIMESPAN_MONTHS = 9
