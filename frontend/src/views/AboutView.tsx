@@ -332,6 +332,25 @@ export function AboutView() {
           reference for how it's meant to be driven.
         </p>
 
+        <Section title="Why I built this">
+          <p style={{ fontSize: 13, color: "var(--gray)", lineHeight: 1.7, marginBottom: 14 }}>
+            I started AudioVault in March 2026. I'd always been underwhelmed by Spotify's own
+            data — thin, once-a-year, style-over-substance in <em>Wrapped</em>. After years of
+            vibe-coding for work and smaller personal projects, the gap between how much I
+            care about music and how little insight Spotify actually gives me into my own
+            listening was reason enough to just build the thing myself.
+          </p>
+          <p style={{ fontSize: 13, color: "var(--gray)", lineHeight: 1.7 }}>
+            It grew organically from there. Spotify doesn't return genre in its metadata, so
+            I joined listening history against Last.fm's artist-genre data to fill that gap.
+            Then I noticed vinyl was a total blind spot — nothing captured what I played on
+            the turntable — so I built a way to detect audio signal from the turntable itself
+            and match it against my Discogs collection. It's still very much an ongoing
+            project, driven by the same thing that started it: wanting to build, design
+            systems, and keep finding new music.
+          </p>
+        </Section>
+
         <StackAndScale />
 
         <Section title="System architecture">
