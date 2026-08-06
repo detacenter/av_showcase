@@ -324,7 +324,7 @@ export function AboutView() {
           clients. This site is a public, static demo of that app's frontend: real album
           artwork, artist names, and genre data, paired with a synthetic listening history
           generated to look plausible without exposing anything personal. There's no server
-          behind this page: everything you see is served from static files, with a service
+          behind this page; everything you see is served from static files, with a service
           worker standing in for the real API. See the{" "}
           <Link to="/api-guide" style={{ color: "var(--white)" }}>API guide ↗</Link> to try the
           actual endpoints behind every view on this site, or the{" "}
