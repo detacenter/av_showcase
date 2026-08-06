@@ -6,7 +6,7 @@ architecture and API design, synthetic personal data.
 
 **[Live demo →](https://av-showcase.vercel.app)**
 
-![Stats view screenshot](#) <!-- TODO: add screenshot before flipping public -->
+![Stats view screenshot](docs/screenshot.png)
 
 ## What this is (and isn't)
 
