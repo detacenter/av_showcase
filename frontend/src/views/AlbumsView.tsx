@@ -615,7 +615,7 @@ export function AlbumsView() {
         if (a) { setFocusedIdx(idx); setSelectedAlbum(prev => prev?.album_id === a.album_id ? null : a); }
         return;
       }
-      if (e.key === "f" && !e.ctrlKey) { setFavOnly(v => !v); return; }
+      if (e.key === "f" && !e.ctrlKey && !e.metaKey) { setFavOnly(v => !v); return; }
       if (e.key === "t" && !e.ctrlKey) {
         setTypeFilter(cur => {
           const idx = TYPE_CYCLE.indexOf(cur);
@@ -629,7 +629,7 @@ export function AlbumsView() {
         if (a) window.open(`spotify:album:${a.album_id}`, "_blank");
         return;
       }
-      if (e.ctrlKey && e.key === "f" && focusedIdx >= 0) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "f" && focusedIdx >= 0) {
         e.preventDefault();
         const a = filtered[focusedIdx];
         if (a) toggleFav(a.album_id);

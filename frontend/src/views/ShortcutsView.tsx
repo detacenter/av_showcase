@@ -27,7 +27,7 @@ const GROUPS: Group[] = [
   },
   {
     name: "Grid views",
-    note: "Artists, Albums, Vinyl, Playlists — shared navigation pattern.",
+    note: "Artists, Albums, Vinyl, Playlists: shared navigation pattern.",
     shortcuts: [
       { mac: "/", pc: "/", action: "Open filter search bar" },
       { mac: "j k h l  /  arrows", pc: "j k h l  /  arrows", action: "Move grid focus down / up / left / right" },
@@ -38,9 +38,8 @@ const GROUPS: Group[] = [
       { mac: "t", pc: "t", action: "Cycle type filter (Albums, Vinyl)" },
       { mac: "y", pc: "y", action: "Toggle year filter (Albums)" },
       { mac: "n", pc: "n", action: "Create a new playlist (Playlists)" },
-      { ...cmdCtrl("F"), action: "Toggle favorite on the focused item (Artists)" },
-      { ...ctrlOnly("F"), action: "Toggle favorite on the focused item (Albums — Ctrl only, even on Mac)" },
-      { ...ctrlOnly("O"), action: "Open focused album in Spotify (Albums — Ctrl only, even on Mac)" },
+      { ...cmdCtrl("F"), action: "Toggle favorite on the focused item" },
+      { ...ctrlOnly("O"), action: "Open focused album in Spotify (Albums: Ctrl only, even on Mac)" },
       { mac: "Escape", pc: "Escape", action: "Staged back-out: close panel → clear search → clear focus" },
     ],
   },
@@ -184,7 +183,7 @@ export function ShortcutsView() {
           Keyboard shortcuts
         </div>
         <p style={{ fontSize: 13, color: "var(--gray)", lineHeight: 1.6, marginBottom: 16 }}>
-          The whole app is keyboard-navigable — vim-style (h/j/k/l) plus arrow keys
+          The whole app is keyboard-navigable: vim-style (h/j/k/l) plus arrow keys
           throughout. Every shortcut below is live on this site, same as the real app.
         </p>
 

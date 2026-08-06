@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api/client";
@@ -13,6 +13,7 @@ function artUrl(filename: string | null | undefined): string | null {
 
 // ─── album type labels ─────────────────────────────────────────────────────────
 
+const ALBUM_TYPE_ORDER = ["Album", "EP", "Single", "Compilation"];
 const ALBUM_TYPE_LABELS: Record<string, string> = {
   Album: "Albums", EP: "EPs", Single: "Singles", Compilation: "Compilations",
 };
@@ -469,7 +470,7 @@ export function ArtistDetailView() {
   const params = useParams<{ "*": string }>();
   const name = params["*"];
   const navigate = useNavigate();
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const queryClient = useQueryClient();
   const artistName = decodeURIComponent(name ?? "");
 
@@ -519,15 +520,33 @@ export function ArtistDetailView() {
     setGenreEditing(false);
   }, [artistName]);
 
+  const hasVinyl = (data?.vinyl?.length ?? 0) > 0;
+  const isFav = favOverride !== null ? favOverride : (data?.is_favorited ?? false);
+
+  // Group the sidebar list by release type (LP/EP/Single/Compilation) — order and
+  // relative position within each group otherwise unchanged from what the backend sent.
+  const albumGroups = useMemo(() => {
+    if (!data) return [];
+    const g: Record<string, ArtistAlbumDetail[]> = {};
+    for (const a of data.albums) (g[a.classified_type] ??= []).push(a);
+    const known = ALBUM_TYPE_ORDER.filter(t => g[t]?.length).map(t => [t, g[t]] as const);
+    const other = Object.keys(g).filter(t => !ALBUM_TYPE_ORDER.includes(t)).map(t => [t, g[t]] as const);
+    return [...known, ...other];
+  }, [data]);
+
+  // Same albums, flattened in the order the grouped sidebar actually displays them —
+  // keyboard nav (prev/next) and default-selection need to agree with what's on screen.
+  const flatGroupedAlbums = useMemo(
+    () => albumGroups.flatMap(([, group]) => group),
+    [albumGroups]
+  );
+
   // Default selection to the first album/vinyl once data arrives
   useEffect(() => {
     if (!data) return;
-    setSelectedAlbumId(prev => prev ?? data.albums[0]?.album_id ?? null);
+    setSelectedAlbumId(prev => prev ?? flatGroupedAlbums[0]?.album_id ?? null);
     setSelectedVinylId(prev => prev ?? data.vinyl[0]?.release_id ?? null);
-  }, [data]);
-
-  const hasVinyl = (data?.vinyl?.length ?? 0) > 0;
-  const isFav = favOverride !== null ? favOverride : (data?.is_favorited ?? false);
+  }, [data, flatGroupedAlbums]);
 
   const selectedAlbum = data?.albums.find(a => a.album_id === selectedAlbumId) ?? null;
   const selectedVinyl = data?.vinyl.find(r => r.release_id === selectedVinylId) ?? null;
@@ -596,13 +615,21 @@ export function ArtistDetailView() {
       .catch(() => {});
   }, [genreText, artistName, queryClient]);
 
-  // Select album passed via ?album=<id> (e.g. navigating from Recent view)
+  // Select album passed via ?album=<id> (e.g. navigating from Recent view). Consumed
+  // once and stripped from the URL — otherwise every later refetch (rating/favorite/
+  // notes edits all invalidate this query) re-fires this effect and silently snaps
+  // the selection back to the original link's album, discarding manual selection.
   useEffect(() => {
     const albumId = searchParams.get("album");
     if (!albumId || !data) return;
     const match = data.albums.find(a => a.album_id === albumId);
     if (match) { setSource("spotify"); setSelectedAlbumId(albumId); }
-  }, [data, searchParams]);
+    setSearchParams(prev => {
+      const next = new URLSearchParams(prev);
+      next.delete("album");
+      return next;
+    }, { replace: true });
+  }, [data, searchParams, setSearchParams]);
 
   // ── keyboard ──────────────────────────────────────────────────────────────
   useEffect(() => {
@@ -638,7 +665,7 @@ export function ArtistDetailView() {
       e.preventDefault();
 
       if (source === "spotify") {
-        const list = data?.albums ?? [];
+        const list = flatGroupedAlbums;
         if (!list.length) return;
         const idx = list.findIndex(a => a.album_id === selectedAlbumId);
         if (idx === -1) { setSelectedAlbumId(list[0].album_id); return; }
@@ -657,8 +684,8 @@ export function ArtistDetailView() {
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
   }, [
-    genreEditing, hasVinyl, source, data, selectedAlbumId, selectedVinylId, navigate,
-    isFav, toggleFav, selectedAlbum, albumFavOverrides, toggleAlbumFav,
+    genreEditing, hasVinyl, source, data, flatGroupedAlbums, selectedAlbumId, selectedVinylId,
+    navigate, isFav, toggleFav, selectedAlbum, albumFavOverrides, toggleAlbumFav,
   ]);
 
   const pillStyle = (active: boolean, isVinyl = false): React.CSSProperties => ({
@@ -760,14 +787,22 @@ export function ArtistDetailView() {
           {source === "spotify" ? (
             data.albums.length === 0
               ? <div style={{ padding: "12px 16px", fontSize: 12, color: "#535353" }}>No albums</div>
-              : data.albums.map(a => (
-                <AlbumListRow
-                  key={a.album_id}
-                  album={a}
-                  selected={a.album_id === selectedAlbumId}
-                  onClick={() => setSelectedAlbumId(a.album_id)}
-                  onContextMenu={handleAlbumContextMenu}
-                />
+              : albumGroups.map(([type, group]) => (
+                <div key={type} style={{ marginBottom: 4 }}>
+                  <div style={{
+                    fontSize: 10, fontWeight: 700, color: "#535353", letterSpacing: "1.5px",
+                    textTransform: "uppercase", padding: "10px 16px 6px",
+                  }}>{ALBUM_TYPE_LABELS[type] ?? type}</div>
+                  {group.map(a => (
+                    <AlbumListRow
+                      key={a.album_id}
+                      album={a}
+                      selected={a.album_id === selectedAlbumId}
+                      onClick={() => setSelectedAlbumId(a.album_id)}
+                      onContextMenu={handleAlbumContextMenu}
+                    />
+                  ))}
+                </div>
               ))
           ) : (
             data.vinyl.length === 0

@@ -75,7 +75,7 @@ function createWindow() {
         },
       };
     }
-    if (url.startsWith("http://") || url.startsWith("https://")) {
+    if (url.startsWith("http://") || url.startsWith("https://") || url.startsWith("spotify:")) {
       shell.openExternal(url);
     }
     return { action: "deny" };
