@@ -30,10 +30,11 @@ ensureMockApiReady().finally(() => {
   createRoot(root).render(
     <StrictMode>
       <QueryClientProvider client={queryClient}>
-        {/* basename: this app is nested under /mobile/ in the showcase deploy,
-            so internal routes (e.g. /artists) must resolve to /mobile/artists,
-            not collide with the desktop app's own root-level routes. */}
-        <BrowserRouter basename="/mobile">
+        {/* basename: the built app is actually deployed at /mobile-app/ (see
+            scripts/build-with-mobile.sh) — /mobile is a separate desktop-side
+            preview route that iframes this. Must match the real deploy path,
+            or React Router refuses to render anything at all. */}
+        <BrowserRouter basename="/mobile-app">
           <App />
         </BrowserRouter>
       </QueryClientProvider>
