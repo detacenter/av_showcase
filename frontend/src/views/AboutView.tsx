@@ -10,7 +10,7 @@ const NODE_INFO: Record<string, { title: string; body: string }> = {
   },
   "react-pwa": {
     title: "React PWA (mobile)",
-    body: "A separate mobile-optimized React app hitting the same API. Fully built and working, not yet deployed to the Pi.",
+    body: "A separate mobile-optimized React app hitting the same API, served from the Pi alongside the desktop app. Demoed here too, framed to a phone screen.",
   },
   "fastapi-backend": {
     title: "FastAPI backend",
@@ -158,7 +158,7 @@ function RealAppDiagram({ selected, onSelect }: DiagramProps) {
 
       <GroupLabel x={20} y={16} text="Clients (over Tailscale)" />
       <Box id="electron-desktop" x={20} y={26} w={200} h={50} title="Electron Desktop" subtitle="Mac" selected={selected} onSelect={onSelect} />
-      <Box id="react-pwa" x={260} y={26} w={200} h={50} title="React PWA" subtitle="mobile, not yet deployed" selected={selected} onSelect={onSelect} />
+      <Box id="react-pwa" x={260} y={26} w={200} h={50} title="React PWA" subtitle="mobile" selected={selected} onSelect={onSelect} />
       <VLine x={120} y1={76} y2={160} markerId="arrow-real" />
       <VLine x={360} y1={76} y2={160} markerId="arrow-real" />
       <line x1={120} y1={160} x2={360} y2={160} stroke="var(--dim)" strokeWidth={1.5} />

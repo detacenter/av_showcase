@@ -1,3 +1,6 @@
 {
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [
+    { "source": "/mobile-app/(.*)", "destination": "/mobile-app/index.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
