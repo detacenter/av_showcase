@@ -630,11 +630,17 @@ def main() -> None:
             "excluded_track_ids": [],
         })
 
-    # Decade smart playlists (session 5) — mirrors a real pattern the user
-    # keeps in the real app (decade-filter playlists), using a rule_group so
-    # the real playlist-evaluation engine (insights/playlist_insights.py)
-    # does the actual filtering, not a pinned-track list. Nothing behavioral
-    # here — just a release_year range rule over the already-real catalog.
+    # Decade smart playlists (session 5, favorited condition added session 12)
+    # — mirrors the real app's actual own decade playlists exactly: a
+    # rule_group with release_year range AND favorited=true (checked against
+    # the user's real playlists.json — every real decade playlist ANDs both
+    # conditions, not just the year range). Missing the favorited condition
+    # here meant these synthetic playlists pulled in every track from a
+    # decade instead of only the favorited ones, unlike the real app. Uses
+    # the real playlist-evaluation engine (insights/playlist_insights.py) to
+    # do the actual filtering, not a pinned-track list — and since track
+    # favorites are already real data (session 8 exception), this rule now
+    # produces the same real membership the real app would.
     decade_track_ids: dict[int, set[str]] = {}
     for e in log_entries:
         year = e.get("release_year")
@@ -652,7 +658,10 @@ def main() -> None:
             "created_at": now_iso,
             "updated_at": now_iso,
             "rule_groups": [{
-                "conditions": [{"field": "release_year", "op": "range", "from": decade, "to": decade + 9}],
+                "conditions": [
+                    {"field": "release_year", "op": "range", "from": decade, "to": decade + 9},
+                    {"field": "favorited", "op": "eq", "value": True},
+                ],
             }],
             "pinned_track_ids": [],
             "excluded_track_ids": [],

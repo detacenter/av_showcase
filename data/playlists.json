@@ -1,89 +1,89 @@
 [
   {
-    "id": "pl-810969766",
+    "id": "pl-269187203",
     "name": "Heavy Rotation",
-    "created_at": "2026-08-06T14:35:31.714671Z",
-    "updated_at": "2026-08-06T14:35:31.714671Z",
+    "created_at": "2026-08-07T17:09:27.718797Z",
+    "updated_at": "2026-08-07T17:09:27.718797Z",
     "rule_groups": [],
     "pinned_track_ids": [
-      "2GKxyUw8MQNvc0EP4016Yg",
-      "6xG0SjYnSeyTkXr9EFizvr",
-      "6kh5fj610DhNF1e02og1PL",
-      "7fNtCzpdpJkznfEddCYEav",
-      "7dWfTdoKjUip1fAW7cdcIX",
-      "6thuhn22JZPruCfJnHtTq1",
-      "5JhZWM8gnhG3FywK8mckZX",
-      "1weOavX2CfP2pfGNVTVMsT",
-      "6Vdb2b4goEtPxI1DUTS98A",
-      "2QHf2UijcOOpLgEsA3YOjm"
+      "7qOVMMY0couqt76ObwY947",
+      "43a5QD9L9joNpWkgckoSXa",
+      "0d3uVQjQwIAtYf4ZTfCk7b",
+      "6hgBJPTHoDJyxydmtFWHKf",
+      "1fz4l2dgNqkElRjfG3LTE4",
+      "5pyoxDZ1PX0KxBxiRVxA4U",
+      "67ftdeQCBBgd3rB78NVLr2",
+      "3Rt4fAgFhnMbbzNKZ5zzYc",
+      "7ybwZjsw9sGEJjSSn96oNN",
+      "7hdOchAKFm6FwzyevcQ56y"
     ],
     "excluded_track_ids": []
   },
   {
-    "id": "pl-242603213",
+    "id": "pl-803250275",
     "name": "Late Night",
-    "created_at": "2026-08-06T14:35:31.714671Z",
-    "updated_at": "2026-08-06T14:35:31.714671Z",
+    "created_at": "2026-08-07T17:09:27.718797Z",
+    "updated_at": "2026-08-07T17:09:27.718797Z",
     "rule_groups": [],
     "pinned_track_ids": [
-      "6l46SZseHwATzOIrZJ62du",
-      "74mpiRPDd2rFeBR1Yl60I3",
-      "5ySEtpFdc6EmTvcozjkb9p",
-      "14QaXYIK3K3QPtezqxRRPN",
-      "0QwZfbw26QeUoIy82Z2jYp",
-      "2eDdFHgqNJltzlvlZFVDWd",
-      "3wDCvt4mbwe4uDBijouMWo",
-      "5xIO4m9K8uJBCUSsAK2NS7",
-      "3ODXRUPL44f04cCacwiCLC",
-      "4LyO99BhEMAyVGe4J5genE"
+      "4vDPNM1Ekt9maoCwLsWFeb",
+      "7H5ISvscJ7b8kYTtEp8WJB",
+      "6U8iJR8PSjJndaj7pDMGQu",
+      "2fhwvSptDeBj8Yw9FufioZ",
+      "28smLnynjh7xcmlebBLTod",
+      "1BDuMlv8zbeBmwFEBmE6N9",
+      "5P5se1CMPuBSmpSStFfi4H",
+      "0XqaKeG3lcnXZygdjqByRA",
+      "5TltGtLMjveIan5HvLAh1z",
+      "3xQbgu9nvQEqWSPLfNNvOf"
     ],
     "excluded_track_ids": []
   },
   {
-    "id": "pl-440524662",
+    "id": "pl-468824584",
     "name": "Discovery Pile",
-    "created_at": "2026-08-06T14:35:31.714671Z",
-    "updated_at": "2026-08-06T14:35:31.714671Z",
+    "created_at": "2026-08-07T17:09:27.718797Z",
+    "updated_at": "2026-08-07T17:09:27.718797Z",
     "rule_groups": [],
     "pinned_track_ids": [
-      "4FQUCR27kog7WSGctxEDxU",
-      "4cgjA7B4fJBHyB9Ya2bu0t",
-      "6uqg2Dc7CTy7CBUtkAUp3L",
-      "6wIvZ5wznQFTNGA4JyQSkF",
-      "7y4aQuePr8SgBH14rXzheh",
-      "61yB5D3qM6TU3cjMUppwlT",
-      "18HOjcvTVV7W8YzBuOsAPS",
-      "2lpMC27e3E4caqUn4EEhQw",
-      "0bMMFw4tQ5oXIKgbJneCQp",
-      "5nccnfjaIAcVFUsvBbZ5E5"
+      "1CO0ghX3meDSA9dDHntQop",
+      "6b2tOvFx5fMNzpYGmvSXeI",
+      "0EY1Z9UmZnYZyM7zHs6C0j",
+      "00bA8b53Q69JxNJSQSK9CM",
+      "3VVEUP5550SmFMQkjIlZ7f",
+      "68MOETWTwg1s8sLlX9rffJ",
+      "00g0GvhNxHFcGKLJsDSx9J",
+      "7t17jjPf01p7vpQsVl5sVz",
+      "5If0dBHNLdrp7PfxNED94p",
+      "5q8f6084XOOdlwWykyefD8"
     ],
     "excluded_track_ids": []
   },
   {
-    "id": "pl-115118405",
+    "id": "pl-467518793",
     "name": "Sunday Morning",
-    "created_at": "2026-08-06T14:35:31.714671Z",
-    "updated_at": "2026-08-06T14:35:31.714671Z",
+    "created_at": "2026-08-07T17:09:27.718797Z",
+    "updated_at": "2026-08-07T17:09:27.718797Z",
     "rule_groups": [],
     "pinned_track_ids": [
-      "3FcufFKC7OT3CFQyC9BgUQ",
-      "52IuMfbQa9aqRPz2oYPAI8",
-      "2oe4wyycSHGBXGIaY4Fll5",
-      "6M1RScZGJZ8Z0dejxRNqas",
-      "7gQzzsppcAezKh0HFjrG3q",
-      "5WMScdGn4owWF8zQx6sMjg",
-      "6Mk96t3t5qR5YJ8ftCW18V",
-      "62LGxlBqJcx0xEBhIzB4d0",
-      "4W3kBwsjFLcfa1Wm8qLijJ",
-      "6F1nkRSfNUh3FcoSmuO4fu"
+      "5OsacxcT1SHN3TfdmA8FGs",
+      "2GrxfHUO9YAAY8HFOVtb9N",
+      "3cuuNOsQovbVYAl1BJ23kG",
+      "3DJvJBYZEMGOjHmzwwpJaB",
+      "66w5OYw2ja8lnmaA3Ns0PU",
+      "5zFbqgP0xFnm7tJj6RuKol",
+      "5PGShLcfPTfJtD8cc7iDiA",
+      "1Igy3egsujfV4WphlW0B7K",
+      "0uxK2g1iDNZRgipetUk4B6",
+      "2NPSq3PCNtXjmtlL3N6nCr"
     ],
     "excluded_track_ids": []
   },
   {
-    "id": "pl-704689137",
+    "id": "pl-121668312",
     "name": "1960s",
-    "created_at": "2026-08-06T14:35:31.714671Z",
-    "updated_at": "2026-08-06T14:35:31.714671Z",
+    "created_at": "2026-08-07T17:09:27.718797Z",
+    "updated_at": "2026-08-07T17:09:27.718797Z",
     "rule_groups": [
       {
         "conditions": [
@@ -92,6 +92,11 @@
             "op": "range",
             "from": 1960,
             "to": 1969
+          },
+          {
+            "field": "favorited",
+            "op": "eq",
+            "value": true
           }
         ]
       }
@@ -100,10 +105,10 @@
     "excluded_track_ids": []
   },
   {
-    "id": "pl-239802505",
+    "id": "pl-150972864",
     "name": "1970s",
-    "created_at": "2026-08-06T14:35:31.714671Z",
-    "updated_at": "2026-08-06T14:35:31.714671Z",
+    "created_at": "2026-08-07T17:09:27.718797Z",
+    "updated_at": "2026-08-07T17:09:27.718797Z",
     "rule_groups": [
       {
         "conditions": [
@@ -112,6 +117,11 @@
             "op": "range",
             "from": 1970,
             "to": 1979
+          },
+          {
+            "field": "favorited",
+            "op": "eq",
+            "value": true
           }
         ]
       }
@@ -120,10 +130,10 @@
     "excluded_track_ids": []
   },
   {
-    "id": "pl-924965195",
+    "id": "pl-333710277",
     "name": "1980s",
-    "created_at": "2026-08-06T14:35:31.714671Z",
-    "updated_at": "2026-08-06T14:35:31.714671Z",
+    "created_at": "2026-08-07T17:09:27.718797Z",
+    "updated_at": "2026-08-07T17:09:27.718797Z",
     "rule_groups": [
       {
         "conditions": [
@@ -132,6 +142,11 @@
             "op": "range",
             "from": 1980,
             "to": 1989
+          },
+          {
+            "field": "favorited",
+            "op": "eq",
+            "value": true
           }
         ]
       }
@@ -140,10 +155,10 @@
     "excluded_track_ids": []
   },
   {
-    "id": "pl-446654971",
+    "id": "pl-364875427",
     "name": "1990s",
-    "created_at": "2026-08-06T14:35:31.714671Z",
-    "updated_at": "2026-08-06T14:35:31.714671Z",
+    "created_at": "2026-08-07T17:09:27.718797Z",
+    "updated_at": "2026-08-07T17:09:27.718797Z",
     "rule_groups": [
       {
         "conditions": [
@@ -152,6 +167,11 @@
             "op": "range",
             "from": 1990,
             "to": 1999
+          },
+          {
+            "field": "favorited",
+            "op": "eq",
+            "value": true
           }
         ]
       }
@@ -160,10 +180,10 @@
     "excluded_track_ids": []
   },
   {
-    "id": "pl-647736523",
+    "id": "pl-631979325",
     "name": "2000s",
-    "created_at": "2026-08-06T14:35:31.714671Z",
-    "updated_at": "2026-08-06T14:35:31.714671Z",
+    "created_at": "2026-08-07T17:09:27.718797Z",
+    "updated_at": "2026-08-07T17:09:27.718797Z",
     "rule_groups": [
       {
         "conditions": [
@@ -172,6 +192,11 @@
             "op": "range",
             "from": 2000,
             "to": 2009
+          },
+          {
+            "field": "favorited",
+            "op": "eq",
+            "value": true
           }
         ]
       }
@@ -180,10 +205,10 @@
     "excluded_track_ids": []
   },
   {
-    "id": "pl-869987694",
+    "id": "pl-517875946",
     "name": "2010s",
-    "created_at": "2026-08-06T14:35:31.714671Z",
-    "updated_at": "2026-08-06T14:35:31.714671Z",
+    "created_at": "2026-08-07T17:09:27.718797Z",
+    "updated_at": "2026-08-07T17:09:27.718797Z",
     "rule_groups": [
       {
         "conditions": [
@@ -192,6 +217,11 @@
             "op": "range",
             "from": 2010,
             "to": 2019
+          },
+          {
+            "field": "favorited",
+            "op": "eq",
+            "value": true
           }
         ]
       }
@@ -200,10 +230,10 @@
     "excluded_track_ids": []
   },
   {
-    "id": "pl-215132012",
+    "id": "pl-897231396",
     "name": "2020s",
-    "created_at": "2026-08-06T14:35:31.714671Z",
-    "updated_at": "2026-08-06T14:35:31.714671Z",
+    "created_at": "2026-08-07T17:09:27.718797Z",
+    "updated_at": "2026-08-07T17:09:27.718797Z",
     "rule_groups": [
       {
         "conditions": [
@@ -212,6 +242,11 @@
             "op": "range",
             "from": 2020,
             "to": 2029
+          },
+          {
+            "field": "favorited",
+            "op": "eq",
+            "value": true
           }
         ]
       }

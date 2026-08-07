@@ -2,17 +2,17 @@
   "collection_size": 142,
   "played_count": 71,
   "unplayed_count": 71,
-  "total_sessions": 126,
-  "total_minutes": 3480,
+  "total_sessions": 128,
+  "total_minutes": 4045,
   "top_records": [
     {
-      "release_id": 6314990,
-      "title": "The Eraser",
+      "release_id": 2885498,
+      "title": "Shed",
       "artists": [
-        "Thom Yorke"
+        "Title Fight"
       ],
-      "art_filename": "vinyl/6314990.jpg",
-      "year": 2006,
+      "art_filename": "vinyl/2885498.jpg",
+      "year": 2011,
       "sessions": 4
     },
     {
@@ -26,83 +26,83 @@
       "sessions": 4
     },
     {
-      "release_id": 74260,
-      "title": "Lift Your Skinny Fists Like Antennas To Heaven",
+      "release_id": 8340363,
+      "title": "Person Pitch",
       "artists": [
-        "Godspeed You Black Emperor!"
+        "Panda Bear"
       ],
-      "art_filename": "vinyl/74260.jpg",
-      "year": 2000,
-      "sessions": 3
+      "art_filename": "vinyl/8340363.jpg",
+      "year": 2007,
+      "sessions": 4
     },
     {
-      "release_id": 28392721,
-      "title": "Slow Riot For New Zero Kanada E.P.",
+      "release_id": 5006908,
+      "title": "Music Has The Right To Children",
       "artists": [
-        "Godspeed You Black Emperor!"
+        "Boards Of Canada"
       ],
-      "art_filename": "vinyl/28392721.jpg",
-      "year": 1999,
-      "sessions": 3
+      "art_filename": "vinyl/5006908.jpg",
+      "year": 1998,
+      "sessions": 4
     },
     {
-      "release_id": 6384435,
-      "title": "Let's Get It On",
+      "release_id": 26515631,
+      "title": "Some Kind Of Cadwallader",
       "artists": [
-        "Marvin Gaye"
+        "Algernon Cadwallader"
       ],
-      "art_filename": "vinyl/6384435.jpg",
-      "year": 1973,
-      "sessions": 3
-    },
-    {
-      "release_id": 1490485,
-      "title": "Nothing Ever Happened",
-      "artists": [
-        "Deerhunter"
-      ],
-      "art_filename": "vinyl/1490485.jpg",
+      "art_filename": "vinyl/26515631.jpg",
       "year": 2008,
-      "sessions": 3
+      "sessions": 4
     },
     {
-      "release_id": 6265500,
-      "title": "Pope Killdragon",
+      "release_id": 4146204,
+      "title": "Floral Green",
       "artists": [
-        "Strand Of Oaks"
+        "Title Fight"
       ],
-      "art_filename": "vinyl/6265500.jpg",
+      "art_filename": "vinyl/4146204.jpg",
+      "year": 2012,
+      "sessions": 4
+    },
+    {
+      "release_id": 2504307,
+      "title": "Sepulcros De Miel",
+      "artists": [
+        "Omar Rodriguez Lopez Quartet"
+      ],
+      "art_filename": "vinyl/2504307.jpg",
       "year": 2010,
       "sessions": 3
     },
     {
-      "release_id": 4331747,
-      "title": "m b v",
+      "release_id": 10069983,
+      "title": "Veckatimest",
       "artists": [
-        "My Bloody Valentine"
+        "Grizzly Bear"
       ],
-      "art_filename": "vinyl/4331747.jpg",
-      "year": 2013,
+      "art_filename": "vinyl/10069983.jpg",
+      "year": 2009,
       "sessions": 3
     },
     {
-      "release_id": 458611,
-      "title": "The Milk-Eyed Mender",
+      "release_id": 5976818,
+      "title": "Sparkling Controversy",
       "artists": [
-        "Joanna Newsom"
+        "Floating Points"
       ],
-      "art_filename": "vinyl/458611.jpg",
-      "year": 2004,
+      "art_filename": "vinyl/5976818.jpg",
+      "year": 2014,
       "sessions": 3
     },
     {
-      "release_id": 11304449,
-      "title": "I Am Santa's Helper! Even More Songs For Christmas Vol.7",
+      "release_id": 2856645,
+      "title": "Helplessness Blues",
       "artists": [
-        "Sufjan Stevens"
+        "Fleet Foxes"
       ],
-      "art_filename": "vinyl/11304449.jpg",
-      "year": 2012,
+      "art_filename": "vinyl/2856645.jpg",
+      "year": 2011,
       "sessions": 3
     }
   ]
