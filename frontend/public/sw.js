@@ -148,6 +148,28 @@ async function handleAlbums() {
   return jsonResponse({ albums, all_genres: data.all_genres, year_bounds: data.year_bounds });
 }
 
+// GET /api/albums/{album_id} — the real backend returns the exact same
+// per-album shape as one entry of GET /api/albums (both built from
+// _build_album_dict), so this looks up a matching entry from the same
+// albums.json snapshot rather than needing its own snapshot file. Used by
+// the mobile app's AlbumDetailView (desktop shows album detail inline
+// instead of as its own route/request).
+async function handleAlbumDetail(albumId) {
+  const data = await loadSnapshot("albums.json");
+  const album = data.albums.find((a) => a.album_id === albumId);
+  if (!album) return jsonResponse({ detail: "Album not found" }, 404);
+  return jsonResponse({
+    ...album,
+    is_favorited: overlay.albumFavorites[album.album_id] ?? album.is_favorited,
+    rating: overlay.albumRatings[album.album_id] ?? album.rating,
+    notes: overlay.albumNotes[album.album_id] ?? album.notes,
+    track_plays: album.track_plays.map((t) => ({
+      ...t,
+      is_favorited: overlay.trackFavorites[t.track_id] ?? t.is_favorited,
+    })),
+  });
+}
+
 function applyPlaylistOverride(p) {
   const o = overlay.playlistOverrides[p.id];
   return o ? { ...p, ...o } : p;
@@ -613,6 +635,9 @@ async function handleApiRequest(request) {
 
   if ((m = path.match(/^\/api\/artists\/(.+)$/)) && method === "GET") {
     return handleArtistDetail(decodeURIComponent(m[1]));
+  }
+  if ((m = path.match(/^\/api\/albums\/([^/]+)$/)) && method === "GET") {
+    return handleAlbumDetail(decodeURIComponent(m[1]));
   }
   if ((m = path.match(/^\/api\/library\/track\/([^/]+)\/favorite$/)) && method === "POST") {
     return handleTrackFavorite(decodeURIComponent(m[1]));
