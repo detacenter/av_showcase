@@ -249,7 +249,7 @@ export function Sidebar() {
             flexShrink: 0,
           })}
         >
-          📱
+          M
         </NavLink>
       </div>
     </aside>
