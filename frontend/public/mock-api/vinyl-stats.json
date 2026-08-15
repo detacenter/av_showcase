@@ -2,107 +2,107 @@
   "collection_size": 142,
   "played_count": 71,
   "unplayed_count": 71,
-  "total_sessions": 128,
-  "total_minutes": 4045,
+  "total_sessions": 123,
+  "total_minutes": 4296,
   "top_records": [
     {
-      "release_id": 2885498,
-      "title": "Shed",
+      "release_id": 5283950,
+      "title": "Fuck Off Get Free We Pour Light On Everything",
       "artists": [
-        "Title Fight"
+        "A Silver Mt. Zion"
       ],
-      "art_filename": "vinyl/2885498.jpg",
+      "art_filename": "vinyl/5283950.jpg",
+      "year": 2014,
+      "sessions": 4
+    },
+    {
+      "release_id": 6314990,
+      "title": "The Eraser",
+      "artists": [
+        "Thom Yorke"
+      ],
+      "art_filename": "vinyl/6314990.jpg",
+      "year": 2006,
+      "sessions": 4
+    },
+    {
+      "release_id": 18492652,
+      "title": "XX",
+      "artists": [
+        "The XX"
+      ],
+      "art_filename": "vinyl/18492652.jpg",
+      "year": 2009,
+      "sessions": 4
+    },
+    {
+      "release_id": 3192070,
+      "title": "Dive",
+      "artists": [
+        "Tycho (3)"
+      ],
+      "art_filename": "vinyl/3192070.jpg",
       "year": 2011,
-      "sessions": 4
+      "sessions": 3
     },
     {
-      "release_id": 6880569,
-      "title": "Gorillaz",
+      "release_id": 2900860,
+      "title": "Ice Cream",
       "artists": [
-        "Gorillaz"
+        "Battles"
       ],
-      "art_filename": "vinyl/6880569.jpg",
-      "year": 2001,
-      "sessions": 4
+      "art_filename": "vinyl/2900860.jpg",
+      "year": 2011,
+      "sessions": 3
     },
     {
-      "release_id": 8340363,
-      "title": "Person Pitch",
+      "release_id": 1566000,
+      "title": "Se Dice Bisonte, No B\u00f9falo",
       "artists": [
-        "Panda Bear"
+        "Omar Rodriguez-Lopez"
       ],
-      "art_filename": "vinyl/8340363.jpg",
+      "art_filename": "vinyl/1566000.jpg",
       "year": 2007,
-      "sessions": 4
+      "sessions": 3
     },
     {
-      "release_id": 5006908,
-      "title": "Music Has The Right To Children",
+      "release_id": 2831206,
+      "title": "An Introduction To Syd Barrett",
       "artists": [
-        "Boards Of Canada"
+        "Syd Barrett"
       ],
-      "art_filename": "vinyl/5006908.jpg",
-      "year": 1998,
-      "sessions": 4
-    },
-    {
-      "release_id": 26515631,
-      "title": "Some Kind Of Cadwallader",
-      "artists": [
-        "Algernon Cadwallader"
-      ],
-      "art_filename": "vinyl/26515631.jpg",
-      "year": 2008,
-      "sessions": 4
-    },
-    {
-      "release_id": 4146204,
-      "title": "Floral Green",
-      "artists": [
-        "Title Fight"
-      ],
-      "art_filename": "vinyl/4146204.jpg",
-      "year": 2012,
-      "sessions": 4
-    },
-    {
-      "release_id": 2504307,
-      "title": "Sepulcros De Miel",
-      "artists": [
-        "Omar Rodriguez Lopez Quartet"
-      ],
-      "art_filename": "vinyl/2504307.jpg",
+      "art_filename": "vinyl/2831206.jpg",
       "year": 2010,
       "sessions": 3
     },
     {
-      "release_id": 10069983,
-      "title": "Veckatimest",
+      "release_id": 4418695,
+      "title": "Homework",
       "artists": [
-        "Grizzly Bear"
+        "Daft Punk"
       ],
-      "art_filename": "vinyl/10069983.jpg",
-      "year": 2009,
+      "art_filename": "vinyl/4418695.jpg",
+      "year": 1997,
       "sessions": 3
     },
     {
-      "release_id": 5976818,
-      "title": "Sparkling Controversy",
+      "release_id": 171890,
+      "title": "There There",
       "artists": [
-        "Floating Points"
+        "Radiohead"
       ],
-      "art_filename": "vinyl/5976818.jpg",
-      "year": 2014,
+      "art_filename": "vinyl/171890.jpg",
+      "year": 2003,
       "sessions": 3
     },
     {
-      "release_id": 2856645,
-      "title": "Helplessness Blues",
+      "release_id": 1855760,
+      "title": "Spirit They're Gone, Spirit They've Vanished",
       "artists": [
-        "Fleet Foxes"
+        "Animal Collective"
       ],
-      "art_filename": "vinyl/2856645.jpg",
-      "year": 2011,
+      "art_filename": "vinyl/1855760.jpg",
+      "year": 2000,
       "sessions": 3
     }
   ]

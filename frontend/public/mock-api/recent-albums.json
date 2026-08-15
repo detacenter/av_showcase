@@ -1,410 +1,417 @@
 {
   "albums": [
     {
-      "album_id": "vinyl:43337",
-      "album_name": "Ege Bamyasi",
-      "artist": "Can",
-      "release_year": 1972,
+      "album_id": "vinyl:1944456",
+      "album_name": "Summertime Clothes",
+      "artist": "Animal Collective",
+      "release_year": 2009,
       "art_local_path": null,
       "art_url": null,
-      "art_filename": "vinyl/43337.jpg",
-      "dominant_color": "#486030",
+      "art_filename": "vinyl/1944456.jpg",
+      "dominant_color": "#483018",
       "source": "vinyl",
-      "vinyl_type": "LP",
+      "vinyl_type": "12\"",
       "tracklist": [
         {
           "position": "A1",
-          "title": "Pinch",
-          "duration": "9:28"
+          "title": "Summertime Clothes (Album Version)",
+          "duration": ""
         },
         {
           "position": "A2",
-          "title": "Sing Swan Song",
-          "duration": "4:18"
-        },
-        {
-          "position": "A3",
-          "title": "One More Night",
-          "duration": "5:35"
+          "title": "Summertime Clothes (Dam-Funk Remix)",
+          "duration": ""
         },
         {
           "position": "B1",
-          "title": "Vitamin C",
-          "duration": "3:34"
+          "title": "Summertime Clothes (L.D. Remix)",
+          "duration": ""
         },
         {
           "position": "B2",
-          "title": "Soup",
-          "duration": "10:25"
-        },
-        {
-          "position": "B3",
-          "title": "I'm So Green",
-          "duration": "3:03"
-        },
-        {
-          "position": "B4",
-          "title": "Spoon",
-          "duration": "3:03"
+          "title": "Summertime Clothes (Zomby's Analog Lego Remix)",
+          "duration": ""
         }
       ],
       "entries": [],
-      "played_at": "2026-08-07T01:29:15Z"
+      "played_at": "2026-08-15T16:33:00Z"
     },
     {
-      "album_id": "5tXmkwvOs934YJL26kgLnb",
-      "album_name": "Red House Painters II",
-      "artist": "Red House Painters",
-      "release_year": 1993,
-      "art_local_path": "red_house_painters_red_house_painters_ii.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b273e3b2dde867ad510f880887b7",
+      "album_id": "1Jas09WuCKZjbPAehXJlj5",
+      "album_name": "Anthology",
+      "artist": "Christie Front Drive",
+      "release_year": null,
+      "art_local_path": "christie_front_drive_anthology.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b273c0863dd8c48e218a86150265",
       "art_filename": null,
-      "dominant_color": "#d8a890",
+      "dominant_color": "#906048",
       "source": "spotify",
       "vinyl_type": null,
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-07T01:16:47.406419Z",
-          "track_id": "2RJTTTElu7x63eWruCfi7P",
-          "track_name": "Star Spangled Banner",
+          "played_at": "2026-08-15T02:19:28.075652Z",
+          "track_id": "7JCQfhfSKvD9NQxTdidLGJ",
+          "track_name": "Dirt",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-07T01:08:09.888904Z",
-          "track_id": "4hgGKiWv93J0Zjd2LSt6QK",
-          "track_name": "Blindfold",
+          "played_at": "2026-08-15T02:13:11.724183Z",
+          "track_id": "5vjZWlNCr4xeNZwyP2bTF5",
+          "track_name": "Pipe",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-07T01:02:11.755904Z",
-          "track_id": "6AHfOhaO7VJ1TJ2hfcwMLm",
-          "track_name": "Uncle Joe",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-07T00:57:47.582904Z",
-          "track_id": "4Xj9FUcxBqn11RdWFjAteB",
-          "track_name": "New Jersey",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-07T00:52:21.303550Z",
-          "track_id": "68ZzPZx5SKLOmPOBAxbUN2",
-          "track_name": "Helicopter",
+          "played_at": "2026-08-15T02:08:43.551183Z",
+          "track_id": "2RqaPwNB3ctBcqPCFqJKef",
+          "track_name": "Long Out",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-07T00:46:48.677550Z",
-          "track_id": "3UJadDEsWgOlMfrPZ08HSH",
-          "track_name": "I Am A Rock",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-07T00:41:17.704550Z",
-          "track_id": "5kZJYlCnGEPv2E2MbiCcsE",
-          "track_name": "Bubble",
+          "played_at": "2026-08-15T02:03:23.058183Z",
+          "track_id": "3GK5Gf51wQ6s0jrg0hwaQp",
+          "track_name": "Slide",
           "is_favorited": false,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-07T01:16:47.406419Z"
+      "played_at": "2026-08-15T02:19:28.075652Z"
     },
     {
-      "album_id": "6deiaArbeoqp1xPEGdEKp1",
-      "album_name": "By the Way (Deluxe Edition)",
-      "artist": "Red Hot Chili Peppers",
-      "release_year": 2002,
-      "art_local_path": "red_hot_chili_peppers_by_the_way_deluxe_edition.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b273de1af2785a83cc660155a0c4",
+      "album_id": "3RQQmkQEvNCY4prGKE6oc5",
+      "album_name": "Un Verano Sin Ti",
+      "artist": "Bad Bunny",
+      "release_year": 2022,
+      "art_local_path": "bad_bunny_un_verano_sin_ti.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b27349d694203245f241a1bcaa72",
       "art_filename": null,
-      "dominant_color": "#486090",
+      "dominant_color": "#d80000",
       "source": "spotify",
       "vinyl_type": null,
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-07T00:34:46.962034Z",
-          "track_id": "3Pgtvva5mLT5VGrgWWdldt",
-          "track_name": "Warm Tape",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-07T00:31:03.900021Z",
-          "track_id": "7IWu3uIUIYIeafzwv582Ho",
-          "track_name": "Minor Thing",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-07T00:27:36.234021Z",
-          "track_id": "6EIyZEtL8Iky8hvxje1dDE",
-          "track_name": "On Mercury",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-07T00:22:00.683818Z",
-          "track_id": "7isAYELhhKBIdffQS1wMbB",
-          "track_name": "Tear",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-07T00:18:14.403523Z",
-          "track_id": "5TGYo4MrNKqIvJqgx134py",
-          "track_name": "Cabron",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-07T00:14:29.643523Z",
-          "track_id": "3XLJoMMM0oRHD4gHq6jV9Z",
-          "track_name": "Throw Away Your Television",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-07T00:09:34.070523Z",
-          "track_id": "4jIPERh3FWrLH6w53dm0JV",
-          "track_name": "Midnight",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-07T00:06:21.244523Z",
-          "track_id": "3oP2vxUR2bjFCrU9YolGnM",
-          "track_name": "I Could Die for You",
+          "played_at": "2026-08-15T01:51:24.233925Z",
+          "track_id": "71wFwRo8xGc4lrcyKwsvba",
+          "track_name": "Callaita",
           "is_favorited": true,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-07T00:01:52.244523Z",
-          "track_id": "3ZOEytgrvLwQaqXreDs2Jx",
-          "track_name": "Can't Stop",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-06T23:58:00.311523Z",
-          "track_id": "1ndGB6rvxKYN9seCYO1dTF",
-          "track_name": "The Zephyr Song",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-06T23:52:35.351041Z",
-          "track_id": "308kjPoIVBzDNExO54sqAi",
-          "track_name": "Don't Forget Me",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-06T23:47:23.485041Z",
-          "track_id": "1iFIZUVDBCCkWe705FLXto",
-          "track_name": "Dosed",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-06T23:43:05.792041Z",
-          "track_id": "42z5BOO8cJda4qWBnHFLQV",
-          "track_name": "This Is the Place",
+          "played_at": "2026-08-15T01:49:05.192925Z",
+          "track_id": "0wihfILRNOwE2156Shezc8",
+          "track_name": "Agosto",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-06T23:38:48.833041Z",
-          "track_id": "39badcyKTjOtBvv4aywpfs",
-          "track_name": "Universally Speaking",
+          "played_at": "2026-08-15T01:46:37.049925Z",
+          "track_id": "18HOjcvTVV7W8YzBuOsAPS",
+          "track_name": "Un Verano Sin Ti",
           "is_favorited": true,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-06T23:35:11.900041Z",
-          "track_id": "1f2V8U1BiWaC9aJWmpOARe",
-          "track_name": "By the Way",
+          "played_at": "2026-08-15T01:43:36.120925Z",
+          "track_id": "28GCbKgjlVD9eDmasGbe0T",
+          "track_name": "Me Fui de Vacaciones",
           "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T01:37:55.962543Z",
+          "track_id": "44XjoNvtwevktFKjvVe1vH",
+          "track_name": "Andrea",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T01:34:39.550543Z",
+          "track_id": "6VrQTLzzuyGIYjUDe4kAZk",
+          "track_name": "Un Coco",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T01:30:35.106543Z",
+          "track_id": "0E0DRHf5PfMeor0ZCwB3oT",
+          "track_name": "Otro Atardecer",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T01:27:13.290543Z",
+          "track_id": "0UvZcEfpzVyx47QsRbjyBz",
+          "track_name": "El Apag\u00f3n",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T01:23:44.675543Z",
+          "track_id": "4d4ZXH4dr5bYfgErHiZCX2",
+          "track_name": "Dos Mil 16",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T01:18:43.754500Z",
+          "track_id": "3k3NWokhRRkEPhCzPmV8TW",
+          "track_name": "Ojitos Lindos",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T01:15:47.754500Z",
+          "track_id": "2NMjggapJcXXM7WccGEBUO",
+          "track_name": "Ens\u00e9\u00f1ame a Bailar",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T01:12:16.765500Z",
+          "track_id": "2uflssWlCaJ6CbTMOsUpNI",
+          "track_name": "Aguacero",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T01:08:29.137500Z",
+          "track_id": "4tYFy8ALRjIZvnvSLw5lxN",
+          "track_name": "Party",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T01:04:56.076500Z",
+          "track_id": "5Eax0qFko2dh7Rl2lYs3bx",
+          "track_name": "Efecto",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T01:01:37.709500Z",
+          "track_id": "1797zYiX4cKosMH836X9Gt",
+          "track_name": "La Corriente",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T00:58:44.590500Z",
+          "track_id": "31i56LZnwE6uSu3exoHjtB",
+          "track_name": "Neverita",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T00:54:46.696500Z",
+          "track_id": "41oY4WCTj5kccfesTVFnvN",
+          "track_name": "Tarot",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T00:50:55.992500Z",
+          "track_id": "5kVZxyMY1gfdCLiChsfjn1",
+          "track_name": "Yo No Soy Celoso",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T00:47:59.056500Z",
+          "track_id": "5CzixCxDkRXX9mScCmah8O",
+          "track_name": "Un Ratito",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T00:43:55.340500Z",
+          "track_id": "1IHWl5LamUGEuP4ozKQSXZ",
+          "track_name": "Tit\u00ed Me Pregunt\u00f3",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T00:40:56.773500Z",
+          "track_id": "6Sq7ltF9Qa7SNFBsV5Cogx",
+          "track_name": "Me Porto Bonito",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-15T00:37:00Z",
+          "track_id": "1dm6z1fWB0cErMszU25dy2",
+          "track_name": "Despu\u00e9s de la Playa",
+          "is_favorited": false,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-07T00:34:46.962034Z"
+      "played_at": "2026-08-15T01:51:24.233925Z"
     },
     {
-      "album_id": "3DSPggBtjAU0GtOSdNNn6x",
-      "album_name": "Luz",
-      "artist": "Djavan",
-      "release_year": 1982,
-      "art_local_path": "djavan_luz.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b273ff6dbdb76c0cce850eb706e3",
+      "album_id": "2tm3Ht61kqqRZtIYsBjxEj",
+      "album_name": "Stankonia",
+      "artist": "Outkast",
+      "release_year": 2000,
+      "art_local_path": "outkast_stankonia.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b273153b3d6495031cb813a7451c",
       "art_filename": null,
-      "dominant_color": "#582c2c",
+      "dominant_color": "#904830",
       "source": "spotify",
       "vinyl_type": null,
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-06T22:25:20.009006Z",
-          "track_id": "47TCVUU6MHGHP1hS8V1ST2",
-          "track_name": "A\u00e7a\u00ed",
+          "played_at": "2026-08-13T17:05:16.870188Z",
+          "track_id": "6emmntELhK3aLuMzGk9Bpa",
+          "track_name": "Pre-Nump (Interlude)",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-06T22:20:43.583006Z",
-          "track_id": "0gvs5KP3TqxwAdUGBbbGJU",
-          "track_name": "Banho de Rio",
+          "played_at": "2026-08-13T17:01:09.310188Z",
+          "track_id": "4hH99pmXR4tTUtVAdMf0kZ",
+          "track_name": "Slum Beautiful (feat. Cee-Lo)",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-06T22:16:00.343006Z",
-          "track_id": "2H4TYG8IkKIXeJFt2CLCaO",
-          "track_name": "P\u00e9tala",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-06T22:10:00.996774Z",
-          "track_id": "2kgT6sMwXd3mdeXhBbLMQe",
-          "track_name": "Sina",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-06T22:05:43.836774Z",
-          "track_id": "1tBjTyIWZpAXKOahFNrpMK",
-          "track_name": "Capim",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-06T22:02:56.826000Z",
-          "track_id": "2R1dnEOe2EfrvD88KBwZBm",
-          "track_name": "Nobreza",
+          "played_at": "2026-08-13T16:56:44.604188Z",
+          "track_id": "4Dlz76O4yMvFdYsKRfBEdK",
+          "track_name": "Toilet Tisha",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-06T21:58:48.426000Z",
-          "track_id": "2m39uQVY1w22IvK0AdUP3L",
-          "track_name": "Luz",
+          "played_at": "2026-08-13T16:52:03.338188Z",
+          "track_id": "2fk55YQGYhilLmXFaKWESM",
+          "track_name": "Gangsta Shit (feat. Slimm Calhoun, C-Bone & T-Mo)",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-06T21:54:00Z",
-          "track_id": "3BQAK2pnTpfZvLg2MUUU5i",
-          "track_name": "Samurai (feat. Stevie Wonder)",
+          "played_at": "2026-08-13T16:51:44.045188Z",
+          "track_id": "4zTqkKfNC3rDQ0uuAGOvie",
+          "track_name": "Cruisin' In The ATL (Interlude)",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T16:47:30.524756Z",
+          "track_id": "5AnpPlwvf01F9D1gcAbCRa",
+          "track_name": "Red Velvet",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T16:46:01.898756Z",
+          "track_id": "67tv8s6iNlSwz2RxVPcoY5",
+          "track_name": "?",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T16:45:30.302983Z",
+          "track_id": "1ZoK9LKJppVYpc5b1QtpD8",
+          "track_name": "Drinkin' Again (Interlude)",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T16:40:39.636983Z",
+          "track_id": "5cN4KyXGUdNOve1TEPWmhL",
+          "track_name": "Humble Mumble (feat. Erykah Badu)",
           "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T16:36:29.170983Z",
+          "track_id": "4XaY6ZNB5BrmVVLtQxjWpm",
+          "track_name": "We Luv Deez Hoez (feat. Backbone & Big Gipp)",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T16:36:14.210983Z",
+          "track_id": "0a7EuQ73Wc6bPQApzjWPwz",
+          "track_name": "Good Hair (Interlude)",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T16:32:05.370983Z",
+          "track_id": "54MqZEYfS0aRgNWW19hNW4",
+          "track_name": "Xplosion (feat. B-Real)",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T16:27:01.144983Z",
+          "track_id": "3WibbMr6canxRJXhNtAvLU",
+          "track_name": "B.O.B. - Bombs Over Baghdad",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T16:22:34.344493Z",
+          "track_id": "6F1nkRSfNUh3FcoSmuO4fu",
+          "track_name": "I'll Call B4 I Cum (feat. Gangsta Boo & Eco)",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T16:21:21.811493Z",
+          "track_id": "51QLvM437Xstp0bLdq0aFj",
+          "track_name": "Kim & Cookie (Interlude)",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T16:17:24.651493Z",
+          "track_id": "1ZosUXeZM3qlTWdL1uTrhm",
+          "track_name": "Spaghetti Junction",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T16:16:50.072132Z",
+          "track_id": "1Y1ZV5NJWTkp7M0r4lwdnM",
+          "track_name": "D.F. (Interlude)",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T16:12:30.379132Z",
+          "track_id": "6C872iuQnICFQy5Z5hIIJX",
+          "track_name": "Snappin' & Trappin' (feat. Killer Mike & J-Sweet)",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T16:07:59.873132Z",
+          "track_id": "0I3q5fE6wg7LIfHGngUTnV",
+          "track_name": "Ms. Jackson",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T16:03:46.537817Z",
+          "track_id": "6glsMWIMIxQ4BedzLqGVi4",
+          "track_name": "So Fresh, So Clean",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T16:03:04.497817Z",
+          "track_id": "3R4IgnYTITZGpGfCZ3ptkM",
+          "track_name": "I'm Cool (Interlude)",
+          "is_favorited": false,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-06T22:25:20.009006Z"
-    },
-    {
-      "album_id": "7doW9YWOtpmqHBqAUuBaKO",
-      "album_name": "Pray For Haiti",
-      "artist": "Mach-Hommy",
-      "release_year": 2021,
-      "art_local_path": "mach_hommy_pray_for_haiti.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b273c43b3a9459cadcf6f68867cd",
-      "art_filename": null,
-      "dominant_color": "#f0c000",
-      "source": "spotify",
-      "vinyl_type": null,
-      "tracklist": [],
-      "entries": [
-        {
-          "played_at": "2026-08-05T21:18:32.840389Z",
-          "track_id": "1c2ioaI7DjOlwzdxka4xYT",
-          "track_name": "The 26th Letter",
-          "is_favorited": false,
-          "is_revisit": false
-        }
-      ],
-      "played_at": "2026-08-05T21:18:32.840389Z"
-    },
-    {
-      "album_id": "4YXo7p7aubyVIbNLoVlBp9",
-      "album_name": "Spirit of Eden",
-      "artist": "Talk Talk",
-      "release_year": 1988,
-      "art_local_path": "talk_talk_spirit_of_eden.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b2736a3ec25c01f5b9c9022a3473",
-      "art_filename": null,
-      "dominant_color": "#f0e4e4",
-      "source": "spotify",
-      "vinyl_type": null,
-      "tracklist": [],
-      "entries": [
-        {
-          "played_at": "2026-08-05T21:10:09.171419Z",
-          "track_id": "3zxgN1ON3BkHSK8OIoTxr2",
-          "track_name": "Wealth - 1997 Remaster",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T21:03:58.785419Z",
-          "track_id": "3SzoVeS9Eaxt6dmfXF0fPo",
-          "track_name": "I Believe in You - 1997 Remaster",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T20:58:35.145419Z",
-          "track_id": "24yHHIYVMYwN4oqfpiIh6I",
-          "track_name": "Inheritance - 1997 Remaster",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T20:51:38.079419Z",
-          "track_id": "0VCBoaKWRtAUAOHdBdqEQX",
-          "track_name": "Desire - 1997 Remaster",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T20:45:00Z",
-          "track_id": "5kSAwHSqqr05MqWJ1o1KaG",
-          "track_name": "Eden - 1997 Remaster",
-          "is_favorited": false,
-          "is_revisit": false
-        }
-      ],
-      "played_at": "2026-08-05T21:10:09.171419Z"
-    },
-    {
-      "album_id": "69mralFmMbF9NcqdfG1pAM",
-      "album_name": "modo sigilo",
-      "artist": "Aiko el grupo",
-      "release_year": 2026,
-      "art_local_path": "aiko_el_grupo_modo_sigilo.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b2738c5b037f2e46403da5d7e6f3",
-      "art_filename": null,
-      "dominant_color": "#486078",
-      "source": "spotify",
-      "vinyl_type": null,
-      "tracklist": [],
-      "entries": [
-        {
-          "played_at": "2026-08-05T12:17:47.915000Z",
-          "track_id": "0yVHUY5qQRPehPrux7JOI5",
-          "track_name": "modo sigilo",
-          "is_favorited": true,
-          "is_revisit": false
-        }
-      ],
-      "played_at": "2026-08-05T12:17:47.915000Z"
+      "played_at": "2026-08-13T17:05:16.870188Z"
     },
     {
       "album_id": "19W50ba1lvrC6UY9CoEzLX",
@@ -420,449 +427,531 @@
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-05T08:58:00Z",
+          "played_at": "2026-08-13T15:50:33.924383Z",
           "track_id": "0MhcBkxm4NrHqmqnk3yXU6",
           "track_name": "I Woke Up Near The Sea",
           "is_favorited": true,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-05T08:58:00Z"
+      "played_at": "2026-08-13T15:50:33.924383Z"
     },
     {
-      "album_id": "5qhXaVIC5BdE4a5Kq1FMZG",
-      "album_name": "Funhouse",
-      "artist": "The Stooges",
-      "release_year": 1970,
-      "art_local_path": "the_stooges_funhouse.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b2732c7d41ae194ef7aaaba3fee3",
+      "album_id": "0xZyCh3S6ELLuXHJT27VzF",
+      "album_name": "No lo volver\u00e9 a hacer",
+      "artist": "shego",
+      "release_year": 2025,
+      "art_local_path": "shego_no_lo_volver\u00e9_a_hacer.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b2735ab9f4f7dd5e16773cf973c5",
       "art_filename": null,
-      "dominant_color": "#d83018",
+      "dominant_color": "#a81830",
       "source": "spotify",
       "vinyl_type": null,
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-05T02:19:54.384013Z",
-          "track_id": "1ED6dMdVwXGkXAjsJdk5f0",
-          "track_name": "L.A. Blues",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T02:12:08.824013Z",
-          "track_id": "07qoAjE0wObVAAfyIevTNV",
-          "track_name": "Fun House",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T02:06:54.558013Z",
-          "track_id": "0L7F1blNNYj3AjIu4gCjhP",
-          "track_name": "1970",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T01:59:54.425013Z",
-          "track_id": "21xrImrAULwa0VT8n4BJoA",
-          "track_name": "Dirt",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T01:55:37.185013Z",
-          "track_id": "7mvN904TRvKl9CPQXFJ16t",
-          "track_name": "T.V. Eye",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T01:52:04.159013Z",
-          "track_id": "4giZRI3pgupzawIJXLx7T9",
-          "track_name": "Loose",
+          "played_at": "2026-08-13T15:41:03.365355Z",
+          "track_id": "7ybwZjsw9sGEJjSSn96oNN",
+          "track_name": "Te matar\u00e9",
           "is_favorited": true,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-05T02:19:54.384013Z"
+      "played_at": "2026-08-13T15:41:03.365355Z"
     },
     {
-      "album_id": "2Y9IRtehByVkegoD7TcLfi",
-      "album_name": "Californication (Deluxe Edition)",
-      "artist": "Red Hot Chili Peppers",
+      "album_id": "7Bb7hZ43hWztFwaPCfZKvK",
+      "album_name": "Unidos",
+      "artist": "Sofia Kourtesis",
+      "release_year": 2025,
+      "art_local_path": "sofia_kourtesis_unidos.jpg",
+      "art_url": "https://i.scdn.co/image/ab6742d3000053b7137cd9754b80ace759a28d05",
+      "art_filename": null,
+      "dominant_color": "#903000",
+      "source": "spotify",
+      "vinyl_type": null,
+      "tracklist": [],
+      "entries": [
+        {
+          "played_at": "2026-08-13T15:23:22.571141Z",
+          "track_id": "6xxhhB9ctfoTJgdxAbjh0M",
+          "track_name": "Unidos",
+          "is_favorited": false,
+          "is_revisit": false
+        }
+      ],
+      "played_at": "2026-08-13T15:23:22.571141Z"
+    },
+    {
+      "album_id": "5kXmpj8YLcxEMk8BWc57UV",
+      "album_name": "Let It Out",
+      "artist": "I Kill Giants",
+      "release_year": 2011,
+      "art_local_path": "i_kill_giants_let_it_out.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b2736e2a592c565980832eccfa04",
+      "art_filename": null,
+      "dominant_color": "#f0f0c7",
+      "source": "spotify",
+      "vinyl_type": null,
+      "tracklist": [],
+      "entries": [
+        {
+          "played_at": "2026-08-13T15:16:39.976527Z",
+          "track_id": "6U8iJR8PSjJndaj7pDMGQu",
+          "track_name": "Balance",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T15:13:45.976527Z",
+          "track_id": "7D0oudTdGBOy4R9u2T0CpM",
+          "track_name": "Appa",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T15:10:50.651527Z",
+          "track_id": "23G4qQjJkkrK3eq4kfhPyP",
+          "track_name": "Something About Gnarwhals",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T15:08:08.700527Z",
+          "track_id": "51ZcdfSwPaytby7XhVXsSz",
+          "track_name": "Free Gummy Bears",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T15:04:42.167527Z",
+          "track_id": "5UC2tTMalBq7t06tjWIreX",
+          "track_name": "I Believe in Technology",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T15:00:25.107527Z",
+          "track_id": "0UFf9VN9hxgjdKZj8PztbD",
+          "track_name": "Covaleski",
+          "is_favorited": false,
+          "is_revisit": false
+        }
+      ],
+      "played_at": "2026-08-13T15:16:39.976527Z"
+    },
+    {
+      "album_id": "5pdSJTWNlQj6RJbYPgTFGZ",
+      "album_name": "Heaven Let Them Die",
+      "artist": "Counterparts",
+      "release_year": 2024,
+      "art_local_path": "counterparts_heaven_let_them_die.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b2730d27d521536cd8454d1255d8",
+      "art_filename": null,
+      "dominant_color": "#d8cdcd",
+      "source": "spotify",
+      "vinyl_type": null,
+      "tracklist": [],
+      "entries": [
+        {
+          "played_at": "2026-08-13T14:50:58.828215Z",
+          "track_id": "04Q3C5cKe30TOOPQvO1Zml",
+          "track_name": "To Hear of War",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T14:47:17.895215Z",
+          "track_id": "6ajfXivkRaEKfnDWBYnN2D",
+          "track_name": "A Martyr Left Alive",
+          "is_favorited": false,
+          "is_revisit": false
+        }
+      ],
+      "played_at": "2026-08-13T14:50:58.828215Z"
+    },
+    {
+      "album_id": "5gbzC8YyCxUyb7Sh8veOWE",
+      "album_name": "Perch Patchwork",
+      "artist": "Maps & Atlases",
+      "release_year": 2010,
+      "art_local_path": "maps_atlases_perch_patchwork.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b273c36482d5deebd9b8d5931574",
+      "art_filename": null,
+      "dominant_color": "#184860",
+      "source": "spotify",
+      "vinyl_type": null,
+      "tracklist": [],
+      "entries": [
+        {
+          "played_at": "2026-08-13T14:33:03.685193Z",
+          "track_id": "1SvlJFYhPe5jQHGuvMrVOy",
+          "track_name": "Perch Patchwork",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T14:30:48.325193Z",
+          "track_id": "635cFNoFJ1dGQL6AthEd39",
+          "track_name": "Was",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T14:28:06.019193Z",
+          "track_id": "3inZGTq3w5idGOi8BZu60d",
+          "track_name": "If This Is",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T14:25:12.859193Z",
+          "track_id": "1BwtW9ZX4UTnUmoQHvJlX0",
+          "track_name": "Pigeon",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T14:22:01.619193Z",
+          "track_id": "1nB8rhuX83KJ62hw3QpNlV",
+          "track_name": "Carrying the Wet Wood",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T14:19:07.753193Z",
+          "track_id": "0wsqdQMuoUSWBeUc7DZHEL",
+          "track_name": "Banished Be Cavalier",
+          "is_favorited": false,
+          "is_revisit": false
+        }
+      ],
+      "played_at": "2026-08-13T14:33:03.685193Z"
+    },
+    {
+      "album_id": "20r762YmB5HeofjMCiPMLv",
+      "album_name": "My Beautiful Dark Twisted Fantasy",
+      "artist": "Kanye West",
+      "release_year": 2010,
+      "art_local_path": "kanye_west_my_beautiful_dark_twisted_fantasy.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b273d9194aa18fa4c9362b47464f",
+      "art_filename": null,
+      "dominant_color": "#d81830",
+      "source": "spotify",
+      "vinyl_type": null,
+      "tracklist": [],
+      "entries": [
+        {
+          "played_at": "2026-08-13T14:12:12.807526Z",
+          "track_id": "23SZWX2IaDnxmhFsSLvkG2",
+          "track_name": "Gorgeous",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T14:07:32.021526Z",
+          "track_id": "7yNK27ZTpHew0c55VvIJgm",
+          "track_name": "Dark Fantasy",
+          "is_favorited": true,
+          "is_revisit": false
+        }
+      ],
+      "played_at": "2026-08-13T14:12:12.807526Z"
+    },
+    {
+      "album_id": "2k8KgmDp9oHrmu0MIj4XDE",
+      "album_name": "Is This It",
+      "artist": "The Strokes",
+      "release_year": 2001,
+      "art_local_path": "the_strokes_is_this_it.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b27313f2466b83507515291acce4",
+      "art_filename": null,
+      "dominant_color": "#3090a8",
+      "source": "spotify",
+      "vinyl_type": null,
+      "tracklist": [],
+      "entries": [
+        {
+          "played_at": "2026-08-13T13:58:24.638863Z",
+          "track_id": "0seTertVGvHrEJu7hlIWRq",
+          "track_name": "Take It Or Leave It",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T13:55:01.878863Z",
+          "track_id": "5KupfEBaVJwL7D2ZN0n1Q1",
+          "track_name": "Trying Your Luck",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T13:52:06.678863Z",
+          "track_id": "3iiObSfkcBsETljmSB4Hcs",
+          "track_name": "When It Started",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T13:48:22.345863Z",
+          "track_id": "0OM9ri37LIbPc9hffwsyb1",
+          "track_name": "Hard To Explain",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T13:45:00.074236Z",
+          "track_id": "3SUusuA9jH1v6PVwtYMbdv",
+          "track_name": "Last Nite",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T13:41:51.434236Z",
+          "track_id": "4UmJMAY5TqXPAnsDW1Mci7",
+          "track_name": "Alone, Together",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T13:38:42.326305Z",
+          "track_id": "7hm4HTk9encxT0LYC0J6oI",
+          "track_name": "Someday",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T13:34:47.633305Z",
+          "track_id": "21Ay8Y9Pr91nSauPGtK6MW",
+          "track_name": "Barely Legal",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T13:32:13.793305Z",
+          "track_id": "6gU7ohksNd6LsEJMWfDRhp",
+          "track_name": "Soma",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T13:28:45.727305Z",
+          "track_id": "1420BGhbXGkIJtbtBlfpYE",
+          "track_name": "The Modern Age",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T13:26:14.394305Z",
+          "track_id": "0jBE7Fn78EAvmIs3dCd6GO",
+          "track_name": "Is This It",
+          "is_favorited": false,
+          "is_revisit": false
+        }
+      ],
+      "played_at": "2026-08-13T13:58:24.638863Z"
+    },
+    {
+      "album_id": "5ROzqM7rbMYoKbQIw4i7fp",
+      "album_name": "I Got Heaven",
+      "artist": "Mannequin Pussy",
+      "release_year": 2024,
+      "art_local_path": "mannequin_pussy_i_got_heaven.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b27373d127cb0d93a4c74fb99525",
+      "art_filename": null,
+      "dominant_color": "#2c2c58",
+      "source": "spotify",
+      "vinyl_type": null,
+      "tracklist": [],
+      "entries": [
+        {
+          "played_at": "2026-08-13T13:20:04.892034Z",
+          "track_id": "3AHtwnVC3hmQFOJY4rVb6I",
+          "track_name": "Split Me Open",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T13:18:10.768470Z",
+          "track_id": "3yrTFqVJ3WT6YDzhhR0YJw",
+          "track_name": "Aching",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T13:16:03.887824Z",
+          "track_id": "2415zlo33NvXzYSZEH61s5",
+          "track_name": "Of Her",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T13:12:37.141824Z",
+          "track_id": "4IO9qsd71oamZ3HsEzeGmE",
+          "track_name": "Softly",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T13:10:24.255055Z",
+          "track_id": "2mVEPVf5YF4hukVUWaorF7",
+          "track_name": "OK? OK! OK? OK!",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T13:06:56.655055Z",
+          "track_id": "2hVbai5ZN5yykTbSteAPKy",
+          "track_name": "Sometimes",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T13:03:12.282055Z",
+          "track_id": "2VO8CVuLDVXynM8tQECALM",
+          "track_name": "I Don't Know You",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T12:58:49.286214Z",
+          "track_id": "7sWKIQsoW2dlKMNobxXoXp",
+          "track_name": "Nothing Like",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T12:55:30.909977Z",
+          "track_id": "4iaSz388a4iRMNRJZSClVG",
+          "track_name": "Loud Bark",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T12:52:31.976977Z",
+          "track_id": "4C6EPbxGiGSX95nJY3z9ZG",
+          "track_name": "I Got Heaven",
+          "is_favorited": false,
+          "is_revisit": false
+        }
+      ],
+      "played_at": "2026-08-13T13:20:04.892034Z"
+    },
+    {
+      "album_id": "5nfdstl6JxGrDQtm1B2LnZ",
+      "album_name": "Big Science",
+      "artist": "Laurie Anderson",
+      "release_year": 1982,
+      "art_local_path": "laurie_anderson_big_science.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b273588b07fde7427a6b8e2614fe",
+      "art_filename": null,
+      "dominant_color": "#2c5858",
+      "source": "spotify",
+      "vinyl_type": null,
+      "tracklist": [],
+      "entries": [
+        {
+          "played_at": "2026-08-13T12:45:51.238078Z",
+          "track_id": "38zEhrSujB90bk9a6spSlY",
+          "track_name": "It Tango",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T12:41:56.532078Z",
+          "track_id": "543VOLzzhjhTog1rArIX6E",
+          "track_name": "Let X=X",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T12:38:56.612078Z",
+          "track_id": "3d5SdLAwgzmNQ5ruzEaPyO",
+          "track_name": "Example #22",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T12:30:14.810072Z",
+          "track_id": "421Gp1eSmOIcD6alTWowFR",
+          "track_name": "O Superman",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T12:24:59.865357Z",
+          "track_id": "17OHkMRcmhQR69w8rISdnk",
+          "track_name": "Born, Never Asked",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T12:22:46.572357Z",
+          "track_id": "0jV8lPEbz6mVI6Q34Ru0ym",
+          "track_name": "Walking and Falling",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T12:20:22.653000Z",
+          "track_id": "0jTpCwqu8KtSccW9fOyfEX",
+          "track_name": "Sweaters",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T12:14:00Z",
+          "track_id": "5ZPxedxzsiuJY8AQvYpXSd",
+          "track_name": "Big Science",
+          "is_favorited": false,
+          "is_revisit": false
+        }
+      ],
+      "played_at": "2026-08-13T12:45:51.238078Z"
+    },
+    {
+      "album_id": "0P1YuWWjYz6vnwizYv81Z3",
+      "album_name": "Something to Write Home About",
+      "artist": "The Get Up Kids",
       "release_year": 1999,
-      "art_local_path": "red_hot_chili_peppers_californication_deluxe_edition.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b27394d08ab63e57b0cae74e8595",
+      "art_local_path": "the_get_up_kids_something_to_write_home_about.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b2734356bce7515097bdf7929296",
       "art_filename": null,
-      "dominant_color": "#005fa8",
+      "dominant_color": "#c0a878",
       "source": "spotify",
       "vinyl_type": null,
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-05T01:46:59.757211Z",
-          "track_id": "1XxCiPw07rd1ytYnE7SoJI",
-          "track_name": "Road Trippin'",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T01:45:07.224211Z",
-          "track_id": "66wnTJJ7Vo0GW02CMP3etR",
-          "track_name": "Right on Time",
+          "played_at": "2026-08-13T02:03:32.287929Z",
+          "track_id": "5TltGtLMjveIan5HvLAh1z",
+          "track_name": "I'm a Loner Dottie, a Rebel",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-05T01:40:53.660062Z",
-          "track_id": "0tGkxA0oybkQ3iR6LLXPjZ",
-          "track_name": "Purple Stain",
+          "played_at": "2026-08-13T02:00:19.621929Z",
+          "track_id": "1ChIaMGPLX81mbIRAhD0Yh",
+          "track_name": "Ten Minutes",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-05T01:36:01.260062Z",
-          "track_id": "0O8RjwNco465s5o9Ix9IYj",
-          "track_name": "Savior",
+          "played_at": "2026-08-13T01:56:13.781929Z",
+          "track_id": "4okVNqpGk7OA61vmlzkewe",
+          "track_name": "Action & Action",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-05T01:32:16.060062Z",
-          "track_id": "49colNVoLFcMszng9O8w4h",
-          "track_name": "This Velvet Glove",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T01:29:38.434062Z",
-          "track_id": "2bo1tTjK87OHKKUDFthqHx",
-          "track_name": "I Like Dirt",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T01:25:38.234062Z",
-          "track_id": "2xDHUsWEsH33sKbFqDZPFj",
-          "track_name": "Emit Remmus",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T01:22:53.355734Z",
-          "track_id": "6WUjz18yIeTGDR1E69WHtf",
-          "track_name": "Porcelain",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T01:19:02.022734Z",
-          "track_id": "3QJnjJH53Ocg22MaLutrgJ",
-          "track_name": "Easily",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T01:13:32.289734Z",
-          "track_id": "48UPSzbZjgc449aqz8bxox",
-          "track_name": "Californication",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T01:10:14.223734Z",
-          "track_id": "0GcWf1Cc4ixN35D3O9VdcP",
-          "track_name": "Get on Top",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T01:05:58.850734Z",
-          "track_id": "64BbK9SFKH2jk86U3dGj2P",
-          "track_name": "Otherside",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T01:02:22.944734Z",
-          "track_id": "1G391cbiT3v3Cywg8T7DM1",
-          "track_name": "Scar Tissue",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T00:57:53.584734Z",
-          "track_id": "1Se0r96r0gnqg67kJPmESc",
-          "track_name": "Parallel Universe",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-05T00:53:54.851734Z",
-          "track_id": "0aGQHMr7bc23Y9Ts84ffop",
-          "track_name": "Around the World",
+          "played_at": "2026-08-13T01:52:44.515929Z",
+          "track_id": "7BqOaCe91KO42CrBFkXPYe",
+          "track_name": "Holiday",
           "is_favorited": false,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-05T01:46:59.757211Z"
-    },
-    {
-      "album_id": "14gI3ml0wxlgVrX1ve8zyJ",
-      "album_name": "Gish (Deluxe Edition)",
-      "artist": "The Smashing Pumpkins",
-      "release_year": 1991,
-      "art_local_path": "the_smashing_pumpkins_gish_deluxe_edition.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b273932b996af72dfeaf5a72ef58",
-      "art_filename": null,
-      "dominant_color": "#300060",
-      "source": "spotify",
-      "vinyl_type": null,
-      "tracklist": [],
-      "entries": [
-        {
-          "played_at": "2026-08-04T23:44:05.902888Z",
-          "track_id": "2n6r0bWrKWeo55FWk68wSd",
-          "track_name": "I Am One - Remastered 2011",
-          "is_favorited": false,
-          "is_revisit": false
-        }
-      ],
-      "played_at": "2026-08-04T23:44:05.902888Z"
-    },
-    {
-      "album_id": "2C6NX2mhcHVSLDRZsZlrVy",
-      "album_name": "Vacuum Boogie",
-      "artist": "Floating Points",
-      "release_year": 2009,
-      "art_local_path": "floating_points_vacuum_boogie.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b273d6620c5bb4cf5315565accb1",
-      "art_filename": null,
-      "dominant_color": "#002c58",
-      "source": "spotify",
-      "vinyl_type": null,
-      "tracklist": [],
-      "entries": [
-        {
-          "played_at": "2026-08-04T23:33:30.413587Z",
-          "track_id": "5xKb4N3I7NKmDy899KMTJr",
-          "track_name": "Vacuum Boogie",
-          "is_favorited": true,
-          "is_revisit": false
-        }
-      ],
-      "played_at": "2026-08-04T23:33:30.413587Z"
-    },
-    {
-      "album_id": "3FR05gmeoVRYr2i1MKqrcn",
-      "album_name": "A Better View Of The Rising Moon",
-      "artist": "1997",
-      "release_year": 2007,
-      "art_local_path": "1997_a_better_view_of_the_rising_moon.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b2736bd4a6bef8925d82f65ffcab",
-      "art_filename": null,
-      "dominant_color": "#d8b592",
-      "source": "spotify",
-      "vinyl_type": null,
-      "tracklist": [],
-      "entries": [
-        {
-          "played_at": "2026-08-04T23:28:49.001122Z",
-          "track_id": "0DWQH4rIOlrSMEssw0K4mB",
-          "track_name": "Droppin' Dimes",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T23:23:27.948122Z",
-          "track_id": "0Y2I6K1eePVpzyGTq0JY3n",
-          "track_name": "Enough Is Enough",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T23:19:30.390910Z",
-          "track_id": "6noJaV7CKswLPLazUBMvBh",
-          "track_name": "Tennessee Song",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T23:16:00.750910Z",
-          "track_id": "3Iam2VoyU926sgOoc7kygE",
-          "track_name": "Lovelikepoetry",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T23:12:24.790910Z",
-          "track_id": "4B6l0lWSFT9A3uDP9CemKQ",
-          "track_name": "The Roads You Can Take",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T23:07:35.924910Z",
-          "track_id": "0c6nkRDy8w7s6RXKk9Dgpz",
-          "track_name": "Grace",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T23:04:14.124910Z",
-          "track_id": "2jqrwgR3ElBXkavPWVcLhl",
-          "track_name": "Patience, Prudence",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T23:00:50.178910Z",
-          "track_id": "2EMGGjlchiVTMgJWZBzniH",
-          "track_name": "In Your Car",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T22:57:21.290111Z",
-          "track_id": "6uqg2Dc7CTy7CBUtkAUp3L",
-          "track_name": "Hey Darlin'",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T22:53:04.690111Z",
-          "track_id": "6p2NIjRUtp9NTlni6dav6T",
-          "track_name": "Garden Of Evil",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T22:48:45.770111Z",
-          "track_id": "7fwC3vVoQ3bwTwG1gxohlD",
-          "track_name": "Water's Edge",
-          "is_favorited": true,
-          "is_revisit": false
-        }
-      ],
-      "played_at": "2026-08-04T23:28:49.001122Z"
-    },
-    {
-      "album_id": "6KiS2t3EapTmHSt9xGUqe7",
-      "album_name": "Stage Four (Deluxe Edition)",
-      "artist": "Touch\u00e9 Amor\u00e9",
-      "release_year": 2016,
-      "art_local_path": "touch\u00e9_amor\u00e9_stage_four_deluxe_edition.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b273b5c2e08199c1d30bce73bfbd",
-      "art_filename": null,
-      "dominant_color": "#783030",
-      "source": "spotify",
-      "vinyl_type": null,
-      "tracklist": [],
-      "entries": [
-        {
-          "played_at": "2026-08-04T22:41:22.440304Z",
-          "track_id": "1SCmZbIvPMX92zgdCSL3jR",
-          "track_name": "Gather",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T22:37:29.254304Z",
-          "track_id": "3Ni6RhAIjbaDvkHep6Afnr",
-          "track_name": "Skyscraper",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T22:33:36.601304Z",
-          "track_id": "4Dc6XZ4BchNXv4MVqW03g0",
-          "track_name": "Water Damage",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T22:30:48.855304Z",
-          "track_id": "3U0AAwk53JEcv2Tcu9kpjz",
-          "track_name": "Posing Holy",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T22:28:52.909304Z",
-          "track_id": "7aoOy4QXKGhecDODluw2c6",
-          "track_name": "Softer Spoken",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T22:25:34.705000Z",
-          "track_id": "3XUnE0OeMrpWHV9OVHNwjo",
-          "track_name": "Palm Dreams",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T22:24:02.665000Z",
-          "track_id": "4zyomJpB6fgmXZ6A79721l",
-          "track_name": "Eight Seconds",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T22:20:23.132000Z",
-          "track_id": "5P6RywcZKqvD8BvirxO58l",
-          "track_name": "Benediction",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T22:18:11.946000Z",
-          "track_id": "1cgbkpTMiVUsmNhBfL9MJf",
-          "track_name": "Displacement",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-04T22:15:00Z",
-          "track_id": "6E5nupnnwz0PdA0fTGYp57",
-          "track_name": "Rapture",
-          "is_favorited": true,
-          "is_revisit": false
-        }
-      ],
-      "played_at": "2026-08-04T22:41:22.440304Z"
-    },
-    {
-      "album_id": "vinyl:5678589",
-      "album_name": "Phantom Vibrate",
-      "artist": "Jacques Greene",
-      "release_year": 2014,
-      "art_local_path": null,
-      "art_url": null,
-      "art_filename": "vinyl/5678589.jpg",
-      "dominant_color": "#a9ccf0",
-      "source": "vinyl",
-      "vinyl_type": "12\"",
-      "tracklist": [
-        {
-          "position": "A1",
-          "title": "No Excuse",
-          "duration": "5:37"
-        },
-        {
-          "position": "B1",
-          "title": "Feel What",
-          "duration": "5:49"
-        },
-        {
-          "position": "B2",
-          "title": "Night Tracking",
-          "duration": "4:12"
-        }
-      ],
-      "entries": [],
-      "played_at": "2026-08-04T13:40:27Z"
+      "played_at": "2026-08-13T02:03:32.287929Z"
     },
     {
       "album_id": "17Mq1v9fKGSmCabI7DaV4S",
@@ -878,869 +967,783 @@
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-03T23:27:27.164311Z",
+          "played_at": "2026-08-13T00:58:22.244906Z",
+          "track_id": "1eZPs6Qxz016aWXwroWUhN",
+          "track_name": "Splinters",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-13T00:49:42.458906Z",
           "track_id": "0XvSsFUao5zMnTrkkC7AF9",
           "track_name": "From Now To Never",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-03T23:26:39.911311Z",
+          "played_at": "2026-08-13T00:48:55.205906Z",
           "track_id": "1IQUBjOeCRvKjlna7dgo0b",
           "track_name": "P.O.M.E.",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-03T23:23:33.658311Z",
+          "played_at": "2026-08-13T00:45:48.952906Z",
           "track_id": "0R8i4AehsAciCDwGJ9Uh70",
           "track_name": "Travel By Bloodline",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-03T23:17:34.152311Z",
+          "played_at": "2026-08-13T00:39:49.446906Z",
           "track_id": "25gltLy95BKfGOIIcNDS9H",
           "track_name": "Tensioning",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-03T23:16:14.899311Z",
+          "played_at": "2026-08-13T00:38:30.193906Z",
           "track_id": "1nhGY78xuDlbZOeTnPnSOx",
           "track_name": "Syncope",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-03T23:12:05.202474Z",
+          "played_at": "2026-08-13T00:34:52.313906Z",
           "track_id": "3yBj16UJl1HJgqgjUXil1V",
           "track_name": "Death In The Family",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-03T23:07:38.909474Z",
+          "played_at": "2026-08-13T00:30:26.020906Z",
           "track_id": "19YV81kEFDfhZOubHR6rET",
           "track_name": "End Moraine",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-03T23:01:36.109474Z",
+          "played_at": "2026-08-13T00:24:09.680084Z",
           "track_id": "2dvlcmvEXaXvPr8Vak368O",
           "track_name": "Lines In Sand",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-03T22:57:49.016474Z",
+          "played_at": "2026-08-13T00:20:22.587084Z",
           "track_id": "2Kn36gg3m6Q3zkk3GVNy59",
           "track_name": "Breaking The Broken",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-03T22:54:05.176474Z",
+          "played_at": "2026-08-13T00:16:30.499532Z",
           "track_id": "3GAUibwOunKHF0Uo8JhvZi",
           "track_name": "La Cerca",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-03T22:49:40.896474Z",
+          "played_at": "2026-08-13T00:12:06.219532Z",
           "track_id": "0zgEbB05wAnOHQ9XRupLwX",
           "track_name": "While Oceana Sleeps",
           "is_favorited": false,
           "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-03T22:46:12.936474Z",
-          "track_id": "79MfPMwVVvvJFHCTJQu0LF",
-          "track_name": "Hiss The Villain",
-          "is_favorited": false,
-          "is_revisit": false
         }
       ],
-      "played_at": "2026-08-03T23:27:27.164311Z"
+      "played_at": "2026-08-13T00:58:22.244906Z"
     },
     {
-      "album_id": "6GEO5pSp3ojwIm9vZqTtRd",
-      "album_name": "Quem \u00c9 Quem",
-      "artist": "Jo\u00e3o Donato",
-      "release_year": 1973,
-      "art_local_path": "jo\u00e3o_donato_quem_\u00e9_quem.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b273d5510d5ecf9533c3bf0f3908",
+      "album_id": "4OD3LU6001esAtFshDX46M",
+      "album_name": "Rhythm Nation 1814",
+      "artist": "Janet Jackson",
+      "release_year": 1989,
+      "art_local_path": "janet_jackson_rhythm_nation_1814.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b27371511473d9e34fcdc13d90ef",
       "art_filename": null,
-      "dominant_color": "#184890",
+      "dominant_color": "#005858",
       "source": "spotify",
       "vinyl_type": null,
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-03T22:37:31.828168Z",
-          "track_id": "28buHaxs38cbebmFUmqqsw",
-          "track_name": "At\u00e9 Quem Sabe",
+          "played_at": "2026-08-12T23:57:42.541007Z",
+          "track_id": "4ijVfb64BvoN3ju3DlCc8v",
+          "track_name": "Someday Is Tonight",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-03T22:34:38.561315Z",
-          "track_id": "40zF8gX2Bvk2PbiMkwgHq7",
-          "track_name": "Me Deixa",
+          "played_at": "2026-08-12T23:51:50.591106Z",
+          "track_id": "0NSSqYISjnav81CEn6EgBY",
+          "track_name": "Come Back To Me",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-12T23:46:51.525106Z",
+          "track_id": "2ndoCv7McWcWwIRhtJvCpE",
+          "track_name": "Lonely",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-12T23:42:00.952106Z",
+          "track_id": "4tYpYYoOI7WDxbCnPninwE",
+          "track_name": "Black Cat",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-12T23:41:55.459106Z",
+          "track_id": "74wRImrG5kiZ6ltyaGJd6w",
+          "track_name": "Interlude: No Acid",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-12T23:37:11.526106Z",
+          "track_id": "5HAv1Ckfe50DUjv8ghwTrz",
+          "track_name": "Escapade",
           "is_favorited": true,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-03T22:32:18.401315Z",
-          "track_id": "2IYnHX1FyhBWhNvD4XAD0v",
-          "track_name": "Nan\u00e3 Das \u00c1guas",
+          "played_at": "2026-08-12T23:37:01.766106Z",
+          "track_id": "1KmGTJpUF6zTN3JILdXBFe",
+          "track_name": "Interlude: Hey Baby",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-03T22:29:53.141189Z",
-          "track_id": "7G8XsxFlDaWLRrYPBsmRYg",
-          "track_name": "Cala Boca Menino",
+          "played_at": "2026-08-12T23:30:35.233106Z",
+          "track_id": "63W4sfeRTTiNKFLAzUJHFe",
+          "track_name": "Alright",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-03T22:27:01.168189Z",
-          "track_id": "1yaDnmzs2C38H7wYl3EKNu",
-          "track_name": "Ahi\u00ea",
+          "played_at": "2026-08-12T23:25:54.060106Z",
+          "track_id": "1tfts53MuXfOYr1lXnfsIM",
+          "track_name": "Livin' In A World (They Didn't Make)",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-03T22:24:29.342189Z",
-          "track_id": "0wrx7YMUJXIcThebT8XDz5",
-          "track_name": "A R\u00e3",
+          "played_at": "2026-08-12T23:20:04.060106Z",
+          "track_id": "1SkJ8HjZUZRPYT3R2rh5sA",
+          "track_name": "Love Will Never Do (Without You)",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-12T23:19:43.100106Z",
+          "track_id": "5wPKrgX6V7fKBBAnLym8vV",
+          "track_name": "Interlude: Come Back",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-12T23:15:12.102742Z",
+          "track_id": "4r5VaK6H1bq0cTGPMTN97Z",
+          "track_name": "Miss You Much",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-12T23:15:08.102742Z",
+          "track_id": "5KcJlvSdqSwGnrDKnO5pYC",
+          "track_name": "Interlude: Let's Dance",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-12T23:11:14.836742Z",
+          "track_id": "4crZIDgFUaBoeyj2KbD5j3",
+          "track_name": "The Knowledge",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-12T23:11:09.970742Z",
+          "track_id": "0uxK2g1iDNZRgipetUk4B6",
+          "track_name": "Interlude: Race",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-12T23:06:22.104742Z",
+          "track_id": "0Yk6Xgk1Do6fAJWydT1dI6",
+          "track_name": "State Of The World",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-12T23:06:00.171742Z",
+          "track_id": "0E4dew7zf6sBgYjjAsb8GJ",
+          "track_name": "Interlude: T.V.",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-12T23:00:29.238742Z",
+          "track_id": "4nTYxxF8iWBq54LO3dBUie",
+          "track_name": "Rhythm Nation",
           "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-03T22:20:50.369189Z",
-          "track_id": "6qpm9hGUtqXLRIuhHriqun",
-          "track_name": "Fim De Sonho",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-03T22:18:39.876189Z",
-          "track_id": "4VhLkWi8dbq4FCoTu3V7Me",
-          "track_name": "Amazonas",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-03T22:16:11.410189Z",
-          "track_id": "2J4tdOlBl9SsmNCWbP3WSb",
-          "track_name": "Terremoto",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-03T22:13:30.810189Z",
-          "track_id": "2anRLubLcp5PZoIGP0VHf9",
-          "track_name": "Chorou, Chorou",
-          "is_favorited": false,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-03T22:37:31.828168Z"
+      "played_at": "2026-08-12T23:57:42.541007Z"
     },
     {
-      "album_id": "3GEa8PdRoag1vtVUQCAla1",
-      "album_name": "Aromanticism",
-      "artist": "Moses Sumney",
-      "release_year": 2017,
-      "art_local_path": "moses_sumney_aromanticism.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b273478d01e5e5b78a6791036e5f",
+      "album_id": "4hsC5IvasDOCrWwM8UQ3N4",
+      "album_name": "Cardinal (Expanded Edition)",
+      "artist": "Pinegrove",
+      "release_year": 2016,
+      "art_local_path": "pinegrove_cardinal_expanded_edition.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b273b25a7fb1b8ad5d1c3c09a20f",
       "art_filename": null,
-      "dominant_color": "#a89078",
+      "dominant_color": "#787272",
       "source": "spotify",
       "vinyl_type": null,
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-03T19:22:51.994232Z",
-          "track_id": "5pSQNeNXnvYJIzngFBMDim",
-          "track_name": "Doomed",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-03T19:21:42.840232Z",
-          "track_id": "2oW1DECIIagWGj7y33LJYL",
-          "track_name": "The Cocoon-Eyed Baby",
+          "played_at": "2026-08-12T22:50:47.551672Z",
+          "track_id": "5AqGSBtC30fE6rCMrr6qlc",
+          "track_name": "Visiting",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-03T19:19:07.011232Z",
-          "track_id": "4hht73riyizCNrPjcpkyV2",
-          "track_name": "Make Out in My Car",
+          "played_at": "2026-08-12T22:46:16.618672Z",
+          "track_id": "4Mve2PSQqMtVn5DemVoBYr",
+          "track_name": "Aphasia",
           "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-03T19:14:18.038232Z",
-          "track_id": "0XivzAx6ZWitLfGSEJTb3V",
-          "track_name": "Lonely World",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-03T19:13:15.660232Z",
-          "track_id": "6TrG1NVhC3sQmQlT2z3HMV",
-          "track_name": "Stoicism",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-03T19:06:28.610443Z",
-          "track_id": "3RamvFV2OtTv3kozKLZnvP",
-          "track_name": "Quarrel",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-03T19:03:20.053443Z",
-          "track_id": "6ilPGjQvpV8PdA2lCeCfn1",
-          "track_name": "Plastic",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-03T18:59:20.351443Z",
-          "track_id": "133w2I6NKpvzmQ6XkrWfdN",
-          "track_name": "Don't Bother Calling",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-03T18:58:36.683325Z",
-          "track_id": "60VHyBa97WJSM7F5mJP7MH",
-          "track_name": "Man on the Moon (Reprise)",
-          "is_favorited": false,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-03T19:22:51.994232Z"
+      "played_at": "2026-08-12T22:50:47.551672Z"
     },
     {
-      "album_id": "0GqpoHJREPp0iuXK3HzrHk",
-      "album_name": "Houses of the Holy (Remaster)",
-      "artist": "Led Zeppelin",
-      "release_year": 1973,
-      "art_local_path": "led_zeppelin_houses_of_the_holy_remaster.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b2731aa47e71c4edfeaddb65cd54",
+      "album_id": "5sHvTCk793vr9EkSKcD7IT",
+      "album_name": "A Beautiful Lie",
+      "artist": "Thirty Seconds To Mars",
+      "release_year": 2005,
+      "art_local_path": "thirty_seconds_to_mars_a_beautiful_lie.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b273865b538169f199dac610b854",
       "art_filename": null,
-      "dominant_color": "#d84818",
+      "dominant_color": "#d80017",
       "source": "spotify",
       "vinyl_type": null,
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-02T23:50:39.682586Z",
-          "track_id": "0AqjkVFqa1ujle4Lb1k9wR",
-          "track_name": "The Ocean - Remaster",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T23:43:37.165586Z",
-          "track_id": "0GRBFjza23Im7Xb16c9AaK",
-          "track_name": "No Quarter - Remaster",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T23:39:14.417586Z",
-          "track_id": "5uUhS7XDkyycNa5FaNfPGT",
-          "track_name": "D'yer Mak'er - Remaster",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T23:35:30.953586Z",
-          "track_id": "43doj2cumGe9W3p5ucxaoH",
-          "track_name": "Dancing Days - Remaster",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T23:32:13.249586Z",
-          "track_id": "7IgBLFklu75pp8Y1vphChS",
-          "track_name": "The Crunge - Remaster",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T23:27:22.316586Z",
-          "track_id": "2eDdFHgqNJltzlvlZFVDWd",
-          "track_name": "Over the Hills and Far Away - Remaster",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T23:19:43.223586Z",
-          "track_id": "3JLrri1xSCui3bzITDJbkk",
-          "track_name": "The Rain Song - Remaster",
+          "played_at": "2026-08-12T22:38:00Z",
+          "track_id": "0lP4HYLmvowOKdsQ7CVkuq",
+          "track_name": "The Kill",
           "is_favorited": true,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-02T23:50:39.682586Z"
+      "played_at": "2026-08-12T22:38:00Z"
     },
     {
-      "album_id": "5EyIDBAqhnlkAHqvPRwdbX",
-      "album_name": "Led Zeppelin IV (Remaster)",
-      "artist": "Led Zeppelin",
-      "release_year": 1971,
-      "art_local_path": "led_zeppelin_led_zeppelin_iv_remaster.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b2734509204d0860cc0cc67e83dc",
+      "album_id": "7D2NdGvBHIavgLhmcwhluK",
+      "album_name": "Yeezus",
+      "artist": "Kanye West",
+      "release_year": 2013,
+      "art_local_path": "kanye_west_yeezus.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b2731dacfbc31cc873d132958af9",
       "art_filename": null,
-      "dominant_color": "#907860",
+      "dominant_color": "#f00000",
       "source": "spotify",
       "vinyl_type": null,
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-02T23:12:59.833381Z",
-          "track_id": "1YVc2NJBwOtAebQiSUbt5T",
-          "track_name": "Going to California - Remaster",
+          "played_at": "2026-08-12T04:34:39.093317Z",
+          "track_id": "3sNVsP50132BTNlImLx70i",
+          "track_name": "Bound 2",
           "is_favorited": true,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T23:08:14.606381Z",
-          "track_id": "2kVhHxpxXhWr5OuuBtMLME",
-          "track_name": "Four Sticks - Remaster",
+          "played_at": "2026-08-12T04:31:41.053317Z",
+          "track_id": "3RKblQNJs8HPvWBgXmq6nn",
+          "track_name": "Send It Up",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T23:03:35.699381Z",
-          "track_id": "3frf3zTgzt3YIx9ylpUoqU",
-          "track_name": "Misty Mountain Hop - Remaster",
+          "played_at": "2026-08-12T04:27:37.307317Z",
+          "track_id": "5nPOM0nFRAJ3XI8xCxNAzO",
+          "track_name": "Guilt Trip",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-12T04:21:37.507317Z",
+          "track_id": "42GcjriRK6srwHkfbkBqVl",
+          "track_name": "Blood On The Leaves",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-12T04:17:42.654317Z",
+          "track_id": "52NmkyHsGsHGb1UX8fTkMg",
+          "track_name": "I'm In It",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T22:55:32.869381Z",
-          "track_id": "0RO9W1xJoUEpq5MEelddFb",
-          "track_name": "Stairway to Heaven - Remaster",
+          "played_at": "2026-08-12T04:12:15.708317Z",
+          "track_id": "5nIu0VwPOsjkF61zfevLKh",
+          "track_name": "Hold My Liquor",
           "is_favorited": true,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T22:49:41.192381Z",
-          "track_id": "6KCjY5kHvgWaWcAV6BBzxO",
-          "track_name": "The Battle of Evermore - Remaster",
+          "played_at": "2026-08-12T04:07:59.615317Z",
+          "track_id": "4cAgkb0ifwn0FSHGXnr4F6",
+          "track_name": "New Slaves",
           "is_favorited": true,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T22:45:55.386000Z",
-          "track_id": "7dWfTdoKjUip1fAW7cdcIX",
-          "track_name": "Rock and Roll - Remaster",
-          "is_favorited": true,
+          "played_at": "2026-08-12T04:04:08.109317Z",
+          "track_id": "0HMCdlOPJkAGlB0MlSWIcO",
+          "track_name": "I Am A God",
+          "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T22:41:00Z",
-          "track_id": "0D58ERdLBDRgT86BPnH8ps",
-          "track_name": "Black Dog - Remaster",
-          "is_favorited": true,
+          "played_at": "2026-08-12T04:01:00.096317Z",
+          "track_id": "722tgOgdIbNe3BEyLnejw4",
+          "track_name": "Black Skinhead",
+          "is_favorited": false,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-02T23:12:59.833381Z"
+      "played_at": "2026-08-12T04:34:39.093317Z"
     },
     {
-      "album_id": "vinyl:2504307",
-      "album_name": "Sepulcros De Miel",
-      "artist": "Omar Rodriguez Lopez Quartet",
-      "release_year": 2010,
+      "album_id": "vinyl:4491822",
+      "album_name": "Brian Eno x Nicolas Jaar x Grizzly Bear ",
+      "artist": "Brian Eno",
+      "release_year": 2013,
       "art_local_path": null,
       "art_url": null,
-      "art_filename": "vinyl/2504307.jpg",
-      "dominant_color": "#789030",
+      "art_filename": "vinyl/4491822.jpg",
+      "dominant_color": "#f0e4e4",
       "source": "vinyl",
-      "vinyl_type": "LP",
+      "vinyl_type": "12\"",
       "tracklist": [
         {
-          "position": "A1",
-          "title": "Part I",
-          "duration": "2:22"
+          "position": "A",
+          "title": "LUX (Nicolas Jaar Remix)",
+          "duration": "7:49"
         },
         {
-          "position": "A2",
-          "title": "Part II",
-          "duration": "5:07"
-        },
-        {
-          "position": "A3",
-          "title": "Part III",
-          "duration": "5:04"
-        },
-        {
-          "position": "A4",
-          "title": "Part IV",
-          "duration": "2:24"
-        },
-        {
-          "position": "B1",
-          "title": "Part V",
-          "duration": "3:32"
-        },
-        {
-          "position": "B2",
-          "title": "Part VI",
-          "duration": "3:26"
-        },
-        {
-          "position": "B3",
-          "title": "Part VII",
-          "duration": "3:09"
-        },
-        {
-          "position": "B4",
-          "title": "Part VIII",
-          "duration": "4:22"
+          "position": "AA",
+          "title": "Sleeping Ute (Nicolas Jaar Remix)",
+          "duration": "7:52"
         }
       ],
       "entries": [],
-      "played_at": "2026-08-02T14:01:42Z"
+      "played_at": "2026-08-11T16:58:00Z"
     },
     {
-      "album_id": "58MQ0PLijVHePUonQlK76Y",
-      "album_name": "Led Zeppelin II (Remaster)",
-      "artist": "Led Zeppelin",
-      "release_year": 1969,
-      "art_local_path": "led_zeppelin_led_zeppelin_ii_remaster.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b273f396ea414b735ef23e2ed1a9",
+      "album_id": "6D6v19wYlLDsYkkfebOY3g",
+      "album_name": "The Impossible Kid",
+      "artist": "Aesop Rock",
+      "release_year": 2016,
+      "art_local_path": "aesop_rock_the_impossible_kid.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b27323e2c8d614852bafd97629b5",
       "art_filename": null,
-      "dominant_color": "#786048",
+      "dominant_color": "#00582c",
       "source": "spotify",
       "vinyl_type": null,
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-02T07:54:07.286370Z",
-          "track_id": "1rxD34LAtkafrMUHqHIV76",
-          "track_name": "Bring It on Home - Remaster",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T07:49:46.372370Z",
-          "track_id": "0IxtJOcnoS2DPmBfV2HDfW",
-          "track_name": "Moby Dick - Remaster",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T07:45:12.363370Z",
-          "track_id": "1oCOp1kVAgNlXX9Tx9mvzq",
-          "track_name": "Ramble On - Remaster",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T07:42:33.063370Z",
-          "track_id": "49C6EGQhCUSgyADHYvJ7ez",
-          "track_name": "Living Loving Maid (She's Just a Woman) - Remaster",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T07:38:18.996370Z",
-          "track_id": "3buvRn4CDX86EO9LHTITGn",
-          "track_name": "Heartbreaker - Remaster",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T07:33:29.511370Z",
-          "track_id": "4pW4DF1119GLHiuWE7Jcb4",
-          "track_name": "Thank You - Remaster",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T07:27:10.123370Z",
-          "track_id": "6Qjc36CLNJHkWwSNIPbghM",
-          "track_name": "The Lemon Song - Remaster",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T07:22:23.892370Z",
-          "track_id": "3g3LzkOMh3lx2FmCgb40bj",
-          "track_name": "What Is and What Should Never Be - Remaster",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T07:16:49.337370Z",
-          "track_id": "3OuMIIFP5TxM8tLXMWYPGV",
-          "track_name": "Whole Lotta Love - Remaster",
+          "played_at": "2026-08-11T00:47:45.419101Z",
+          "track_id": "38DEoY02UZW4TsPEQOdC3S",
+          "track_name": "Kirby",
           "is_favorited": true,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-02T07:54:07.286370Z"
+      "played_at": "2026-08-11T00:47:45.419101Z"
     },
     {
-      "album_id": "5XCBX16KNYsAe7V5hQV9mC",
-      "album_name": "Love Goes",
-      "artist": "Sam Smith",
-      "release_year": 2020,
-      "art_local_path": "sam_smith_love_goes.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b2730d1f3930676c34a23dbf5c46",
+      "album_id": "5rcMJNWebtl2r2S18Je1A0",
+      "album_name": "A Tabua De Esmeralda",
+      "artist": "Jorge Ben Jor",
+      "release_year": 1974,
+      "art_local_path": "jorge_ben_jor_a_tabua_de_esmeralda.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b2733bce213e564b833e4e4be01f",
       "art_filename": null,
-      "dominant_color": "#784830",
+      "dominant_color": "#483030",
       "source": "spotify",
       "vinyl_type": null,
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-02T07:10:16.916165Z",
-          "track_id": "3xgT3xIlFGqZjYW9QlhJWp",
-          "track_name": "Dancing With A Stranger (with Normani)",
+          "played_at": "2026-08-11T00:40:12.317304Z",
+          "track_id": "6WohVJvZ6RYmYN8Nxl9VHa",
+          "track_name": "Os Alquimistas Est\u00e3o Chegando Os Alquimistas",
           "is_favorited": true,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-02T07:10:16.916165Z"
+      "played_at": "2026-08-11T00:40:12.317304Z"
     },
     {
-      "album_id": "3Uq1jNGnD412ZvCb6j2DKV",
-      "album_name": "Gloria",
-      "artist": "Sam Smith",
-      "release_year": 2023,
-      "art_local_path": "sam_smith_gloria.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b27350a1691fbbfb693a5171d600",
+      "album_id": "5NaJ3k5bOw7EE1R19RSWF0",
+      "album_name": "Red Tree",
+      "artist": "Moneen",
+      "release_year": 2006,
+      "art_local_path": "moneen_red_tree.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b273d1bc34102a6213aa6d4bb2f0",
       "art_filename": null,
-      "dominant_color": "#484830",
+      "dominant_color": "#781717",
       "source": "spotify",
       "vinyl_type": null,
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-02T06:54:26.309291Z",
-          "track_id": "0NZPBYD5qbEWRs3PrGiRkT",
-          "track_name": "Unholy (feat. Kim Petras)",
+          "played_at": "2026-08-10T21:49:28.088741Z",
+          "track_id": "2SczaI2jCqxYX5XAoOERWv",
+          "track_name": "Don't Ever Tell Locke What He Can't Do",
           "is_favorited": true,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-02T06:54:26.309291Z"
+      "played_at": "2026-08-10T21:49:28.088741Z"
     },
     {
-      "album_id": "1rQZbncicoXyB64DqoH7OY",
-      "album_name": "Morning View",
-      "artist": "Incubus",
-      "release_year": 2001,
-      "art_local_path": "incubus_morning_view.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b273289320ef78f164a472698926",
+      "album_id": "3PIVqZzL1PnrxFZDzuT1aX",
+      "album_name": "Out To Lunch (The Rudy Van Gelder Edition)",
+      "artist": "Eric Dolphy",
+      "release_year": 1964,
+      "art_local_path": "eric_dolphy_out_to_lunch_the_rudy_van_gelder_edition.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b273897c908969917eb7d620e0d1",
       "art_filename": null,
-      "dominant_color": "#90c0d8",
+      "dominant_color": "#78a8c0",
       "source": "spotify",
       "vinyl_type": null,
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-02T06:47:09.901352Z",
-          "track_id": "6KtLECDztnah63TNmV4Plw",
-          "track_name": "Wish You Were Here",
+          "played_at": "2026-08-10T21:39:10.066655Z",
+          "track_id": "0Fq8g0zkAM8ZNgI7uIsvYn",
+          "track_name": "Straight Up And Down - Remastered 1998/Rudy Van Gelder Edition",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T21:27:00.773655Z",
+          "track_id": "6BD4u2tOTHMlACAZ8gX0Gs",
+          "track_name": "Out To Lunch - Remastered 1998/Rudy Van Gelder Edition",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T21:19:37.773655Z",
+          "track_id": "75N2HRLQXJXwupON6cTbb8",
+          "track_name": "Gazzelloni - Remastered 1998/Rudy Van Gelder Edition",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T21:13:33.880655Z",
+          "track_id": "59PMnQOm6taxjhP2QJ9AIo",
+          "track_name": "Something Sweet, Something Tender - Remastered 1998/Rudy Van Gelder Edition",
           "is_favorited": false,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-02T06:47:09.901352Z"
+      "played_at": "2026-08-10T21:39:10.066655Z"
     },
     {
-      "album_id": "3ycjBixZf7S3WpC5WZhhUK",
-      "album_name": "Led Zeppelin",
-      "artist": "Led Zeppelin",
-      "release_year": 1969,
-      "art_local_path": "led_zeppelin_led_zeppelin.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b2736f2f499c1df1f210c9b34b32",
+      "album_id": "78MM8HrabEGPLVWaJkM2t1",
+      "album_name": "Speaking in Tongues",
+      "artist": "Talking Heads",
+      "release_year": 1983,
+      "art_local_path": "talking_heads_speaking_in_tongues.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b2731e6080bcea9c1d05762084a1",
       "art_filename": null,
-      "dominant_color": "#f0f0c7",
+      "dominant_color": "#486090",
       "source": "spotify",
       "vinyl_type": null,
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-02T06:22:49.864408Z",
-          "track_id": "5VBzIn9cBH4BNa1c6Zilba",
-          "track_name": "How Many More Times - 1993 Remaster",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T06:18:07.438408Z",
-          "track_id": "62QInSlXQI11BR9ycVWjd6",
-          "track_name": "I Can't Quit You Baby - 1990 Remaster",
+          "played_at": "2026-08-10T18:43:01.011574Z",
+          "track_id": "5FAN3M34V4lID5m39SIYDZ",
+          "track_name": "This Must Be the Place (Naive Melody)",
           "is_favorited": true,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T06:15:39.505408Z",
-          "track_id": "0yVs7eSL8mPnIu2CGKHpUQ",
-          "track_name": "Communication Breakdown - 1990 Remaster",
+          "played_at": "2026-08-10T18:37:51.078574Z",
+          "track_id": "7FdcxTaar9qBTiUy4Z6VUj",
+          "track_name": "Pull up the Roots",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T18:32:05.612574Z",
+          "track_id": "0csWSjZhXwcIyRcJpTgAuV",
+          "track_name": "Moon Rocks",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T18:26:51.879574Z",
+          "track_id": "0lrcEBPGPnaC5Sm9wnyYYL",
+          "track_name": "Swamp",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T18:21:35.306574Z",
+          "track_id": "480RYI6U5tuotNf7iGavJp",
+          "track_name": "I Get Wild / Wild Gravity",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T18:16:28.746574Z",
+          "track_id": "6jmArQTNFxVghhetkYV36I",
+          "track_name": "Slippery People",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T18:10:43.373574Z",
+          "track_id": "37kkHqpkzTEGOJYHRb6JZG",
+          "track_name": "Girlfriend Is Better",
           "is_favorited": true,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T06:13:32.466335Z",
-          "track_id": "6rmEV2YtvWkigxPZocINO3",
-          "track_name": "Black Mountain Side - 1993 Remaster",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T06:08:57.733335Z",
-          "track_id": "3Zr81qUZEhR4vPeUFUsBB0",
-          "track_name": "Your Time Is Gonna Come - 1990 Remaster",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T06:02:31.360335Z",
-          "track_id": "6hu1f1cXSw7OAqhpSQ2zDy",
-          "track_name": "Dazed and Confused - 1990 Remaster",
+          "played_at": "2026-08-10T18:04:48.840574Z",
+          "track_id": "2G6JBfCoeigrYoLGFSIA2X",
+          "track_name": "Making Flippy Floppy",
           "is_favorited": true,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T05:56:03.267335Z",
-          "track_id": "0CrseEjTnYoB625tKoUowp",
-          "track_name": "You Shook Me - 1993 Remaster",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T05:49:22.201335Z",
-          "track_id": "4OMu5a8sFpcRCPCcsoEaov",
-          "track_name": "Babe I'm Gonna Leave You - 1990 Remaster",
+          "played_at": "2026-08-10T18:00:45.507574Z",
+          "track_id": "1MbXT8seUKcMGtTMrbnEAP",
+          "track_name": "Burning Down the House",
           "is_favorited": true,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-02T06:22:49.864408Z"
+      "played_at": "2026-08-10T18:43:01.011574Z"
     },
     {
-      "album_id": "6lA1sGw7eCv27bcpd5E0wT",
-      "album_name": "Steal This Album!",
-      "artist": "System Of A Down",
-      "release_year": 2002,
-      "art_local_path": "system_of_a_down_steal_this_album.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b2737cf4c0d42c5b62c9deebdcd8",
+      "album_id": "2wE1bvm3Ha0BvkHTvwk6rw",
+      "album_name": "Jesu / Sun Kil Moon",
+      "artist": "Jesu/Sun Kil Moon",
+      "release_year": 2016,
+      "art_local_path": "jesusun_kil_moon_jesu_sun_kil_moon.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b27309f59351ea0acc2b30e602d5",
       "art_filename": null,
-      "dominant_color": "#f0e4e4",
+      "dominant_color": "#484444",
       "source": "spotify",
       "vinyl_type": null,
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-02T05:40:19.417986Z",
-          "track_id": "4sM7v7wyRAuV6ZTO2dvnCA",
-          "track_name": "Roulette",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T05:37:42.817986Z",
-          "track_id": "6l17lK6a9LFqhOfh770wWg",
-          "track_name": "Thetawaves",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T05:34:20.911986Z",
-          "track_id": "2HVCLZ6dMDelXhloO5sAjV",
-          "track_name": "Ego Brain",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T05:32:08.178986Z",
-          "track_id": "5hjKYe3NOmWx2NVzVAeIGF",
-          "track_name": "Fuck the System",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T05:28:54.552986Z",
-          "track_id": "4TRPgtjVmqg7EAWZe1T94E",
-          "track_name": "Highway Song",
-          "is_favorited": true,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T05:26:44.802705Z",
-          "track_id": "3A5E8GUX5bdPGxxJP1IrYx",
-          "track_name": "Pictures",
+          "played_at": "2026-08-10T17:46:12.297849Z",
+          "track_id": "19wjuLHfbTcQdBmxEVtwZh",
+          "track_name": "Beautiful You",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T05:25:58.469705Z",
-          "track_id": "2TyFfQ1OuubEwfxFvapfzC",
-          "track_name": "36",
+          "played_at": "2026-08-10T17:36:27.473811Z",
+          "track_id": "4m9zEyqRO6YgCVZyDNLcQB",
+          "track_name": "Exodus",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T05:22:00.148603Z",
-          "track_id": "3RgDvs9Jpvn3kUuaTek1R5",
-          "track_name": "I-E-A-I-A-I-O",
+          "played_at": "2026-08-10T17:29:12.967811Z",
+          "track_id": "4MnkF6gLxq7KJ1PCnbYXCv",
+          "track_name": "America's Most Wanted Mark Kozelek and John Dillinger",
           "is_favorited": true,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T05:17:49.275307Z",
-          "track_id": "4TYI2YExAWaIOpGP4y7AbI",
-          "track_name": "Mr. Jack",
+          "played_at": "2026-08-10T17:22:09.344000Z",
+          "track_id": "3uVexGqXJx0QV2H4Ba7hnE",
+          "track_name": "Sally",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T17:15:57.451000Z",
+          "track_id": "0JvEOMBN2pVDuYVwuLz8Ph",
+          "track_name": "Father's Day",
           "is_favorited": true,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T05:14:31.969307Z",
-          "track_id": "7gZX4vZqjJJWsdosIB0h6P",
-          "track_name": "A.D.D. (American Dream Denial)",
+          "played_at": "2026-08-10T17:10:00.585000Z",
+          "track_id": "2MsBTvEE2RlGkf9RhxQ2j2",
+          "track_name": "Fragile",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T05:11:38.675617Z",
-          "track_id": "0ognkBvJqaov2gWDgaMzvz",
-          "track_name": "N\u00fcguns",
+          "played_at": "2026-08-10T17:01:57.599000Z",
+          "track_id": "12saasX3mvYAfjZt5l356I",
+          "track_name": "Last Night I Rocked the Room Like Elvis and Had Them Laughing Like Richard Pryor",
           "is_favorited": true,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T05:09:23.769617Z",
-          "track_id": "5en63QU81VfRQIsoqBcfde",
-          "track_name": "Boom!",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T05:07:26.876617Z",
-          "track_id": "4dJMoLxnO93Ys7SqZNIxlg",
-          "track_name": "Bubbles",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T05:04:53.103617Z",
-          "track_id": "0Xmbtw7NhNiDnL4BWy5wDh",
-          "track_name": "Innervision",
+          "played_at": "2026-08-10T16:55:39.106000Z",
+          "track_id": "7tVK3bYvVX1TqMwaqPeRrS",
+          "track_name": "A Song of Shadows",
           "is_favorited": true,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T05:02:29.477617Z",
-          "track_id": "11i33j50Gsr90pRoDJBrEA",
-          "track_name": "Chic 'N' Stu",
+          "played_at": "2026-08-10T16:47:03.680000Z",
+          "track_id": "6b7mtbBPx9xcJK9Uz3cTcC",
+          "track_name": "Carondelet",
           "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T16:40:00Z",
+          "track_id": "61VOvu8YuZJ32n8uRhvvbG",
+          "track_name": "Good Morning My Love",
+          "is_favorited": true,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-02T05:40:19.417986Z"
+      "played_at": "2026-08-10T17:46:12.297849Z"
     },
     {
-      "album_id": "0cn6MHyx4YuZauaB7Pb66o",
-      "album_name": "Mezmerize",
-      "artist": "System Of A Down",
-      "release_year": 2005,
-      "art_local_path": "system_of_a_down_mezmerize.jpg",
-      "art_url": "https://i.scdn.co/image/ab67616d0000b273c65f8d04502eeddbdd61fa71",
+      "album_id": "7sCpW2cLGcRk1zf9zi0Yqd",
+      "album_name": "Exile In Guyville (2018 Remaster)",
+      "artist": "Liz Phair",
+      "release_year": 1993,
+      "art_local_path": "liz_phair_exile_in_guyville_2018_remaster.jpg",
+      "art_url": "https://i.scdn.co/image/ab67616d0000b273d000f90d69ac64b61dacfc14",
       "art_filename": null,
-      "dominant_color": "#906048",
+      "dominant_color": "#301848",
       "source": "spotify",
       "vinyl_type": null,
       "tracklist": [],
       "entries": [
         {
-          "played_at": "2026-08-02T03:25:48.378684Z",
-          "track_id": "0GrHWVTDsaWcD4nrCGr7VE",
-          "track_name": "Lost In Hollywood",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T03:22:51.512684Z",
-          "track_id": "6iFVJGxSVdFkzYQJL7Rgdk",
-          "track_name": "Old School Hollywood",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T03:19:25.712684Z",
-          "track_id": "1wGRSG94dLt8fIZWhR3rGG",
-          "track_name": "Sad Statue",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T03:16:05.112684Z",
-          "track_id": "6y2DHyCYf6azhUfXmnuH6w",
-          "track_name": "Question!",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T03:12:33.779684Z",
-          "track_id": "249Z7XT6mf8B2zuI0RaeS0",
-          "track_name": "Violent Pornography",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T03:10:25.539684Z",
-          "track_id": "0DVHR5FQ0Gp2dsZJz7hfdy",
-          "track_name": "This Cocaine Makes Me Feel Like I'm On This Song",
-          "is_favorited": false,
-          "is_revisit": false
-        },
-        {
-          "played_at": "2026-08-02T03:06:16.313684Z",
-          "track_id": "41pOIT2t1rvr2Trg1HQChZ",
-          "track_name": "Radio/Video",
+          "played_at": "2026-08-10T02:04:03.409437Z",
+          "track_id": "24tgzfc1dM8yswHXMGfY1n",
+          "track_name": "Stratford-On-Guy - 2018 Remaster",
           "is_favorited": true,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T03:04:04.607684Z",
-          "track_id": "47EqCQZG5v4o0WFMufGf5S",
-          "track_name": "Cigaro",
+          "played_at": "2026-08-10T02:00:48.103437Z",
+          "track_id": "48x3O46xA2XXod00NmX2dt",
+          "track_name": "Gunshy - 2018 Remaster",
           "is_favorited": false,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T03:00:16.581684Z",
-          "track_id": "577mOFb1LAvSANIUZ4mbQ7",
-          "track_name": "Revenga",
+          "played_at": "2026-08-10T01:57:21.117437Z",
+          "track_id": "7xt2wHnGBBfnPJ1zI4gqnh",
+          "track_name": "Johnny Sunshine - 2018 Remaster",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T01:55:18.064437Z",
+          "track_id": "1CO0ghX3meDSA9dDHntQop",
+          "track_name": "Flower - 2018 Remaster",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T01:49:49.198437Z",
+          "track_id": "4YFvNblZnIq3wwerzoBymh",
+          "track_name": "Shatter - 2018 Remaster",
           "is_favorited": true,
           "is_revisit": false
         },
         {
-          "played_at": "2026-08-02T02:56:01.115684Z",
-          "track_id": "0EYOdF5FCkgOJJla8DI2Md",
-          "track_name": "B.Y.O.B.",
+          "played_at": "2026-08-10T01:46:29.105437Z",
+          "track_id": "2vTMeiPiusCP04FNUQqDr5",
+          "track_name": "Divorce Song - 2018 Remaster",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T01:44:08.825437Z",
+          "track_id": "6AXgkEKFjf4EA73WbHFIkc",
+          "track_name": "Girls! Girls! Girls! - 2018 Remaster",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T01:41:00.892437Z",
+          "track_id": "2qpmugEb0DI8kZLszkBLBT",
+          "track_name": "Fuck and Run - 2018 Remaster",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T01:37:04.919437Z",
+          "track_id": "4jCHG8GIVkKbJKXLyd3kLH",
+          "track_name": "Mesmerizing - 2018 Remaster",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T01:33:45.279437Z",
+          "track_id": "4kJPG83yTGfZ9boQo6JyBG",
+          "track_name": "Canary - 2018 Remaster",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T01:30:33.466437Z",
+          "track_id": "7C6VSVQYJR9LPNsD0qaTOa",
+          "track_name": "Explain It To Me - 2018 Remaster",
+          "is_favorited": false,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T01:27:49.186437Z",
+          "track_id": "4Y890lKEqmv3JsTBijwekp",
+          "track_name": "Soap Star Joe - 2018 Remaster",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T01:24:24.451820Z",
+          "track_id": "1iOJzlWm2p8NOFYVHGGgq1",
+          "track_name": "Never Said - 2018 Remaster",
+          "is_favorited": true,
+          "is_revisit": false
+        },
+        {
+          "played_at": "2026-08-10T01:21:31.654870Z",
+          "track_id": "2oAXapw8YTR08jOHaDXJSW",
+          "track_name": "Dance of the Seven Veils - 2018 Remaster",
           "is_favorited": false,
           "is_revisit": false
         }
       ],
-      "played_at": "2026-08-02T03:25:48.378684Z"
+      "played_at": "2026-08-10T02:04:03.409437Z"
     }
   ]
 }

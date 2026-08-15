@@ -18,6 +18,7 @@ import uuid
 from collections import defaultdict
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from config import (
     BEHAVIOR_SEED,
@@ -110,6 +111,18 @@ def era_weight(artist: dict, era: int, era_of_genre: dict[str, int]) -> float:
     return 2.2 if era_of_genre.get(primary) == era else 0.7
 
 
+# The windows below (morning commute, lunch, evening) are meant as real
+# LOCAL wall-clock hours -- but `day`/the whole day-loop is built against
+# UTC (datetime.now(timezone.utc)), while the frontend displays everything
+# in this timezone (backend's own _TZ). Session 14: constructing the
+# candidate time directly against `day`'s UTC-labeled midnight silently
+# generated "7-9am" *UTC*, which renders as ~3-5am EDT once displayed --
+# a "morning commute" session that actually looked like insomnia. Build the
+# wall-clock time against a LOCAL midnight instead, then convert to UTC for
+# storage, so the windows mean what their names say once a user looks at them.
+_LOCAL_TZ = ZoneInfo("America/New_York")
+
+
 def daypart_time(rng: random.Random, day: datetime, is_weekend: bool) -> datetime:
     if is_weekend:
         windows = [((11, 16), 0.5), ((19, 23), 0.5)]
@@ -119,7 +132,8 @@ def daypart_time(rng: random.Random, day: datetime, is_weekend: bool) -> datetim
     start_minutes = start_h * 60
     end_minutes = end_h * 60
     minute = rng.randint(start_minutes, max(start_minutes, end_minutes - 1))
-    return day.replace(hour=0, minute=0, second=0, microsecond=0) + timedelta(minutes=minute)
+    local_midnight = day.replace(hour=0, minute=0, second=0, microsecond=0, tzinfo=_LOCAL_TZ)
+    return (local_midnight + timedelta(minutes=minute)).astimezone(timezone.utc)
 
 
 def make_context_uri(rng: random.Random, ctx_type: str | None, album_id: str, playlist_ids: list[str], artist_id: str | None) -> str | None:
@@ -362,8 +376,36 @@ def main() -> None:
         # previous one's end (plus a short gap) keeps every pick a clean,
         # non-overlapping block — multiple artists can still show up in one
         # merged 30-min-gap "session", just back-to-back, never interleaved.
+        # Session anchors (session 14): daypart_time() used to get called
+        # fresh for every single pick, but the cursor-clamp below only ever
+        # moves forward -- once any pick lands in the evening window (60%
+        # weekday chance per draw, and there can be 15-25 draws on a busy
+        # day), every *later* pick that day glued onto that same growing
+        # chain via only a 30-600s gap, regardless of its own draw, since
+        # real time can't run backward. With whole-album sessions now
+        # 30-90+ min each, that one chain absorbed nearly the entire day's
+        # pick budget, drowning out the 30% morning / 10% lunch share
+        # entirely for every pick after the first one or two -- verified
+        # directly against the actual generated hour-of-day histogram
+        # (18:00-04:00 was 84% of all plays, not the intended ~55%).
+        # Pre-drawing a handful of independent, chronologically-sorted
+        # anchors up front -- instead of one draw dominating everything
+        # downstream of it -- gives morning/lunch a real, repeated chance
+        # to manifest as their own separate sessions across the day.
+        n_sessions = rng.choices([1, 2, 3, 4], weights=[0.15, 0.35, 0.35, 0.15], k=1)[0]
+        session_anchors = sorted(daypart_time(rng, day, is_weekend) for _ in range(n_sessions))
+        next_anchor_idx = 0
+
         day_time_cursor: datetime | None = None
         while remaining > 0:
+            # Hard day-end cutoff: even with multiple session anchors, stop
+            # once the cursor has drifted this late rather than let a
+            # long-running final session cascade indefinitely into the
+            # small hours -- leaves that day's `remaining` budget partly
+            # unspent, fine since `plays_today` is already a randomized
+            # mean with real variance built in, not a hard target.
+            if day_time_cursor is not None and day_time_cursor - day >= timedelta(hours=26):
+                break
             # Discovery-spike boost (session 5, second pass): a plain unlock
             # schedule left new-artist events to Zipf-weighted chance, which
             # for tail artists meant "unlocked" rarely translated into an
@@ -449,7 +491,20 @@ def main() -> None:
             n_passes = rng.choices([1, 2, 3, 4, 5], weights=[0.55, 0.2, 0.12, 0.08, 0.05], k=1)[0]
             n_passes = max(1, min(n_passes, max(1, remaining // n)))
 
-            candidate_start = daypart_time(rng, day, is_weekend)
+            # Jump to the next pre-drawn session anchor most of the time a new
+            # one is still available -- otherwise (60% of the time, or once
+            # anchors are exhausted) just continue the current session with a
+            # short gap. Either way, session_start is clamped to never move
+            # backward relative to day_time_cursor, so non-overlap holds
+            # exactly as before regardless of which candidate_start is used.
+            if day_time_cursor is None:
+                candidate_start = session_anchors[0]
+                next_anchor_idx = 1
+            elif next_anchor_idx < len(session_anchors) and rng.random() < 0.4:
+                candidate_start = session_anchors[next_anchor_idx]
+                next_anchor_idx += 1
+            else:
+                candidate_start = day_time_cursor
             gap_before_s = rng.uniform(30, 600)
             session_start = (
                 candidate_start if day_time_cursor is None
@@ -784,9 +839,14 @@ def main() -> None:
         for _ in range(n_sessions):
             duration = round(total_secs * rng.uniform(0.7, 1.05))  # occasionally stopped early
             for _attempt in range(30):
-                started = start_date + timedelta(
-                    days=rng.randint(0, total_days), seconds=rng.randint(0, 86399),
-                )
+                # Was a uniform-random second across the full 24h day (session
+                # 14 bug) -- vinyl spins ended up scheduled at any hour with
+                # equal odds, including implausible ones (a 4am-11am session,
+                # found via user report). Route through the same daypart_time()
+                # weighting digital plays already use instead, so vinyl gets
+                # the same realistic morning/lunch/evening shape.
+                candidate_day = start_date + timedelta(days=rng.randint(0, total_days))
+                started = daypart_time(rng, candidate_day, candidate_day.weekday() >= 5)
                 ended = started + timedelta(seconds=duration)
                 if not _overlaps_digital(started.timestamp(), ended.timestamp()):
                     break

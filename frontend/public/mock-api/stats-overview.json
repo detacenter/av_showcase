@@ -1,119 +1,119 @@
 {
-  "play_count": 14070,
-  "total_ms": 3379094488,
+  "play_count": 11140,
+  "total_ms": 2623202370,
   "days_span": 274,
   "top_artists": [
     {
-      "name": "Red Hot Chili Peppers",
-      "count": 420,
-      "album_title": "By the Way (Deluxe Edition)",
-      "art_path": "red_hot_chili_peppers_by_the_way_deluxe_edition.jpg",
-      "release_year": 2002
+      "name": "Kanye West",
+      "count": 279,
+      "album_title": "The Life Of Pablo",
+      "art_path": "kanye_west_the_life_of_pablo.jpg",
+      "release_year": 2016
     },
     {
-      "name": "The Beatles",
-      "count": 287,
-      "album_title": "Sgt. Pepper's Lonely Hearts Club Band (Remastered)",
-      "art_path": "the_beatles_sgt_peppers_lonely_hearts_club_band_remastered.jpg",
-      "release_year": 1967
+      "name": "Daniel Caesar",
+      "count": 246,
+      "album_title": "NEVER ENOUGH",
+      "art_path": "daniel_caesar_never_enough.jpg",
+      "release_year": 2023
     },
     {
-      "name": "Led Zeppelin",
-      "count": 208,
-      "album_title": "Led Zeppelin",
-      "art_path": "led_zeppelin_led_zeppelin.jpg",
-      "release_year": 1969
+      "name": "Janet Jackson",
+      "count": 224,
+      "album_title": "The Velvet Rope",
+      "art_path": "janet_jackson_the_velvet_rope.jpg",
+      "release_year": 1997
     },
     {
-      "name": "Sufjan Stevens",
-      "count": 197,
-      "album_title": "Illinois",
-      "art_path": "sufjan_stevens_illinois.jpg",
-      "release_year": 2005
-    },
-    {
-      "name": "empire! empire! (i was a lonely estate)",
-      "count": 196,
-      "album_title": "What It Takes To Move Forward",
-      "art_path": "empire_empire_i_was_a_lonely_estate_what_it_takes_to_move_forward.jpg",
-      "release_year": 2009
+      "name": "Rage Against The Machine",
+      "count": 180,
+      "album_title": "Evil Empire",
+      "art_path": "rage_against_the_machine_evil_empire.jpg",
+      "release_year": 1996
     },
     {
       "name": "Kings of Leon",
-      "count": 194,
+      "count": 153,
       "album_title": "Youth And Young Manhood",
       "art_path": "kings_of_leon_youth_and_young_manhood.jpg",
       "release_year": 2003
     },
     {
-      "name": "The Smashing Pumpkins",
-      "count": 188,
-      "album_title": "Mellon Collie And The Infinite Sadness (Remastered)",
-      "art_path": "the_smashing_pumpkins_mellon_collie_and_the_infinite_sadness_remastere.jpg",
-      "release_year": 1995
+      "name": "The Velvet Underground",
+      "count": 152,
+      "album_title": "Loaded (2015 Remaster)",
+      "art_path": "the_velvet_underground_loaded_2015_remaster.jpg",
+      "release_year": 1970
     },
     {
-      "name": "Red House Painters",
-      "count": 184,
-      "album_title": "Red House Painters II",
-      "art_path": "red_house_painters_red_house_painters_ii.jpg",
-      "release_year": 1993
+      "name": "L\u00f4 Borges",
+      "count": 149,
+      "album_title": "Retratos",
+      "art_path": "l\u00f4_borges_retratos.jpg",
+      "release_year": 2004
     },
     {
-      "name": "System Of A Down",
-      "count": 180,
-      "album_title": "Steal This Album!",
-      "art_path": "system_of_a_down_steal_this_album.jpg",
-      "release_year": 2002
+      "name": "Arcade Fire",
+      "count": 142,
+      "album_title": "The Suburbs (Deluxe)",
+      "art_path": "arcade_fire_the_suburbs_deluxe.jpg",
+      "release_year": 2010
     },
     {
-      "name": "Carissa's Wierd",
-      "count": 180,
-      "album_title": "Scrap Book",
-      "art_path": "carissas_wierd_scrap_book.jpg",
-      "release_year": 2003
+      "name": "Hot Rod Circuit",
+      "count": 135,
+      "album_title": "If It's Cool with You, It's Cool with Me",
+      "art_path": "hot_rod_circuit_if_its_cool_with_you_its_cool_with_me.jpg",
+      "release_year": 2000
+    },
+    {
+      "name": "The Beatles",
+      "count": 134,
+      "album_title": "Revolver (Remastered)",
+      "art_path": "the_beatles_revolver_remastered.jpg",
+      "release_year": 1966
     }
   ],
   "top_tracks": [
     [
-      "Warm Tape  \u2014  Red Hot Chili Peppers",
+      "Gemini  \u2014  Ought",
       12
     ],
     [
-      "Minor Thing  \u2014  Red Hot Chili Peppers",
+      "Clarity!  \u2014  Ought",
       12
     ],
     [
-      "Brain Stew  \u2014  Green Day",
-      12
-    ],
-    [
-      "Full time papi  \u2014  Guitarricadelafuente",
-      12
-    ],
-    [
-      "Futuros amantes  \u2014  Guitarricadelafuente",
-      12
-    ],
-    [
-      "Fire On High  \u2014  Electric Light Orchestra",
+      "Helicopter  \u2014  Deerhunter",
       11
     ],
     [
-      "Optimistic  \u2014  Radiohead",
-      11
+      "Desire  \u2014  Ought",
+      10
     ],
     [
-      "Treefingers  \u2014  Radiohead",
-      11
+      "For Shelley (Unheard)  \u2014  A Lot Like Birds",
+      10
     ],
     [
-      "How to Disappear Completely  \u2014  Radiohead",
-      11
+      "The Sound of Us  \u2014  A Lot Like Birds",
+      10
     ],
     [
-      "The National Anthem  \u2014  Radiohead",
-      11
+      "I Just Wasn't Made For These Times  \u2014  The Beach Boys",
+      10
+    ],
+    [
+      "Here Today  \u2014  The Beach Boys",
+      10
+    ],
+    [
+      "I Know There's An Answer  \u2014  The Beach Boys",
+      10
+    ],
+    [
+      "God Only Knows  \u2014  The Beach Boys",
+      10
     ]
   ],
   "by_decade": [
@@ -123,231 +123,231 @@
     ],
     [
       "1960s",
-      729
+      571
     ],
     [
       "1970s",
-      1688
+      1244
     ],
     [
       "1980s",
-      1827
+      1571
     ],
     [
       "1990s",
-      2449
+      1920
     ],
     [
       "2000s",
-      4046
+      2882
     ],
     [
       "2010s",
-      2529
+      2138
     ],
     [
       "2020s",
-      771
+      788
     ]
   ],
   "by_genre": [
     [
       "rock",
-      5567
-    ],
-    [
-      "alternative",
-      5061
+      3937
     ],
     [
       "indie",
-      4836
+      3731
+    ],
+    [
+      "alternative",
+      3621
     ],
     [
       "indie rock",
-      3258
-    ],
-    [
-      "alternative rock",
-      2187
-    ],
-    [
-      "emo",
-      1925
-    ],
-    [
-      "electronic",
-      1549
+      2815
     ],
     [
       "pop",
-      1507
+      1460
+    ],
+    [
+      "emo",
+      1444
+    ],
+    [
+      "alternative rock",
+      1324
+    ],
+    [
+      "electronic",
+      1260
     ],
     [
       "female vocalists",
-      1233
+      1224
+    ],
+    [
+      "soul",
+      1144
+    ],
+    [
+      "rnb",
+      1117
     ],
     [
       "punk",
-      1199
-    ],
-    [
-      "folk",
-      1152
-    ],
-    [
-      "singer-songwriter",
-      1144
+      1093
     ]
   ],
   "top_albums": [
     {
-      "title": "By the Way (Deluxe Edition)",
-      "subtitle": "Red Hot Chili Peppers",
-      "count": 160,
-      "art_path": "red_hot_chili_peppers_by_the_way_deluxe_edition.jpg",
-      "art_key": "overview_album_6deiaArbeoqp1xPEGdEKp1"
+      "title": "The Life Of Pablo",
+      "subtitle": "Kanye West",
+      "count": 138,
+      "art_path": "kanye_west_the_life_of_pablo.jpg",
+      "art_key": "overview_album_7gsWAHLeT0w7es6FofOXk1"
     },
     {
-      "title": "Californication (Deluxe Edition)",
-      "subtitle": "Red Hot Chili Peppers",
-      "count": 139,
-      "art_path": "red_hot_chili_peppers_californication_deluxe_edition.jpg",
-      "art_key": "overview_album_2Y9IRtehByVkegoD7TcLfi"
+      "title": "NEVER ENOUGH",
+      "subtitle": "Daniel Caesar",
+      "count": 126,
+      "art_path": "daniel_caesar_never_enough.jpg",
+      "art_key": "overview_album_2z9lM6LDS58F70IGyQ1XMK"
     },
     {
-      "title": "Mellon Collie And The Infinite Sadness (Remastered)",
-      "subtitle": "The Smashing Pumpkins",
+      "title": "Pet Sounds",
+      "subtitle": "The Beach Boys",
       "count": 110,
-      "art_path": "the_smashing_pumpkins_mellon_collie_and_the_infinite_sadness_remastere.jpg",
-      "art_key": "overview_album_4bPT6Q8ppaSNppk1kbEbLl"
+      "art_path": "the_beach_boys_pet_sounds.jpg",
+      "art_key": "overview_album_2CNEkSE8TADXRT2AzcEt1b"
     },
     {
-      "title": "Settle (Deluxe)",
-      "subtitle": "Disclosure",
+      "title": "The Velvet Rope",
+      "subtitle": "Janet Jackson",
+      "count": 108,
+      "art_path": "janet_jackson_the_velvet_rope.jpg",
+      "art_key": "overview_album_1uFp52Q9EXLNA6DTRYnpTj"
+    },
+    {
+      "title": "Un Verano Sin Ti",
+      "subtitle": "Bad Bunny",
       "count": 105,
-      "art_path": "disclosure_settle_deluxe.jpg",
-      "art_key": "overview_album_1lM5IfaqcIsXd6UCV3aDSs"
+      "art_path": "bad_bunny_un_verano_sin_ti.jpg",
+      "art_key": "overview_album_3RQQmkQEvNCY4prGKE6oc5"
     },
     {
-      "title": "Bad Brains",
-      "subtitle": "Bad Brains",
-      "count": 101,
-      "art_path": "bad_brains_bad_brains.jpg",
-      "art_key": "overview_album_4NpepcKo9rQ8nkdCB6iWMP"
+      "title": "Singles Going Steady",
+      "subtitle": "Buzzcocks",
+      "count": 104,
+      "art_path": "buzzcocks_singles_going_steady.jpg",
+      "art_key": "overview_album_6TxgQwGrbG3XZLNPOEhg7E"
     },
     {
-      "title": "Youth And Young Manhood",
-      "subtitle": "Kings of Leon",
-      "count": 85,
-      "art_path": "kings_of_leon_youth_and_young_manhood.jpg",
-      "art_key": "overview_album_2137zeBGNgOWP4D96q6qxd"
+      "title": "White Blood Cells",
+      "subtitle": "The White Stripes",
+      "count": 100,
+      "art_path": "the_white_stripes_white_blood_cells.jpg",
+      "art_key": "overview_album_6Xvc1TfpVEhDeHhmTQEtp0"
     },
     {
-      "title": "Paul's Boutique (20th Anniversary Edition / Remastered)",
-      "subtitle": "Beastie Boys",
-      "count": 85,
-      "art_path": "beastie_boys_pauls_boutique_20th_anniversary_edition_remaster.jpg",
-      "art_key": "overview_album_1kmyirVya5fRxdjsPFDM05"
+      "title": "Discovery",
+      "subtitle": "Daft Punk",
+      "count": 97,
+      "art_path": "daft_punk_discovery.jpg",
+      "art_key": "overview_album_2noRn2Aes5aoNVsU6iWThc"
     },
     {
-      "title": "Blonde",
-      "subtitle": "Frank Ocean",
-      "count": 82,
-      "art_path": "frank_ocean_blonde.jpg",
-      "art_key": "overview_album_3mH6qwIy9crq0I9YQbOuDf"
+      "title": "Body Talk",
+      "subtitle": "Robyn",
+      "count": 97,
+      "art_path": "robyn_body_talk.jpg",
+      "art_key": "overview_album_0Rzg7fqyWE39G6wKipxrns"
     },
     {
-      "title": "Sgt. Pepper's Lonely Hearts Club Band (Remastered)",
-      "subtitle": "The Beatles",
-      "count": 82,
-      "art_path": "the_beatles_sgt_peppers_lonely_hearts_club_band_remastered.jpg",
-      "art_key": "overview_album_6QaVfG1pHYl1z15ZxkvVDW"
+      "title": "Loaded (2015 Remaster)",
+      "subtitle": "The Velvet Underground",
+      "count": 91,
+      "art_path": "the_velvet_underground_loaded_2015_remaster.jpg",
+      "art_key": "overview_album_4RMGrhJRnGiNqmKqhqpLlX"
     },
     {
-      "title": "Marcos Valle",
-      "subtitle": "Marcos Valle",
-      "count": 81,
-      "art_path": "marcos_valle_marcos_valle.jpg",
-      "art_key": "overview_album_0FOAFmdS9StYdW3hrSnJCe"
+      "title": "Rites of Spring",
+      "subtitle": "Rites of Spring",
+      "count": 89,
+      "art_path": "rites_of_spring_rites_of_spring.jpg",
+      "art_key": "overview_album_0pU2blS70BzVWyC1tVyaLg"
     },
     {
-      "title": "Quem \u00c9 Quem",
-      "subtitle": "Jo\u00e3o Donato",
-      "count": 80,
-      "art_path": "jo\u00e3o_donato_quem_\u00e9_quem.jpg",
-      "art_key": "overview_album_6GEO5pSp3ojwIm9vZqTtRd"
-    },
-    {
-      "title": "Kid A",
-      "subtitle": "Radiohead",
-      "count": 80,
-      "art_path": "radiohead_kid_a.jpg",
-      "art_key": "overview_album_6GjwtEZcfenmOf6l18N7T7"
+      "title": "3 Feet High and Rising",
+      "subtitle": "De La Soul",
+      "count": 89,
+      "art_path": "de_la_soul_3_feet_high_and_rising.jpg",
+      "art_key": "overview_album_34LxHI9x14qXUOS8AWRrYD"
     }
   ],
   "time_of_day": {
-    "morning": 1289,
-    "afternoon": 3868,
-    "evening": 6299,
-    "night": 2614
+    "morning": 3691,
+    "afternoon": 3371,
+    "evening": 3238,
+    "night": 840
   },
-  "unique_artists": 360,
-  "unique_albums": 653,
+  "unique_artists": 331,
+  "unique_albums": 568,
   "genre_detail": [
     {
       "name": "rock",
-      "plays": 5567,
-      "avg_hour": 16.276270881983116,
-      "unique_tracks": 1614
-    },
-    {
-      "name": "alternative",
-      "plays": 5061,
-      "avg_hour": 15.963248369887374,
-      "unique_tracks": 1488
+      "plays": 3937,
+      "avg_hour": 14.329438658877319,
+      "unique_tracks": 1430
     },
     {
       "name": "indie",
-      "plays": 4836,
-      "avg_hour": 16.30955334987593,
-      "unique_tracks": 1495
+      "plays": 3731,
+      "avg_hour": 14.73358348968105,
+      "unique_tracks": 1325
+    },
+    {
+      "name": "alternative",
+      "plays": 3621,
+      "avg_hour": 14.68102734051367,
+      "unique_tracks": 1331
     },
     {
       "name": "indie rock",
-      "plays": 3258,
-      "avg_hour": 16.410681399631677,
-      "unique_tracks": 1057
-    },
-    {
-      "name": "alternative rock",
-      "plays": 2187,
-      "avg_hour": 15.901234567901234,
-      "unique_tracks": 563
-    },
-    {
-      "name": "emo",
-      "plays": 1925,
-      "avg_hour": 16.357402597402597,
-      "unique_tracks": 591
-    },
-    {
-      "name": "electronic",
-      "plays": 1549,
-      "avg_hour": 15.636539703034215,
-      "unique_tracks": 474
+      "plays": 2815,
+      "avg_hour": 14.347069271758437,
+      "unique_tracks": 957
     },
     {
       "name": "pop",
-      "plays": 1507,
-      "avg_hour": 15.737226277372264,
-      "unique_tracks": 449
+      "plays": 1460,
+      "avg_hour": 13.973972602739726,
+      "unique_tracks": 445
+    },
+    {
+      "name": "emo",
+      "plays": 1444,
+      "avg_hour": 14.970221606648199,
+      "unique_tracks": 534
+    },
+    {
+      "name": "alternative rock",
+      "plays": 1324,
+      "avg_hour": 14.082326283987916,
+      "unique_tracks": 485
+    },
+    {
+      "name": "electronic",
+      "plays": 1260,
+      "avg_hour": 14.403174603174604,
+      "unique_tracks": 458
     },
     {
       "name": "female vocalists",
-      "plays": 1233,
-      "avg_hour": 15.011354420113545,
-      "unique_tracks": 413
+      "plays": 1224,
+      "avg_hour": 14.161764705882353,
+      "unique_tracks": 388
     }
   ]
 }

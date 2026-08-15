@@ -2,14 +2,6 @@
   "2020s": {
     "albums": [
       {
-        "album_id": "3sq57EactOjc9RJqk6Yl1y",
-        "album_name": "Prophecy At 1420 MHz",
-        "artist": "Boards of Canada",
-        "art_url": "/artwork/boards_of_canada_prophecy_at_1420_mhz.jpg",
-        "release_year": 2026,
-        "rating": 18
-      },
-      {
         "album_id": "2ZYhM0LXHZ38te98EizcQW",
         "album_name": "Diaspora Problems",
         "artist": "Soul Glo",
@@ -76,14 +68,6 @@
         "art_url": "/artwork/gil_scott_heron_were_new_here.jpg",
         "release_year": 2011,
         "rating": 18
-      },
-      {
-        "album_id": "6KiS2t3EapTmHSt9xGUqe7",
-        "album_name": "Stage Four (Deluxe Edition)",
-        "artist": "Touch\u00e9 Amor\u00e9",
-        "art_url": "/artwork/touch\u00e9_amor\u00e9_stage_four_deluxe_edition.jpg",
-        "release_year": 2016,
-        "rating": 17
       },
       {
         "album_id": "1uIM6TngoKF0S8oPaDZPvv",
@@ -155,14 +139,6 @@
         "artist": "Ought",
         "art_url": "/artwork/ought_more_than_any_other_day.jpg",
         "release_year": 2014,
-        "rating": 17
-      },
-      {
-        "album_id": "0JvkUMttIwTRYwm3OVBoch",
-        "album_name": "The Lack Long After",
-        "artist": "Pianos Become The Teeth",
-        "art_url": "/artwork/pianos_become_the_teeth_the_lack_long_after.jpg",
-        "release_year": 2011,
         "rating": 17
       },
       {
@@ -270,14 +246,6 @@
         "rating": 16
       },
       {
-        "album_id": "3vxkGvc3QzZqLt6pQNw7qI",
-        "album_name": "I Kill Giants (Remastered)",
-        "artist": "I Kill Giants",
-        "art_url": "/artwork/i_kill_giants_i_kill_giants_remastered.jpg",
-        "release_year": 2018,
-        "rating": 16
-      },
-      {
         "album_id": "5as7hQXIniGbaltqM0yJud",
         "album_name": "Ciencia De Los In\u00fatiles",
         "artist": "El Tr\u00edo De Omar Rodr\u00edguez-L\u00f3pez",
@@ -286,27 +254,11 @@
         "rating": 16
       },
       {
-        "album_id": "172GEyILIzsGA8PJqrsHmL",
-        "album_name": "Home, Like Noplace Is There",
-        "artist": "The Hotelier",
-        "art_url": "/artwork/the_hotelier_home_like_noplace_is_there.jpg",
-        "release_year": 2014,
-        "rating": 16
-      },
-      {
         "album_id": "0KzElSxcfAvleUIuOg0TOQ",
         "album_name": "Best Buds",
         "artist": "Mom Jeans.",
         "art_url": "/artwork/mom_jeans_best_buds.jpg",
         "release_year": 2016,
-        "rating": 15
-      },
-      {
-        "album_id": "6Voznuxp5917IwIlLxSAik",
-        "album_name": "There's No Leaving Now",
-        "artist": "The Tallest Man On Earth",
-        "art_url": "/artwork/the_tallest_man_on_earth_theres_no_leaving_now.jpg",
-        "release_year": 2012,
         "rating": 15
       },
       {
@@ -367,22 +319,6 @@
         "artist": "Boards of Canada",
         "art_url": "/artwork/boards_of_canada_geogaddi.jpg",
         "release_year": 2002,
-        "rating": 19
-      },
-      {
-        "album_id": "6BRq5g6CWiFgN3NrjLGAYq",
-        "album_name": "Merriweather Post Pavilion",
-        "artist": "Animal Collective",
-        "art_url": "/artwork/animal_collective_merriweather_post_pavilion.jpg",
-        "release_year": 2009,
-        "rating": 19
-      },
-      {
-        "album_id": "08pL4gHGoa0GXyv9emugVv",
-        "album_name": "Rise or Die Trying",
-        "artist": "Four Year Strong",
-        "art_url": "/artwork/four_year_strong_rise_or_die_trying.jpg",
-        "release_year": 2007,
         "rating": 19
       },
       {
@@ -466,14 +402,6 @@
         "rating": 18
       },
       {
-        "album_id": "431AISQsFUi33lirU9vNI5",
-        "album_name": "Tigers Jaw",
-        "artist": "Tigers Jaw",
-        "art_url": "/artwork/tigers_jaw_tigers_jaw.jpg",
-        "release_year": 2008,
-        "rating": 18
-      },
-      {
         "album_id": "75I9YI5opV3mBsKnay5pIR",
         "album_name": "Solar Gambling",
         "artist": "Omar Rodr\u00edguez-L\u00f3pez",
@@ -495,14 +423,6 @@
         "artist": "Dear and the Headlights",
         "art_url": "/artwork/dear_and_the_headlights_small_steps_heavy_hooves.jpg",
         "release_year": 2007,
-        "rating": 18
-      },
-      {
-        "album_id": "49buCcKCJwxvdl0R2dMoIU",
-        "album_name": "The Earth Is Not a Cold Dead Place (Anniversary Edition)",
-        "artist": "Explosions In The Sky",
-        "art_url": "/artwork/explosions_in_the_sky_the_earth_is_not_a_cold_dead_place_anniversary_e.jpg",
-        "release_year": 2003,
         "rating": 18
       },
       {
@@ -578,14 +498,6 @@
         "rating": 17
       },
       {
-        "album_id": "0u5NLD5OgDGDlpCIia1Igx",
-        "album_name": "None Shall Pass",
-        "artist": "Aesop Rock",
-        "art_url": "/artwork/aesop_rock_none_shall_pass.jpg",
-        "release_year": 2007,
-        "rating": 17
-      },
-      {
         "album_id": "1iRPiEYHIX2zpF8lkW54SK",
         "album_name": "Untrue",
         "artist": "Burial",
@@ -623,22 +535,6 @@
         "artist": "Saosin",
         "art_url": "/artwork/saosin_saosin.jpg",
         "release_year": 2006,
-        "rating": 17
-      },
-      {
-        "album_id": "0MtzNtKxLd7KthcSObeWJB",
-        "album_name": "We Are The Only Friends We Have",
-        "artist": "Piebald",
-        "art_url": "/artwork/piebald_we_are_the_only_friends_we_have.jpg",
-        "release_year": 2002,
-        "rating": 17
-      },
-      {
-        "album_id": "1nJQWexPwURsCTkp2THvg1",
-        "album_name": "...To the Beat of a Dead Horse",
-        "artist": "Touch\u00e9 Amor\u00e9",
-        "art_url": "/artwork/touch\u00e9_amor\u00e9_to_the_beat_of_a_dead_horse.jpg",
-        "release_year": 2009,
         "rating": 17
       },
       {
@@ -722,14 +618,6 @@
         "rating": 16
       },
       {
-        "album_id": "0y13VbGddQ4azdVWakksAL",
-        "album_name": "Meteora (Bonus Edition)",
-        "artist": "Linkin Park",
-        "art_url": "/artwork/linkin_park_meteora_bonus_edition.jpg",
-        "release_year": 2003,
-        "rating": 16
-      },
-      {
         "album_id": "2137zeBGNgOWP4D96q6qxd",
         "album_name": "Youth And Young Manhood",
         "artist": "Kings of Leon",
@@ -767,14 +655,6 @@
         "artist": "Thom Yorke",
         "art_url": "/artwork/thom_yorke_the_eraser.jpg",
         "release_year": 2006,
-        "rating": 16
-      },
-      {
-        "album_id": "2BkhGv48TtChjKBwkC67eo",
-        "album_name": "All of a Sudden I Miss Everyone",
-        "artist": "Explosions In The Sky",
-        "art_url": "/artwork/explosions_in_the_sky_all_of_a_sudden_i_miss_everyone.jpg",
-        "release_year": 2007,
         "rating": 16
       },
       {
@@ -1232,14 +1112,6 @@
         "art_url": "/artwork/janet_jackson_control.jpg",
         "release_year": 1986,
         "rating": 15
-      },
-      {
-        "album_id": "7AFsTiojVaB2I58oZ1tMRg",
-        "album_name": "Raising Hell",
-        "artist": "Run\u2013D.M.C.",
-        "art_url": "/artwork/rundmc_raising_hell.jpg",
-        "release_year": 1986,
-        "rating": 15
       }
     ]
   },
@@ -1275,14 +1147,6 @@
         "artist": "Gang Of Four",
         "art_url": "/artwork/gang_of_four_entertainment.jpg",
         "release_year": 1979,
-        "rating": 17
-      },
-      {
-        "album_id": "0GqpoHJREPp0iuXK3HzrHk",
-        "album_name": "Houses of the Holy (Remaster)",
-        "artist": "Led Zeppelin",
-        "art_url": "/artwork/led_zeppelin_houses_of_the_holy_remaster.jpg",
-        "release_year": 1973,
         "rating": 17
       },
       {
@@ -1323,14 +1187,6 @@
         "artist": "The Rolling Stones",
         "art_url": "/artwork/the_rolling_stones_exile_on_main_street_2010_re_mastered.jpg",
         "release_year": 1972,
-        "rating": 16
-      },
-      {
-        "album_id": "6R4gL2dyrbGpmgBOH9kvci",
-        "album_name": "Farol da Barra",
-        "artist": "Novos Baianos",
-        "art_url": "/artwork/novos_baianos_farol_da_barra.jpg",
-        "release_year": 1978,
         "rating": 16
       },
       {
