@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { QueryClient, QueryClientProvider, useQuery } from "@tanstack/react-query";
 import { Sidebar } from "./components/Sidebar";
+import { GenresFrameHost } from "./components/GenresFrameHost";
 import { RecentView } from "./views/RecentView";
 import { ArtistsView } from "./views/ArtistsView";
 import { ArtistDetailView } from "./views/ArtistDetailView";
@@ -70,6 +71,7 @@ export default function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
         <AccentLoader />
+        <GenresFrameHost />
         <Routes>
           <Route path="/" element={<Navigate to="/recent" replace />} />
           <Route path="/recent" element={<Layout><RecentView /></Layout>} />

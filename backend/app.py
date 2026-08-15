@@ -33,6 +33,10 @@ artwork_dir = data_path("artwork")
 if artwork_dir.exists():
     app.mount("/artwork", StaticFiles(directory=str(artwork_dir)), name="artwork")
 
+vendor_dir = Path(__file__).parent / "static" / "vendor"
+if vendor_dir.exists():
+    app.mount("/vendor", StaticFiles(directory=str(vendor_dir)), name="vendor")
+
 app.include_router(recent.router)
 app.include_router(artists.router)
 app.include_router(albums.router)

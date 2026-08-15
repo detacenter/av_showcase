@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import { SessionsTab } from "./stats/SessionsTab";
 import { TimeTab } from "./stats/TimeTab";
 import { PeriodsTab } from "./stats/PeriodsTab";
@@ -10,6 +11,10 @@ import { VinylTab } from "./stats/VinylTab";
 
 const TABS = ["Sessions", "Time", "Periods", "Eras", "Trends", "Genres", "Overview", "Vinyl"] as const;
 type Tab = typeof TABS[number];
+
+function isTab(v: string | null): v is Tab {
+  return !!v && (TABS as readonly string[]).includes(v);
+}
 
 function TabBar({ active, onChange }: { active: Tab; onChange: (t: Tab) => void }) {
   return (
@@ -43,21 +48,21 @@ function Placeholder({ tab }: { tab: Tab }) {
 }
 
 export function StatsView() {
-  const [tab, setTab] = useState<Tab>("Sessions");
+  const [searchParams, setSearchParams] = useSearchParams();
+  const tab = isTab(searchParams.get("tab")) ? (searchParams.get("tab") as Tab) : "Sessions";
+  const setTab = (t: Tab) => setSearchParams(t === "Sessions" ? {} : { tab: t }, { replace: true });
 
   useEffect(() => {
     const onKeyDown = (e: KeyboardEvent) => {
       if (e.metaKey || e.ctrlKey || e.altKey || (e.key !== "[" && e.key !== "]")) return;
       e.preventDefault();
-      setTab(cur => {
-        const idx = TABS.indexOf(cur);
-        const next = e.key === "]" ? (idx + 1) % TABS.length : (idx - 1 + TABS.length) % TABS.length;
-        return TABS[next];
-      });
+      const idx = TABS.indexOf(tab);
+      const next = e.key === "]" ? (idx + 1) % TABS.length : (idx - 1 + TABS.length) % TABS.length;
+      setTab(TABS[next]);
     };
     document.addEventListener("keydown", onKeyDown);
     return () => document.removeEventListener("keydown", onKeyDown);
-  }, []);
+  }, [tab]);
 
   return (
     <div style={{ flex: 1, display: "flex", flexDirection: "column", overflow: "hidden" }}>

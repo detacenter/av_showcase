@@ -25,7 +25,7 @@ from insights.stats_insights import (
 )
 from core.helpers import dominant_art_color
 from insights.genre_insights import build_genre_color_map, build_genre_network
-from state import get_state
+from state import get_state, get_generation
 
 _TZ = ZoneInfo("America/New_York")
 
@@ -36,20 +36,22 @@ def _parse_dt(played_at: str) -> datetime:
 
 def _build_daypart_flow(entries: list[dict], n_days: int = 60) -> dict:
     if not entries:
-        return {"days": [], "hours": [], "centers": [], "max_hour": 0}
+        return {"days": [], "hours": [], "minutes": [], "centers": [], "max_hour": 0}
     valid = [e for e in entries if e.get("played_at")]
     if not valid:
-        return {"days": [], "hours": [], "centers": [], "max_hour": 0}
+        return {"days": [], "hours": [], "minutes": [], "centers": [], "max_hour": 0}
     last_day = max(_parse_dt(e["played_at"]).date() for e in valid)
     first_day = min(_parse_dt(e["played_at"]).date() for e in valid)
     start = max(last_day - timedelta(days=n_days - 1), first_day)
     days = [start + timedelta(days=i) for i in range((last_day - start).days + 1)]
     day_idx = {d: i for i, d in enumerate(days)}
     hours = [[0] * 24 for _ in days]
+    minutes = [[0.0] * 24 for _ in days]
     for entry in valid:
         dt = _parse_dt(entry["played_at"])
         if dt.date() in day_idx:
             hours[day_idx[dt.date()]][dt.hour] += 1
+            minutes[day_idx[dt.date()]][dt.hour] += entry.get("duration_ms", 0) / 60000
     centers = []
     for row in hours:
         total = sum(row)
@@ -57,6 +59,7 @@ def _build_daypart_flow(entries: list[dict], n_days: int = 60) -> dict:
     return {
         "days": [d.isoformat() for d in days],
         "hours": hours,
+        "minutes": minutes,
         "centers": centers,
         "max_hour": max((max(row) for row in hours), default=0),
     }
@@ -381,7 +384,7 @@ body { background: #121212; overflow: hidden; font-family: -apple-system, BlinkM
     </div>
   </div>
 </div>
-<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="/vendor/d3.v7.min.js"></script>
 <script>
 const DATA = __DATA__;
 
@@ -407,7 +410,6 @@ mg.append("feMergeNode").attr("in", "SourceGraphic");
 const g = svg.append("g");
 const zoom = d3.zoom().scaleExtent([0.15, 6]).on("zoom", e => g.attr("transform", e.transform));
 svg.call(zoom);
-requestAnimationFrame(() => svg.call(zoom.transform, d3.zoomIdentity.translate(w / 4, h / 4).scale(0.5)));
 
 const visibleLinks = DATA.links;
 
@@ -812,13 +814,13 @@ node
 
 svg.on("click", () => applySelection(null));
 
-simulation.on("tick", () => {
+function renderPositions() {
     link.attr("x1", d => d.source.x).attr("y1", d => d.source.y)
         .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
     node.attr("transform", d => "translate(" + d.x + "," + d.y + ")");
-    if (++_tickCount % 10 === 0) computeColors(false);
-}).on("end", () => {
-    computeColors(true);
+}
+
+function fitToView(animate) {
     if (!DATA.nodes.length) return;
     const xs = DATA.nodes.map(d => d.x), ys = DATA.nodes.map(d => d.y);
     const x0 = Math.min(...xs), x1 = Math.max(...xs);
@@ -827,7 +829,25 @@ simulation.on("tick", () => {
     const scale = Math.min((w - pad * 2) / (x1 - x0 + 1), (h - pad * 2) / (y1 - y0 + 1), 1.0);
     const tx = (w - scale * (x0 + x1)) / 2;
     const ty = (h - scale * (y0 + y1)) / 2;
-    svg.transition().duration(600).call(zoom.transform, d3.zoomIdentity.translate(tx, ty).scale(scale));
+    const transform = d3.zoomIdentity.translate(tx, ty).scale(scale);
+    if (animate) svg.transition().duration(600).call(zoom.transform, transform);
+    else svg.call(zoom.transform, transform);
+}
+
+// Converge the physics synchronously before the first paint instead of animating
+// ~130 frames of live settling — same final layout, without the multi-second wait.
+simulation.stop();
+while (simulation.alpha() > simulation.alphaMin()) simulation.tick();
+renderPositions();
+computeColors(true);
+fitToView(false);
+
+simulation.on("tick", () => {
+    renderPositions();
+    if (++_tickCount % 10 === 0) computeColors(false);
+}).on("end", () => {
+    computeColors(true);
+    fitToView(true);
 });
 
 function recenter() {
@@ -849,13 +869,16 @@ requestAnimationFrame(recenter);
 
 
 _genres_cache: dict | None = None
+_genres_cache_gen: int = -1
 _genres_network_cache: dict | None = None
+_genres_network_cache_gen: int = -1
 
 
 @router.get("/genres")
 def get_genres():
-    global _genres_cache
-    if _genres_cache is None:
+    global _genres_cache, _genres_cache_gen
+    gen = get_generation()
+    if _genres_cache is None or _genres_cache_gen != gen:
         state = get_state()
         network = build_genre_network(state.log, state.lib)
         for node in network.get("nodes", []):
@@ -864,13 +887,15 @@ def get_genres():
                 if art.startswith("file://"):
                     artist["art"] = Path(art.replace("file://", "")).name
         _genres_cache = network
+        _genres_cache_gen = gen
     return _genres_cache
 
 
 @router.get("/genres-page", response_class=HTMLResponse)
 def get_genres_page():
-    global _genres_network_cache
-    if _genres_network_cache is None:
+    global _genres_network_cache, _genres_network_cache_gen
+    gen = get_generation()
+    if _genres_network_cache is None or _genres_network_cache_gen != gen:
         state = get_state()
         network = build_genre_network(state.log, state.lib)
         for node in network.get("nodes", []):
@@ -884,5 +909,6 @@ def get_genres_page():
                     else:
                         artist["art"] = f"/artwork/{Path(art_path).name}"
         _genres_network_cache = network
+        _genres_network_cache_gen = gen
     html = _GENRES_HTML.replace("__DATA__", _json.dumps(_genres_network_cache))
     return HTMLResponse(content=html, headers={"Cache-Control": "no-store"})

@@ -18,6 +18,7 @@ class AppState:
 
 
 _state: AppState | None = None
+_generation = 0
 
 
 def _backfill_artwork(log: list) -> None:
@@ -73,13 +74,21 @@ def _load() -> AppState:
 
 
 def get_state() -> AppState:
-    global _state
+    global _state, _generation
     if _state is None:
         _state = _load()
+        _generation += 1
     return _state
 
 
 def reload_state() -> AppState:
-    global _state
+    global _state, _generation
     _state = _load()
+    _generation += 1
     return _state
+
+
+def get_generation() -> int:
+    """Bumped every time state is (re)loaded — use to invalidate downstream caches."""
+    get_state()
+    return _generation

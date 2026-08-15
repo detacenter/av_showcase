@@ -1,13 +1,6 @@
-import { API_BASE } from "../../api/config";
-
+// The actual iframe lives in <GenresFrameHost>, mounted once at the app level so it
+// survives navigating away from /stats — this div just marks where it should be
+// positioned (see GenresFrameHost's slot-rect sync).
 export function GenresTab() {
-  return (
-    <div style={{ flex: 1, overflow: "hidden", minHeight: 0 }}>
-      <iframe
-        src={`${API_BASE}/api/stats/genres-page`}
-        style={{ width: "100%", height: "100%", border: "none", display: "block" }}
-        title="Genre Network"
-      />
-    </div>
-  );
+  return <div id="genres-frame-slot" style={{ flex: 1, minHeight: 0 }} />;
 }
