@@ -1,9 +1,28 @@
 import { useEffect, useRef } from "react";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api/client";
 import type { AppSettings } from "../api/types";
 import { LogoMark } from "./LogoMark";
+
+function PhoneIcon({ size = 12 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
+      <rect x="7" y="2" width="10" height="20" rx="2" />
+      <line x1="11" y1="18" x2="13" y2="18" />
+    </svg>
+  );
+}
+
+function MonitorIcon({ size = 12 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
+      <rect x="2" y="4" width="20" height="14" rx="2" />
+      <line x1="8" y1="21" x2="16" y2="21" />
+      <line x1="12" y1="18" x2="12" y2="21" />
+    </svg>
+  );
+}
 
 const NAV = [
   { to: "/recent",    label: "Recent" },
@@ -21,6 +40,16 @@ const NAV = [
 export function Sidebar() {
   const queryClient = useQueryClient();
   const navigate = useNavigate();
+  const location = useLocation();
+
+  // Lets the mobile-preview switch toggle back to wherever you were before,
+  // instead of only ever linking forward to /mobile.
+  const lastNonMobileRoute = useRef("/recent");
+  useEffect(() => {
+    if (location.pathname !== "/mobile") {
+      lastNonMobileRoute.current = location.pathname + location.search;
+    }
+  }, [location]);
 
   const { data: settings } = useQuery<AppSettings>({
     queryKey: ["settings"],
@@ -151,6 +180,67 @@ export function Sidebar() {
         </div>
       </div>
 
+      <NavLink
+        to="/mobile"
+        title="Mobile preview"
+        onClick={(e) => {
+          if (location.pathname === "/mobile") {
+            e.preventDefault();
+            navigate(lastNonMobileRoute.current);
+          }
+        }}
+        style={({ isActive }) => ({
+          position: "relative",
+          display: "flex",
+          alignItems: "center",
+          width: 52,
+          height: 22,
+          borderRadius: 11,
+          border: `1px solid ${isActive ? "var(--white)" : "var(--dim)"}`,
+          marginLeft: 11,
+          marginBottom: 16,
+          textDecoration: "none",
+          flexShrink: 0,
+          overflow: "hidden",
+          cursor: "pointer",
+        })}
+      >
+        {({ isActive }) => (
+          <>
+            <span style={{
+              position: "absolute",
+              top: 1,
+              left: isActive ? 27 : 1,
+              width: 22,
+              height: 18,
+              borderRadius: 9,
+              background: isActive ? "var(--white)" : "transparent",
+              transition: "left 0.15s, background 0.15s",
+            }} />
+            <span style={{
+              position: "relative",
+              width: 24,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: !isActive ? "var(--white)" : "var(--dim)",
+            }}>
+              <MonitorIcon size={10} />
+            </span>
+            <span style={{
+              position: "relative",
+              width: 24,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: isActive ? "#0a0a0a" : "var(--dim)",
+            }}>
+              <PhoneIcon size={10} />
+            </span>
+          </>
+        )}
+      </NavLink>
+
       {NAV.map(({ to, label }) => (
         <NavLink
           key={to}
@@ -230,26 +320,6 @@ export function Sidebar() {
           })}
         >
           ⌘
-        </NavLink>
-        <NavLink
-          to="/mobile"
-          title="Mobile preview"
-          style={({ isActive }) => ({
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: 22,
-            height: 22,
-            borderRadius: "50%",
-            border: `1px solid ${isActive ? "var(--white)" : "var(--dim)"}`,
-            color: isActive ? "var(--white)" : "var(--dim)",
-            fontSize: 11,
-            fontWeight: 700,
-            textDecoration: "none",
-            flexShrink: 0,
-          })}
-        >
-          M
         </NavLink>
       </div>
     </aside>
