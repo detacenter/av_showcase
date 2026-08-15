@@ -1,21 +1,8 @@
-import { useRef, useEffect, useState, useCallback } from "react";
+import { useRef, useState, useCallback } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { useSize } from "../../hooks/useSize";
 
 import { API_BASE as API } from "../../api/config";
-
-function useSize(ref: React.RefObject<HTMLElement | null>) {
-  const [size, setSize] = useState({ w: 0, h: 0 });
-  useEffect(() => {
-    if (!ref.current) return;
-    const ro = new ResizeObserver(entries => {
-      const e = entries[0].contentRect;
-      setSize({ w: e.width, h: e.height });
-    });
-    ro.observe(ref.current);
-    return () => ro.disconnect();
-  }, [ref]);
-  return size;
-}
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Color helpers

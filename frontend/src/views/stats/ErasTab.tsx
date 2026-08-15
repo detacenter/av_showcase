@@ -1,6 +1,7 @@
-import { useState, useRef, useEffect, useCallback, type JSX } from "react";
+import { useState, useRef, useCallback, type JSX } from "react";
 import { useQuery, keepPreviousData } from "@tanstack/react-query";
 import { api } from "../../api/client";
+import { useSize } from "../../hooks/useSize";
 
 import { API_BASE as ART_BASE } from "../../api/config";
 function artUrl(path: string): string | null {
@@ -74,23 +75,6 @@ interface ProfilePayload {
 }
 interface EraDataPayload { drift: DriftPayload; profile: ProfilePayload; }
 
-// ─── useSize ─────────────────────────────────────────────────────────────────
-
-function useSize(ref: React.RefObject<HTMLElement | null>) {
-  const [size, setSize] = useState({ w: 0, h: 0 });
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const ro = new ResizeObserver(entries => {
-      const e = entries[0];
-      setSize({ w: e.contentRect.width, h: e.contentRect.height });
-    });
-    ro.observe(el);
-    setSize({ w: el.clientWidth, h: el.clientHeight });
-    return () => ro.disconnect();
-  }, [ref]);
-  return size;
-}
 
 // ─── TimelineChart ────────────────────────────────────────────────────────────
 
