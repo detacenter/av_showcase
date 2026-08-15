@@ -1,86 +1,42 @@
 import calendar
 import json as _json
 from collections import Counter, defaultdict
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from fastapi import APIRouter, Query
 from fastapi.responses import HTMLResponse
-from insights.stats_insights import (
-    build_overview_payload,
-    build_heatmap_payload,
-    build_period_payload,
-    build_timeline_payload,
-    build_sessions_data,
-    filter_entries_by_days,
-    build_era_drift,
-    build_era_release_profile,
-    build_daily,
-    build_depth_sessions,
-    build_genre_mountain,
-    build_discovery_comfort,
-    build_discovery_comfort_tracks,
-    build_genre_weather,
-)
+
 from core.helpers import dominant_art_color
 from insights.genre_insights import build_genre_color_map, build_genre_network
-from state import get_state, get_generation
+from insights.stats_insights import (
+    _build_daypart_flow,
+    _build_daypart_flow_monthly,
+    _ser_days,
+    _ser_parts,
+    build_daily,
+    build_depth_sessions,
+    build_discovery_comfort,
+    build_discovery_comfort_tracks,
+    build_era_drift,
+    build_era_release_profile,
+    build_genre_mountain,
+    build_genre_weather,
+    build_heatmap_payload,
+    build_overview_payload,
+    build_period_payload,
+    build_sessions_data,
+    build_timeline_payload,
+    filter_entries_by_days,
+)
+from state import get_generation, get_state
 
 _TZ = ZoneInfo("America/New_York")
 
 
 def _parse_dt(played_at: str) -> datetime:
     return datetime.fromisoformat(played_at.replace("Z", "+00:00")).astimezone(_TZ)
-
-
-def _build_daypart_flow(entries: list[dict], n_days: int = 60) -> dict:
-    if not entries:
-        return {"days": [], "hours": [], "minutes": [], "centers": [], "max_hour": 0}
-    valid = [e for e in entries if e.get("played_at")]
-    if not valid:
-        return {"days": [], "hours": [], "minutes": [], "centers": [], "max_hour": 0}
-    last_day = max(_parse_dt(e["played_at"]).date() for e in valid)
-    first_day = min(_parse_dt(e["played_at"]).date() for e in valid)
-    start = max(last_day - timedelta(days=n_days - 1), first_day)
-    days = [start + timedelta(days=i) for i in range((last_day - start).days + 1)]
-    day_idx = {d: i for i, d in enumerate(days)}
-    hours = [[0] * 24 for _ in days]
-    minutes = [[0.0] * 24 for _ in days]
-    for entry in valid:
-        dt = _parse_dt(entry["played_at"])
-        if dt.date() in day_idx:
-            hours[day_idx[dt.date()]][dt.hour] += 1
-            minutes[day_idx[dt.date()]][dt.hour] += entry.get("duration_ms", 0) / 60000
-    centers = []
-    for row in hours:
-        total = sum(row)
-        centers.append(sum(h * row[h] for h in range(24)) / total if total else None)
-    return {
-        "days": [d.isoformat() for d in days],
-        "hours": hours,
-        "minutes": minutes,
-        "centers": centers,
-        "max_hour": max((max(row) for row in hours), default=0),
-    }
-
-def _build_daypart_flow_monthly(entries: list[dict]) -> dict:
-    valid = [e for e in entries if e.get("played_at")]
-    if not valid:
-        return {"months": [], "hours": [], "minutes": []}
-    by_month: dict[tuple[int, int], dict] = {}
-    for entry in valid:
-        dt = _parse_dt(entry["played_at"])
-        key = (dt.year, dt.month)
-        bucket = by_month.setdefault(key, {"hours": [0] * 24, "minutes": [0.0] * 24})
-        bucket["hours"][dt.hour] += 1
-        bucket["minutes"][dt.hour] += entry.get("duration_ms", 0) / 60000
-    keys = sorted(by_month.keys())
-    return {
-        "months":  [{"year": y, "month": m} for y, m in keys],
-        "hours":   [by_month[k]["hours"] for k in keys],
-        "minutes": [by_month[k]["minutes"] for k in keys],
-    }
 
 
 router = APIRouter(prefix="/api/stats", tags=["stats"])
@@ -169,12 +125,6 @@ def get_sessions():
 def get_time(mode: str = Query("Year"), month_offset: int = Query(0)):
     state = get_state()
     log = state.log
-
-    def _ser_days(days_list: list) -> list:
-        return [{"date": d["date"].isoformat(), "minutes": d["minutes"]} for d in days_list]
-
-    def _ser_parts(parts: list) -> list:
-        return [[{"label": p["label"], "minutes": p["minutes"]} for p in dow] for dow in parts]
 
     heatmap_all_payload = build_heatmap_payload(log, 0)
     heatmap_all = _ser_days(heatmap_all_payload["heatmap"])

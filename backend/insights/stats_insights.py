@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import hashlib
 import math
 from collections import Counter, defaultdict
 from datetime import date, datetime, timedelta, timezone
@@ -305,6 +304,64 @@ def _build_day_parts(entries: list[dict], days: int) -> list[list[dict]]:
         parts_by_dow[dow].sort(key=lambda item: item["sort_key"])
 
     return parts_by_dow
+
+
+def _build_daypart_flow(entries: list[dict], n_days: int = 60) -> dict:
+    if not entries:
+        return {"days": [], "hours": [], "minutes": [], "centers": [], "max_hour": 0}
+    valid = [e for e in entries if e.get("played_at")]
+    if not valid:
+        return {"days": [], "hours": [], "minutes": [], "centers": [], "max_hour": 0}
+    last_day = max(_parse_played_at(e["played_at"]).date() for e in valid)
+    first_day = min(_parse_played_at(e["played_at"]).date() for e in valid)
+    start = max(last_day - timedelta(days=n_days - 1), first_day)
+    days = [start + timedelta(days=i) for i in range((last_day - start).days + 1)]
+    day_idx = {d: i for i, d in enumerate(days)}
+    hours = [[0] * 24 for _ in days]
+    minutes = [[0.0] * 24 for _ in days]
+    for entry in valid:
+        dt = _parse_played_at(entry["played_at"])
+        if dt.date() in day_idx:
+            hours[day_idx[dt.date()]][dt.hour] += 1
+            minutes[day_idx[dt.date()]][dt.hour] += entry.get("duration_ms", 0) / 60000
+    centers = []
+    for row in hours:
+        total = sum(row)
+        centers.append(sum(h * row[h] for h in range(24)) / total if total else None)
+    return {
+        "days": [d.isoformat() for d in days],
+        "hours": hours,
+        "minutes": minutes,
+        "centers": centers,
+        "max_hour": max((max(row) for row in hours), default=0),
+    }
+
+
+def _build_daypart_flow_monthly(entries: list[dict]) -> dict:
+    valid = [e for e in entries if e.get("played_at")]
+    if not valid:
+        return {"months": [], "hours": [], "minutes": []}
+    by_month: dict[tuple[int, int], dict] = {}
+    for entry in valid:
+        dt = _parse_played_at(entry["played_at"])
+        key = (dt.year, dt.month)
+        bucket = by_month.setdefault(key, {"hours": [0] * 24, "minutes": [0.0] * 24})
+        bucket["hours"][dt.hour] += 1
+        bucket["minutes"][dt.hour] += entry.get("duration_ms", 0) / 60000
+    keys = sorted(by_month.keys())
+    return {
+        "months":  [{"year": y, "month": m} for y, m in keys],
+        "hours":   [by_month[k]["hours"] for k in keys],
+        "minutes": [by_month[k]["minutes"] for k in keys],
+    }
+
+
+def _ser_days(days_list: list) -> list:
+    return [{"date": d["date"].isoformat(), "minutes": d["minutes"]} for d in days_list]
+
+
+def _ser_parts(parts: list) -> list:
+    return [[{"label": p["label"], "minutes": p["minutes"]} for p in dow] for dow in parts]
 
 
 def build_period_payload(log: list[dict], mode: str, offset: int, lib: dict | None = None) -> dict:
