@@ -23,6 +23,18 @@ def _art_filename(path: str | None) -> str | None:
         return str(p.relative_to("data/artwork"))
     except ValueError:
         pass
+    # Neither expected prefix matched -- can happen when a stored art_path was
+    # written from a different machine (e.g. an absolute Mac path saved into
+    # Pi data). The "artwork/" segment is usually still present even then, so
+    # recover the subdirectory from that instead of silently dropping it via
+    # p.name below, which is how 52 vinyl records ended up with broken
+    # thumbnails (art_filename missing its "vinyl/" prefix) undetected.
+    posix = p.as_posix()
+    marker = "artwork/"
+    idx = posix.rfind(marker)
+    if idx != -1:
+        return posix[idx + len(marker):]
+    print(f"[artists] could not resolve art_filename relative to artwork root: {path!r}")
     return p.name
 
 
