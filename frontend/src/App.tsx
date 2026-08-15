@@ -1,8 +1,9 @@
 import { useEffect } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { QueryClient, QueryClientProvider, useQuery } from "@tanstack/react-query";
 import { Sidebar } from "./components/Sidebar";
 import { GenresFrameHost } from "./components/GenresFrameHost";
+import { ErrorBoundary } from "./components/ErrorBoundary";
 import { RecentView } from "./views/RecentView";
 import { ArtistsView } from "./views/ArtistsView";
 import { ArtistDetailView } from "./views/ArtistDetailView";
@@ -42,13 +43,18 @@ function AccentLoader() {
 }
 
 function Layout({ children }: { children: React.ReactNode }) {
+  // Every route shares this same Layout/ErrorBoundary position in the tree,
+  // so React reuses the same ErrorBoundary instance across route changes
+  // instead of remounting it -- without a route-keyed reset, a crash on one
+  // page would keep showing its fallback UI even after navigating away.
+  const location = useLocation();
   return (
     <>
       <Sidebar />
       <main style={{ flex: 1, overflow: "hidden", display: "flex", flexDirection: "column" }}>
         <SpotifyReauthBanner />
         <SandboxBanner />
-        {children}
+        <ErrorBoundary key={location.pathname}>{children}</ErrorBoundary>
       </main>
     </>
   );
@@ -59,7 +65,7 @@ function VisualizerRoute() {
   if (isPopout) {
     return (
       <main style={{ flex: 1, overflow: "hidden", display: "flex", flexDirection: "column" }}>
-        <VisualizerView />
+        <ErrorBoundary><VisualizerView /></ErrorBoundary>
       </main>
     );
   }
