@@ -15,6 +15,11 @@ interface DaypartFlow {
   centers: (number | null)[];
   max_hour: number;
 }
+interface DaypartFlowMonthly {
+  months: { year: number; month: number }[];
+  hours: number[][];
+  minutes: number[][];
+}
 
 interface TimePayload {
   mode: string;
@@ -26,6 +31,7 @@ interface TimePayload {
   minutes_by_dow: number[];
   day_parts: DayPart[][];
   daypart_flow: DaypartFlow;
+  daypart_flow_monthly: DaypartFlowMonthly;
 }
 
 // ─── Constants ────────────────────────────────────────────────────────────────
@@ -642,6 +648,119 @@ function DaypartFlowModal({ data, onClose }: { data: DaypartFlow; onClose: () =>
   );
 }
 
+// ─── DaypartFlowMonthlyModal (All Time) ────────────────────────────────────────
+// Day-level granularity doesn't scale across years any more than the calendar
+// heatmap did, so All Time gets its own version of this modal, rebucketed to
+// month × hour instead of day × hour — same trick as AllTimeMonthGrid. Each column
+// is one calendar month (all years, oldest to newest); brightness = that hour's
+// share of the month's listening, so the peak hour is still the brightest cell but
+// the full spread/drift is visible too, not just a single point.
+function DaypartFlowMonthlyModal({ data, onClose }: { data: DaypartFlowMonthly; onClose: () => void }) {
+  const overlayRef = useRef<HTMLDivElement>(null);
+  const chartRef = useRef<HTMLDivElement>(null);
+  const { w: chartW, h: chartH } = useSize(chartRef);
+
+  const { months, minutes } = data;
+  const n = months.length;
+
+  const PAD_L = 74, PAD_R = 8, PAD_T = 18, PAD_B = 28;
+  const pw = chartW - PAD_L - PAD_R;
+  const ph = chartH - PAD_T - PAD_B;
+  const cellW = Math.max(2, pw / Math.max(n, 1));
+
+  const xOf = (i: number) => PAD_L + pw * i / Math.max(n, 1);
+  const yBound = (h: number) => PAD_T + ph * h / 24;
+  const yCenter = (h: number) => PAD_T + ph * (h + 0.5) / 24;
+
+  const gridEls: JSX.Element[] = [];
+
+  for (const [s, e, col] of DAYPART_META) {
+    const y1 = yBound(s), y2 = yBound(e);
+    gridEls.push(
+      <rect key={`band-${s}`} x={PAD_L} y={y1} width={pw} height={Math.max(2, y2 - y1)} fill={col} fillOpacity={0.055} />
+    );
+    gridEls.push(
+      <text key={`band-lbl-${s}`} x={40} y={(y1 + y2) / 2 + 4} fill={col} fontSize={9} fontWeight={700} textAnchor="end">{DAYPART_META.find(m => m[0] === s)?.[3]}</text>
+    );
+  }
+
+  for (const hMark of [0, 6, 12, 18, 23]) {
+    const y = yBound(hMark);
+    gridEls.push(<line key={`hline-${hMark}`} x1={PAD_L} y1={y} x2={PAD_L + pw} y2={y} stroke="#1e1e1e" strokeWidth={1} />);
+    gridEls.push(
+      <text key={`hlbl-${hMark}`} x={44} y={yCenter(hMark) + 4} fill="#666" fontSize={9} textAnchor="end">
+        {String(hMark).padStart(2, "0")}
+      </text>
+    );
+  }
+
+  for (let i = 0; i < minutes.length; i++) {
+    const row = minutes[i];
+    const total = row.reduce((a, b) => a + b, 0) || 1;
+    const x = xOf(i);
+    const rowH = ph / 24;
+    for (let h = 0; h < 24; h++) {
+      const share = row[h] / total;
+      if (share <= 0) continue;
+      const y = yBound(h);
+      const alpha = Math.min(1, 0.06 + share * 9);
+      gridEls.push(
+        <rect key={`cell-${i}-${h}`} x={x} y={y} width={Math.max(1, cellW - 0.5)} height={rowH}
+          fill={hourColorSmooth(h)} fillOpacity={alpha} />
+      );
+    }
+  }
+
+  // Year labels along x axis, once per January (or the first column if history starts mid-year)
+  const seenYear = new Set<number>();
+  for (let i = 0; i < months.length; i++) {
+    const { year, month } = months[i];
+    if (month !== 1 && i !== 0) continue;
+    if (seenYear.has(year)) continue;
+    seenYear.add(year);
+    gridEls.push(
+      <text key={`ylbl-${i}`} x={xOf(i) + cellW / 2} y={chartH - PAD_B + 14} fill="#666" fontSize={10} textAnchor="middle">{year}</text>
+    );
+  }
+
+  return (
+    <div ref={overlayRef} style={{
+      position: "fixed", inset: 0, background: "rgba(0,0,0,0.7)", zIndex: 1000,
+      display: "flex", alignItems: "center", justifyContent: "center",
+    }} onClick={e => { if (e.target === overlayRef.current) onClose(); }}>
+      <div style={{
+        background: "#181818", borderRadius: 18, padding: "16px 18px 18px",
+        display: "flex", flexDirection: "column", gap: 10,
+        width: Math.min(1220, Math.max(820, window.innerWidth - 64)),
+        maxHeight: "90vh",
+      }}>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <span style={{ flex: 1, color: "#666", fontSize: 12, fontWeight: 700, letterSpacing: 2 }}>DAYPART FLOW · ALL TIME</span>
+          <button onClick={onClose} style={{
+            width: 22, height: 22, borderRadius: "50%", background: "#242424",
+            border: "none", color: "#666", fontSize: 10, fontWeight: 800, cursor: "pointer",
+          }}>X</button>
+        </div>
+        <div style={{
+          background: "#101010", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 16,
+          padding: 6,
+        }}>
+          <div ref={chartRef} style={{ height: Math.min(390, Math.max(330, window.innerHeight - 260)) }}>
+            {chartW > 0 && chartH > 0 && (
+              <svg width={chartW} height={chartH} style={{ display: "block" }}>
+                {gridEls}
+              </svg>
+            )}
+          </div>
+        </div>
+        <div style={{ color: "#666", fontSize: 10, fontWeight: 700 }}>
+          hour × month grid, full history · brightness = share of that month's listening
+        </div>
+      </div>
+    </div>
+  );
+}
+
 // Kept for reversibility — see the call site's comment for how to swap back to this.
 export function DaypartClock({ data, onCenterClick }: { data: DaypartFlow; onCenterClick: () => void }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -1220,179 +1339,131 @@ function DaypartWaffleClockFull({ data, onCenterClick }: { data: DaypartFlow; on
   );
 }
 
-// ─── DayOfWeekBars ────────────────────────────────────────────────────────────
+// ─── DayOfWeekAllTimeGrid ──────────────────────────────────────────────────────
+// All Time's version of the box-grid grammar used by DayOfWeekHourGrid (Year) and
+// DayOfWeekPartGrid (Month) — same 7-lane, bottom-up-fill, rounded-box look, chosen
+// over a from-scratch redesign since the scaling risk that forced Daypart Flow to
+// change shape doesn't apply here: this grid's x-axis is always exactly 7 weekday
+// lanes, so only the per-lane box COUNT could grow unboundedly with more history —
+// and that's already solved by deriving the per-box time unit dynamically (same
+// trick DayOfWeekPartGrid borrows from Year) instead of fixing it at 1 hour, so the
+// busiest weekday always lands around the same target row count regardless of
+// whether history is 4 months or 10 years. Color-recency axis becomes year-of-origin
+// instead of month-of-origin.
 
-interface SegHit { dow: number; seg: number; label: string; minutes: number; cx: number; segMidY: number; }
+const ATDW_TARGET_ROWS = 26;
 
-function DayOfWeekBars({ minutes, parts }: { minutes: number[]; parts: DayPart[][] }) {
+function allTimeDowBreakdown(days: DayEntry[]): { filledMinutesByDow: number[]; minutesByDowYear: Map<string, number>; years: number[] } {
+  const filledMinutesByDow = Array(7).fill(0);
+  const minutesByDowYear = new Map<string, number>();
+  const yearSet = new Set<number>();
+  for (const d of days) {
+    const dt = new Date(d.date + "T00:00:00");
+    const dow = dt.getDay(), year = dt.getFullYear();
+    filledMinutesByDow[dow] += d.minutes;
+    yearSet.add(year);
+    const key = `${dow}-${year}`;
+    minutesByDowYear.set(key, (minutesByDowYear.get(key) ?? 0) + d.minutes);
+  }
+  return { filledMinutesByDow, minutesByDowYear, years: [...yearSet].sort((a, b) => a - b) };
+}
+
+function atdwScheme(dow: number, yearIdx: number, yearCount: number): string {
+  const t = yearCount > 1 ? yearIdx / (yearCount - 1) : 1;
+  const s = 55 + t * 30, l = 26 + t * 46;
+  const h = DAY_HUES[dow] + (t - 0.5) * 28;
+  return `hsl(${h} ${s}% ${l}%)`;
+}
+
+function DayOfWeekAllTimeGrid({ days }: { days: DayEntry[] }) {
   const ref = useRef<HTMLDivElement>(null);
   const { w: W, h: H } = useSize(ref);
-  const [hov, setHov] = useState<{ dow: number; seg: number } | null>(null);
+  const [hover, setHover] = useState<{ x: number; y: number; label: string; sub: string } | null>(null);
 
-  if (!minutes.some(m => m > 0)) return <div ref={ref} style={{ flex: 1, minHeight: 0 }} />;
+  const { filledMinutesByDow, minutesByDowYear, years } = allTimeDowBreakdown(days);
+  const hoursByDow = filledMinutesByDow.map(m => Math.floor(m / 60));
+  const maxHours = Math.max(...hoursByDow, 1);
+  const unitHours = maxHours / ATDW_TARGET_ROWS;
+  const boxesByDow = hoursByDow.map(h => Math.round(h / unitHours));
+  const rows = ATDW_TARGET_ROWS;
 
-  const total = minutes.reduce((a, b) => a + b, 0);
-  const avg = total / 7;
-  const maxMin = Math.max(...minutes, 1);
-  const spread = Math.max(...minutes) - Math.min(...minutes);
-  const peakIdx = minutes.indexOf(Math.max(...minutes));
+  const step = W > 0 && H > 0 ? dwgBestStep(W, H, rows) : 10;
+  const gap = step * 0.2, box = step - gap;
+  const laneGap = step * 2.2;
+  const rx = Math.max(1, box / 4);
+  const { labelFontSize, countFontSize, labelY, countY, padT } = dwgHeaderMetrics(step);
+  const padB = Math.max(4, Math.round(step * 0.4));
+  const laneW = DWG_COLS * step - gap;
+  const totalW = 7 * laneW + 6 * laneGap;
+  const totalH = padT + rows * step - gap + padB;
+  const startX = Math.max(0, (W - totalW) / 2);
+  const startY = Math.max(0, (H - totalH) / 2);
+  const gridBottomY = padT + rows * step - gap;
 
-  const TEXT_H = 68, BAR_BOT = H - 28, barArea = BAR_BOT - TEXT_H;
-  const colW = (W - 40) / 7;
-  const barW = Math.max(16, colW * 0.52);
-  const avgY = BAR_BOT - barArea * (avg / maxMin);
+  const avgBoxes = boxesByDow.reduce((a, b) => a + b, 0) / 7;
+  const avgY = gridBottomY - (avgBoxes / DWG_COLS) * step;
 
-  function colCx(i: number): number { return 20 + (i + 0.5) * colW; }
-
-  const bars: JSX.Element[] = [];
-  const hitAreas: JSX.Element[] = [];
-  const segHits: SegHit[] = [];
-
-  // Avg line + label
-  bars.push(<line key="avg" x1={20} y1={avgY} x2={W - 20} y2={avgY} stroke="#2e2e2e" strokeWidth={1} strokeDasharray="4 4" />);
-  bars.push(<text key="avg-lbl" x={W - 4} y={avgY - 2} fill="#3a3a3a" fontSize={9} textAnchor="end">avg</text>);
-
-  for (let i = 0; i < 7; i++) {
-    const mins = minutes[i];
-    const cx = colCx(i);
-    const isPeak = i === peakIdx;
-    const isLow = mins === Math.min(...minutes);
-    const isHov = hov !== null && hov.dow === i;
-    const [cTop, cBot] = DAY_COLORS[i];
-
-    const bh = mins > 0 ? Math.max(4, barArea * (mins / maxMin)) : 0;
-    const barTop = BAR_BOT - bh;
-
-    const gradId = `dow-grad-${i}`;
-    const topAlpha = isPeak ? 1 : isHov ? 0.85 : 0.6;
-    bars.push(
-      <defs key={`defs-${i}`}>
-        <linearGradient id={gradId} x1={String(cx)} y1={String(barTop)} x2={String(cx)} y2={String(BAR_BOT)}
-          gradientUnits="userSpaceOnUse">
-          <stop offset="0" stopColor={cTop} stopOpacity={topAlpha} />
-          <stop offset="1" stopColor={cBot} stopOpacity={1} />
-        </linearGradient>
-      </defs>
+  const els: JSX.Element[] = [
+    <line key="avg-line" x1={0} y1={avgY} x2={totalW} y2={avgY} stroke="#3a3a3a" strokeWidth={1} strokeDasharray="4 4" />,
+    <text key="avg-lbl" x={totalW} y={avgY - 4} fill="#555" fontSize={Math.max(9, labelFontSize * 0.8)} textAnchor="end">avg</text>,
+  ];
+  for (let dow = 0; dow < 7; dow++) {
+    const lx = dow * (laneW + laneGap);
+    const filled = boxesByDow[dow];
+    const coreColor = DAY_COLORS[dow][0];
+    els.push(
+      <text key={`lbl-${dow}`} x={lx + laneW / 2} y={labelY} fill={coreColor} fontSize={labelFontSize} fontWeight={700} textAnchor="middle">{DOW_LABELS[dow]}</text>
     );
-
-    if (mins > 0) {
-      const dayParts = parts[i] || [];
-      const SEG_GAP = 3;
-      if (dayParts.length > 1) {
-        const usableH = bh - SEG_GAP * (dayParts.length - 1);
-        const evenSegH = Math.max(6, usableH / dayParts.length);
-        let yCursor = BAR_BOT;
-        for (let j = 0; j < dayParts.length; j++) {
-          let segH = evenSegH;
-          if (j === dayParts.length - 1) segH = yCursor - barTop;
-          const segTop = yCursor - segH;
-          const r = Math.min(5, segH / 3);
-          const isSegHov = hov?.dow === i && hov?.seg === j;
-          bars.push(
-            <rect key={`seg-${i}-${j}`} x={cx - barW / 2} y={segTop} width={barW} height={segH}
-              rx={r} ry={r} fill={`url(#${gradId})`} opacity={isSegHov ? 1 : undefined} />
-          );
-          // Store hit geometry (full column width, exact seg height for precise hit)
-          segHits.push({ dow: i, seg: j, label: dayParts[j].label, minutes: dayParts[j].minutes, cx, segMidY: segTop + segH / 2 });
-          hitAreas.push(
-            <rect key={`hit-${i}-${j}`}
-              x={20 + i * colW} y={segTop} width={colW} height={segH + SEG_GAP}
-              fill="transparent"
-              onMouseEnter={() => setHov({ dow: i, seg: j })}
-              onMouseLeave={() => setHov(null)} />
-          );
-          yCursor = segTop - SEG_GAP;
-        }
-      } else {
-        bars.push(
-          <rect key={`bar-${i}`} x={cx - barW / 2} y={barTop} width={barW} height={bh}
-            rx={6} ry={6} fill={`url(#${gradId})`} />
-        );
-        // Single-segment: whole bar column is the hit area, no sub-label to show
-        hitAreas.push(
-          <rect key={`hit-${i}-0`}
-            x={20 + i * colW} y={barTop} width={colW} height={bh}
-            fill="transparent"
-            onMouseEnter={() => setHov({ dow: i, seg: 0 })}
-            onMouseLeave={() => setHov(null)} />
-        );
-        if (dayParts.length === 1) {
-          segHits.push({ dow: i, seg: 0, label: dayParts[0].label, minutes: dayParts[0].minutes, cx, segMidY: barTop + bh / 2 });
-        }
-      }
-
-      // Peak cap
-      if (isPeak) {
-        bars.push(
-          <rect key={`cap-${i}`} x={cx - barW / 2} y={barTop} width={barW} height={4} rx={3} ry={3} fill={cTop} />
-        );
-      }
-    }
-
-    // Day label
-    bars.push(
-      <text key={`dlbl-${i}`} x={cx} y={22} fill={isPeak || isHov ? "#fff" : "#aaa"}
-        fontSize={12} fontWeight={700} textAnchor="middle">{DOW_LABELS[i]}</text>
-    );
-    // Duration
-    bars.push(
-      <text key={`dur-${i}`} x={cx} y={42} fill="#fff" fontSize={17} fontWeight={700} textAnchor="middle">
-        {minutesLabel(mins)}
+    els.push(
+      <text key={`n-${dow}`} x={lx + laneW / 2} y={countY} fill={coreColor} fontSize={countFontSize} fontWeight={700} textAnchor="middle">
+        {hoursByDow[dow]}<tspan fontSize={countFontSize * 0.5} fontWeight={600} fillOpacity={0.75}> hrs</tspan>
       </text>
     );
-    // Delta
-    const delta = mins - avg;
-    const dsign = delta >= 0 ? "+" : "−";
-    bars.push(
-      <text key={`delta-${i}`} x={cx} y={58} fill={delta > 0 ? "#1db954" : "#555"}
-        fontSize={10} textAnchor="middle">{dsign}{minutesLabel(Math.abs(Math.round(delta)))}</text>
-    );
-    // Peak/low pill
-    if (isPeak || isLow) {
-      bars.push(
-        <text key={`tag-${i}`} x={cx} y={BAR_BOT + 14} fill={isPeak ? "var(--green)" : "#444"}
-          fontSize={9} textAnchor="middle">{isPeak ? "peak" : "low"}</text>
-      );
+    // Cumulative box thresholds per year (oldest first) so each box in the bottom-up
+    // fill can be attributed to the year its minutes actually came from.
+    let acc = 0;
+    const yearRanges = years.map(yr => {
+      const yrBoxes = Math.round(((minutesByDowYear.get(`${dow}-${yr}`) ?? 0) / 60) / unitHours);
+      const from = acc;
+      acc += yrBoxes;
+      return { yr, from, to: acc };
+    });
+    function yearOf(n: number): number {
+      for (const r of yearRanges) if (n < r.to) return r.yr;
+      return years[years.length - 1] ?? new Date().getFullYear();
     }
-  }
-
-  // Footer
-  bars.push(
-    <text key="footer" x={W - 20} y={H - 6} fill="#3a3a3a" fontSize={10} textAnchor="end">
-      {minutesLabel(total)} total · spread {minutesLabel(spread)}
-    </text>
-  );
-
-  // Tooltip
-  const tooltipEl: JSX.Element[] = [];
-  if (hov !== null) {
-    const hit = segHits.find(s => s.dow === hov.dow && s.seg === hov.seg);
-    if (hit) {
-      const TW = 90, TH = 32, PAD = 6;
-      let tx = hit.cx - TW / 2;
-      if (tx < PAD) tx = PAD;
-      if (tx + TW > W - PAD) tx = W - PAD - TW;
-      let ty = hit.segMidY - TH / 2;
-      if (ty < TEXT_H) ty = TEXT_H;
-      if (ty + TH > BAR_BOT) ty = BAR_BOT - TH;
-      tooltipEl.push(
-        <g key="tooltip" pointerEvents="none">
-          <rect x={tx} y={ty} width={TW} height={TH} rx={4} ry={4} fill="#1a1a1a" stroke="#333" strokeWidth={1} />
-          <text x={tx + TW / 2} y={ty + 12} fill="#aaa" fontSize={10} textAnchor="middle">{hit.label}</text>
-          <text x={tx + TW / 2} y={ty + 24} fill="#fff" fontSize={11} fontWeight={700} textAnchor="middle">{minutesLabel(hit.minutes)}</text>
-        </g>
+    for (let n = 0; n < rows * DWG_COLS; n++) {
+      const row = rows - 1 - Math.floor(n / DWG_COLS), col = n % DWG_COLS;
+      const x = lx + col * step, y = padT + row * step;
+      const isFilled = n < filled;
+      const yr = isFilled ? yearOf(n) : -1;
+      const yearIdx = years.indexOf(yr);
+      const fill = isFilled ? atdwScheme(dow, yearIdx, years.length) : "rgba(255,255,255,0.05)";
+      els.push(
+        <rect key={`${dow}-${n}`} x={x} y={y} width={box} height={box} rx={rx} fill={fill}
+          onMouseEnter={isFilled ? (e => setHover({ x: e.clientX, y: e.clientY, label: `${yr}`, sub: `${DOW_LABELS[dow]} · box ${n + 1} of ${filled} (~${unitHours.toFixed(1)}h/box)` })) : undefined}
+          onMouseMove={isFilled ? (e => setHover(hv => hv && { ...hv, x: e.clientX, y: e.clientY })) : undefined}
+          onMouseLeave={isFilled ? (() => setHover(null)) : undefined} />
       );
     }
   }
 
   return (
-    <div ref={ref} style={{ flex: 1, minHeight: 0 }}>
+    <div ref={ref} style={{ flex: 1, minHeight: 0, position: "relative" }}>
       {W > 0 && H > 0 && (
         <svg width={W} height={H} style={{ display: "block" }}>
-          {bars}
-          {hitAreas}
-          {tooltipEl}
+          <g transform={`translate(${startX},${startY})`}>{els}</g>
         </svg>
+      )}
+      {hover && (
+        <div style={{
+          position: "fixed", left: hover.x + 14, top: hover.y + 14, zIndex: 1000,
+          pointerEvents: "none", background: "#1e1e1e", border: "1px solid #2a2a2a",
+          borderRadius: 8, padding: "6px 10px", boxShadow: "0 4px 16px rgba(0,0,0,0.4)",
+        }}>
+          <div style={{ color: "#fff", fontSize: 12, fontWeight: 600 }}>{hover.label}</div>
+          <div style={{ color: "#999", fontSize: 11, marginTop: 2 }}>{hover.sub}</div>
+        </div>
       )}
     </div>
   );
@@ -1800,13 +1871,16 @@ export function TimeTab() {
           ) : mode === "Month" ? (
             <DayOfWeekPartGrid minutes={data.minutes_by_dow} parts={data.day_parts} heatmapAll={data.heatmap_all} year={currentYear} />
           ) : (
-            <DayOfWeekBars minutes={data.minutes_by_dow} parts={data.day_parts} />
+            <DayOfWeekAllTimeGrid days={data.heatmap_all} />
           )}
         </div>
       </div>
 
       {/* Daypart flow modal */}
-      {flowOpen && data.daypart_flow.days.length > 0 && (
+      {flowOpen && mode === "All Time" && (data.daypart_flow_monthly?.months?.length ?? 0) > 0 && (
+        <DaypartFlowMonthlyModal data={data.daypart_flow_monthly} onClose={() => setFlowOpen(false)} />
+      )}
+      {flowOpen && mode !== "All Time" && data.daypart_flow.days.length > 0 && (
         <DaypartFlowModal data={data.daypart_flow} onClose={() => setFlowOpen(false)} />
       )}
     </div>

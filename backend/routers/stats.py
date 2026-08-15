@@ -64,6 +64,25 @@ def _build_daypart_flow(entries: list[dict], n_days: int = 60) -> dict:
         "max_hour": max((max(row) for row in hours), default=0),
     }
 
+def _build_daypart_flow_monthly(entries: list[dict]) -> dict:
+    valid = [e for e in entries if e.get("played_at")]
+    if not valid:
+        return {"months": [], "hours": [], "minutes": []}
+    by_month: dict[tuple[int, int], dict] = {}
+    for entry in valid:
+        dt = _parse_dt(entry["played_at"])
+        key = (dt.year, dt.month)
+        bucket = by_month.setdefault(key, {"hours": [0] * 24, "minutes": [0.0] * 24})
+        bucket["hours"][dt.hour] += 1
+        bucket["minutes"][dt.hour] += entry.get("duration_ms", 0) / 60000
+    keys = sorted(by_month.keys())
+    return {
+        "months":  [{"year": y, "month": m} for y, m in keys],
+        "hours":   [by_month[k]["hours"] for k in keys],
+        "minutes": [by_month[k]["minutes"] for k in keys],
+    }
+
+
 router = APIRouter(prefix="/api/stats", tags=["stats"])
 
 
@@ -202,6 +221,7 @@ def get_time(mode: str = Query("Year"), month_offset: int = Query(0)):
         "minutes_by_dow": time_payload["minutes_by_dow"],
         "day_parts":     _ser_parts(time_payload["day_parts"]),
         "daypart_flow":  _build_daypart_flow(flow_entries),
+        "daypart_flow_monthly": _build_daypart_flow_monthly(log),
     }
 
 
