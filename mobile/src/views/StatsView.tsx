@@ -1,6 +1,12 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "../api/client";
+import { type TimeMode, type TimePayload } from "./stats/time/helpers";
+import { AllTimeMonthGrid } from "./stats/time/AllTimeMonthGrid";
+import { YearGrid } from "./stats/time/YearGrid";
+import { MonthHeatmap } from "./stats/time/MonthHeatmap";
+import { DaypartWaffleClock } from "./stats/time/Daypart";
+import { DayOfWeekAllTimeGrid, DayOfWeekHourGrid, DayOfWeekPartGrid } from "./stats/time/DayOfWeekGrids";
 
 // ─── Shared types & helpers ───────────────────────────────────────────────────
 
@@ -36,6 +42,19 @@ function dayIndex(d: Date, weekStart: Date): number {
   const a = new Date(d.getFullYear(), d.getMonth(), d.getDate());
   const b = new Date(weekStart.getFullYear(), weekStart.getMonth(), weekStart.getDate());
   return Math.round((a.getTime() - b.getTime()) / 86400000);
+}
+
+function useContainerSize(ref: React.RefObject<HTMLDivElement | null>) {
+  const [size, setSize] = useState({ w: 0, h: 0 });
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const ro = new ResizeObserver(([e]) => setSize({ w: e.contentRect.width, h: e.contentRect.height }));
+    ro.observe(el);
+    setSize({ w: el.clientWidth, h: el.clientHeight });
+    return () => ro.disconnect();
+  }, []);
+  return size;
 }
 
 function fmtDuration(minutes: number): string {
@@ -731,261 +750,111 @@ function TrendsPanel() {
   );
 }
 
-// ─── Time: constants & helpers ───────────────────────────────────────────────
+// ─── TimeTabMobile ────────────────────────────────────────────────────────────
 
-interface DayPart { label: string; minutes: number; }
-interface DaypartFlow { days: string[]; hours: number[][]; centers: (number | null)[]; max_hour: number; }
-interface TimePayload {
-  minutes_by_dow: number[];
-  day_parts: DayPart[][];
-  daypart_flow: DaypartFlow;
-}
-
-const DAYPART_META: [number, number, string, string][] = [
-  [0,  5,  "#7f8cff", "Late"],
-  [5,  12, "#4ecdc4", "Morning"],
-  [12, 17, "#ffd93d", "Day"],
-  [17, 22, "#ff8cc8", "Evening"],
-  [22, 24, "#a78bfa", "Night"],
-];
-const DOW_LABELS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-const DAY_COLORS: [string, string][] = [
-  ["#f87171", "#450a0a"], ["#fb923c", "#431407"], ["#facc15", "#422006"],
-  ["#4ade80", "#052e16"], ["#60a5fa", "#0c1a3a"], ["#818cf8", "#1e1b4b"], ["#c084fc", "#2e1065"],
-];
-
-function useContainerSize(ref: React.RefObject<HTMLDivElement | null>) {
-  const [size, setSize] = useState({ w: 0, h: 0 });
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const ro = new ResizeObserver(([e]) => setSize({ w: e.contentRect.width, h: e.contentRect.height }));
-    ro.observe(el);
-    setSize({ w: el.clientWidth, h: el.clientHeight });
-    return () => ro.disconnect();
-  }, []);
-  return size;
-}
-
-function hourColor(h: number): string {
-  for (const [s, e, c] of DAYPART_META) if (h >= s && h < e) return c;
-  return "#888";
-}
-
-function minsLabel(m: number): string {
-  const h = Math.floor(m / 60), r = Math.round(m % 60);
-  return h ? `${h}h ${r}m` : `${r}m`;
-}
-
-function minsLabelShort(m: number): string {
-  const h = Math.floor(m / 60), r = Math.round(m % 60);
-  if (h >= 10) return `${h}h`;
-  return h ? `${h}h ${r}m` : `${r}m`;
-}
-
-function fmtHourRange(h: number): string {
-  const fmt = (x: number) => {
-    x = ((x % 24) + 24) % 24;
-    if (x === 0) return "12am";
-    if (x === 12) return "12pm";
-    return x < 12 ? `${x}am` : `${x - 12}pm`;
-  };
-  return `${fmt(h)}–${fmt(h + 1)}`;
-}
-
-// ─── Time: DaypartClock ───────────────────────────────────────────────────────
-
-function DaypartClockMobile({ data }: { data: DaypartFlow }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const { w: W, h: H } = useContainerSize(ref);
-  const [tappedHour, setTappedHour] = useState<number | null>(null);
-
-  const totals = Array(24).fill(0);
-  for (const row of data.hours) row.forEach((c, h) => { totals[h] += c; });
-  const maxTotal = Math.max(...totals, 1);
-  const peakH = totals.indexOf(Math.max(...totals));
-  const grandTotal = totals.reduce((a, b) => a + b, 0) || 1;
-
-  const INFO_H = 44;
-  const rMax = Math.max(42, Math.min(W / 2 - 24, H - INFO_H - 48));
-  const rMin = rMax * 0.34;
-  const yBar = H - INFO_H;
-  const cy = Math.max(rMax + 38, (yBar + rMax + 24) / 2);
-  const cx = W / 2;
-  const toRad = (deg: number) => deg * Math.PI / 180;
-
-  function arcPath(qtStart: number, r: number): string {
-    const qtEnd = qtStart - 6;
-    const cos = Math.cos, sin = Math.sin;
-    const ix1 = cx + rMin * cos(toRad(qtStart)), iy1 = cy - rMin * sin(toRad(qtStart));
-    const ox1 = cx + r    * cos(toRad(qtStart)), oy1 = cy - r    * sin(toRad(qtStart));
-    const ix2 = cx + rMin * cos(toRad(qtEnd)),   iy2 = cy - rMin * sin(toRad(qtEnd));
-    const ox2 = cx + r    * cos(toRad(qtEnd)),   oy2 = cy - r    * sin(toRad(qtEnd));
-    return `M ${ix1} ${iy1} L ${ox1} ${oy1} A ${r} ${r} 0 0 1 ${ox2} ${oy2} L ${ix2} ${iy2} A ${rMin} ${rMin} 0 0 0 ${ix1} ${iy1} Z`;
-  }
-
-  function labelPos(qtAngle: number, radius: number): [number, number] {
-    return [cx + radius * Math.cos(toRad(qtAngle)), cy - radius * Math.sin(toRad(qtAngle))];
-  }
-
-  function getHourAt(mx: number, my: number): number | null {
-    const dx = mx - cx, dy = -(my - cy);
-    const dist = Math.sqrt(dx * dx + dy * dy);
-    if (dist < rMin * 0.9 || dist > rMax * 1.1) return null;
-    const angle = ((Math.atan2(dy, dx) * 180 / Math.PI) + 360) % 360;
-    const hAdj = 18 - (angle - 90) / 7.5;
-    return Math.round(hAdj < 18 ? hAdj + 24 : hAdj) % 24;
-  }
-
-  function handleTap(e: React.MouseEvent<SVGSVGElement>) {
-    const rect = (e.currentTarget as SVGSVGElement).getBoundingClientRect();
-    const h = getHourAt(e.clientX - rect.left, e.clientY - rect.top);
-    if (h !== null && totals[h] > 0) setTappedHour(prev => prev === h ? null : h);
-  }
-
-  const arcs: React.ReactNode[] = [];
-  for (let h = 0; h < 24; h++) {
-    const frac = totals[h] / maxTotal;
-    if (frac === 0) continue;
-    const hAdj = h >= 6 ? h : h + 24;
-    const qtStart = 90 + (18 - hAdj) * 7.5;
-    const r = rMin + (rMax - rMin) * frac;
-    const isTapped = h === tappedHour;
-    arcs.push(
-      <path key={h} d={arcPath(qtStart, r)} fill={hourColor(h)}
-        fillOpacity={isTapped ? 1 : (55 + 190 * frac) / 255}
-        stroke={isTapped ? "rgba(255,255,255,0.8)" : "none"} strokeWidth={0.8} />
-    );
-  }
-
-  const lp6p = labelPos(90, rMax + 14), lp12p = labelPos(135, rMax + 14), lp12a = labelPos(45, rMax + 14);
-
-  const pillW = 46, pillGap = 8, dotD = 8, pillH = 20;
-  const xPills = (W + 96) / 2 - (DAYPART_META.length * pillW + (DAYPART_META.length - 1) * pillGap) / 2;
-  const displayH = tappedHour ?? peakH;
-
+function TimeSecLabel({ text }: { text: string }) {
   return (
-    <div ref={ref} style={{ flex: 1, minHeight: 0 }}>
-      {W > 0 && H > 0 && (
-        <svg width={W} height={H} style={{ display: "block", WebkitTapHighlightColor: "transparent" } as React.CSSProperties}
-          onClick={handleTap}>
-          <path d={`M ${cx - rMax} ${cy} A ${rMax} ${rMax} 0 0 1 ${cx + rMax} ${cy}`} fill="none" stroke="#2c2c2c" strokeWidth={1} />
-          {arcs}
-          <line x1={cx - rMax} y1={cy} x2={cx + rMax} y2={cy} stroke="#404040" strokeWidth={1} />
-          <text x={lp6p[0]}  y={lp6p[1]  + 4} fill="#666" fontSize={9} textAnchor="middle">6p</text>
-          <text x={lp12p[0]} y={lp12p[1] + 4} fill="#666" fontSize={9} textAnchor="middle">12p</text>
-          <text x={lp12a[0]} y={lp12a[1] + 4} fill="#666" fontSize={9} textAnchor="middle">12a</text>
-          <text x={cx - rMax - 4} y={cy + 4} fill="#666" fontSize={9} textAnchor="end">6a</text>
-          <text x={cx + rMax + 4} y={cy + 4} fill="#666" fontSize={9} textAnchor="start">6a</text>
-          {tappedHour !== null && (
-            <text x={cx} y={cy + 18} fill="#fff" fontSize={11} fontWeight={700} textAnchor="middle">{fmtHourRange(tappedHour)}</text>
-          )}
-          <circle cx={cx} cy={cy} r={8} fill={hourColor(peakH)} />
-          <text x={16} y={yBar + 13} fill="#666" fontSize={10}>{tappedHour === null ? "peak hour" : "tapped"}</text>
-          <text x={16} y={yBar + 33} fill={hourColor(displayH)} fontSize={20} fontWeight={700}>{String(displayH).padStart(2, "0")}:00</text>
-          {DAYPART_META.map(([s, e, col, lbl], i) => {
-            const pct = Math.round(100 * totals.slice(s, e).reduce((a, b) => a + b, 0) / grandTotal);
-            const xi = xPills + i * (pillW + pillGap), yi = yBar + (INFO_H - pillH) / 2 - 2;
-            return (
-              <g key={lbl}>
-                <circle cx={xi + dotD / 2} cy={yi + pillH / 2} r={dotD / 2} fill={col} />
-                <text x={xi + dotD + 3} y={yi + pillH / 2} fill="#666" fontSize={10} dominantBaseline="middle">{pct}%</text>
-              </g>
-            );
-          })}
-        </svg>
-      )}
+    <div style={{ color: "#555", fontSize: 10, fontWeight: 700, letterSpacing: 2, marginBottom: 6 }}>
+      {text}
     </div>
   );
 }
 
-// ─── Time: DayOfWeekBars ──────────────────────────────────────────────────────
+function TimeTabMobile() {
+  const [mode, setMode] = useState<TimeMode>("Year");
+  const [monthOffset, setMonthOffset] = useState(0);
 
-function DayOfWeekBarsMobile({ minutes }: { minutes: number[] }) {
-  const ref = useRef<HTMLDivElement>(null);
-  const { w: W, h: H } = useContainerSize(ref);
-  const [tapped, setTapped] = useState<number | null>(null);
+  const modeParam = mode === "All Time" ? "All Time" : mode;
 
-  if (!minutes.some(m => m > 0)) return <div ref={ref} style={{ flex: 1, minHeight: 0 }} />;
-
-  const total = minutes.reduce((a, b) => a + b, 0);
-  const avg = total / 7;
-  const maxMin = Math.max(...minutes, 1);
-  const spread = Math.max(...minutes) - Math.min(...minutes);
-  const peakIdx = minutes.indexOf(Math.max(...minutes));
-
-  const TEXT_H = 60, BAR_BOT = H - 28, barArea = BAR_BOT - TEXT_H;
-  const colW = (W - 40) / 7;
-  const barW = Math.max(16, colW * 0.52);
-  const avgY = BAR_BOT - barArea * (avg / maxMin);
-
-  const els: React.ReactNode[] = [];
-  els.push(<line key="avg" x1={20} y1={avgY} x2={W - 20} y2={avgY} stroke="#2e2e2e" strokeWidth={1} strokeDasharray="4 4" />);
-  els.push(<text key="avg-lbl" x={W - 4} y={avgY - 2} fill="#3a3a3a" fontSize={9} textAnchor="end">avg</text>);
-
-  for (let i = 0; i < 7; i++) {
-    const mins = minutes[i];
-    const cxc = 20 + (i + 0.5) * colW;
-    const isPeak = i === peakIdx;
-    const isLow = mins === Math.min(...minutes);
-    const isTapped = tapped === i;
-    const [cTop, cBot] = DAY_COLORS[i];
-    const bh = mins > 0 ? Math.max(4, barArea * (mins / maxMin)) : 0;
-    const barTop = BAR_BOT - bh;
-    const gradId = `m-dow-${i}`;
-
-    els.push(
-      <defs key={`d-${i}`}>
-        <linearGradient id={gradId} x1={String(cxc)} y1={String(barTop)} x2={String(cxc)} y2={String(BAR_BOT)} gradientUnits="userSpaceOnUse">
-          <stop offset="0" stopColor={cTop} stopOpacity={isPeak || isTapped ? 1 : 0.6} />
-          <stop offset="1" stopColor={cBot} stopOpacity={1} />
-        </linearGradient>
-      </defs>
-    );
-    if (mins > 0) {
-      els.push(<rect key={`b-${i}`} x={cxc - barW / 2} y={barTop} width={barW} height={bh} rx={6} ry={6} fill={`url(#${gradId})`} />);
-      if (isPeak) els.push(<rect key={`cap-${i}`} x={cxc - barW / 2} y={barTop} width={barW} height={4} rx={3} ry={3} fill={cTop} />);
-    }
-    els.push(<text key={`dl-${i}`} x={cxc} y={22} fill={isPeak || isTapped ? "#fff" : "#aaa"} fontSize={11} fontWeight={700} textAnchor="middle">{DOW_LABELS[i]}</text>);
-    els.push(<text key={`dur-${i}`} x={cxc} y={38} fill="#fff" fontSize={13} fontWeight={700} textAnchor="middle">{minsLabelShort(mins)}</text>);
-    const delta = mins - avg;
-    els.push(<text key={`dt-${i}`} x={cxc} y={53} fill={delta > 0 ? "#1db954" : "#555"} fontSize={9} textAnchor="middle">{delta >= 0 ? "+" : "−"}{minsLabelShort(Math.abs(Math.round(delta)))}</text>);
-    if (isPeak || isLow) els.push(<text key={`tag-${i}`} x={cxc} y={BAR_BOT + 14} fill={isPeak ? "var(--green, #1db954)" : "#444"} fontSize={9} textAnchor="middle">{isPeak ? "peak" : "low"}</text>);
-    els.push(<rect key={`hit-${i}`} x={20 + i * colW} y={0} width={colW} height={H} fill="transparent" onClick={() => setTapped(p => p === i ? null : i)} style={{ WebkitTapHighlightColor: "transparent" } as React.CSSProperties} />);
-  }
-
-  els.push(<text key="footer" x={W - 20} y={H - 6} fill="#3a3a3a" fontSize={10} textAnchor="end">{minsLabel(total)} total · spread {minsLabel(spread)}</text>);
-
-  return (
-    <div ref={ref} style={{ flex: 1, minHeight: 0 }}>
-      {W > 0 && H > 0 && <svg width={W} height={H} style={{ display: "block" }}>{els}</svg>}
-    </div>
-  );
-}
-
-// ─── TimePanel ────────────────────────────────────────────────────────────────
-
-function TimePanel() {
   const { data, isLoading } = useQuery<TimePayload>({
-    queryKey: ["stats-time-mobile"],
-    queryFn: () => api.get("/api/stats/time?mode=All+Time"),
-    staleTime: 300_000,
+    queryKey: ["stats-time-mobile", modeParam, monthOffset],
+    queryFn: () => api.get(`/api/stats/time?mode=${encodeURIComponent(modeParam)}&month_offset=${monthOffset}`),
+    staleTime: 60_000,
   });
+
+  const handleModeChange = useCallback((m: TimeMode) => {
+    setMode(m);
+    setMonthOffset(0);
+  }, []);
+
+  const currentYear = new Date().getFullYear();
 
   if (isLoading || !data) {
     return <div style={{ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", color: "#444", fontSize: 13 }}>Loading…</div>;
   }
 
+  const heatmapDays = mode === "Year" ? data.heatmap_all : mode === "All Time" ? data.heatmap_all : data.heatmap;
+  const heatLabel = mode === "All Time" ? "HEATMAP · ALL TIME" : mode === "Year" ? "HEATMAP · YEAR" : "HEATMAP";
+
+  const pillBtn = (active: boolean): React.CSSProperties => ({
+    padding: "5px 12px", borderRadius: 20,
+    border: active ? "1px solid var(--green, #1db954)" : "1px solid #2a2a2a",
+    background: "transparent",
+    color: active ? "var(--green, #1db954)" : "#666",
+    fontSize: 12, fontWeight: active ? 700 : 400, cursor: "pointer",
+    WebkitTapHighlightColor: "transparent",
+  } as React.CSSProperties);
+
+  const pagerBtn = (enabled: boolean): React.CSSProperties => ({
+    background: "none", border: "none", color: enabled ? "#666" : "#333",
+    fontSize: 18, cursor: enabled ? "pointer" : "default", padding: "0 6px",
+    WebkitTapHighlightColor: "transparent",
+  } as React.CSSProperties);
+
+  const card = (label: string, body: React.ReactNode) => (
+    <div style={{ height: 260, flexShrink: 0, display: "flex", flexDirection: "column", background: "#141414", borderRadius: 16, overflow: "hidden" }}>
+      <div style={{ padding: "10px 12px 6px" }}>
+        <TimeSecLabel text={label} />
+      </div>
+      <div style={{ flex: 1, minHeight: 0, padding: "0 6px 6px", display: "flex", flexDirection: "column" }}>
+        {body}
+      </div>
+    </div>
+  );
+
   return (
     <div style={{ flex: 1, minHeight: 0, display: "flex", flexDirection: "column", overflow: "hidden" }}>
-      <div style={{ flex: 1, minHeight: 0, display: "flex", flexDirection: "column", padding: "8px 12px 4px" }}>
-        <div style={{ fontSize: 10, fontWeight: 700, color: "#555", letterSpacing: 2, marginBottom: 4 }}>WHEN YOU LISTEN</div>
-        <DaypartClockMobile data={data.daypart_flow} />
+      {/* Mode toggle + pager */}
+      <div style={{ display: "flex", alignItems: "center", gap: 6, padding: "10px 12px 4px", flexShrink: 0, flexWrap: "wrap" }}>
+        {(["Month", "Year", "All Time"] as TimeMode[]).map(m => (
+          <button key={m} onClick={() => handleModeChange(m)} style={pillBtn(mode === m)}>{m}</button>
+        ))}
+        {(mode === "Month" || mode === "Year") && (
+          <>
+            <div style={{ width: 4 }} />
+            <button onClick={() => mode === "Month" && setMonthOffset(o => o + 1)}
+              disabled={mode === "Month" ? !data.has_older : true}
+              style={pagerBtn(mode === "Month" && data.has_older)}>‹</button>
+            <span style={{ color: "#fff", fontSize: 12, fontWeight: 600, minWidth: 70, textAlign: "center" }}>
+              {data.label}
+            </span>
+            <button onClick={() => mode === "Month" && setMonthOffset(o => Math.max(0, o - 1))}
+              disabled={mode === "Month" ? !data.has_newer : true}
+              style={pagerBtn(mode === "Month" && data.has_newer)}>›</button>
+          </>
+        )}
       </div>
-      <div style={{ height: 1, background: "#1a1a1a", flexShrink: 0 }} />
-      <div style={{ flex: 1, minHeight: 0, display: "flex", flexDirection: "column", padding: "8px 12px 4px" }}>
-        <div style={{ fontSize: 10, fontWeight: 700, color: "#555", letterSpacing: 2, marginBottom: 4 }}>BY DAY OF WEEK</div>
-        <DayOfWeekBarsMobile minutes={data.minutes_by_dow} />
+
+      <div style={{ flex: 1, minHeight: 0, overflowY: "auto", WebkitOverflowScrolling: "touch", padding: "8px 12px 16px", display: "flex", flexDirection: "column", gap: 12 } as React.CSSProperties}>
+        {card(heatLabel, <>
+          {mode === "All Time" && <AllTimeMonthGrid days={heatmapDays} />}
+          {mode === "Year" && <YearGrid days={heatmapDays} year={currentYear} />}
+          {mode === "Month" && <MonthHeatmap days={heatmapDays} />}
+        </>)}
+
+        {card("DAYPART CLOCK · HOUR DISTRIBUTION",
+          <DaypartWaffleClock data={data.daypart_flow} />
+        )}
+
+        {card("BY DAY · DAY OF WEEK BREAKDOWN", (
+          mode === "Year" ? (
+            <DayOfWeekHourGrid days={data.heatmap_all} year={currentYear} />
+          ) : mode === "Month" ? (
+            <DayOfWeekPartGrid minutes={data.minutes_by_dow} parts={data.day_parts} heatmapAll={data.heatmap_all} year={currentYear} />
+          ) : (
+            <DayOfWeekAllTimeGrid days={data.heatmap_all} />
+          )
+        ))}
       </div>
     </div>
   );
@@ -1025,7 +894,7 @@ export function StatsView() {
 
       {tab === "sessions" && <SessionsPanel />}
       {tab === "periods" && <PeriodsPanel />}
-      {tab === "time" && <TimePanel />}
+      {tab === "time" && <TimeTabMobile />}
       {tab === "trends" && <TrendsPanel />}
       {tab === "genres" && (
         <iframe
