@@ -1,5 +1,6 @@
 import { useState, useRef, type JSX } from "react";
 import { useSize } from "../../../hooks/useSize";
+import { useTapDismiss } from "../../../hooks/useTapDismiss";
 import { HoverTooltip } from "../../../components/HoverTooltip";
 import { type DayEntry, type TapHover, RAINBOW_HUES, MONTH_NAMES, monthHeatColor, minutesLabel, daysInMonth } from "./helpers";
 
@@ -55,6 +56,7 @@ export function YearGrid({ days, year }: { days: DayEntry[]; year: number }) {
   const { w, h } = useSize(ref);
   const [selectedMonth, setSelectedMonth] = useState<number | null>(null);
   const [hover, setHover] = useState<TapHover | null>(null);
+  useTapDismiss(ref, () => setHover(null));
 
   const yearDays = days.filter(d => new Date(d.date + "T00:00:00").getFullYear() === year);
   const byDay = new Map(yearDays.map(d => {
@@ -97,7 +99,14 @@ export function YearGrid({ days, year }: { days: DayEntry[]; year: number }) {
   const startY = YM_PAD + Math.max(0, Math.floor((availH - totalH) / 2));
   const fontSize = Math.max(6, Math.min(9, Math.floor(cell * 0.4)));
 
+  // Two passes: decorative cells+labels first, then invisible hit-target rects on
+  // top, each sized to the full `step` pitch (not just the visible `cell`) so the
+  // tappable area swallows the gap around it instead of leaving a dead strip that's
+  // hard to land a finger on. Has to be a separate top layer, not baked into the
+  // visible rect's own size, since siblings can't "catch" a click for an element
+  // painted over them -- whichever element is topmost at a point is what receives it.
   const els: JSX.Element[] = [];
+  const hitEls: JSX.Element[] = [];
   cells.forEach((c, idx) => {
     const col = idx % cols, row = Math.floor(idx / cols);
     const x = startX + col * step, y = startY + row * step;
@@ -110,8 +119,11 @@ export function YearGrid({ days, year }: { days: DayEntry[]; year: number }) {
     const key = `${c.mo}-${c.day}`;
     els.push(
       <rect key={key} x={x} y={y} width={cell} height={cell} rx={rx} ry={rx} fill={fill}
-        opacity={dimmed ? 0.16 : 1}
-        onClick={e => setHover(hv => hv?.key === key ? null : { x: e.clientX, y: e.clientY, label: dateLabel, sub, key })} />
+        opacity={dimmed ? 0.16 : 1} />
+    );
+    hitEls.push(
+      <rect key={`hit-${key}`} x={x} y={y} width={step} height={step} fill="transparent"
+        onClick={e => { e.stopPropagation(); setHover(hv => hv?.key === key ? null : { x: e.clientX, y: e.clientY, label: dateLabel, sub, key }); }} />
     );
     if (c.day === 1) {
       const moLabel = new Date(year, c.mo - 1, 1).toLocaleString("en-US", { month: "short" });
@@ -138,8 +150,9 @@ export function YearGrid({ days, year }: { days: DayEntry[]; year: number }) {
     <div style={{ flex: 1, minHeight: 0, display: "flex", flexDirection: "column" }}>
       <div ref={ref} style={{ flex: 1, minHeight: 0 }}>
         {w > 0 && h > 0 && (
-          <svg width={w} height={h} style={{ display: "block" }}>
+          <svg width={w} height={h} style={{ display: "block" }} onClick={() => setHover(null)}>
             {els}
+            {hitEls}
           </svg>
         )}
       </div>

@@ -1,5 +1,6 @@
 import { useState, useRef, type JSX } from "react";
 import { useSize } from "../../../hooks/useSize";
+import { useTapDismiss } from "../../../hooks/useTapDismiss";
 import { hexToRgb, type DaypartFlow } from "./helpers";
 
 const DAYPART_META: [number, number, string, string][] = [
@@ -49,6 +50,7 @@ export function DaypartWaffleClock({ data }: { data: DaypartFlow }) {
   const ref = useRef<HTMLDivElement>(null);
   const { w: W, h: H } = useSize(ref);
   const [selectedHour, setSelectedHour] = useState<number | null>(null);
+  useTapDismiss(ref, () => setSelectedHour(null));
 
   const totals = Array(24).fill(0);
   for (const row of data.hours) row.forEach((c, h) => { totals[h] += c; });
@@ -146,6 +148,7 @@ export function DaypartWaffleClock({ data }: { data: DaypartFlow }) {
             const mx = e.clientX - rect.left, my = e.clientY - rect.top;
             const h = getHourAt(mx, my);
             if (h !== null && totals[h] > 0) setSelectedHour(cur => cur === h ? null : h);
+            else setSelectedHour(null);
           }}>
 
           <path d={`M ${cx - rMax} ${cy} A ${rMax} ${rMax} 0 0 1 ${cx + rMax} ${cy}`}

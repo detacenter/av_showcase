@@ -1,5 +1,6 @@
 import { useState, useRef, type JSX } from "react";
 import { useSize } from "../../../hooks/useSize";
+import { useTapDismiss } from "../../../hooks/useTapDismiss";
 import { HoverTooltip } from "../../../components/HoverTooltip";
 import { type DayEntry, type DayPart, type TapHover, DOW_LABELS, MONTH_NAMES, hexToRgb, minutesLabel } from "./helpers";
 
@@ -71,6 +72,7 @@ export function DayOfWeekAllTimeGrid({ days }: { days: DayEntry[] }) {
   const ref = useRef<HTMLDivElement>(null);
   const { w: W, h: H } = useSize(ref);
   const [hover, setHover] = useState<TapHover | null>(null);
+  useTapDismiss(ref, () => setHover(null));
 
   const { filledMinutesByDow, minutesByDowYear, years } = allTimeDowBreakdown(days);
   const hoursByDow = filledMinutesByDow.map(m => Math.floor(m / 60));
@@ -99,6 +101,11 @@ export function DayOfWeekAllTimeGrid({ days }: { days: DayEntry[] }) {
     <line key="avg-line" x1={0} y1={avgY} x2={totalW} y2={avgY} stroke="#3a3a3a" strokeWidth={1} strokeDasharray="4 4" />,
     <text key="avg-lbl" x={totalW} y={avgY - 4} fill="#555" fontSize={Math.max(9, labelFontSize * 0.8)} textAnchor="end">avg</text>,
   ];
+  // Invisible hit-target rects, sized to the full box `step` (not just the visible
+  // `box`) and painted after (on top of) the decorative cells, so the tappable area
+  // swallows the gap around each box instead of leaving a dead strip a finger can
+  // easily miss.
+  const hitEls: JSX.Element[] = [];
   for (let dow = 0; dow < 7; dow++) {
     const lx = dow * (laneW + laneGap);
     const filled = boxesByDow[dow];
@@ -132,18 +139,21 @@ export function DayOfWeekAllTimeGrid({ days }: { days: DayEntry[] }) {
       const yearIdx = years.indexOf(yr);
       const fill = isFilled ? atdwScheme(dow, yearIdx, years.length) : "rgba(255,255,255,0.05)";
       const key = `${dow}-${n}`;
-      els.push(
-        <rect key={key} x={x} y={y} width={box} height={box} rx={rx} fill={fill}
-          onClick={isFilled ? (e => setHover(hv => hv?.key === key ? null : { x: e.clientX, y: e.clientY, label: `${yr}`, sub: `${DOW_LABELS[dow]} · box ${n + 1} of ${filled} (~${unitHours.toFixed(1)}h/box)`, key })) : undefined} />
-      );
+      els.push(<rect key={key} x={x} y={y} width={box} height={box} rx={rx} fill={fill} />);
+      if (isFilled) {
+        hitEls.push(
+          <rect key={`hit-${key}`} x={x - gap / 2} y={y - gap / 2} width={step} height={step} fill="transparent"
+            onClick={e => { e.stopPropagation(); setHover(hv => hv?.key === key ? null : { x: e.clientX, y: e.clientY, label: `${yr}`, sub: `${DOW_LABELS[dow]} · box ${n + 1} of ${filled} (~${unitHours.toFixed(1)}h/box)`, key }); }} />
+        );
+      }
     }
   }
 
   return (
     <div ref={ref} style={{ flex: 1, minHeight: 0, position: "relative" }}>
       {W > 0 && H > 0 && (
-        <svg width={W} height={H} style={{ display: "block" }}>
-          <g transform={`translate(${startX},${startY})`}>{els}</g>
+        <svg width={W} height={H} style={{ display: "block" }} onClick={() => setHover(null)}>
+          <g transform={`translate(${startX},${startY})`}>{els}{hitEls}</g>
         </svg>
       )}
       <HoverTooltip hover={hover} />
@@ -225,6 +235,7 @@ export function DayOfWeekHourGrid({ days, year }: { days: DayEntry[]; year: numb
   const ref = useRef<HTMLDivElement>(null);
   const { w: W, h: H } = useSize(ref);
   const [hover, setHover] = useState<TapHover | null>(null);
+  useTapDismiss(ref, () => setHover(null));
 
   const { CEILING, filledByDow, hoursByDowMonth, lastActiveMonth } = yearHourCeiling(days, year);
 
@@ -259,6 +270,7 @@ export function DayOfWeekHourGrid({ days, year }: { days: DayEntry[]; year: numb
     <line key="avg-line" x1={0} y1={avgY} x2={totalW} y2={avgY} stroke="#3a3a3a" strokeWidth={1} strokeDasharray="4 4" />,
     <text key="avg-lbl" x={totalW} y={avgY - 4} fill="#555" fontSize={Math.max(9, labelFontSize * 0.8)} textAnchor="end">avg</text>,
   ];
+  const hitEls: JSX.Element[] = [];
   for (let dow = 0; dow < 7; dow++) {
     const lx = dow * (laneW + laneGap);
     const filled = filledByDow[dow];
@@ -278,18 +290,21 @@ export function DayOfWeekHourGrid({ days, year }: { days: DayEntry[]; year: numb
       const mi = isFilled ? monthOf(hoursByDowMonth[dow], n) : -1;
       const fill = isFilled ? dwgScheme(dow, mi, lastActiveMonth) : "rgba(255,255,255,0.05)";
       const key = `${dow}-${n}`;
-      els.push(
-        <rect key={key} x={x} y={y} width={box} height={box} rx={rx} fill={fill}
-          onClick={isFilled ? (e => setHover(hv => hv?.key === key ? null : { x: e.clientX, y: e.clientY, label: `${MONTH_NAMES[mi]} ${year}`, sub: `${DOW_LABELS[dow]} · box ${n + 1} of ${filled}`, key })) : undefined} />
-      );
+      els.push(<rect key={key} x={x} y={y} width={box} height={box} rx={rx} fill={fill} />);
+      if (isFilled) {
+        hitEls.push(
+          <rect key={`hit-${key}`} x={x - gap / 2} y={y - gap / 2} width={step} height={step} fill="transparent"
+            onClick={e => { e.stopPropagation(); setHover(hv => hv?.key === key ? null : { x: e.clientX, y: e.clientY, label: `${MONTH_NAMES[mi]} ${year}`, sub: `${DOW_LABELS[dow]} · box ${n + 1} of ${filled}`, key }); }} />
+        );
+      }
     }
   }
 
   return (
     <div ref={ref} style={{ flex: 1, minHeight: 0, position: "relative" }}>
       {W > 0 && H > 0 && (
-        <svg width={W} height={H} style={{ display: "block" }}>
-          <g transform={`translate(${startX},${startY})`}>{els}</g>
+        <svg width={W} height={H} style={{ display: "block" }} onClick={() => setHover(null)}>
+          <g transform={`translate(${startX},${startY})`}>{els}{hitEls}</g>
         </svg>
       )}
       <HoverTooltip hover={hover} />
@@ -309,6 +324,7 @@ export function DayOfWeekPartGrid({ minutes, parts, heatmapAll, year }: { minute
   const ref = useRef<HTMLDivElement>(null);
   const { w: W, h: H } = useSize(ref);
   const [hover, setHover] = useState<TapHover | null>(null);
+  useTapDismiss(ref, () => setHover(null));
 
   const targetRows = Math.ceil(yearHourCeiling(heatmapAll, year).CEILING / DWG_COLS);
   const maxMinutes = Math.max(...minutes, 1);
@@ -364,6 +380,7 @@ export function DayOfWeekPartGrid({ minutes, parts, heatmapAll, year }: { minute
     <line key="avg-line" x1={0} y1={avgY} x2={totalW} y2={avgY} stroke="#3a3a3a" strokeWidth={1} strokeDasharray="4 4" />,
     <text key="avg-lbl" x={totalW} y={avgY - 4} fill="#555" fontSize={Math.max(9, labelFontSize * 0.8)} textAnchor="end">avg</text>,
   ];
+  const hitEls: JSX.Element[] = [];
   for (let dow = 0; dow < 7; dow++) {
     const lx = dow * (laneW + laneGap);
     const filled = filledByDow[dow];
@@ -383,18 +400,21 @@ export function DayOfWeekPartGrid({ minutes, parts, heatmapAll, year }: { minute
       const pi = isFilled ? partOf(unitsByDowPart[dow], n) : -1;
       const fill = isFilled ? dwgScheme(dow, pi, colorDenom) : "rgba(255,255,255,0.05)";
       const key = `${dow}-${n}`;
-      els.push(
-        <rect key={key} x={x} y={y} width={box} height={box} rx={rx} fill={fill}
-          onClick={isFilled ? (e => setHover(hv => hv?.key === key ? null : { x: e.clientX, y: e.clientY, label: parts[dow]?.[pi]?.label ?? DOW_LABELS[dow], sub: `${DOW_LABELS[dow]} · box ${n + 1} of ${filled}`, key })) : undefined} />
-      );
+      els.push(<rect key={key} x={x} y={y} width={box} height={box} rx={rx} fill={fill} />);
+      if (isFilled) {
+        hitEls.push(
+          <rect key={`hit-${key}`} x={x - gap / 2} y={y - gap / 2} width={step} height={step} fill="transparent"
+            onClick={e => { e.stopPropagation(); setHover(hv => hv?.key === key ? null : { x: e.clientX, y: e.clientY, label: parts[dow]?.[pi]?.label ?? DOW_LABELS[dow], sub: `${DOW_LABELS[dow]} · box ${n + 1} of ${filled}`, key }); }} />
+        );
+      }
     }
   }
 
   return (
     <div ref={ref} style={{ flex: 1, minHeight: 0, position: "relative" }}>
       {W > 0 && H > 0 && (
-        <svg width={W} height={H} style={{ display: "block" }}>
-          <g transform={`translate(${startX},${startY})`}>{els}</g>
+        <svg width={W} height={H} style={{ display: "block" }} onClick={() => setHover(null)}>
+          <g transform={`translate(${startX},${startY})`}>{els}{hitEls}</g>
         </svg>
       )}
       <HoverTooltip hover={hover} />

@@ -1,5 +1,6 @@
 import { useState, useRef, type JSX } from "react";
 import { useSize } from "../../../hooks/useSize";
+import { useTapDismiss } from "../../../hooks/useTapDismiss";
 import { HoverTooltip } from "../../../components/HoverTooltip";
 import { type DayEntry, type TapHover, RAINBOW_HUES, MONTH_NAMES, monthHeatColor, minutesLabel } from "./helpers";
 
@@ -13,6 +14,7 @@ export function AllTimeMonthGrid({ days }: { days: DayEntry[] }) {
   const ref = useRef<HTMLDivElement>(null);
   const { w, h } = useSize(ref);
   const [hover, setHover] = useState<TapHover | null>(null);
+  useTapDismiss(ref, () => setHover(null));
 
   if (!days.length) return <div ref={ref} style={{ flex: 1, minHeight: 0 }} />;
 
@@ -38,18 +40,23 @@ export function AllTimeMonthGrid({ days }: { days: DayEntry[] }) {
     ? Math.max(14, Math.min(46, Math.floor(availW / 12) - ATG_GAP, Math.floor(availH / years.length) - ATG_GAP))
     : 30;
   const cell = step;
-  const rowH = cell + ATG_GAP;
+  const pitch = cell + ATG_GAP;
+  const rowH = pitch;
   const gridH = years.length * rowH;
-  const gridW = 12 * (cell + ATG_GAP) - ATG_GAP;
+  const gridW = 12 * pitch - ATG_GAP;
   const startX = ATG_PAD + ATG_ROW_LABEL_W + Math.max(0, Math.floor((availW - gridW) / 2));
   const startY = ATG_PAD + ATG_HEAD_H + Math.max(0, Math.floor((availH - gridH) / 2));
   const fontSize = Math.max(9, Math.min(14, Math.floor(cell * 0.32)));
   const rx = Math.min(6, cell / 5);
 
   const els: JSX.Element[] = MONTH_NAMES.map((name, mi) => (
-    <text key={`mo-${name}`} x={startX + mi * (cell + ATG_GAP) + cell / 2} y={startY - 8}
+    <text key={`mo-${name}`} x={startX + mi * pitch + cell / 2} y={startY - 8}
       fill="#666" fontSize={10} textAnchor="middle">{name}</text>
   ));
+  // Invisible hit-target rects, sized to the full pitch and painted after (on top
+  // of) the decorative cells, so the tappable area swallows the gap between months
+  // instead of leaving a dead strip a finger can easily miss.
+  const hitEls: JSX.Element[] = [];
 
   for (const yr of years) {
     const ri = yr - minYear;
@@ -59,7 +66,7 @@ export function AllTimeMonthGrid({ days }: { days: DayEntry[] }) {
         fill="#888" fontSize={12} fontWeight={700} textAnchor="end">{yr}</text>
     );
     for (let mo = 1; mo <= 12; mo++) {
-      const x = startX + (mo - 1) * (cell + ATG_GAP);
+      const x = startX + (mo - 1) * pitch;
       const isFuture = new Date(yr, mo - 1, 1) > today;
       if (isFuture) {
         els.push(<rect key={`${yr}-${mo}`} x={x} y={y} width={cell} height={cell} rx={rx} ry={rx} fill="rgba(255,255,255,0.035)" />);
@@ -71,8 +78,11 @@ export function AllTimeMonthGrid({ days }: { days: DayEntry[] }) {
       const sub = total > 0 ? minutesLabel(total) : "No listening";
       const key = `${yr}-${mo}`;
       els.push(
-        <rect key={`${yr}-${mo}`} x={x} y={y} width={cell} height={cell} rx={rx} ry={rx} fill={fill}
-          onClick={e => setHover(hv => hv?.key === key ? null : { x: e.clientX, y: e.clientY, label, sub, key })} />
+        <rect key={`${yr}-${mo}`} x={x} y={y} width={cell} height={cell} rx={rx} ry={rx} fill={fill} />
+      );
+      hitEls.push(
+        <rect key={`hit-${yr}-${mo}`} x={x} y={y} width={pitch} height={pitch} fill="transparent"
+          onClick={e => { e.stopPropagation(); setHover(hv => hv?.key === key ? null : { x: e.clientX, y: e.clientY, label, sub, key }); }} />
       );
     }
   }
@@ -81,8 +91,9 @@ export function AllTimeMonthGrid({ days }: { days: DayEntry[] }) {
     <div style={{ flex: 1, minHeight: 0, display: "flex", flexDirection: "column" }}>
       <div ref={ref} style={{ flex: 1, minHeight: 0 }}>
         {w > 0 && h > 0 && (
-          <svg width={w} height={h} style={{ display: "block" }}>
+          <svg width={w} height={h} style={{ display: "block" }} onClick={() => setHover(null)}>
             {els}
+            {hitEls}
           </svg>
         )}
       </div>

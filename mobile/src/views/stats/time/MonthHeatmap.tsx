@@ -1,5 +1,6 @@
 import { useState, useRef, type JSX } from "react";
 import { useSize } from "../../../hooks/useSize";
+import { useTapDismiss } from "../../../hooks/useTapDismiss";
 import { HoverTooltip } from "../../../components/HoverTooltip";
 import { type DayEntry, type TapHover, RAINBOW_HUES, DOW_LABELS, monthHeatColor, minutesLabel, daysInMonth } from "./helpers";
 
@@ -9,6 +10,7 @@ export function MonthHeatmap({ days }: { days: DayEntry[] }) {
   const ref = useRef<HTMLDivElement>(null);
   const { w, h } = useSize(ref);
   const [hover, setHover] = useState<TapHover | null>(null);
+  useTapDismiss(ref, () => setHover(null));
 
   if (!days.length) return <div ref={ref} style={{ flex: 1, minHeight: 0 }} />;
 
@@ -51,6 +53,10 @@ export function MonthHeatmap({ days }: { days: DayEntry[] }) {
         fill="#555" fontSize={9} textAnchor="middle">{lbl}</text>
     )),
   ];
+  // Invisible hit-target rects, sized to the full `step` pitch and painted after
+  // (on top of) everything else, so the tappable area swallows the gap around each
+  // day cell instead of leaving a dead strip a finger can easily miss.
+  const hitEls: JSX.Element[] = [];
   for (let day = 1; day <= lastDay; day++) {
     const slot = dow0 + day - 1;
     const cx = bx + (slot % 7) * step;
@@ -65,20 +71,24 @@ export function MonthHeatmap({ days }: { days: DayEntry[] }) {
     const key = `d-${day}`;
     els.push(
       <rect key={day} x={cx} y={cy} width={cell} height={cell} rx={rx} ry={rx} fill={fill}
-        stroke={isToday ? "rgba(255,255,255,0.8)" : "none"} strokeWidth={isToday ? 1.5 : 0}
-        onClick={e => setHover(hv => hv?.key === key ? null : { x: e.clientX, y: e.clientY, label: dateLabel, sub, key })} />
+        stroke={isToday ? "rgba(255,255,255,0.8)" : "none"} strokeWidth={isToday ? 1.5 : 0} />
     );
     els.push(
       <text key={`n-${day}`} x={cx + cell * 0.17} y={cy + cell * 0.4 + dayFontSize * 0.4} fill={isFuture ? "#444" : "rgba(255,255,255,0.75)"}
         fontSize={dayFontSize} fontWeight={600} style={{ pointerEvents: "none" }}>{day}</text>
+    );
+    hitEls.push(
+      <rect key={`hit-${day}`} x={cx} y={cy} width={step} height={step} fill="transparent"
+        onClick={e => { e.stopPropagation(); setHover(hv => hv?.key === key ? null : { x: e.clientX, y: e.clientY, label: dateLabel, sub, key }); }} />
     );
   }
 
   return (
     <div ref={ref} style={{ flex: 1, minHeight: 0 }}>
       {w > 0 && h > 0 && (
-        <svg width={w} height={h} style={{ display: "block" }}>
+        <svg width={w} height={h} style={{ display: "block" }} onClick={() => setHover(null)}>
           {els}
+          {hitEls}
         </svg>
       )}
       <HoverTooltip hover={hover} />
