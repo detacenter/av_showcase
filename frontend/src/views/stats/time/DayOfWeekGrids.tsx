@@ -82,17 +82,18 @@ export function DayOfWeekAllTimeGrid({ days }: { days: DayEntry[] }) {
   const { filledMinutesByDow, minutesByDowYear, years } = allTimeDowBreakdown(days);
   const hoursByDow = filledMinutesByDow.map(m => Math.floor(m / 60));
   const maxHours = Math.max(...hoursByDow, 1);
-  const unitHours = maxHours / ATDW_TARGET_ROWS;
+  // A fixed number of boxes per lane, the busiest weekday filling it; columns per lane
+  // are then chosen for the biggest squares this panel allows.
+  const capacity = ATDW_TARGET_ROWS * DWG_COLS;
+  const unitHours = maxHours / capacity;
   const boxesByDow = hoursByDow.map(h => Math.round(h / unitHours));
-  const rows = ATDW_TARGET_ROWS;
-
-  const step = W > 0 && H > 0 ? dwgBestStep(W, H, rows) : 10;
+  const { cols, rows, step } = W > 0 && H > 0 ? dwgBestLayout(W, H, capacity) : { cols: DWG_COLS, rows: ATDW_TARGET_ROWS, step: 10 };
   const gap = step * 0.2, box = step - gap;
   const laneGap = step * 2.2;
   const rx = Math.max(1, box / 4);
   const { labelFontSize, countFontSize, labelY, countY, padT } = dwgHeaderMetrics(step);
   const padB = Math.max(4, Math.round(step * 0.4));
-  const laneW = DWG_COLS * step - gap;
+  const laneW = cols * step - gap;
   const totalW = 7 * laneW + 6 * laneGap;
   const totalH = padT + rows * step - gap + padB;
   const startX = Math.max(0, (W - totalW) / 2);
@@ -100,7 +101,7 @@ export function DayOfWeekAllTimeGrid({ days }: { days: DayEntry[] }) {
   const gridBottomY = padT + rows * step - gap;
 
   const avgBoxes = boxesByDow.reduce((a, b) => a + b, 0) / 7;
-  const avgY = gridBottomY - (avgBoxes / DWG_COLS) * step;
+  const avgY = gridBottomY - (avgBoxes / cols) * step;
 
   const els: JSX.Element[] = [
     <line key="avg-line" x1={0} y1={avgY} x2={totalW} y2={avgY} stroke="#3a3a3a" strokeWidth={1} strokeDasharray="4 4" />,
@@ -131,8 +132,8 @@ export function DayOfWeekAllTimeGrid({ days }: { days: DayEntry[] }) {
       for (const r of yearRanges) if (n < r.to) return r.yr;
       return years[years.length - 1] ?? new Date().getFullYear();
     }
-    for (let n = 0; n < rows * DWG_COLS; n++) {
-      const row = rows - 1 - Math.floor(n / DWG_COLS), col = n % DWG_COLS;
+    for (let n = 0; n < rows * cols; n++) {
+      const row = rows - 1 - Math.floor(n / cols), col = n % cols;
       const x = lx + col * step, y = padT + row * step;
       const isFilled = n < filled;
       const yr = isFilled ? yearOf(n) : -1;
@@ -184,16 +185,29 @@ function dwgHeaderMetrics(step: number) {
 // Solve for the largest per-box "step" (box + gap) that still fits the 7 lanes
 // (with proportional gap/lane-gap/label-header) inside the available W×H, so the
 // grid grows to fill its card instead of sitting fixed-size with dead space around it.
-function dwgBestStep(W: number, H: number, rows: number): number {
+function dwgBestStep(W: number, H: number, rows: number, cols: number = DWG_COLS): number {
   let best = 6;
   for (let s = 6; s <= 60; s++) {
     const gap = s * 0.2, laneGap = s * 2.2;
-    const laneW = DWG_COLS * s - gap;
+    const laneW = cols * s - gap;
     const totalW = 7 * laneW + 6 * laneGap;
     const { padT } = dwgHeaderMetrics(s);
     const padB = Math.max(4, Math.round(s * 0.4));
     const totalH = padT + rows * s - gap + padB;
     if (totalW <= W && totalH <= H) best = s;
+  }
+  return best;
+}
+
+// Columns per lane for a fixed number of boxes: the count that gives the biggest squares
+// in this panel, so a wide, short panel gets wide lanes instead of thin towers with empty
+// margins on both sides.
+function dwgBestLayout(W: number, H: number, boxes: number): { cols: number; rows: number; step: number } {
+  let best = { cols: DWG_COLS, rows: Math.ceil(boxes / DWG_COLS), step: 0 };
+  for (let cols = 4; cols <= 30; cols++) {
+    const rows = Math.ceil(boxes / cols);
+    const step = dwgBestStep(W, H, rows, cols);
+    if (step > best.step) best = { cols, rows, step };
   }
   return best;
 }
@@ -213,22 +227,31 @@ function yearHourCeiling(days: DayEntry[], year: number): { CEILING: number; fil
     const dt = new Date(d.date + "T00:00:00");
     minutesByDowMonth[dt.getDay()][dt.getMonth()] += d.minutes;
   }
-  const hoursByDowMonth = minutesByDowMonth.map(row => row.map(m => Math.floor(m / 60)));
+  // Whole hours per month that add up to the weekday's rounded total: round the running
+  // total, not each month (flooring each month dropped up to an hour per cell, ~35 h a year).
+  const hoursByDowMonth = minutesByDowMonth.map(row => {
+    let cum = 0, prev = 0;
+    return row.map(m => { cum += m; const r = Math.round(cum / 60); const h = r - prev; prev = r; return h; });
+  });
   const filledByDow = hoursByDowMonth.map(row => row.reduce((a, b) => a + b, 0));
   let lastActiveMonth = 0;
   hoursByDowMonth.forEach(row => row.forEach((h, mi) => { if (h > 0 && mi > lastActiveMonth) lastActiveMonth = mi; }));
 
-  const today = new Date();
-  const startOfYear = new Date(year, 0, 1);
-  const dayOfYear = Math.floor((+today - +startOfYear) / 86400000) + 1;
-  const daysInYear = (+new Date(year, 11, 31) - +startOfYear) / 86400000 + 1;
-  const paceMultiplier = Math.min(daysInYear / Math.max(1, dayOfYear), 6);
-  const currentMax = Math.max(...filledByDow, 1);
-  const projected = currentMax * paceMultiplier;
-  const roundCeiling = Math.max(currentMax, Math.ceil(projected / 50) * 50);
-  // Round up to a full row (multiple of DWG_COLS) too, so the grey capacity area
-  // above the filled bars is itself a complete rectangle, not cut short on its own top row.
-  const CEILING = Math.ceil(roundCeiling / DWG_COLS) * DWG_COLS;
+  // One scale for every year: the ceiling is the busiest weekday of any year in the
+  // history, so square size never changes between years and bar heights compare across
+  // them (flip 2021 to 2024 and the jump is visible).
+  const minutesByYearDow = new Map<number, number[]>();
+  for (const d of days) {
+    const dt = new Date(d.date + "T00:00:00");
+    const row = minutesByYearDow.get(dt.getFullYear()) ?? Array(7).fill(0);
+    row[dt.getDay()] += d.minutes;
+    minutesByYearDow.set(dt.getFullYear(), row);
+  }
+  let busiestEver = Math.max(...filledByDow, 1);
+  for (const row of minutesByYearDow.values()) busiestEver = Math.max(busiestEver, ...row.map(m => Math.round(m / 60)));
+  // Round up to a full row (multiple of DWG_COLS), so the grey capacity area above the
+  // filled bars is itself a complete rectangle, not cut short on its own top row.
+  const CEILING = Math.ceil(busiestEver / DWG_COLS) * DWG_COLS;
   return { CEILING, filledByDow, hoursByDowMonth, lastActiveMonth };
 }
 
@@ -249,14 +272,13 @@ export function DayOfWeekHourGrid({ days, year }: { days: DayEntry[]; year: numb
     return lastActiveMonth;
   }
 
-  const rows = Math.ceil(CEILING / DWG_COLS);
-  const step = W > 0 && H > 0 ? dwgBestStep(W, H, rows) : 10;
+  const { cols, rows, step } = W > 0 && H > 0 ? dwgBestLayout(W, H, CEILING) : { cols: DWG_COLS, rows: Math.ceil(CEILING / DWG_COLS), step: 10 };
   const gap = step * 0.2, box = step - gap;
   const laneGap = step * 2.2;
   const rx = Math.max(1, box / 4);
   const { labelFontSize, countFontSize, labelY, countY, padT } = dwgHeaderMetrics(step);
   const padB = Math.max(4, Math.round(step * 0.4));
-  const laneW = DWG_COLS * step - gap;
+  const laneW = cols * step - gap;
   const totalW = 7 * laneW + 6 * laneGap;
   const totalH = padT + rows * step - gap + padB;
   const startX = Math.max(0, (W - totalW) / 2);
@@ -264,7 +286,7 @@ export function DayOfWeekHourGrid({ days, year }: { days: DayEntry[]; year: numb
   const gridBottomY = padT + rows * step - gap;
 
   const avgFilled = filledByDow.reduce((a, b) => a + b, 0) / 7;
-  const avgY = gridBottomY - (avgFilled / DWG_COLS) * step;
+  const avgY = gridBottomY - (avgFilled / cols) * step;
 
   const els: JSX.Element[] = [
     <line key="avg-line" x1={0} y1={avgY} x2={totalW} y2={avgY} stroke="#3a3a3a" strokeWidth={1} strokeDasharray="4 4" />,
@@ -282,8 +304,8 @@ export function DayOfWeekHourGrid({ days, year }: { days: DayEntry[]; year: numb
         {filled}<tspan fontSize={countFontSize * 0.5} fontWeight={600} fillOpacity={0.75}> hrs</tspan>
       </text>
     );
-    for (let n = 0; n < CEILING; n++) {
-      const row = rows - 1 - Math.floor(n / DWG_COLS), col = n % DWG_COLS;
+    for (let n = 0; n < rows * cols; n++) {
+      const row = rows - 1 - Math.floor(n / cols), col = n % cols;
       const x = lx + col * step, y = padT + row * step;
       const isFilled = n < filled;
       const mi = isFilled ? monthOf(hoursByDowMonth[dow], n) : -1;
@@ -360,14 +382,13 @@ export function DayOfWeekPartGrid({ minutes, parts, heatmapAll, year }: { minute
     return lastActivePart;
   }
 
-  const rows = Math.ceil(CEILING / DWG_COLS);
-  const step = W > 0 && H > 0 ? dwgBestStep(W, H, rows) : 10;
+  const { cols, rows, step } = W > 0 && H > 0 ? dwgBestLayout(W, H, CEILING) : { cols: DWG_COLS, rows: Math.ceil(CEILING / DWG_COLS), step: 10 };
   const gap = step * 0.2, box = step - gap;
   const laneGap = step * 2.2;
   const rx = Math.max(1, box / 4);
   const { labelFontSize, countFontSize, labelY, countY, padT } = dwgHeaderMetrics(step);
   const padB = Math.max(4, Math.round(step * 0.4));
-  const laneW = DWG_COLS * step - gap;
+  const laneW = cols * step - gap;
   const totalW = 7 * laneW + 6 * laneGap;
   const totalH = padT + rows * step - gap + padB;
   const startX = Math.max(0, (W - totalW) / 2);
@@ -375,7 +396,7 @@ export function DayOfWeekPartGrid({ minutes, parts, heatmapAll, year }: { minute
   const gridBottomY = padT + rows * step - gap;
 
   const avgFilled = filledByDow.reduce((a, b) => a + b, 0) / 7;
-  const avgY = gridBottomY - (avgFilled / DWG_COLS) * step;
+  const avgY = gridBottomY - (avgFilled / cols) * step;
 
   const els: JSX.Element[] = [
     <line key="avg-line" x1={0} y1={avgY} x2={totalW} y2={avgY} stroke="#3a3a3a" strokeWidth={1} strokeDasharray="4 4" />,
@@ -393,8 +414,8 @@ export function DayOfWeekPartGrid({ minutes, parts, heatmapAll, year }: { minute
         {minutesLabel(minutes[dow])}
       </text>
     );
-    for (let n = 0; n < CEILING; n++) {
-      const row = rows - 1 - Math.floor(n / DWG_COLS), col = n % DWG_COLS;
+    for (let n = 0; n < rows * cols; n++) {
+      const row = rows - 1 - Math.floor(n / cols), col = n % cols;
       const x = lx + col * step, y = padT + row * step;
       const isFilled = n < filled;
       const pi = isFilled ? partOf(unitsByDowPart[dow], n) : -1;

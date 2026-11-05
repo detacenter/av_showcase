@@ -1,13 +1,17 @@
 from pathlib import Path
+
 from fastapi import APIRouter
-from insights import build_artist_catalog
+
 from insights.artist_insights import build_artist_detail_snapshot
+from insights.collection_insights import album_track_plays as _album_track_plays
+from services.collection_index import artist_catalog
 from state import get_state
 
 router = APIRouter(prefix="/api/artists", tags=["artists"])
 
 
 from core.paths import data_path as _data_path
+
 _ARTWORK_DIR = _data_path("artwork")
 
 
@@ -61,35 +65,18 @@ def _classify_vinyl_type(record: dict) -> str:
     return "LP"
 
 
-def _album_track_plays(plays: list[dict], lib: dict) -> list[dict]:
-    tracks: dict[str, dict] = {}
-    tracks_lib = lib.get("tracks", {})
-    for entry in plays:
-        tid = entry["track_id"]
-        if tid not in tracks:
-            tracks[tid] = {
-                "track_id": tid,
-                "track_name": entry["track_name"],
-                "track_number": entry.get("track_number", 0),
-                "play_count": 0,
-                "is_favorited": bool(tracks_lib.get(tid, {}).get("favorited", False)),
-            }
-        tracks[tid]["play_count"] += 1
-    return sorted(
-        tracks.values(),
-        key=lambda x: (x["track_number"] is None, x["track_number"], x["track_name"]),
-    )
 
 
 @router.get("")
 def get_artists():
     state = get_state()
-    catalog = build_artist_catalog(state.log)
+    catalog = artist_catalog()   # whole history: AV's log plus the imported Spotify export
     lib = state.lib
     artists_lib = lib.get("artists", {})
 
     counts = catalog.get("counts", {})
     latest_played_map = catalog.get("latest_played", {})
+    first_played_map = catalog.get("first_played", {})
     albums_catalog = catalog.get("albums", {})
 
     artists_list = []
@@ -111,6 +98,7 @@ def get_artists():
             "name": name,
             "play_count": count,
             "latest_played": latest_played_map.get(name, ""),
+            "first_played": first_played_map.get(name, ""),
             "is_favorited": bool(a_lib.get("favorited", False)),
             "genres": genres,
             "hero_art_filename": a_lib.get("hero_art_filename") or None,
@@ -134,7 +122,7 @@ def get_artists():
 @router.get("/{name:path}")
 def get_artist(name: str):
     state = get_state()
-    snapshot = build_artist_detail_snapshot(state.log, state.lib, name)
+    snapshot = build_artist_detail_snapshot(state.history, state.lib, name)
     lib = state.lib
     a_lib = lib.get("artists", {}).get(name, {})
 

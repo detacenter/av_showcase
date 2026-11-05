@@ -3,7 +3,7 @@ import { API_BASE } from "../api/config";
 
 // ── Constants ─────────────────────────────────────────────────────────────────
 
-const MODES = ["Query", "jq", "Storage", "API", "Utilities", "Logs", "System"] as const;
+const MODES = ["Query", "jq", "Storage", "API", "Utilities", "Logs", "System", "History"] as const;
 type Mode = typeof MODES[number];
 
 const HELP_HTML = `
@@ -1810,6 +1810,112 @@ function LogsPanel() {
 
 // ── Main view ─────────────────────────────────────────────────────────────────
 
+// ── History panel ──────────────────────────────────────────────────────────────
+// The imported Spotify history and its background fill-in (covers, years, genres).
+
+interface EnrichStatus {
+  running: boolean; phase: string | null; done: number; total: number; errors: number;
+  started_at: string | null; finished_at: string | null; last_error: string | null;
+  spotify: { running: boolean; today: number; budget: number; remaining_albums: number; rate_limited_until: number | null; last_error: string | null };
+  remaining: { albums: number; spotify_albums: number; total_tracks: number; total_albums: number } | null;
+}
+interface HistoryInfoData { av_began: string | null; imported_plays: number; imported_first_play: string | null; imported_at: string | null; }
+
+function HistoryPanel() {
+  const [st, setSt] = useState<EnrichStatus | null>(null);
+  const [info, setInfo] = useState<HistoryInfoData | null>(null);
+  const [busy, setBusy] = useState(false);
+
+  const load = useCallback(async () => {
+    try {
+      const [a, b] = await Promise.all([
+        fetch(`${API_BASE}/api/dev/history/enrich`).then(r => r.json()),
+        fetch(`${API_BASE}/api/stats/history`).then(r => r.json()),
+      ]);
+      setSt(a); setInfo(b);
+    } catch { /* ignore */ }
+  }, []);
+
+  useEffect(() => {
+    load();
+    const id = setInterval(load, 5_000);
+    return () => clearInterval(id);
+  }, [load]);
+
+  const act = async (what: "start" | "stop") => {
+    setBusy(true);
+    try { await fetch(`${API_BASE}/api/dev/history/enrich/${what}`, { method: "POST" }); await new Promise(r => setTimeout(r, 800)); await load(); }
+    finally { setBusy(false); }
+  };
+
+  const fmt = (iso: string | null) => iso ? new Date(iso).toLocaleString("en-US", { month: "short", day: "numeric", year: "numeric" }) : "–";
+  const pct = st && st.total ? Math.round((st.done / st.total) * 100) : 0;
+  const rem = st?.remaining;
+  const allDone = rem ? rem.albums === 0 : false;
+  const sp = st?.spotify;
+  const limited = sp?.rate_limited_until && sp.rate_limited_until * 1000 > Date.now();
+
+  return (
+    <div style={{ flex: 1, display: "flex", flexDirection: "column", gap: 16, overflow: "auto" }}>
+      <div style={{ background: "var(--card)", borderRadius: 8, overflow: "hidden" }}>
+        <div style={{ padding: "12px 16px", borderBottom: "1px solid #1a1a1a" }}>
+          <span style={{ fontSize: 12, fontWeight: 700, color: "#fff", letterSpacing: "0.06em" }}>SPOTIFY HISTORY</span>
+        </div>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 1, background: "#111" }}>
+          {[
+            ["Imported plays", info ? info.imported_plays.toLocaleString() : "–"],
+            ["Tracks", rem ? rem.total_tracks.toLocaleString() : "–"],
+            ["First play", fmt(info?.imported_first_play ?? null)],
+            ["AV began", fmt(info?.av_began ?? null)],
+          ].map(([label, val]) => (
+            <div key={label} style={{ background: "var(--card)", padding: "10px 16px" }}>
+              <div style={{ fontSize: 10, color: "#555", fontWeight: 700, letterSpacing: "0.06em" }}>{label.toUpperCase()}</div>
+              <div style={{ fontSize: 13, color: "#ddd", marginTop: 2 }}>{val}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ background: "var(--card)", borderRadius: 8, overflow: "hidden" }}>
+        <div style={{ padding: "12px 16px", borderBottom: "1px solid #1a1a1a", display: "flex", alignItems: "center", gap: 12 }}>
+          <span style={{ fontSize: 12, fontWeight: 700, color: "#fff", letterSpacing: "0.06em" }}>FILL-IN</span>
+          <span style={{ fontSize: 11, color: "#555" }}>
+            {st?.running ? `running · ${st.phase}` : allDone ? "complete" : "idle"}
+          </span>
+          <div style={{ flex: 1 }} />
+          <button onClick={() => act(st?.running ? "stop" : "start")} disabled={busy || (!st?.running && allDone)} style={{
+            padding: "4px 12px", borderRadius: 6, fontSize: 11, fontWeight: 600, background: "none",
+            border: `1px solid ${st?.running ? "#2a2a2a" : "var(--green)"}`, color: st?.running ? "#aaa" : allDone ? "#444" : "var(--green)", cursor: "pointer",
+          }}>{st?.running ? "Pause" : allDone ? "Done" : "Resume"}</button>
+        </div>
+        <div style={{ padding: "12px 16px", display: "flex", flexDirection: "column", gap: 8 }}>
+          {st?.running && (
+            <>
+              <div style={{ height: 6, background: "#1a1a1a", borderRadius: 3 }}>
+                <div style={{ height: 6, width: `${pct}%`, background: "var(--green)", borderRadius: 3, transition: "width 0.4s" }} />
+              </div>
+              <div style={{ fontSize: 11, color: "#888" }}>{st.phase}: {st.done.toLocaleString()} of {st.total.toLocaleString()} ({pct}%)</div>
+            </>
+          )}
+          <div style={{ fontSize: 11, color: "#666" }}>
+            Albums left for Last.fm / MusicBrainz: {rem ? `${rem.albums.toLocaleString()} of ${rem.total_albums.toLocaleString()}` : "–"}
+            {st && st.errors > 0 ? ` · ${st.errors} errors` : ""}
+          </div>
+          {st?.last_error && <div style={{ fontSize: 11, color: "#a55" }}>Last error: {st.last_error}</div>}
+          <div style={{ fontSize: 11, color: "#666", marginTop: 6 }}>
+            Spotify trickle: {sp ? `${sp.today} of ${sp.budget} catalog calls used today · ${rem?.spotify_albums.toLocaleString() ?? "–"} albums still without a Spotify ID` : "–"}
+            {limited ? " · paused by Spotify's daily quota" : sp?.running ? " · running" : ""}
+          </div>
+          {sp?.last_error && <div style={{ fontSize: 11, color: "#a55" }}>Spotify: {sp.last_error}</div>}
+          <div style={{ fontSize: 11, color: "#444" }}>
+            Covers, tracklists and years come from Last.fm and MusicBrainz (no daily quota). Spotify is asked once per album, a few hundred times a day, for the real album ID. Everything resumes after a restart.
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function DevView() {
   const [mode, setMode] = useState<Mode>("Query");
 
@@ -1848,6 +1954,7 @@ export function DevView() {
       {mode === "Utilities" && <UtilitiesPanel />}
       {mode === "Logs"      && <LogsPanel />}
       {mode === "System"    && <SystemPanel />}
+      {mode === "History"   && <HistoryPanel />}
     </div>
   );
 }

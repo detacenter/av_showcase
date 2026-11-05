@@ -1,10 +1,19 @@
 from __future__ import annotations
 
 import json
+import os
+import threading
 
 from core.paths import data_path, ensure_data_dir
 
 LIBRARY_FILE = data_path("library.json")
+
+# Guards the load_library() -> mutate -> save_library() cycle in routers/library.py.
+# Backend runs as a single process (no --workers), but FastAPI still runs sync routes
+# on a thread pool, so concurrent requests can race on this file without it.
+# Re-entrant: routers hold it across reload_state(), and state._load may itself write
+# the library (edition aliases it discovers).
+library_lock = threading.RLock()
 
 _ALBUM_DEFAULT  = {"rating": 0, "notes": "", "favorited": False}
 _ARTIST_DEFAULT = {"favorited": False, "revisit": False, "genres": []}
@@ -57,12 +66,43 @@ def load_library() -> dict:
 
 def save_library(lib: dict) -> None:
     ensure_data_dir()
-    with LIBRARY_FILE.open("w") as f:
+    tmp_file = LIBRARY_FILE.with_suffix(LIBRARY_FILE.suffix + ".tmp")
+    with tmp_file.open("w") as f:
         json.dump(lib, f, indent=2)
+        f.flush()
+        os.fsync(f.fileno())
+    os.replace(tmp_file, LIBRARY_FILE)
 
 
 def album_data(lib: dict, album_id: str) -> dict:
     return _entity_data(lib, "albums", album_id, _ALBUM_DEFAULT)
+
+
+def alias_album(lib: dict, old_id: str, new_id: str) -> bool:
+    """Point `old_id` at `new_id` and carry everything keyed on the old id across: the
+    rating/notes/favorite, decade Tops entries, and any alias that already pointed at the
+    old id. Used when the Spotify trickle replaces an imported album's placeholder id with
+    the real one. Returns whether anything changed (caller saves)."""
+    if not old_id or not new_id or old_id == new_id:
+        return False
+    aliases = _section(lib, "album_aliases")
+    if aliases.get(old_id) == new_id:
+        return False
+    albums = _section(lib, "albums")
+    old = albums.pop(old_id, None)
+    if old:
+        target = albums.setdefault(new_id, {})
+        for field, default in _ALBUM_DEFAULT.items():
+            if target.get(field, default) == default and old.get(field, default) != default:
+                target[field] = old[field]
+    for decade, ids in lib.get("album_tops", {}).get("decades", {}).items():
+        if old_id in ids:
+            lib["album_tops"]["decades"][decade] = [new_id if i == old_id else i for i in ids]
+    for k, v in list(aliases.items()):
+        if v == old_id:
+            aliases[k] = new_id
+    aliases[old_id] = new_id
+    return True
 
 
 def artist_data(lib: dict, name: str) -> dict:

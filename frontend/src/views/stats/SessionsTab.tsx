@@ -1,6 +1,7 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "../../api/client";
+import { TimePicker } from "../../components/TimePicker";
 import { API_BASE as ART_BASE } from "../../api/config";
 import type { VinylRecord, VinylResponse } from "../../api/types";
 
@@ -42,6 +43,7 @@ interface VinylSession {
   title: string | null;
   artists: string[];
   art_filename: string | null;
+  color?: string | null;   // the record's cover color, sampled on the Pi
 }
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
@@ -69,6 +71,10 @@ function getMondayOf(d: Date): Date {
   const day = r.getDay();
   r.setDate(r.getDate() + (day === 0 ? -6 : 1 - day));
   return r;
+}
+
+function localDateKey(d: Date): string {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 }
 
 function addDays(d: Date, n: number): Date {
@@ -158,25 +164,20 @@ function computeWindow(
   weekVinyl: VinylSession[],
 ): { start: number; span: number; hours: number[] } {
   const offsets: [number, number][] = [];
+  // A session that runs past midnight continues on the next day's row from 0:00, so
+  // the window has to start at 0 too, or that bar is drawn over the day labels.
   for (const s of weekSessions) {
     const startMin = minutesOfDay(new Date(s.start));
     const endMin = startMin + s.duration_minutes;
     offsets.push([startMin, Math.min(endMin, 1440)]);
-    // A session crossing midnight gets rendered as a second segment starting
-    // at minute 0 on the following day (see the dayDigital-building loop
-    // below) — that continuation segment's own start (0) needs to be part of
-    // this window computation too, or it can fall outside [winStart, winEnd]
-    // and render at a negative pct(), pushing the bar left of the timeline
-    // into the date-label column.
-    if (endMin > 1440) {
-      offsets.push([0, endMin - 1440]);
-    }
+    if (endMin > 1440) offsets.push([0, Math.min(endMin - 1440, 1440)]);
   }
   for (const vs of weekVinyl) {
     const d = vinylStartDate(vs);
     const startMin = minutesOfDay(d);
     const durMin = (vs.duration_seconds || 0) / 60;
     offsets.push([startMin, Math.min(startMin + durMin, 1440)]);
+    if (startMin + durMin > 1440) offsets.push([0, Math.min(startMin + durMin - 1440, 1440)]);
   }
   if (offsets.length === 0) {
     return { start: 8 * 60, span: 14 * 60, hours: Array.from({ length: 15 }, (_, i) => i + 8) };
@@ -257,7 +258,7 @@ function WeekGrid({ sessions, vinylSessions, weekStart, selectedId, onSelect }: 
       return d >= weekStart && d < addDays(weekStart, 7);
     }),
   );
-  const pct = (min: number) => `${((min - winStart) / winSpan) * 100}%`;
+  const pct = (min: number) => `${((Math.max(min, winStart) - winStart) / winSpan) * 100}%`;
   const wPct = (dur: number) => `${Math.max(0.4, (dur / winSpan) * 100)}%`;
 
   return (
@@ -295,10 +296,21 @@ function WeekGrid({ sessions, vinylSessions, weekStart, selectedId, onSelect }: 
                 const isLive = seg.vs.status === "active";
                 const isUnconf = seg.vs.status === "unconfirmed";
                 const dur = seg.endMin - seg.startMin;
+                // A record wears its sleeve's color (streaming stays teal), with a small
+                // white record ring at the start. Unconfirmed sessions have no record yet.
+                const tint = seg.vs.color || GOLD;
                 return (
                   <div key={`v${j}`} onClick={() => onSelect(seg.vs.id)} title={seg.vs.title || "Vinyl session"}
-                    style={{ position: "absolute", left: pct(seg.startMin), width: wPct(dur), top: 6, bottom: 6, borderRadius: 3, background: isSel ? GOLD : GOLD_DIM, cursor: "pointer", border: isLive ? `1px solid ${GOLD}` : "none", opacity: isUnconf ? 0.6 : 1 }}
-                  />
+                    style={{
+                      position: "absolute", left: pct(seg.startMin), width: wPct(dur), top: 3, bottom: 3, borderRadius: 3, cursor: "pointer",
+                      display: "flex", alignItems: "center", paddingLeft: 4, boxSizing: "border-box", overflow: "hidden",
+                      background: isUnconf ? "transparent" : tint,   // the raw sampled color, as in the session strip (Recent tints it to 6%)
+                      border: isUnconf ? `1.5px dashed ${GOLD}` : isSel || isLive ? "1px solid rgba(255,255,255,0.85)" : "none",
+                    }}>
+                    <span style={{ width: 10, height: 10, borderRadius: "50%", border: "2px solid rgba(255,255,255,0.85)", boxSizing: "border-box", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
+                      <span style={{ width: 2, height: 2, borderRadius: "50%", background: "rgba(255,255,255,0.85)" }} />
+                    </span>
+                  </div>
                 );
               })}
             </div>
@@ -421,6 +433,9 @@ function BreakdownBar({ label, count, max, color }: { label: string; count: numb
 }
 
 function SessionDetail({ session }: { session: Session }) {
+  const [selectedAlbum, setSelectedAlbum] = useState<string | null>(null);
+  const tileRefs = useRef(new Map<string, HTMLElement>());
+  const stripRef = useRef<HTMLDivElement>(null);
   const startD = new Date(session.start);
   const albumColors = session.album_colors ?? {};
   const albumsSeen = new Map<string, string>();
@@ -449,15 +464,36 @@ function SessionDetail({ session }: { session: Session }) {
   const maxArtist = session.artist_counts[0]?.[1] ?? 1;
   const maxAlbum = session.album_counts[0]?.[1] ?? 1;
 
+  // Clicking a fingerprint segment highlights its album tile and centers it in the strip
+  // (the browser clamps at either end); clicking the same album again clears it.
+  const selectAlbum = (key: string) => {
+    const next = selectedAlbum === key ? null : key;
+    setSelectedAlbum(next);
+    const strip = stripRef.current, tile = next ? tileRefs.current.get(next) : null;
+    if (strip && tile) {
+      strip.scrollTo({ left: tile.offsetLeft - (strip.clientWidth - tile.offsetWidth) / 2, behavior: "smooth" });
+    }
+  };
+  const tileRef = (key: string) => (el: HTMLElement | null) => {
+    if (el) tileRefs.current.set(key, el); else tileRefs.current.delete(key);
+  };
+  const tileStyle = (key: string): React.CSSProperties => selectedAlbum === key
+    ? { borderRadius: 8, boxShadow: "0 0 0 3px var(--green)" }
+    : { borderRadius: 4 };
+
   return (
     <div style={{ flex: 1, minHeight: 0, background: "#141414", borderRadius: 16, padding: "10px 14px 12px", display: "flex", flexDirection: "column", overflow: "hidden", boxSizing: "border-box" }}>
-      <div style={{ display: "flex", gap: 6, marginBottom: 10, overflowX: "auto", height: ART_SIZE + 10, alignItems: "center", flexShrink: 0 }}>
+      <div ref={stripRef} style={{ position: "relative", display: "flex", gap: 6, marginBottom: 10, overflowX: "auto", height: ART_SIZE + 10, alignItems: "center", flexShrink: 0 }}>
+        {/* Spacers, not padding: Chrome drops end padding in a scrolling flex row, which
+            clipped the selection ring on the first/last tile. */}
+        <div style={{ width: 0, flexShrink: 0 }} />
         {Array.from(albumsSeen.entries()).map(([key, localPath]) => {
           const url = artUrl(localPath);
           return url
-            ? <img key={key} src={url} width={ART_SIZE} height={ART_SIZE} style={{ borderRadius: 4, flexShrink: 0, objectFit: "cover", background: "#1e1e1e" }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
-            : <div key={key} style={{ width: ART_SIZE, height: ART_SIZE, borderRadius: 4, flexShrink: 0, background: "#1e1e1e" }} />;
+            ? <img key={key} ref={tileRef(key)} src={url} width={ART_SIZE} height={ART_SIZE} style={{ ...tileStyle(key), flexShrink: 0, objectFit: "cover", background: "#1e1e1e", transition: "box-shadow 0.15s" }} onError={e => { (e.target as HTMLImageElement).style.display = "none"; }} />
+            : <div key={key} ref={tileRef(key)} style={{ ...tileStyle(key), width: ART_SIZE, height: ART_SIZE, flexShrink: 0, background: "#1e1e1e" }} />;
         })}
+        <div style={{ width: 0, flexShrink: 0 }} />
       </div>
       <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12, marginBottom: 4, flexShrink: 0 }}>
         <div style={{ fontSize: 13, fontWeight: 700, color: "#fff" }}>
@@ -474,7 +510,16 @@ function SessionDetail({ session }: { session: Session }) {
       <div style={{ fontSize: 11, color: "#b3b3b3", marginBottom: 8, flexShrink: 0 }}>{subtitle}</div>
       <div style={{ height: 24, position: "relative", marginBottom: 10, flexShrink: 0 }}>
         <div style={{ position: "absolute", top: 4, left: 0, right: 0, height: 16, background: "#242424", overflow: "hidden", display: "flex" }}>
-          {fpSegs.map((seg, i) => <div key={i} style={{ width: `${seg.pct}%`, background: albumColors[seg.key] || "#333", flexShrink: 0 }} />)}
+          {fpSegs.map((seg, i) => (
+            <div
+              key={i}
+              onClick={() => selectAlbum(seg.key)}
+              style={{
+                width: `${seg.pct}%`, background: albumColors[seg.key] || "#333", flexShrink: 0, cursor: "pointer",
+                opacity: selectedAlbum && selectedAlbum !== seg.key ? 0.35 : 1, transition: "opacity 0.15s",
+              }}
+            />
+          ))}
         </div>
       </div>
       <div style={{ flex: 1, minHeight: 0, display: "flex", gap: 12 }}>
@@ -511,10 +556,22 @@ function SessionDetail({ session }: { session: Session }) {
 // ── SessionsTab ────────────────────────────────────────────────────────────────
 
 export function SessionsTab() {
-  const { data: sessions = [] } = useQuery<Session[]>({
-    queryKey: ["sessions"],
-    queryFn: () => api.get("/api/stats/sessions"),
+  const [weekStart, setWeekStart] = useState<Date>(() => getMondayOf(new Date()));
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+  const [initialised, setInitialised] = useState(false);
+  const weekKey = localDateKey(weekStart);
+
+  // Sessions come one week at a time: the full history is far too big to ship at once.
+  const { data: bounds } = useQuery<{ oldest_start: string | null; newest_start: string | null }>({
+    queryKey: ["sessions-bounds"],
+    queryFn: () => api.get("/api/stats/sessions/bounds"),
     staleTime: 60_000,
+  });
+  const { data: sessions = [] } = useQuery<Session[]>({
+    queryKey: ["sessions", weekKey],
+    queryFn: () => api.get(`/api/stats/sessions?start=${weekKey}&days=7`),
+    staleTime: 60_000,
+    enabled: initialised,
   });
 
   const { data: vinylSessions = [], refetch: refetchVinyl } = useQuery<VinylSession[]>({
@@ -530,16 +587,20 @@ export function SessionsTab() {
     staleTime: 60_000,
   });
 
-  const [weekStart, setWeekStart] = useState<Date>(() => getMondayOf(new Date()));
-  const [selectedId, setSelectedId] = useState<string | null>(null);
+  useEffect(() => {
+    // Default to the week of the most recent digital session
+    if (initialised || !bounds) return;
+    if (bounds.newest_start) setWeekStart(getMondayOf(new Date(bounds.newest_start)));
+    setInitialised(true);
+  }, [bounds, initialised]);
 
   useEffect(() => {
-    // Default to most recent digital session
-    if (sessions.length === 0) return;
-    const d = new Date(sessions[0].start);
-    setWeekStart(getMondayOf(d));
-    setSelectedId(sessions[0].id);
-  }, [sessions.length > 0]);
+    // Select the week's most recent session when nothing in this week is selected
+    // (first load, or after a jump to another week).
+    if (sessions.length > 0 && !sessions.some(s => s.id === selectedId) && !vinylSessions.some(vs => vs.id === selectedId)) {
+      setSelectedId(sessions[0].id);
+    }
+  }, [sessions, selectedId, vinylSessions]);
 
   const weekEnd = addDays(weekStart, 6);
   const weekLabel = `${weekStart.toLocaleDateString("en-US", { month: "short", day: "numeric" })} – ${weekEnd.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}`;
@@ -556,7 +617,7 @@ export function SessionsTab() {
 
   const unconfirmed = vinylSessions.filter(vs => vs.status === "unconfirmed");
 
-  const oldestWeek = sessions.length > 0 ? getMondayOf(new Date(sessions[sessions.length - 1].start)) : weekStart;
+  const oldestWeek = bounds?.oldest_start ? getMondayOf(new Date(bounds.oldest_start)) : weekStart;
   const currentWeek = getMondayOf(new Date());
   const canPrev = weekStart > oldestWeek;
   const canNext = weekStart < currentWeek;
@@ -606,7 +667,9 @@ export function SessionsTab() {
       <div style={{ display: "flex", alignItems: "center", gap: 10, flexShrink: 0 }}>
         <button disabled={!canPrev} onClick={() => setWeekStart(w => addDays(w, -7))}
           style={{ width: 28, height: 28, borderRadius: 8, border: "none", background: "#202020", color: canPrev ? "#b3b3b3" : "#333", fontSize: 14, cursor: canPrev ? "pointer" : "default" }}>←</button>
-        <span style={{ flex: 1, textAlign: "center", fontSize: 13, fontWeight: 600, color: "#fff" }}>{weekLabel}</span>
+        <div style={{ flex: 1, display: "flex", justifyContent: "center" }}>
+          <TimePicker variant="plain" granularity="week" label={weekLabel} value={weekStart} onPick={d => setWeekStart(getMondayOf(d))} />
+        </div>
         <button disabled={!canNext} onClick={() => setWeekStart(w => addDays(w, 7))}
           style={{ width: 28, height: 28, borderRadius: 8, border: "none", background: "#202020", color: canNext ? "#b3b3b3" : "#333", fontSize: 14, cursor: canNext ? "pointer" : "default" }}>→</button>
       </div>
@@ -631,7 +694,7 @@ export function SessionsTab() {
           }}
         />
       )}
-      {selectedSession && !selectedVinyl && <SessionDetail session={selectedSession} />}
+      {selectedSession && !selectedVinyl && <SessionDetail key={selectedSession.id} session={selectedSession} />}
     </div>
   );
 }

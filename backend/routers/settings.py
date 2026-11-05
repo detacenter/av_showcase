@@ -1,5 +1,6 @@
 from fastapi import APIRouter
 from pydantic import BaseModel
+
 from core.settings import load_settings, save_settings
 
 router = APIRouter(prefix="/api/settings", tags=["settings"])
@@ -7,10 +8,8 @@ router = APIRouter(prefix="/api/settings", tags=["settings"])
 
 class SettingsUpdate(BaseModel):
     accent_color: str | None = None
-    splash_style: str | None = None
-    app_icon: str | None = None
-    sidebar_logo: str | None = None
     auto_poll: bool | None = None
+    saved_accents: list[str] | None = None
 
 
 @router.get("")

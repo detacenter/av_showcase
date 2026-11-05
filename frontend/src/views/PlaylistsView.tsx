@@ -7,7 +7,7 @@ import type { Playlist, PlaylistTrack, Condition, RuleGroup, SessionInfo } from 
 // ── API ───────────────────────────────────────────────────────────────────────
 
 const fetchPlaylists = () =>
-  api.get<{ playlists: Playlist[]; all_genres: string[] }>("/api/playlists");
+  api.get<{ playlists: Playlist[]; all_genres: string[]; all_artists?: string[]; all_albums?: string[] }>("/api/playlists");
 
 const fetchSessions = () =>
   api.get<SessionInfo[]>("/api/playlists/sessions");
@@ -150,11 +150,11 @@ const inp: React.CSSProperties = {
   color: "#fff", fontSize: 12, padding: "3px 8px", outline: "none", width: 80,
 };
 
-function ConditionRow({ condition, onChange, onRemove, allGenres, sessions }: {
+function ConditionRow({ condition, onChange, onRemove, suggestions, sessions }: {
   condition: Condition;
   onChange: (c: Condition) => void;
   onRemove: () => void;
-  allGenres: string[];
+  suggestions: Record<string, string[]>;
   sessions: SessionInfo[];
 }) {
   const { field, op } = condition;
@@ -187,7 +187,7 @@ function ConditionRow({ condition, onChange, onRemove, allGenres, sessions }: {
         <PillInput
           values={vals || []}
           onChange={v => onChange({ ...condition, values: v })}
-          suggestions={field === "genre" ? allGenres : []}
+          suggestions={suggestions[field] ?? []}
           placeholder={`add ${field}…`}
         />
       )}
@@ -230,12 +230,12 @@ function ConditionRow({ condition, onChange, onRemove, allGenres, sessions }: {
 
 // ── GroupWidget ───────────────────────────────────────────────────────────────
 
-function GroupWidget({ group, isFirst, onChange, onRemove, allGenres, sessions }: {
+function GroupWidget({ group, isFirst, onChange, onRemove, suggestions, sessions }: {
   group: RuleGroup;
   isFirst: boolean;
   onChange: (g: RuleGroup) => void;
   onRemove: () => void;
-  allGenres: string[];
+  suggestions: Record<string, string[]>;
   sessions: SessionInfo[];
 }) {
   const updateCond = (i: number, c: Condition) => {
@@ -262,7 +262,7 @@ function GroupWidget({ group, isFirst, onChange, onRemove, allGenres, sessions }
             condition={c}
             onChange={nc => updateCond(i, nc)}
             onRemove={() => removeCond(i)}
-            allGenres={allGenres}
+            suggestions={suggestions}
             sessions={sessions}
           />
         </div>
@@ -283,10 +283,10 @@ function GroupWidget({ group, isFirst, onChange, onRemove, allGenres, sessions }
 
 // ── RuleBuilder ───────────────────────────────────────────────────────────────
 
-function RuleBuilder({ groups, onChange, allGenres, sessions }: {
+function RuleBuilder({ groups, onChange, suggestions, sessions }: {
   groups: RuleGroup[];
   onChange: (g: RuleGroup[]) => void;
-  allGenres: string[];
+  suggestions: Record<string, string[]>;
   sessions: SessionInfo[];
 }) {
   const updateGroup = (i: number, g: RuleGroup) => {
@@ -309,7 +309,7 @@ function RuleBuilder({ groups, onChange, allGenres, sessions }: {
             isFirst={i === 0}
             onChange={gg => updateGroup(i, gg)}
             onRemove={() => removeGroup(i)}
-            allGenres={allGenres}
+            suggestions={suggestions}
             sessions={sessions}
           />
         ))
@@ -448,7 +448,11 @@ export function PlaylistDetailView() {
   });
   const { data: sessions = [] } = useQuery({ queryKey: ["playlist-sessions"], queryFn: fetchSessions });
 
-  const allGenres = listData?.all_genres ?? [];
+  const suggestions = useMemo(() => ({
+    genre: listData?.all_genres ?? [],
+    artist: listData?.all_artists ?? [],
+    album: listData?.all_albums ?? [],
+  }), [listData]);
   const serverPlaylist = listData?.playlists.find(p => p.id === id);
 
   const [draft, setDraft] = useState<Playlist | null>(null);
@@ -624,7 +628,7 @@ export function PlaylistDetailView() {
             <RuleBuilder
               groups={draft.rule_groups}
               onChange={groups => updateDraft({ rule_groups: groups })}
-              allGenres={allGenres}
+              suggestions={suggestions}
               sessions={sessions}
             />
           )}

@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 import threading
+
 from fastapi import APIRouter
+
 from state import get_state
 
 router = APIRouter(prefix="/api/claudio", tags=["claudio"])
@@ -35,11 +37,16 @@ def claudio_generate():
     def _run():
         global _generating, _error
         try:
-            from ai.recommendations import fetch_recommendations, enrich_with_spotify, save_recommendations, append_to_history
-            from integrations.spotify.auth import get_access_token
             from datetime import datetime, timezone
 
-            from ai.recommendations import load_history
+            from ai.recommendations import (
+                append_to_history,
+                enrich_with_spotify,
+                fetch_recommendations,
+                load_history,
+                save_recommendations,
+            )
+            from integrations.spotify.auth import get_access_token
 
             state = get_state()
 
@@ -84,7 +91,13 @@ def claudio_generate():
 def claudio_feedback(body: dict):
     """Save thumbs up/down feedback for a recommendation in a specific batch."""
     import json as _json
-    from ai.recommendations import HISTORY_FILE, load_history, load_recommendations, save_recommendations
+
+    from ai.recommendations import (
+        HISTORY_FILE,
+        load_history,
+        load_recommendations,
+        save_recommendations,
+    )
 
     batch_idx = body.get("batch_idx")
     rec_idx = body.get("rec_idx")

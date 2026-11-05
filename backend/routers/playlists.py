@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import random
+from collections import Counter
 from pathlib import Path
 
 from fastapi import APIRouter, Body, HTTPException
@@ -10,6 +11,8 @@ from persistence.playlists import (
     delete_playlist,
     load_playlists,
     new_playlist,
+)
+from persistence.playlists import (
     save_playlist as _persist_save,
 )
 from state import get_state
@@ -41,7 +44,19 @@ def get_playlists():
         g for a in state.lib.get("artists", {}).values()
         for g in a.get("genres", []) if g
     })
-    return {"playlists": evaluated, "all_genres": all_genres}
+    # Artist and album suggestions come from the plays the rules match against, most played first.
+    artist_plays: Counter[str] = Counter()
+    album_plays: Counter[str] = Counter()
+    for t in state.log:
+        artist_plays.update(n for n in t.get("artist_names") or [] if n)
+        if t.get("album_name"):
+            album_plays[t["album_name"]] += 1
+    return {
+        "playlists": evaluated,
+        "all_genres": all_genres,
+        "all_artists": [n for n, _ in artist_plays.most_common()],
+        "all_albums": [n for n, _ in album_plays.most_common()],
+    }
 
 
 @router.get("/sessions")

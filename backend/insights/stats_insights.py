@@ -1,11 +1,13 @@
 from __future__ import annotations
 
 import math
+from functools import lru_cache
 from collections import Counter, defaultdict
 from datetime import date, datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
 from core.album_type import classify_album_type
+from insights.recap import build_recap
 from persistence.discogs import load_collection
 
 _TZ = ZoneInfo("America/New_York")
@@ -227,10 +229,12 @@ def build_heatmap_payload(log: list[dict], days: int, *, segment_days: int | Non
     entries = filter_entries_by_days(log, days)
     sessions = build_sessions_data(log, days)
     _seg = segment_days if segment_days is not None else days
-    minutes_by_day: dict[date, int] = defaultdict(int)
+    # Sum milliseconds and convert once: flooring each track to whole minutes dropped
+    # ~30s per play (Oct 29: 10h3m shown vs 11h33m actually played).
+    ms_by_day: dict[date, int] = defaultdict(int)
     for entry in entries:
         played = _parse_played_at(entry["played_at"]).date()
-        minutes_by_day[played] += entry.get("duration_ms", 0) // 60000
+        ms_by_day[played] += entry.get("duration_ms", 0)
 
     if entries:
         end_date = _parse_played_at(entries[0]["played_at"]).date()
@@ -245,16 +249,18 @@ def build_heatmap_payload(log: list[dict], days: int, *, segment_days: int | Non
     days_data = []
     for index in range(day_count):
         current = start_date + timedelta(days=index)
-        days_data.append({"date": current, "minutes": minutes_by_day.get(current, 0)})
+        days_data.append({"date": current, "minutes": round(ms_by_day.get(current, 0) / 60000)})
 
-    minutes_by_hour = [0] * 24
-    minutes_by_dow  = [0] * 7   # 0=Monday ... 6=Sunday (isoweekday-1), reordered to Sun=0
+    ms_by_hour = [0] * 24
+    ms_by_dow  = [0] * 7   # 0=Monday ... 6=Sunday (isoweekday-1), reordered to Sun=0
     for entry in entries:
         played = _parse_played_at(entry["played_at"])
-        minutes_by_hour[played.hour] += entry.get("duration_ms", 0) // 60000
+        ms_by_hour[played.hour] += entry.get("duration_ms", 0)
         # weekday(): Mon=0 Sun=6 → remap to Sun=0 Sat=6
         dow = (played.weekday() + 1) % 7
-        minutes_by_dow[dow] += entry.get("duration_ms", 0) // 60000
+        ms_by_dow[dow] += entry.get("duration_ms", 0)
+    minutes_by_hour = [round(ms / 60000) for ms in ms_by_hour]
+    minutes_by_dow = [round(ms / 60000) for ms in ms_by_dow]
 
     total_minutes = sum(day["minutes"] for day in days_data)
     avg = round(total_minutes / len(days_data)) if days_data else 0
@@ -294,11 +300,11 @@ def _build_day_parts(entries: list[dict], days: int) -> list[list[dict]]:
             key = played.date()
             label = played.strftime("%b %-d")
         bucket_key = (dow, key)
-        buckets[bucket_key] += entry.get("duration_ms", 0) // 60000
+        buckets[bucket_key] += entry.get("duration_ms", 0)
         labels[bucket_key] = label
 
-    for (dow, key), minutes in buckets.items():
-        parts_by_dow[dow].append({"sort_key": key, "label": labels[(dow, key)], "minutes": minutes})
+    for (dow, key), ms in buckets.items():
+        parts_by_dow[dow].append({"sort_key": key, "label": labels[(dow, key)], "minutes": round(ms / 60000)})
 
     for dow in range(7):
         parts_by_dow[dow].sort(key=lambda item: item["sort_key"])
@@ -470,6 +476,7 @@ def build_period_payload(log: list[dict], mode: str, offset: int, lib: dict | No
                 "title": album["title"],
                 "subtitle": album["subtitle"],
                 "meta": meta,
+                "play_count": album["play_count"],
                 "art_path": album["art_path"],
                 "art_key": album["art_key"],
             }
@@ -492,6 +499,15 @@ def build_period_payload(log: list[dict], mode: str, offset: int, lib: dict | No
         top_new_artist = {"name": artist, "count": count}
 
     older_entries, _, _ = _entries_for_period(log, mode, offset + 1)
+    history_start = _parse_played_at(log[-1]["played_at"]) if log else start
+
+    def _older_minutes(k: int):
+        entries, older_start, older_end = _entries_for_period(log, mode, offset + k)
+        if older_end < history_start:
+            return None
+        return sum(e.get("duration_ms", 0) for e in entries) / 60000, older_start.date()
+
+    recap = build_recap(log, lib or {}, mode, start.date(), end.date(), _parse_played_at, _older_minutes) if log else None
     return {
         "label": label,
         "album_header": album_header,
@@ -502,6 +518,7 @@ def build_period_payload(log: list[dict], mode: str, offset: int, lib: dict | No
         "album_tiles": album_tiles,
         "top_new_artist": top_new_artist,
         "has_older": len(older_entries) > 0,
+        "recap": recap,
     }
 
 
@@ -706,7 +723,10 @@ def range_days_from_label(label: str) -> int:
     return {"Month": 30, "Quarter": 90, "Year": 365, "All Time": 0}.get(label, 365)
 
 
+@lru_cache(maxsize=None)
 def _parse_played_at(played_at: str) -> datetime:
+    # Cached: with the imported history there are ~150k plays and most builders
+    # re-parse every timestamp per request. Datetimes are immutable, so sharing is safe.
     return datetime.fromisoformat(played_at.replace("Z", "+00:00")).astimezone(_TZ)
 
 
@@ -721,17 +741,17 @@ def _entries_for_period(log: list[dict], mode: str, offset: int) -> tuple[list[d
         while month <= 0:
             month += 12
             year -= 1
-        start = datetime(year, month, 1, tzinfo=timezone.utc)
+        start = datetime(year, month, 1, tzinfo=_TZ)
         if month == 12:
-            end = datetime(year + 1, 1, 1, tzinfo=timezone.utc) - timedelta(microseconds=1)
+            end = datetime(year + 1, 1, 1, tzinfo=_TZ) - timedelta(microseconds=1)
         else:
-            end = datetime(year, month + 1, 1, tzinfo=timezone.utc) - timedelta(microseconds=1)
+            end = datetime(year, month + 1, 1, tzinfo=_TZ) - timedelta(microseconds=1)
     else:
         latest_day = latest.date()
         start_day = latest_day - timedelta(days=latest_day.weekday()) - timedelta(weeks=offset)
         end_day = start_day + timedelta(days=6)
-        start = datetime.combine(start_day, datetime.min.time(), tzinfo=timezone.utc)
-        end = datetime.combine(end_day, datetime.max.time(), tzinfo=timezone.utc)
+        start = datetime.combine(start_day, datetime.min.time(), tzinfo=_TZ)
+        end = datetime.combine(end_day, datetime.max.time(), tzinfo=_TZ)
 
     entries = [entry for entry in log if start <= _parse_played_at(entry["played_at"]) <= end]
     return entries, start, end
@@ -930,6 +950,8 @@ def build_genre_mountain(log: list[dict], lib: dict, top_n: int = 12) -> dict:
         day_category: dict[date, dict[str, int]] = defaultdict(lambda: defaultdict(int))
         day_total: dict[date, int] = defaultdict(int)
         category_totals: dict[str, int] = defaultdict(int)
+        artist_counts: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
+        artist_art: dict[str, dict[str, str | None]] = defaultdict(dict)
         for entry in log:
             d = _entry_day(entry)
             day_total[d] += 1
@@ -937,12 +959,23 @@ def build_genre_mountain(log: list[dict], lib: dict, top_n: int = 12) -> dict:
             if category:
                 day_category[d][category] += 1
                 category_totals[category] += 1
+                if entry.get("artist_names"):
+                    artist = entry["artist_names"][0]
+                    artist_counts[category][artist] += 1
+                    artist_art[category].setdefault(artist, entry.get("album_art_local_path"))
         if not day_total:
-            return {"title": title, "subtitle": subtitle, "weeks": [], "labels": [], "cumulative": {}, "total_cum": []}
+            return {"title": title, "subtitle": subtitle, "weeks": [], "labels": [], "cumulative": {}, "total_cum": [], "top_artists": {}}
         ranked = sorted(category_totals.items(), key=lambda x: -x[1])
         labels = [g for g, _ in (ranked[:top] if top else ranked)]
         if label_sort:
             labels = sorted(labels, key=label_sort)
+        top_artists: dict[str, list[dict]] = {
+            g: [
+                {"name": name, "plays": count, "art_path": artist_art[g].get(name)}
+                for name, count in sorted(artist_counts[g].items(), key=lambda x: -x[1])[:6]
+            ]
+            for g in labels
+        }
         first_day = min(day_total)
         last_day = max(day_total)
         all_days = [first_day + timedelta(days=i) for i in range((last_day - first_day).days + 1)]
@@ -967,6 +1000,7 @@ def build_genre_mountain(log: list[dict], lib: dict, top_n: int = 12) -> dict:
             "labels": labels,
             "cumulative": cumulative,
             "total_cum": total_cum,
+            "top_artists": top_artists,
         }
 
     def genre_for(entry: dict) -> str | None:

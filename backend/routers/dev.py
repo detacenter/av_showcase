@@ -3,12 +3,13 @@ import shutil
 import subprocess
 
 from fastapi import APIRouter, Body, Query
+
+from core.genre_utils import find_genre_clusters
 from core.paths import data_path
+from persistence.genre_aliases import load_genre_aliases, save_genre_aliases
+from persistence.genre_dismissals import add_dismissal_pairs, load_genre_dismissals
 from query_engine import build_datasets, execute_query, parse_query
 from state import get_state, reload_state
-from core.genre_utils import find_genre_clusters
-from persistence.genre_aliases import load_genre_aliases, save_genre_aliases
-from persistence.genre_dismissals import load_genre_dismissals, add_dismissal_pairs
 
 _JQ_BIN = shutil.which("jq") or "jq"
 
@@ -87,7 +88,7 @@ def _parse_ts(value: str | None):
     if not value:
         return None
     try:
-        from datetime import datetime, timezone
+        from datetime import datetime
         return datetime.fromisoformat(value.replace("Z", "+00:00"))
     except ValueError:
         return None
@@ -110,10 +111,31 @@ def _time_ago(ts) -> str:
     return f"{s // 86400}d ago"
 
 
+# ── Spotify history enrichment (background fill-in of the imported export) ────
+
+@router.get("/history/enrich")
+def history_enrich_status():
+    from services import history_enrich
+    return history_enrich.get_status()
+
+
+@router.post("/history/enrich/start")
+def history_enrich_start():
+    from services import history_enrich
+    return {"started": history_enrich.start()}
+
+
+@router.post("/history/enrich/stop")
+def history_enrich_stop():
+    from services import history_enrich
+    history_enrich.stop()
+    return {"stopping": True}
+
+
 @router.get("/api-metrics")
 def get_api_metrics(scope: str = Query(default="all"), since: str = Query(default="")):
-    from datetime import datetime, timezone, timedelta
     from collections import defaultdict
+    from datetime import datetime, timedelta, timezone
 
     all_events = _load_api_events()
     now = datetime.now(timezone.utc)
@@ -177,7 +199,8 @@ def get_api_metrics(scope: str = Query(default="all"), since: str = Query(defaul
         for k, evs in by_op.items()
     ], key=lambda r: -r["calls"])
 
-    # Recent error events (newest first, capped at 50)
+    # Recent error events (newest first, last 30 days, capped at 50)
+    error_cutoff = now - timedelta(days=30)
     error_events = [
         {
             "timestamp": e.get("timestamp", ""),
@@ -187,7 +210,7 @@ def get_api_metrics(scope: str = Query(default="all"), since: str = Query(defaul
             "error_body": e.get("error_body") or "",
         }
         for e in reversed(all_events)
-        if e.get("ok") is False
+        if e.get("ok") is False and (ts := _parse_ts(e.get("timestamp"))) and ts >= error_cutoff
     ][:50]
 
     return {"summary": summary, "partner_rows": partner_rows, "operation_rows": operation_rows, "error_events": error_events}
@@ -310,21 +333,23 @@ def _art_url(art_path: str | None) -> str | None:
 
 @router.get("/vinyl-matcher/candidates")
 def get_vinyl_candidates():
-    from persistence.discogs import load_collection
-    from persistence.vinyl_links import confirmed_pairs, dismissed_pairs
-    from insights.collection_insights import build_album_index
     from core.vinyl_matcher import find_candidates
+    from insights.collection_insights import build_album_index
+    from persistence.discogs import load_collection
+    from persistence.vinyl_links import confirmed_pairs, dismissed_pairs, linked_release_ids
 
     vinyl = load_collection()
     if not vinyl:
         return {"candidates": [], "status": "no_vinyl"}
 
     state = get_state()
-    albums = build_album_index(state.log)
+    # The whole history, not just AV's own log: records you only heard before AV
+    # (imported Spotify history) need albums to match against too.
+    albums = build_album_index(state.history)
     if not albums:
         return {"candidates": [], "status": "no_albums"}
 
-    raw = find_candidates(vinyl, albums, confirmed_pairs(), dismissed_pairs())
+    raw = find_candidates(vinyl, albums, confirmed_pairs(), dismissed_pairs(), linked_release_ids())
 
     candidates = []
     for c in raw:
@@ -473,7 +498,6 @@ def get_backup_status():
 
 @router.get("/system")
 def get_system():
-    from datetime import datetime, timezone
 
     SERVICES = [
         ("audiovault",    "Audiovault Backend"),

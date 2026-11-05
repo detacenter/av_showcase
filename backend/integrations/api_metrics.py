@@ -1,13 +1,11 @@
 from __future__ import annotations
 
+import http.cookiejar
 import json
+import threading as _threading
 import time
 from datetime import datetime, timezone
-from pathlib import Path
 from typing import Any
-
-import http.cookiejar
-import threading as _threading
 
 import requests
 import requests.adapters
@@ -86,7 +84,7 @@ def record_call(
     save_events(events)
 
 
-def request(service: str, operation: str, method: str, url: str, **kwargs: Any) -> requests.Response:
+def _request_once(service: str, operation: str, method: str, url: str, **kwargs: Any) -> requests.Response:
     started = time.perf_counter()
     resp: requests.Response | None = None
     error_name: str | None = None
@@ -113,6 +111,18 @@ def request(service: str, operation: str, method: str, url: str, **kwargs: Any) 
             ok=resp.ok if resp is not None else False,
             error_body=error_body,
         )
+
+
+def request(service: str, operation: str, method: str, url: str, **kwargs: Any) -> requests.Response:
+    # A ConnectionError this fast (single-digit ms) is almost always the local
+    # network path mid-transition (NAT/endpoint remap, brief WiFi blip) rather
+    # than the remote host being down — one short-delay retry clears most of
+    # these instead of dropping the whole sync attempt.
+    try:
+        return _request_once(service, operation, method, url, **kwargs)
+    except requests.exceptions.ConnectionError:
+        time.sleep(0.5)
+        return _request_once(service, operation, method, url, **kwargs)
 
 
 def get(service: str, operation: str, url: str, **kwargs: Any) -> requests.Response:

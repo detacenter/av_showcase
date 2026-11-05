@@ -2,6 +2,8 @@ from __future__ import annotations
 
 from collections import defaultdict
 
+from insights.collection_insights import heard_count
+
 
 def artist_plays(log: list[dict], artist_name: str) -> list[dict]:
     return [entry for entry in log if artist_name in entry.get("artist_names", [])]
@@ -20,7 +22,6 @@ def resolve_artist_id(plays: list[dict], artist_name: str) -> str | None:
 
 def build_artist_album_index(plays: list[dict], artist_name: str) -> dict[str, dict]:
     albums: dict[str, dict] = {}
-    heard_ids: dict[str, set] = {}
     for entry in plays:
         album_id = entry["album_id"]
         info = albums.setdefault(
@@ -39,11 +40,8 @@ def build_artist_album_index(plays: list[dict], artist_name: str) -> dict[str, d
         )
         info["count"] += 1
         info["plays"].append(entry)
-        tid = entry.get("track_id")
-        if tid:
-            heard_ids.setdefault(album_id, set()).add(tid)
-    for album_id, info in albums.items():
-        info["heard_tracks"] = len(heard_ids.get(album_id, set()))
+    for info in albums.values():
+        info["heard_tracks"] = heard_count(info["plays"], info.get("album_total_tracks"))
     return albums
 
 

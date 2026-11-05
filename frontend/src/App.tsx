@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { QueryClient, QueryClientProvider, useQuery } from "@tanstack/react-query";
 import { Sidebar } from "./components/Sidebar";
+import { BASENAME } from "./api/config";
 import { GenresFrameHost } from "./components/GenresFrameHost";
 import { ErrorBoundary } from "./components/ErrorBoundary";
 import { RecentView } from "./views/RecentView";
@@ -20,6 +21,7 @@ import { AboutView } from "./views/AboutView";
 import { APIGuideView } from "./views/APIGuideView";
 import { ShortcutsView } from "./views/ShortcutsView";
 import { MobilePreviewView } from "./views/MobilePreviewView";
+import { RadarView } from "./views/RadarView";
 import { VinylSessionPrompt } from "./components/VinylSessionPrompt";
 import { SpotifyReauthBanner } from "./components/SpotifyReauthBanner";
 import { SandboxBanner } from "./components/SandboxBanner";
@@ -60,22 +62,29 @@ function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
-function VisualizerRoute() {
+export default function App() {
+  // Popout is a brand-new OS window loading a real document from scratch, not a
+  // client-side navigation — under file:// (production) there's no server to fall
+  // back to index.html for an arbitrary path, and BrowserRouter's pushState-based
+  // navigation means the main window's own window.location can no longer be
+  // trusted to point at the real loaded file by the time this ever renders anyway.
+  // So this check happens before BrowserRouter mounts at all, keyed only on a
+  // query param on whatever file was actually loaded (see VisualizerView's
+  // ENTRY_URL for the matching fix on the "open" side).
   const isPopout = new URLSearchParams(window.location.search).get("popout") === "1";
   if (isPopout) {
     return (
-      <main style={{ flex: 1, overflow: "hidden", display: "flex", flexDirection: "column" }}>
-        <ErrorBoundary><VisualizerView /></ErrorBoundary>
-      </main>
+      <QueryClientProvider client={queryClient}>
+        <main style={{ flex: 1, overflow: "hidden", display: "flex", flexDirection: "column" }}>
+          <ErrorBoundary><VisualizerView /></ErrorBoundary>
+        </main>
+      </QueryClientProvider>
     );
   }
-  return <Layout><VisualizerView /></Layout>;
-}
 
-export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <BrowserRouter>
+      <BrowserRouter basename={BASENAME}>
         <AccentLoader />
         <GenresFrameHost />
         <Routes>
@@ -87,6 +96,7 @@ export default function App() {
           <Route path="/playlists" element={<Layout><PlaylistsView /></Layout>} />
           <Route path="/playlists/:id" element={<Layout><PlaylistDetailView /></Layout>} />
           <Route path="/revisit" element={<Layout><RevisitView /></Layout>} />
+          <Route path="/radar" element={<Layout><RadarView /></Layout>} />
           <Route path="/vinyl" element={<Layout><VinylView /></Layout>} />
           <Route path="/settings" element={<Layout><SettingsView /></Layout>} />
           <Route path="/stats" element={<Layout><StatsView /></Layout>} />
@@ -96,7 +106,7 @@ export default function App() {
           <Route path="/api-guide" element={<Layout><APIGuideView /></Layout>} />
           <Route path="/shortcuts" element={<Layout><ShortcutsView /></Layout>} />
           <Route path="/mobile" element={<Layout><MobilePreviewView /></Layout>} />
-          <Route path="/visualizer" element={<VisualizerRoute />} />
+          <Route path="/visualizer" element={<Layout><VisualizerView /></Layout>} />
           <Route path="*" element={<Layout><div style={{ padding: 24, color: "var(--dim)" }}>Coming soon</div></Layout>} />
         </Routes>
         <VinylSessionPrompt />

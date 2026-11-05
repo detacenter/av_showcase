@@ -23,6 +23,7 @@ interface SessionState {
 export function VinylSessionPrompt() {
   const qc = useQueryClient();
   const [visible, setVisible] = useState(false);
+  const sending = useRef(false);
   const [reconfirmId, setReconfirmId] = useState<string | null>(null);
   const [filter, setFilter] = useState("");
   const [focused, setFocused] = useState(0);
@@ -91,6 +92,8 @@ export function VinylSessionPrompt() {
   useEffect(() => {
     if (!visible) return;
     const onKey = (e: KeyboardEvent) => {
+      // a held Enter auto-repeats ~30/s; each repeat used to fire another confirm (44 on 2026-10-31)
+      if (e.repeat && (e.key === "Enter" || e.key === "Escape")) { e.preventDefault(); return; }
       if (e.key === "ArrowDown") { e.preventDefault(); setFocused(f => Math.min(f + 1, filtered.length - 1)); }
       else if (e.key === "ArrowUp") { e.preventDefault(); setFocused(f => Math.max(f - 1, 0)); }
       else if (e.key === "Enter") { e.preventDefault(); if (filtered[focused]) confirm(filtered[focused]); }
@@ -107,6 +110,16 @@ export function VinylSessionPrompt() {
   }, [confirmed]);
 
   async function confirm(r: VinylRecord) {
+    if (sending.current) return;
+    sending.current = true;
+    try {
+      await sendConfirm(r);
+    } finally {
+      sending.current = false;
+    }
+  }
+
+  async function sendConfirm(r: VinylRecord) {
     const body = {
       release_id: String(r.release_id),
       title: r.title,

@@ -113,6 +113,7 @@ export function ArtistsView() {
   const allGenres = data?.all_genres ?? [];
 
   const filtered = artists.filter(a => {
+    if (filters.favoritesOnly && !a.is_favorited) return false;
     const q = filters.search.trim().toLowerCase();
     if (q && !a.name.toLowerCase().includes(q)) return false;
     if (filters.genres.length && !filters.genres.some(g => a.genres.includes(g))) return false;
@@ -140,10 +141,10 @@ export function ArtistsView() {
           style={{
             position: "relative", background: "none", border: "none",
             color: filterCount > 0 ? "var(--green, #1db954)" : "#555",
-            fontSize: 17, cursor: "pointer", padding: "4px 6px",
+            fontSize: 20, cursor: "pointer", padding: "4px 6px",
           }}
         >
-          ⊟
+          ⌕
           {filterCount > 0 && (
             <span style={{
               position: "absolute", top: 0, right: 0,

@@ -5,6 +5,7 @@ PLAYER_URL          = "https://api.spotify.com/v1/me/player"
 ARTISTS_URL         = "https://api.spotify.com/v1/artists"
 ALBUM_TRACKS_URL    = "https://api.spotify.com/v1/albums/{}/tracks"
 ALBUM_URL           = "https://api.spotify.com/v1/albums/{}"
+SEARCH_URL          = "https://api.spotify.com/v1/search"
 
 
 def get_recently_played(access_token: str, limit: int = 50) -> list[dict]:
@@ -43,7 +44,7 @@ def get_recently_played(access_token: str, limit: int = 50) -> list[dict]:
             "album_total_tracks": album.get("total_tracks"),
             "album_art_url":        album_art_url,
             "album_art_local_path": None,
-            "release_year":  int(album["release_date"][:4]) if album.get("release_date", "")[:4].isdigit() else None,
+            "release_year":  (int(album["release_date"][:4]) or None) if album.get("release_date", "")[:4].isdigit() else None,  # "0000" = unknown
             "track_number":  track.get("track_number"),
             "context_type":  context.get("type"),   # "album" | "playlist" | "artist" | "collection" | None
             "context_uri":   context.get("uri"),
@@ -77,6 +78,7 @@ def get_player_state(access_token: str) -> dict | None:
         "device_name":  device.get("name"),
         "device_type":  device.get("type"),
         "shuffle_state": data.get("shuffle_state"),
+        "is_playing":   bool(data.get("is_playing")),
     }
 
 
@@ -147,6 +149,17 @@ def get_album(access_token: str, album_id: str) -> dict | None:
         "album_id": d["id"],
         "album_name": d["name"],
         "artist_names": artists,
-        "release_year": int(release_date[:4]) if release_date[:4].isdigit() else None,
+        "release_year": (int(release_date[:4]) or None) if release_date[:4].isdigit() else None,
         "album_art_url": art_url,
     }
+
+
+def search(access_token: str, query: str, limit: int = 6) -> dict:
+    """Ad-hoc catalog search for artists/albums/tracks, e.g. for Radar's add flow."""
+    resp = api_metrics.get(
+        "Spotify", "search", SEARCH_URL,
+        headers={"Authorization": f"Bearer {access_token}"},
+        params={"q": query, "type": "artist,album,track", "limit": limit},
+    )
+    resp.raise_for_status()
+    return resp.json()

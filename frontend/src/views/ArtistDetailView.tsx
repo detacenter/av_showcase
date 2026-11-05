@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
-import { useParams, useNavigate, useSearchParams } from "react-router-dom";
+import { useParams, useNavigate, useSearchParams, useLocation } from "react-router-dom";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api/client";
 import type { ArtistDetail, ArtistAlbumDetail, VinylRecord } from "../api/types";
+import { OpenInDiscogs } from "../components/OpenInDiscogs";
 
 import { API_BASE } from "../api/config";
 const VINYL_BLUE = "#7db4cc";
@@ -226,14 +227,22 @@ function AlbumDetailPanel({
             <div style={{ fontSize: 12, color: "#535353", marginTop: 1 }}>
               {album.count} {album.count === 1 ? "play" : "plays"}
             </div>
-            <button
-              onClick={() => window.open(`spotify:album:${album.album_id}`, "_blank")}
-              style={{
-                background: "transparent", border: "none", color: "#7db4cc",
-                fontSize: 12, cursor: "pointer", padding: 0, marginTop: 6,
-                textAlign: "left", display: "flex", alignItems: "center", gap: 3,
-              }}
-            >↗ Open in Spotify</button>
+            <div style={{ display: "flex", flexWrap: "wrap", columnGap: 14, rowGap: 4, marginTop: 6 }}>
+              <button
+                onClick={() => window.open(`spotify:album:${album.album_id}`, "_blank")}
+                style={{
+                  background: "transparent", border: "none", color: "#7db4cc",
+                  fontSize: 12, cursor: "pointer", padding: 0, whiteSpace: "nowrap",
+                  textAlign: "left", display: "flex", alignItems: "center", gap: 3,
+                }}
+              >↗ Open in Spotify</button>
+              <OpenInDiscogs
+                artist={album.artist}
+                title={album.album_name}
+                albumId={album.album_id}
+                style={{ background: "transparent", border: "none", color: "#7db4cc", fontSize: 12, padding: 0 }}
+              />
+            </div>
 
             {/* Rating */}
             <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 8 }}>
@@ -470,6 +479,12 @@ export function ArtistDetailView() {
   const params = useParams<{ "*": string }>();
   const name = params["*"];
   const navigate = useNavigate();
+  // Where "back" goes: the page that sent you here (Albums passes { from, fromLabel }),
+  // else the Artists list.
+  const location = useLocation();
+  const backTo = (location.state as { from?: string; fromLabel?: string } | null) ?? null;
+  const backPath = backTo?.from ?? "/artists";
+  const backLabel = backTo?.fromLabel ?? "Artists";
   const [searchParams, setSearchParams] = useSearchParams();
   const queryClient = useQueryClient();
   const artistName = decodeURIComponent(name ?? "");
@@ -628,8 +643,8 @@ export function ArtistDetailView() {
       const next = new URLSearchParams(prev);
       next.delete("album");
       return next;
-    }, { replace: true });
-  }, [data, searchParams, setSearchParams]);
+    }, { replace: true, state: location.state });   // keep "came from Albums" through the strip
+  }, [data, searchParams, setSearchParams, location.state]);
 
   // ── keyboard ──────────────────────────────────────────────────────────────
   useEffect(() => {
@@ -641,7 +656,7 @@ export function ArtistDetailView() {
       // Source switching
       if (e.key === "s") { setSource("spotify"); return; }
       if (e.key === "v" && hasVinyl) { setSource("vinyl"); return; }
-      if (e.key === "Escape") { navigate("/artists"); return; }
+      if (e.key === "Escape") { navigate(backPath); return; }
       if ((e.ctrlKey || e.metaKey) && e.key === "f") {
         e.preventDefault();
         const next = !isFav;
@@ -685,7 +700,7 @@ export function ArtistDetailView() {
     return () => window.removeEventListener("keydown", handler);
   }, [
     genreEditing, hasVinyl, source, data, flatGroupedAlbums, selectedAlbumId, selectedVinylId,
-    navigate, isFav, toggleFav, selectedAlbum, albumFavOverrides, toggleAlbumFav,
+    navigate, backPath, isFav, toggleFav, selectedAlbum, albumFavOverrides, toggleAlbumFav,
   ]);
 
   const pillStyle = (active: boolean, isVinyl = false): React.CSSProperties => ({
@@ -711,11 +726,11 @@ export function ArtistDetailView() {
     }}>
       {/* Header */}
       <div style={{ flexShrink: 0, padding: "8px 24px 12px", borderBottom: "1px solid #1a1a1a" }}>
-        <button onClick={() => navigate("/artists")} style={{
+        <button onClick={() => navigate(backPath)} style={{
           background: "transparent", border: "none", color: "var(--green)",
           fontSize: 13, fontWeight: 600, cursor: "pointer",
           padding: 0, marginBottom: 4, display: "block",
-        }}>← Artists</button>
+        }}>← {backLabel}</button>
 
         <div style={{ display: "flex", alignItems: "baseline", gap: 12, flexWrap: "wrap" }}>
           <span style={{ fontSize: 22, fontWeight: 800, color: "#fff" }}>{data.name}</span>

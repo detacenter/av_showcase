@@ -4,12 +4,14 @@ export interface FilterState {
   search: string;
   genres: string[];
   albumTypes: string[];
+  yearDecades: number[];
   yearFrom: string;
   yearTo: string;
+  favoritesOnly: boolean;
 }
 
 export function emptyFilters(): FilterState {
-  return { search: "", genres: [], albumTypes: [], yearFrom: "", yearTo: "" };
+  return { search: "", genres: [], albumTypes: [], yearDecades: [], yearFrom: "", yearTo: "", favoritesOnly: false };
 }
 
 export function activeFilterCount(f: FilterState): number {
@@ -17,8 +19,27 @@ export function activeFilterCount(f: FilterState): number {
   if (f.search.trim()) n++;
   if (f.genres.length) n++;
   if (f.albumTypes.length) n++;
-  if (f.yearFrom || f.yearTo) n++;
+  if (f.yearDecades.length || f.yearFrom || f.yearTo) n++;
+  if (f.favoritesOnly) n++;
   return n;
+}
+
+// Returns true if `year` falls in any of the selected decade buckets (each decade
+// covers `decade`..`decade+9`, e.g. 1990 covers 1990-1999).
+export function yearInDecades(year: number, decades: number[]): boolean {
+  return decades.some(d => year >= d && year <= d + 9);
+}
+
+interface DecadeChip { label: string; decade: number }
+
+function decadeChips(bounds: { min: number; max: number }): DecadeChip[] {
+  const chips: DecadeChip[] = [];
+  const startDecade = Math.floor(bounds.min / 10) * 10;
+  const endDecade = Math.floor(bounds.max / 10) * 10;
+  for (let d = startDecade; d <= endDecade; d += 10) {
+    chips.push({ label: `${d}s`, decade: d });
+  }
+  return chips;
 }
 
 // ─── Genre combobox ───────────────────────────────────────────────────────────
@@ -75,6 +96,9 @@ function GenreCombobox({ selected, available, onChange }: {
         value={query}
         onChange={e => setQuery(e.target.value)}
         placeholder={selected.length ? "Add another…" : "Type to filter genres…"}
+        autoCorrect="off"
+        spellCheck={false}
+        enterKeyHint="search"
         style={{
           width: "100%", boxSizing: "border-box",
           background: "#1e1e1e", border: "1px solid #2a2a2a", borderRadius: 8,
@@ -112,9 +136,13 @@ export function FilterDialog({
   searchPlaceholder = "Name…",
 }: FilterDialogProps) {
   const [local, setLocal] = useState<FilterState>(filters);
+  const [showCustomYear, setShowCustomYear] = useState(false);
 
   useEffect(() => {
-    if (open) setLocal(filters);
+    if (open) {
+      setLocal(filters);
+      setShowCustomYear(!!(filters.yearFrom || filters.yearTo));
+    }
   }, [open]);
 
   const patch = (p: Partial<FilterState>) => setLocal(prev => ({ ...prev, ...p }));
@@ -166,13 +194,13 @@ export function FilterDialog({
 
   return (
     <>
-      <div onClick={handleDone} style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.6)", zIndex: 100 }} />
+      <div onClick={handleDone} style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.6)", zIndex: 300 }} />
       <div style={{
         position: "fixed", left: 0, right: 0, bottom: 0,
         background: "#141414", borderRadius: "16px 16px 0 0",
         padding: "0 16px",
         paddingBottom: "calc(env(safe-area-inset-bottom) + 16px)",
-        zIndex: 101, maxHeight: "82vh",
+        zIndex: 301, maxHeight: "82vh",
         overflowY: "auto", WebkitOverflowScrolling: "touch",
       } as React.CSSProperties}>
 
@@ -180,13 +208,17 @@ export function FilterDialog({
           <div style={{ width: 36, height: 4, borderRadius: 2, background: "#333" }} />
         </div>
 
-        <div style={{ display: "flex", alignItems: "center", marginBottom: 18 }}>
+        <div style={{ display: "flex", alignItems: "center", marginBottom: 18, gap: 16 }}>
           <span style={{ fontSize: 17, fontWeight: 700, color: "#fff" }}>Filter</span>
           <div style={{ flex: 1 }} />
           <button
             onClick={handleClear}
             style={{ background: "none", border: "none", color: "#666", fontSize: 13, cursor: "pointer", padding: "4px 0" }}
           >Clear all</button>
+          <button
+            onClick={handleDone}
+            style={{ background: "none", border: "none", color: "var(--green, #1db954)", fontSize: 15, fontWeight: 700, cursor: "pointer", padding: "4px 0" }}
+          >Done</button>
         </div>
 
         {/* Search */}
@@ -195,10 +227,22 @@ export function FilterDialog({
           <input
             value={local.search}
             onChange={e => patch({ search: e.target.value })}
+            onKeyDown={e => { if (e.key === "Enter") handleDone(); }}
             placeholder={searchPlaceholder}
             autoFocus
+            autoCorrect="off"
+            spellCheck={false}
+            enterKeyHint="search"
             style={{ ...inputStyle, width: "100%", boxSizing: "border-box" }}
           />
+        </div>
+
+        {/* Favorites */}
+        <div style={{ marginBottom: 20 }}>
+          {sectionLabel("Show")}
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+            {chip("♥ Favorites only", local.favoritesOnly, () => patch({ favoritesOnly: !local.favoritesOnly }))}
+          </div>
         </div>
 
         {/* Genre */}
@@ -227,34 +271,45 @@ export function FilterDialog({
         {yearBounds && (
           <div style={{ marginBottom: 20 }}>
             {sectionLabel("Release Year")}
-            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-              <input
-                type="number"
-                value={local.yearFrom}
-                onChange={e => patch({ yearFrom: e.target.value })}
-                placeholder={String(yearBounds.min)}
-                style={{ ...inputStyle, flex: 1 }}
-              />
-              <span style={{ color: "#555", fontSize: 13, flexShrink: 0 }}>to</span>
-              <input
-                type="number"
-                value={local.yearTo}
-                onChange={e => patch({ yearTo: e.target.value })}
-                placeholder={String(yearBounds.max)}
-                style={{ ...inputStyle, flex: 1 }}
-              />
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: showCustomYear ? 10 : 0 }}>
+              {decadeChips(yearBounds).map(d => {
+                const active = local.yearDecades.includes(d.decade);
+                return chip(d.label, active, () => {
+                  patch({
+                    yearDecades: active
+                      ? local.yearDecades.filter(x => x !== d.decade)
+                      : [...local.yearDecades, d.decade],
+                    yearFrom: "", yearTo: "",
+                  });
+                  setShowCustomYear(false);
+                });
+              })}
+              {chip("Custom…", showCustomYear, () => {
+                setShowCustomYear(v => !v);
+                patch({ yearDecades: [] });
+              })}
             </div>
+            {showCustomYear && (
+              <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                <input
+                  type="number"
+                  value={local.yearFrom}
+                  onChange={e => patch({ yearFrom: e.target.value })}
+                  placeholder={String(yearBounds.min)}
+                  style={{ ...inputStyle, flex: 1 }}
+                />
+                <span style={{ color: "#555", fontSize: 13, flexShrink: 0 }}>to</span>
+                <input
+                  type="number"
+                  value={local.yearTo}
+                  onChange={e => patch({ yearTo: e.target.value })}
+                  placeholder={String(yearBounds.max)}
+                  style={{ ...inputStyle, flex: 1 }}
+                />
+              </div>
+            )}
           </div>
         )}
-
-        <button
-          onClick={handleDone}
-          style={{
-            width: "100%", background: "var(--green, #1db954)", border: "none",
-            borderRadius: 10, padding: 13, color: "#000", fontSize: 15, fontWeight: 700,
-            cursor: "pointer", marginTop: 4,
-          }}
-        >Done</button>
       </div>
     </>
   );

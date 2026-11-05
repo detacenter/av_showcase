@@ -6,6 +6,7 @@ import { ArtistDetailView } from "./views/ArtistDetailView";
 import { AlbumsView } from "./views/AlbumsView";
 import { AlbumDetailView } from "./views/AlbumDetailView";
 import { PlaylistsView } from "./views/PlaylistsView";
+import { RadarView } from "./views/RadarView";
 import { VinylView, VinylDetailView } from "./views/VinylView";
 import { StatsView } from "./views/StatsView";
 import { SettingsView } from "./views/SettingsView";
@@ -19,6 +20,7 @@ const LIBRARY_ITEMS = [
   { to: "/albums",   icon: "◉", label: "Albums"    },
   { to: "/playlists",icon: "≡", label: "Playlists" },
   { to: "/vinyl",    icon: "◎", label: "Vinyl"     },
+  { to: "/radar",    icon: "◍", label: "Radar"     },
 ];
 
 function LibraryPopup({ onClose }: { onClose: () => void }) {
@@ -129,6 +131,7 @@ export function App() {
           <Route path="/playlists"  element={<PlaylistsView />} />
           <Route path="/vinyl"      element={<VinylView />} />
           <Route path="/vinyl/:id"  element={<VinylDetailView />} />
+          <Route path="/radar"      element={<RadarView />} />
           <Route path="/stats"      element={<StatsView />} />
           <Route path="/settings"   element={<SettingsView />} />
         </Routes>

@@ -10,7 +10,13 @@ from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
 from core.paths import data_path, ensure_data_dir
-from persistence.discogs import classify_vinyl_type, load_collection, save_collection, load_wantlist, save_wantlist
+from persistence.discogs import (
+    classify_vinyl_type,
+    load_collection,
+    load_wantlist,
+    save_collection,
+    save_wantlist,
+)
 
 router = APIRouter(prefix="/api/vinyl", tags=["vinyl"])
 
@@ -79,9 +85,35 @@ def _upsert_session(sess: dict) -> None:
     _save_sessions(sessions)
 
 
-# ── In-memory active session ──────────────────────────────────────────────────
+# ── Active session ────────────────────────────────────────────────────────────
+# Kept in memory and mirrored to disk, so a backend restart mid-record doesn't lose
+# the session (a confirmed record and its start time vanished on 2026-10-30).
 
-_session: dict = {}
+_ACTIVE_FILE = data_path("vinyl_session_active.json")
+
+
+def _restore_active() -> dict:
+    try:
+        with _ACTIVE_FILE.open() as f:
+            sess = json.load(f)
+        return sess if sess.get("active") else {}
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
+def _persist_active() -> None:
+    ensure_data_dir()
+    if _session.get("active"):
+        # unique name: concurrent requests sharing one .tmp raced and 500'd (2026-10-31)
+        tmp = _ACTIVE_FILE.with_suffix(f".{uuid.uuid4().hex[:8]}.tmp")
+        with tmp.open("w") as f:
+            json.dump(_session, f)
+        tmp.replace(_ACTIVE_FILE)
+    else:
+        _ACTIVE_FILE.unlink(missing_ok=True)
+
+
+_session: dict = _restore_active()
 
 
 class SessionConfirm(BaseModel):
@@ -114,14 +146,18 @@ def _art_filename(art_path: str | None) -> str | None:
 
 
 @router.post("/session/start")
-def session_start():
+def session_start(started_at: float | None = None):
+    """The monitor waits for a few seconds of sustained sound and passes when it began;
+    anything implausible (future, or over a minute back) falls back to now."""
     global _session
     if _session.get("active"):
         return {"status": "already_active", "session_id": _session["id"]}
+    now = time.time()
+    begun = started_at if started_at is not None and now - 60 <= started_at <= now else now
     _session = {
         "id": str(uuid.uuid4()),
         "active": True,
-        "started_at": time.time(),
+        "started_at": begun,
         "dismissed": False,
         "confirmed": False,
         "release_id": None,
@@ -129,6 +165,7 @@ def session_start():
         "artists": [],
         "art_filename": None,
     }
+    _persist_active()
     return {"status": "started", "session_id": _session["id"]}
 
 
@@ -152,6 +189,7 @@ def session_end():
     }
     _upsert_session(persisted)
     _session = {}
+    _persist_active()
     return {"status": "ended", "duration_seconds": duration}
 
 
@@ -169,15 +207,36 @@ def session_current():
     }
 
 
+MERGE_GAP_SECONDS = 600  # same record confirmed again this soon after the last one = a slow side flip
+
+
+def _merge_into_previous_if_same_record(release_id: str) -> None:
+    """If the session that just ended was this same record, continue that one instead."""
+    if _session.get("confirmed"):
+        return
+    sessions = _load_sessions()
+    ended = [s for s in sessions if s.get("ended_at")]
+    if not ended:
+        return
+    prev = max(ended, key=lambda s: s["ended_at"])
+    if str(prev.get("release_id")) != str(release_id) or _session["started_at"] - prev["ended_at"] > MERGE_GAP_SECONDS:
+        return
+    _session["id"] = prev["id"]
+    _session["started_at"] = prev["started_at"]
+    _save_sessions([s for s in sessions if s["id"] != prev["id"]])
+
+
 @router.post("/session/confirm")
 def session_confirm(body: SessionConfirm):
     if not _session.get("active"):
         raise HTTPException(status_code=400, detail="No active session")
+    _merge_into_previous_if_same_record(body.release_id)
     _session["confirmed"] = True
     _session["release_id"] = body.release_id
     _session["title"] = body.title
     _session["artists"] = body.artists
     _session["art_filename"] = body.art_filename
+    _persist_active()
     return {"status": "confirmed", "release_id": body.release_id}
 
 
@@ -185,12 +244,24 @@ def session_confirm(body: SessionConfirm):
 def session_dismiss():
     if _session.get("active"):
         _session["dismissed"] = True
+        _persist_active()
     return {"status": "dismissed"}
+
+
+def _with_colors(sessions: list[dict]) -> list[dict]:
+    """Each vinyl session carries its record's cover color, for the Sessions week grid."""
+    from core.helpers import vivid_art_color
+
+    out = []
+    for s in sessions:
+        art = s.get("art_filename")
+        out.append({**s, "color": vivid_art_color(str(_ARTWORK_DIR / art)) if art else None})
+    return out
 
 
 @router.get("/sessions")
 def get_sessions():
-    sessions = _load_sessions()
+    sessions = _with_colors(_load_sessions())
     if _session.get("active"):
         active = {
             "id": _session["id"],
@@ -203,7 +274,7 @@ def get_sessions():
             "artists": _session.get("artists", []),
             "art_filename": _session.get("art_filename"),
         }
-        return [active] + sessions
+        return _with_colors([active]) + sessions
     return sessions
 
 
@@ -212,6 +283,7 @@ def delete_session(session_id: str):
     global _session
     if _session.get("id") == session_id:
         _session = {}
+        _persist_active()
         return {"status": "deleted"}
     sessions = _load_sessions()
     new_sessions = [s for s in sessions if s["id"] != session_id]
@@ -223,6 +295,15 @@ def delete_session(session_id: str):
 
 @router.post("/sessions/{session_id}/confirm")
 def confirm_past_session(session_id: str, body: SessionConfirm):
+    if _session.get("id") == session_id and _session.get("active"):
+        _session["confirmed"] = True
+        _session["release_id"] = body.release_id
+        _session["title"] = body.title
+        _session["artists"] = body.artists
+        _session["art_filename"] = body.art_filename
+        _persist_active()
+        return {"status": "confirmed"}
+
     sessions = _load_sessions()
     for s in sessions:
         if s["id"] == session_id:
@@ -326,6 +407,13 @@ def get_vinyl_stats():
 # ── Wantlist ──────────────────────────────────────────────────────────────────
 
 _wantlist_sync_state: dict = {"running": False, "message": "", "progress": 0, "total": 0}
+
+
+@router.get("/discogs-link")
+def discogs_link(artist: str, title: str, album_id: str = ""):
+    """Discogs master page (filtered to vinyl) for an album, for "Open in Discogs"."""
+    from integrations.discogs.master_link import find_master_link
+    return find_master_link(album_id, artist, title)
 
 
 @router.get("/wantlist")

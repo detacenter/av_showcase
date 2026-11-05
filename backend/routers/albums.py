@@ -1,8 +1,11 @@
 from pathlib import Path
+
 from fastapi import APIRouter, HTTPException
-from insights.collection_insights import build_album_index
+
 from core.album_type import classify_album_type
 from persistence.vinyl_links import confirmed_album_ids
+from insights.collection_insights import album_track_plays as _album_track_plays
+from services.collection_index import album_index, resolve_album_id
 from state import get_state
 
 router = APIRouter(prefix="/api/albums", tags=["albums"])
@@ -12,30 +15,15 @@ def _art_filename(path: str | None) -> str | None:
     return Path(path).name if path else None
 
 
-def _album_track_plays(plays: list[dict], lib: dict) -> list[dict]:
-    tracks: dict[str, dict] = {}
-    tracks_lib = lib.get("tracks", {})
-    for entry in plays:
-        tid = entry["track_id"]
-        if tid not in tracks:
-            tracks[tid] = {
-                "track_id": tid,
-                "track_name": entry["track_name"],
-                "track_number": entry.get("track_number", 0),
-                "play_count": 0,
-                "is_favorited": bool(tracks_lib.get(tid, {}).get("favorited", False)),
-            }
-        tracks[tid]["play_count"] += 1
-    return sorted(
-        tracks.values(),
-        key=lambda x: (x["track_number"] is None, x["track_number"], x["track_name"]),
-    )
 
 
 @router.get("")
 def get_albums():
+    """Every album in the history, AV's log and the imported Spotify export alike. Track
+    plays are left to GET /api/albums/{id}: with ~8k albums they would be most of the
+    payload, and only the open side panel needs them."""
     state = get_state()
-    albums_data = build_album_index(state.log)
+    albums_data = album_index()
     lib = state.lib
     albums_lib = lib.get("albums", {})
     artists_lib = lib.get("artists", {})
@@ -66,6 +54,7 @@ def get_albums():
             "album_type": info.get("album_type"),
             "album_total_tracks": info.get("album_total_tracks"),
             "latest_played": info.get("latest_played", ""),
+            "first_played": info.get("first_played", ""),
             "count": info.get("count", 0),
             "classified_type": classified,
             "has_vinyl": album_id in vinyl_ids,
@@ -74,7 +63,6 @@ def get_albums():
             "notes": a_lib.get("notes", ""),
             "genres": artists_lib.get(info["artist"], {}).get("genres", []),
             "heard_tracks": info.get("heard_tracks", 0),
-            "track_plays": _album_track_plays(info.get("plays", []), lib),
         })
 
     return {
@@ -98,6 +86,7 @@ def _build_album_dict(album_id: str, info: dict, lib: dict, vinyl_ids: set) -> d
         "album_type": info.get("album_type"),
         "album_total_tracks": info.get("album_total_tracks"),
         "latest_played": info.get("latest_played", ""),
+        "first_played": info.get("first_played", ""),
         "count": info.get("count", 0),
         "classified_type": classified,
         "has_vinyl": album_id in vinyl_ids,
@@ -113,7 +102,8 @@ def _build_album_dict(album_id: str, info: dict, lib: dict, vinyl_ids: set) -> d
 @router.get("/{album_id}")
 def get_album(album_id: str):
     state = get_state()
-    albums_data = build_album_index(state.log)
+    albums_data = album_index()
+    album_id = resolve_album_id(album_id)
     info = albums_data.get(album_id)
     if not info:
         raise HTTPException(status_code=404, detail="Album not found")

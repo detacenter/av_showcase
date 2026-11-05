@@ -1,6 +1,7 @@
 import { useState, useRef, type JSX } from "react";
 import { useSize } from "../../../hooks/useSize";
-import { hexToRgb, type DaypartFlow, type DaypartFlowMonthly } from "./helpers";
+import { HoverTooltip } from "../HoverTooltip";
+import { hexToRgb, minutesLabel, MONTH_NAMES, type DaypartFlow, type DaypartFlowMonthly } from "./helpers";
 
 const DAYPART_META: [number, number, string, string][] = [
   [0,  5,  "#7f8cff", "Late"],
@@ -13,6 +14,19 @@ const DAYPART_META: [number, number, string, string][] = [
 function hourColor(h: number): string {
   for (const [s, e, c] of DAYPART_META) if (h >= s && h < e) return c;
   return "#888";
+}
+
+// Shared by every Daypart component that labels an hour block (was duplicated
+// three times across DaypartClock/DaypartWaffleClock/DaypartWaffleClockFull
+// before the two flow modals below needed their own copy too).
+function fmtHour(h: number): string {
+  const fmt = (x: number) => {
+    x = ((x % 24) + 24) % 24;
+    if (x === 0) return "12am";
+    if (x === 12) return "12pm";
+    return x < 12 ? `${x}am` : `${x - 12}pm`;
+  };
+  return `${fmt(h)} – ${fmt(h + 1)}`;
 }
 
 // Same 5 daypart colors as hourColor, but interpolated continuously between each
@@ -43,17 +57,75 @@ function hourColorSmooth(h: number): string {
 }
 
 
-// ─── DaypartClock ─────────────────────────────────────────────────────────────
+// ─── Daypart Flow — shared modal shell ─────────────────────────────────────────
+// Previously each flow modal built its own dialog chrome from scratch (#181818
+// panel, an extra #101010-bordered inner box around the chart, a 22px flat-gray
+// close button) matching none of the app's real conventions -- the three other
+// dialogs in the app (RecentView's delete-confirm, VinylSessionPrompt, DevView's
+// panel) all use a single flat var(--surface) panel, borderRadius 12 (not 18),
+// a real border+shadow for lift, and this page's own SecLabel typography
+// (fontSize 10, not 12) for its header. This shell matches that instead of
+// inventing its own look, and both flow modals below now just supply a title/
+// caption/children.
+function DaypartFlowShell({ title, caption, onClose, children }: {
+  title: string; caption: string; onClose: () => void; children: React.ReactNode;
+}) {
+  const overlayRef = useRef<HTMLDivElement>(null);
+  const [closeHover, setCloseHover] = useState(false);
+  return (
+    <div ref={overlayRef} style={{
+      position: "fixed", inset: 0, background: "rgba(0,0,0,0.7)", zIndex: 1000,
+      display: "flex", alignItems: "center", justifyContent: "center",
+    }} onClick={e => { if (e.target === overlayRef.current) onClose(); }}>
+      <div style={{
+        // Darker than TimeTab's own cards (#141414) on purpose -- this canvas
+        // carries hundreds of small dots plus translucent daypart-band tints
+        // layered on top, so it needs more headroom below those layers than a
+        // sparser card does to still read as genuinely black, not grey. The
+        // earlier var(--surface) #1e1e1e attempt read as washed-out pastel
+        // against the app's actual near-black backgrounds and saturated colors.
+        background: "#0a0a0a", border: "1px solid var(--border, #2a2a2a)",
+        borderRadius: 12, boxShadow: "0 16px 64px rgba(0,0,0,0.7)",
+        padding: "16px 18px 18px",
+        display: "flex", flexDirection: "column", gap: 10,
+        width: Math.min(1220, Math.max(820, window.innerWidth - 64)),
+        maxHeight: "90vh",
+      }}>
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <span style={{ flex: 1, color: "#666", fontSize: 10, fontWeight: 700, letterSpacing: 2 }}>{title}</span>
+          <button
+            onClick={onClose}
+            onMouseEnter={() => setCloseHover(true)}
+            onMouseLeave={() => setCloseHover(false)}
+            style={{
+              width: 26, height: 26, borderRadius: "50%",
+              background: closeHover ? "rgba(30,215,96,0.16)" : "rgba(255,255,255,0.08)",
+              border: `1px solid ${closeHover ? "var(--green, #1ed760)" : "rgba(255,255,255,0.14)"}`,
+              color: closeHover ? "var(--green, #1ed760)" : "#888",
+              fontSize: 13, fontWeight: 700, cursor: "pointer", lineHeight: 1,
+              display: "flex", alignItems: "center", justifyContent: "center",
+              transition: "background 0.15s, border-color 0.15s, color 0.15s",
+            }}
+          >×</button>
+        </div>
+        {children}
+        <div style={{ color: "#666", fontSize: 10, fontWeight: 700 }}>{caption}</div>
+      </div>
+    </div>
+  );
+}
 
 export function DaypartFlowModal({ data, onClose }: { data: DaypartFlow; onClose: () => void }) {
-  const overlayRef = useRef<HTMLDivElement>(null);
   const chartRef = useRef<HTMLDivElement>(null);
   const { w: chartW, h: chartH } = useSize(chartRef);
+  const [hover, setHover] = useState<{ x: number; y: number; label: string; sub: string } | null>(null);
 
-  const { days, hours, max_hour: maxHour } = data;
+  // minutes can be missing at runtime against a backend that hasn't been
+  // redeployed with this field yet (same guard the clock components use below).
+  const { days, hours, minutes: minutesByDay = [], max_hour: maxHour } = data;
   const n = days.length;
 
-  const PAD_L = 74, PAD_R = 8, PAD_T = 18, PAD_B = 28;
+  const PAD_L = 82, PAD_R = 8, PAD_T = 18, PAD_B = 28;
 
   const pw = chartW - PAD_L - PAD_R;
   const ph = chartH - PAD_T - PAD_B;
@@ -73,8 +145,8 @@ export function DaypartFlowModal({ data, onClose }: { data: DaypartFlow; onClose
         fill={col} fillOpacity={0.055} />
     );
     gridEls.push(
-      <text key={`band-lbl-${s}`} x={40} y={(y1 + y2) / 2 + 4} fill={col} fontSize={9}
-        fontWeight={700} textAnchor="end">{DAYPART_META.find(m => m[0] === s)?.[3]}</text>
+      <text key={`band-lbl-${s}`} x={2} y={(y1 + y2) / 2 + 4} fill={col} fontSize={9}
+        fontWeight={700} textAnchor="start">{DAYPART_META.find(m => m[0] === s)?.[3]}</text>
     );
   }
 
@@ -83,7 +155,7 @@ export function DaypartFlowModal({ data, onClose }: { data: DaypartFlow; onClose
     const y = yBound(hMark);
     gridEls.push(<line key={`hline-${hMark}`} x1={PAD_L} y1={y} x2={PAD_L + pw} y2={y} stroke="#1e1e1e" strokeWidth={1} />);
     gridEls.push(
-      <text key={`hlbl-${hMark}`} x={44} y={yCenter(hMark) + 4} fill="#666" fontSize={9} textAnchor="end">
+      <text key={`hlbl-${hMark}`} x={72} y={yCenter(hMark) + 4} fill="#666" fontSize={9} textAnchor="end">
         {String(hMark).padStart(2, "0")}
       </text>
     );
@@ -107,18 +179,26 @@ export function DaypartFlowModal({ data, onClose }: { data: DaypartFlow; onClose
     const x = PAD_L + (i + 0.5) * cellW;
     let peakH = -1, peakCount = 0;
     for (let h = 0; h < 24; h++) if (row[h] > peakCount) { peakCount = row[h]; peakH = h; }
+    const dateLabel = new Date(days[i] + "T00:00:00").toLocaleDateString("en-US", { weekday: "short", month: "short", day: "numeric" });
+    // Hit target is generous horizontally regardless of the dot's own drawn size
+    // (at a full year's ~365 columns the dots shrink to a couple px, too small to
+    // reliably land a cursor on even with a mouse) but capped vertically at the
+    // row height so a wide month-view column doesn't bleed into the hour above/below.
+    const hitW = Math.max(8, cellW);
+    const hitH = Math.min(hitW, rowH);
     for (let h = 0; h < 24; h++) {
       const count = row[h];
       if (count <= 0) continue;
       const s = Math.max(1.6, Math.min(cellW - 1, rowH * 0.9, 1.6 + Math.sqrt(count / maxCount) * (rowH * 0.85)));
       const cy = yCenter(h);
+      const isPeak = h === peakH;
       gridEls.push(
         <rect key={`cell-${i}-${h}`}
           x={x - s / 2} y={cy - s / 2} width={s} height={s}
           rx={s * 0.28} ry={s * 0.28}
           fill={hourColorSmooth(h)} fillOpacity={0.88} />
       );
-      if (h === peakH) {
+      if (isPeak) {
         const ringS = s + 4;
         gridEls.push(
           <rect key={`peak-${i}-${h}`}
@@ -127,6 +207,15 @@ export function DaypartFlowModal({ data, onClose }: { data: DaypartFlow; onClose
             fill="none" stroke="#fff" strokeWidth={1} strokeOpacity={0.8} />
         );
       }
+      const mins = minutesByDay[i]?.[h] ?? 0;
+      const sub = `${fmtHour(h)} · ${minutesLabel(mins)}${isPeak ? " · peak hour" : ""}`;
+      gridEls.push(
+        <rect key={`hit-${i}-${h}`}
+          x={x - hitW / 2} y={cy - hitH / 2} width={hitW} height={hitH} fill="transparent"
+          onMouseEnter={e => setHover({ x: e.clientX, y: e.clientY, label: dateLabel, sub })}
+          onMouseMove={e => setHover(hv => hv && { ...hv, x: e.clientX, y: e.clientY })}
+          onMouseLeave={() => setHover(null)} />
+      );
     }
   }
 
@@ -149,40 +238,17 @@ export function DaypartFlowModal({ data, onClose }: { data: DaypartFlow; onClose
   }
 
   return (
-    <div ref={overlayRef} style={{
-      position: "fixed", inset: 0, background: "rgba(0,0,0,0.7)", zIndex: 1000,
-      display: "flex", alignItems: "center", justifyContent: "center",
-    }} onClick={e => { if (e.target === overlayRef.current) onClose(); }}>
-      <div style={{
-        background: "#181818", borderRadius: 18, padding: "16px 18px 18px",
-        display: "flex", flexDirection: "column", gap: 10,
-        width: Math.min(1220, Math.max(820, window.innerWidth - 64)),
-        maxHeight: "90vh",
-      }}>
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <span style={{ flex: 1, color: "#666", fontSize: 12, fontWeight: 700, letterSpacing: 2 }}>DAYPART FLOW</span>
-          <button onClick={onClose} style={{
-            width: 22, height: 22, borderRadius: "50%", background: "#242424",
-            border: "none", color: "#666", fontSize: 10, fontWeight: 800, cursor: "pointer",
-          }}>X</button>
-        </div>
-        <div style={{
-          background: "#101010", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 16,
-          padding: 6,
-        }}>
-          <div ref={chartRef} style={{ height: Math.min(390, Math.max(330, window.innerHeight - 260)) }}>
-            {chartW > 0 && chartH > 0 && (
-              <svg width={chartW} height={chartH} style={{ display: "block" }}>
-                {gridEls}
-              </svg>
-            )}
-          </div>
-        </div>
-        <div style={{ color: "#666", fontSize: 10, fontWeight: 700 }}>
-          hour × day grid · white line tracks center of gravity
-        </div>
+    <DaypartFlowShell title="DAYPART FLOW" onClose={onClose}
+      caption="hour × day grid · white ring marks each day's peak hour · hover a dot for detail">
+      <div ref={chartRef} style={{ height: Math.min(390, Math.max(330, window.innerHeight - 260)) }}>
+        {chartW > 0 && chartH > 0 && (
+          <svg width={chartW} height={chartH} style={{ display: "block" }}>
+            {gridEls}
+          </svg>
+        )}
       </div>
-    </div>
+      <HoverTooltip hover={hover} />
+    </DaypartFlowShell>
   );
 }
 
@@ -194,14 +260,14 @@ export function DaypartFlowModal({ data, onClose }: { data: DaypartFlow; onClose
 // share of the month's listening, so the peak hour is still the brightest cell but
 // the full spread/drift is visible too, not just a single point.
 export function DaypartFlowMonthlyModal({ data, onClose }: { data: DaypartFlowMonthly; onClose: () => void }) {
-  const overlayRef = useRef<HTMLDivElement>(null);
   const chartRef = useRef<HTMLDivElement>(null);
   const { w: chartW, h: chartH } = useSize(chartRef);
+  const [hover, setHover] = useState<{ x: number; y: number; label: string; sub: string } | null>(null);
 
   const { months, minutes } = data;
   const n = months.length;
 
-  const PAD_L = 74, PAD_R = 8, PAD_T = 18, PAD_B = 28;
+  const PAD_L = 82, PAD_R = 8, PAD_T = 18, PAD_B = 28;
   const pw = chartW - PAD_L - PAD_R;
   const ph = chartH - PAD_T - PAD_B;
   const cellW = Math.max(2, pw / Math.max(n, 1));
@@ -218,7 +284,7 @@ export function DaypartFlowMonthlyModal({ data, onClose }: { data: DaypartFlowMo
       <rect key={`band-${s}`} x={PAD_L} y={y1} width={pw} height={Math.max(2, y2 - y1)} fill={col} fillOpacity={0.055} />
     );
     gridEls.push(
-      <text key={`band-lbl-${s}`} x={40} y={(y1 + y2) / 2 + 4} fill={col} fontSize={9} fontWeight={700} textAnchor="end">{DAYPART_META.find(m => m[0] === s)?.[3]}</text>
+      <text key={`band-lbl-${s}`} x={2} y={(y1 + y2) / 2 + 4} fill={col} fontSize={9} fontWeight={700} textAnchor="start">{DAYPART_META.find(m => m[0] === s)?.[3]}</text>
     );
   }
 
@@ -226,25 +292,43 @@ export function DaypartFlowMonthlyModal({ data, onClose }: { data: DaypartFlowMo
     const y = yBound(hMark);
     gridEls.push(<line key={`hline-${hMark}`} x1={PAD_L} y1={y} x2={PAD_L + pw} y2={y} stroke="#1e1e1e" strokeWidth={1} />);
     gridEls.push(
-      <text key={`hlbl-${hMark}`} x={44} y={yCenter(hMark) + 4} fill="#666" fontSize={9} textAnchor="end">
+      <text key={`hlbl-${hMark}`} x={72} y={yCenter(hMark) + 4} fill="#666" fontSize={9} textAnchor="end">
         {String(hMark).padStart(2, "0")}
       </text>
     );
   }
 
+  const cellFullW = Math.max(1, cellW - 0.5);
+  // Widen the hit target horizontally (many-month views compress columns to a
+  // couple px, same problem the day view has) but never taller than the row
+  // itself, so hovering doesn't bleed into an adjacent hour.
+  const hitW = Math.max(6, cellFullW);
   for (let i = 0; i < minutes.length; i++) {
     const row = minutes[i];
     const total = row.reduce((a, b) => a + b, 0) || 1;
     const x = xOf(i);
     const rowH = ph / 24;
+    let peakH = -1, peakShare = 0;
+    for (let h = 0; h < 24; h++) if (row[h] > peakShare) { peakShare = row[h]; peakH = h; }
+    const { year, month } = months[i];
+    const monthLabel = `${MONTH_NAMES[month - 1]} ${year}`;
     for (let h = 0; h < 24; h++) {
       const share = row[h] / total;
       if (share <= 0) continue;
       const y = yBound(h);
       const alpha = Math.min(1, 0.06 + share * 9);
+      const isPeak = h === peakH;
       gridEls.push(
-        <rect key={`cell-${i}-${h}`} x={x} y={y} width={Math.max(1, cellW - 0.5)} height={rowH}
-          fill={hourColorSmooth(h)} fillOpacity={alpha} />
+        <rect key={`cell-${i}-${h}`} x={x} y={y} width={cellFullW} height={rowH}
+          fill={hourColorSmooth(h)} fillOpacity={alpha}
+          stroke={isPeak ? "rgba(255,255,255,0.75)" : "none"} strokeWidth={isPeak ? 1 : 0} />
+      );
+      const sub = `${fmtHour(h)} · ${Math.round(share * 100)}% of that month${isPeak ? " · peak hour" : ""}`;
+      gridEls.push(
+        <rect key={`hit-${i}-${h}`} x={x + cellFullW / 2 - hitW / 2} y={y} width={hitW} height={rowH} fill="transparent"
+          onMouseEnter={e => setHover({ x: e.clientX, y: e.clientY, label: monthLabel, sub })}
+          onMouseMove={e => setHover(hv => hv && { ...hv, x: e.clientX, y: e.clientY })}
+          onMouseLeave={() => setHover(null)} />
       );
     }
   }
@@ -262,40 +346,17 @@ export function DaypartFlowMonthlyModal({ data, onClose }: { data: DaypartFlowMo
   }
 
   return (
-    <div ref={overlayRef} style={{
-      position: "fixed", inset: 0, background: "rgba(0,0,0,0.7)", zIndex: 1000,
-      display: "flex", alignItems: "center", justifyContent: "center",
-    }} onClick={e => { if (e.target === overlayRef.current) onClose(); }}>
-      <div style={{
-        background: "#181818", borderRadius: 18, padding: "16px 18px 18px",
-        display: "flex", flexDirection: "column", gap: 10,
-        width: Math.min(1220, Math.max(820, window.innerWidth - 64)),
-        maxHeight: "90vh",
-      }}>
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <span style={{ flex: 1, color: "#666", fontSize: 12, fontWeight: 700, letterSpacing: 2 }}>DAYPART FLOW · ALL TIME</span>
-          <button onClick={onClose} style={{
-            width: 22, height: 22, borderRadius: "50%", background: "#242424",
-            border: "none", color: "#666", fontSize: 10, fontWeight: 800, cursor: "pointer",
-          }}>X</button>
-        </div>
-        <div style={{
-          background: "#101010", border: "1px solid rgba(255,255,255,0.08)", borderRadius: 16,
-          padding: 6,
-        }}>
-          <div ref={chartRef} style={{ height: Math.min(390, Math.max(330, window.innerHeight - 260)) }}>
-            {chartW > 0 && chartH > 0 && (
-              <svg width={chartW} height={chartH} style={{ display: "block" }}>
-                {gridEls}
-              </svg>
-            )}
-          </div>
-        </div>
-        <div style={{ color: "#666", fontSize: 10, fontWeight: 700 }}>
-          hour × month grid, full history · brightness = share of that month's listening
-        </div>
+    <DaypartFlowShell title="DAYPART FLOW · ALL TIME" onClose={onClose}
+      caption="hour × month grid, full history · brightness = share of that month's listening · outlined cell is that month's peak hour · hover for detail">
+      <div ref={chartRef} style={{ height: Math.min(390, Math.max(330, window.innerHeight - 260)) }}>
+        {chartW > 0 && chartH > 0 && (
+          <svg width={chartW} height={chartH} style={{ display: "block" }}>
+            {gridEls}
+          </svg>
+        )}
       </div>
-    </div>
+      <HoverTooltip hover={hover} />
+    </DaypartFlowShell>
   );
 }
 
@@ -368,16 +429,6 @@ export function DaypartClock({ data, onCenterClick }: { data: DaypartFlow; onCen
   function handleMouseLeave() {
     setHoveredHour(null);
     setCenterHovered(false);
-  }
-
-  function fmtHour(h: number): string {
-    const fmt = (x: number) => {
-      x = ((x % 24) + 24) % 24;
-      if (x === 0) return "12am";
-      if (x === 12) return "12pm";
-      return x < 12 ? `${x}am` : `${x - 12}pm`;
-    };
-    return `${fmt(h)} – ${fmt(h + 1)}`;
   }
 
   const arcs: JSX.Element[] = [];
@@ -545,16 +596,6 @@ export function DaypartWaffleClock({ data, onCenterClick }: { data: DaypartFlow;
     setCenterHovered(false);
   }
 
-  function fmtHour(h: number): string {
-    const fmt = (x: number) => {
-      x = ((x % 24) + 24) % 24;
-      if (x === 0) return "12am";
-      if (x === 12) return "12pm";
-      return x < 12 ? `${x}am` : `${x - 12}pm`;
-    };
-    return `${fmt(h)} – ${fmt(h + 1)}`;
-  }
-
   function fmtHours(mins: number): string {
     return `${(mins / 60).toFixed(1)}h`;
   }
@@ -586,7 +627,8 @@ export function DaypartWaffleClock({ data, onCenterClick }: { data: DaypartFlow;
   for (let h = 0; h < 24; h++) {
     const qtCenter = qtCenterOf(h);
     const rotationDeg = ((90 - qtCenter) % 360 + 360) % 360;
-    const filled = Math.round((totals[h] / maxTotal) * DOTS);
+    // Any listening at all lights at least one square; the rest scale against the peak hour.
+    const filled = totals[h] > 0 ? Math.max(1, Math.round((totals[h] / maxTotal) * DOTS)) : 0;
     const isHov = h === hoveredHour;
     const col = hourColorSmooth(h);
     const spokeDots: JSX.Element[] = [];
@@ -761,16 +803,6 @@ export function DaypartWaffleClockFull({ data, onCenterClick }: { data: DaypartF
     setCenterHovered(false);
   }
 
-  function fmtHour(h: number): string {
-    const fmt = (x: number) => {
-      x = ((x % 24) + 24) % 24;
-      if (x === 0) return "12am";
-      if (x === 12) return "12pm";
-      return x < 12 ? `${x}am` : `${x - 12}pm`;
-    };
-    return `${fmt(h)} – ${fmt(h + 1)}`;
-  }
-
   function fmtHours(mins: number): string {
     return `${(mins / 60).toFixed(1)}h`;
   }
@@ -785,7 +817,8 @@ export function DaypartWaffleClockFull({ data, onCenterClick }: { data: DaypartF
   for (let h = 0; h < 24; h++) {
     const qtCenter = qtCenterOf(h);
     const rotationDeg = ((90 - qtCenter) % 360 + 360) % 360;
-    const filled = Math.round((totals[h] / maxTotal) * DOTS);
+    // Any listening at all lights at least one square; the rest scale against the peak hour.
+    const filled = totals[h] > 0 ? Math.max(1, Math.round((totals[h] / maxTotal) * DOTS)) : 0;
     const isHov = h === hoveredHour;
     const col = hourColorSmooth(h);
     const spokeDots: JSX.Element[] = [];

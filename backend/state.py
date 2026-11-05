@@ -1,20 +1,24 @@
 from dataclasses import dataclass
 
-from persistence.catalog import load_catalog
-from persistence.library import load_library
-from persistence.storage import deduplicate_log, load_log, save_log
-from persistence.lastfm_genres import load_lastfm_genres
-from persistence.genre_aliases import load_genre_aliases
 from core.genre_utils import apply_genre_aliases
-from integrations.spotify.artwork import download_artwork
 from core.paths import resolve_data_path
+from insights.collection_insights import find_edition_duplicates
+from integrations.spotify.artwork import download_artwork
+from persistence.catalog import load_catalog
+from persistence.genre_aliases import load_genre_aliases
+from persistence.lastfm_genres import load_lastfm_genres
+from persistence.library import alias_album, library_lock, load_library, save_library
+from persistence.spotify_history import load_history_entries
+from persistence.storage import deduplicate_log, load_log, save_log
+from persistence.vinyl_links import follow_album_aliases
 
 
 @dataclass
 class AppState:
-    log: list
+    log: list        # AV's own play log, newest first
     lib: dict
     catalog: dict
+    history: list    # log + the imported Spotify history before it, newest first (Stats reads this)
 
 
 _state: AppState | None = None
@@ -51,9 +55,19 @@ def _load() -> AppState:
     if removed:
         save_log(log)
     lib = load_library()
+    imported = load_history_entries()
+    # Fold Spotify edition duplicates (same artist, title, track count) onto one id. New
+    # aliases are written back so ratings/favorites follow and the merge is stable.
+    dups = find_edition_duplicates(log + imported, lib.get("album_aliases"))
+    if dups:
+        with library_lock:
+            for old, new in dups.items():
+                alias_album(lib, old, new)
+            save_library(lib)
     aliases = lib.get("album_aliases", {})
+    follow_album_aliases(aliases)   # vinyl links move with merged albums too
     if aliases:
-        for entry in log:
+        for entry in log + imported:
             aid = entry.get("album_id")
             if aid in aliases:
                 entry["album_id"] = aliases[aid]
@@ -70,7 +84,7 @@ def _load() -> AppState:
     for artist, genres in lastfm.items():
         if genres and not artists.get(artist, {}).get("genres"):
             artists.setdefault(artist, {})["genres"] = apply_genre_aliases(genres, genre_aliases) if genre_aliases else genres
-    return AppState(log=log, lib=lib, catalog=catalog)
+    return AppState(log=log, lib=lib, catalog=catalog, history=log + imported[::-1])
 
 
 def get_state() -> AppState:

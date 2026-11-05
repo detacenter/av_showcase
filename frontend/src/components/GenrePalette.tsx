@@ -78,8 +78,9 @@ export function GenrePalette({
         return;
       }
       if (pane === "search") {
-        if (e.key === "ArrowDown" || e.key === "j") { e.preventDefault(); setPane("left"); return; }
-        if ((e.key === "ArrowRight" || e.key === "l") && showRight) { e.preventDefault(); setPane("right"); return; }
+        // Letters are typed into the search box here; only arrows move focus out.
+        if (e.key === "ArrowDown") { e.preventDefault(); setPane("left"); return; }
+        if (e.key === "ArrowRight" && showRight) { e.preventDefault(); setPane("right"); return; }
         if (e.key === "Enter") { e.preventDefault(); if (leftItems[0]) toggleItem(leftItems[0].id); return; }
         return;
       }

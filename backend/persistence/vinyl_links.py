@@ -64,6 +64,42 @@ def dismissed_pairs() -> set[tuple[int, str]]:
     return {(p["release_id"], p["album_id"]) for p in load_links().get("dismissed", [])}
 
 
+def follow_album_aliases(aliases: dict[str, str]) -> bool:
+    """Move links onto the surviving id when albums are merged (edition duplicates, or an
+    imported placeholder id replaced by the real one). Without this a linked record kept
+    pointing at the merged-away id: the matcher offered it again under the new id and the
+    album/artist pages lost its vinyl (9 records on 2026-11-03). Saves only if changed."""
+    if not aliases:
+        return False
+    links = load_links()
+    changed = False
+    for key in ("confirmed", "dismissed"):
+        out: list[dict] = []
+        for p in links.get(key, []):
+            aid = p["album_id"]
+            seen = set()
+            while aid in aliases and aid not in seen:   # chains end at the surviving id
+                seen.add(aid)
+                aid = aliases[aid]
+            q = {"release_id": p["release_id"], "album_id": aid}
+            changed |= aid != p["album_id"]
+            if q not in out:
+                out.append(q)
+            else:
+                changed = True
+        links[key] = out
+    if changed:
+        save_links(links)
+        _invalidate()
+    return changed
+
+
+def linked_release_ids() -> set[int]:
+    """Records already linked to an album. A record belongs to one album; an album can
+    have several records (pressings), so only the record side is ever closed off."""
+    return {p["release_id"] for p in load_links().get("confirmed", [])}
+
+
 def vinyl_ids_for_album(album_id: str) -> list[int]:
     return [p["release_id"] for p in load_links().get("confirmed", []) if p["album_id"] == album_id]
 

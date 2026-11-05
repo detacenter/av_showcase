@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "../api/client";
 import type { AlbumsResponse, AlbumListItem } from "../api/types";
-import { FilterDialog, emptyFilters, activeFilterCount } from "../components/FilterDialog";
+import { FilterDialog, emptyFilters, activeFilterCount, yearInDecades } from "../components/FilterDialog";
 import type { FilterState } from "../components/FilterDialog";
 
 function artUrl(filename: string | null | undefined): string | null {
@@ -16,7 +16,7 @@ function fmtRating(r: number): string {
   return v % 1 === 0 ? String(v) : v.toFixed(1);
 }
 
-type SortKey = "recent" | "az" | "plays";
+type SortKey = "recent" | "az" | "plays" | "rating";
 
 // ─── List row ─────────────────────────────────────────────────────────────────
 
@@ -121,6 +121,7 @@ export function AlbumsView() {
   const albums = useMemo(() => {
     let list = data?.albums ?? [];
 
+    if (filters.favoritesOnly) list = list.filter(a => a.is_favorited);
     const q = filters.search.trim().toLowerCase();
     if (q) list = list.filter(a =>
       a.album_name.toLowerCase().includes(q) || a.artist.toLowerCase().includes(q)
@@ -130,6 +131,9 @@ export function AlbumsView() {
     );
     if (filters.albumTypes.length) list = list.filter(a =>
       filters.albumTypes.includes(a.classified_type)
+    );
+    if (filters.yearDecades.length) list = list.filter(a =>
+      a.release_year !== null && yearInDecades(a.release_year, filters.yearDecades)
     );
     if (filters.yearFrom) list = list.filter(a =>
       a.release_year !== null && a.release_year >= Number(filters.yearFrom)
@@ -141,6 +145,7 @@ export function AlbumsView() {
     if (sort === "recent") list = [...list].sort((a, b) => b.latest_played.localeCompare(a.latest_played));
     if (sort === "az")     list = [...list].sort((a, b) => a.album_name.localeCompare(b.album_name));
     if (sort === "plays")  list = [...list].sort((a, b) => b.count - a.count);
+    if (sort === "rating") list = [...list].sort((a, b) => b.rating - a.rating || b.count - a.count);
     return list;
   }, [data, sort, filters]);
 
@@ -174,10 +179,10 @@ export function AlbumsView() {
             style={{
               position: "relative", background: "none", border: "none",
               color: filterCount > 0 ? "var(--green, #1db954)" : "#555",
-              fontSize: 17, cursor: "pointer", padding: "4px 6px",
+              fontSize: 20, cursor: "pointer", padding: "4px 6px",
             }}
           >
-            ⊟
+            ⌕
             {filterCount > 0 && (
               <span style={{
                 position: "absolute", top: 0, right: 0,
@@ -198,6 +203,7 @@ export function AlbumsView() {
         <div style={{ display: "flex", gap: 4, borderBottom: "1px solid #1a1a1a" }}>
           <button style={pillStyle(sort === "recent")} onClick={() => setSort("recent")}>Recent</button>
           <button style={pillStyle(sort === "plays")}  onClick={() => setSort("plays")}>Most Played</button>
+          <button style={pillStyle(sort === "rating")} onClick={() => setSort("rating")}>Top Rated</button>
           <button style={pillStyle(sort === "az")}     onClick={() => setSort("az")}>A–Z</button>
         </div>
       </div>

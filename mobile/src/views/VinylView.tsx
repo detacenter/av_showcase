@@ -142,6 +142,9 @@ export function VinylView() {
           value={search}
           onChange={e => setSearch(e.target.value)}
           placeholder="Search collection…"
+          autoCorrect="off"
+          spellCheck={false}
+          enterKeyHint="search"
           style={{
             width: "100%", boxSizing: "border-box",
             background: "#1e1e1e", border: "none", borderRadius: 10,

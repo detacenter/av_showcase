@@ -68,8 +68,9 @@ export interface ArtistAlbum {
 
 export interface Artist {
   name: string;
-  play_count: number;
+  play_count: number;          // lifetime plays
   latest_played: string;
+  first_played: string;
   is_favorited: boolean;
   genres: string[];
   albums: ArtistAlbum[];
@@ -160,7 +161,8 @@ export interface AlbumSummary {
   album_type: string | null;
   album_total_tracks: number | null;
   latest_played: string;
-  count: number;
+  first_played: string;        // earliest play anywhere in the history (Spotify export or AV)
+  count: number;               // lifetime plays
   classified_type: string;
   has_vinyl: boolean;
   is_favorited: boolean;
@@ -168,6 +170,10 @@ export interface AlbumSummary {
   notes: string;
   genres: string[];
   heard_tracks: number;
+}
+
+// GET /api/albums/{id}: the summary plus per-track plays, fetched when the panel opens.
+export interface AlbumDetail extends AlbumSummary {
   track_plays: TrackPlay[];
 }
 
@@ -220,10 +226,8 @@ export interface SessionInfo {
 
 export interface AppSettings {
   accent_color: string;
-  splash_style: string;
-  app_icon: string;
-  sidebar_logo: string;
   auto_poll: boolean;
+  saved_accents?: string[];
 }
 
 export interface ArtistDetail {

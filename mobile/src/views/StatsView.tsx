@@ -32,6 +32,10 @@ function getMondayOf(d: Date): Date {
   return r;
 }
 
+function localDateKey(d: Date): string {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+}
+
 function addDays(d: Date, n: number): Date {
   const r = new Date(d);
   r.setDate(r.getDate() + n);
@@ -245,10 +249,18 @@ function SessionsPanel() {
   const [expandedId, setExpandedId] = useState<string | null>(null);
   const [initialised, setInitialised] = useState(false);
 
-  const { data: sessions = [] } = useQuery<Session[]>({
-    queryKey: ["sessions"],
-    queryFn: () => api.get("/api/stats/sessions"),
+  const weekKey = localDateKey(weekStart);
+  // One week at a time: the full session history is far too big to ship at once.
+  const { data: bounds } = useQuery<{ oldest_start: string | null; newest_start: string | null }>({
+    queryKey: ["sessions-bounds"],
+    queryFn: () => api.get("/api/stats/sessions/bounds"),
     staleTime: 60_000,
+  });
+  const { data: sessions = [] } = useQuery<Session[]>({
+    queryKey: ["sessions", weekKey],
+    queryFn: () => api.get(`/api/stats/sessions?start=${weekKey}&days=7`),
+    staleTime: 60_000,
+    enabled: initialised,
   });
 
   const { data: vinylSessions = [] } = useQuery<VinylSession[]>({
@@ -259,13 +271,15 @@ function SessionsPanel() {
   });
 
   useEffect(() => {
-    if (initialised || sessions.length === 0) return;
+    if (initialised || !bounds) return;
+    if (bounds.newest_start) {
+      const d = new Date(bounds.newest_start);
+      const week = getMondayOf(d);
+      setWeekStart(week);
+      setSelectedDay(dayIndex(d, week));
+    }
     setInitialised(true);
-    const d = new Date(sessions[0].start);
-    const week = getMondayOf(d);
-    setWeekStart(week);
-    setSelectedDay(dayIndex(d, week));
-  }, [sessions]);
+  }, [bounds, initialised]);
 
   const weekEnd = addDays(weekStart, 6);
   const weekLabel = `${weekStart.toLocaleDateString("en-US", { month: "short", day: "numeric" })} – ${weekEnd.toLocaleDateString("en-US", { month: "short", day: "numeric" })}`;
@@ -284,7 +298,7 @@ function SessionsPanel() {
       .map(vs => ({ type: "vinyl" as const, id: vs.id, t: vs.started_at * 1000, vs })),
   ].sort((a, b) => b.t - a.t);
 
-  const oldestWeek = sessions.length > 0 ? getMondayOf(new Date(sessions[sessions.length - 1].start)) : weekStart;
+  const oldestWeek = bounds?.oldest_start ? getMondayOf(new Date(bounds.oldest_start)) : weekStart;
   const canPrev = weekStart > oldestWeek;
   const canNext = weekStart < getMondayOf(new Date());
 

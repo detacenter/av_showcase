@@ -1,17 +1,34 @@
 import threading
 import time
+from datetime import date
+
 from fastapi import APIRouter
-from state import reload_state, get_state
+
 from integrations.spotify.auth import SpotifyAuthExpired
+from services.poll_schedule import PollSchedule
+from state import reload_state
 
 router = APIRouter(prefix="/api/fetch", tags=["fetch"])
 
 _lock = threading.Lock()
 _fetching = False
 _new_plays: int | None = None
-_last_fetch_time: float = 0.0
 
-AUTO_POLL_INTERVAL = 180  # seconds
+# Auto-poll timing: random gaps from PollSchedule, short while music is playing, long
+# while it isn't. 0 means "as soon as auto-poll is on". Every fetch (Cmd+R too) re-rolls it.
+_schedule = PollSchedule()
+_next_poll_at: float = 0.0
+DAILY_POLL_CAP = 100   # ~200 Spotify calls; a heavy listening day uses about 60 polls
+_poll_day = ""
+_polls_today = 0
+
+
+def _schedule_next(playing: bool, at_least: float = 0) -> None:
+    global _next_poll_at
+    wait = max(_schedule.next_wait(playing), at_least)
+    _next_poll_at = time.time() + wait
+    print(f"Spotify poll: {'playing' if playing else 'idle'}, next auto-poll in "
+          f"{int(wait // 60)}m{int(wait % 60):02d}s ({time.strftime('%H:%M:%S', time.localtime(_next_poll_at))})")
 
 
 @router.get("/status")
@@ -30,29 +47,33 @@ def trigger_fetch():
         _new_plays = None
 
     def _run():
-        global _fetching, _new_plays, _last_fetch_time
+        global _fetching, _new_plays
+        import fetcher
         try:
-            from fetcher import run_once
-            count = run_once()
+            count = fetcher.run_once()
             reload_state()
             _new_plays = count
-            _last_fetch_time = time.time()
+            print(f"Spotify poll: {count} new play{'' if count == 1 else 's'}")
+            _schedule_next(fetcher.last_run_playing)
         except SpotifyAuthExpired:
-            # Refresh token expired — needs_reauth flag already set by auth.py.
-            # Keep polling at the normal interval; it's a harmless no-op until
-            # the user reconnects via the desktop app's reauth banner.
-            _last_fetch_time = time.time()
+            # Refresh token expired: needs_reauth flag already set by auth.py.
+            # Keep polling; it's a harmless no-op until the user reconnects via the
+            # desktop app's reauth banner.
+            _schedule_next(False)
         except Exception as e:
-            # On 429, respect Retry-After so we don't keep hammering Spotify
-            retry_after = AUTO_POLL_INTERVAL
+            # On 429, wait at least as long as Spotify asks, and log which call it was
+            # so a block is never a mystery again.
+            retry_after = 0
             try:
                 from requests.exceptions import HTTPError
                 if isinstance(e, HTTPError) and e.response is not None and e.response.status_code == 429:
-                    retry_after = int(e.response.headers.get("Retry-After", AUTO_POLL_INTERVAL))
-                    print(f"Spotify 429 — backing off {retry_after}s")
+                    retry_after = int(e.response.headers.get("Retry-After", 3600))
+                    print(f"Spotify 429 on {e.response.url}: Retry-After {retry_after}s")
+                else:
+                    print(f"Spotify poll failed: {e}")
             except Exception:
                 pass
-            _last_fetch_time = time.time() + retry_after - AUTO_POLL_INTERVAL
+            _schedule_next(fetcher.last_run_playing, at_least=retry_after)
         finally:
             _fetching = False
 
@@ -61,27 +82,36 @@ def trigger_fetch():
 
 
 def run_if_due() -> bool:
-    """Run a fetch if auto-poll is enabled and the interval has elapsed."""
-    global _last_fetch_time
+    """Run a fetch if auto-poll is enabled and the next poll is due."""
+    global _poll_day, _polls_today
     from core.settings import load_settings
     if not load_settings().get("auto_poll", False):
         return False
-    if _fetching:
+    if _fetching or time.time() < _next_poll_at:
         return False
-    if time.time() - _last_fetch_time < AUTO_POLL_INTERVAL:
+    today = date.today().isoformat()
+    if today != _poll_day:
+        _poll_day, _polls_today = today, 0
+    if _polls_today >= DAILY_POLL_CAP:
         return False
-    _last_fetch_time = time.time()  # claim the slot before spawning
+    _polls_today += 1
+    if _polls_today == DAILY_POLL_CAP:
+        print(f"Spotify poll: daily cap of {DAILY_POLL_CAP} auto-polls reached; Cmd+R still works")
     trigger_fetch()
     return True
 
 
 @router.get("/dry-run")
 def dry_run():
+
     from integrations.spotify.auth import get_access_token
     from integrations.spotify.client import get_recently_played
-    from persistence.storage import load_log, load_blocklist, is_track_blocked, _parse_ts
-    from datetime import datetime, timezone
-    import math
+    from persistence.storage import (
+        _parse_ts,
+        is_track_blocked,
+        load_blocklist,
+        load_log,
+    )
 
     token = get_access_token()
     plays = get_recently_played(token)
@@ -110,7 +140,7 @@ def dry_run():
         elif tid and t:
             for et in existing_by_track.get(tid, []):
                 if abs((t - et).total_seconds()) < 10:
-                    status, reason = "skip", f"near-duplicate: same track within 10s of existing entry"
+                    status, reason = "skip", "near-duplicate: same track within 10s of existing entry"
                     break
             if status == "accept":
                 for at in accepted_by_track.get(tid, []):

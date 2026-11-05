@@ -17,9 +17,18 @@ export interface DaypartFlowMonthly {
   minutes: number[][];
 }
 
+// Per-hour totals over the whole selected period (Month / Year / All Time).
+export interface HourTotals {
+  plays: number[];
+  minutes: number[];
+}
+
 export interface TimePayload {
+  clock?: HourTotals;
   mode: string;
   label: string | null;
+  year: number | null;
+  month: string | null;
   has_older: boolean;
   has_newer: boolean;
   heatmap: DayEntry[];
@@ -51,7 +60,11 @@ export function monthHeatColor(hue: number, strength: number, lMax = 62): string
 }
 
 export function minutesLabel(m: number): string {
-  const h = Math.floor(m / 60), r = m % 60;
+  // Round defensively -- every existing caller passes an already-whole number
+  // (day/week aggregates from the backend), but the per-hour breakdown the
+  // Daypart Flow tooltip uses isn't pre-rounded and produced "46.7642m" without this.
+  const total = Math.round(m);
+  const h = Math.floor(total / 60), r = total % 60;
   return h ? `${h}h ${r}m` : `${r}m`;
 }
 

@@ -55,43 +55,49 @@ def find_candidates(
     album_index: dict[str, dict],
     confirmed: set[tuple[int, str]],
     dismissed: set[tuple[int, str]],
+    linked_releases: set[int] | None = None,
 ) -> list[dict]:
     """
     Return a list of candidate matches sorted by confidence (descending).
     Each entry: {vinyl, album_id, album_info, artist_sim, title_sim, confidence}
     """
-    candidates = []
+    # Normalize every album once and group by artist: with the whole history (~7.5k
+    # albums) comparing each record against each album pair by pair took 21 s on the Pi.
+    by_artist: dict[str, list[tuple[str, dict, str]]] = {}
+    for album_id, info in album_index.items():
+        a = normalize_artist(info.get("artist", ""))
+        by_artist.setdefault(a, []).append((album_id, info, normalize_title(info.get("album_name", ""))))
 
+    candidates = []
     for vinyl in vinyl_records:
         release_id = vinyl.get("release_id")
+        if linked_releases and release_id in linked_releases:
+            continue   # once linked, a record is never offered again (it can't be unlinked)
         v_artists = [normalize_artist(a) for a in (vinyl.get("artists") or [])]
         v_title   = normalize_title(vinyl.get("title", ""))
 
-        for album_id, info in album_index.items():
-            if (release_id, album_id) in confirmed:
-                continue
-            if (release_id, album_id) in dismissed:
-                continue
-
-            a_artist = normalize_artist(info.get("artist", ""))
-            a_title  = normalize_title(info.get("album_name", ""))
-
-            artist_sim = max((_sim(va, a_artist) for va in v_artists), default=0.0)
+        for a_artist, albums in by_artist.items():
+            artist_sim = 0.0
+            for va in v_artists:
+                m = SequenceMatcher(None, va, a_artist)
+                if m.real_quick_ratio() >= _ARTIST_THRESHOLD and m.quick_ratio() >= _ARTIST_THRESHOLD:
+                    artist_sim = max(artist_sim, m.ratio())
             if artist_sim < _ARTIST_THRESHOLD:
                 continue
-
-            title_sim = _sim(v_title, a_title)
-            if title_sim < _TITLE_THRESHOLD:
-                continue
-
-            candidates.append({
-                "vinyl":      vinyl,
-                "album_id":   album_id,
-                "album_info": info,
-                "artist_sim": artist_sim,
-                "title_sim":  title_sim,
-                "confidence": artist_sim * title_sim,
-            })
+            for album_id, info, a_title in albums:
+                if (release_id, album_id) in confirmed or (release_id, album_id) in dismissed:
+                    continue
+                title_sim = _sim(v_title, a_title)
+                if title_sim < _TITLE_THRESHOLD:
+                    continue
+                candidates.append({
+                    "vinyl":      vinyl,
+                    "album_id":   album_id,
+                    "album_info": info,
+                    "artist_sim": artist_sim,
+                    "title_sim":  title_sim,
+                    "confidence": artist_sim * title_sim,
+                })
 
     candidates.sort(key=lambda x: -x["confidence"])
     return candidates

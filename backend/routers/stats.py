@@ -1,7 +1,7 @@
 import calendar
 import json as _json
 from collections import Counter, defaultdict
-from datetime import datetime
+from datetime import datetime, timedelta
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
@@ -10,6 +10,7 @@ from fastapi.responses import HTMLResponse
 
 from core.helpers import dominant_art_color
 from insights.genre_insights import build_genre_color_map, build_genre_network
+from insights.genre_ring import build_genre_ring
 from insights.stats_insights import (
     _build_daypart_flow,
     _build_daypart_flow_monthly,
@@ -30,6 +31,7 @@ from insights.stats_insights import (
     build_timeline_payload,
     filter_entries_by_days,
 )
+from insights.year_recap import build_year_recap
 from state import get_generation, get_state
 
 _TZ = ZoneInfo("America/New_York")
@@ -45,32 +47,115 @@ router = APIRouter(prefix="/api/stats", tags=["stats"])
 @router.get("/overview")
 def get_overview(days: int = Query(0)):
     state = get_state()
-    entries = filter_entries_by_days(state.log, days)
+    entries = filter_entries_by_days(state.history, days)
     return build_overview_payload(entries, state.lib, days)
 
 
 @router.get("/heatmap")
 def get_heatmap(days: int = Query(0)):
     state = get_state()
-    return build_heatmap_payload(state.log, days)
+    payload = build_heatmap_payload(state.history, days)
+    # Day/hour/weekday totals only: the session lists made this response enormous.
+    return {k: payload[k] for k in ("heatmap", "minutes_by_hour", "minutes_by_dow", "caption")}
+
+
+_payload_cache: dict[tuple, object] = {}
+
+
+def _cached(key: tuple, build):
+    """Memoize a heavy read-only payload until the next state (re)load."""
+    full = (get_generation(),) + key
+    if full not in _payload_cache:
+        if len(_payload_cache) > 64:
+            _payload_cache.clear()
+        _payload_cache[full] = build()
+    return _payload_cache[full]
+
+
+_sessions_cache: tuple[int, list[dict]] | None = None
+_art_color_cache: dict[str, str] = {}
+
+
+def _all_sessions() -> list[dict]:
+    """Session grouping over the whole history, newest first, cached per state load."""
+    global _sessions_cache
+    gen = get_generation()
+    if _sessions_cache and _sessions_cache[0] == gen:
+        return _sessions_cache[1]
+    sessions = build_sessions_data(get_state().history, 0)
+    _sessions_cache = (gen, sessions)
+    return sessions
+
+
+def _art_color(path: str) -> str:
+    if path not in _art_color_cache:
+        _art_color_cache[path] = dominant_art_color(path)
+    return _art_color_cache[path]
+
+
+@router.get("/history")
+def get_history_info():
+    """Where AV's own log begins and what the imported Spotify history covers."""
+    from persistence.spotify_history import load_summary
+    state = get_state()
+    own = [e["played_at"] for e in state.log if e.get("played_at")]
+    summary = load_summary() or {}
+    return {
+        "av_began": min(own) if own else None,
+        "newest_play": state.history[0]["played_at"] if state.history else None,
+        "oldest_play": state.history[-1]["played_at"] if state.history else None,
+        "imported_plays": summary.get("plays", 0),
+        "imported_first_play": summary.get("first_play"),
+        "imported_at": summary.get("imported_at"),
+    }
+
+
+@router.get("/sessions/bounds")
+def get_session_bounds():
+    sessions = _all_sessions()
+    if not sessions:
+        return {"oldest_start": None, "newest_start": None}
+    return {"oldest_start": sessions[-1]["start"].isoformat(), "newest_start": sessions[0]["start"].isoformat()}
 
 
 @router.get("/period")
 def get_period(mode: str = Query("Month"), offset: int = Query(0)):
     state = get_state()
-    return build_period_payload(state.log, mode, offset, state.lib)
+    return build_period_payload(state.history, mode, offset, state.lib)
+
+
+@router.get("/year")
+def get_year(year: int | None = Query(None)):
+    """Periods › Year: one payload for the whole year page (defaults to the latest year)."""
+    state = get_state()
+    if not state.history:
+        return {"year": year, "years": [], "empty": True}
+    y = year or _parse_dt(state.history[0]["played_at"]).year
+    return _cached(("year", y), lambda: build_year_recap(state.history, state.lib, y, _parse_dt))
 
 
 @router.get("/timeline")
 def get_timeline(metric: str = Query("Plays"), year: int | None = Query(default=None)):
     state = get_state()
-    return build_timeline_payload(state.log, metric, year)
+    return build_timeline_payload(state.history, metric, year)
 
 
 @router.get("/sessions")
-def get_sessions():
+def get_sessions(start: str = Query(""), days: int = Query(7)):
+    """Sessions whose start falls in [start, start + days) local days. Without `start`,
+    the window ends on the newest session. The full list is never returned: with the
+    imported history it runs to tens of MB."""
     state = get_state()
-    sessions = build_sessions_data(state.log, 0)
+    all_sessions = _all_sessions()
+    if start:
+        win_start = datetime.fromisoformat(start).replace(tzinfo=_TZ)
+    elif all_sessions:
+        newest = all_sessions[0]["start"].astimezone(_TZ)
+        win_start = datetime(newest.year, newest.month, newest.day, tzinfo=_TZ) - timedelta(days=days - 1)
+    else:
+        win_start = datetime.now(_TZ)
+    win_end = win_start + timedelta(days=days)
+    sessions = [s for s in all_sessions if win_start <= s["start"].astimezone(_TZ) < win_end]
     lib_artists = state.lib.get("artists", {})
     result = []
     for s in sessions:
@@ -90,7 +175,7 @@ def get_sessions():
         for t in tracks:
             key = t.get("album_id") or t.get("album_name") or ""
             if key and key not in album_colors:
-                album_colors[key] = dominant_art_color(t.get("album_art_local_path", ""))
+                album_colors[key] = _art_color(t.get("album_art_local_path", ""))
 
         result.append({
             "id":               s["id"],
@@ -122,9 +207,25 @@ def get_sessions():
 
 
 @router.get("/time")
-def get_time(mode: str = Query("Year"), month_offset: int = Query(0)):
+def get_time(mode: str = Query("Year"), month_offset: int = Query(0), year: int | None = Query(None), month: str = Query("")):
+    """`year` picks a calendar year for Year mode; `month` (YYYY-MM) picks a month for
+    Month mode and overrides `month_offset`. Both default to the latest."""
+    return _cached(("time", mode, month_offset, year, month), lambda: _build_time(mode, month_offset, year, month))
+
+
+def _hour_totals(entries: list[dict]) -> dict:
+    plays = [0] * 24
+    ms = [0] * 24
+    for e in entries:
+        h = _parse_dt(e["played_at"]).hour
+        plays[h] += 1
+        ms[h] += e.get("duration_ms", 0) or 0
+    return {"plays": plays, "minutes": [m / 60000 for m in ms]}
+
+
+def _build_time(mode: str, month_offset: int, year: int | None = None, month: str = ""):
     state = get_state()
-    log = state.log
+    log = state.history
 
     heatmap_all_payload = build_heatmap_payload(log, 0)
     heatmap_all = _ser_days(heatmap_all_payload["heatmap"])
@@ -132,10 +233,14 @@ def get_time(mode: str = Query("Year"), month_offset: int = Query(0)):
     label = None
     has_older = False
     has_newer = False
+    target_year = None
+    target_month = None
 
     if mode == "Month":
         if log:
             latest = _parse_dt(log[0]["played_at"])
+            if month and len(month) == 7 and month[:4].isdigit() and month[5:].isdigit():
+                month_offset = max(0, latest.year * 12 + (latest.month - 1) - (int(month[:4]) * 12 + int(month[5:]) - 1))
             total = latest.year * 12 + (latest.month - 1) - month_offset
             target_year = total // 12
             target_month = total % 12 + 1
@@ -153,49 +258,68 @@ def get_time(mode: str = Query("Year"), month_offset: int = Query(0)):
         is_past = month_offset > 0
         time_payload = build_heatmap_payload(month_entries, 0 if is_past else 31, segment_days=31 if is_past else None)
         flow_entries = month_entries
+    elif mode == "Year":
+        # One calendar year, so the clock, day parts and by-day grid describe that year
+        # (they used to be built from the whole history whatever the heatmap showed).
+        latest_year = _parse_dt(log[0]["played_at"]).year if log else datetime.now(_TZ).year
+        oldest_year = _parse_dt(log[-1]["played_at"]).year if log else latest_year
+        target_year = year or latest_year
+        year_entries = [e for e in log if _parse_dt(e["played_at"]).year == target_year]
+        time_payload = build_heatmap_payload(year_entries, 0, segment_days=365)
+        flow_entries = year_entries
+        label = str(target_year)
+        has_older = target_year > oldest_year
+        has_newer = target_year < latest_year
     else:
         flow_entries = log
-        if mode == "Year":
-            time_payload = build_heatmap_payload(log, 0, segment_days=365)
-            label = str(datetime.now(_TZ).year)
-        else:
-            time_payload = heatmap_all_payload
+        time_payload = heatmap_all_payload
 
     return {
         "mode":          mode,
         "label":         label,
+        "year":          target_year,
+        "month":         f"{target_year}-{target_month:02d}" if target_month else None,
         "has_older":     has_older,
         "has_newer":     has_newer,
         "heatmap":       _ser_days(time_payload["heatmap"]),
         "heatmap_all":   heatmap_all,
         "minutes_by_dow": time_payload["minutes_by_dow"],
         "day_parts":     _ser_parts(time_payload["day_parts"]),
-        "daypart_flow":  _build_daypart_flow(flow_entries),
+        "daypart_flow":  _build_daypart_flow(flow_entries),   # last 60 days of the period, for the Flow drill-in
+        "clock":         _hour_totals(flow_entries),          # the whole period, for the Daypart Clock
         "daypart_flow_monthly": _build_daypart_flow_monthly(log),
     }
 
 
 @router.get("/era-data")
 def get_era_data():
+    return _cached(("era-data",), _build_era_data)
+
+
+def _build_era_data():
     state = get_state()
     return {
-        "drift":   build_era_drift(state.log),
-        "profile": build_era_release_profile(state.log),
+        "drift":   build_era_drift(state.history),
+        "profile": build_era_release_profile(state.history),
     }
 
 
 @router.get("/trends")
 def get_trends():
+    return _cached(("trends",), _build_trends)
+
+
+def _build_trends():
     state = get_state()
-    color_map = build_genre_color_map(state.log, state.lib)
-    weather = build_genre_weather(state.log, state.lib)
+    color_map = build_genre_color_map(state.history, state.lib)
+    weather = build_genre_weather(state.history, state.lib)
     weather["color_map"] = color_map
     return {
-        "daily":            build_daily(state.log),
-        "depth_sessions":   build_depth_sessions(state.log),
-        "genre_mountain":   build_genre_mountain(state.log, state.lib),
-        "discovery":        build_discovery_comfort(state.log),
-        "discovery_tracks": build_discovery_comfort_tracks(state.log),
+        "daily":            build_daily(state.history),
+        "depth_sessions":   build_depth_sessions(state.history),
+        "genre_mountain":   build_genre_mountain(state.history, state.lib),
+        "discovery":        build_discovery_comfort(state.history),
+        "discovery_tracks": build_discovery_comfort_tracks(state.history),
         "genre_weather":    weather,
         "genre_color_map":  color_map,
     }
@@ -394,20 +518,39 @@ const simulation = d3.forceSimulation(DATA.nodes)
     .force("y",         d3.forceY(h / 2).strength(d => 0.03 + Math.pow(1 / (d.count + 1), 0.5) * 0.08))
     .force("collision", d3.forceCollide().radius(d => radiusScale(d.count) + (isArtists ? 4 : 16)).strength(1.0));
 
+// Every link shapes the layout, but single co-occurrences (two thirds of them) are
+// pure noise on screen and most of the per-frame cost, so only weight >= 2 is drawn.
+const drawnLinks = visibleLinks.filter(l => l.weight >= 2);
 const link = g.append("g").selectAll("line")
-    .data(visibleLinks).join("line")
+    .data(drawnLinks).join("line")
     .attr("stroke", "#282828")
     .attr("stroke-width",   d => 0.3 + (d.weight / maxWeight) * 2)
     .attr("stroke-opacity", d => 0.04 + Math.pow(d.weight / maxWeight, 0.6) * 0.45);
+// Single co-occurrences aren't drawn at rest, so a selected genre on the rim (where they
+// are often its only links) lit up its neighbors with nothing connecting them. While a
+// genre or artist is highlighted, its undrawn links are added here.
+const drawnSet = new Set(drawnLinks);
+const hlLayer = g.append("g").style("pointer-events", "none");
+let hlLink = hlLayer.selectAll("line");
+function showHighlightLinks(match, width) {
+    hlLink = hlLayer.selectAll("line")
+        .data(visibleLinks.filter(l => !drawnSet.has(l) && match(l))).join("line")
+        .attr("stroke", l => l.source.color || "#fff")
+        .attr("stroke-opacity", 0.7)
+        .attr("stroke-width", width)
+        .attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+        .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+}
 
 const node = g.append("g").selectAll("g")
     .data(DATA.nodes).join("g")
     .style("cursor", "pointer");
 
+const glowSet = new Set(DATA.nodes.slice().sort((a, b) => b.count - a.count).slice(0, 40).map(d => d.id));
 const circle = node.append("circle")
     .attr("r",            d => radiusScale(d.count))
     .attr("fill",         "#1c1c2a")
-    .attr("filter",       "url(#glow)")
+    .attr("filter",       d => glowSet.has(d.id) ? "url(#glow)" : null)   // a blur filter per node was the frame cost
     .attr("stroke",       "rgba(255,255,255,0.08)")
     .attr("stroke-width", 0.7);
 
@@ -706,9 +849,10 @@ function selectArtist(name) {
             const sid = l.source.id || l.source, tid = l.target.id || l.target;
             return (genres.has(sid) && genres.has(tid)) ? 2 + (l.weight / maxWeight) * 3 : 0.3;
         });
+    showHighlightLinks(l => genres.has(l.source.id) && genres.has(l.target.id), 2);
     node.select("circle")
         .attr("fill-opacity", d => connectedIds.has(d.id) ? 1 : 0.12)
-        .attr("filter", d => connectedIds.has(d.id) ? "url(#glow)" : "none");
+        .attr("filter", d => connectedIds.has(d.id) && glowSet.has(d.id) ? "url(#glow)" : null);
     node.selectAll("text").attr("fill-opacity", d => connectedIds.has(d.id) ? 1 : 0.08);
     selectedId = null;
 }
@@ -762,9 +906,10 @@ function applySelection(id) {
             const sid = l.source.id || l.source, tid = l.target.id || l.target;
             return (sid === id || tid === id) ? 1.5 + (l.weight / maxWeight) * 3 : 0.3;
         });
+    showHighlightLinks(l => !!id && (l.source.id === id || l.target.id === id), 1.5);
     node.select("circle")
         .attr("fill-opacity", d => { if (!id) return 1; return (d.id === id || connectedIds.has(d.id)) ? 1 : 0.15; })
-        .attr("filter", d => { if (!id || d.id === id) return "url(#glow)"; return connectedIds.has(d.id) ? "url(#glow)" : "none"; });
+        .attr("filter", d => { if (!id) return glowSet.has(d.id) ? "url(#glow)" : null; return d.id === id ? "url(#glow)" : null; });
     node.selectAll("text")
         .attr("fill-opacity", d => { if (!id) return null; return (d.id === id || connectedIds.has(d.id)) ? 1 : 0.1; });
 }
@@ -787,6 +932,8 @@ svg.on("click", () => applySelection(null));
 function renderPositions() {
     link.attr("x1", d => d.source.x).attr("y1", d => d.source.y)
         .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
+    hlLink.attr("x1", d => d.source.x).attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x).attr("y2", d => d.target.y);
     node.attr("transform", d => "translate(" + d.x + "," + d.y + ")");
 }
 
@@ -827,7 +974,13 @@ function recenter() {
     simulation.force("center", d3.forceCenter(w / 2, h / 2));
     simulation.force("x", d3.forceX(w / 2).strength(d => 0.03 + Math.pow(1 / (d.count + 1), 0.5) * 0.08));
     simulation.force("y", d3.forceY(h / 2).strength(d => 0.03 + Math.pow(1 / (d.count + 1), 0.5) * 0.08));
-    simulation.alpha(0.3).restart();
+    // Settle synchronously (as on first paint) rather than animating: with 500 nodes a
+    // live restart meant ~70 frames of full redraws at a few frames a second.
+    simulation.stop().alpha(0.3);
+    while (simulation.alpha() > simulation.alphaMin()) simulation.tick();
+    renderPositions();
+    computeColors(true);
+    fitToView(false);
 }
 window.addEventListener("resize", recenter);
 // Iframe layout can settle after this script's first run (window.innerWidth/innerHeight
@@ -850,7 +1003,7 @@ def get_genres():
     gen = get_generation()
     if _genres_cache is None or _genres_cache_gen != gen:
         state = get_state()
-        network = build_genre_network(state.log, state.lib)
+        network = build_genre_network(state.history, state.lib)
         for node in network.get("nodes", []):
             for artist in node.get("artists", []):
                 art = artist.get("art") or ""
@@ -861,13 +1014,22 @@ def get_genres():
     return _genres_cache
 
 
+@router.get("/genres-ring")
+def get_genres_ring():
+    """Stats › Genres › Ring: top genres by hours, families, shared-artist links."""
+    def build():
+        state = get_state()
+        return build_genre_ring(state.history, state.lib)
+    return _cached(("genres-ring",), build)
+
+
 @router.get("/genres-page", response_class=HTMLResponse)
 def get_genres_page():
     global _genres_network_cache, _genres_network_cache_gen
     gen = get_generation()
     if _genres_network_cache is None or _genres_network_cache_gen != gen:
         state = get_state()
-        network = build_genre_network(state.log, state.lib)
+        network = build_genre_network(state.history, state.lib)
         for node in network.get("nodes", []):
             for artist in node.get("artists", []):
                 art = artist.get("art") or ""

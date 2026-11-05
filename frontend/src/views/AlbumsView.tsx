@@ -2,12 +2,28 @@ import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { useNavigate } from "react-router-dom";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api/client";
-import type { AlbumSummary, AlbumsResponse, TrackPlay } from "../api/types";
+import type { AlbumDetail, AlbumSummary, AlbumsResponse, TrackPlay } from "../api/types";
 import { GenrePalette } from "../components/GenrePalette";
+import { OpenInDiscogs } from "../components/OpenInDiscogs";
+import { useHistoryInfo } from "../api/useHistoryInfo";
+import { GridScrubber, SectionHeader, SizeSwitch } from "../lib/sectionedGrid";
+import {
+  buildSections, compareFolded, HEADER_H, letterOf, monthKey, monthLabel, useSectionedGrid, useTileSize, type TileSize,
+} from "../lib/sectionedGridLayout";
+import type { RingPayload } from "./stats/GenresRing";
 
 import { API_BASE } from "../api/config";
-const CARD_MIN_W = 160;
+const CARD_MIN_W: Record<TileSize, number> = { S: 112, M: 160, L: 220 };
 const GAP = 12;
+// AlbumCard: art is tileWidth - 16 square, plus 95px of text and padding below it; the compact
+// card (size S) keeps only the title under the cover.
+const cardHeightFor = (tileWidth: number, compact = false) => tileWidth - 16 + (compact ? 44 : 95);
+
+function sinceLabel(iso: string): string {
+  if (!iso) return "";
+  const d = new Date(iso);
+  return d.toLocaleDateString(undefined, { month: "short", year: "numeric" });
+}
 
 // inject gold pulse animation once
 if (typeof document !== "undefined" && !document.getElementById("album-card-keyframes")) {
@@ -170,15 +186,15 @@ function StarRating({ rating, onChange }: { rating: number; onChange: (r: number
 // ─── album card ───────────────────────────────────────────────────────────────
 
 function AlbumCard({
-  album, tileWidth, focused, selected, onClick, cardRef,
+  album, tileWidth, compact, focused, selected, onClick,
   favOverride, ratingOverride,
 }: {
-  album: AlbumSummary; tileWidth: number; focused: boolean; selected: boolean;
-  onClick: () => void; cardRef: (el: HTMLDivElement | null) => void;
+  album: AlbumSummary; tileWidth: number; compact: boolean; focused: boolean; selected: boolean;
+  onClick: () => void;
   favOverride: boolean | undefined; ratingOverride: number | undefined;
 }) {
   const artSize = tileWidth - 16;
-  const cardHeight = artSize + 95;
+  const cardHeight = cardHeightFor(tileWidth, compact);
   const url = artUrl(album.art_filename);
 
   const isFav = favOverride !== undefined ? favOverride : album.is_favorited;
@@ -204,7 +220,6 @@ function AlbumCard({
 
   return (
     <div
-      ref={cardRef}
       onClick={onClick}
       style={{
         width: tileWidth, height: cardHeight, background: "#1a1a1a", borderRadius: 8,
@@ -231,6 +246,7 @@ function AlbumCard({
         overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
       }}>{album.album_name}</div>
 
+      {!compact && <>
       {/* Artist */}
       <div style={{
         fontSize: 11, color: "#b3b3b3", marginTop: 2,
@@ -266,6 +282,61 @@ function AlbumCard({
           title="Open in Spotify"
         >↗</button>
       </div>
+      </>}
+    </div>
+  );
+}
+
+// ─── crates strip ─────────────────────────────────────────────────────────────
+// The Genres Ring's families as record-shop crates, plus the vinyl shelf: a filter above the
+// grid, not a page of its own. Counts follow the other filters; the covers are each crate's
+// most played.
+
+function CratesStrip({ albums, ring, albumFam, crate, onPick }: {
+  albums: AlbumSummary[]; ring: RingPayload; albumFam: Map<string, number>; crate: Crate; onPick: (c: Crate) => void;
+}) {
+  const crates = useMemo(() => {
+    const by = new Map<Crate, AlbumSummary[]>();
+    for (const a of albums) {
+      const f = albumFam.get(a.album_id);
+      if (f !== undefined) { if (!by.has(f)) by.set(f, []); by.get(f)!.push(a); }
+      if (a.has_vinyl) { if (!by.has("vinyl")) by.set("vinyl", []); by.get("vinyl")!.push(a); }
+    }
+    const top = (list: AlbumSummary[]) => [...list].sort((x, y) => y.count - x.count).slice(0, 3);
+    const fams = ring.families.map((f, i) => ({ key: i as Crate, name: f.name, hue: f.hue as number | null, list: by.get(i) ?? [] }))
+      .filter(c => c.list.length).sort((x, y) => y.list.length - x.list.length);
+    const vinyl = { key: "vinyl" as Crate, name: "on vinyl", hue: null, list: by.get("vinyl") ?? [] };
+    return [...fams, vinyl].map(c => ({ ...c, top: top(c.list) }));
+  }, [albums, ring, albumFam]);
+
+  const chip = (key: Crate, name: string, n: number, accent: string, top: AlbumSummary[]) => {
+    const on = crate === key;
+    return (
+      <button key={String(key)} onClick={() => onPick(on && key !== null ? null : key)}
+        style={{
+          display: "flex", alignItems: "center", gap: 8, padding: top.length ? "5px 12px 5px 8px" : "5px 12px", borderRadius: 10, flexShrink: 0,
+          background: on ? "#1e1e1e" : "transparent", border: `1px solid ${on ? accent : "#222"}`, cursor: "pointer", fontFamily: "inherit",
+        }}>
+        {top.length > 0 && (
+          <span style={{ display: "flex" }}>
+            {top.map((a, i) => (
+              <span key={a.album_id} style={{ width: 24, height: 24, borderRadius: 3, overflow: "hidden", background: "#2a2a2a", marginLeft: i ? -12 : 0, transform: `rotate(${[-6, 0, 6][i]}deg)`, boxShadow: "0 2px 6px rgba(0,0,0,.6)" }}>
+                {artUrl(a.art_filename) && <img src={artUrl(a.art_filename)!} alt="" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />}
+              </span>
+            ))}
+          </span>
+        )}
+        <span style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", lineHeight: 1.2 }}>
+          <span style={{ fontSize: 11.5, fontWeight: 800, color: on ? accent : "#b3b3b3", whiteSpace: "nowrap" }}>{name}</span>
+          <span style={{ fontSize: 10, color: "#8a8a8a" }}>{n.toLocaleString("en-US")}</span>
+        </span>
+      </button>
+    );
+  };
+  return (
+    <div style={{ display: "flex", gap: 8, overflowX: "auto", flexShrink: 0, marginBottom: 10, scrollbarWidth: "none" }}>
+      {chip(null, "All albums", albums.length, "var(--green)", [])}
+      {crates.map(c => chip(c.key, c.name, c.list.length, c.hue === null ? "#7db4cc" : `hsl(${c.hue} 70% 66%)`, c.top))}
     </div>
   );
 }
@@ -291,7 +362,15 @@ function AlbumDetailPanel({
   const url = artUrl(album.art_filename);
   const isFav = favOverride !== undefined ? favOverride : album.is_favorited;
   const rating = ratingOverride !== undefined ? ratingOverride : album.rating;
-  const maxPlays = Math.max(1, ...album.track_plays.map(t => t.play_count));
+  // Per-track plays are not in the list payload (8k albums); fetch them for the open album.
+  const { data: detail } = useQuery<AlbumDetail>({
+    queryKey: ["album", album.album_id],
+    queryFn: () => api.get(`/api/albums/${encodeURIComponent(album.album_id)}`),
+    staleTime: 60_000,
+  });
+  const trackPlays = detail?.track_plays ?? [];
+  const maxPlays = Math.max(1, ...trackPlays.map(t => t.play_count));
+  const since = sinceLabel(album.first_played);
 
   return (
     <div style={{
@@ -326,7 +405,7 @@ function AlbumDetailPanel({
               overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
             }}>{album.album_name}</div>
             <button
-              onClick={() => navigate(`/artists/${encodeURIComponent(album.artist)}`)}
+              onClick={() => navigate(`/artists/${encodeURIComponent(album.artist)}?album=${encodeURIComponent(album.album_id)}`, { state: { from: "/albums", fromLabel: "Albums" } })}
               style={{
                 background: "transparent", border: "none", color: "#b3b3b3",
                 fontSize: 12, cursor: "pointer", padding: 0, marginTop: 3,
@@ -339,15 +418,23 @@ function AlbumDetailPanel({
               {[album.release_year, album.classified_type].filter(Boolean).join(" · ")}
             </div>
             <div style={{ fontSize: 11, color: "#535353", marginTop: 1 }}>
-              {album.count} {album.count === 1 ? "play" : "plays"}
+              {album.count} {album.count === 1 ? "play" : "plays"}{since ? ` · since ${since}` : ""}
             </div>
-            <button
-              onClick={() => window.open(`spotify:album:${album.album_id}`, "_blank")}
-              style={{
-                background: "transparent", border: "none", color: "#7db4cc",
-                fontSize: 11, cursor: "pointer", padding: 0, marginTop: 5,
-              }}
-            >↗ Open in Spotify</button>
+            <div style={{ display: "flex", flexWrap: "wrap", columnGap: 14, rowGap: 4, marginTop: 5 }}>
+              <button
+                onClick={() => window.open(`spotify:album:${album.album_id}`, "_blank")}
+                style={{
+                  background: "transparent", border: "none", color: "#7db4cc",
+                  fontSize: 11, cursor: "pointer", padding: 0, whiteSpace: "nowrap",
+                }}
+              >↗ Open in Spotify</button>
+              <OpenInDiscogs
+                artist={album.artist}
+                title={album.album_name}
+                albumId={album.album_id}
+                style={{ background: "transparent", border: "none", color: "#7db4cc", fontSize: 11, padding: 0 }}
+              />
+            </div>
           </div>
         </div>
 
@@ -386,13 +473,13 @@ function AlbumDetailPanel({
         </div>
 
         {/* Track list */}
-        {album.track_plays.length > 0 && (
+        {trackPlays.length > 0 && (
           <>
             <div style={{ fontSize: 10, fontWeight: 700, color: "#535353", letterSpacing: "1.5px", marginBottom: 6 }}>
               TRACKS
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 1 }}>
-              {album.track_plays.map((t: TrackPlay) => {
+              {trackPlays.map((t: TrackPlay) => {
                 const isTFav = trackFavOverrides[t.track_id] !== undefined
                   ? trackFavOverrides[t.track_id] : t.is_favorited;
                 const barPct = (t.play_count / maxPlays) * 100;
@@ -436,23 +523,41 @@ function AlbumDetailPanel({
 
 // ─── main view ────────────────────────────────────────────────────────────────
 
+// ─── where you were ───────────────────────────────────────────────────────────
+// Opening an album's artist unmounts this view; coming back (Esc or "← Albums" on the
+// artist page) restores the list, its filters, the open album and the scroll. Module
+// level, so it lasts as long as the app is open.
+
+interface SavedView {
+  sort: SortKey; favOnly: boolean; sinceAV: boolean; typeFilter: TypeFilter; activeGenres: string[];
+  yearLo: number | null; yearHi: number | null; search: string; searchVisible: boolean;
+  focusedIdx: number; selectedAlbum: AlbumSummary | null; crate: Crate; scrollTop: number;
+}
+// A crate is a genre family (index into the ring's families) or the vinyl shelf.
+type Crate = number | "vinyl" | null;
+let savedView: SavedView | null = null;
+
 export function AlbumsView() {
   const navigate = useNavigate();
   const queryClient = useQueryClient();
 
-  const [sort, setSort] = useState<SortKey>("recent");
-  const [favOnly, setFavOnly] = useState(false);
-  const [typeFilter, setTypeFilter] = useState<TypeFilter>(null);
-  const [activeGenres, setActiveGenres] = useState<Set<string>>(new Set());
+  const [restore] = useState(() => savedView);
+  const [sort, setSort] = useState<SortKey>(restore?.sort ?? "recent");
+  const [favOnly, setFavOnly] = useState(restore?.favOnly ?? false);
+  const [sinceAV, setSinceAV] = useState(restore?.sinceAV ?? false);   // only albums played since AV's own log began
+  const [typeFilter, setTypeFilter] = useState<TypeFilter>(restore?.typeFilter ?? null);
+  const [activeGenres, setActiveGenres] = useState<Set<string>>(() => new Set(restore?.activeGenres ?? []));
   const [yearOpen, setYearOpen] = useState(false);
-  const [yearLo, setYearLo] = useState<number | null>(null);
-  const [yearHi, setYearHi] = useState<number | null>(null);
+  const [yearLo, setYearLo] = useState<number | null>(restore?.yearLo ?? null);
+  const [yearHi, setYearHi] = useState<number | null>(restore?.yearHi ?? null);
   const [paletteOpen, setPaletteOpen] = useState(false);
-  const [searchVisible, setSearchVisible] = useState(false);
-  const [searchInput, setSearchInput] = useState("");
-  const [search, setSearch] = useState("");
-  const [focusedIdx, setFocusedIdx] = useState(-1);
-  const [selectedAlbum, setSelectedAlbum] = useState<AlbumSummary | null>(null);
+  const [searchVisible, setSearchVisible] = useState(restore?.searchVisible ?? false);
+  const [searchInput, setSearchInput] = useState(restore?.search ?? "");
+  const [search, setSearch] = useState(restore?.search ?? "");
+  const [focusedIdx, setFocusedIdx] = useState(restore?.focusedIdx ?? -1);
+  const [selectedAlbum, setSelectedAlbum] = useState<AlbumSummary | null>(restore?.selectedAlbum ?? null);
+  const [crate, setCrate] = useState<Crate>(restore?.crate ?? null);
+  const [size, setSize] = useTileSize("av.albums.tileSize");
 
   const [favOverrides, setFavOverrides] = useState<Record<string, boolean>>({});
   const [ratingOverrides, setRatingOverrides] = useState<Record<string, number>>({});
@@ -461,20 +566,45 @@ export function AlbumsView() {
   const notesTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
 
   const containerRef = useRef<HTMLDivElement>(null);
-  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const searchRef = useRef<HTMLInputElement>(null);
   const searchTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const [cols, setCols] = useState(4);
-  const [tileWidth, setTileWidth] = useState(CARD_MIN_W);
+  const [tileWidth, setTileWidth] = useState(CARD_MIN_W.M);
+  const [measured, setMeasured] = useState(false);
+  const pendingScroll = useRef<number | null>(restore?.scrollTop ?? null);
 
   const { data } = useQuery<AlbumsResponse>({
     queryKey: ["albums"],
     queryFn: () => api.get("/api/albums"),
     staleTime: 60_000,
   });
+  const { data: historyInfo } = useHistoryInfo();
+  const avBeganMs = historyInfo?.av_began ? new Date(historyInfo.av_began).getTime() : null;
 
-  const allAlbums = data?.albums ?? [];
+  const allAlbums = useMemo(() => data?.albums ?? [], [data]);
   const allGenres = data?.all_genres ?? [];
+
+  // Crates: the Genres Ring's families. An album files under the family most of its first
+  // three genres belong to. Same query key as the Ring, so the payload is shared.
+  const { data: ring } = useQuery<RingPayload>({
+    queryKey: ["stats-genres-ring"],
+    queryFn: () => api.get<RingPayload>("/api/stats/genres-ring"),
+    staleTime: 5 * 60 * 1000,
+  });
+  const albumFam = useMemo(() => {
+    const fams = ring?.genre_fams;
+    const m = new Map<string, number>();
+    if (!fams) return m;
+    for (const a of allAlbums) {
+      const c = new Map<number, number>();
+      for (const g of a.genres.slice(0, 3)) if (fams[g] !== undefined) c.set(fams[g], (c.get(fams[g]) ?? 0) + 1);
+      let best = -1, bestN = 0;
+      c.forEach((n, f) => { if (n > bestN) { best = f; bestN = n; } });
+      if (best >= 0) m.set(a.album_id, best);
+    }
+    return m;
+  }, [ring, allAlbums]);
+  const inCrate = useCallback((a: AlbumSummary, c: Crate) => (c === "vinyl" ? a.has_vinyl : c === null || albumFam.get(a.album_id) === c), [albumFam]);
 
   // init year range when data loads
   useEffect(() => {
@@ -491,18 +621,21 @@ export function AlbumsView() {
       const style = getComputedStyle(el);
       const w = el.clientWidth - parseFloat(style.paddingLeft) - parseFloat(style.paddingRight);
       if (w === 0) return;
-      const c = Math.max(1, Math.floor((w + GAP) / (CARD_MIN_W + GAP)));
-      const tw = Math.max(CARD_MIN_W, Math.floor((w - (c - 1) * GAP) / c));
+      const minW = CARD_MIN_W[size];
+      const c = Math.max(1, Math.floor((w + GAP) / (minW + GAP)));
+      const tw = Math.max(minW, Math.floor((w - (c - 1) * GAP) / c));
       setCols(c);
       setTileWidth(tw);
+      setMeasured(true);
     });
     ro.observe(el);
     return () => ro.disconnect();
-  }, []);
+  }, [size]);
 
   // ── filtering + sorting ───────────────────────────────────────────────────
 
-  const filtered = useMemo(() => {
+  // Everything but the crate, so the crate strip can count what each crate would show.
+  const baseFiltered = useMemo(() => {
     let items = allAlbums;
     if (search) {
       const norm = (s: string) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
@@ -510,36 +643,85 @@ export function AlbumsView() {
       items = items.filter(a => norm(a.album_name).includes(q) || norm(a.artist).includes(q));
     }
     if (favOnly) items = items.filter(a => favOverrides[a.album_id] !== undefined ? favOverrides[a.album_id] : a.is_favorited);
+    if (sinceAV && avBeganMs !== null) items = items.filter(a => new Date(a.latest_played).getTime() >= avBeganMs);
     if (typeFilter) items = items.filter(a => a.classified_type === typeFilter);
     if (activeGenres.size > 0) items = items.filter(a => a.genres.some(g => activeGenres.has(g)));
     if (yearLo !== null && yearHi !== null && data?.year_bounds &&
         (yearLo !== data.year_bounds.min || yearHi !== data.year_bounds.max)) {
       items = items.filter(a => a.release_year !== null && a.release_year >= yearLo! && a.release_year <= yearHi!);
     }
+    return items;
+  }, [allAlbums, search, favOnly, sinceAV, avBeganMs, typeFilter, activeGenres, yearLo, yearHi, favOverrides, data?.year_bounds]);
 
-    const sorted = [...items];
+  const filtered = useMemo(() => {
+    const sorted = baseFiltered.filter(a => inCrate(a, crate));
     if (sort === "rating") {
       sorted.sort((a, b) => {
         const ra = ratingOverrides[a.album_id] ?? a.rating;
         const rb = ratingOverrides[b.album_id] ?? b.rating;
         return rb !== ra ? rb - ra : a.album_name.localeCompare(b.album_name);
       });
-    } else if (sort === "az") sorted.sort((a, b) => a.album_name.localeCompare(b.album_name));
-    else if (sort === "za") sorted.sort((a, b) => b.album_name.localeCompare(a.album_name));
+    } else if (sort === "az") sorted.sort((a, b) => compareFolded(a.album_name, b.album_name));
+    else if (sort === "za") sorted.sort((a, b) => compareFolded(b.album_name, a.album_name));
     else if (sort === "newest") sorted.sort((a, b) => (b.release_year ?? 0) - (a.release_year ?? 0) || a.album_name.localeCompare(b.album_name));
     else if (sort === "oldest") sorted.sort((a, b) => (a.release_year ?? 9999) - (b.release_year ?? 9999) || a.album_name.localeCompare(b.album_name));
     else sorted.sort((a, b) => b.latest_played.localeCompare(a.latest_played));
     return sorted;
-  }, [allAlbums, search, favOnly, typeFilter, activeGenres, yearLo, yearHi, sort, favOverrides, ratingOverrides, data?.year_bounds]);
+  }, [baseFiltered, inCrate, crate, sort, ratingOverrides]);
+
+  // Sections follow the sort: letters, years (rail marks decades), ★ ratings, or months played.
+  const sections = useMemo(() => {
+    const ratingOf = (a: AlbumSummary) => ratingOverrides[a.album_id] ?? a.rating;
+    if (sort === "az" || sort === "za")
+      return buildSections(filtered, a => letterOf(a.album_name), k => ({ label: k === "•" ? "Other" : k, rail: k }));
+    if (sort === "newest" || sort === "oldest")
+      return buildSections(filtered, a => String(a.release_year ?? "—"), (k, _f, prev) => {
+        if (k === "—") return { label: "No year", rail: "—" };
+        const dec = k.slice(0, 3), prevDec = prev && prev !== "—" ? prev.slice(0, 3) : null;
+        return { label: k, rail: dec !== prevDec ? `${dec}0s` : null };
+      });
+    if (sort === "rating")
+      return buildSections(filtered, a => String(ratingOf(a)), k => {
+        const r = Number(k);
+        const label = r > 0 ? `★ ${(r / 2).toFixed(1).replace(/\.0$/, "")}` : "Unrated";
+        return { label, rail: r > 0 ? (r % 2 === 0 ? String(r / 2) : null) : "–" };
+      });
+    return buildSections(filtered, a => monthKey(a.latest_played), (k, _f, prev) => ({
+      label: monthLabel(k), rail: !prev || prev.slice(0, 4) !== k.slice(0, 4) ? k.slice(0, 4) : null,
+    }));
+  }, [filtered, sort, ratingOverrides]);
+
+  const compact = size === "S";
+  const grid = useSectionedGrid({ containerRef, sections, cols, rowHeight: cardHeightFor(tileWidth, compact), gap: GAP });
+  const { scrollToIndex, moveVertical, sameRow } = grid;
 
   useEffect(() => {
+    if (pendingScroll.current !== null) return;   // coming back: put the list where it was instead
     setFocusedIdx(-1);
-    cardRefs.current = [];
-  }, [filtered.length, sort, search, favOnly, typeFilter, activeGenres.size, yearLo, yearHi]);
+    containerRef.current?.scrollTo({ top: 0 });   // a new list starts at its top
+  }, [filtered.length, sort, search, favOnly, sinceAV, typeFilter, activeGenres.size, yearLo, yearHi, crate]);
+
+  // Restore the scroll once the albums are in and the grid knows its column count.
+  useEffect(() => {
+    if (pendingScroll.current === null || !measured || filtered.length === 0) return;
+    const top = pendingScroll.current;
+    pendingScroll.current = null;
+    containerRef.current?.scrollTo({ top });
+  }, [measured, filtered.length]);
 
   useEffect(() => {
-    if (focusedIdx >= 0) cardRefs.current[focusedIdx]?.scrollIntoView({ block: "nearest" });
-  }, [focusedIdx]);
+    if (focusedIdx >= 0 && pendingScroll.current === null) scrollToIndex(focusedIdx);
+  }, [focusedIdx, scrollToIndex]);
+
+  // Remember all of it on the way out.
+  const latest = useRef<Omit<SavedView, "scrollTop"> | null>(null);
+  useEffect(() => {
+    latest.current = { sort, favOnly, sinceAV, typeFilter, activeGenres: [...activeGenres], yearLo, yearHi, search, searchVisible, focusedIdx, selectedAlbum, crate };
+  }, [sort, favOnly, sinceAV, typeFilter, activeGenres, yearLo, yearHi, search, searchVisible, focusedIdx, selectedAlbum, crate]);
+  useEffect(() => {
+    const el = containerRef.current;
+    return () => { if (latest.current) savedView = { ...latest.current, scrollTop: el?.scrollTop ?? 0 }; };
+  }, []);
 
   // ── optimistic updates ────────────────────────────────────────────────────
 
@@ -560,15 +742,15 @@ export function AlbumsView() {
   }, [queryClient]);
 
   const toggleTrackFav = useCallback((albumId: string, trackId: string) => {
-    const album = allAlbums.find(a => a.album_id === albumId);
+    const detail = queryClient.getQueryData<AlbumDetail>(["album", albumId]);
     const cur = trackFavOverrides[trackId] !== undefined ? trackFavOverrides[trackId]
-      : (album?.track_plays.find(t => t.track_id === trackId)?.is_favorited ?? false);
+      : (detail?.track_plays.find(t => t.track_id === trackId)?.is_favorited ?? false);
     const next = !cur;
     setTrackFavOverrides(p => ({ ...p, [trackId]: next }));
     api.post(`/api/library/track/${encodeURIComponent(trackId)}/favorite`)
-      .then(() => queryClient.invalidateQueries({ queryKey: ["albums"] }))
+      .then(() => queryClient.invalidateQueries({ queryKey: ["album", albumId] }))
       .catch(() => setTrackFavOverrides(p => ({ ...p, [trackId]: cur })));
-  }, [allAlbums, trackFavOverrides, queryClient]);
+  }, [trackFavOverrides, queryClient]);
 
   const handleNotesChange = useCallback((albumId: string, notes: string) => {
     setNotesOverrides(p => ({ ...p, [albumId]: notes }));
@@ -594,16 +776,16 @@ export function AlbumsView() {
       if (inInput) return;
 
       const count = filtered.length;
-      if (e.key === "j" || e.key === "ArrowDown") { e.preventDefault(); setFocusedIdx(i => i < 0 ? 0 : Math.min(i + cols, count - 1)); return; }
-      if (e.key === "k" || e.key === "ArrowUp") { e.preventDefault(); setFocusedIdx(i => i < 0 ? 0 : Math.max(i - cols, 0)); return; }
+      if (e.key === "j" || e.key === "ArrowDown") { e.preventDefault(); setFocusedIdx(i => i < 0 ? 0 : moveVertical(i, 1)); return; }
+      if (e.key === "k" || e.key === "ArrowUp") { e.preventDefault(); setFocusedIdx(i => i < 0 ? 0 : moveVertical(i, -1)); return; }
       if (e.key === "h" || e.key === "ArrowLeft") {
         e.preventDefault();
-        setFocusedIdx(i => { if (i < 0) return 0; const p = i - 1; return p >= 0 && Math.floor(p / cols) === Math.floor(i / cols) ? p : i; });
+        setFocusedIdx(i => { if (i < 0) return 0; const p = i - 1; return p >= 0 && sameRow(p, i) ? p : i; });
         return;
       }
       if (e.key === "l" || e.key === "ArrowRight") {
         e.preventDefault();
-        setFocusedIdx(i => { if (i < 0) return 0; const n = i + 1; return n < count && Math.floor(n / cols) === Math.floor(i / cols) ? n : i; });
+        setFocusedIdx(i => { if (i < 0) return 0; const n = i + 1; return n < count && sameRow(n, i) ? n : i; });
         return;
       }
       if (e.ctrlKey && e.key === "ArrowUp") { e.preventDefault(); setFocusedIdx(0); return; }
@@ -645,7 +827,7 @@ export function AlbumsView() {
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [filtered, focusedIdx, cols, searchVisible, searchInput, paletteOpen, yearOpen, selectedAlbum, toggleFav]);
+  }, [filtered, focusedIdx, moveVertical, sameRow, searchVisible, searchInput, paletteOpen, yearOpen, selectedAlbum, toggleFav]);
 
   // ─────────────────────────────────────────────────────────────────────────
 
@@ -702,10 +884,16 @@ export function AlbumsView() {
         <button style={pillBtn(isActiveYear ?? false)} onClick={() => setYearOpen(v => !v)}>
           {yearLabel}
         </button>
+        {avBeganMs !== null && (
+          <button style={pillBtn(sinceAV)} onClick={() => setSinceAV(v => !v)} title="Only albums played since AV's own log began">
+            {sinceAV ? "Since AV" : "All time"}
+          </button>
+        )}
 
         <div style={{ flex: 1 }} />
 
-        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+        <SizeSwitch size={size} onChange={setSize} />
+        <div style={{ display: "flex", alignItems: "center", gap: 6, marginLeft: 8 }}>
           <span style={{ color: "#535353", fontSize: 12 }}>Sort:</span>
           <button style={sortBtn(sort === "recent")} onClick={() => cycleSort("recent")}>Recent</button>
           <button style={sortBtn(sort === "az" || sort === "za")} onClick={() => cycleSort("alpha")}>
@@ -740,6 +928,10 @@ export function AlbumsView() {
       )}
 
       {/* Genre palette */}
+      {ring?.genre_fams && (
+        <CratesStrip albums={baseFiltered} ring={ring} albumFam={albumFam} crate={crate} onPick={setCrate} />
+      )}
+
       {paletteOpen && (
         <GenrePalette
           genres={allGenres}
@@ -764,25 +956,45 @@ export function AlbumsView() {
       <div style={{ flex: 1, display: "flex", flexDirection: "row", overflow: "hidden", gap: 0 }}>
         {/* Grid */}
         <div ref={containerRef} style={{ flex: 1, overflowY: "auto", overflowX: "hidden", paddingRight: 2 }}>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: GAP, alignContent: "flex-start" }}>
-            {filtered.map((album, idx) => (
-              <AlbumCard
-                key={album.album_id}
-                album={album}
-                tileWidth={tileWidth}
-                focused={focusedIdx === idx}
-                selected={selectedAlbum?.album_id === album.album_id}
-                onClick={() => { setFocusedIdx(idx); setSelectedAlbum(prev => prev?.album_id === album.album_id ? null : album); }}
-                cardRef={el => { cardRefs.current[idx] = el; }}
-                favOverride={favOverrides[album.album_id]}
-                ratingOverride={ratingOverrides[album.album_id]}
-              />
+          {/* The current section's header, pinned while you scroll through it. Zero height, so
+              it overlays the grid instead of pushing it down. */}
+          {grid.current >= 0 && sections[grid.current]?.header && grid.scrollTop > grid.secTop[grid.current] && (
+            <div style={{ position: "sticky", top: 0, height: 0, zIndex: 3 }}>
+              <SectionHeader label={sections[grid.current].label} count={sections[grid.current].count} noun="album" solid />
+            </div>
+          )}
+          <div style={{ position: "relative", height: grid.total }}>
+            {grid.visible.map(b => b.kind === "header" ? (
+              <div key={`h${b.si}`} style={{ position: "absolute", top: b.top, left: 0, right: 0, height: HEADER_H }}>
+                <SectionHeader label={sections[b.si].label} count={sections[b.si].count} noun="album" />
+              </div>
+            ) : (
+              <div key={`r${b.start}`} style={{ position: "absolute", top: b.top, left: 0, display: "flex", gap: GAP }}>
+                {filtered.slice(b.start, b.end).map((album, i) => {
+                  const idx = b.start + i;
+                  return (
+                    <AlbumCard
+                      key={album.album_id}
+                      album={album}
+                      tileWidth={tileWidth}
+                      compact={compact}
+                      focused={focusedIdx === idx}
+                      selected={selectedAlbum?.album_id === album.album_id}
+                      onClick={() => { setFocusedIdx(idx); setSelectedAlbum(prev => prev?.album_id === album.album_id ? null : album); }}
+                      favOverride={favOverrides[album.album_id]}
+                      ratingOverride={ratingOverrides[album.album_id]}
+                    />
+                  );
+                })}
+              </div>
             ))}
-            {filtered.length === 0 && data && (
-              <div style={{ color: "#535353", padding: 24, width: "100%", textAlign: "center" }}>No albums found.</div>
-            )}
           </div>
+          {filtered.length === 0 && data && (
+            <div style={{ color: "#535353", padding: 24, width: "100%", textAlign: "center" }}>No albums found.</div>
+          )}
         </div>
+        <GridScrubber sections={sections} secTop={grid.secTop} total={grid.total} scrollTop={grid.scrollTop} viewHeight={grid.viewHeight}
+          onScrollTo={t => containerRef.current?.scrollTo({ top: t })} noun="album" />
 
         {/* Side panel */}
         {selectedAlbum && (() => {

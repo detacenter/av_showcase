@@ -551,7 +551,6 @@ export function RecentView() {
         display: "flex", alignItems: "center", gap: 8,
         padding: "20px 24px 12px 14px", flexShrink: 0,
       }}>
-        <span style={{ fontSize: 22, fontWeight: 900, color: "#fff" }}>Recent</span>
         <div style={{ flex: 1 }} />
         {searchVisible && (
           <input

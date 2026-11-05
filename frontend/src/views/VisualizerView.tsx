@@ -1,5 +1,13 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
+// Captured once, at real module-evaluation time (the actual initial document
+// load), before BrowserRouter's pushState navigation has any chance to rewrite
+// window.location to a virtual client-side route. The popout button needs the
+// *actual* loaded file (e.g. file:///.../dist/index.html), not whatever path the
+// address bar currently shows — window.location.pathname is unreliable for this
+// by the time a user has navigated anywhere and clicked "Pop out".
+const ENTRY_URL = window.location.href;
+
 type Mode = "tiles" | "tiles2" | "orbit" | "plasma" | "scope";
 type AudioSampleBuffer = Float32Array<ArrayBuffer>;
 
@@ -687,7 +695,18 @@ export function VisualizerView() {
           </select>
           {!isPopout && (
             <button
-              onClick={() => window.open("/visualizer?popout=1", "audiovault-visualizer", "width=760,height=430")}
+              onClick={() => {
+                // Reuse the actual entry document (not a path-absolute "/visualizer"
+                // string, which resolves against file:// as the filesystem root in
+                // production and silently fails to load — a window with visible OS
+                // chrome but blank content). Popout mode is now decided purely by
+                // the query string, before App() ever mounts BrowserRouter, so no
+                // particular pathname is required here.
+                const url = new URL(ENTRY_URL);
+                url.search = "popout=1";
+                url.hash = "";
+                window.open(url.toString(), "audiovault-visualizer", "width=760,height=430");
+              }}
               style={buttonStyle}
               title="Pop out visualizer"
             >

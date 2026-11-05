@@ -4,11 +4,21 @@ import { useQuery, useQueryClient } from "@tanstack/react-query";
 import { api } from "../api/client";
 import type { Artist, ArtistsResponse } from "../api/types";
 import { GenrePalette } from "../components/GenrePalette";
+import { useHistoryInfo } from "../api/useHistoryInfo";
+import { GridScrubber, SectionHeader, SizeSwitch } from "../lib/sectionedGrid";
+import {
+  buildSections, compareFolded, HEADER_H, letterOf, monthKey, monthLabel, useSectionedGrid, useTileSize, type TileSize,
+} from "../lib/sectionedGridLayout";
 
 import { API_BASE } from "../api/config";
-const CARD_MIN_W = 220;
+const CARD_MIN_W: Record<TileSize, number> = { S: 150, M: 220, L: 300 };
 const CARD_H = 318;
 const GAP = 12;
+// ArtistCard: 10px padding, a 52px header, 6px, then a (tileWidth - 20) square of art;
+// CARD_H is the floor for narrow tiles at the default size (S is meant to be small).
+const cardHeightFor = (tileWidth: number, size: TileSize) => (size === "S" ? tileWidth + 68 : Math.max(CARD_H, tileWidth + 68));
+// Plays has no headers (a band label would read as a stat); the rail still marks the bands.
+const PLAY_BANDS = [1000, 500, 250, 100, 50, 25, 10, 5, 1];
 
 // ─── helpers ─────────────────────────────────────────────────────────────────
 
@@ -19,18 +29,17 @@ function artUrl(filename: string | null | undefined): string | null {
 // ─── artist card ──────────────────────────────────────────────────────────────
 
 function ArtistCard({
-  artist, isFocused, isFavorited, tileWidth, onClick, onFav, cardRef,
+  artist, isFocused, isFavorited, tileWidth, size, onClick, onFav,
 }: {
-  artist: Artist; isFocused: boolean; isFavorited: boolean; tileWidth: number;
+  artist: Artist; isFocused: boolean; isFavorited: boolean; tileWidth: number; size: TileSize;
   onClick: () => void; onFav: (e: React.MouseEvent) => void;
-  cardRef: (el: HTMLDivElement | null) => void;
 }) {
   const heroArt = artUrl(artist.hero_art_filename ?? artist.albums[0]?.art_filename ?? null);
   const heroSize = tileWidth - 20;
   const genreLabel = artist.genres.slice(0, 4).join(", ");
   return (
-    <div ref={cardRef} onClick={onClick} style={{
-      width: tileWidth, minHeight: CARD_H, background: "#1a1a1a", borderRadius: 8,
+    <div onClick={onClick} style={{
+      width: tileWidth, height: cardHeightFor(tileWidth, size), background: "#1a1a1a", borderRadius: 8,
       padding: 10, boxSizing: "border-box", cursor: "pointer", flexShrink: 0,
       display: "flex", flexDirection: "column",
       border: isFocused ? "2px solid var(--green)" : "2px solid transparent",
@@ -79,26 +88,40 @@ function ArtistCard({
 
 type SortKey = "recent" | "az" | "za" | "plays";
 
+// ─── where you were ───────────────────────────────────────────────────────────
+// Opening an artist unmounts this view, so "← Artists" used to land at the top with the
+// sort and filters reset. Kept at module level: it lasts as long as the app is open.
+
+interface SavedView {
+  sort: SortKey; favOnly: boolean; sinceAV: boolean; activeGenres: string[];
+  search: string; searchVisible: boolean; focusedIdx: number; scrollTop: number;
+}
+let savedView: SavedView | null = null;
+
 // ─── main view ────────────────────────────────────────────────────────────────
 
 export function ArtistsView() {
   const navigate = useNavigate();
-  const [sort, setSort] = useState<SortKey>("recent");
-  const [favOnly, setFavOnly] = useState(false);
-  const [activeGenres, setActiveGenres] = useState<Set<string>>(new Set());
+  const [restore] = useState(() => savedView);
+  const [sort, setSort] = useState<SortKey>(restore?.sort ?? "recent");
+  const [favOnly, setFavOnly] = useState(restore?.favOnly ?? false);
+  const [sinceAV, setSinceAV] = useState(restore?.sinceAV ?? false);   // only artists played since AV's own log began
+  const [activeGenres, setActiveGenres] = useState<Set<string>>(() => new Set(restore?.activeGenres ?? []));
   const [paletteOpen, setPaletteOpen] = useState(false);
-  const [searchVisible, setSearchVisible] = useState(false);
-  const [searchInput, setSearchInput] = useState("");
-  const [search, setSearch] = useState("");
-  const [focusedIdx, setFocusedIdx] = useState(-1);
+  const [searchVisible, setSearchVisible] = useState(restore?.searchVisible ?? false);
+  const [searchInput, setSearchInput] = useState(restore?.search ?? "");
+  const [search, setSearch] = useState(restore?.search ?? "");
+  const [focusedIdx, setFocusedIdx] = useState(restore?.focusedIdx ?? -1);
   const [favOverrides, setFavOverrides] = useState<Record<string, boolean>>({});
+  const [size, setSize] = useTileSize("av.artists.tileSize");
 
   const containerRef = useRef<HTMLDivElement>(null);
-  const cardRefs = useRef<(HTMLDivElement | null)[]>([]);
   const searchRef = useRef<HTMLInputElement>(null);
   const searchTimer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
   const [cols, setCols] = useState(3);
-  const [tileWidth, setTileWidth] = useState(CARD_MIN_W);
+  const [tileWidth, setTileWidth] = useState(CARD_MIN_W.M);
+  const [measured, setMeasured] = useState(false);
+  const pendingScroll = useRef<number | null>(restore?.scrollTop ?? null);
 
   const queryClient = useQueryClient();
 
@@ -107,8 +130,10 @@ export function ArtistsView() {
     queryFn: () => api.get("/api/artists"),
     staleTime: 60_000,
   });
+  const { data: historyInfo } = useHistoryInfo();
+  const avBeganMs = historyInfo?.av_began ? new Date(historyInfo.av_began).getTime() : null;
 
-  const allArtists = data?.artists ?? [];
+  const allArtists = useMemo(() => data?.artists ?? [], [data]);
   const allGenres = data?.all_genres ?? [];
 
   // ── responsive grid ───────────────────────────────────────────────────────
@@ -119,14 +144,16 @@ export function ArtistsView() {
     const ro = new ResizeObserver(() => {
       const w = el.clientWidth;
       if (w === 0) return;
-      const c = Math.max(1, Math.floor((w + GAP) / (CARD_MIN_W + GAP)));
-      const tw = Math.max(CARD_MIN_W, Math.floor((w - (c - 1) * GAP) / c));
+      const minW = CARD_MIN_W[size];
+      const c = Math.max(1, Math.floor((w + GAP) / (minW + GAP)));
+      const tw = Math.max(minW, Math.floor((w - (c - 1) * GAP) / c));
       setCols(c);
       setTileWidth(tw);
+      setMeasured(true);
     });
     ro.observe(el);
     return () => ro.disconnect();
-  }, []);
+  }, [size]);
 
   // ── filter + sort ─────────────────────────────────────────────────────────
 
@@ -140,25 +167,64 @@ export function ArtistsView() {
     if (favOnly) {
       items = items.filter(a => favOverrides[a.name] !== undefined ? favOverrides[a.name] : a.is_favorited);
     }
+    if (sinceAV && avBeganMs !== null) {
+      items = items.filter(a => new Date(a.latest_played).getTime() >= avBeganMs);
+    }
     if (activeGenres.size > 0) {
       items = items.filter(a => a.genres.some(g => activeGenres.has(g)));
     }
     const sorted = [...items];
     if (sort === "plays") sorted.sort((a, b) => b.play_count - a.play_count);
-    else if (sort === "az") sorted.sort((a, b) => a.name.localeCompare(b.name));
-    else if (sort === "za") sorted.sort((a, b) => b.name.localeCompare(a.name));
+    else if (sort === "az") sorted.sort((a, b) => compareFolded(a.name, b.name));
+    else if (sort === "za") sorted.sort((a, b) => compareFolded(b.name, a.name));
     else sorted.sort((a, b) => b.latest_played > a.latest_played ? 1 : -1);
     return sorted;
-  }, [allArtists, search, favOnly, activeGenres, sort, favOverrides]);
+  }, [allArtists, search, favOnly, sinceAV, avBeganMs, activeGenres, sort, favOverrides]);
+
+  // Sections follow the sort: letters for A→Z, months played for Recent, play bands (rail only) for Plays.
+  const sections = useMemo(() => {
+    if (sort === "az" || sort === "za")
+      return buildSections(filtered, a => letterOf(a.name), k => ({ label: k === "•" ? "Other" : k, rail: k }));
+    if (sort === "plays")
+      return buildSections(filtered, a => String(PLAY_BANDS.find(b => a.play_count >= b) ?? 0), k => {
+        const n = Number(k);
+        return { label: n >= 1000 ? "1,000+ plays" : `${n}+ plays`, rail: n >= 1000 ? "1k+" : String(n), header: false };
+      });
+    return buildSections(filtered, a => monthKey(a.latest_played), (k, _f, prev) => ({
+      label: monthLabel(k), rail: !prev || prev.slice(0, 4) !== k.slice(0, 4) ? k.slice(0, 4) : null,
+    }));
+  }, [filtered, sort]);
+
+  const grid = useSectionedGrid({ containerRef, sections, cols, rowHeight: cardHeightFor(tileWidth, size), gap: GAP });
+  const { scrollToIndex, moveVertical, sameRow } = grid;
 
   useEffect(() => {
+    if (pendingScroll.current !== null) return;   // coming back: put the list where it was instead
     setFocusedIdx(-1);
-    cardRefs.current = [];
-  }, [filtered.length, sort, search, favOnly, activeGenres.size]);
+    containerRef.current?.scrollTo({ top: 0 });   // a new list starts at its top
+  }, [filtered.length, sort, search, favOnly, sinceAV, activeGenres.size]);
+
+  // Restore the scroll once the artists are in and the grid knows its column count.
+  useEffect(() => {
+    if (pendingScroll.current === null || !measured || filtered.length === 0) return;
+    const top = pendingScroll.current;
+    pendingScroll.current = null;
+    containerRef.current?.scrollTo({ top });
+  }, [measured, filtered.length]);
 
   useEffect(() => {
-    if (focusedIdx >= 0) cardRefs.current[focusedIdx]?.scrollIntoView({ block: "nearest" });
-  }, [focusedIdx]);
+    if (focusedIdx >= 0 && pendingScroll.current === null) scrollToIndex(focusedIdx);
+  }, [focusedIdx, scrollToIndex]);
+
+  // Remember all of it on the way out.
+  const latest = useRef<Omit<SavedView, "scrollTop">>({ sort, favOnly, sinceAV, activeGenres: [...activeGenres], search, searchVisible, focusedIdx });
+  useEffect(() => {
+    latest.current = { sort, favOnly, sinceAV, activeGenres: [...activeGenres], search, searchVisible, focusedIdx };
+  }, [sort, favOnly, sinceAV, activeGenres, search, searchVisible, focusedIdx]);
+  useEffect(() => {
+    const el = containerRef.current;
+    return () => { savedView = { ...latest.current, scrollTop: el?.scrollTop ?? 0 }; };
+  }, []);
 
   // ── fav toggle ────────────────────────────────────────────────────────────
 
@@ -217,22 +283,22 @@ export function ArtistsView() {
       const count = filtered.length;
       if (e.key === "j" || e.key === "ArrowDown") {
         e.preventDefault();
-        setFocusedIdx(i => i < 0 ? 0 : Math.min(i + cols, count - 1));
+        setFocusedIdx(i => i < 0 ? 0 : moveVertical(i, 1));
         return;
       }
       if (e.key === "k" || e.key === "ArrowUp") {
         e.preventDefault();
-        setFocusedIdx(i => i < 0 ? 0 : Math.max(i - cols, 0));
+        setFocusedIdx(i => i < 0 ? 0 : moveVertical(i, -1));
         return;
       }
       if (e.key === "h" || e.key === "ArrowLeft") {
         e.preventDefault();
-        setFocusedIdx(i => { if (i < 0) return 0; const p = i - 1; return p >= 0 && Math.floor(p / cols) === Math.floor(i / cols) ? p : i; });
+        setFocusedIdx(i => { if (i < 0) return 0; const p = i - 1; return p >= 0 && sameRow(p, i) ? p : i; });
         return;
       }
       if (e.key === "l" || e.key === "ArrowRight") {
         e.preventDefault();
-        setFocusedIdx(i => { if (i < 0) return 0; const n = i + 1; return n < count && Math.floor(n / cols) === Math.floor(i / cols) ? n : i; });
+        setFocusedIdx(i => { if (i < 0) return 0; const n = i + 1; return n < count && sameRow(n, i) ? n : i; });
         return;
       }
       if (e.ctrlKey && e.key === "ArrowUp") { e.preventDefault(); setFocusedIdx(0); return; }
@@ -259,7 +325,7 @@ export function ArtistsView() {
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [filtered, focusedIdx, cols, searchVisible, searchInput, paletteOpen, toggleFav, navigate]);
+  }, [filtered, focusedIdx, moveVertical, sameRow, searchVisible, searchInput, paletteOpen, toggleFav, navigate]);
 
   // ─────────────────────────────────────────────────────────────────────────
 
@@ -299,10 +365,27 @@ export function ArtistsView() {
           {activeGenres.size > 0 ? `Genre (${activeGenres.size}) ▾` : "Genre ▾"}
         </button>
 
+        {avBeganMs !== null && (
+          <button
+            onClick={() => setSinceAV(v => !v)}
+            title="Only artists played since AV's own log began"
+            style={{
+              height: 30, padding: "0 14px", borderRadius: 15, fontSize: 13,
+              background: sinceAV ? "#1a2a1a" : "#2a2a2a",
+              color: sinceAV ? "var(--green)" : "#b3b3b3",
+              border: sinceAV ? "1px solid var(--green)" : "none",
+              transition: "all 0.15s",
+            }}
+          >
+            {sinceAV ? "Since AV" : "All time"}
+          </button>
+        )}
+
         <div style={{ flex: 1 }} />
 
+        <SizeSwitch size={size} onChange={setSize} />
         {/* Sort: Recent | A→Z | Plays */}
-        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 6, marginLeft: 8 }}>
           <span style={{ color: "#535353", fontSize: 12 }}>Sort:</span>
           {(["recent", "alpha", "plays"] as const).map(id => {
             const isActive = id === "recent" ? sort === "recent" : id === "alpha" ? isAlpha : sort === "plays";
@@ -365,27 +448,47 @@ export function ArtistsView() {
         />
       )}
 
-      {/* Grid */}
+      {/* Grid + scrubber */}
+      <div style={{ flex: 1, minHeight: 0, display: "flex" }}>
       <div ref={containerRef} style={{ flex: 1, overflowY: "auto", overflowX: "hidden" }}>
-        <div style={{ display: "flex", flexWrap: "wrap", gap: GAP, alignContent: "flex-start" }}>
-          {filtered.map((artist, idx) => (
-            <ArtistCard
-              key={artist.name}
-              artist={artist}
-              isFocused={focusedIdx === idx}
-              isFavorited={getIsFav(artist)}
-              tileWidth={tileWidth}
-              onClick={() => { setFocusedIdx(idx); navigate(`/artists/${encodeURIComponent(artist.name)}`); }}
-              onFav={e => toggleFav(artist.name, e)}
-              cardRef={el => { cardRefs.current[idx] = el; }}
-            />
-          ))}
-          {filtered.length === 0 && data && (
-            <div style={{ color: "#535353", padding: 24, width: "100%", textAlign: "center" }}>
-              No artists found.
+        {grid.current >= 0 && sections[grid.current]?.header && grid.scrollTop > grid.secTop[grid.current] && (
+          <div style={{ position: "sticky", top: 0, height: 0, zIndex: 3 }}>
+            <SectionHeader label={sections[grid.current].label} count={sections[grid.current].count} noun="artist" solid />
+          </div>
+        )}
+        <div style={{ position: "relative", height: grid.total }}>
+          {grid.visible.map(b => b.kind === "header" ? (
+            <div key={`h${b.si}`} style={{ position: "absolute", top: b.top, left: 0, right: 0, height: HEADER_H }}>
+              <SectionHeader label={sections[b.si].label} count={sections[b.si].count} noun="artist" />
             </div>
-          )}
+          ) : (
+            <div key={`r${b.start}`} style={{ position: "absolute", top: b.top, left: 0, display: "flex", gap: GAP }}>
+              {filtered.slice(b.start, b.end).map((artist, i) => {
+                const idx = b.start + i;
+                return (
+                  <ArtistCard
+                    key={artist.name}
+                    artist={artist}
+                    isFocused={focusedIdx === idx}
+                    isFavorited={getIsFav(artist)}
+                    tileWidth={tileWidth}
+                    size={size}
+                    onClick={() => { setFocusedIdx(idx); navigate(`/artists/${encodeURIComponent(artist.name)}`); }}
+                    onFav={e => toggleFav(artist.name, e)}
+                  />
+                );
+              })}
+            </div>
+          ))}
         </div>
+        {filtered.length === 0 && data && (
+          <div style={{ color: "#535353", padding: 24, width: "100%", textAlign: "center" }}>
+            No artists found.
+          </div>
+        )}
+      </div>
+      <GridScrubber sections={sections} secTop={grid.secTop} total={grid.total} scrollTop={grid.scrollTop} viewHeight={grid.viewHeight}
+        onScrollTo={t => containerRef.current?.scrollTo({ top: t })} noun="artist" />
       </div>
     </div>
   );

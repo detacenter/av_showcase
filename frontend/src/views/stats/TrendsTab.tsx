@@ -1,8 +1,13 @@
-import { useRef, useState, useCallback } from "react";
+import { useRef, useState, useCallback, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useSize } from "../../hooks/useSize";
 
 import { API_BASE as API } from "../../api/config";
+
+function artUrl(path: string | null | undefined): string | null {
+  const fn = path?.split("/").pop();
+  return fn ? `${API}/artwork/${fn}` : null;
+}
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Color helpers
@@ -166,7 +171,7 @@ function SparklineGrid({ days }: { days: DailyEntry[] }) {
   }
 
   function renderAll() {
-    return METRICS.map((m) => {
+    return METRICS.map(m => {
       const values = days.map(d => d[m.key as keyof DailyEntry] as number);
       const avg = rolling(values);
       const maxAvg = Math.max(...avg) || 1;
@@ -261,8 +266,223 @@ function SparklineGrid({ days }: { days: DailyEntry[] }) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
+// SessionScatterPlot
+// ─────────────────────────────────────────────────────────────────────────────
+
+const D_CAP = 12, P_CAP = 20;
+
+function depthColor(depth: number): string {
+  const stops: Array<[number, [number, number, number]]> = [
+    [0.0, [0x27, 0xc7, 0xff]],
+    [0.42, [0x00, 0xd5, 0xb0]],
+    [0.72, [0x7b, 0xe3, 0x5b]],
+    [1.0, [0xf2, 0xd5, 0x4a]],
+  ];
+  const t = Math.max(0, Math.min(1, (depth - 1) / Math.max(1, D_CAP - 1)));
+  for (let i = 0; i < stops.length - 1; i++) {
+    const [at, a] = stops[i];
+    const [bt, b] = stops[i + 1];
+    if (t <= bt) {
+      const local = (t - at) / Math.max(0.001, bt - at);
+      const r = Math.round(a[0] + (b[0] - a[0]) * local);
+      const g = Math.round(a[1] + (b[1] - a[1]) * local);
+      const bv = Math.round(a[2] + (b[2] - a[2]) * local);
+      return `rgb(${r},${g},${bv})`;
+    }
+  }
+  return "#f2d54a";
+}
+
+function clusterName(d: number, y: number): [string, string] {
+  if (d <= 2) {
+    if (y <= 5) return ["Quick Scans", "Short scattered sessions — dipping in and out"];
+    if (y <= 12) return ["Background Listening", "Many tracks spread across your library"];
+    return ["Shuffle Marathon", "Long sessions, scattered across your library"];
+  }
+  if (d <= 4) {
+    if (y <= 5) return ["Casual Browsing", "Short sessions with some album focus"];
+    if (y <= 12) return ["Casual Sessions", "Balanced — a few albums per sit-down"];
+    return ["Extended Browsing", "Long sessions, loosely album-focused"];
+  }
+  if (d <= 7) {
+    if (y <= 5) return ["Focused Bursts", "Short but committed — one album at a time"];
+    if (y <= 12) return ["Album Sessions", "Sitting with an album start to finish"];
+    return ["Deep Listening", "Long, focused — really in it"];
+  }
+  return ["Deep Dives", "Maximum focus — deep into a single album"];
+}
+
+interface DepthSession { n_plays: number; n_albums: number; depth: number; }
+interface BubbleHit { cx: number; cy: number; r: number; d: number; y: number; name: string; desc: string; }
+
+function SessionScatterPlot({ sessions }: { sessions: DepthSession[] }) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { w } = useSize(containerRef);
+  const [hovered, setHovered] = useState<BubbleHit | null>(null);
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const H = 292;
+  const PAD_L = 46, PAD_R = 46, PAD_T = 36, PAD_B = 42;
+
+  if (!w || !sessions.length) {
+    return <div ref={containerRef} style={{ height: H, width: "100%" }} />;
+  }
+
+  const pw = w - PAD_L - PAD_R;
+  const ph = H - PAD_T - PAD_B;
+
+  const ptOf = (depth: number, plays: number) => ({
+    x: PAD_L + (depth - 1) / (D_CAP - 1) * pw,
+    y: PAD_T + (1 - (plays - 1) / (P_CAP - 1)) * ph,
+  });
+
+  // Bucket and count
+  const buckets = new Map<string, number>();
+  for (const s of sessions) {
+    const d = Math.min(Math.max(1, Math.round(s.depth)), D_CAP);
+    const y = Math.min(s.n_plays, P_CAP);
+    const key = `${d},${y}`;
+    buckets.set(key, (buckets.get(key) ?? 0) + 1);
+  }
+  const maxCount = Math.max(...buckets.values(), 1);
+
+  const bubbles: BubbleHit[] = [];
+  buckets.forEach((count, key) => {
+    const [d, y] = key.split(",").map(Number);
+    const pt = ptOf(d, y);
+    const weight = Math.sqrt(count / maxCount);
+    const r = 4.5 + 12.5 * weight;
+    const [name, desc] = clusterName(d, y);
+    bubbles.push({ cx: pt.x, cy: pt.y, r, d, y, name, desc });
+  });
+
+  const zone_defs: Array<[number, number, string, string]> = [
+    [1, 3, "#27c7ff", "scattered"],
+    [3, 7, "#00d5b0", "mixed"],
+    [7, D_CAP, "#f2d54a", "album mode"],
+  ];
+
+  const handleMouseMove = (e: React.MouseEvent<SVGSVGElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+    setMousePos({ x: mx, y: my });
+    let hit: BubbleHit | null = null;
+    for (const b of bubbles) {
+      const dist = Math.sqrt((mx - b.cx) ** 2 + (my - b.cy) ** 2);
+      if (dist <= b.r) { hit = b; break; }
+    }
+    setHovered(hit);
+  };
+
+  return (
+    <div ref={containerRef} style={{ height: H, width: "100%" }}>
+      <svg
+        width={w} height={H}
+        style={{ display: "block", cursor: hovered ? "pointer" : "default" }}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={() => setHovered(null)}
+      >
+        <rect x={0} y={0} width={w} height={H} rx={18} fill="#0d0d0d" />
+
+        {/* Zone backgrounds */}
+        {zone_defs.map(([s, end, color, label]) => {
+          const x1 = ptOf(s, 1).x, x2 = ptOf(end, 1).x;
+          return (
+            <g key={label}>
+              <rect x={x1} y={PAD_T} width={x2 - x1} height={ph} fill={color} fillOpacity={0.055} />
+              <text x={x1 + 6} y={PAD_T + 14} fill={color} fillOpacity={0.59} fontSize={10} fontWeight={600}>{label}</text>
+            </g>
+          );
+        })}
+
+        {/* Zone dividers */}
+        {[3, 7].map(xv => {
+          const x = ptOf(xv, 1).x;
+          return <line key={xv} x1={x} y1={PAD_T + 22} x2={x} y2={H - PAD_B} stroke="rgba(255,255,255,0.14)" strokeWidth={1} strokeDasharray="4 3" />;
+        })}
+
+        {/* Y grid */}
+        {[1, 5, 10, 15, 20].map(yv => {
+          const pt = ptOf(1, yv);
+          return (
+            <g key={yv}>
+              <line x1={PAD_L} y1={pt.y} x2={w - PAD_R} y2={pt.y} stroke="rgba(255,255,255,0.063)" strokeWidth={1} />
+              <text x={PAD_L - 4} y={pt.y + 4} textAnchor="end" fill="#444" fontSize={10} fontWeight={600}>
+                {yv === P_CAP ? `${yv}+` : yv}
+              </text>
+            </g>
+          );
+        })}
+
+        {/* X axis labels */}
+        {[1, 2, 3, 4, 5, 6, 8, 10, 12].filter(xv => xv <= D_CAP).map(xv => {
+          const pt = ptOf(xv, 1);
+          return (
+            <text key={xv} x={pt.x} y={H - PAD_B + 14} textAnchor="middle" fill="#444" fontSize={10} fontWeight={600}>
+              {xv === D_CAP ? `${xv}+` : xv}
+            </text>
+          );
+        })}
+
+        {/* X axis title */}
+        <text x={PAD_L + pw / 2} y={H - 4} textAnchor="middle" fill="#555" fontSize={10} fontWeight={600}>
+          avg tracks per album  →  album mode
+        </text>
+
+        {/* Bubbles */}
+        {bubbles.map((b, i) => {
+          const fill = depthColor(b.d);
+          const count = buckets.get(`${b.d},${b.y}`) ?? 1;
+          const weight = Math.sqrt(count / maxCount);
+          const alpha = Math.round((82 + 138 * weight));
+          const isHov = hovered?.d === b.d && hovered?.y === b.y;
+          return (
+            <g key={i}>
+              {weight > 0.55 && (
+                <circle cx={b.cx} cy={b.cy} r={b.r + 5} fill={fill} fillOpacity={0.10} />
+              )}
+              {isHov && (
+                <circle cx={b.cx} cy={b.cy} r={b.r + 3} fill={fill} fillOpacity={0.255} stroke="#fff" strokeWidth={2} />
+              )}
+              <circle cx={b.cx} cy={b.cy} r={b.r} fill={fill} fillOpacity={alpha / 255} stroke="rgba(0,0,0,0.314)" strokeWidth={1} />
+            </g>
+          );
+        })}
+
+        {/* Tooltip */}
+        {hovered && (() => {
+          const lines = [hovered.name, hovered.desc];
+          const maxChars = Math.max(...lines.map(l => l.length));
+          const tw = maxChars * 6.5 + 18;
+          const th = lines.length * 18 + 14;
+          let tx = mousePos.x + 14;
+          let ty = mousePos.y + 14;
+          if (tx + tw > w - PAD_R - 4) tx = mousePos.x - tw - 14;
+          if (ty + th > H - 4) ty = H - th - 4;
+          tx = Math.max(4, tx); ty = Math.max(4, ty);
+          return (
+            <g>
+              <rect x={tx} y={ty} width={tw} height={th} rx={6} fill="#222" stroke="#444" strokeWidth={1} />
+              {lines.map((line, i) => (
+                <text key={i} x={tx + 9} y={ty + 17 + i * 18} fill={i === 0 ? "#fff" : "#999"} fontSize={11}>{line}</text>
+              ))}
+            </g>
+          );
+        })()}
+      </svg>
+    </div>
+  );
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
 // GenreMountain
 // ─────────────────────────────────────────────────────────────────────────────
+
+interface MountainArtist {
+  name: string;
+  plays: number;
+  art_path: string | null;
+}
 
 interface MountainMode {
   title: string;
@@ -271,6 +491,7 @@ interface MountainMode {
   labels: string[];
   cumulative: Record<string, number[]>;
   total_cum: number[];
+  top_artists: Record<string, MountainArtist[]>;
 }
 
 interface GenreMountainData {
@@ -292,16 +513,60 @@ function GenreMountainChart({ data }: { data: GenreMountainData }) {
   const containerRef = useRef<HTMLDivElement>(null);
   const { w } = useSize(containerRef);
   const [mode, setMode] = useState(data.default_mode || "Genres");
+  const [selected, setSelected] = useState<string | null>(null);
+  // With nine years of history the all-time mountain is a wall; "This year" re-bases the
+  // cumulative curves at Jan 1 so the year stands on its own.
+  const [range, setRange] = useState<"year" | "all">("year");
 
   const PAD_L = 14, PAD_R = 96, PAD_T = 38, PAD_B = 28;
   const H = 316;
 
+  useEffect(() => {
+    if (!selected) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setSelected(null); };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, [selected]);
+
   const modeData: MountainMode | undefined = data.modes?.[mode];
-  const weeks = modeData?.weeks ?? [];
-  const labels = modeData?.labels ?? [];
-  const cumulative = modeData?.cumulative ?? {};
-  const total_cum = modeData?.total_cum ?? [];
+  const allWeeks = modeData?.weeks ?? [];
+  const allLabels = modeData?.labels ?? [];
   const MODES = Object.keys(data.modes || {});
+
+  // Slice to the latest calendar year and subtract the value at the slice start.
+  let weeks = allWeeks;
+  let labels = allLabels;
+  let cumulative: Record<string, number[]> = modeData?.cumulative ?? {};
+  let total_cum: number[] = modeData?.total_cum ?? [];
+  // All time + Month: one band per "Jun 2019" is a wall of 100+ stripes, so fold the
+  // bands into the twelve calendar months.
+  if (range === "all" && mode === "Month" && allLabels.some(l => / \d{4}$/.test(l))) {
+    const ORDER = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    const folded: Record<string, number[]> = {};
+    for (const l of allLabels) {
+      const m = l.slice(0, 3);
+      const arr = modeData?.cumulative?.[l] ?? [];
+      const acc = folded[m] ?? (folded[m] = new Array(allWeeks.length).fill(0));
+      for (let i = 0; i < arr.length; i++) acc[i] += arr[i];
+    }
+    labels = ORDER.filter(m => folded[m]);
+    cumulative = folded;
+  }
+  if (range === "year" && allWeeks.length > 1) {
+    const lastYear = new Date(allWeeks[allWeeks.length - 1] + "T12:00:00").getFullYear();
+    const from = allWeeks.findIndex(wk => new Date(wk + "T12:00:00").getFullYear() === lastYear);
+    if (from > 0) {
+      const base = from - 1;
+      weeks = allWeeks.slice(from);
+      total_cum = total_cum.slice(from).map(v => v - (modeData?.total_cum?.[base] ?? 0));
+      const re: Record<string, number[]> = {};
+      for (const g of labels) {
+        const arr = cumulative[g] ?? [];
+        re[g] = arr.slice(from).map(v => v - (arr[base] ?? 0));
+      }
+      cumulative = re;
+    }
+  }
 
   if (!w || weeks.length < 2 || !labels.length || !total_cum.length) {
     return <div ref={containerRef} style={{ height: H, width: "100%" }} />;
@@ -310,6 +575,19 @@ function GenreMountainChart({ data }: { data: GenreMountainData }) {
   const pw = w - PAD_L - PAD_R;
   const ph = H - PAD_T - PAD_B;
   const n = weeks.length;
+
+  // Sized so the top-artist panel always fits inside the chart's own plot
+  // area, top-left corner — no scrolling. Since H is fixed (not responsive
+  // like w), this budget is effectively constant; computed from the layout
+  // constants rather than hardcoded so it stays correct if those ever change.
+  const PANEL_TOP_M = 8, PANEL_LEFT_M = 6, PANEL_BOTTOM_M = 10;
+  const PANEL_HEADER_H = 22, PANEL_PAD_V = 24, PANEL_PAD_H = 13, PANEL_ROW_GAP = 10, PANEL_COL_GAP = 8, PANEL_NAME_H = 14, PANEL_TILE_GAP = 4;
+  const panelAvailH = ph - PANEL_TOP_M - PANEL_BOTTOM_M;
+  const panelGridH = panelAvailH - PANEL_HEADER_H - PANEL_PAD_V;
+  const TILE_SIZE = Math.max(32, Math.min(64, Math.round((panelGridH - PANEL_ROW_GAP - 2 * (PANEL_NAME_H + PANEL_TILE_GAP)) / 2)));
+  const PANEL_WIDTH = PANEL_PAD_H * 2 + 3 * TILE_SIZE + 2 * PANEL_COL_GAP;
+  const PANEL_TOP = PAD_T + PANEL_TOP_M;
+  const PANEL_LEFT = Math.max(0, Math.min(PAD_L + PANEL_LEFT_M, w - PANEL_WIDTH - 8));
   // OGAV: max_v = total_cum[-1] (last/highest cumulative value)
   const maxV = total_cum[total_cum.length - 1] || 1;
   const xOf = (i: number) => PAD_L + pw * i / Math.max(n - 1, 1);
@@ -342,8 +620,10 @@ function GenreMountainChart({ data }: { data: GenreMountainData }) {
     for (let i = 0; i < n; i++) bottoms[i] = tops[i];
   }
 
-  // Y-axis grid at every 1000
-  const gridStep = 1000;
+  // Y-axis grid: about five lines at a round step (1/2/5 × 10^k), whatever the total.
+  const rawStep = maxV / 5;
+  const mag = Math.pow(10, Math.floor(Math.log10(Math.max(rawStep, 1))));
+  const gridStep = [1, 2, 5, 10].map(m => m * mag).find(st => st >= rawStep) ?? mag;
   const gridLines: number[] = [];
   for (let v = gridStep; v < maxV; v += gridStep) gridLines.push(v);
 
@@ -352,16 +632,20 @@ function GenreMountainChart({ data }: { data: GenreMountainData }) {
     `M${xOf(0)},${yOf(total_cum[0])}` +
     total_cum.slice(1).map((v, i) => `L${xOf(i + 1)},${yOf(v)}`).join("");
 
-  // Month ticks
-  const seenYM = new Set<string>();
+  // X ticks: one per month for spans up to 18 months, one per year beyond that.
+  const seenKey = new Set<string>();
   const MONTHS = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
   const monthLabels: Array<{ x: number; label: string }> = [];
+  const spanMonths = weeks.length > 1
+    ? (() => { const a = new Date(weeks[0] + "T12:00:00"), b = new Date(weeks[weeks.length - 1] + "T12:00:00"); return (b.getFullYear() - a.getFullYear()) * 12 + b.getMonth() - a.getMonth(); })()
+    : 0;
+  const byYear = spanMonths > 18;
   weeks.forEach((w2, i) => {
     const dt = new Date(w2 + "T12:00:00");
-    const ym = `${dt.getFullYear()}-${dt.getMonth()}`;
-    if (!seenYM.has(ym)) {
-      seenYM.add(ym);
-      monthLabels.push({ x: xOf(i), label: MONTHS[dt.getMonth()] });
+    const key = byYear ? String(dt.getFullYear()) : `${dt.getFullYear()}-${dt.getMonth()}`;
+    if (!seenKey.has(key)) {
+      seenKey.add(key);
+      if (!byYear || dt.getMonth() === 0 || monthLabels.length === 0) monthLabels.push({ x: xOf(i), label: byYear ? String(dt.getFullYear()) : MONTHS[dt.getMonth()] });
     }
   });
 
@@ -372,7 +656,7 @@ function GenreMountainChart({ data }: { data: GenreMountainData }) {
   }
 
   return (
-    <div ref={containerRef} style={{ height: H, width: "100%" }}>
+    <div ref={containerRef} style={{ height: H, width: "100%", position: "relative" }}>
       <svg width={w} height={H} style={{ display: "block" }}>
         {/* Background */}
         <rect x={0} y={0} width={w} height={H} rx={18} fill="#101010" />
@@ -385,7 +669,7 @@ function GenreMountainChart({ data }: { data: GenreMountainData }) {
             const gap = 18;
             const el = (
               <text key={m} x={tx} y={22} fill={m === mode ? "#20a7ff" : "#555"} fontSize={11} fontWeight={700}
-                style={{ cursor: "pointer" }} onClick={() => setMode(m)}>
+                style={{ cursor: "pointer" }} onClick={() => { setMode(m); setSelected(null); }}>
                 {m}
               </text>
             );
@@ -393,6 +677,14 @@ function GenreMountainChart({ data }: { data: GenreMountainData }) {
             return el;
           });
         })()}
+        {/* Range toggle, right of the modes */}
+        {(["year", "all"] as const).map((r, i) => (
+          <text key={r} x={PAD_L + pw - (i === 0 ? 74 : 0)} y={22} textAnchor="end"
+            fill={range === r ? "#20a7ff" : "#555"} fontSize={11} fontWeight={700} style={{ cursor: "pointer" }}
+            onClick={() => { setRange(r); setSelected(null); }}>
+            {r === "year" ? "This year" : "All time"}
+          </text>
+        ))}
 
         {/* Y-axis grid */}
         {gridLines.map(v => (
@@ -415,12 +707,23 @@ function GenreMountainChart({ data }: { data: GenreMountainData }) {
         </defs>
 
         {/* Stacked bands */}
-        {areas.map(({ gi, genre, pathD, seamD }) => (
-          <g key={genre}>
-            <path d={pathD} fill={`url(#mg-${gi})`} />
-            {seamD && <path d={seamD} fill="none" stroke="rgba(0,0,0,0.149)" strokeWidth={0.8} />}
-          </g>
-        ))}
+        {areas.map(({ gi, genre, pathD, seamD }) => {
+          const isSel = selected === genre;
+          const opacity = !selected ? 1 : (isSel ? 1 : 0.22);
+          return (
+            <g key={genre}>
+              <path d={pathD} fill={`url(#mg-${gi})`} fillOpacity={opacity} style={{ cursor: "pointer" }}
+                onClick={() => setSelected(prev => (prev === genre ? null : genre))} />
+              {seamD && <path d={seamD} fill="none" stroke="rgba(0,0,0,0.149)" strokeWidth={0.8} pointerEvents="none" />}
+              {isSel && (
+                <>
+                  <path d={pathD} fill="none" stroke="rgba(255,255,255,0.32)" strokeWidth={6} strokeLinejoin="round" pointerEvents="none" />
+                  <path d={pathD} fill="none" stroke="#fff" strokeWidth={2.1} strokeLinejoin="round" pointerEvents="none" />
+                </>
+              )}
+            </g>
+          );
+        })}
 
         {/* White outline glow */}
         <path d={outlineD} fill="none" stroke="rgba(255,255,255,0.212)" strokeWidth={4.2} strokeLinecap="round" strokeLinejoin="round" />
@@ -437,8 +740,12 @@ function GenreMountainChart({ data }: { data: GenreMountainData }) {
           if (bandH < 10) return null;
           const labelY = yOf(lastBottoms[gi] + (scaled[g]?.[n - 1] ?? 0) / 2);
           const col = PAL[gi % PAL.length];
+          const isSel = selected === g;
+          const opacity = !selected ? 0.9 : (isSel ? 1 : 0.32);
           return (
-            <text key={g} x={PAD_L + pw + 8} y={labelY + 4} fill={col} fillOpacity={0.9} fontSize={10}>
+            <text key={g} x={PAD_L + pw + 8} y={labelY + 4} fill={col} fillOpacity={opacity}
+              fontSize={isSel ? 13 : 10} fontWeight={isSel ? 800 : 400} style={{ cursor: "pointer" }}
+              onClick={() => setSelected(prev => (prev === g ? null : g))}>
               {g.length > 20 ? g.slice(0, 20) : g}
             </text>
           );
@@ -452,6 +759,70 @@ function GenreMountainChart({ data }: { data: GenreMountainData }) {
           </g>
         ))}
       </svg>
+      {selected && (() => {
+        const gi = labels.indexOf(selected);
+        const color = PAL[gi % PAL.length];
+        const artists = modeData?.top_artists?.[selected] ?? [];
+        return (
+          <div style={{
+            position: "absolute", top: PANEL_TOP, left: PANEL_LEFT, width: PANEL_WIDTH,
+            background: "#1e1e1e", border: "1px solid #2a2a2a", borderRadius: 8,
+            padding: `${PANEL_PAD_H}px ${PANEL_PAD_H}px 11px`, boxShadow: "0 4px 16px rgba(0,0,0,0.4)",
+          }}>
+            <button
+              aria-label="Close"
+              onClick={() => setSelected(null)}
+              style={{
+                position: "absolute", top: 4, right: 4, background: "none", border: "none",
+                color: "#444", fontSize: 10, lineHeight: 1, cursor: "pointer", padding: 4,
+              }}
+            >
+              ×
+            </button>
+            <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 2, paddingRight: 18 }}>
+              <span style={{ width: 10, height: 10, borderRadius: 3, background: color, flexShrink: 0 }} />
+              <span style={{
+                fontSize: 13, fontWeight: 700, flex: 1, minWidth: 0,
+                overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
+              }}>
+                {selected}
+              </span>
+            </div>
+            <div style={{
+              display: "grid", gridTemplateColumns: "repeat(3, 1fr)", justifyItems: "center",
+              gap: `${PANEL_ROW_GAP}px ${PANEL_COL_GAP}px`, paddingTop: 2,
+            }}>
+              {artists.map(a => {
+                const url = artUrl(a.art_path);
+                return (
+                  <div key={a.name} style={{
+                    display: "flex", flexDirection: "column", alignItems: "center", gap: 4,
+                    textAlign: "center", width: TILE_SIZE,
+                  }}>
+                    {url ? (
+                      <img src={url} alt="" style={{
+                        width: TILE_SIZE, height: TILE_SIZE, borderRadius: 8, objectFit: "cover",
+                        boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.08)",
+                      }} />
+                    ) : (
+                      <div style={{
+                        width: TILE_SIZE, height: TILE_SIZE, borderRadius: 8, background: "#222",
+                        boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.08)",
+                      }} />
+                    )}
+                    <span style={{
+                      fontSize: 10.5, color: "#b3b3b3", lineHeight: 1.3, maxWidth: "100%",
+                      whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis",
+                    }}>
+                      {a.name}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })()}
     </div>
   );
 }
@@ -809,6 +1180,7 @@ function GenreWeatherChart({ data }: { data: WeatherData }) {
 
 interface TrendsData {
   daily: DailyEntry[];
+  depth_sessions: DepthSession[];
   genre_mountain: GenreMountainData;
   discovery: DiscoveryData;
   discovery_tracks: DiscoveryData;
@@ -834,6 +1206,10 @@ export function TrendsTab() {
     <div style={{ flex: 1, overflow: "auto", padding: "0 16px 16px", display: "flex", flexDirection: "column", gap: 12 }}>
       <TrendsCard title="RECENT PULSE" subtitle="last 90 days · rolling average">
         <SparklineGrid days={data.daily} />
+      </TrendsCard>
+
+      <TrendsCard title="ALBUM DEPTH" subtitle="depth = avg tracks per album · size = sessions">
+        <SessionScatterPlot sessions={data.depth_sessions} />
       </TrendsCard>
 
       <TrendsCard title="COMPOSITION MOUNTAIN" subtitle="">

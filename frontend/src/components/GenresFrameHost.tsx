@@ -13,7 +13,7 @@ export function GenresFrameHost() {
   const [rect, setRect] = useState<{ top: number; left: number; width: number; height: number } | null>(null);
   const frameRef = useRef<HTMLIFrameElement>(null);
 
-  const active = location.pathname === "/stats" && (searchParams.get("tab") ?? "Sessions") === "Genres";
+  const active = location.pathname === "/stats" && (searchParams.get("tab") ?? "Sessions") === "Genres" && searchParams.get("view") !== "ring";
 
   useEffect(() => {
     if (active) setEverActive(true);

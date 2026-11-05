@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from fastapi import APIRouter, Body
+
 from core.paths import data_path
 from state import get_state
 
@@ -31,9 +32,8 @@ def _decade_for_year(year: int | None) -> str:
 
 
 def _build_album_index():
-    from insights.collection_insights import build_album_index
-    state = get_state()
-    return build_album_index(state.log), state.lib
+    from services.collection_index import album_index
+    return album_index(), get_state().lib
 
 
 def _album_info(info: dict) -> dict:

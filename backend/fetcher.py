@@ -6,13 +6,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+from integrations.lastfm.client import get_artist_genres
 from integrations.spotify.artwork import download_artwork
 from integrations.spotify.auth import get_access_token
-from integrations.spotify.client import get_recently_played, get_player_state
-from integrations.lastfm.client import get_artist_genres
+from integrations.spotify.client import get_player_state, get_recently_played
 from persistence.catalog import load_catalog, mark_heard, prune_completed, save_catalog
-from persistence.storage import load_log, save_log, get_new_entries
 from persistence.lastfm_genres import load_lastfm_genres, save_lastfm_genres
+from persistence.storage import get_new_entries, load_log, save_log
 
 
 def _update_lastfm_genres(log: list) -> None:
@@ -34,12 +34,20 @@ def _update_lastfm_genres(log: list) -> None:
         save_lastfm_genres(genres)
 
 
+# Whether the last run saw music (playing now, or new plays since the run before).
+# The auto-poll uses it to pick a short or long wait.
+last_run_playing = False
+
+
 def run_once() -> int:
+    global last_run_playing
     token = get_access_token()
     plays = get_recently_played(token)
 
+    last_run_playing = False
     try:
         state = get_player_state(token)
+        last_run_playing = bool(state and state.get("is_playing"))
         if state and state.get("track_id"):
             for p in plays:
                 if p["track_id"] == state["track_id"]:
@@ -56,6 +64,7 @@ def run_once() -> int:
     if not new_entries:
         _update_lastfm_genres(existing)
         return 0
+    last_run_playing = True
 
     artwork_cache: dict[str, str | None] = {}
     for entry in new_entries:
