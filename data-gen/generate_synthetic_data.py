@@ -155,6 +155,110 @@ def fmt_duration(ms: int | None) -> str:
     return f"{total_sec // 60}:{total_sec % 60:02d}"
 
 
+def build_radar(log_entries: list[dict]) -> list[dict]:
+    """Synthetic Radar watchlist. The real watchlist is personal, so nothing is read from
+    it: items are drawn from this run's own synthetic log, with dates chosen so the real
+    backend's follow-through logic (routers/radar.py) lands on the intended outcome:
+
+    - listened: added some days before the entity's first play, cleared just after it.
+    - cleared unheard: added and cleared after the entity's last play.
+    - active: added after the entity's last play, so it still reads as unheard.
+
+    Own seeded stream, so this can't disturb the day-loop's shared rng (see caveat #7).
+    """
+    rng = random.Random(f"{BEHAVIOR_SEED}-radar")
+
+    def ts(dt: datetime) -> str:
+        return dt.astimezone(timezone.utc).isoformat(timespec="seconds")
+
+    # Every entity a Radar item can point at, with its first and last play.
+    entities: dict[tuple, dict] = {}
+    for e in log_entries:
+        played = datetime.fromisoformat(e["played_at"].replace("Z", "+00:00"))
+        artists = e.get("artist_names") or []
+        if not artists:
+            continue
+        primary = artists[0]
+        specs = [
+            ("artist", (e.get("artist_ids") or [None])[0], primary, "Artist"),
+            ("album", e.get("album_id"), e.get("album_name"), ", ".join(artists)),
+            ("track", e.get("track_id"), e.get("track_name"), ", ".join(artists)),
+        ]
+        for kind, sid, name, sub in specs:
+            if not sid or not name:
+                continue
+            ent = entities.setdefault((kind, sid), {
+                "type": kind, "spotify_id": sid, "name": name, "sub": sub,
+                "art": e.get("album_art_local_path"), "first": played, "last": played,
+            })
+            ent["first"] = min(ent["first"], played)
+            ent["last"] = max(ent["last"], played)
+
+    # Radar's own matcher also pairs album/track names with artists, so two ids sharing a
+    # name count as one entity. Keep the widest dates per name so "unheard" stays true.
+    by_name: dict[tuple, list[dict]] = {}
+    for ent in entities.values():
+        by_name.setdefault((ent["type"], ent["name"].lower()), []).append(ent)
+    for same in by_name.values():
+        first, last = min(x["first"] for x in same), max(x["last"] for x in same)
+        for ent in same:
+            ent["first"], ent["last"] = first, last
+
+    now = max(x["last"] for x in entities.values())
+    log_start = min(x["first"] for x in entities.values())
+    pool = [x for x in entities.values() if x["art"]]
+    rng.shuffle(pool)
+    used_names: set[str] = set()
+
+    def take(kind: str, n: int, ok) -> list[dict]:
+        picked = []
+        for ent in pool:
+            if len(picked) == n:
+                break
+            if ent["type"] == kind and ent["name"].lower() not in used_names and ok(ent):
+                used_names.add(ent["name"].lower())
+                picked.append(ent)
+        return picked
+
+    def item(ent: dict, added: datetime, resolved: datetime | None) -> dict:
+        out = {
+            "id": f"{ent['type']}:{ent['spotify_id']}",
+            "spotify_id": ent["spotify_id"],
+            "type": ent["type"],
+            "name": ent["name"],
+            "sub": ent["sub"],
+            "art_local_path": ent["art"],
+            "tag": rng.choices(["friend", "wild"], weights=[0.6, 0.4], k=1)[0],
+            "added_at": ts(added),
+        }
+        if resolved:
+            out["resolved_at"] = ts(resolved)
+        return out
+
+    items = []
+    discovered = lambda x: x["first"] - log_start > timedelta(days=45)
+    for kind, n in (("album", 7), ("artist", 5), ("track", 3)):
+        for ent in take(kind, n, discovered):
+            added = ent["first"] - timedelta(days=rng.randint(1, 40), hours=rng.randint(1, 12))
+            resolved = min(ent["first"] + timedelta(days=rng.randint(0, 6), hours=rng.randint(1, 12)), now)
+            items.append(item(ent, added, resolved))
+
+    # At least two days of quiet after the last play, so the added date can fall after it.
+    quiet = lambda x: now - x["last"] > timedelta(days=30)
+    for kind, n in (("album", 1), ("artist", 1), ("track", 1)):
+        for ent in take(kind, n, quiet):
+            added = ent["last"] + timedelta(days=rng.randint(1, 10), hours=1)
+            items.append(item(ent, added, added + timedelta(days=rng.randint(3, 15))))
+    for kind, n in (("album", 5), ("artist", 3), ("track", 2)):
+        for ent in take(kind, n, quiet):
+            added = now - timedelta(days=rng.randint(1, 25), hours=rng.randint(1, 12))
+            items.append(item(ent, max(added, ent["last"] + timedelta(hours=1)), None))
+
+    # load_radar() order is newest-added first.
+    items.sort(key=lambda i: i["added_at"], reverse=True)
+    return items
+
+
 def main() -> None:
     seed_data = load_seed()
     artists = seed_data["artists"]
@@ -881,6 +985,9 @@ def main() -> None:
         json.dump(discogs_out, f, indent=2)
     with (OUT_DIR / "vinyl_sessions.json").open("w") as f:
         json.dump(vinyl_sessions_out, f, indent=2)
+    radar_out = build_radar(log_entries)
+    with (OUT_DIR / "radar.json").open("w") as f:
+        json.dump(radar_out, f, indent=2)
 
     print(f"listening_log.json: {len(log_entries)} plays")
     print(f"catalog.json: {len(catalog_out)} partially-completed albums")
@@ -888,6 +995,7 @@ def main() -> None:
     print(f"playlists.json: {len(playlists_out)} playlists")
     print(f"discogs_collection.json / vinyl_links.json: {len(discogs_out)} vinyl records")
     print(f"vinyl_sessions.json: {len(vinyl_sessions_out)} sessions across {len(played_records)} played records")
+    print(f"radar.json: {len(radar_out)} items")
 
 
 if __name__ == "__main__":

@@ -31,6 +31,10 @@ const overlay = {
   claudioAddedBatches: [],       // batches appended by "Generate" clicks this session
   claudioFeedback: {},           // "batchIdx:recIdx" -> "up" | "down" | null
   topsDecades: {},       // decade -> album_ids[] (only stores overrides, not full state)
+  settings: {},          // PATCHed fields, merged over the settings snapshot
+  radarAdded: [],        // items added from Radar's search this session, newest first
+  radarCleared: new Set(), // item ids
+  radarTags: {},         // item id -> tag
 };
 
 let _playlistCounter = 0;
@@ -140,30 +144,22 @@ async function handleAlbums() {
     is_favorited: overlay.albumFavorites[album.album_id] ?? album.is_favorited,
     rating: overlay.albumRatings[album.album_id] ?? album.rating,
     notes: overlay.albumNotes[album.album_id] ?? album.notes,
-    track_plays: album.track_plays.map((t) => ({
-      ...t,
-      is_favorited: overlay.trackFavorites[t.track_id] ?? t.is_favorited,
-    })),
   }));
-  return jsonResponse({ albums, all_genres: data.all_genres, year_bounds: data.year_bounds });
+  return jsonResponse({ ...data, albums });
 }
 
-// GET /api/albums/{album_id} — the real backend returns the exact same
-// per-album shape as one entry of GET /api/albums (both built from
-// _build_album_dict), so this looks up a matching entry from the same
-// albums.json snapshot rather than needing its own snapshot file. Used by
-// the mobile app's AlbumDetailView (desktop shows album detail inline
-// instead of as its own route/request).
+// GET /api/albums/{album_id}: the list endpoint leaves track_plays out, so the side
+// panel (and the mobile app's AlbumDetailView) read a per-album snapshot.
 async function handleAlbumDetail(albumId) {
-  const data = await loadSnapshot("albums.json");
-  const album = data.albums.find((a) => a.album_id === albumId);
+  const details = await loadSnapshot("albums-detail.json");
+  const album = details[albumId];
   if (!album) return jsonResponse({ detail: "Album not found" }, 404);
   return jsonResponse({
     ...album,
     is_favorited: overlay.albumFavorites[album.album_id] ?? album.is_favorited,
     rating: overlay.albumRatings[album.album_id] ?? album.rating,
     notes: overlay.albumNotes[album.album_id] ?? album.notes,
-    track_plays: album.track_plays.map((t) => ({
+    track_plays: (album.track_plays ?? []).map((t) => ({
       ...t,
       is_favorited: overlay.trackFavorites[t.track_id] ?? t.is_favorited,
     })),
@@ -183,7 +179,7 @@ async function handlePlaylists() {
   const created = overlay.createdPlaylists
     .filter((p) => !overlay.deletedPlaylists.has(p.id))
     .map(applyPlaylistOverride);
-  return jsonResponse({ playlists: [...base, ...created], all_genres: data.all_genres });
+  return jsonResponse({ ...data, playlists: [...base, ...created] });
 }
 
 async function handlePlaylistSessions() {
@@ -246,8 +242,35 @@ async function handleStatsTrends() {
   return jsonResponse(await loadSnapshot("stats-trends.json"));
 }
 
-async function handleStatsSessions() {
-  return jsonResponse(await loadSnapshot("stats-sessions.json"));
+// Snapshotted one Monday-started week at a time, keyed by that Monday. A week
+// outside the data is an empty list, same as the real backend. Without a start
+// the real endpoint gives the window ending on the newest session; nothing in
+// the app asks for that now, so it answers with the newest week on file.
+async function handleStatsSessions(url) {
+  const data = await loadSnapshot("stats-sessions.json");
+  const start = url.searchParams.get("start");
+  if (start) return jsonResponse(data[start] ?? []);
+  const newest = Object.keys(data).sort().pop();
+  return jsonResponse(newest ? data[newest] : []);
+}
+
+async function handleStatsSessionsBounds() {
+  return jsonResponse(await loadSnapshot("stats-sessions-bounds.json"));
+}
+
+async function handleStatsHistory() {
+  return jsonResponse(await loadSnapshot("stats-history.json"));
+}
+
+async function handleStatsGenresRing() {
+  return jsonResponse(await loadSnapshot("stats-genres-ring.json"));
+}
+
+async function handleStatsYear(url) {
+  const data = await loadSnapshot("stats-year.json");
+  const year = url.searchParams.get("year");
+  if (!year) return jsonResponse(data.latest);
+  return jsonResponse(data[year] ?? { year: Number(year), years: data.latest.years, empty: true });
 }
 
 async function handleVinylStats() {
@@ -307,8 +330,20 @@ async function handleStatsPeriod(url) {
 
 async function handleStatsTime(url) {
   const mode = url.searchParams.get("mode") || "Year";
-  const monthOffset = url.searchParams.get("month_offset") || "0";
   const data = await loadSnapshot("stats-time.json");
+  let monthOffset = url.searchParams.get("month_offset") || "0";
+  const year = url.searchParams.get("year");
+  const month = url.searchParams.get("month");
+  if (mode === "Year" && year) {
+    if (data[`Year@${year}`]) return jsonResponse(data[`Year@${year}`]);
+    if (Number(year) === data["Year|0"]?.year) return jsonResponse(data["Year|0"]);
+  }
+  // `month` (YYYY-MM) overrides the offset, by the same arithmetic as the backend.
+  const latest = data["Month|0"]?.month;
+  if (mode === "Month" && /^\d{4}-\d{2}$/.test(month || "") && latest) {
+    const months = (s) => Number(s.slice(0, 4)) * 12 + Number(s.slice(5)) - 1;
+    monthOffset = String(Math.max(0, months(latest) - months(month)));
+  }
   const key = `${mode}|${monthOffset}`;
   if (data[key]) return jsonResponse(data[key]);
   const fallbackKey = `${mode}|0`;
@@ -437,6 +472,123 @@ function handleVinylSessionCurrent() {
   return jsonResponse({ active: false });
 }
 
+// Radar is a synthetic watchlist; see build_radar() in generate_synthetic_data.py.
+// Adds, clears and tag edits live in the overlay like every other demo mutation.
+function radarWithOverlay(item) {
+  return { ...item, tag: overlay.radarTags[item.id] ?? item.tag };
+}
+
+async function handleRadar() {
+  const data = await loadSnapshot("radar.json");
+  const active = [...overlay.radarAdded, ...data.items]
+    .filter((i) => !overlay.radarCleared.has(i.id))
+    .map(radarWithOverlay);
+  return jsonResponse({
+    items: active,
+    listened: data.listened.map(radarWithOverlay),
+    stats: { ...data.stats, added: data.stats.added + overlay.radarAdded.length },
+  });
+}
+
+// The real endpoint asks Spotify. The demo searches its own catalog instead, so
+// the feature still works with no network and no account behind it.
+async function handleRadarSearch(url) {
+  const query = normalizeSearch((url.searchParams.get("q") || "").trim());
+  if (!query) return jsonResponse({ results: [] });
+  const [details, { artists }] = await Promise.all([
+    loadSnapshot("albums-detail.json"),
+    loadSnapshot("artists.json"),
+  ]);
+  const albums = Object.values(details);
+  const art = (name) => (name ? `/artwork/${name}` : null);
+  const hits = [];
+  const consider = (result, ...fields) => {
+    const scores = fields.filter(Boolean).map((f) => {
+      const text = normalizeSearch(f);
+      if (text === query) return 3;
+      if (text.startsWith(query)) return 2;
+      return text.includes(query) ? 1 : 0;
+    });
+    const score = Math.max(0, ...scores);
+    if (score) hits.push({ score, result });
+  };
+  for (const a of artists) {
+    consider({
+      spotify_id: a.name, type: "artist", name: a.name, sub: "Artist",
+      art_url: art(a.hero_art_filename || a.albums?.[0]?.art_filename),
+    }, a.name);
+  }
+  for (const al of albums) {
+    const sub = al.artist || (al.artist_names || []).join(", ");
+    const albumArt = art(al.art_filename);
+    consider({ spotify_id: al.album_id, type: "album", name: al.album_name, sub, art_url: albumArt }, al.album_name, sub);
+    for (const t of al.track_plays || []) {
+      consider({ spotify_id: t.track_id, type: "track", name: t.track_name, sub, art_url: albumArt }, t.track_name);
+    }
+  }
+  hits.sort((a, b) => b.score - a.score);
+  const seen = new Set();
+  const results = [];
+  for (const { result } of hits) {
+    const key = `${result.type}:${normalizeSearch(result.name)}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    results.push(result);
+    if (results.length === 24) break;
+  }
+  return jsonResponse({ results });
+}
+
+async function handleRadarAdd(body) {
+  const id = `${body.type}:${body.spotify_id}`;
+  const data = await loadSnapshot("radar.json");
+  const onRadar = [...overlay.radarAdded, ...data.items].some(
+    (i) => i.id === id && !overlay.radarCleared.has(i.id),
+  );
+  if (onRadar) return jsonResponse({ detail: "Already in Radar" }, 409);
+  overlay.radarCleared.delete(id);
+  overlay.radarAdded = overlay.radarAdded.filter((i) => i.id !== id);
+  const item = {
+    id,
+    type: body.type,
+    name: body.name,
+    sub: body.sub,
+    art_path: body.art_url ? body.art_url.split("/").pop() : null,
+    tag: body.tag || "friend",
+    spotify_uri: `spotify:${body.type}:${body.spotify_id}`,
+    added_at: new Date().toISOString(),
+    resolved_at: null,
+    listened_at: null,
+    open_artist: null,
+    open_album_id: null,
+  };
+  overlay.radarAdded.unshift(item);
+  return jsonResponse({ ok: true, item });
+}
+
+function handleRadarTag(id, body) {
+  overlay.radarTags[id] = body.tag;
+  return jsonResponse({ ok: true });
+}
+
+function handleRadarClear(id) {
+  overlay.radarCleared.add(id);
+  return jsonResponse({ ok: true });
+}
+
+// The real endpoint resolves the Discogs master page through the Discogs API. The
+// demo makes no calls, so it always gives the fallback the real one uses on a miss:
+// a vinyl-filtered search. Same URL shape as master_link.py's search_url().
+function handleDiscogsLink(url) {
+  const artist = url.searchParams.get("artist") || "";
+  const title = (url.searchParams.get("title") || "")
+    .replace(/\s*[([][^)\]]*(remaster|deluxe|edition|expanded|anniversary|mono|stereo|version|reissue|bonus|mix)[^)\]]*[)\]]/gi, "")
+    .replace(/\s+-\s+[^-]*(remaster|deluxe|edition|expanded|anniversary|mono|stereo|version|reissue|bonus|mix).*$/i, "")
+    .trim();
+  const params = new URLSearchParams({ q: `${artist} ${title}`, type: "master", format_exact: "Vinyl" });
+  return jsonResponse({ url: `https://www.discogs.com/search/?${params}`, kind: "search" });
+}
+
 async function handleRevisit() {
   const data = await loadSnapshot("revisit.json");
   // Un-revisiting from this view works fully (filters the track out below).
@@ -456,7 +608,7 @@ async function handleArtists() {
     is_favorited: overlay.artistFavorites[a.name] ?? a.is_favorited,
     hero_art_filename: overlay.artistHeroArt[a.name] ?? a.hero_art_filename,
   }));
-  return jsonResponse({ artists, all_genres: data.all_genres });
+  return jsonResponse({ ...data, artists });
 }
 
 async function handleArtistDetail(name) {
@@ -469,7 +621,7 @@ async function handleArtistDetail(name) {
     is_favorited: overlay.albumFavorites[album.album_id] ?? album.is_favorited,
     rating: overlay.albumRatings[album.album_id] ?? album.rating,
     notes: overlay.albumNotes[album.album_id] ?? album.notes,
-    track_plays: album.track_plays.map((t) => ({
+    track_plays: (album.track_plays ?? []).map((t) => ({
       ...t,
       is_favorited: overlay.trackFavorites[t.track_id] ?? t.is_favorited,
     })),
@@ -525,7 +677,24 @@ async function handleApiRequest(request) {
   }
 
   if (path === "/api/settings" && method === "GET") {
-    return jsonResponse(await loadSnapshot("settings.json"));
+    return jsonResponse({ ...(await loadSnapshot("settings.json")), ...overlay.settings });
+  }
+  if (path === "/api/settings" && method === "PATCH") {
+    Object.assign(overlay.settings, await request.json());
+    return jsonResponse({ ...(await loadSnapshot("settings.json")), ...overlay.settings });
+  }
+
+  if (path === "/api/radar" && method === "GET") {
+    return handleRadar();
+  }
+  if (path === "/api/radar" && method === "POST") {
+    return handleRadarAdd(await request.json());
+  }
+  if (path === "/api/radar/search" && method === "GET") {
+    return handleRadarSearch(url);
+  }
+  if (path === "/api/vinyl/discogs-link" && method === "GET") {
+    return handleDiscogsLink(url);
   }
 
   if (path === "/api/artists" && method === "GET") {
@@ -591,7 +760,19 @@ async function handleApiRequest(request) {
     return handleStatsTrends();
   }
   if (path === "/api/stats/sessions" && method === "GET") {
-    return handleStatsSessions();
+    return handleStatsSessions(url);
+  }
+  if (path === "/api/stats/sessions/bounds" && method === "GET") {
+    return handleStatsSessionsBounds();
+  }
+  if (path === "/api/stats/history" && method === "GET") {
+    return handleStatsHistory();
+  }
+  if (path === "/api/stats/genres-ring" && method === "GET") {
+    return handleStatsGenresRing();
+  }
+  if (path === "/api/stats/year" && method === "GET") {
+    return handleStatsYear(url);
   }
   if (path === "/api/stats/period" && method === "GET") {
     return handleStatsPeriod(url);
@@ -620,6 +801,12 @@ async function handleApiRequest(request) {
   }
 
   let m;
+  if ((m = path.match(/^\/api\/radar\/([^/]+)$/)) && method === "PUT") {
+    return handleRadarTag(decodeURIComponent(m[1]), await request.json());
+  }
+  if ((m = path.match(/^\/api\/radar\/([^/]+)$/)) && method === "DELETE") {
+    return handleRadarClear(decodeURIComponent(m[1]));
+  }
   if ((m = path.match(/^\/api\/vinyl\/sessions\/([^/]+)$/)) && method === "DELETE") {
     return handleDeleteVinylSession(decodeURIComponent(m[1]));
   }

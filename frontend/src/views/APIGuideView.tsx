@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 // the rest of the demo in a confusing state.
 
 type Endpoint = {
-  method: "GET" | "POST" | "PUT" | "DELETE";
+  method: "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
   path: string;               // may contain {param}
   desc: string;
   live?: boolean;
@@ -66,6 +66,16 @@ const GROUPS: Group[] = [
     ],
   },
   {
+    name: "Radar",
+    endpoints: [
+      { method: "GET", path: "/api/radar", desc: "Watchlist items, the Listened list, and follow-through stats.", live: true },
+      { method: "GET", path: "/api/radar/search", desc: "Search for something to add (?q=; searches the demo catalog, not Spotify).", live: true },
+      { method: "POST", path: "/api/radar", desc: "Add an item (overlay only)." },
+      { method: "PUT", path: "/api/radar/{id}", desc: "Change an item's tag (overlay only)." },
+      { method: "DELETE", path: "/api/radar/{id}", desc: "Clear an item (overlay only)." },
+    ],
+  },
+  {
     name: "Vinyl",
     endpoints: [
       { method: "GET", path: "/api/vinyl", desc: "Full vinyl collection.", live: true },
@@ -75,6 +85,7 @@ const GROUPS: Group[] = [
       { method: "GET", path: "/api/vinyl/session/current", desc: "Live turntable session status (always inactive in this demo).", live: true },
       { method: "GET", path: "/api/vinyl/sync/status", desc: "Simulated Discogs collection sync progress.", live: true },
       { method: "GET", path: "/api/vinyl/wantlist/sync/status", desc: "Simulated Discogs wantlist sync progress.", live: true },
+      { method: "GET", path: "/api/vinyl/discogs-link", desc: "Link for \"Open in Discogs\" (a vinyl-filtered Discogs search in this demo; no API call).", live: true },
       { method: "POST", path: "/api/vinyl/sync", desc: "Start a simulated collection sync (resolves to \"up to date\")." },
       { method: "POST", path: "/api/vinyl/wantlist/sync", desc: "Start a simulated wantlist sync." },
       { method: "DELETE", path: "/api/vinyl/sessions/{id}", desc: "Delete a vinyl session (overlay only)." },
@@ -86,11 +97,15 @@ const GROUPS: Group[] = [
       { method: "GET", path: "/api/stats/overview", desc: "Headline listening stats.", live: true },
       { method: "GET", path: "/api/stats/era-data", desc: "Release-year drift over time (the Eras/Drift tab).", live: true },
       { method: "GET", path: "/api/stats/trends", desc: "Cumulative-plays and volume trend data.", live: true },
-      { method: "GET", path: "/api/stats/sessions", desc: "Listening sessions with per-album color fingerprints.", live: true },
-      { method: "GET", path: "/api/stats/period", desc: "Week/Month period grid (?mode=Week&offset=0).", live: true },
-      { method: "GET", path: "/api/stats/time", desc: "Month/Year/All-time rollups (?mode=Year).", live: true },
+      { method: "GET", path: "/api/stats/sessions", desc: "One week of listening sessions with per-album color fingerprints (?start=YYYY-MM-DD&days=7).", live: true },
+      { method: "GET", path: "/api/stats/sessions/bounds", desc: "Oldest and newest session, for the week picker.", live: true },
+      { method: "GET", path: "/api/stats/period", desc: "Week/Month period grid and recap (?mode=Week&offset=0).", live: true },
+      { method: "GET", path: "/api/stats/year", desc: "The whole Periods › Year page in one payload (?year=2026).", live: true },
+      { method: "GET", path: "/api/stats/time", desc: "Month/Year/All-time rollups (?mode=Year&year=2026, ?mode=Month&month=2026-03).", live: true },
       { method: "GET", path: "/api/stats/timeline", desc: "Timeline chart data (?metric=Albums).", live: true },
       { method: "GET", path: "/api/stats/genres-page", desc: "Server-rendered D3 genre force-graph (raw HTML, embedded via iframe).", live: true, html: true },
+      { method: "GET", path: "/api/stats/genres-ring", desc: "Top genres by hours, their families, and shared-artist links (the Genres › Ring view).", live: true },
+      { method: "GET", path: "/api/stats/history", desc: "The span of plays the Stats views can reach.", live: true },
     ],
   },
   {
@@ -106,6 +121,7 @@ const GROUPS: Group[] = [
     name: "Settings",
     endpoints: [
       { method: "GET", path: "/api/settings", desc: "App theme/accent settings.", live: true },
+      { method: "PATCH", path: "/api/settings", desc: "Update settings such as the accent color (overlay only)." },
     ],
   },
 ];
@@ -116,6 +132,7 @@ const METHOD_COLOR: Record<Endpoint["method"], string> = {
   GET: "var(--green)",
   POST: "#4b9fff",
   PUT: "#e8c547",
+  PATCH: "#e8c547",
   DELETE: "var(--red)",
 };
 

@@ -1,0 +1,300 @@
+[
+  {
+    "id": "track:6WgpLUTtNab8s8PnMNiKbM",
+    "spotify_id": "6WgpLUTtNab8s8PnMNiKbM",
+    "type": "track",
+    "name": "Seven Swans",
+    "sub": "Sufjan Stevens",
+    "art_local_path": "data/artwork/sufjan_stevens_seven_swans.jpg",
+    "tag": "wild",
+    "added_at": "2026-11-01T14:00:30+00:00"
+  },
+  {
+    "id": "artist:38zTZcuN7nFvVJ6auhc6V3",
+    "spotify_id": "38zTZcuN7nFvVJ6auhc6V3",
+    "type": "artist",
+    "name": "Deerhunter",
+    "sub": "Artist",
+    "art_local_path": "data/artwork/deerhunter_cryptograms.jpg",
+    "tag": "friend",
+    "added_at": "2026-10-29T16:00:30+00:00"
+  },
+  {
+    "id": "album:3JcNnjMVSKiNpqhErZarW0",
+    "spotify_id": "3JcNnjMVSKiNpqhErZarW0",
+    "type": "album",
+    "name": "Diamond Life",
+    "sub": "Sade",
+    "art_local_path": "data/artwork/sade_diamond_life.jpg",
+    "tag": "friend",
+    "added_at": "2026-10-28T11:00:30+00:00"
+  },
+  {
+    "id": "artist:7nwUJBm0HE4ZxD3f5cy5ok",
+    "spotify_id": "7nwUJBm0HE4ZxD3f5cy5ok",
+    "type": "artist",
+    "name": "Aretha Franklin",
+    "sub": "Artist",
+    "art_local_path": "data/artwork/aretha_franklin_i_never_loved_a_man_the_way_i_love_you.jpg",
+    "tag": "friend",
+    "added_at": "2026-10-28T08:00:30+00:00"
+  },
+  {
+    "id": "artist:4kAGFycLssavzWGrMnmcV4",
+    "spotify_id": "4kAGFycLssavzWGrMnmcV4",
+    "type": "artist",
+    "name": "Departures",
+    "sub": "Artist",
+    "art_local_path": "data/artwork/departures_death_touches_us_from_the_moment_we_begin_to_lov.jpg",
+    "tag": "friend",
+    "added_at": "2026-10-25T08:00:30+00:00"
+  },
+  {
+    "id": "album:0bCAjiUamIFqKJsekOYuRw",
+    "spotify_id": "0bCAjiUamIFqKJsekOYuRw",
+    "type": "album",
+    "name": "Wish You Were Here",
+    "sub": "Pink Floyd",
+    "art_local_path": "data/artwork/pink_floyd_wish_you_were_here.jpg",
+    "tag": "friend",
+    "added_at": "2026-10-22T14:00:30+00:00"
+  },
+  {
+    "id": "album:14gI3ml0wxlgVrX1ve8zyJ",
+    "spotify_id": "14gI3ml0wxlgVrX1ve8zyJ",
+    "type": "album",
+    "name": "Gish (Deluxe Edition)",
+    "sub": "The Smashing Pumpkins",
+    "art_local_path": "data/artwork/the_smashing_pumpkins_gish_deluxe_edition.jpg",
+    "tag": "wild",
+    "added_at": "2026-10-22T11:00:30+00:00"
+  },
+  {
+    "id": "album:3RQQmkQEvNCY4prGKE6oc5",
+    "spotify_id": "3RQQmkQEvNCY4prGKE6oc5",
+    "type": "album",
+    "name": "Un Verano Sin Ti",
+    "sub": "Bad Bunny",
+    "art_local_path": "data/artwork/bad_bunny_un_verano_sin_ti.jpg",
+    "tag": "friend",
+    "added_at": "2026-10-17T11:00:30+00:00"
+  },
+  {
+    "id": "album:7buLIJn2VuqsVORghMEvli",
+    "spotify_id": "7buLIJn2VuqsVORghMEvli",
+    "type": "album",
+    "name": "Workin' With The Miles Davis Quintet",
+    "sub": "Miles Davis Quintet",
+    "art_local_path": "data/artwork/miles_davis_quintet_workin_with_the_miles_davis_quintet.jpg",
+    "tag": "wild",
+    "added_at": "2026-10-15T18:00:30+00:00"
+  },
+  {
+    "id": "track:3Rc4K6taaH23i9wWoXGWoZ",
+    "spotify_id": "3Rc4K6taaH23i9wWoXGWoZ",
+    "type": "track",
+    "name": "White Ink",
+    "sub": "Deerhunter",
+    "art_local_path": "data/artwork/deerhunter_cryptograms.jpg",
+    "tag": "friend",
+    "added_at": "2026-10-10T17:00:30+00:00"
+  },
+  {
+    "id": "album:1R8kkopLT4IAxzMMkjic6X",
+    "spotify_id": "1R8kkopLT4IAxzMMkjic6X",
+    "type": "album",
+    "name": "Sound of Silver",
+    "sub": "LCD Soundsystem",
+    "art_local_path": "data/artwork/lcd_soundsystem_sound_of_silver.jpg",
+    "tag": "wild",
+    "added_at": "2026-10-05T18:32:29+00:00",
+    "resolved_at": "2026-10-17T18:32:29+00:00"
+  },
+  {
+    "id": "artist:776Uo845nYHJpNaStv1Ds4",
+    "spotify_id": "776Uo845nYHJpNaStv1Ds4",
+    "type": "artist",
+    "name": "Jimi Hendrix",
+    "sub": "Artist",
+    "art_local_path": "data/artwork/jimi_hendrix_electric_ladyland.jpg",
+    "tag": "wild",
+    "added_at": "2026-10-03T14:24:39+00:00",
+    "resolved_at": "2026-10-30T02:24:39+00:00"
+  },
+  {
+    "id": "track:4MLBqAEzNN89o2M9h92Z26",
+    "spotify_id": "4MLBqAEzNN89o2M9h92Z26",
+    "type": "track",
+    "name": "Get Back - Remastered 2009",
+    "sub": "The Beatles",
+    "art_local_path": "data/artwork/the_beatles_let_it_be_remastered.jpg",
+    "tag": "friend",
+    "added_at": "2026-09-30T07:17:18+00:00",
+    "resolved_at": "2026-10-31T04:17:18+00:00"
+  },
+  {
+    "id": "track:5yPIfd3L1qNuruNs4BaQSI",
+    "spotify_id": "5yPIfd3L1qNuruNs4BaQSI",
+    "type": "track",
+    "name": "You're Cute When You Scream",
+    "sub": "Senses Fail",
+    "art_local_path": "data/artwork/senses_fail_let_it_enfold_you.jpg",
+    "tag": "friend",
+    "added_at": "2026-09-23T17:37:00+00:00",
+    "resolved_at": "2026-09-28T17:37:00+00:00"
+  },
+  {
+    "id": "album:30iqYID1JMBXLVFfErwTSd",
+    "spotify_id": "30iqYID1JMBXLVFfErwTSd",
+    "type": "album",
+    "name": "Frances the Mute",
+    "sub": "The Mars Volta",
+    "art_local_path": "data/artwork/the_mars_volta_frances_the_mute.jpg",
+    "tag": "friend",
+    "added_at": "2026-09-21T15:15:30+00:00",
+    "resolved_at": "2026-10-28T11:15:30+00:00"
+  },
+  {
+    "id": "track:1ipSlybrRRxQt2IIANFefb",
+    "spotify_id": "1ipSlybrRRxQt2IIANFefb",
+    "type": "track",
+    "name": "Mais Que Amor",
+    "sub": "Marcos Valle",
+    "art_local_path": "data/artwork/marcos_valle_marcos_valle.jpg",
+    "tag": "wild",
+    "added_at": "2026-09-07T03:11:42+00:00",
+    "resolved_at": "2026-09-18T23:11:42+00:00"
+  },
+  {
+    "id": "album:6Sty6rLnMTXFjKxKUZEfmy",
+    "spotify_id": "6Sty6rLnMTXFjKxKUZEfmy",
+    "type": "album",
+    "name": "First Two Seven Inches",
+    "sub": "Minor Threat",
+    "art_local_path": "data/artwork/minor_threat_first_two_seven_inches.jpg",
+    "tag": "friend",
+    "added_at": "2026-07-14T09:56:00+00:00",
+    "resolved_at": "2026-07-24T14:56:00+00:00"
+  },
+  {
+    "id": "artist:07PiZYrhllpSXtELkUxlrf",
+    "spotify_id": "07PiZYrhllpSXtELkUxlrf",
+    "type": "artist",
+    "name": "Minor Threat",
+    "sub": "Artist",
+    "art_local_path": "data/artwork/minor_threat_out_of_step.jpg",
+    "tag": "friend",
+    "added_at": "2026-07-12T10:56:00+00:00",
+    "resolved_at": "2026-07-27T23:56:00+00:00"
+  },
+  {
+    "id": "artist:0rt0FpmfaL7u9daGg03TF4",
+    "spotify_id": "0rt0FpmfaL7u9daGg03TF4",
+    "type": "artist",
+    "name": "1997",
+    "sub": "Artist",
+    "art_local_path": "data/artwork/1997_a_better_view_of_the_rising_moon.jpg",
+    "tag": "friend",
+    "added_at": "2026-07-02T14:02:22+00:00",
+    "resolved_at": "2026-07-06T14:02:22+00:00"
+  },
+  {
+    "id": "track:5FLQmLjjeNIuC8U5mDnXC8",
+    "spotify_id": "5FLQmLjjeNIuC8U5mDnXC8",
+    "type": "track",
+    "name": "A Love Supreme, Pt. IV - Psalm",
+    "sub": "John Coltrane",
+    "art_local_path": "data/artwork/john_coltrane_a_love_supreme.jpg",
+    "tag": "wild",
+    "added_at": "2026-06-13T19:47:17+00:00",
+    "resolved_at": "2026-06-26T02:47:17+00:00"
+  },
+  {
+    "id": "album:0xZyCh3S6ELLuXHJT27VzF",
+    "spotify_id": "0xZyCh3S6ELLuXHJT27VzF",
+    "type": "album",
+    "name": "No lo volver\u00e9 a hacer",
+    "sub": "shego, Aiko el grupo",
+    "art_local_path": "data/artwork/shego_no_lo_volver\u00e9_a_hacer.jpg",
+    "tag": "friend",
+    "added_at": "2026-04-16T23:24:00+00:00",
+    "resolved_at": "2026-05-03T06:24:00+00:00"
+  },
+  {
+    "id": "album:6na161CBWVTagqd2aIhQzF",
+    "spotify_id": "6na161CBWVTagqd2aIhQzF",
+    "type": "album",
+    "name": "DIVISI",
+    "sub": "A Lot Like Birds",
+    "art_local_path": "data/artwork/a_lot_like_birds_divisi.jpg",
+    "tag": "wild",
+    "added_at": "2026-04-05T02:45:38+00:00",
+    "resolved_at": "2026-05-02T22:45:38+00:00"
+  },
+  {
+    "id": "album:3qr4pTBWEU1SVf01j6RAx3",
+    "spotify_id": "3qr4pTBWEU1SVf01j6RAx3",
+    "type": "album",
+    "name": "Baduizm",
+    "sub": "Erykah Badu",
+    "art_local_path": "data/artwork/erykah_badu_baduizm.jpg",
+    "tag": "wild",
+    "added_at": "2026-03-29T01:44:19+00:00",
+    "resolved_at": "2026-05-05T01:44:19+00:00"
+  },
+  {
+    "id": "album:1GXMNFfoHF4sN7lG8gZq1j",
+    "spotify_id": "1GXMNFfoHF4sN7lG8gZq1j",
+    "type": "album",
+    "name": "Modern Vampires of the City",
+    "sub": "Vampire Weekend",
+    "art_local_path": "data/artwork/vampire_weekend_modern_vampires_of_the_city.jpg",
+    "tag": "friend",
+    "added_at": "2026-03-26T12:22:00+00:00",
+    "resolved_at": "2026-04-01T23:22:00+00:00"
+  },
+  {
+    "id": "artist:1mi3Fx4j7ektT97ycLSxl8",
+    "spotify_id": "1mi3Fx4j7ektT97ycLSxl8",
+    "type": "artist",
+    "name": "The Anniversary",
+    "sub": "Artist",
+    "art_local_path": "data/artwork/the_anniversary_designing_a_nervous_breakdown.jpg",
+    "tag": "friend",
+    "added_at": "2026-03-23T03:15:00+00:00",
+    "resolved_at": "2026-04-13T17:15:00+00:00"
+  },
+  {
+    "id": "artist:1jr0mAgIhKtTeKTZwk0HjF",
+    "spotify_id": "1jr0mAgIhKtTeKTZwk0HjF",
+    "type": "artist",
+    "name": "Los Punsetes",
+    "sub": "Artist",
+    "art_local_path": "data/artwork/los_punsetes_que_le_den_por_culo_a_tus_amigos.jpg",
+    "tag": "friend",
+    "added_at": "2026-03-14T08:01:59+00:00",
+    "resolved_at": "2026-04-20T21:01:59+00:00"
+  },
+  {
+    "id": "album:0A13JySVHzBoRZFk2o89Wl",
+    "spotify_id": "0A13JySVHzBoRZFk2o89Wl",
+    "type": "album",
+    "name": "Disintegration (2010 Remaster)",
+    "sub": "The Cure",
+    "art_local_path": "data/artwork/the_cure_disintegration_2010_remaster.jpg",
+    "tag": "friend",
+    "added_at": "2026-03-05T09:41:00+00:00",
+    "resolved_at": "2026-03-23T20:41:00+00:00"
+  },
+  {
+    "id": "artist:5BvJzeQpmsdsFp4HGUYUEx",
+    "spotify_id": "5BvJzeQpmsdsFp4HGUYUEx",
+    "type": "artist",
+    "name": "Vampire Weekend",
+    "sub": "Artist",
+    "art_local_path": "data/artwork/vampire_weekend_modern_vampires_of_the_city.jpg",
+    "tag": "wild",
+    "added_at": "2026-02-27T05:22:00+00:00",
+    "resolved_at": "2026-03-27T17:22:00+00:00"
+  }
+]

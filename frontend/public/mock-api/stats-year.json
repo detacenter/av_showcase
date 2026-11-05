@@ -1,0 +1,1666 @@
+{
+  "latest": {
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "empty": false,
+    "in_progress": true,
+    "through": "2026-11-04",
+    "band": {
+      "minutes": 45087,
+      "plays": 11290,
+      "prev_minutes": null,
+      "prev_plays": null,
+      "hours_change": null,
+      "plays_change": null,
+      "artists": 347,
+      "artists_delta": null,
+      "new_artists": 347,
+      "albums": 624,
+      "new_albums": 624,
+      "days_with_music": 265,
+      "days_total": 274,
+      "biggest_day": {
+        "date": "2026-06-09",
+        "minutes": 809
+      },
+      "longest_streak": {
+        "days": 199,
+        "start": "2026-04-20",
+        "end": "2026-11-04"
+      }
+    },
+    "months": [
+      {
+        "month": 1,
+        "minutes": 0,
+        "future": false,
+        "album": null,
+        "artist": null,
+        "song": null
+      },
+      {
+        "month": 2,
+        "minutes": 3474,
+        "future": false,
+        "album": {
+          "album_id": "3PIVqZzL1PnrxFZDzuT1aX",
+          "title": "Out To Lunch (The Rudy Van Gelder Edition)",
+          "artist": "Eric Dolphy",
+          "art_path": "eric_dolphy_out_to_lunch_the_rudy_van_gelder_edition.jpg",
+          "minutes": 212,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Janet Jackson",
+          "art_path": "janet_jackson_the_velvet_rope.jpg",
+          "minutes": 252
+        },
+        "song": {
+          "title": "Out To Lunch - Remastered 1998/Rudy Van Gelder Edition",
+          "artist": "Eric Dolphy",
+          "album": "Out To Lunch (The Rudy Van Gelder Edition)",
+          "art_path": "eric_dolphy_out_to_lunch_the_rudy_van_gelder_edition.jpg",
+          "length_ms": 729293,
+          "minutes": 61
+        }
+      },
+      {
+        "month": 3,
+        "minutes": 3956,
+        "future": false,
+        "album": {
+          "album_id": "2wE1bvm3Ha0BvkHTvwk6rw",
+          "title": "Jesu / Sun Kil Moon",
+          "artist": "Jesu/Sun Kil Moon",
+          "art_path": "jesusun_kil_moon_jesu_sun_kil_moon.jpg",
+          "minutes": 318,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Red House Painters",
+          "art_path": "red_house_painters_songs_for_a_blue_guitar.jpg",
+          "minutes": 323
+        },
+        "song": {
+          "title": "Beautiful You",
+          "artist": "Jesu/Sun Kil Moon",
+          "album": "Jesu / Sun Kil Moon",
+          "art_path": "jesusun_kil_moon_jesu_sun_kil_moon.jpg",
+          "length_ms": 840946,
+          "minutes": 56
+        }
+      },
+      {
+        "month": 4,
+        "minutes": 2465,
+        "future": false,
+        "album": {
+          "album_id": "12tw1A9HmwE3MHvPfHhdoP",
+          "title": "Takk...",
+          "artist": "Sigur R\u00f3s",
+          "art_path": "sigur_r\u00f3s_takk.jpg",
+          "minutes": 162,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Sigur R\u00f3s",
+          "art_path": "sigur_r\u00f3s_takk.jpg",
+          "minutes": 379
+        },
+        "song": {
+          "title": "M\u00edlan\u00f3",
+          "artist": "Sigur R\u00f3s",
+          "album": "Takk...",
+          "art_path": "sigur_r\u00f3s_takk.jpg",
+          "length_ms": 625120,
+          "minutes": 31
+        }
+      },
+      {
+        "month": 5,
+        "minutes": 4148,
+        "future": false,
+        "album": {
+          "album_id": "5fzDxefGUH8jM7T9HCLSNr",
+          "title": "Somewhere at the Bottom of the River Between Vega and Altair (10th Anniversary)",
+          "artist": "La Dispute",
+          "art_path": "la_dispute_somewhere_at_the_bottom_of_the_river_between_veg.jpg",
+          "minutes": 176,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Carissa's Wierd",
+          "art_path": "carissas_wierd_you_should_be_at_home_here.jpg",
+          "minutes": 289
+        },
+        "song": {
+          "title": "The Last Lost Continent",
+          "artist": "La Dispute",
+          "album": "Somewhere at the Bottom of the River Between Vega and Altair (10th Anniversary)",
+          "art_path": "la_dispute_somewhere_at_the_bottom_of_the_river_between_veg.jpg",
+          "length_ms": 722760,
+          "minutes": 36
+        }
+      },
+      {
+        "month": 6,
+        "minutes": 6195,
+        "future": false,
+        "album": {
+          "album_id": "0u5NLD5OgDGDlpCIia1Igx",
+          "title": "None Shall Pass",
+          "artist": "Aesop Rock",
+          "art_path": "aesop_rock_none_shall_pass.jpg",
+          "minutes": 180,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Red House Painters",
+          "art_path": "red_house_painters_songs_for_a_blue_guitar.jpg",
+          "minutes": 300
+        },
+        "song": {
+          "title": "How Soon Is Now? - 2011 Remaster",
+          "artist": "The Smiths",
+          "album": "Hatful of Hollow",
+          "art_path": "the_smiths_hatful_of_hollow.jpg",
+          "length_ms": 408173,
+          "minutes": 34
+        }
+      },
+      {
+        "month": 7,
+        "minutes": 6271,
+        "future": false,
+        "album": {
+          "album_id": "4nYsnQpTAQaPzrPc6rOsBN",
+          "title": "Good Apollo I'm Burning Star IV Volume One: From Fear Through The Eyes Of Madness",
+          "artist": "Coheed and Cambria",
+          "art_path": "coheed_and_cambria_good_apollo_im_burning_star_iv_volume_one_from_f.jpg",
+          "minutes": 286,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Coheed and Cambria",
+          "art_path": "coheed_and_cambria_good_apollo_im_burning_star_iv_volume_one_from_f.jpg",
+          "minutes": 616
+        },
+        "song": {
+          "title": "Europe Endless - 2009 Remaster",
+          "artist": "Kraftwerk",
+          "album": "Trans-Europe Express (2009 Remaster)",
+          "art_path": "kraftwerk_trans_europe_express_2009_remaster.jpg",
+          "length_ms": 581026,
+          "minutes": 39
+        }
+      },
+      {
+        "month": 8,
+        "minutes": 4981,
+        "future": false,
+        "album": {
+          "album_id": "7hodLjVNQZSsNEqvG77ZkI",
+          "title": "World Of Echo",
+          "artist": "Arthur Russell",
+          "art_path": "arthur_russell_world_of_echo.jpg",
+          "minutes": 177,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Janet Jackson",
+          "art_path": "janet_jackson_the_velvet_rope.jpg",
+          "minutes": 296
+        },
+        "song": {
+          "title": "Sylvia",
+          "artist": "The Antlers",
+          "album": "Hospice",
+          "art_path": "the_antlers_hospice.jpg",
+          "length_ms": 327106,
+          "minutes": 27
+        }
+      },
+      {
+        "month": 9,
+        "minutes": 5889,
+        "future": false,
+        "album": {
+          "album_id": "2FRYStnujhKjinEFXUXBG1",
+          "title": "Perfecting Loneliness",
+          "artist": "Jets To Brazil",
+          "art_path": "jets_to_brazil_perfecting_loneliness.jpg",
+          "minutes": 246,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Daniel Caesar",
+          "art_path": "daniel_caesar_never_enough.jpg",
+          "minutes": 462
+        },
+        "song": {
+          "title": "Atom Heart Mother",
+          "artist": "Pink Floyd",
+          "album": "Atom Heart Mother",
+          "art_path": "pink_floyd_atom_heart_mother.jpg",
+          "length_ms": 1421720,
+          "minutes": 47
+        }
+      },
+      {
+        "month": 10,
+        "minutes": 7125,
+        "future": false,
+        "album": {
+          "album_id": "0E47vczx9XVds1Lr2Y8rze",
+          "title": "good kid, m.A.A.d city",
+          "artist": "Kendrick Lamar",
+          "art_path": "kendrick_lamar_good_kid_maad_city.jpg",
+          "minutes": 273,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Sun Kil Moon",
+          "art_path": "sun_kil_moon_april.jpg",
+          "minutes": 510
+        },
+        "song": {
+          "title": "Sing About Me, I'm Dying Of Thirst",
+          "artist": "Kendrick Lamar",
+          "album": "good kid, m.A.A.d city",
+          "art_path": "kendrick_lamar_good_kid_maad_city.jpg",
+          "length_ms": 723573,
+          "minutes": 48
+        }
+      },
+      {
+        "month": 11,
+        "minutes": 582,
+        "future": false,
+        "album": {
+          "album_id": "64shsDEnphK07flo3DzWAc",
+          "title": "Mirrored",
+          "artist": "Battles",
+          "art_path": "battles_mirrored.jpg",
+          "minutes": 156,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Battles",
+          "art_path": "battles_mirrored.jpg",
+          "minutes": 156
+        },
+        "song": {
+          "title": "Rainbow",
+          "artist": "Battles",
+          "album": "Mirrored",
+          "art_path": "battles_mirrored.jpg",
+          "length_ms": 491053,
+          "minutes": 25
+        }
+      },
+      {
+        "month": 12,
+        "minutes": 0,
+        "future": true,
+        "album": null,
+        "artist": null,
+        "song": null
+      }
+    ],
+    "month_facts": {
+      "distinct": 10,
+      "months_with_music": 10,
+      "repeats": [],
+      "reign": {
+        "weeks": 1,
+        "album": "Purple Rain",
+        "start": "2026-02-02",
+        "end": "2026-02-08"
+      },
+      "off_list": []
+    },
+    "yoy": {
+      "now": [
+        0,
+        3474,
+        3956,
+        2465,
+        4148,
+        6195,
+        6271,
+        4981,
+        5889,
+        7125,
+        582,
+        0
+      ],
+      "prev": null,
+      "rank": 1,
+      "of": 1,
+      "peak": {
+        "month": 10,
+        "minutes": 7125
+      },
+      "quietest": {
+        "month": 11,
+        "minutes": 582
+      }
+    },
+    "rhythm": {
+      "peak_hour": 21,
+      "evening_pct": 41,
+      "weekend_ratio": 1.1,
+      "longest_session": {
+        "minutes": 887,
+        "date": "2026-06-09"
+      },
+      "dry_spell": {
+        "days": 3,
+        "start": "2026-04-04",
+        "end": "2026-04-06"
+      },
+      "heat": [
+        [
+          44,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          360,
+          918,
+          809,
+          456,
+          154,
+          407,
+          383,
+          220,
+          142,
+          84,
+          38,
+          131,
+          334,
+          570,
+          759,
+          479,
+          93
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          326,
+          686,
+          775,
+          500,
+          192,
+          393,
+          401,
+          174,
+          168,
+          101,
+          108,
+          228,
+          526,
+          601,
+          787,
+          502,
+          55
+        ],
+        [
+          32,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          229,
+          457,
+          573,
+          315,
+          157,
+          247,
+          311,
+          264,
+          96,
+          52,
+          58,
+          305,
+          581,
+          823,
+          761,
+          581,
+          170
+        ],
+        [
+          80,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          301,
+          808,
+          654,
+          435,
+          306,
+          343,
+          330,
+          176,
+          102,
+          75,
+          61,
+          298,
+          427,
+          522,
+          650,
+          455,
+          76
+        ],
+        [
+          28,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          394,
+          873,
+          818,
+          560,
+          296,
+          439,
+          406,
+          187,
+          75,
+          61,
+          57,
+          365,
+          370,
+          409,
+          498,
+          281,
+          132
+        ],
+        [
+          62,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          116,
+          443,
+          659,
+          796,
+          874,
+          788,
+          566,
+          431,
+          756,
+          1029,
+          918,
+          591,
+          135
+        ],
+        [
+          120,
+          47,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          218,
+          577,
+          806,
+          713,
+          576,
+          456,
+          370,
+          213,
+          374,
+          357,
+          392,
+          282,
+          151
+        ]
+      ]
+    },
+    "on_repeat": [
+      {
+        "title": "I Never Loved a Man (The Way I Love You)",
+        "artist": "Aretha Franklin",
+        "album": "I Never Loved a Man the Way I Love You",
+        "art_path": "aretha_franklin_i_never_loved_a_man_the_way_i_love_you.jpg",
+        "length_ms": 171773,
+        "date": "2026-03-05",
+        "plays": 6,
+        "minutes": 17,
+        "first": "9:18 AM",
+        "last": "10:52 AM"
+      },
+      {
+        "title": "Let's Go Crazy",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "art_path": "prince_purple_rain.jpg",
+        "length_ms": 279240,
+        "date": "2026-02-07",
+        "plays": 5,
+        "minutes": 23,
+        "first": "12:06 PM",
+        "last": "2:11 PM"
+      },
+      {
+        "title": "Take Me with U",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "art_path": "prince_purple_rain.jpg",
+        "length_ms": 234133,
+        "date": "2026-02-07",
+        "plays": 5,
+        "minutes": 20,
+        "first": "12:11 PM",
+        "last": "2:17 PM"
+      },
+      {
+        "title": "The Beautiful Ones",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "art_path": "prince_purple_rain.jpg",
+        "length_ms": 313960,
+        "date": "2026-02-07",
+        "plays": 5,
+        "minutes": 26,
+        "first": "12:15 PM",
+        "last": "2:20 PM"
+      },
+      {
+        "title": "Computer Blue",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "art_path": "prince_purple_rain.jpg",
+        "length_ms": 239506,
+        "date": "2026-02-07",
+        "plays": 5,
+        "minutes": 20,
+        "first": "12:20 PM",
+        "last": "2:26 PM"
+      }
+    ],
+    "discovery": {
+      "count": 347,
+      "tiles": [
+        {
+          "name": "Boards of Canada",
+          "plays": 223,
+          "month": 3,
+          "art_path": "boards_of_canada_music_has_the_right_to_children.jpg"
+        },
+        {
+          "name": "Janet Jackson",
+          "plays": 208,
+          "month": 2,
+          "art_path": "janet_jackson_the_velvet_rope.jpg"
+        },
+        {
+          "name": "The Beatles",
+          "plays": 194,
+          "month": 3,
+          "art_path": "the_beatles_sgt_peppers_lonely_hearts_club_band_remastered.jpg"
+        },
+        {
+          "name": "Red House Painters",
+          "plays": 191,
+          "month": 2,
+          "art_path": "red_house_painters_songs_for_a_blue_guitar.jpg"
+        },
+        {
+          "name": "Red Hot Chili Peppers",
+          "plays": 172,
+          "month": 7,
+          "art_path": "red_hot_chili_peppers_californication_deluxe_edition.jpg"
+        },
+        {
+          "name": "System Of A Down",
+          "plays": 158,
+          "month": 4,
+          "art_path": "system_of_a_down_mezmerize.jpg"
+        },
+        {
+          "name": "Coheed and Cambria",
+          "plays": 124,
+          "month": 7,
+          "art_path": "coheed_and_cambria_good_apollo_im_burning_star_iv_volume_one_from_f.jpg"
+        },
+        {
+          "name": "Kanye West",
+          "plays": 120,
+          "month": 7,
+          "art_path": "kanye_west_my_beautiful_dark_twisted_fantasy.jpg"
+        },
+        {
+          "name": "R.E.M.",
+          "plays": 120,
+          "month": 3,
+          "art_path": "rem_murmur.jpg"
+        },
+        {
+          "name": "L\u00f4 Borges",
+          "plays": 120,
+          "month": 2,
+          "art_path": "l\u00f4_borges_clube_da_esquina.jpg"
+        },
+        {
+          "name": "Daniel Caesar",
+          "plays": 114,
+          "month": 9,
+          "art_path": "daniel_caesar_never_enough.jpg"
+        },
+        {
+          "name": "Sigur R\u00f3s",
+          "plays": 112,
+          "month": 4,
+          "art_path": "sigur_r\u00f3s_takk.jpg"
+        }
+      ],
+      "per_month": [
+        0,
+        67,
+        55,
+        41,
+        17,
+        46,
+        38,
+        25,
+        27,
+        30,
+        1,
+        0
+      ],
+      "chars": [
+        {
+          "kind": "discovery",
+          "name": "Red House Painters",
+          "sub": "First heard Feb 24 \u00b7 finished #1 overall",
+          "art_path": "red_house_painters_songs_for_a_blue_guitar.jpg",
+          "bars": [
+            0,
+            66,
+            323,
+            0,
+            131,
+            300,
+            0,
+            195,
+            181,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "slow_burn",
+          "name": "Aesop Rock",
+          "sub": "A little more every month",
+          "art_path": "aesop_rock_none_shall_pass.jpg",
+          "bars": [
+            0,
+            67,
+            0,
+            0,
+            3,
+            180,
+            0,
+            3,
+            192,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "fling",
+          "name": "Coheed and Cambria",
+          "sub": "10 hours in Jul, then nothing",
+          "art_path": "coheed_and_cambria_good_apollo_im_burning_star_iv_volume_one_from_f.jpg",
+          "bars": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            616,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "comeback",
+          "name": "Boards of Canada",
+          "sub": "Gone Apr to May, back in June",
+          "art_path": "boards_of_canada_music_has_the_right_to_children.jpg",
+          "bars": [
+            0,
+            0,
+            246,
+            0,
+            0,
+            279,
+            0,
+            0,
+            145,
+            199,
+            0,
+            0
+          ]
+        }
+      ],
+      "what_stuck": null
+    },
+    "genres": [],
+    "new_genres": 0,
+    "made": {
+      "median": 2000,
+      "prev_median": null,
+      "decades": [
+        {
+          "decade": 1950,
+          "pct": 0.0
+        },
+        {
+          "decade": 1960,
+          "pct": 4.9
+        },
+        {
+          "decade": 1970,
+          "pct": 12.2
+        },
+        {
+          "decade": 1980,
+          "pct": 14.7
+        },
+        {
+          "decade": 1990,
+          "pct": 17.1
+        },
+        {
+          "decade": 2000,
+          "pct": 27.7
+        },
+        {
+          "decade": 2010,
+          "pct": 17.3
+        },
+        {
+          "decade": 2020,
+          "pct": 6.2
+        }
+      ],
+      "oldest": {
+        "year": 1959,
+        "album": "Workin' With The Miles Davis Quintet",
+        "plays": 5
+      },
+      "released_this_year_pct": 1,
+      "known_pct": 100
+    },
+    "club": null
+  },
+  "2026": {
+    "year": 2026,
+    "years": [
+      2026
+    ],
+    "empty": false,
+    "in_progress": true,
+    "through": "2026-11-04",
+    "band": {
+      "minutes": 45087,
+      "plays": 11290,
+      "prev_minutes": null,
+      "prev_plays": null,
+      "hours_change": null,
+      "plays_change": null,
+      "artists": 347,
+      "artists_delta": null,
+      "new_artists": 347,
+      "albums": 624,
+      "new_albums": 624,
+      "days_with_music": 265,
+      "days_total": 274,
+      "biggest_day": {
+        "date": "2026-06-09",
+        "minutes": 809
+      },
+      "longest_streak": {
+        "days": 199,
+        "start": "2026-04-20",
+        "end": "2026-11-04"
+      }
+    },
+    "months": [
+      {
+        "month": 1,
+        "minutes": 0,
+        "future": false,
+        "album": null,
+        "artist": null,
+        "song": null
+      },
+      {
+        "month": 2,
+        "minutes": 3474,
+        "future": false,
+        "album": {
+          "album_id": "3PIVqZzL1PnrxFZDzuT1aX",
+          "title": "Out To Lunch (The Rudy Van Gelder Edition)",
+          "artist": "Eric Dolphy",
+          "art_path": "eric_dolphy_out_to_lunch_the_rudy_van_gelder_edition.jpg",
+          "minutes": 212,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Janet Jackson",
+          "art_path": "janet_jackson_the_velvet_rope.jpg",
+          "minutes": 252
+        },
+        "song": {
+          "title": "Out To Lunch - Remastered 1998/Rudy Van Gelder Edition",
+          "artist": "Eric Dolphy",
+          "album": "Out To Lunch (The Rudy Van Gelder Edition)",
+          "art_path": "eric_dolphy_out_to_lunch_the_rudy_van_gelder_edition.jpg",
+          "length_ms": 729293,
+          "minutes": 61
+        }
+      },
+      {
+        "month": 3,
+        "minutes": 3956,
+        "future": false,
+        "album": {
+          "album_id": "2wE1bvm3Ha0BvkHTvwk6rw",
+          "title": "Jesu / Sun Kil Moon",
+          "artist": "Jesu/Sun Kil Moon",
+          "art_path": "jesusun_kil_moon_jesu_sun_kil_moon.jpg",
+          "minutes": 318,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Red House Painters",
+          "art_path": "red_house_painters_songs_for_a_blue_guitar.jpg",
+          "minutes": 323
+        },
+        "song": {
+          "title": "Beautiful You",
+          "artist": "Jesu/Sun Kil Moon",
+          "album": "Jesu / Sun Kil Moon",
+          "art_path": "jesusun_kil_moon_jesu_sun_kil_moon.jpg",
+          "length_ms": 840946,
+          "minutes": 56
+        }
+      },
+      {
+        "month": 4,
+        "minutes": 2465,
+        "future": false,
+        "album": {
+          "album_id": "12tw1A9HmwE3MHvPfHhdoP",
+          "title": "Takk...",
+          "artist": "Sigur R\u00f3s",
+          "art_path": "sigur_r\u00f3s_takk.jpg",
+          "minutes": 162,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Sigur R\u00f3s",
+          "art_path": "sigur_r\u00f3s_takk.jpg",
+          "minutes": 379
+        },
+        "song": {
+          "title": "M\u00edlan\u00f3",
+          "artist": "Sigur R\u00f3s",
+          "album": "Takk...",
+          "art_path": "sigur_r\u00f3s_takk.jpg",
+          "length_ms": 625120,
+          "minutes": 31
+        }
+      },
+      {
+        "month": 5,
+        "minutes": 4148,
+        "future": false,
+        "album": {
+          "album_id": "5fzDxefGUH8jM7T9HCLSNr",
+          "title": "Somewhere at the Bottom of the River Between Vega and Altair (10th Anniversary)",
+          "artist": "La Dispute",
+          "art_path": "la_dispute_somewhere_at_the_bottom_of_the_river_between_veg.jpg",
+          "minutes": 176,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Carissa's Wierd",
+          "art_path": "carissas_wierd_you_should_be_at_home_here.jpg",
+          "minutes": 289
+        },
+        "song": {
+          "title": "The Last Lost Continent",
+          "artist": "La Dispute",
+          "album": "Somewhere at the Bottom of the River Between Vega and Altair (10th Anniversary)",
+          "art_path": "la_dispute_somewhere_at_the_bottom_of_the_river_between_veg.jpg",
+          "length_ms": 722760,
+          "minutes": 36
+        }
+      },
+      {
+        "month": 6,
+        "minutes": 6195,
+        "future": false,
+        "album": {
+          "album_id": "0u5NLD5OgDGDlpCIia1Igx",
+          "title": "None Shall Pass",
+          "artist": "Aesop Rock",
+          "art_path": "aesop_rock_none_shall_pass.jpg",
+          "minutes": 180,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Red House Painters",
+          "art_path": "red_house_painters_songs_for_a_blue_guitar.jpg",
+          "minutes": 300
+        },
+        "song": {
+          "title": "How Soon Is Now? - 2011 Remaster",
+          "artist": "The Smiths",
+          "album": "Hatful of Hollow",
+          "art_path": "the_smiths_hatful_of_hollow.jpg",
+          "length_ms": 408173,
+          "minutes": 34
+        }
+      },
+      {
+        "month": 7,
+        "minutes": 6271,
+        "future": false,
+        "album": {
+          "album_id": "4nYsnQpTAQaPzrPc6rOsBN",
+          "title": "Good Apollo I'm Burning Star IV Volume One: From Fear Through The Eyes Of Madness",
+          "artist": "Coheed and Cambria",
+          "art_path": "coheed_and_cambria_good_apollo_im_burning_star_iv_volume_one_from_f.jpg",
+          "minutes": 286,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Coheed and Cambria",
+          "art_path": "coheed_and_cambria_good_apollo_im_burning_star_iv_volume_one_from_f.jpg",
+          "minutes": 616
+        },
+        "song": {
+          "title": "Europe Endless - 2009 Remaster",
+          "artist": "Kraftwerk",
+          "album": "Trans-Europe Express (2009 Remaster)",
+          "art_path": "kraftwerk_trans_europe_express_2009_remaster.jpg",
+          "length_ms": 581026,
+          "minutes": 39
+        }
+      },
+      {
+        "month": 8,
+        "minutes": 4981,
+        "future": false,
+        "album": {
+          "album_id": "7hodLjVNQZSsNEqvG77ZkI",
+          "title": "World Of Echo",
+          "artist": "Arthur Russell",
+          "art_path": "arthur_russell_world_of_echo.jpg",
+          "minutes": 177,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Janet Jackson",
+          "art_path": "janet_jackson_the_velvet_rope.jpg",
+          "minutes": 296
+        },
+        "song": {
+          "title": "Sylvia",
+          "artist": "The Antlers",
+          "album": "Hospice",
+          "art_path": "the_antlers_hospice.jpg",
+          "length_ms": 327106,
+          "minutes": 27
+        }
+      },
+      {
+        "month": 9,
+        "minutes": 5889,
+        "future": false,
+        "album": {
+          "album_id": "2FRYStnujhKjinEFXUXBG1",
+          "title": "Perfecting Loneliness",
+          "artist": "Jets To Brazil",
+          "art_path": "jets_to_brazil_perfecting_loneliness.jpg",
+          "minutes": 246,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Daniel Caesar",
+          "art_path": "daniel_caesar_never_enough.jpg",
+          "minutes": 462
+        },
+        "song": {
+          "title": "Atom Heart Mother",
+          "artist": "Pink Floyd",
+          "album": "Atom Heart Mother",
+          "art_path": "pink_floyd_atom_heart_mother.jpg",
+          "length_ms": 1421720,
+          "minutes": 47
+        }
+      },
+      {
+        "month": 10,
+        "minutes": 7125,
+        "future": false,
+        "album": {
+          "album_id": "0E47vczx9XVds1Lr2Y8rze",
+          "title": "good kid, m.A.A.d city",
+          "artist": "Kendrick Lamar",
+          "art_path": "kendrick_lamar_good_kid_maad_city.jpg",
+          "minutes": 273,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Sun Kil Moon",
+          "art_path": "sun_kil_moon_april.jpg",
+          "minutes": 510
+        },
+        "song": {
+          "title": "Sing About Me, I'm Dying Of Thirst",
+          "artist": "Kendrick Lamar",
+          "album": "good kid, m.A.A.d city",
+          "art_path": "kendrick_lamar_good_kid_maad_city.jpg",
+          "length_ms": 723573,
+          "minutes": 48
+        }
+      },
+      {
+        "month": 11,
+        "minutes": 582,
+        "future": false,
+        "album": {
+          "album_id": "64shsDEnphK07flo3DzWAc",
+          "title": "Mirrored",
+          "artist": "Battles",
+          "art_path": "battles_mirrored.jpg",
+          "minutes": 156,
+          "in_top": true
+        },
+        "artist": {
+          "name": "Battles",
+          "art_path": "battles_mirrored.jpg",
+          "minutes": 156
+        },
+        "song": {
+          "title": "Rainbow",
+          "artist": "Battles",
+          "album": "Mirrored",
+          "art_path": "battles_mirrored.jpg",
+          "length_ms": 491053,
+          "minutes": 25
+        }
+      },
+      {
+        "month": 12,
+        "minutes": 0,
+        "future": true,
+        "album": null,
+        "artist": null,
+        "song": null
+      }
+    ],
+    "month_facts": {
+      "distinct": 10,
+      "months_with_music": 10,
+      "repeats": [],
+      "reign": {
+        "weeks": 1,
+        "album": "Purple Rain",
+        "start": "2026-02-02",
+        "end": "2026-02-08"
+      },
+      "off_list": []
+    },
+    "yoy": {
+      "now": [
+        0,
+        3474,
+        3956,
+        2465,
+        4148,
+        6195,
+        6271,
+        4981,
+        5889,
+        7125,
+        582,
+        0
+      ],
+      "prev": null,
+      "rank": 1,
+      "of": 1,
+      "peak": {
+        "month": 10,
+        "minutes": 7125
+      },
+      "quietest": {
+        "month": 11,
+        "minutes": 582
+      }
+    },
+    "rhythm": {
+      "peak_hour": 21,
+      "evening_pct": 41,
+      "weekend_ratio": 1.1,
+      "longest_session": {
+        "minutes": 887,
+        "date": "2026-06-09"
+      },
+      "dry_spell": {
+        "days": 3,
+        "start": "2026-04-04",
+        "end": "2026-04-06"
+      },
+      "heat": [
+        [
+          44,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          360,
+          918,
+          809,
+          456,
+          154,
+          407,
+          383,
+          220,
+          142,
+          84,
+          38,
+          131,
+          334,
+          570,
+          759,
+          479,
+          93
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          326,
+          686,
+          775,
+          500,
+          192,
+          393,
+          401,
+          174,
+          168,
+          101,
+          108,
+          228,
+          526,
+          601,
+          787,
+          502,
+          55
+        ],
+        [
+          32,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          229,
+          457,
+          573,
+          315,
+          157,
+          247,
+          311,
+          264,
+          96,
+          52,
+          58,
+          305,
+          581,
+          823,
+          761,
+          581,
+          170
+        ],
+        [
+          80,
+          7,
+          0,
+          0,
+          0,
+          0,
+          0,
+          301,
+          808,
+          654,
+          435,
+          306,
+          343,
+          330,
+          176,
+          102,
+          75,
+          61,
+          298,
+          427,
+          522,
+          650,
+          455,
+          76
+        ],
+        [
+          28,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          394,
+          873,
+          818,
+          560,
+          296,
+          439,
+          406,
+          187,
+          75,
+          61,
+          57,
+          365,
+          370,
+          409,
+          498,
+          281,
+          132
+        ],
+        [
+          62,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          116,
+          443,
+          659,
+          796,
+          874,
+          788,
+          566,
+          431,
+          756,
+          1029,
+          918,
+          591,
+          135
+        ],
+        [
+          120,
+          47,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          218,
+          577,
+          806,
+          713,
+          576,
+          456,
+          370,
+          213,
+          374,
+          357,
+          392,
+          282,
+          151
+        ]
+      ]
+    },
+    "on_repeat": [
+      {
+        "title": "I Never Loved a Man (The Way I Love You)",
+        "artist": "Aretha Franklin",
+        "album": "I Never Loved a Man the Way I Love You",
+        "art_path": "aretha_franklin_i_never_loved_a_man_the_way_i_love_you.jpg",
+        "length_ms": 171773,
+        "date": "2026-03-05",
+        "plays": 6,
+        "minutes": 17,
+        "first": "9:18 AM",
+        "last": "10:52 AM"
+      },
+      {
+        "title": "Let's Go Crazy",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "art_path": "prince_purple_rain.jpg",
+        "length_ms": 279240,
+        "date": "2026-02-07",
+        "plays": 5,
+        "minutes": 23,
+        "first": "12:06 PM",
+        "last": "2:11 PM"
+      },
+      {
+        "title": "Take Me with U",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "art_path": "prince_purple_rain.jpg",
+        "length_ms": 234133,
+        "date": "2026-02-07",
+        "plays": 5,
+        "minutes": 20,
+        "first": "12:11 PM",
+        "last": "2:17 PM"
+      },
+      {
+        "title": "The Beautiful Ones",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "art_path": "prince_purple_rain.jpg",
+        "length_ms": 313960,
+        "date": "2026-02-07",
+        "plays": 5,
+        "minutes": 26,
+        "first": "12:15 PM",
+        "last": "2:20 PM"
+      },
+      {
+        "title": "Computer Blue",
+        "artist": "Prince",
+        "album": "Purple Rain",
+        "art_path": "prince_purple_rain.jpg",
+        "length_ms": 239506,
+        "date": "2026-02-07",
+        "plays": 5,
+        "minutes": 20,
+        "first": "12:20 PM",
+        "last": "2:26 PM"
+      }
+    ],
+    "discovery": {
+      "count": 347,
+      "tiles": [
+        {
+          "name": "Boards of Canada",
+          "plays": 223,
+          "month": 3,
+          "art_path": "boards_of_canada_music_has_the_right_to_children.jpg"
+        },
+        {
+          "name": "Janet Jackson",
+          "plays": 208,
+          "month": 2,
+          "art_path": "janet_jackson_the_velvet_rope.jpg"
+        },
+        {
+          "name": "The Beatles",
+          "plays": 194,
+          "month": 3,
+          "art_path": "the_beatles_sgt_peppers_lonely_hearts_club_band_remastered.jpg"
+        },
+        {
+          "name": "Red House Painters",
+          "plays": 191,
+          "month": 2,
+          "art_path": "red_house_painters_songs_for_a_blue_guitar.jpg"
+        },
+        {
+          "name": "Red Hot Chili Peppers",
+          "plays": 172,
+          "month": 7,
+          "art_path": "red_hot_chili_peppers_californication_deluxe_edition.jpg"
+        },
+        {
+          "name": "System Of A Down",
+          "plays": 158,
+          "month": 4,
+          "art_path": "system_of_a_down_mezmerize.jpg"
+        },
+        {
+          "name": "Coheed and Cambria",
+          "plays": 124,
+          "month": 7,
+          "art_path": "coheed_and_cambria_good_apollo_im_burning_star_iv_volume_one_from_f.jpg"
+        },
+        {
+          "name": "Kanye West",
+          "plays": 120,
+          "month": 7,
+          "art_path": "kanye_west_my_beautiful_dark_twisted_fantasy.jpg"
+        },
+        {
+          "name": "R.E.M.",
+          "plays": 120,
+          "month": 3,
+          "art_path": "rem_murmur.jpg"
+        },
+        {
+          "name": "L\u00f4 Borges",
+          "plays": 120,
+          "month": 2,
+          "art_path": "l\u00f4_borges_clube_da_esquina.jpg"
+        },
+        {
+          "name": "Daniel Caesar",
+          "plays": 114,
+          "month": 9,
+          "art_path": "daniel_caesar_never_enough.jpg"
+        },
+        {
+          "name": "Sigur R\u00f3s",
+          "plays": 112,
+          "month": 4,
+          "art_path": "sigur_r\u00f3s_takk.jpg"
+        }
+      ],
+      "per_month": [
+        0,
+        67,
+        55,
+        41,
+        17,
+        46,
+        38,
+        25,
+        27,
+        30,
+        1,
+        0
+      ],
+      "chars": [
+        {
+          "kind": "discovery",
+          "name": "Red House Painters",
+          "sub": "First heard Feb 24 \u00b7 finished #1 overall",
+          "art_path": "red_house_painters_songs_for_a_blue_guitar.jpg",
+          "bars": [
+            0,
+            66,
+            323,
+            0,
+            131,
+            300,
+            0,
+            195,
+            181,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "slow_burn",
+          "name": "Aesop Rock",
+          "sub": "A little more every month",
+          "art_path": "aesop_rock_none_shall_pass.jpg",
+          "bars": [
+            0,
+            67,
+            0,
+            0,
+            3,
+            180,
+            0,
+            3,
+            192,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "fling",
+          "name": "Coheed and Cambria",
+          "sub": "10 hours in Jul, then nothing",
+          "art_path": "coheed_and_cambria_good_apollo_im_burning_star_iv_volume_one_from_f.jpg",
+          "bars": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            616,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "kind": "comeback",
+          "name": "Boards of Canada",
+          "sub": "Gone Apr to May, back in June",
+          "art_path": "boards_of_canada_music_has_the_right_to_children.jpg",
+          "bars": [
+            0,
+            0,
+            246,
+            0,
+            0,
+            279,
+            0,
+            0,
+            145,
+            199,
+            0,
+            0
+          ]
+        }
+      ],
+      "what_stuck": null
+    },
+    "genres": [],
+    "new_genres": 0,
+    "made": {
+      "median": 2000,
+      "prev_median": null,
+      "decades": [
+        {
+          "decade": 1950,
+          "pct": 0.0
+        },
+        {
+          "decade": 1960,
+          "pct": 4.9
+        },
+        {
+          "decade": 1970,
+          "pct": 12.2
+        },
+        {
+          "decade": 1980,
+          "pct": 14.7
+        },
+        {
+          "decade": 1990,
+          "pct": 17.1
+        },
+        {
+          "decade": 2000,
+          "pct": 27.7
+        },
+        {
+          "decade": 2010,
+          "pct": 17.3
+        },
+        {
+          "decade": 2020,
+          "pct": 6.2
+        }
+      ],
+      "oldest": {
+        "year": 1959,
+        "album": "Workin' With The Miles Davis Quintet",
+        "plays": 5
+      },
+      "released_this_year_pct": 1,
+      "known_pct": 100
+    },
+    "club": null
+  }
+}

@@ -42,6 +42,7 @@ import shutil
 import socket
 import subprocess
 import time
+from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import quote
 from urllib.request import urlopen
@@ -53,6 +54,7 @@ ARTWORK_DIR = DATA_DIR / "artwork"
 OUT_DIR = ROOT / "frontend" / "public" / "mock-api"
 BACKEND_DIR = ROOT / "backend"
 PORT = 8123
+REQUEST_TIMEOUT = 120  # year recaps and the first stats calls build a lot on demand
 BASE_URL = f"http://127.0.0.1:{PORT}"
 
 ENDPOINTS = {
@@ -68,7 +70,10 @@ ENDPOINTS = {
     "/api/stats/overview": "stats-overview.json",
     "/api/stats/era-data": "stats-era-data.json",
     "/api/stats/trends": "stats-trends.json",
-    "/api/stats/sessions": "stats-sessions.json",
+    "/api/stats/sessions/bounds": "stats-sessions-bounds.json",
+    "/api/stats/history": "stats-history.json",
+    "/api/stats/genres-ring": "stats-genres-ring.json",
+    "/api/radar": "radar.json",
     "/api/vinyl/stats": "vinyl-stats.json",
     "/api/vinyl/sessions": "vinyl-sessions.json",
     "/api/tops": "tops.json",
@@ -136,7 +141,7 @@ def scrub_stale_artwork(obj, valid_names: set):
 
 
 def _get_json(path: str):
-    with urlopen(f"{BASE_URL}{path}", timeout=10) as resp:
+    with urlopen(f"{BASE_URL}{path}", timeout=REQUEST_TIMEOUT) as resp:
         return json.load(resp)
 
 
@@ -273,10 +278,11 @@ def main():
         OUT_DIR.mkdir(parents=True, exist_ok=True)
         valid_artwork = before["artwork_names"]
         artists_list = None
+        albums_list = None
         playlists_list = None
         tops_decades = None
         for path, filename in ENDPOINTS.items():
-            with urlopen(f"{BASE_URL}{path}", timeout=10) as resp:
+            with urlopen(f"{BASE_URL}{path}", timeout=REQUEST_TIMEOUT) as resp:
                 data = json.load(resp)
             clean = scrub_stale_artwork(sanitize_paths(data), valid_artwork)
             out_path = OUT_DIR / filename
@@ -285,6 +291,8 @@ def main():
             print(f"{path} -> {out_path.relative_to(ROOT)}")
             if path == "/api/artists":
                 artists_list = clean["artists"]
+            if path == "/api/albums":
+                albums_list = clean["albums"]
             if path == "/api/playlists":
                 playlists_list = clean["playlists"]
             if path == "/api/tops":
@@ -301,7 +309,7 @@ def main():
             eligible_out = {}
             for decade in tops_decades:
                 encoded = quote(decade, safe="")
-                with urlopen(f"{BASE_URL}/api/tops/{encoded}/eligible", timeout=10) as resp:
+                with urlopen(f"{BASE_URL}/api/tops/{encoded}/eligible", timeout=REQUEST_TIMEOUT) as resp:
                     result = json.load(resp)
                 result = scrub_stale_artwork(sanitize_paths(result), valid_artwork)
                 # Re-sort to match the real app's own order (real rating + real play
@@ -332,13 +340,26 @@ def main():
             evaluated = {}
             for p in playlists_list:
                 pid = p["id"]
-                with urlopen(f"{BASE_URL}/api/playlists/{pid}/evaluate", timeout=10) as resp:
+                with urlopen(f"{BASE_URL}/api/playlists/{pid}/evaluate", timeout=REQUEST_TIMEOUT) as resp:
                     result = json.load(resp)
                 evaluated[pid] = scrub_stale_artwork(sanitize_paths(result["tracks"]), valid_artwork)
             out_path = OUT_DIR / "playlists-evaluate.json"
             with out_path.open("w") as f:
                 json.dump(evaluated, f, indent=2)
             print(f"/api/playlists/<id>/evaluate x{len(evaluated)} -> {out_path.relative_to(ROOT)}")
+
+        # Album detail, keyed by id. The list endpoint leaves track_plays out (only the
+        # open side panel needs them), so this is where they live.
+        if albums_list is not None:
+            album_details = {}
+            for album in albums_list:
+                album_id = album["album_id"]
+                detail = _get_json(f"/api/albums/{quote(album_id, safe='')}")
+                album_details[album_id] = scrub_stale_artwork(sanitize_paths(detail), valid_artwork)
+            out_path = OUT_DIR / "albums-detail.json"
+            with out_path.open("w") as f:
+                json.dump(album_details, f, indent=2)
+            print(f"/api/albums/<id> x{len(album_details)} -> {out_path.relative_to(ROOT)}")
 
         # Artist detail is keyed by name (not one file per artist) — sidesteps
         # any risk of encodeURIComponent (JS, in sw.js) and quote (Python, here)
@@ -349,7 +370,7 @@ def main():
             for artist in artists_list:
                 name = artist["name"]
                 encoded = quote(name, safe="")
-                with urlopen(f"{BASE_URL}/api/artists/{encoded}", timeout=10) as resp:
+                with urlopen(f"{BASE_URL}/api/artists/{encoded}", timeout=REQUEST_TIMEOUT) as resp:
                     detail = json.load(resp)
                 details[name] = scrub_stale_artwork(sanitize_paths(detail), valid_artwork)
             out_path = OUT_DIR / "artists-detail.json"
@@ -386,10 +407,53 @@ def main():
         for mode in ("Year", "All Time"):
             data = _get_json(f"/api/stats/time?mode={quote(mode)}&month_offset=0")
             time_out[f"{mode}|0"] = scrub_stale_artwork(sanitize_paths(data), valid_artwork)
+        # Year mode pages by calendar year (the `year` param), walked back through the
+        # same has_older flag. Month mode's `month` param needs no snapshot of its own:
+        # sw.js converts YYYY-MM to the offset, the same arithmetic the backend does.
+        year_page = time_out["Year|0"]
+        while year_page.get("has_older"):
+            prior = year_page["year"] - 1
+            data = _get_json(f"/api/stats/time?mode=Year&month_offset=0&year={prior}")
+            year_page = scrub_stale_artwork(sanitize_paths(data), valid_artwork)
+            time_out[f"Year@{prior}"] = year_page
         out_path = OUT_DIR / "stats-time.json"
         with out_path.open("w") as f:
             json.dump(time_out, f, indent=2)
         print(f"/api/stats/time x{len(time_out)} -> {out_path.relative_to(ROOT)}")
+
+        # Sessions come one Monday-started week at a time. Weeks are walked from the real
+        # bounds, not guessed; sw.js answers [] for any week outside them, which is what
+        # the real backend returns there too.
+        bounds = _get_json("/api/stats/sessions/bounds")
+        sessions_out = {}
+        if bounds.get("oldest_start"):
+            oldest = datetime.fromisoformat(bounds["oldest_start"]).date()
+            newest = datetime.fromisoformat(bounds["newest_start"]).date()
+            # A day early: bounds may be UTC, and a late-Sunday local session reads as Monday.
+            first = oldest - timedelta(days=1)
+            week = first - timedelta(days=first.weekday())
+            while week <= newest:
+                key = week.isoformat()
+                data = _get_json(f"/api/stats/sessions?start={key}&days=7")
+                sessions_out[key] = scrub_stale_artwork(sanitize_paths(data), valid_artwork)
+                week += timedelta(days=7)
+        out_path = OUT_DIR / "stats-sessions.json"
+        with out_path.open("w") as f:
+            json.dump(sessions_out, f, indent=2)
+        print(f"/api/stats/sessions x{len(sessions_out)} weeks -> {out_path.relative_to(ROOT)}")
+
+        # Periods > Year: one full payload per year the data covers. "latest" is the
+        # no-param response, which is what the page asks for first.
+        latest_year = _get_json("/api/stats/year")
+        year_out = {"latest": scrub_stale_artwork(sanitize_paths(latest_year), valid_artwork)}
+        for y in latest_year.get("years", []):
+            year_value = y["year"] if isinstance(y, dict) else y
+            data = _get_json(f"/api/stats/year?year={year_value}")
+            year_out[str(year_value)] = scrub_stale_artwork(sanitize_paths(data), valid_artwork)
+        out_path = OUT_DIR / "stats-year.json"
+        with out_path.open("w") as f:
+            json.dump(year_out, f, indent=2)
+        print(f"/api/stats/year x{len(year_out) - 1} -> {out_path.relative_to(ROOT)}")
 
         # Timeline (Eras tab): metric x year drill-down. The set of valid
         # years is discovered from each metric's own aggregate response
@@ -415,7 +479,7 @@ def main():
         # Genre network (Genres tab): a full self-contained HTML page with
         # embedded JSON data, not a JSON API response — fetched and scrubbed
         # as raw text instead of a parsed object.
-        with urlopen(f"{BASE_URL}/api/stats/genres-page", timeout=10) as resp:
+        with urlopen(f"{BASE_URL}/api/stats/genres-page", timeout=REQUEST_TIMEOUT) as resp:
             genres_html = resp.read().decode("utf-8")
         genres_html = scrub_stale_artwork_html(genres_html, valid_artwork)
         out_path = OUT_DIR / "stats-genres-page.html"

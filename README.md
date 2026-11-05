@@ -49,11 +49,12 @@ breakdown, see the **About** page in the running demo.
 | Recent | Live-scrolling play history, same as the real app's home view |
 | Artists | Full library browser with per-artist stats |
 | Albums | Album grid with ratings, favorites, notes |
-| Stats | Sessions, Eras, Time-of-day, Trends, Periods, Discovery-vs-comfort |
+| Stats | Sessions, Eras, Time-of-day, Trends, Periods (week, month, and a full year page), Genres (network and Ring), Discovery-vs-comfort |
 | Tops | Real per-decade top-10 picks |
 | Vinyl | Real Discogs collection, digital/vinyl session tracking |
 | Playlists | Rule-based smart playlists |
 | Revisit | Resurfaces older favorites |
+| Radar | A watchlist of music to try, with a Listened list that tracks follow-through (synthetic in this demo) |
 | Claudio | LLM-assisted recommendations, built from real recommendation history |
 | Settings | App configuration (trimmed of anything demo-irrelevant) |
 

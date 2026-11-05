@@ -2,8 +2,8 @@
   "collection_size": 142,
   "played_count": 71,
   "unplayed_count": 71,
-  "total_sessions": 123,
-  "total_minutes": 4296,
+  "total_sessions": 128,
+  "total_minutes": 4616,
   "top_records": [
     {
       "release_id": 5283950,
@@ -16,93 +16,93 @@
       "sessions": 4
     },
     {
-      "release_id": 6314990,
-      "title": "The Eraser",
+      "release_id": 1078940,
+      "title": "Alpha & Omega",
       "artists": [
-        "Thom Yorke"
+        "Boards Of Canada"
       ],
-      "art_filename": "vinyl/6314990.jpg",
-      "year": 2006,
+      "art_filename": "vinyl/1078940.jpg",
+      "year": 2001,
       "sessions": 4
     },
     {
-      "release_id": 18492652,
-      "title": "XX",
+      "release_id": 2191572,
+      "title": "Black Sands",
+      "artists": [
+        "Bonobo"
+      ],
+      "art_filename": "vinyl/2191572.jpg",
+      "year": 2010,
+      "sessions": 4
+    },
+    {
+      "release_id": 26515631,
+      "title": "Some Kind Of Cadwallader",
+      "artists": [
+        "Algernon Cadwallader"
+      ],
+      "art_filename": "vinyl/26515631.jpg",
+      "year": 2008,
+      "sessions": 4
+    },
+    {
+      "release_id": 2254563,
+      "title": "Blue Sky Noise",
+      "artists": [
+        "Circa Survive"
+      ],
+      "art_filename": "vinyl/2254563.jpg",
+      "year": 2010,
+      "sessions": 4
+    },
+    {
+      "release_id": 4491337,
+      "title": "Jamie xx Edits",
       "artists": [
         "The XX"
       ],
-      "art_filename": "vinyl/18492652.jpg",
-      "year": 2009,
+      "art_filename": "vinyl/4491337.jpg",
+      "year": 2013,
       "sessions": 4
     },
     {
-      "release_id": 3192070,
-      "title": "Dive",
+      "release_id": 2890941,
+      "title": "Take Care, Take Care, Take Care",
       "artists": [
-        "Tycho (3)"
+        "Explosions In The Sky"
       ],
-      "art_filename": "vinyl/3192070.jpg",
+      "art_filename": "vinyl/2890941.jpg",
       "year": 2011,
       "sessions": 3
     },
     {
-      "release_id": 2900860,
-      "title": "Ice Cream",
+      "release_id": 541614,
+      "title": "The Campfire Headphase",
       "artists": [
-        "Battles"
+        "Boards Of Canada"
       ],
-      "art_filename": "vinyl/2900860.jpg",
-      "year": 2011,
+      "art_filename": "vinyl/541614.jpg",
+      "year": 2005,
       "sessions": 3
     },
     {
-      "release_id": 1566000,
-      "title": "Se Dice Bisonte, No B\u00f9falo",
+      "release_id": 1978515,
+      "title": "Logos",
       "artists": [
-        "Omar Rodriguez-Lopez"
+        "Atlas Sound"
       ],
-      "art_filename": "vinyl/1566000.jpg",
-      "year": 2007,
+      "art_filename": "vinyl/1978515.jpg",
+      "year": 2009,
       "sessions": 3
     },
     {
-      "release_id": 2831206,
-      "title": "An Introduction To Syd Barrett",
+      "release_id": 2353120,
+      "title": "You And Me And The Mountain",
       "artists": [
-        "Syd Barrett"
+        "Maps And Atlases"
       ],
-      "art_filename": "vinyl/2831206.jpg",
-      "year": 2010,
-      "sessions": 3
-    },
-    {
-      "release_id": 4418695,
-      "title": "Homework",
-      "artists": [
-        "Daft Punk"
-      ],
-      "art_filename": "vinyl/4418695.jpg",
-      "year": 1997,
-      "sessions": 3
-    },
-    {
-      "release_id": 171890,
-      "title": "There There",
-      "artists": [
-        "Radiohead"
-      ],
-      "art_filename": "vinyl/171890.jpg",
-      "year": 2003,
-      "sessions": 3
-    },
-    {
-      "release_id": 1855760,
-      "title": "Spirit They're Gone, Spirit They've Vanished",
-      "artists": [
-        "Animal Collective"
-      ],
-      "art_filename": "vinyl/1855760.jpg",
-      "year": 2000,
+      "art_filename": "vinyl/2353120.jpg",
+      "year": 2009,
       "sessions": 3
     }
   ]

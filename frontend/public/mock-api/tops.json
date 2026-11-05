@@ -441,8 +441,8 @@
         "4LH4d3cOWNNsVw41Gqt2kv",
         "0esHQqYklDPje00NUNq6py",
         "3Qa2CdymyGvXkqoqIZykmT",
+        "76iTNsPU1yhKWcQrTc2qdA",
         "630o1rKTDsLeIPreOY1jqP",
-        "5QtXhQE2WvVLz60sYwafQH",
         "3b4E89rxzZQ9zkhgKpj8N4",
         "5mwOo1zikswhmfHvtqVSXg",
         "5EyIDBAqhnlkAHqvPRwdbX",
@@ -470,19 +470,19 @@
           "art_url": "/artwork/can_ege_bamyasi_remastered_version.jpg",
           "release_year": 1972
         },
+        "76iTNsPU1yhKWcQrTc2qdA": {
+          "album_id": "76iTNsPU1yhKWcQrTc2qdA",
+          "album_name": "Acabou Chorare",
+          "artist": "Novos Baianos",
+          "art_url": "/artwork/novos_baianos_acabou_chorare.jpg",
+          "release_year": 1972
+        },
         "630o1rKTDsLeIPreOY1jqP": {
           "album_id": "630o1rKTDsLeIPreOY1jqP",
           "album_name": "Marquee Moon",
           "artist": "Television",
           "art_url": "/artwork/television_marquee_moon.jpg",
           "release_year": 1977
-        },
-        "5QtXhQE2WvVLz60sYwafQH": {
-          "album_id": "5QtXhQE2WvVLz60sYwafQH",
-          "album_name": "Expensive Shit",
-          "artist": "Fela Kuti",
-          "art_url": "/artwork/fela_kuti_expensive_shit.jpg",
-          "release_year": 1975
         },
         "3b4E89rxzZQ9zkhgKpj8N4": {
           "album_id": "3b4E89rxzZQ9zkhgKpj8N4",
@@ -518,11 +518,9 @@
       "decade": "1960s",
       "album_ids": [
         "0ETFjACtuP2ADo6LFhL6HN",
-        "0Hs3BomCdwIWRhgT57x22T",
         "5z090LQztiqh13wYspQvKQ",
         "2EYVXfypcucR62WMKJl6Mr",
         "2HOf3Nb44Us8U9oEtKLSrX",
-        "6Sts4Yh7KsDFwq2yTWrGGV",
         "4NP1rhnsPdYpnyJP0p0k0L",
         "2CNEkSE8TADXRT2AzcEt1b"
       ],
@@ -532,13 +530,6 @@
           "album_name": "Abbey Road (Remastered)",
           "artist": "The Beatles",
           "art_url": "/artwork/the_beatles_abbey_road_remastered.jpg",
-          "release_year": 1969
-        },
-        "0Hs3BomCdwIWRhgT57x22T": {
-          "album_id": "0Hs3BomCdwIWRhgT57x22T",
-          "album_name": "In A Silent Way",
-          "artist": "Miles Davis",
-          "art_url": "/artwork/miles_davis_in_a_silent_way.jpg",
           "release_year": 1969
         },
         "5z090LQztiqh13wYspQvKQ": {
@@ -561,13 +552,6 @@
           "artist": "The Velvet Underground",
           "art_url": "/artwork/the_velvet_underground_the_velvet_underground_45th_anniversary.jpg",
           "release_year": 1969
-        },
-        "6Sts4Yh7KsDFwq2yTWrGGV": {
-          "album_id": "6Sts4Yh7KsDFwq2yTWrGGV",
-          "album_name": "The Black Saint And The Sinner Lady",
-          "artist": "Charles Mingus",
-          "art_url": "/artwork/charles_mingus_the_black_saint_and_the_sinner_lady.jpg",
-          "release_year": 1963
         },
         "4NP1rhnsPdYpnyJP0p0k0L": {
           "album_id": "4NP1rhnsPdYpnyJP0p0k0L",
