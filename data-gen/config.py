@@ -69,5 +69,16 @@ HISTORY_PLAYS_PER_DAY = 30
 # first-time discoveries instead of every artist already being years old.
 HISTORY_HOLDOUT_SHARE = 0.12
 
+# Share of the catalog still in rotation during the AV era. Everything else was played
+# during some stretch of the archive and then left alone, so "last played" spreads across
+# the years the way a real library's does. The AV log only plays this share.
+ROTATION_ALBUM_SHARE = 0.50
+
+# Days before the AV log may repeat an album. This and ROTATION_ALBUM_SHARE trade off: the
+# log makes ~1,200 album picks, so a small pool with a long cooldown dead-ends and thins the
+# weekly Periods grid. Tuned together on two seeds: 90 days needs nearly the whole catalog,
+# 45 days at 0.45 left a median grid of 14, 30 days at 0.50 gives 17-18.
+ALBUM_COOLDOWN_DAYS = 30
+
 # Number of hand-written freeform notes to distribute across albums/vinyl records.
 HANDWRITTEN_NOTES_COUNT = 12

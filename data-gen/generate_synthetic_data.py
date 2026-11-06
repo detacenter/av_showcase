@@ -26,6 +26,8 @@ from config import (
     AVG_PLAYS_PER_DAY,
     ARTIST_ZIPF_EXPONENT,
     HISTORY_HOLDOUT_SHARE,
+    ROTATION_ALBUM_SHARE,
+    ALBUM_COOLDOWN_DAYS,
     HISTORY_PLAYS_PER_DAY,
     HISTORY_START,
     GENRE_DRIFT_ERAS,
@@ -262,7 +264,64 @@ def build_radar(log_entries: list[dict]) -> list[dict]:
     return items
 
 
-def build_history(artists: list[dict], cutoff: datetime) -> dict:
+def plan_catalog_lifecycle(artists: list[dict], cutoff: datetime) -> dict:
+    """Decide once, for both generators, where each album sits in the listener's life.
+
+    Chosen per artist, not per album, so whole artists go quiet too:
+
+    - held out: never in the archive, so the AV era has real first-time discoveries;
+    - in rotation: played in the AV era, and in the archive from some first day onward;
+    - retired: played for a stretch of the archive, then never again.
+
+    Without this, last-played dates pile up at today: the AV log used to touch nearly every
+    album, and an archive where anything can resurface does the same.
+
+    Returns {"held_out": artist names, "rotation": album ids, "windows": album id -> (first
+    day index, last day index)}, indexed from HISTORY_START. Held-out albums have no window.
+    """
+    rng = random.Random(f"{BEHAVIOR_SEED}-lifecycle")
+    start = datetime.fromisoformat(HISTORY_START).replace(tzinfo=timezone.utc)
+    span = (cutoff - start).days
+
+    def release_day(album: dict) -> int:
+        year = album.get("release_year")
+        if not year:
+            return 0
+        return max(0, (datetime(int(year), 1, 1, tzinfo=timezone.utc) - start).days)
+
+    order = [a for a in artists if a["albums"]]
+    rng.shuffle(order)
+    held_out_n = round(len(order) * HISTORY_HOLDOUT_SHARE)
+    held_out = {a["artist_name"] for a in order[:held_out_n]}
+    rotation = {al["album_id"] for a in order[:held_out_n] for al in a["albums"]}
+
+    target = len([al for a in order for al in a["albums"]]) * ROTATION_ALBUM_SHARE
+    # An album too new for the archive has nowhere else to be played.
+    for a in order[held_out_n:]:
+        rotation.update(al["album_id"] for al in a["albums"] if release_day(al) >= span - 60)
+    for a in order[held_out_n:]:
+        if len(rotation) >= target:
+            break
+        kept = [al for al in a["albums"] if rng.random() < 0.7] or [rng.choice(a["albums"])]
+        rotation.update(al["album_id"] for al in kept)
+
+    windows: dict[str, tuple[int, int]] = {}
+    for a in order[held_out_n:]:
+        for al in a["albums"]:
+            released = release_day(al)
+            if released >= span - 60:
+                continue
+            if al["album_id"] in rotation:
+                first = 0 if rng.random() < 0.15 else rng.randint(released, max(released, span - 120))
+                windows[al["album_id"]] = (max(first, released), span)
+            else:
+                last = rng.randint(min(released + 30, span - 60), span - 60)
+                first = max(released, last - rng.randint(30, 900))
+                windows[al["album_id"]] = (first, last)
+    return {"held_out": held_out, "rotation": rotation, "windows": windows}
+
+
+def build_history(artists: list[dict], cutoff: datetime, plan: dict) -> dict:
     """Synthetic stand-in for the real app's imported Spotify history: the same three
     files persistence/spotify_history.py reads, covering HISTORY_START up to `cutoff`
     (the first day of the simulated AV log), so nothing overlaps it.
@@ -272,8 +331,10 @@ def build_history(artists: list[dict], cutoff: datetime) -> dict:
     they land on the local clock. What's specific to a nine-year span:
 
     - artists come and go in phases, so one year doesn't look like the next;
-    - some artists are held out entirely, so the AV era still has discoveries;
-    - an album is never played before its release year.
+    - each album lives inside its plan_catalog_lifecycle() window, which also keeps it from
+      playing before its release year;
+    - every album gets at least one play, on or soon after the first day of its window, so
+      nothing in the library is left with no history.
 
     Every track is written as already enriched (`enriched_at` and a real `album_id`), which
     is what tells the backend's history_enrich not to look anything up.
@@ -294,21 +355,26 @@ def build_history(artists: list[dict], cutoff: datetime) -> dict:
                 albums.append({**album, "tracks": tracks})
         if albums:
             roster.append({"artist": artist, "albums": albums})
+    roster = [r for r in roster if r["artist"]["artist_name"] not in plan["held_out"]]
     rng.shuffle(roster)
-    roster = roster[round(len(roster) * HISTORY_HOLDOUT_SHARE):]
+    windows = plan["windows"]
 
     for rank, r in enumerate(roster, start=1):
         r["base"] = 1 / rank ** ARTIST_ZIPF_EXPONENT
-        core = rank <= len(roster) * 0.15
-        r["intro"] = 0 if core else rng.randint(0, round(span_days * 0.9))
         r["phases"] = [
-            (rng.randint(r["intro"], span_days), rng.randint(60, 300))
+            (rng.randint(0, span_days), rng.randint(60, 300))
             for _ in range(rng.choice([1, 2, 2, 3]))
         ]
+        r["albums"] = [a for a in r["albums"] if a["album_id"] in windows]
+    roster = [r for r in roster if r["albums"]]
+
+    # Albums waiting for their first play, soonest first. Popped as their window opens.
+    owed = sorted(
+        ((windows[a["album_id"]][0], a["album_id"], r, a) for r in roster for a in r["albums"]),
+        key=lambda x: (x[0], x[1]),
+    )
 
     def artist_weight(r: dict, day_index: int) -> float:
-        if day_index < r["intro"]:
-            return 0.0
         boost = sum(math.exp(-(((day_index - c) / w) ** 2)) for c, w in r["phases"])
         return (r["base"] + 0.002) * (1 + 12 * boost)
 
@@ -319,20 +385,26 @@ def build_history(artists: list[dict], cutoff: datetime) -> dict:
     enriched_at = cutoff.strftime("%Y-%m-%dT%H:%M:%SZ")
     dry_until = -1
 
-    def pick_album(day: datetime, day_index: int) -> tuple[dict, dict] | None:
-        weights = [artist_weight(r, day_index) for r in roster]
-        if not any(weights):
-            return None
-        for _ in range(8):
-            r = rng.choices(roster, weights=weights, k=1)[0]
+    def pick_album(day_index: int) -> tuple[dict, dict] | None:
+        while owed and owed[0][0] <= day_index:
+            _, album_id, r, album = owed.pop(0)
+            if album_id not in album_last_day:
+                return r, album
+        live = []
+        weights = []
+        for r in roster:
             eligible = [
                 a for a in r["albums"]
-                if (not a.get("release_year") or int(a["release_year"]) <= day.year)
+                if windows[a["album_id"]][0] <= day_index <= windows[a["album_id"]][1]
                 and day_index - album_last_day.get(a["album_id"], -999) >= 30
             ]
             if eligible:
-                return r, rng.choice(eligible)
-        return None
+                live.append((r, eligible))
+                weights.append(artist_weight(r, day_index))
+        if not live:
+            return None
+        r, eligible = rng.choices(live, weights=weights, k=1)[0]
+        return r, rng.choice(eligible)
 
     for day_index in range(span_days):
         day = start + timedelta(days=day_index)
@@ -355,7 +427,7 @@ def build_history(artists: list[dict], cutoff: datetime) -> dict:
             shuffle = rng.random() < 0.15
             platform = rng.choices(["ios", "osx"], weights=[0.7, 0.3], k=1)[0]
             while played < per_anchor and t < day_limit and t < cutoff:
-                picked = pick_album(day, day_index)
+                picked = pick_album(day_index)
                 if picked is None:
                     break
                 r, album = picked
@@ -489,6 +561,8 @@ def main() -> None:
     end_date = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
     total_days = round(TIMESPAN_MONTHS * 30.44)
     start_date = end_date - timedelta(days=total_days)
+    lifecycle = plan_catalog_lifecycle(artists, start_date)
+    rotation = lifecycle["rotation"]
 
     # ── Artist introduction schedule (session 5) ────────────────────────────
     # Without this, nearly every artist gets sampled within the first couple
@@ -537,7 +611,8 @@ def main() -> None:
         (a["artist_name"], al["album_id"])
         for a in artists
         for al in a["albums"]
-        if len(al["tracks"]) >= 4 and era_of_genre.get(a["genres"][0] if a["genres"] else "unknown") == GENRE_DRIFT_ERAS - 1
+        if al["album_id"] in rotation and len(al["tracks"]) >= 4
+        and era_of_genre.get(a["genres"][0] if a["genres"] else "unknown") == GENRE_DRIFT_ERAS - 1
     ]
     rng.shuffle(final_era_candidates)
     partial_albums = {album_id for _, album_id in final_era_candidates[:4]}
@@ -562,7 +637,6 @@ def main() -> None:
     # albums is on cooldown — mainly single/two-album artists, where a
     # strict no-repeat would make them unplayable for months at a time.
     album_last_played_day: dict[str, int] = {}
-    ALBUM_COOLDOWN_DAYS = 90
     # Per-calendar-month volume multiplier (session 5) — the previous model
     # only varied day-to-day (weekday/weekend + Gaussian noise) around one
     # constant mean for the entire 9 months, which averages out to an
@@ -705,7 +779,8 @@ def main() -> None:
                     continue
                 elig = [
                     al for al in a["albums"]
-                    if day_index - album_last_played_day.get(al["album_id"], -(ALBUM_COOLDOWN_DAYS + 1)) >= ALBUM_COOLDOWN_DAYS
+                    if al["album_id"] in rotation
+                    and day_index - album_last_played_day.get(al["album_id"], -(ALBUM_COOLDOWN_DAYS + 1)) >= ALBUM_COOLDOWN_DAYS
                 ]
                 if not elig:
                     weights.append(0)
@@ -1156,7 +1231,7 @@ def main() -> None:
         json.dump(vinyl_sessions_out, f, indent=2)
     history_dir = OUT_DIR / "spotify_history"
     history_dir.mkdir(exist_ok=True)
-    history_out = build_history(artists, start_date)
+    history_out = build_history(artists, start_date, lifecycle)
     for name, key in (("plays.json", "plays"), ("tracks.json", "tracks"), ("import_summary.json", "summary")):
         with (history_dir / name).open("w") as f:
             json.dump(history_out[key], f, separators=(",", ":"))
