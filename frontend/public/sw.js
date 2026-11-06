@@ -242,16 +242,28 @@ async function handleStatsTrends() {
   return jsonResponse(await loadSnapshot("stats-trends.json"));
 }
 
-// Snapshotted one Monday-started week at a time, keyed by that Monday. A week
-// outside the data is an empty list, same as the real backend. Without a start
-// the real endpoint gives the window ending on the newest session; nothing in
-// the app asks for that now, so it answers with the newest week on file.
+// Snapshotted one Monday-started week at a time, in one file per year of that Monday.
+// A week outside the data is an empty list, same as the real backend. Without a start
+// the real endpoint gives the window ending on the newest session; nothing in the app
+// asks for that now, so it answers with the newest week on file.
+async function loadSessionsYear(year) {
+  // A year outside the data has no file, and the host's SPA rewrite answers with
+  // index.html and a 200, so a failed parse has to mean "no weeks" too.
+  const res = await fetch(`${SNAPSHOT_BASE}/stats-sessions/${year}.json`);
+  return res.ok ? res.json().catch(() => ({})) : {};
+}
+
 async function handleStatsSessions(url) {
-  const data = await loadSnapshot("stats-sessions.json");
   const start = url.searchParams.get("start");
-  if (start) return jsonResponse(data[start] ?? []);
-  const newest = Object.keys(data).sort().pop();
-  return jsonResponse(newest ? data[newest] : []);
+  if (start) {
+    const weeks = await loadSessionsYear(start.slice(0, 4));
+    return jsonResponse(weeks[start] ?? []);
+  }
+  const bounds = await loadSnapshot("stats-sessions-bounds.json");
+  if (!bounds.newest_start) return jsonResponse([]);
+  const weeks = await loadSessionsYear(bounds.newest_start.slice(0, 4));
+  const newest = Object.keys(weeks).sort().pop();
+  return jsonResponse(newest ? weeks[newest] : []);
 }
 
 async function handleStatsSessionsBounds() {
@@ -331,12 +343,14 @@ async function handleStatsPeriod(url) {
 async function handleStatsTime(url) {
   const mode = url.searchParams.get("mode") || "Year";
   const data = await loadSnapshot("stats-time.json");
+  // Whole-history fields are stored once; see generate_api_snapshots.py.
+  const respond = (entry) => jsonResponse({ ...data._shared, ...entry });
   let monthOffset = url.searchParams.get("month_offset") || "0";
   const year = url.searchParams.get("year");
   const month = url.searchParams.get("month");
   if (mode === "Year" && year) {
-    if (data[`Year@${year}`]) return jsonResponse(data[`Year@${year}`]);
-    if (Number(year) === data["Year|0"]?.year) return jsonResponse(data["Year|0"]);
+    if (data[`Year@${year}`]) return respond(data[`Year@${year}`]);
+    if (Number(year) === data["Year|0"]?.year) return respond(data["Year|0"]);
   }
   // `month` (YYYY-MM) overrides the offset, by the same arithmetic as the backend.
   const latest = data["Month|0"]?.month;
@@ -345,9 +359,9 @@ async function handleStatsTime(url) {
     monthOffset = String(Math.max(0, months(latest) - months(month)));
   }
   const key = `${mode}|${monthOffset}`;
-  if (data[key]) return jsonResponse(data[key]);
+  if (data[key]) return respond(data[key]);
   const fallbackKey = `${mode}|0`;
-  return jsonResponse({ ...data[fallbackKey], has_older: false });
+  return respond({ ...data[fallbackKey], has_older: false });
 }
 
 async function handleStatsTimeline(url) {

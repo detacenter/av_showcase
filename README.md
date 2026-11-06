@@ -49,7 +49,7 @@ breakdown, see the **About** page in the running demo.
 | Recent | Live-scrolling play history, same as the real app's home view |
 | Artists | Full library browser with per-artist stats |
 | Albums | Album grid with ratings, favorites, notes |
-| Stats | Sessions, Eras, Time-of-day, Trends, Periods (week, month, and a full year page), Genres (network and Ring), Discovery-vs-comfort |
+| Stats | Sessions, Eras, Time-of-day, Trends, Periods (week, month, and a full year page), Genres (network and Ring), Discovery-vs-comfort, all reaching back to 2017 through an imported Spotify history (synthetic here, like every other play) |
 | Tops | Real per-decade top-10 picks |
 | Vinyl | Real Discogs collection, digital/vinyl session tracking |
 | Playlists | Rule-based smart playlists |

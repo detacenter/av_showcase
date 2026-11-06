@@ -25,6 +25,9 @@ from config import (
     TIMESPAN_MONTHS,
     AVG_PLAYS_PER_DAY,
     ARTIST_ZIPF_EXPONENT,
+    HISTORY_HOLDOUT_SHARE,
+    HISTORY_PLAYS_PER_DAY,
+    HISTORY_START,
     GENRE_DRIFT_ERAS,
     HANDWRITTEN_NOTES_COUNT,
 )
@@ -257,6 +260,172 @@ def build_radar(log_entries: list[dict]) -> list[dict]:
     # load_radar() order is newest-added first.
     items.sort(key=lambda i: i["added_at"], reverse=True)
     return items
+
+
+def build_history(artists: list[dict], cutoff: datetime) -> dict:
+    """Synthetic stand-in for the real app's imported Spotify history: the same three
+    files persistence/spotify_history.py reads, covering HISTORY_START up to `cutoff`
+    (the first day of the simulated AV log), so nothing overlaps it.
+
+    Listening is shaped like the day-loop's: whole albums in order, a minority of short
+    listens, picks chained so they can't overlap, and start times from daypart_time() so
+    they land on the local clock. What's specific to a nine-year span:
+
+    - artists come and go in phases, so one year doesn't look like the next;
+    - some artists are held out entirely, so the AV era still has discoveries;
+    - an album is never played before its release year.
+
+    Every track is written as already enriched (`enriched_at` and a real `album_id`), which
+    is what tells the backend's history_enrich not to look anything up.
+
+    Own seeded stream, so this can't disturb the day-loop's shared rng (see caveat #7).
+    """
+    rng = random.Random(f"{BEHAVIOR_SEED}-history")
+    start = datetime.fromisoformat(HISTORY_START).replace(tzinfo=timezone.utc)
+    span_days = (cutoff - start).days
+
+    roster = []
+    for artist in artists:
+        albums = []
+        for album in artist["albums"]:
+            tracks = [t for t in album["tracks"] if t.get("duration_ms")]
+            if tracks and album.get("local_artwork"):
+                tracks.sort(key=lambda t: (t.get("track_number") is None, t.get("track_number") or 0))
+                albums.append({**album, "tracks": tracks})
+        if albums:
+            roster.append({"artist": artist, "albums": albums})
+    rng.shuffle(roster)
+    roster = roster[round(len(roster) * HISTORY_HOLDOUT_SHARE):]
+
+    for rank, r in enumerate(roster, start=1):
+        r["base"] = 1 / rank ** ARTIST_ZIPF_EXPONENT
+        core = rank <= len(roster) * 0.15
+        r["intro"] = 0 if core else rng.randint(0, round(span_days * 0.9))
+        r["phases"] = [
+            (rng.randint(r["intro"], span_days), rng.randint(60, 300))
+            for _ in range(rng.choice([1, 2, 2, 3]))
+        ]
+
+    def artist_weight(r: dict, day_index: int) -> float:
+        if day_index < r["intro"]:
+            return 0.0
+        boost = sum(math.exp(-(((day_index - c) / w) ** 2)) for c, w in r["phases"])
+        return (r["base"] + 0.002) * (1 + 12 * boost)
+
+    year_volume = {y: rng.uniform(0.65, 1.3) for y in range(start.year, cutoff.year + 1)}
+    album_last_day: dict[str, int] = {}
+    rows: list[list] = []
+    tracks_out: dict[str, dict] = {}
+    enriched_at = cutoff.strftime("%Y-%m-%dT%H:%M:%SZ")
+    dry_until = -1
+
+    def pick_album(day: datetime, day_index: int) -> tuple[dict, dict] | None:
+        weights = [artist_weight(r, day_index) for r in roster]
+        if not any(weights):
+            return None
+        for _ in range(8):
+            r = rng.choices(roster, weights=weights, k=1)[0]
+            eligible = [
+                a for a in r["albums"]
+                if (not a.get("release_year") or int(a["release_year"]) <= day.year)
+                and day_index - album_last_day.get(a["album_id"], -999) >= 30
+            ]
+            if eligible:
+                return r, rng.choice(eligible)
+        return None
+
+    for day_index in range(span_days):
+        day = start + timedelta(days=day_index)
+        if day_index <= dry_until:
+            continue
+        if rng.random() < 0.006:  # a few breaks a year: travel, a busy stretch
+            dry_until = day_index + rng.randint(2, 9)
+            continue
+        if rng.random() < 0.08:
+            continue
+        weekend = day.weekday() >= 5
+        budget = HISTORY_PLAYS_PER_DAY * year_volume[day.year] * rng.lognormvariate(-0.15, 0.55)
+        anchors = sorted(daypart_time(rng, day, weekend) for _ in range(rng.choice([1, 2, 2, 3, 3, 4])))
+        per_anchor = budget / len(anchors)
+        day_limit = day.replace(tzinfo=_LOCAL_TZ) + timedelta(hours=26)
+        cursor = None
+        for anchor in anchors:
+            t = anchor if cursor is None else max(anchor, cursor + timedelta(seconds=rng.randint(30, 600)))
+            played = 0
+            shuffle = rng.random() < 0.15
+            platform = rng.choices(["ios", "osx"], weights=[0.7, 0.3], k=1)[0]
+            while played < per_anchor and t < day_limit and t < cutoff:
+                picked = pick_album(day, day_index)
+                if picked is None:
+                    break
+                r, album = picked
+                album_last_day[album["album_id"]] = day_index
+                tracks = album["tracks"]
+                if rng.random() < 0.15 and len(tracks) > 3:
+                    session = rng.sample(tracks, k=rng.randint(2, 3))
+                else:
+                    session = tracks[:max(1, round(len(tracks) * rng.uniform(0.8, 1.0)))]
+                    if rng.random() < 0.08:
+                        session = session * 2
+                for track in session:
+                    if t >= cutoff:
+                        break
+                    full = track["duration_ms"]
+                    skipped = rng.random() < 0.07 and full > 60_000
+                    ms = rng.randint(30_000, round(full * 0.7)) if skipped else full
+                    if ms < 30_000:  # the real import keeps plays of at least 30 s
+                        continue
+                    end = t + timedelta(milliseconds=ms)
+                    if end >= cutoff:
+                        t = end
+                        break
+                    rows.append([
+                        end.strftime("%Y-%m-%dT%H:%M:%SZ"), track["track_id"], ms, "trackdone",
+                        "fwdbtn" if skipped else "trackdone", shuffle, skipped, platform, False,
+                    ])
+                    played += 1
+                    primary = r["artist"]["artist_name"]
+                    tracks_out.setdefault(track["track_id"], {
+                        "name": track["track_name"],
+                        "artist": primary,
+                        "album": album["album_name"],
+                        "artist_names": album.get("artist_names") or [primary],
+                        "artist_ids": [r["artist"]["artist_id"]],
+                        "album_id": album["album_id"],
+                        "duration_ms": full,
+                        "release_year": album.get("release_year"),
+                        "track_number": track.get("track_number"),
+                        "album_type": album.get("album_type"),
+                        "album_total_tracks": album.get("album_total_tracks"),
+                        "album_art_url": album.get("album_art_url"),
+                        "album_art_local_path": album.get("local_artwork"),
+                        "explicit": False,
+                        "isrc": track.get("isrc"),
+                        "enriched_at": enriched_at,
+                        "enriched_from": "synthetic",
+                    })
+                    t = end + timedelta(seconds=rng.randint(0, 3))
+                t += timedelta(seconds=rng.randint(30, 600))
+            cursor = t
+
+    rows.sort(key=lambda row: row[0])
+    summary = {
+        "imported_at": enriched_at,
+        "source": "synthetic",
+        "cutoff": enriched_at,
+        "files": 1,
+        "plays": len(rows),
+        "tracks": len(tracks_out),
+        "first_play": rows[0][0] if rows else None,
+        "last_play": rows[-1][0] if rows else None,
+        "skipped": {"not_music": 0, "under_30s": 0, "after_cutoff": 0},
+    }
+    columns = ["end_ts", "track_id", "ms_played", "reason_start", "reason_end", "shuffle", "skipped", "platform", "offline"]
+    return {
+        "plays": {"v": 1, "cutoff": enriched_at, "columns": columns, "rows": rows},
+        "tracks": tracks_out,
+        "summary": summary,
+    }
 
 
 def main() -> None:
@@ -985,6 +1154,12 @@ def main() -> None:
         json.dump(discogs_out, f, indent=2)
     with (OUT_DIR / "vinyl_sessions.json").open("w") as f:
         json.dump(vinyl_sessions_out, f, indent=2)
+    history_dir = OUT_DIR / "spotify_history"
+    history_dir.mkdir(exist_ok=True)
+    history_out = build_history(artists, start_date)
+    for name, key in (("plays.json", "plays"), ("tracks.json", "tracks"), ("import_summary.json", "summary")):
+        with (history_dir / name).open("w") as f:
+            json.dump(history_out[key], f, separators=(",", ":"))
     radar_out = build_radar(log_entries)
     with (OUT_DIR / "radar.json").open("w") as f:
         json.dump(radar_out, f, indent=2)
@@ -996,6 +1171,7 @@ def main() -> None:
     print(f"discogs_collection.json / vinyl_links.json: {len(discogs_out)} vinyl records")
     print(f"vinyl_sessions.json: {len(vinyl_sessions_out)} sessions across {len(played_records)} played records")
     print(f"radar.json: {len(radar_out)} items")
+    print(f"spotify_history/: {history_out['summary']['plays']} plays, {history_out['summary']['tracks']} tracks, from {history_out['summary']['first_play']}")
 
 
 if __name__ == "__main__":

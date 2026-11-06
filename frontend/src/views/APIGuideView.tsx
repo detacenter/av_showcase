@@ -105,7 +105,7 @@ const GROUPS: Group[] = [
       { method: "GET", path: "/api/stats/timeline", desc: "Timeline chart data (?metric=Albums).", live: true },
       { method: "GET", path: "/api/stats/genres-page", desc: "Server-rendered D3 genre force-graph (raw HTML, embedded via iframe).", live: true, html: true },
       { method: "GET", path: "/api/stats/genres-ring", desc: "Top genres by hours, their families, and shared-artist links (the Genres › Ring view).", live: true },
-      { method: "GET", path: "/api/stats/history", desc: "The span of plays the Stats views can reach.", live: true },
+      { method: "GET", path: "/api/stats/history", desc: "The span of Stats: where AV's own log begins and what the imported Spotify history covers.", live: true },
     ],
   },
   {

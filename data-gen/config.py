@@ -57,5 +57,17 @@ ARTIST_ZIPF_EXPONENT = 1.1
 GENRE_DRIFT_ERAS = 3
 
 
+# The imported "Spotify history" that sits before AV's own log, as the real app has.
+# It runs from this date up to the day the simulated AV log begins. The real app's
+# import starts here too; only the span is shared, every play in it is synthetic.
+HISTORY_START = "2017-03-17"
+
+# Average plays per day across that archive, before yearly and monthly swings.
+HISTORY_PLAYS_PER_DAY = 30
+
+# Share of artists kept out of the archive entirely, so the AV era still has real
+# first-time discoveries instead of every artist already being years old.
+HISTORY_HOLDOUT_SHARE = 0.12
+
 # Number of hand-written freeform notes to distribute across albums/vinyl records.
 HANDWRITTEN_NOTES_COUNT = 12

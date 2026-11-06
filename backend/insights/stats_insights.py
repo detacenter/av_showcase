@@ -498,7 +498,7 @@ def build_period_payload(log: list[dict], mode: str, offset: int, lib: dict | No
         artist, count = new_artist_counts[0]
         top_new_artist = {"name": artist, "count": count}
 
-    older_entries, _, _ = _entries_for_period(log, mode, offset + 1)
+    _, _, next_older_end = _entries_for_period(log, mode, offset + 1)
     history_start = _parse_played_at(log[-1]["played_at"]) if log else start
 
     def _older_minutes(k: int):
@@ -517,7 +517,9 @@ def build_period_payload(log: list[dict], mode: str, offset: int, lib: dict | No
         "artist_tiles": artist_tiles,
         "album_tiles": album_tiles,
         "top_new_artist": top_new_artist,
-        "has_older": len(older_entries) > 0,
+        # By the span of the history, not the next period's plays: one empty week must not
+        # end the Older button with years of listening still behind it.
+        "has_older": bool(log) and next_older_end >= history_start,
         "recap": recap,
     }
 
