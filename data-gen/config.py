@@ -72,13 +72,21 @@ HISTORY_HOLDOUT_SHARE = 0.12
 # Share of the catalog still in rotation during the AV era. Everything else was played
 # during some stretch of the archive and then left alone, so "last played" spreads across
 # the years the way a real library's does. The AV log only plays this share.
-ROTATION_ALBUM_SHARE = 0.50
+ROTATION_ALBUM_SHARE = 0.30
 
-# Days before the AV log may repeat an album. This and ROTATION_ALBUM_SHARE trade off: the
-# log makes ~1,200 album picks, so a small pool with a long cooldown dead-ends and thins the
-# weekly Periods grid. Tuned together on two seeds: 90 days needs nearly the whole catalog,
-# 45 days at 0.45 left a median grid of 14, 30 days at 0.50 gives 17-18.
-ALBUM_COOLDOWN_DAYS = 30
+# Days before the AV log may repeat an album. This and ROTATION_ALBUM_SHARE trade off: a small
+# pool with a long cooldown dead-ends and thins the weekly Periods grid, while a large pool
+# piles last-played dates into the AV era (every album it plays counts as last played then).
+# Tuned together on three seeds. 30 days at 0.50 put ~310 albums in the AV era. 14 days at
+# 0.22 put ~140 there but thinned the grids. 10 days at 0.30, with ROTATION_QUIET_SHARE at 0.5,
+# gives ~185 spread across every month, with almost no thin weeks. Judge changes by the real
+# Periods tiles in the snapshots, not by counting albums per week: that count flatters.
+ALBUM_COOLDOWN_DAYS = 10
+
+# Share of those rotation albums that go quiet partway through the AV era instead of playing
+# right up to today. Without it, nothing is ever last played in the middle of the AV era, and
+# the Recent sort shows a hole between the archive's end and the last few weeks.
+ROTATION_QUIET_SHARE = 0.5
 
 # Number of hand-written freeform notes to distribute across albums/vinyl records.
 HANDWRITTEN_NOTES_COUNT = 12

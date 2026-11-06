@@ -27,6 +27,7 @@ from config import (
     ARTIST_ZIPF_EXPONENT,
     HISTORY_HOLDOUT_SHARE,
     ROTATION_ALBUM_SHARE,
+    ROTATION_QUIET_SHARE,
     ALBUM_COOLDOWN_DAYS,
     HISTORY_PLAYS_PER_DAY,
     HISTORY_START,
@@ -264,7 +265,7 @@ def build_radar(log_entries: list[dict]) -> list[dict]:
     return items
 
 
-def plan_catalog_lifecycle(artists: list[dict], cutoff: datetime) -> dict:
+def plan_catalog_lifecycle(artists: list[dict], cutoff: datetime, av_days: int) -> dict:
     """Decide once, for both generators, where each album sits in the listener's life.
 
     Chosen per artist, not per album, so whole artists go quiet too:
@@ -277,7 +278,9 @@ def plan_catalog_lifecycle(artists: list[dict], cutoff: datetime) -> dict:
     album, and an archive where anything can resurface does the same.
 
     Returns {"held_out": artist names, "rotation": album ids, "windows": album id -> (first
-    day index, last day index)}, indexed from HISTORY_START. Held-out albums have no window.
+    day index, last day index), "rotation_end": album id -> last AV day index}. Windows index
+    from HISTORY_START, and held-out albums have none. Only albums with a window can end
+    early: they already have archive plays, so stopping can't leave one with no history.
     """
     rng = random.Random(f"{BEHAVIOR_SEED}-lifecycle")
     start = datetime.fromisoformat(HISTORY_START).replace(tzinfo=timezone.utc)
@@ -318,7 +321,12 @@ def plan_catalog_lifecycle(artists: list[dict], cutoff: datetime) -> dict:
                 last = rng.randint(min(released + 30, span - 60), span - 60)
                 first = max(released, last - rng.randint(30, 900))
                 windows[al["album_id"]] = (first, last)
-    return {"held_out": held_out, "rotation": rotation, "windows": windows}
+    rotation_end = {
+        album_id: rng.randint(14, av_days - 21)
+        for album_id in sorted(rotation & windows.keys())
+        if rng.random() < ROTATION_QUIET_SHARE
+    }
+    return {"held_out": held_out, "rotation": rotation, "windows": windows, "rotation_end": rotation_end}
 
 
 def build_history(artists: list[dict], cutoff: datetime, plan: dict) -> dict:
@@ -561,8 +569,9 @@ def main() -> None:
     end_date = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
     total_days = round(TIMESPAN_MONTHS * 30.44)
     start_date = end_date - timedelta(days=total_days)
-    lifecycle = plan_catalog_lifecycle(artists, start_date)
+    lifecycle = plan_catalog_lifecycle(artists, start_date, total_days)
     rotation = lifecycle["rotation"]
+    rotation_end = lifecycle["rotation_end"]
 
     # ── Artist introduction schedule (session 5) ────────────────────────────
     # Without this, nearly every artist gets sampled within the first couple
@@ -780,6 +789,7 @@ def main() -> None:
                 elig = [
                     al for al in a["albums"]
                     if al["album_id"] in rotation
+                    and day_index <= rotation_end.get(al["album_id"], total_days)
                     and day_index - album_last_played_day.get(al["album_id"], -(ALBUM_COOLDOWN_DAYS + 1)) >= ALBUM_COOLDOWN_DAYS
                 ]
                 if not elig:
